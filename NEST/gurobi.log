@@ -1,0 +1,739 @@
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:11:34
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:13:42
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 490 rows, 481 columns and 2894 nonzeros
+Variable types: 42 continuous, 439 integer (439 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 368 rows and 288 columns
+Presolve time: 0.02s
+Presolved: 122 rows, 193 columns, 871 nonzeros
+Variable types: 0 continuous, 193 integer (193 binary)
+
+Root relaxation: objective 5.750000e+00, 170 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.75000    0   49   -0.00000    5.75000      -     -    0s
+H    0     0                       4.0000000    5.75000  43.8%     -    0s
+     0     0    5.00000    0   39    4.00000    5.00000  25.0%     -    0s
+
+Cutting planes:
+  Gomory: 1
+
+Explored 1 nodes (254 simplex iterations) in 0.09 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 4 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.000000000000e+00, best bound 4.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+x[W0,('S0', 'T2')]            1 
+x[W0,('T1', 'T4')]            1 
+x[W0,('T2', 'T1')]            1 
+x[W0,('T4', 'E')]            1 
+x[W1,('S0', 'T2')]            1 
+x[W1,('T1', 'T4')]            1 
+x[W1,('T2', 'T1')]            1 
+x[W1,('T4', 'E')]            1 
+x[W2,('S0', 'T2')]            1 
+x[W2,('T1', 'E')]            1 
+x[W2,('T2', 'T1')]            1 
+x[W3,('S0', 'T2')]            1 
+x[W3,('T1', 'T4')]            1 
+x[W3,('T2', 'T1')]            1 
+x[W3,('T4', 'E')]            1 
+x[W4,('S0', 'T0')]            1 
+x[W4,('T0', 'E')]            1 
+x[W5,('S0', 'T0')]            1 
+x[W5,('T0', 'T4')]            1 
+x[W5,('T4', 'E')]            1 
+    s[W0,T0]          168 
+    s[W0,T1]      255.796 
+    s[W0,T2]          146 
+    s[W0,T3]          264 
+    s[W0,T4]          308 
+    s[W0,T5]          318 
+    s[W0,T6]          152 
+    s[W1,T0]          168 
+    s[W1,T1]      255.796 
+    s[W1,T2]          146 
+    s[W1,T3]          264 
+    s[W1,T4]          308 
+    s[W1,T5]          318 
+    s[W1,T6]          152 
+    s[W2,T0]          168 
+    s[W2,T1]          262 
+    s[W2,T2]          146 
+    s[W2,T3]          264 
+    s[W2,T4]          308 
+    s[W2,T5]          318 
+    s[W2,T6]          152 
+    s[W3,T0]          168 
+    s[W3,T1]      255.796 
+    s[W3,T2]          146 
+    s[W3,T3]          264 
+    s[W3,T4]          308 
+    s[W3,T5]          318 
+    s[W3,T6]          152 
+    s[W4,T0]          168 
+    s[W4,T1]          262 
+    s[W4,T2]          146 
+    s[W4,T3]          264 
+    s[W4,T4]          308 
+    s[W4,T5]          318 
+    s[W4,T6]          152 
+    s[W5,T0]          168 
+    s[W5,T1]          262 
+    s[W5,T2]          146 
+    s[W5,T3]          264 
+    s[W5,T4]          308 
+    s[W5,T5]          318 
+    s[W5,T6]          152 
+       y[T0]            1 
+       y[T1]            1 
+       y[T2]            1 
+       y[T4]            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:19:56
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 490 rows, 481 columns and 2894 nonzeros
+Variable types: 42 continuous, 439 integer (439 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 368 rows and 277 columns
+Presolve time: 0.01s
+Presolved: 122 rows, 204 columns, 954 nonzeros
+Variable types: 0 continuous, 204 integer (204 binary)
+
+Root relaxation: objective 6.250000e+00, 149 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    6.25000    0   25   -0.00000    6.25000      -     -    0s
+H    0     0                       6.0000000    6.25000  4.17%     -    0s
+
+Explored 1 nodes (189 simplex iterations) in 0.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 6 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.000000000000e+00, best bound 6.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+x[W0,('S0', 'T3')]            1 
+x[W0,('T0', 'E')]            1 
+x[W0,('T2', 'T0')]            1 
+x[W0,('T3', 'T5')]            1 
+x[W0,('T5', 'T6')]            1 
+x[W0,('T6', 'T2')]            1 
+x[W1,('S0', 'T6')]            1 
+x[W1,('T0', 'E')]            1 
+x[W1,('T2', 'T0')]            1 
+x[W1,('T6', 'T2')]            1 
+x[W2,('S0', 'T5')]            1 
+x[W2,('T1', 'E')]            1 
+x[W2,('T5', 'T1')]            1 
+x[W3,('S0', 'T6')]            1 
+x[W3,('T1', 'E')]            1 
+x[W3,('T2', 'T1')]            1 
+x[W3,('T6', 'T2')]            1 
+x[W4,('S0', 'T5')]            1 
+x[W4,('T2', 'E')]            1 
+x[W4,('T5', 'T6')]            1 
+x[W4,('T6', 'T2')]            1 
+x[W5,('S0', 'T6')]            1 
+x[W5,('T1', 'E')]            1 
+x[W5,('T2', 'T1')]            1 
+x[W5,('T6', 'T2')]            1 
+    s[W0,T0]          350 
+    s[W0,T1]          325 
+    s[W0,T2]          235 
+    s[W0,T3]           50 
+    s[W0,T4]          217 
+    s[W0,T5]           94 
+    s[W0,T6]          192 
+    s[W1,T0]          350 
+    s[W1,T1]          325 
+    s[W1,T2]          235 
+    s[W1,T3]           50 
+    s[W1,T4]          217 
+    s[W1,T5]           94 
+    s[W1,T6]          192 
+    s[W2,T0]          350 
+    s[W2,T1]          325 
+    s[W2,T2]          235 
+    s[W2,T3]           50 
+    s[W2,T4]          217 
+    s[W2,T5]           94 
+    s[W2,T6]          192 
+    s[W3,T0]          350 
+    s[W3,T1]          325 
+    s[W3,T2]          235 
+    s[W3,T3]           50 
+    s[W3,T4]          217 
+    s[W3,T5]           94 
+    s[W3,T6]          192 
+    s[W4,T0]          350 
+    s[W4,T1]          325 
+    s[W4,T2]          235 
+    s[W4,T3]           50 
+    s[W4,T4]          217 
+    s[W4,T5]           94 
+    s[W4,T6]          192 
+    s[W5,T0]          350 
+    s[W5,T1]          325 
+    s[W5,T2]          235 
+    s[W5,T3]           50 
+    s[W5,T4]          217 
+    s[W5,T5]           94 
+    s[W5,T6]          192 
+       y[T0]            1 
+       y[T1]            1 
+       y[T2]            1 
+       y[T3]            1 
+       y[T5]            1 
+       y[T6]            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:22:25
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 448 rows, 436 columns and 2882 nonzeros
+Variable types: 30 continuous, 406 integer (406 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 10 rows and 63 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:22:59
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 732 rows, 720 columns and 4790 nonzeros
+Variable types: 50 continuous, 670 integer (670 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 10 rows and 105 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:24:01
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 1016 rows, 1004 columns and 6698 nonzeros
+Variable types: 70 continuous, 934 integer (934 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 10 rows and 147 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:26:18
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 1016 rows, 1004 columns and 6698 nonzeros
+Variable types: 70 continuous, 934 integer (934 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 10 rows and 147 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:29:17
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 704 rows, 694 columns and 4356 nonzeros
+Variable types: 56 continuous, 638 integer (638 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 513 rows and 364 columns
+Presolve time: 0.01s
+Presolved: 191 rows, 330 columns, 1520 nonzeros
+Variable types: 14 continuous, 316 integer (316 binary)
+
+Root relaxation: objective 7.833333e+00, 185 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.83333    0   30   -0.00000    7.83333      -     -    0s
+*    0     0               0       7.0000000    7.00000  0.00%     -    0s
+
+Cutting planes:
+  Learned: 2
+  Gomory: 2
+  Cover: 1
+  GUB cover: 1
+  Zero half: 1
+
+Explored 1 nodes (474 simplex iterations) in 0.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 7 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+x[W0,('S0', 'T4')]            1 
+x[W0,('T1', 'E')]            1 
+x[W0,('T4', 'T1')]            1 
+x[W1,('S0', 'T5')]            1 
+x[W1,('T1', 'E')]            1 
+x[W1,('T5', 'T6')]            1 
+x[W1,('T6', 'T1')]            1 
+x[W2,('S0', 'T6')]            1 
+x[W2,('T1', 'E')]            1 
+x[W2,('T6', 'T1')]            1 
+x[W3,('S0', 'T6')]            1 
+x[W3,('T1', 'E')]            1 
+x[W3,('T6', 'T1')]            1 
+x[W4,('S0', 'T6')]            1 
+x[W4,('T0', 'T3')]            1 
+x[W4,('T3', 'E')]            1 
+x[W4,('T6', 'T0')]            1 
+x[W5,('S0', 'T5')]            1 
+x[W5,('T1', 'T2')]            1 
+x[W5,('T2', 'E')]            1 
+x[W5,('T5', 'T6')]            1 
+x[W5,('T6', 'T1')]            1 
+x[W6,('S0', 'E')]            1 
+    s[W0,T0]          261 
+    s[W0,T1]          153 
+    s[W0,T2]          263 
+    s[W0,T3]          352 
+    s[W0,T4]          106 
+    s[W0,T5]           10 
+    s[W0,T6]          100 
+    s[W0,T7]           30 
+    s[W1,T0]          261 
+    s[W1,T1]          153 
+    s[W1,T2]          263 
+    s[W1,T3]          352 
+    s[W1,T4]          106 
+    s[W1,T5]           10 
+    s[W1,T6]      119.696 
+    s[W1,T7]           30 
+    s[W2,T0]          261 
+    s[W2,T1]          153 
+    s[W2,T2]          263 
+    s[W2,T3]          352 
+    s[W2,T4]          106 
+    s[W2,T5]           10 
+    s[W2,T6]          100 
+    s[W2,T7]           30 
+    s[W3,T0]          261 
+    s[W3,T1]          153 
+    s[W3,T2]          263 
+    s[W3,T3]          352 
+    s[W3,T4]      135.963 
+    s[W3,T5]           10 
+    s[W3,T6]          100 
+    s[W3,T7]           30 
+    s[W4,T0]          261 
+    s[W4,T1]          153 
+    s[W4,T2]          263 
+    s[W4,T3]          352 
+    s[W4,T4]          106 
+    s[W4,T5]           10 
+    s[W4,T6]          100 
+    s[W4,T7]           30 
+    s[W5,T0]          261 
+    s[W5,T1]          153 
+    s[W5,T2]          263 
+    s[W5,T3]          352 
+    s[W5,T4]          106 
+    s[W5,T5]           10 
+    s[W5,T6]          100 
+    s[W5,T7]           30 
+    s[W6,T0]          261 
+    s[W6,T1]          153 
+    s[W6,T2]          263 
+    s[W6,T3]          352 
+    s[W6,T4]          106 
+    s[W6,T5]           10 
+    s[W6,T6]          124 
+    s[W6,T7]           30 
+       y[T0]            1 
+       y[T1]            1 
+       y[T2]            1 
+       y[T3]            1 
+       y[T4]            1 
+       y[T5]            1 
+       y[T6]            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:32:13
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 704 rows, 694 columns and 4356 nonzeros
+Variable types: 56 continuous, 638 integer (638 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 506 rows and 364 columns
+Presolve time: 0.01s
+Presolved: 198 rows, 330 columns, 1674 nonzeros
+Variable types: 14 continuous, 316 integer (316 binary)
+
+Root relaxation: objective 7.800000e+00, 158 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.80000    0   21   -0.00000    7.80000      -     -    0s
+*    0     0               0       7.0000000    7.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Zero half: 2
+
+Explored 1 nodes (257 simplex iterations) in 0.05 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 7 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+x[W0,('S0', 'T1')]            1 
+x[W0,('T0', 'T5')]            1 
+x[W0,('T1', 'T0')]            1 
+x[W0,('T5', 'E')]            1 
+x[W1,('S0', 'T1')]            1 
+x[W1,('T0', 'T5')]            1 
+x[W1,('T1', 'T0')]            1 
+x[W1,('T5', 'T6')]            1 
+x[W1,('T6', 'E')]            1 
+x[W2,('S0', 'T0')]            1 
+x[W2,('T0', 'T6')]            1 
+x[W2,('T6', 'E')]            1 
+x[W3,('S0', 'T0')]            1 
+x[W3,('T0', 'T5')]            1 
+x[W3,('T3', 'T7')]            1 
+x[W3,('T5', 'T3')]            1 
+x[W3,('T7', 'E')]            1 
+x[W4,('S0', 'T0')]            1 
+x[W4,('T0', 'T6')]            1 
+x[W4,('T6', 'E')]            1 
+x[W5,('S0', 'T0')]            1 
+x[W5,('T0', 'T5')]            1 
+x[W5,('T2', 'T3')]            1 
+x[W5,('T3', 'E')]            1 
+x[W5,('T5', 'T2')]            1 
+x[W6,('S0', 'T1')]            1 
+x[W6,('T0', 'T5')]            1 
+x[W6,('T1', 'T0')]            1 
+x[W6,('T5', 'E')]            1 
+    s[W0,T0]          106 
+    s[W0,T1]           31 
+    s[W0,T2]      297.576 
+    s[W0,T3]          314 
+    s[W0,T4]          158 
+    s[W0,T5]          194 
+    s[W0,T6]          316 
+    s[W0,T7]          344 
+    s[W1,T0]          106 
+    s[W1,T1]           31 
+    s[W1,T2]      297.576 
+    s[W1,T3]          314 
+    s[W1,T4]          158 
+    s[W1,T5]          194 
+    s[W1,T6]          316 
+    s[W1,T7]          344 
+    s[W2,T0]          106 
+    s[W2,T1]           31 
+    s[W2,T2]      297.576 
+    s[W2,T3]          314 
+    s[W2,T4]          158 
+    s[W2,T5]          194 
+    s[W2,T6]          316 
+    s[W2,T7]          344 
+    s[W3,T0]          106 
+    s[W3,T1]           31 
+    s[W3,T2]      297.576 
+    s[W3,T3]          314 
+    s[W3,T4]          158 
+    s[W3,T5]          194 
+    s[W3,T6]          316 
+    s[W3,T7]          344 
+    s[W4,T0]          106 
+    s[W4,T1]           31 
+    s[W4,T2]      297.576 
+    s[W4,T3]          314 
+    s[W4,T4]          158 
+    s[W4,T5]          194 
+    s[W4,T6]          316 
+    s[W4,T7]          344 
+    s[W5,T0]          106 
+    s[W5,T1]           31 
+    s[W5,T2]      297.576 
+    s[W5,T3]          314 
+    s[W5,T4]          158 
+    s[W5,T5]          194 
+    s[W5,T6]          316 
+    s[W5,T7]          344 
+    s[W6,T0]          106 
+    s[W6,T1]           31 
+    s[W6,T2]      297.576 
+    s[W6,T3]          314 
+    s[W6,T4]          158 
+    s[W6,T5]          194 
+    s[W6,T6]          316 
+    s[W6,T7]          344 
+       y[T0]            1 
+       y[T1]            1 
+       y[T2]            1 
+       y[T3]            1 
+       y[T5]            1 
+       y[T6]            1 
+       y[T7]            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:35:14
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 704 rows, 694 columns and 4356 nonzeros
+Variable types: 56 continuous, 638 integer (638 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 541 rows and 435 columns
+Presolve time: 0.01s
+Presolved: 163 rows, 259 columns, 1232 nonzeros
+Variable types: 0 continuous, 259 integer (259 binary)
+
+Root relaxation: objective 6.250000e+00, 183 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    6.25000    0   23   -0.00000    6.25000      -     -    0s
+H    0     0                       6.0000000    6.25000  4.17%     -    0s
+
+Explored 1 nodes (225 simplex iterations) in 0.04 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 6 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.000000000000e+00, best bound 6.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+x[W0,('S0', 'T5')]            1 
+x[W0,('T1', 'E')]            1 
+x[W0,('T3', 'T1')]            1 
+x[W0,('T4', 'T3')]            1 
+x[W0,('T5', 'T4')]            1 
+x[W1,('S0', 'T4')]            1 
+x[W1,('T1', 'E')]            1 
+x[W1,('T3', 'T1')]            1 
+x[W1,('T4', 'T3')]            1 
+x[W2,('S0', 'T2')]            1 
+x[W2,('T2', 'T3')]            1 
+x[W2,('T3', 'E')]            1 
+x[W3,('S0', 'T2')]            1 
+x[W3,('T2', 'E')]            1 
+x[W4,('S0', 'T2')]            1 
+x[W4,('T1', 'E')]            1 
+x[W4,('T2', 'T7')]            1 
+x[W4,('T7', 'T1')]            1 
+x[W5,('S0', 'T4')]            1 
+x[W5,('T1', 'E')]            1 
+x[W5,('T4', 'T7')]            1 
+x[W5,('T7', 'T1')]            1 
+x[W6,('S0', 'T4')]            1 
+x[W6,('T1', 'E')]            1 
+x[W6,('T3', 'T1')]            1 
+x[W6,('T4', 'T3')]            1 
+    s[W0,T0]          115 
+    s[W0,T1]          255 
+    s[W0,T2]           86 
+    s[W0,T3]          183 
+    s[W0,T4]           91 
+    s[W0,T5]           40 
+    s[W0,T6]           77 
+    s[W0,T7]          198 
+    s[W1,T0]          115 
+    s[W1,T1]          255 
+    s[W1,T2]           86 
+    s[W1,T3]          183 
+    s[W1,T4]           91 
+    s[W1,T5]           40 
+    s[W1,T6]           77 
+    s[W1,T7]          198 
+    s[W2,T0]          115 
+    s[W2,T1]          255 
+    s[W2,T2]           86 
+    s[W2,T3]          183 
+    s[W2,T4]           91 
+    s[W2,T5]           40 
+    s[W2,T6]           77 
+    s[W2,T7]          198 
+    s[W3,T0]          115 
+    s[W3,T1]          255 
+    s[W3,T2]           86 
+    s[W3,T3]          183 
+    s[W3,T4]           91 
+    s[W3,T5]           40 
+    s[W3,T6]           77 
+    s[W3,T7]          198 
+    s[W4,T0]          115 
+    s[W4,T1]          255 
+    s[W4,T2]           86 
+    s[W4,T3]          183 
+    s[W4,T4]           91 
+    s[W4,T5]           40 
+    s[W4,T6]           77 
+    s[W4,T7]      190.704 
+    s[W5,T0]          115 
+    s[W5,T1]          255 
+    s[W5,T2]           86 
+    s[W5,T3]          183 
+    s[W5,T4]           91 
+    s[W5,T5]           40 
+    s[W5,T6]           77 
+    s[W5,T7]      190.704 
+    s[W6,T0]          115 
+    s[W6,T1]          255 
+    s[W6,T2]           86 
+    s[W6,T3]          183 
+    s[W6,T4]           91 
+    s[W6,T5]           40 
+    s[W6,T6]           77 
+    s[W6,T7]          198 
+       y[T1]            1 
+       y[T2]            1 
+       y[T3]            1 
+       y[T4]            1 
+       y[T5]            1 
+       y[T7]            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 02/05/19 00:42:33
+
+Academic license - for non-commercial use only
+Warning: variable name "x[W0,('S0', 'T0')]" has a space
+Warning: to let Gurobi read it back, use rlp format
+Optimize a model with 704 rows, 694 columns and 4356 nonzeros
+Variable types: 56 continuous, 638 integer (638 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 8 rows and 119 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
