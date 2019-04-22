@@ -12418,3 +12418,3598 @@ p[S0,T20,K2]            1
  p[S0,D0,K3]            1 
  p[S0,D0,K4]            1 
            z            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/17/19 17:40:57
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 18022 rows, 13471 columns and 91560 nonzeros
+Variable types: 26 continuous, 13445 integer (125 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [6e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0756471
+Presolve removed 1067 rows and 710 columns
+Presolve time: 0.22s
+Presolved: 16955 rows, 12761 columns, 70825 nonzeros
+Variable types: 25 continuous, 12736 integer (6130 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   10478    4.9615153e+00   0.000000e+00   3.573447e+01      5s
+   13028    4.9624829e+00   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 4.962483e+00, 13028 iterations, 5.22 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.96248    0  270   -0.07565    4.96248  6660%     -    6s
+H    0     0                      -0.0000000    4.96248      -     -    6s
+     0     0    4.96248    0  387   -0.00000    4.96248      -     -   15s
+H    0     0                       1.9081657    4.96248   160%     -   15s
+     0     0    4.96248    0  369    1.90817    4.96248   160%     -   15s
+     0     0    4.96141    0  523    1.90817    4.96141   160%     -   19s
+H    0     0                       1.9142067    4.96141   159%     -   19s
+     0     0    4.96138    0  494    1.91421    4.96138   159%     -   22s
+     0     0    4.96057    0  557    1.91421    4.96057   159%     -   25s
+     0     0    4.96051    0  519    1.91421    4.96051   159%     -   26s
+     0     0          -    0         1.91421    4.96051   159%     -   30s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 2
+  Cover: 23
+  Implied bound: 135
+  MIR: 295
+  StrongCG: 12
+  Flow cover: 49
+  GUB cover: 8
+  Zero half: 12
+  Network: 7
+
+Explored 1 nodes (36173 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 1.91421 1.90817 -0 -0.0756471 
+
+Time limit reached
+Best objective 1.914206709302e+00, best bound 4.960514163879e+00, gap 159.1420%
+
+    Variable            x 
+-------------------------
+ x[T1,D0,K1]            1 
+ x[T2,T9,K0]            1 
+ x[T3,D2,K4]            1 
+ x[T4,T1,K1]            1 
+ x[T5,D0,K2]            1 
+ x[T6,D1,K0]            1 
+ x[T8,T3,K4]            1 
+ x[T9,T6,K0]            1 
+x[T10,T18,K0]            1 
+x[T11,D0,K2]            1 
+x[T12,T14,K4]            1 
+x[T13,T19,K3]            1 
+x[T14,T24,K4]            1 
+x[T18,T2,K0]            1 
+x[T19,D0,K3]            1 
+x[T20,T11,K2]            1 
+x[T23,T5,K2]            1 
+x[T24,T8,K4]            1 
+ x[D0,T4,K1]            1 
+x[D0,T13,K3]            1 
+x[D0,T20,K2]            1 
+x[D0,T23,K2]            1 
+ x[D0,D6,K0]            1 
+ x[D0,D8,K4]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D0,E0,K3]            1 
+ x[D0,E0,K4]            1 
+ x[D1,D0,K0]            1 
+ x[D2,D0,K4]            1 
+x[D6,T10,K0]            1 
+x[D8,T12,K4]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+ x[S0,D0,K3]            1 
+ x[S0,D0,K4]            1 
+    y[T1,K1]            1 
+    y[T2,K0]            1 
+    y[T3,K4]            1 
+    y[T4,K1]            1 
+    y[T5,K2]            1 
+    y[T6,K0]            1 
+    y[T8,K4]            1 
+    y[T9,K0]            1 
+   y[T10,K0]            1 
+   y[T11,K2]            1 
+   y[T12,K4]            1 
+   y[T13,K3]            1 
+   y[T14,K4]            1 
+   y[T18,K0]            1 
+   y[T19,K3]            1 
+   y[T20,K2]            1 
+   y[T23,K2]            1 
+   y[T24,K4]            1 
+       r[T1]      113.178 
+       r[T2]      111.543 
+       r[T3]      13.0957 
+       r[T4]      120.769 
+       r[T5]      82.0486 
+       r[T6]      38.8534 
+       r[T8]      81.5642 
+       r[T9]      47.6801 
+      r[T10]      142.563 
+      r[T11]      118.413 
+      r[T12]      138.906 
+      r[T13]      105.249 
+      r[T14]      119.292 
+      r[T18]      126.033 
+      r[T19]      95.9067 
+      r[T20]      131.865 
+      r[T23]      90.9736 
+      r[T24]      106.066 
+ p[T2,T9,K0]            2 
+ p[T4,T1,K1]            1 
+ p[T8,T3,K4]            1 
+ p[T9,T6,K0]            1 
+p[T10,T18,K0]            4 
+p[T12,T14,K4]            4 
+p[T13,T19,K3]            1 
+p[T14,T24,K4]            3 
+p[T18,T2,K0]            3 
+p[T20,T11,K2]            1 
+p[T23,T5,K2]            1 
+p[T24,T8,K4]            2 
+ p[D0,T4,K1]            2 
+p[D0,T13,K3]            2 
+p[D0,T20,K2]            2 
+p[D0,T23,K2]            2 
+ p[D0,D6,K0]            5 
+ p[D0,D8,K4]            5 
+p[D6,T10,K0]            5 
+p[D8,T12,K4]            5 
+ p[S0,D0,K0]            5 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            4 
+ p[S0,D0,K3]            2 
+ p[S0,D0,K4]            5 
+           z            2 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/18/19 09:09:28
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 18022 rows, 13471 columns and 91560 nonzeros
+Variable types: 26 continuous, 13445 integer (125 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [4e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0818705
+Presolve removed 1067 rows and 710 columns
+Presolve time: 0.33s
+Presolved: 16955 rows, 12761 columns, 70810 nonzeros
+Variable types: 25 continuous, 12736 integer (6050 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    9495    4.9549463e+00   5.724546e+01   0.000000e+00      5s
+   16133    4.9644446e+00   0.000000e+00   0.000000e+00      7s
+
+Root relaxation: objective 4.964445e+00, 16133 iterations, 6.52 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.96444    0  475   -0.08187    4.96444  6164%     -    7s
+H    0     0                      -0.0000000    4.96444      -     -    7s
+H    0     0                       2.9060244    4.96444  70.8%     -    9s
+H    0     0                       3.9228535    4.96444  26.6%     -   21s
+     0     0    4.96435    0  553    3.92285    4.96435  26.5%     -   24s
+     0     0    4.96435    0  538    3.92285    4.96435  26.5%     -   24s
+     0     0    4.96425    0  500    3.92285    4.96425  26.5%     -   26s
+     0     0    4.96425    0  496    3.92285    4.96425  26.5%     -   26s
+     0     0    4.96404    0  532    3.92285    4.96404  26.5%     -   27s
+     0     0          -    0         3.92285    4.96404  26.5%     -   30s
+
+Cutting planes:
+  Learned: 4
+  Gomory: 1
+  Cover: 19
+  Implied bound: 125
+  MIR: 83
+  StrongCG: 2
+  Flow cover: 60
+  GUB cover: 5
+  Zero half: 7
+  Network: 4
+
+Explored 1 nodes (26814 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 3.92285 2.90602 -0 -0.0818705 
+
+Time limit reached
+Best objective 3.922853493510e+00, best bound 4.964041872499e+00, gap 26.5416%
+
+    Variable            x 
+-------------------------
+ x[T0,D0,K1]            1 
+x[T1,T20,K0]            1 
+ x[T2,T1,K0]            1 
+x[T4,T15,K4]            1 
+ x[T5,T8,K3]            1 
+ x[T6,D0,K2]            1 
+x[T8,T17,K3]            1 
+ x[T9,T6,K2]            1 
+x[T11,T14,K4]            1 
+x[T13,D6,K2]            1 
+x[T14,D0,K4]            1 
+x[T15,D0,K4]            1 
+x[T16,T21,K1]            1 
+x[T17,T24,K3]            1 
+x[T18,T0,K1]            1 
+x[T20,D2,K0]            1 
+x[T21,T18,K1]            1 
+x[T22,D2,K0]            1 
+x[T23,T13,K2]            1 
+x[T24,D0,K3]            1 
+x[D0,T11,K4]            1 
+ x[D0,D6,K2]            1 
+ x[D0,D8,K1]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D0,E0,K3]            1 
+ x[D0,E0,K4]            1 
+ x[D2,T2,K0]            1 
+ x[D2,E0,K0]            1 
+ x[D4,T5,K3]            1 
+x[D6,T23,K2]            1 
+ x[D6,D9,K2]            1 
+x[D8,T16,K1]            1 
+ x[D9,T9,K2]            1 
+ x[S0,T4,K4]            1 
+x[S0,T22,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+ x[S0,D4,K3]            1 
+    y[T0,K1]            1 
+    y[T1,K0]            1 
+    y[T2,K0]            1 
+    y[T4,K4]            1 
+    y[T5,K3]            1 
+    y[T6,K2]            1 
+    y[T8,K3]            1 
+    y[T9,K2]            1 
+   y[T11,K4]            1 
+   y[T13,K2]            1 
+   y[T14,K4]            1 
+   y[T15,K4]            1 
+   y[T16,K1]            1 
+   y[T17,K3]            1 
+   y[T18,K1]            1 
+   y[T20,K0]            1 
+   y[T21,K1]            1 
+   y[T22,K0]            1 
+   y[T23,K2]            1 
+   y[T24,K3]            1 
+       r[T0]      99.2288 
+       r[T1]      132.487 
+       r[T2]       136.27 
+       r[T3]          150 
+       r[T4]      120.877 
+       r[T5]      145.365 
+       r[T6]      97.9181 
+       r[T8]      117.406 
+       r[T9]      107.807 
+      r[T10]          150 
+      r[T11]      139.555 
+      r[T12]          150 
+      r[T13]      131.313 
+      r[T14]      135.689 
+      r[T15]       113.39 
+      r[T16]      127.112 
+      r[T17]      105.571 
+      r[T18]      111.781 
+      r[T20]      126.308 
+      r[T21]      115.731 
+      r[T22]      116.224 
+      r[T23]      141.491 
+      r[T24]      92.2772 
+p[T1,T20,K0]            1 
+ p[T2,T1,K0]            2 
+p[T4,T15,K4]            3 
+ p[T5,T8,K3]            3 
+p[T8,T17,K3]            2 
+ p[T9,T6,K2]            1 
+p[T11,T14,K4]            1 
+p[T15,D0,K4]            2 
+p[T16,T21,K1]            3 
+p[T17,T24,K3]            1 
+p[T18,T0,K1]            1 
+p[T21,T18,K1]            2 
+p[T22,D2,K0]            3 
+p[T23,T13,K2]            1 
+p[D0,T11,K4]            2 
+ p[D0,D6,K2]            4 
+ p[D0,D8,K1]            4 
+ p[D2,T2,K0]            3 
+ p[D4,T5,K3]            4 
+p[D6,T23,K2]            2 
+ p[D6,D9,K2]            2 
+p[D8,T16,K1]            4 
+ p[D9,T9,K2]            2 
+ p[S0,T4,K4]            4 
+p[S0,T22,K0]            4 
+ p[S0,D0,K1]            4 
+ p[S0,D0,K2]            4 
+ p[S0,D4,K3]            4 
+           z            4 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/18/19 10:12:37
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 18022 rows, 13471 columns and 91560 nonzeros
+Variable types: 26 continuous, 13445 integer (125 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [3e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0577479
+Presolve removed 1067 rows and 710 columns
+Presolve time: 0.23s
+Presolved: 16955 rows, 12761 columns, 70815 nonzeros
+Variable types: 25 continuous, 12736 integer (6100 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   11582    4.9632421e+00   0.000000e+00   1.429377e+00      5s
+   12920    4.9633147e+00   0.000000e+00   0.000000e+00      5s
+
+Root relaxation: objective 4.963315e+00, 12920 iterations, 4.81 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.96331    0  376   -0.05775    4.96331  8695%     -    5s
+H    0     0                      -0.0000000    4.96331      -     -    5s
+H    0     0                       2.8942524    4.96331  71.5%     -    7s
+H    0     0                       2.9325869    4.96331  69.2%     -   12s
+     0     0    4.96328    0  530    2.93259    4.96328  69.2%     -   16s
+     0     0    4.96328    0  511    2.93259    4.96328  69.2%     -   17s
+     0     0    4.96238    0  476    2.93259    4.96238  69.2%     -   20s
+     0     0    4.96221    0  575    2.93259    4.96221  69.2%     -   22s
+     0     0    4.96155    0  560    2.93259    4.96155  69.2%     -   24s
+     0     0    4.96140    0  557    2.93259    4.96140  69.2%     -   25s
+     0     0    4.96008    0  594    2.93259    4.96008  69.1%     -   27s
+     0     0    4.95969    0  549    2.93259    4.95969  69.1%     -   29s
+     0     0          -    0         2.93259    4.95969  69.1%     -   30s
+
+Cutting planes:
+  Gomory: 8
+  Cover: 10
+  Implied bound: 143
+  MIR: 385
+  StrongCG: 8
+  Flow cover: 61
+  GUB cover: 12
+  Zero half: 6
+  Network: 10
+
+Explored 1 nodes (37468 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 2.93259 2.89425 -0 -0.0577479 
+
+Time limit reached
+Best objective 2.932586943167e+00, best bound 4.959690595081e+00, gap 69.1234%
+
+    Variable            x 
+-------------------------
+ x[T0,D0,K0]            1 
+ x[T1,T7,K1]            1 
+x[T2,T20,K2]            1 
+ x[T3,T0,K0]            1 
+ x[T4,E0,K3]            1 
+ x[T6,D0,K1]            1 
+ x[T7,D9,K1]            1 
+x[T11,T13,K4]            1 
+x[T13,T24,K4]            1 
+x[T14,T22,K0]            1 
+x[T16,T3,K0]            1 
+x[T17,T4,K3]            1 
+x[T20,E0,K2]            1 
+x[T21,T17,K3]            1 
+x[T22,T16,K0]            1 
+x[T23,D0,K2]            1 
+x[T24,E0,K4]            1 
+ x[D0,T2,K2]            1 
+x[D0,T14,K0]            1 
+x[D0,T23,K2]            1 
+ x[D0,D5,K4]            1 
+ x[D0,D9,K1]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+x[D5,T11,K4]            1 
+ x[D9,T1,K1]            1 
+ x[D9,T6,K1]            1 
+x[S0,T21,K3]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+ x[S0,D0,K4]            1 
+    y[T0,K0]            1 
+    y[T1,K1]            1 
+    y[T2,K2]            1 
+    y[T3,K0]            1 
+    y[T4,K3]            1 
+    y[T6,K1]            1 
+    y[T7,K1]            1 
+   y[T11,K4]            1 
+   y[T13,K4]            1 
+   y[T14,K0]            1 
+   y[T16,K0]            1 
+   y[T17,K3]            1 
+   y[T20,K2]            1 
+   y[T21,K3]            1 
+   y[T22,K0]            1 
+   y[T23,K2]            1 
+   y[T24,K4]            1 
+       r[T0]      57.6107 
+       r[T1]      126.996 
+       r[T2]      107.517 
+       r[T3]      64.0735 
+       r[T4]      85.7745 
+       r[T6]      104.479 
+       r[T7]      106.026 
+      r[T11]      146.586 
+      r[T13]      135.167 
+      r[T14]      121.483 
+      r[T15]      8.93857 
+      r[T16]       77.328 
+      r[T17]      93.3519 
+      r[T20]      88.4714 
+      r[T21]      105.682 
+      r[T22]       92.816 
+      r[T23]      129.831 
+      r[T24]      124.188 
+ p[T1,T7,K1]            1 
+p[T2,T20,K2]            1 
+ p[T3,T0,K0]            1 
+p[T11,T13,K4]            2 
+p[T13,T24,K4]            1 
+p[T14,T22,K0]            4 
+p[T16,T3,K0]            2 
+p[T17,T4,K3]            1 
+p[T21,T17,K3]            2 
+p[T22,T16,K0]            3 
+ p[D0,T2,K2]            2 
+p[D0,T14,K0]            5 
+p[D0,T23,K2]            1 
+ p[D0,D5,K4]            3 
+ p[D0,D9,K1]            3 
+p[D5,T11,K4]            3 
+ p[D9,T1,K1]            2 
+ p[D9,T6,K1]            1 
+p[S0,T21,K3]            3 
+ p[S0,D0,K0]            5 
+ p[S0,D0,K1]            3 
+ p[S0,D0,K2]            3 
+ p[S0,D0,K4]            3 
+           z            3 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 07:32:27
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 07:33:19
+
+Academic license - for non-commercial use only
+Warning: linear constraint 0 and linear constraint 5 have the same name "c1[K0]"
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 18022 rows, 13471 columns and 97435 nonzeros
+Variable types: 26 continuous, 13445 integer (125 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0573221
+Presolve removed 1067 rows and 710 columns
+Presolve time: 0.27s
+Presolved: 16955 rows, 12761 columns, 76405 nonzeros
+Variable types: 26 continuous, 12735 integer (6070 binary)
+
+Root relaxation: objective -0.000000e+00, 10 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      -0.0000000   -0.00000  0.00%     -    0s
+
+Explored 0 nodes (10 simplex iterations) in 0.60 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -0 -0.0573221 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -0.000000000000e+00, best bound -0.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D0,E0,K3]            1 
+ x[D0,E0,K4]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+ x[S0,D0,K3]            1 
+ x[S0,D0,K4]            1 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 18022 rows, 13471 columns and 98065 nonzeros
+Variable types: 26 continuous, 13445 integer (125 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0517682
+Presolve removed 1067 rows and 710 columns
+Presolve time: 0.28s
+Presolved: 16955 rows, 12761 columns, 76940 nonzeros
+Variable types: 26 continuous, 12735 integer (6070 binary)
+
+Root relaxation: objective -0.000000e+00, 10 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0      -0.0000000   -0.00000  0.00%     -    0s
+
+Explored 0 nodes (10 simplex iterations) in 0.62 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: -0 -0.0517682 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -0.000000000000e+00, best bound -0.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D0,E0,K3]            1 
+ x[D0,E0,K4]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+ x[S0,D0,K3]            1 
+ x[S0,D0,K4]            1 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 18022 rows, 13471 columns and 98065 nonzeros
+Variable types: 26 continuous, 13445 integer (125 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 1072 rows and 711 columns
+Presolve time: 0.31s
+Presolved: 16950 rows, 12760 columns, 70690 nonzeros
+Variable types: 25 continuous, 12735 integer (6070 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    6147    2.4999940e+01   9.087451e-01   0.000000e+00      5s
+    6256    2.5000000e+01   0.000000e+00   0.000000e+00      5s
+
+Root relaxation: objective 2.500000e+01, 6256 iterations, 4.88 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   25.00000    0   60   -0.00000   25.00000      -     -    9s
+H    0     0                      12.0000000   25.00000   108%     -   10s
+H    0     0                      20.0000000   25.00000  25.0%     -   13s
+     0     0   25.00000    0  390   20.00000   25.00000  25.0%     -   15s
+     0     0   25.00000    0  417   20.00000   25.00000  25.0%     -   15s
+     0     0   25.00000    0   73   20.00000   25.00000  25.0%     -   19s
+     0     0   25.00000    0  338   20.00000   25.00000  25.0%     -   21s
+     0     0   25.00000    0   51   20.00000   25.00000  25.0%     -   26s
+H    0     0                      23.0000000   25.00000  8.70%     -   30s
+
+Cutting planes:
+  Cover: 1
+  Implied bound: 129
+  MIR: 25
+  StrongCG: 3
+  Flow cover: 38
+  Zero half: 1
+
+Explored 1 nodes (52246 simplex iterations) in 30.03 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 23 20 12 -0 
+
+Time limit reached
+Best objective 2.300000000000e+01, best bound 2.500000000000e+01, gap 8.6957%
+
+    Variable            x 
+-------------------------
+ x[T0,D6,K0]            1 
+ x[T1,E0,K0]            1 
+ x[T2,D0,K4]            1 
+ x[T3,D9,K2]            1 
+ x[T4,D8,K3]            1 
+ x[T5,D6,K0]            1 
+ x[T7,D2,K4]            1 
+x[T8,T24,K2]            1 
+ x[T9,T3,K2]            1 
+x[T10,D2,K4]            1 
+x[T11,D0,K3]            1 
+x[T13,D1,K1]            1 
+x[T14,T11,K3]            1 
+x[T15,T22,K0]            1 
+x[T16,T2,K4]            1 
+x[T17,D1,K3]            1 
+x[T18,T15,K0]            1 
+x[T19,T9,K2]            1 
+x[T20,T13,K1]            1 
+x[T21,D9,K0]            1 
+x[T22,T1,K0]            1 
+x[T23,D9,K0]            1 
+x[T24,D7,K2]            1 
+ x[D0,T7,K4]            1 
+ x[D0,T8,K2]            1 
+x[D0,T16,K4]            1 
+x[D0,T20,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D0,E0,K3]            1 
+ x[D0,E0,K4]            1 
+x[D1,T23,K0]            1 
+ x[D1,D6,K1]            1 
+ x[D1,D6,K3]            1 
+x[D2,T10,K4]            1 
+ x[D2,D0,K4]            1 
+ x[D5,D0,K2]            1 
+ x[D6,T0,K0]            1 
+ x[D6,T4,K3]            1 
+x[D6,T17,K3]            1 
+ x[D6,D1,K0]            1 
+ x[D6,E0,K1]            1 
+x[D7,T19,K2]            1 
+x[D8,T14,K3]            1 
+x[D9,T18,K0]            1 
+x[D9,T21,K0]            1 
+ x[D9,D0,K2]            1 
+ x[S0,T5,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K4]            1 
+ x[S0,D5,K2]            1 
+ x[S0,D6,K3]            1 
+    y[T0,K0]            1 
+    y[T1,K0]            1 
+    y[T2,K4]            1 
+    y[T3,K2]            1 
+    y[T4,K3]            1 
+    y[T5,K0]            1 
+    y[T7,K4]            1 
+    y[T8,K2]            1 
+    y[T9,K2]            1 
+   y[T10,K4]            1 
+   y[T11,K3]            1 
+   y[T13,K1]            1 
+   y[T14,K3]            1 
+   y[T15,K0]            1 
+   y[T16,K4]            1 
+   y[T17,K3]            1 
+   y[T18,K0]            1 
+   y[T19,K2]            1 
+   y[T20,K1]            1 
+   y[T21,K0]            1 
+   y[T22,K0]            1 
+   y[T23,K0]            1 
+   y[T24,K2]            1 
+       r[T0]      132.572 
+       r[T1]      69.3208 
+       r[T2]      84.8842 
+       r[T3]      64.6987 
+       r[T4]      67.3682 
+       r[T5]      121.802 
+       r[T7]      102.065 
+       r[T8]       138.34 
+       r[T9]      97.4481 
+      r[T10]      141.294 
+      r[T11]      108.833 
+      r[T12]      19.7163 
+      r[T13]      31.3781 
+      r[T14]      130.828 
+      r[T15]      88.9457 
+      r[T16]      122.342 
+      r[T17]      135.214 
+      r[T18]      145.327 
+      r[T19]      132.244 
+      r[T20]      122.699 
+      r[T21]      141.978 
+      r[T22]      77.9067 
+      r[T23]      125.047 
+      r[T24]      96.0191 
+ p[T4,D8,K3]            2 
+ p[T5,D6,K0]            7 
+ p[T7,D2,K4]            1 
+p[T8,T24,K2]            4 
+ p[T9,T3,K2]            1 
+p[T14,T11,K3]            1 
+p[T15,T22,K0]            2 
+p[T16,T2,K4]            1 
+p[T18,T15,K0]            3 
+p[T19,T9,K2]            2 
+p[T20,T13,K1]            1 
+p[T22,T1,K0]            1 
+p[T23,D9,K0]            5 
+p[T24,D7,K2]            3 
+ p[D0,T7,K4]            2 
+ p[D0,T8,K2]            5 
+p[D0,T16,K4]            2 
+p[D0,T20,K1]            2 
+p[D1,T23,K0]            6 
+p[D2,T10,K4]            1 
+ p[D5,D0,K2]            5 
+ p[D6,T0,K0]            1 
+ p[D6,T4,K3]            3 
+p[D6,T17,K3]            1 
+ p[D6,D1,K0]            6 
+p[D7,T19,K2]            3 
+p[D8,T14,K3]            2 
+p[D9,T18,K0]            4 
+p[D9,T21,K0]            1 
+ p[S0,T5,K0]            8 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K4]            4 
+ p[S0,D5,K2]            5 
+ p[S0,D6,K3]            4 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1957 rows, 1481 columns and 10117 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [2e-04, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 168 rows and 175 columns
+Presolve time: 0.03s
+Presolved: 1789 rows, 1306 columns, 8640 nonzeros
+Variable types: 10 continuous, 1296 integer (639 binary)
+
+Root relaxation: objective 1.000000e+01, 575 iterations, 0.04 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   27   -0.00000   10.00000      -     -    0s
+H    0     0                       6.0000000   10.00000  66.7%     -    0s
+     0     0   10.00000    0   36    6.00000   10.00000  66.7%     -    0s
+H    0     0                       7.0000000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   45    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   11    7.00000   10.00000  42.9%     -    0s
+H    0     0                       8.0000000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   11    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   10    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   10    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   10    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0    7    8.00000   10.00000  25.0%     -    0s
+     0     2   10.00000    0    7    8.00000   10.00000  25.0%     -    0s
+  1086   204   10.00000   14   30    8.00000   10.00000  25.0%  50.7    5s
+  3849   479   10.00000   16   55    8.00000   10.00000  25.0%  42.6   10s
+  4150   575   10.00000   24   48    8.00000   10.00000  25.0%  47.0   15s
+  4675   464   10.00000   21   43    8.00000   10.00000  25.0%  57.5   21s
+  5098   381 infeasible   24         8.00000   10.00000  25.0%  66.8   25s
+  5998   377 infeasible   38         8.00000   10.00000  25.0%  72.5   30s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 1
+  Implied bound: 29
+  MIR: 20
+  Flow cover: 36
+  Zero half: 1
+  Network: 1
+
+Explored 6176 nodes (455539 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 8 7 6 -0 
+
+Time limit reached
+Best objective 8.000000000000e+00, best bound 1.000000000000e+01, gap 25.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D2,K0]            1 
+ x[T1,T4,K0]            1 
+ x[T2,D3,K2]            1 
+ x[T3,E0,K0]            1 
+ x[T4,T0,K0]            1 
+ x[T5,D2,K1]            1 
+ x[T8,D3,K2]            1 
+ x[T9,D3,K2]            1 
+ x[D0,T3,K0]            1 
+ x[D0,D2,K0]            1 
+ x[D0,E0,K2]            1 
+ x[D2,T1,K0]            1 
+ x[D2,D0,K0]            1 
+ x[D2,E0,K1]            1 
+ x[D3,T2,K2]            1 
+ x[D3,T9,K2]            1 
+ x[D3,D0,K2]            1 
+ x[S0,T5,K1]            1 
+ x[S0,T8,K2]            1 
+ x[S0,D0,K0]            1 
+    y[T0,K0]            1 
+    y[T1,K0]            1 
+    y[T2,K2]            1 
+    y[T3,K0]            1 
+    y[T4,K0]            1 
+    y[T5,K1]            1 
+    y[T8,K2]            1 
+    y[T9,K2]            1 
+       r[T0]      58.4216 
+       r[T1]      113.711 
+       r[T2]      128.718 
+       r[T3]      79.0315 
+       r[T4]      111.735 
+       r[T5]      96.3103 
+       r[T7]          150 
+       r[T8]      95.4482 
+       r[T9]       120.77 
+ p[T1,T4,K0]            2 
+ p[T4,T0,K0]            1 
+ p[T8,D3,K2]            2 
+ p[D0,T3,K0]            1 
+ p[D0,D2,K0]            3 
+ p[D2,T1,K0]            3 
+ p[D3,T2,K2]            1 
+ p[D3,T9,K2]            1 
+ p[S0,T5,K1]            1 
+ p[S0,T8,K2]            3 
+ p[S0,D0,K0]            4 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1957 rows, 1481 columns and 10117 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [7e-05, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 168 rows and 175 columns
+Presolve time: 0.03s
+Presolved: 1789 rows, 1306 columns, 8631 nonzeros
+Variable types: 10 continuous, 1296 integer (639 binary)
+
+Root relaxation: objective 1.000000e+01, 605 iterations, 0.04 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   40   -0.00000   10.00000      -     -    0s
+H    0     0                       6.0000000   10.00000  66.7%     -    0s
+     0     0   10.00000    0   59    6.00000   10.00000  66.7%     -    0s
+H    0     0                      10.0000000   10.00000  0.00%     -    0s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 1
+  Cover: 4
+  Implied bound: 2
+  MIR: 9
+  Flow cover: 6
+  Zero half: 1
+
+Explored 1 nodes (1927 simplex iterations) in 0.32 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 10 6 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,E0,K2]            1 
+ x[T1,D3,K2]            1 
+ x[T2,T0,K2]            1 
+ x[T3,D1,K1]            1 
+ x[T4,T1,K2]            1 
+ x[T5,T9,K2]            1 
+ x[T6,D3,K0]            1 
+ x[T7,T3,K1]            1 
+ x[T8,T6,K0]            1 
+ x[T9,T2,K2]            1 
+ x[D0,D1,K0]            1 
+ x[D0,D2,K0]            1 
+ x[D0,D2,K2]            2 
+ x[D0,D3,K1]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D1,T8,K0]            1 
+ x[D1,D2,K1]            1 
+ x[D2,D0,K0]            1 
+ x[D2,D0,K1]            1 
+ x[D2,D0,K2]            2 
+ x[D3,T5,K2]            1 
+ x[D3,T7,K1]            1 
+ x[D3,D0,K0]            1 
+ x[S0,T4,K2]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+    y[T0,K2]            1 
+    y[T1,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K1]            1 
+    y[T4,K2]            1 
+    y[T5,K2]            1 
+    y[T6,K0]            1 
+    y[T7,K1]            1 
+    y[T8,K0]            1 
+    y[T9,K2]            1 
+       r[T0]       85.048 
+       r[T1]      74.6774 
+       r[T2]      86.2447 
+       r[T3]      83.9539 
+       r[T4]      80.4178 
+       r[T5]      127.403 
+       r[T6]      37.2072 
+       r[T7]      118.153 
+       r[T8]      38.8499 
+       r[T9]      86.9603 
+ p[T1,D3,K2]            4 
+ p[T2,T0,K2]            1 
+ p[T4,T1,K2]            5 
+ p[T5,T9,K2]            3 
+ p[T7,T3,K1]            1 
+ p[T8,T6,K0]            1 
+ p[T9,T2,K2]            2 
+ p[D0,D1,K0]            2 
+ p[D0,D3,K1]            2 
+ p[D1,T8,K0]            2 
+ p[D3,T5,K2]            4 
+ p[D3,T7,K1]            2 
+ p[S0,T4,K2]            6 
+ p[S0,D0,K0]            2 
+ p[S0,D0,K1]            2 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1957 rows, 1481 columns and 10117 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [7e-05, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 168 rows and 175 columns
+Presolve time: 0.03s
+Presolved: 1789 rows, 1306 columns, 8634 nonzeros
+Variable types: 10 continuous, 1296 integer (627 binary)
+
+Root relaxation: objective 1.000000e+01, 487 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                      10.0000000   30.00000   200%     -    0s
+     0     0          -    0        10.00000   10.00000  0.00%     -    0s
+
+Explored 0 nodes (1699 simplex iterations) in 0.18 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 10 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,T6,K1]            1 
+ x[T1,D2,K0]            1 
+ x[T2,T1,K0]            1 
+ x[T3,D3,K1]            1 
+ x[T4,D2,K1]            1 
+ x[T5,T4,K1]            1 
+ x[T6,T5,K1]            1 
+ x[T7,D2,K2]            1 
+ x[T8,T2,K0]            1 
+ x[T9,D2,K2]            1 
+ x[D0,T7,K2]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D1,D2,K1]            1 
+ x[D2,T0,K1]            1 
+ x[D2,T3,K1]            1 
+ x[D2,T8,K0]            1 
+ x[D2,D0,K2]            2 
+ x[D2,D1,K1]            1 
+ x[D2,E0,K0]            1 
+ x[D3,D0,K1]            1 
+ x[S0,T9,K2]            1 
+ x[S0,D2,K0]            1 
+ x[S0,D2,K1]            1 
+    y[T0,K1]            1 
+    y[T1,K0]            1 
+    y[T2,K0]            1 
+    y[T3,K1]            1 
+    y[T4,K1]            1 
+    y[T5,K1]            1 
+    y[T6,K1]            1 
+    y[T7,K2]            1 
+    y[T8,K0]            1 
+    y[T9,K2]            1 
+       r[T0]      96.2218 
+       r[T1]      52.7559 
+       r[T2]      89.3764 
+       r[T3]       119.02 
+       r[T4]      43.7301 
+       r[T5]      46.3643 
+       r[T6]      90.5581 
+       r[T7]      123.686 
+       r[T8]      92.2008 
+       r[T9]      71.2157 
+ p[T0,T6,K1]            3 
+ p[T2,T1,K0]            1 
+ p[T5,T4,K1]            1 
+ p[T6,T5,K1]            2 
+ p[T8,T2,K0]            2 
+ p[T9,D2,K2]            1 
+ p[D0,T7,K2]            1 
+ p[D1,D2,K1]            2 
+ p[D2,T0,K1]            4 
+ p[D2,T3,K1]            1 
+ p[D2,T8,K0]            3 
+ p[D2,D0,K2]            1 
+ p[D2,D1,K1]            2 
+ p[S0,T9,K2]            2 
+ p[S0,D2,K0]            3 
+ p[S0,D2,K1]            5 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1957 rows, 1481 columns and 10117 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 417 rows and 355 columns
+Presolve time: 0.08s
+Presolved: 1540 rows, 1126 columns, 7320 nonzeros
+Variable types: 10 continuous, 1116 integer (537 binary)
+
+Root relaxation: objective 1.000000e+01, 519 iterations, 0.05 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   17   -0.00000   10.00000      -     -    0s
+H    0     0                       6.0000000   10.00000  66.7%     -    0s
+     0     0   10.00000    0   67    6.00000   10.00000  66.7%     -    0s
+     0     0   10.00000    0   32    6.00000   10.00000  66.7%     -    0s
+H    0     0                       7.0000000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   55    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   47    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   46    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   38    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   26    7.00000   10.00000  42.9%     -    0s
+     0     2   10.00000    0   26    7.00000   10.00000  42.9%     -    0s
+  2451   357 infeasible   19         7.00000   10.00000  42.9%  29.6    5s
+  3373   483    8.00000   17  178    7.00000   10.00000  42.9%  36.2   10s
+  3964   478 infeasible   31         7.00000   10.00000  42.9%  42.0   15s
+  5342   447    9.00000   40   36    7.00000   10.00000  42.9%  45.9   20s
+  6627   649 infeasible   40         7.00000   10.00000  42.9%  49.5   25s
+  7906   798   10.00000   40   66    7.00000   10.00000  42.9%  53.1   30s
+
+Cutting planes:
+  Cover: 1
+  Implied bound: 38
+  Projected implied bound: 1
+  MIR: 15
+  Flow cover: 37
+  Inf proof: 2
+
+Explored 8193 nodes (444320 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 7 6 -0 
+
+Time limit reached
+Best objective 7.000000000000e+00, best bound 1.000000000000e+01, gap 42.8571%
+
+    Variable            x 
+-------------------------
+ x[T0,D2,K1]            1 
+ x[T1,D0,K2]            1 
+ x[T3,E0,K2]            1 
+ x[T4,D1,K1]            1 
+ x[T5,T9,K0]            1 
+ x[T6,D0,K2]            1 
+ x[T9,D0,K0]            1 
+ x[D0,T0,K1]            1 
+ x[D0,T1,K2]            1 
+ x[D0,T3,K2]            1 
+ x[D0,T5,K0]            1 
+ x[D0,E0,K0]            1 
+ x[D1,E0,K1]            1 
+ x[D2,T4,K1]            1 
+ x[S0,T6,K2]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+    y[T0,K1]            1 
+    y[T1,K2]            1 
+    y[T3,K2]            1 
+    y[T4,K1]            1 
+    y[T5,K0]            1 
+    y[T6,K2]            1 
+    y[T9,K0]            1 
+       r[T0]      135.565 
+       r[T1]      121.405 
+       r[T2]          150 
+       r[T3]      99.7843 
+       r[T4]      78.3498 
+       r[T5]      109.739 
+       r[T6]      91.7807 
+       r[T7]          150 
+       r[T8]      77.2903 
+       r[T9]      74.3599 
+ p[T0,D2,K1]            1 
+ p[T5,T9,K0]            1 
+ p[T6,D0,K2]            2 
+ p[D0,T0,K1]            2 
+ p[D0,T1,K2]            1 
+ p[D0,T3,K2]            1 
+ p[D0,T5,K0]            2 
+ p[D2,T4,K1]            1 
+ p[S0,T6,K2]            3 
+ p[S0,D0,K0]            2 
+ p[S0,D0,K1]            2 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 07:50:49
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1957 rows, 1481 columns and 10117 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [2e-04, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 168 rows and 175 columns
+Presolve time: 0.03s
+Presolved: 1789 rows, 1306 columns, 8640 nonzeros
+Variable types: 10 continuous, 1296 integer (627 binary)
+
+Root relaxation: objective 1.000000e+01, 600 iterations, 0.05 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   41   -0.00000   10.00000      -     -    0s
+H    0     0                       5.0000000   10.00000   100%     -    0s
+H    0     0                       7.0000000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   73    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   75    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   34    7.00000   10.00000  42.9%     -    0s
+H    0     0                       8.0000000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   19    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   36    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   37    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     2   10.00000    0   49    8.00000   10.00000  25.0%     -    1s
+  2228   144   10.00000    7   52    8.00000   10.00000  25.0%  27.3    5s
+  2982   290   10.00000   19   61    8.00000   10.00000  25.0%  35.0   10s
+  3790   228   10.00000   16   71    8.00000   10.00000  25.0%  48.3   15s
+  4347   307   10.00000   20   63    8.00000   10.00000  25.0%  57.2   20s
+  5048   420   10.00000   41   28    8.00000   10.00000  25.0%  63.4   25s
+  6293   674   10.00000   42   35    8.00000   10.00000  25.0%  68.8   30s
+
+Cutting planes:
+  Implied bound: 40
+  MIR: 14
+  Flow cover: 41
+  Network: 1
+
+Explored 6647 nodes (468416 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 8 7 5 -0 
+
+Time limit reached
+Best objective 8.000000000000e+00, best bound 1.000000000000e+01, gap 25.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T2,T8,K2]            1 
+ x[T3,E0,K1]            1 
+ x[T4,D0,K0]            1 
+ x[T5,T3,K1]            1 
+ x[T6,D3,K0]            1 
+ x[T8,T0,K2]            1 
+ x[T9,D0,K2]            1 
+ x[D0,T2,K2]            1 
+ x[D0,D1,K1]            1 
+ x[D0,D3,K0]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K2]            1 
+ x[D1,T4,K0]            1 
+ x[D1,T5,K1]            1 
+ x[D1,T6,K0]            1 
+ x[D1,T9,K2]            1 
+ x[D3,D1,K0]            2 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K1]            1 
+    y[T4,K0]            1 
+    y[T5,K1]            1 
+    y[T6,K0]            1 
+    y[T8,K2]            1 
+    y[T9,K2]            1 
+       r[T0]      73.4375 
+       r[T1]          150 
+       r[T2]      126.313 
+       r[T3]      74.6193 
+       r[T4]      65.5502 
+       r[T5]      92.4429 
+       r[T6]      111.091 
+       r[T7]      96.5838 
+       r[T8]      93.4243 
+       r[T9]      79.1808 
+ p[T0,D1,K2]            1 
+ p[T2,T8,K2]            3 
+ p[T4,D0,K0]            1 
+ p[T5,T3,K1]            1 
+ p[T8,T0,K2]            2 
+ p[D0,T2,K2]            4 
+ p[D0,D1,K1]            2 
+ p[D0,D3,K0]            3 
+ p[D1,T4,K0]            2 
+ p[D1,T5,K1]            2 
+ p[D1,T6,K0]            1 
+ p[D1,T9,K2]            1 
+ p[D3,D1,K0]            3 
+ p[S0,D0,K0]            2 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            4 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 07:52:18
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1957 rows, 1481 columns and 10045 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [8e-04, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 168 rows and 175 columns
+Presolve time: 0.03s
+Presolved: 1789 rows, 1306 columns, 8640 nonzeros
+Variable types: 10 continuous, 1296 integer (627 binary)
+
+Root relaxation: objective 1.000000e+01, 600 iterations, 0.06 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   41   -0.00000   10.00000      -     -    0s
+H    0     0                       5.0000000   10.00000   100%     -    0s
+H    0     0                       7.0000000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   73    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   75    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   34    7.00000   10.00000  42.9%     -    0s
+H    0     0                       8.0000000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   19    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   36    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   37    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     2   10.00000    0   49    8.00000   10.00000  25.0%     -    1s
+  2228   144   10.00000    7   52    8.00000   10.00000  25.0%  27.3    5s
+  2998   294   10.00000   21   11    8.00000   10.00000  25.0%  35.8   10s
+  3920   261   10.00000   24   46    8.00000   10.00000  25.0%  50.9   16s
+  4591   370   10.00000   35   26    8.00000   10.00000  25.0%  58.9   20s
+  6137   669    9.00000   42   39    8.00000   10.00000  25.0%  68.1   25s
+  7728   983    9.97566   34   39    8.00000   10.00000  25.0%  68.3   30s
+
+Cutting planes:
+  Implied bound: 40
+  MIR: 14
+  Flow cover: 41
+  Network: 1
+
+Explored 7917 nodes (547914 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 8 7 5 -0 
+
+Time limit reached
+Best objective 8.000000000000e+00, best bound 1.000000000000e+01, gap 25.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T2,T8,K2]            1 
+ x[T3,E0,K1]            1 
+ x[T4,D0,K0]            1 
+ x[T5,T3,K1]            1 
+ x[T6,D3,K0]            1 
+ x[T8,T0,K2]            1 
+ x[T9,D0,K2]            1 
+ x[D0,T2,K2]            1 
+ x[D0,D1,K1]            1 
+ x[D0,D3,K0]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K2]            1 
+ x[D1,T4,K0]            1 
+ x[D1,T5,K1]            1 
+ x[D1,T6,K0]            1 
+ x[D1,T9,K2]            1 
+ x[D3,D1,K0]            2 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K1]            1 
+    y[T4,K0]            1 
+    y[T5,K1]            1 
+    y[T6,K0]            1 
+    y[T8,K2]            1 
+    y[T9,K2]            1 
+       r[T0]      73.4375 
+       r[T1]          150 
+       r[T2]      126.313 
+       r[T3]      74.6193 
+       r[T4]      65.5502 
+       r[T5]      92.4429 
+       r[T6]      111.091 
+       r[T7]      96.5838 
+       r[T8]      93.4243 
+       r[T9]      79.1808 
+ p[T0,D1,K2]            1 
+ p[T2,T8,K2]            3 
+ p[T4,D0,K0]            1 
+ p[T5,T3,K1]            1 
+ p[T8,T0,K2]            2 
+ p[D0,T2,K2]            4 
+ p[D0,D1,K1]            2 
+ p[D0,D3,K0]            3 
+ p[D1,T4,K0]            2 
+ p[D1,T5,K1]            2 
+ p[D1,T6,K0]            1 
+ p[D1,T9,K2]            1 
+ p[D3,D1,K0]            3 
+ p[S0,D0,K0]            2 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            4 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1957 rows, 1481 columns and 11521 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [2e-04, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 168 rows and 175 columns
+Presolve time: 0.03s
+Presolved: 1789 rows, 1306 columns, 8640 nonzeros
+Variable types: 10 continuous, 1296 integer (627 binary)
+
+Root relaxation: objective 1.000000e+01, 600 iterations, 0.04 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   41   -0.00000   10.00000      -     -    0s
+H    0     0                       5.0000000   10.00000   100%     -    0s
+H    0     0                       7.0000000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   73    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   75    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   34    7.00000   10.00000  42.9%     -    0s
+H    0     0                       8.0000000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   19    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   36    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   37    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     2   10.00000    0   49    8.00000   10.00000  25.0%     -    1s
+  1239   138   10.00000   12   36    8.00000   10.00000  25.0%  29.4    5s
+  2926   276   10.00000   26   12    8.00000   10.00000  25.0%  27.3   10s
+  3407   226   10.00000   32   61    8.00000   10.00000  25.0%  45.1   15s
+  4157   290   10.00000   29   67    8.00000   10.00000  25.0%  55.0   20s
+  5636   605    9.95992   42   30    8.00000   10.00000  25.0%  61.5   25s
+  6715   784 infeasible   31         8.00000   10.00000  25.0%  69.2   30s
+
+Cutting planes:
+  Implied bound: 40
+  MIR: 14
+  Flow cover: 41
+  Network: 1
+
+Explored 6876 nodes (494119 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 8 7 5 -0 
+
+Time limit reached
+Best objective 8.000000000000e+00, best bound 1.000000000000e+01, gap 25.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T2,T8,K2]            1 
+ x[T3,E0,K1]            1 
+ x[T4,D0,K0]            1 
+ x[T5,T3,K1]            1 
+ x[T6,D3,K0]            1 
+ x[T8,T0,K2]            1 
+ x[T9,D0,K2]            1 
+ x[D0,T2,K2]            1 
+ x[D0,D1,K1]            1 
+ x[D0,D3,K0]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K2]            1 
+ x[D1,T4,K0]            1 
+ x[D1,T5,K1]            1 
+ x[D1,T6,K0]            1 
+ x[D1,T9,K2]            1 
+ x[D3,D1,K0]            2 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K1]            1 
+    y[T4,K0]            1 
+    y[T5,K1]            1 
+    y[T6,K0]            1 
+    y[T8,K2]            1 
+    y[T9,K2]            1 
+       r[T0]      73.4375 
+       r[T1]          150 
+       r[T2]      126.313 
+       r[T3]      74.6193 
+       r[T4]      65.5502 
+       r[T5]      92.4429 
+       r[T6]      111.091 
+       r[T7]      96.5838 
+       r[T8]      93.4243 
+       r[T9]      79.1808 
+ p[T0,D1,K2]            1 
+ p[T2,T8,K2]            3 
+ p[T4,D0,K0]            1 
+ p[T5,T3,K1]            1 
+ p[T8,T0,K2]            2 
+ p[D0,T2,K2]            4 
+ p[D0,D1,K1]            2 
+ p[D0,D3,K0]            3 
+ p[D1,T4,K0]            2 
+ p[D1,T5,K1]            2 
+ p[D1,T6,K0]            1 
+ p[D1,T9,K2]            1 
+ p[D3,D1,K0]            3 
+ p[S0,D0,K0]            2 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            4 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1955 rows, 1481 columns and 10115 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [2e-04, 1e+06]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 166 rows and 175 columns
+Presolve time: 0.03s
+Presolved: 1789 rows, 1306 columns, 8640 nonzeros
+Variable types: 10 continuous, 1296 integer (627 binary)
+
+Root relaxation: objective 1.000000e+01, 600 iterations, 0.05 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   41   -0.00000   10.00000      -     -    0s
+H    0     0                       5.0000000   10.00000   100%     -    0s
+H    0     0                       7.0000000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   73    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   75    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   34    7.00000   10.00000  42.9%     -    0s
+H    0     0                       8.0000000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   19    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   36    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   37    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     2   10.00000    0   49    8.00000   10.00000  25.0%     -    1s
+  1128   146   10.00000   19   28    8.00000   10.00000  25.0%  29.6    5s
+  2937   285   10.00000   14   31    8.00000   10.00000  25.0%  32.9   10s
+  3544   224   10.00000   33   77    8.00000   10.00000  25.0%  46.4   15s
+  4157   291   10.00000   29   67    8.00000   10.00000  25.0%  55.0   20s
+  5311   459   10.00000   32   28    8.00000   10.00000  25.0%  65.5   25s
+  6663   785 infeasible   33         8.00000   10.00000  25.0%  69.4   30s
+
+Cutting planes:
+  Implied bound: 40
+  MIR: 14
+  Flow cover: 41
+  Network: 1
+
+Explored 6903 nodes (485452 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 8 7 5 -0 
+
+Time limit reached
+Best objective 8.000000000000e+00, best bound 1.000000000000e+01, gap 25.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T2,T8,K2]            1 
+ x[T3,E0,K1]            1 
+ x[T4,D0,K0]            1 
+ x[T5,T3,K1]            1 
+ x[T6,D3,K0]            1 
+ x[T8,T0,K2]            1 
+ x[T9,D0,K2]            1 
+ x[D0,T2,K2]            1 
+ x[D0,D1,K1]            1 
+ x[D0,D3,K0]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K2]            1 
+ x[D1,T4,K0]            1 
+ x[D1,T5,K1]            1 
+ x[D1,T6,K0]            1 
+ x[D1,T9,K2]            1 
+ x[D3,D1,K0]            2 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K1]            1 
+    y[T4,K0]            1 
+    y[T5,K1]            1 
+    y[T6,K0]            1 
+    y[T8,K2]            1 
+    y[T9,K2]            1 
+       r[T0]      73.4375 
+       r[T1]          150 
+       r[T2]      126.313 
+       r[T3]      74.6193 
+       r[T4]      65.5502 
+       r[T5]      92.4429 
+       r[T6]      111.091 
+       r[T7]      96.5838 
+       r[T8]      93.4243 
+       r[T9]      79.1808 
+ p[T0,D1,K2]            1 
+ p[T2,T8,K2]            3 
+ p[T4,D0,K0]            1 
+ p[T5,T3,K1]            1 
+ p[T8,T0,K2]            2 
+ p[D0,T2,K2]            4 
+ p[D0,D1,K1]            2 
+ p[D0,D3,K0]            3 
+ p[D1,T4,K0]            2 
+ p[D1,T5,K1]            2 
+ p[D1,T6,K0]            1 
+ p[D1,T9,K2]            1 
+ p[D3,D1,K0]            3 
+ p[S0,D0,K0]            2 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            4 
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1955 rows, 1481 columns and 10115 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [2e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 166 rows and 175 columns
+Presolve time: 0.03s
+Presolved: 1789 rows, 1306 columns, 8640 nonzeros
+Variable types: 10 continuous, 1296 integer (627 binary)
+
+Root relaxation: objective 1.000000e+01, 600 iterations, 0.04 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   41   -0.00000   10.00000      -     -    0s
+H    0     0                       5.0000000   10.00000   100%     -    0s
+H    0     0                       7.0000000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   73    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   75    7.00000   10.00000  42.9%     -    0s
+     0     0   10.00000    0   34    7.00000   10.00000  42.9%     -    0s
+H    0     0                       8.0000000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   34    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   19    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   36    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   37    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   57    8.00000   10.00000  25.0%     -    1s
+     0     2   10.00000    0   49    8.00000   10.00000  25.0%     -    1s
+  1630   123   10.00000   17   25    8.00000   10.00000  25.0%  29.1    5s
+  2945   289   10.00000   15   42    8.00000   10.00000  25.0%  33.1   10s
+  3544   224   10.00000   33   77    8.00000   10.00000  25.0%  46.4   15s
+  4271   302    9.00000   36   54    8.00000   10.00000  25.0%  56.3   20s
+  5311   459   10.00000   32   28    8.00000   10.00000  25.0%  65.5   25s
+  6918   862    9.00000   35   24    8.00000   10.00000  25.0%  68.8   30s
+
+Cutting planes:
+  Implied bound: 40
+  MIR: 14
+  Flow cover: 41
+  Network: 1
+
+Explored 7164 nodes (501060 simplex iterations) in 30.02 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 8 7 5 -0 
+
+Time limit reached
+Best objective 8.000000000000e+00, best bound 1.000000000000e+01, gap 25.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T2,T8,K2]            1 
+ x[T3,E0,K1]            1 
+ x[T4,D0,K0]            1 
+ x[T5,T3,K1]            1 
+ x[T6,D3,K0]            1 
+ x[T8,T0,K2]            1 
+ x[T9,D0,K2]            1 
+ x[D0,T2,K2]            1 
+ x[D0,D1,K1]            1 
+ x[D0,D3,K0]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K2]            1 
+ x[D1,T4,K0]            1 
+ x[D1,T5,K1]            1 
+ x[D1,T6,K0]            1 
+ x[D1,T9,K2]            1 
+ x[D3,D1,K0]            2 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K1]            1 
+    y[T4,K0]            1 
+    y[T5,K1]            1 
+    y[T6,K0]            1 
+    y[T8,K2]            1 
+    y[T9,K2]            1 
+       r[T0]      73.4375 
+       r[T1]          150 
+       r[T2]      126.313 
+       r[T3]      74.6193 
+       r[T4]      65.5502 
+       r[T5]      92.4429 
+       r[T6]      111.091 
+       r[T7]      96.5838 
+       r[T8]      93.4243 
+       r[T9]      79.1808 
+ p[T0,D1,K2]            1 
+ p[T2,T8,K2]            3 
+ p[T4,D0,K0]            1 
+ p[T5,T3,K1]            1 
+ p[T8,T0,K2]            2 
+ p[D0,T2,K2]            4 
+ p[D0,D1,K1]            2 
+ p[D0,D3,K0]            3 
+ p[D1,T4,K0]            2 
+ p[D1,T5,K1]            2 
+ p[D1,T6,K0]            1 
+ p[D1,T9,K2]            1 
+ p[D3,D1,K0]            3 
+ p[S0,D0,K0]            2 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            4 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:04:21
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 1955 rows, 1481 columns and 10115 nonzeros
+Variable types: 11 continuous, 1470 integer (30 binary)
+Coefficient statistics:
+  Matrix range     [8e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 166 rows and 175 columns
+Presolve time: 0.04s
+Presolved: 1789 rows, 1306 columns, 8640 nonzeros
+Variable types: 10 continuous, 1296 integer (633 binary)
+
+Root relaxation: objective 1.000000e+01, 569 iterations, 0.05 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   10.00000    0   16   -0.00000   10.00000      -     -    0s
+H    0     0                       5.0000000   10.00000   100%     -    0s
+     0     0   10.00000    0   67    5.00000   10.00000   100%     -    0s
+H    0     0                       8.0000000   10.00000  25.0%     -    0s
+     0     0   10.00000    0   26    8.00000   10.00000  25.0%     -    0s
+H    0     0                       9.0000000   10.00000  11.1%     -    0s
+     0     0   10.00000    0   13    9.00000   10.00000  11.1%     -    0s
+     0     0   10.00000    0   16    9.00000   10.00000  11.1%     -    0s
+     0     0   10.00000    0   19    9.00000   10.00000  11.1%     -    0s
+     0     0   10.00000    0   18    9.00000   10.00000  11.1%     -    0s
+     0     0   10.00000    0   19    9.00000   10.00000  11.1%     -    0s
+     0     0   10.00000    0    5    9.00000   10.00000  11.1%     -    0s
+     0     2   10.00000    0    5    9.00000   10.00000  11.1%     -    0s
+   113    47   10.00000   24   40    9.00000   10.00000  11.1%   202    5s
+  1856   280   10.00000   50   13    9.00000   10.00000  11.1%  77.2   10s
+  5429   741   10.00000   49   25    9.00000   10.00000  11.1%  59.4   15s
+  8662  1034   10.00000   29   36    9.00000   10.00000  11.1%  59.1   20s
+ 10466  1519 infeasible   42         9.00000   10.00000  11.1%  54.8   25s
+ 11635  1258   10.00000   34   27    9.00000   10.00000  11.1%  58.5   30s
+
+Cutting planes:
+  Learned: 1
+  Implied bound: 14
+  MIR: 3
+  Flow cover: 15
+  GUB cover: 1
+
+Explored 11764 nodes (694412 simplex iterations) in 30.04 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 9 8 5 -0 
+
+Time limit reached
+Best objective 9.000000000000e+00, best bound 1.000000000000e+01, gap 11.1111%
+
+    Variable            x 
+-------------------------
+ x[T0,D2,K2]            1 
+ x[T1,T8,K2]            1 
+ x[T2,D0,K0]            1 
+ x[T3,D1,K0]            1 
+ x[T4,D2,K1]            1 
+ x[T5,D0,K1]            1 
+ x[T6,D3,K0]            1 
+ x[T8,T0,K2]            1 
+ x[T9,D2,K2]            1 
+ x[D0,T1,K2]            1 
+ x[D0,T2,K0]            1 
+ x[D0,T6,K0]            1 
+ x[D0,D2,K1]            1 
+ x[D1,E0,K0]            1 
+ x[D2,T4,K1]            1 
+ x[D2,T9,K2]            1 
+ x[D2,E0,K1]            1 
+ x[D2,E0,K2]            1 
+ x[D3,T3,K0]            1 
+ x[S0,T5,K1]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T1,K2]            1 
+    y[T2,K0]            1 
+    y[T3,K0]            1 
+    y[T4,K1]            1 
+    y[T5,K1]            1 
+    y[T6,K0]            1 
+    y[T8,K2]            1 
+    y[T9,K2]            1 
+       r[T0]      38.7352 
+       r[T1]      83.8888 
+       r[T2]      140.821 
+       r[T3]      117.909 
+       r[T4]      134.507 
+       r[T5]      101.071 
+       r[T6]      92.7417 
+       r[T8]       58.722 
+       r[T9]      112.364 
+ p[T0,D2,K2]            1 
+ p[T1,T8,K2]            3 
+ p[T5,D0,K1]            1 
+ p[T6,D3,K0]            1 
+ p[T8,T0,K2]            2 
+ p[D0,T1,K2]            4 
+ p[D0,T2,K0]            1 
+ p[D0,T6,K0]            2 
+ p[D0,D2,K1]            1 
+ p[D2,T4,K1]            1 
+ p[D2,T9,K2]            1 
+ p[D3,T3,K0]            1 
+ p[S0,T5,K1]            2 
+ p[S0,D0,K0]            3 
+ p[S0,D0,K2]            4 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:05:56
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4767 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [8e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3810 nonzeros
+Variable types: 5 continuous, 681 integer (300 binary)
+
+Root relaxation: objective 5.000000e+00, 195 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0    9   -0.00000    5.00000      -     -    0s
+H    0     0                       4.0000000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   19    4.00000    5.00000  25.0%     -    0s
+H    0     0                       5.0000000    5.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 10
+  Flow cover: 8
+
+Explored 1 nodes (633 simplex iterations) in 0.11 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 5 4 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D4,K1]            1 
+ x[T1,D3,K2]            1 
+ x[T2,D4,K2]            1 
+ x[T3,E0,K0]            1 
+ x[T4,D3,K1]            1 
+ x[D0,T2,K2]            1 
+ x[D0,D1,K2]            1 
+ x[D1,D0,K2]            1 
+ x[D3,T1,K2]            1 
+ x[D3,D4,K0]            5 
+ x[D3,D4,K1]            5 
+ x[D3,D4,K2]            1 
+ x[D4,T4,K1]            1 
+ x[D4,D3,K0]            5 
+ x[D4,D3,K1]            4 
+ x[D4,D3,K2]            1 
+ x[D4,E0,K1]            1 
+ x[D4,E0,K2]            1 
+ x[S0,T0,K1]            1 
+ x[S0,T3,K0]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K0]            1 
+    y[T4,K1]            1 
+       r[T0]      106.391 
+       r[T1]      124.833 
+       r[T2]      98.4203 
+       r[T3]      132.176 
+       r[T4]      121.647 
+ p[T0,D4,K1]            1 
+ p[T2,D4,K2]            1 
+ p[D0,T2,K2]            2 
+ p[D3,T1,K2]            1 
+ p[D4,T4,K1]            1 
+ p[D4,D3,K2]            1 
+ p[S0,T0,K1]            2 
+ p[S0,T3,K0]            1 
+ p[S0,D0,K2]            2 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:09:30
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:09:59
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 999 rows, 813 columns and 4769 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [8e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 169 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3810 nonzeros
+Variable types: 5 continuous, 681 integer (300 binary)
+
+Root relaxation: objective 5.000000e+00, 195 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0    9   -0.00000    5.00000      -     -    0s
+H    0     0                       4.0000000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   19    4.00000    5.00000  25.0%     -    0s
+H    0     0                       5.0000000    5.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 10
+  Flow cover: 8
+
+Explored 1 nodes (633 simplex iterations) in 0.11 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 5 4 -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D4,K1]            1 
+ x[T1,D3,K2]            1 
+ x[T2,D4,K2]            1 
+ x[T3,E0,K0]            1 
+ x[T4,D3,K1]            1 
+ x[D0,T2,K2]            1 
+ x[D0,D1,K2]            1 
+ x[D1,D0,K2]            1 
+ x[D3,T1,K2]            1 
+ x[D3,D4,K0]            5 
+ x[D3,D4,K1]            5 
+ x[D3,D4,K2]            1 
+ x[D4,T4,K1]            1 
+ x[D4,D3,K0]            5 
+ x[D4,D3,K1]            4 
+ x[D4,D3,K2]            1 
+ x[D4,E0,K1]            1 
+ x[D4,E0,K2]            1 
+ x[S0,T0,K1]            1 
+ x[S0,T3,K0]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K0]            1 
+    y[T4,K1]            1 
+       r[T0]      106.391 
+       r[T1]      124.833 
+       r[T2]      98.4203 
+       r[T3]      132.176 
+       r[T4]      121.647 
+ p[T0,D4,K1]            1 
+ p[T2,D4,K2]            1 
+ p[D0,T2,K2]            2 
+ p[D3,T1,K2]            1 
+ p[D4,T4,K1]            1 
+ p[D4,D3,K2]            1 
+ p[S0,T0,K1]            2 
+ p[S0,T3,K0]            1 
+ p[S0,D0,K2]            2 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:15:28
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 999 rows, 813 columns and 4769 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [8e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000018
+Presolve removed 166 rows and 126 columns
+Presolve time: 0.02s
+Presolved: 833 rows, 687 columns, 4116 nonzeros
+Variable types: 6 continuous, 681 integer (300 binary)
+
+Root relaxation: objective 4.999998e+00, 269 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0   98   -0.00000    5.00000      -     -    0s
+H    0     0                       2.9999971    5.00000  66.7%     -    0s
+H    0     0                       4.9999979    5.00000  0.00%     -    0s
+
+Explored 1 nodes (487 simplex iterations) in 0.12 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 5 3 -1.84007e-06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999997896744e+00, best bound 4.999998445732e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D4,K0]            1 
+ x[T1,T4,K0]            1 
+ x[T2,D0,K2]            1 
+ x[T3,D0,K0]            1 
+ x[T4,T3,K0]            1 
+ x[D0,T2,K2]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D4,T0,K0]            1 
+ x[D4,T1,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+ x[S0,D4,K0]            1 
+    y[T0,K0]            1 
+    y[T1,K0]            1 
+    y[T2,K2]            1 
+    y[T3,K0]            1 
+    y[T4,K0]            1 
+       r[T0]      141.656 
+       r[T1]      114.665 
+       r[T2]      98.4203 
+       r[T3]       20.248 
+       r[T4]      76.2279 
+ p[T1,T4,K0]            2 
+ p[T4,T3,K0]            1 
+ p[D0,T2,K2]            1 
+ p[D4,T0,K0]            1 
+ p[D4,T1,K0]            3 
+ p[S0,D0,K2]            1 
+ p[S0,D4,K0]            4 
+           z    0.0210326 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:18:13
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 999 rows, 813 columns and 4769 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000015
+Presolve removed 166 rows and 126 columns
+Presolve time: 0.02s
+Presolved: 833 rows, 687 columns, 4122 nonzeros
+Variable types: 6 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999998e+00, 310 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0   92   -0.00000    5.00000      -     -    0s
+H    0     0                       0.9999985    5.00000   400%     -    0s
+H    0     0                       2.9999979    5.00000  66.7%     -    0s
+     0     0    5.00000    0   99    3.00000    5.00000  66.7%     -    0s
+H    0     0                       3.9999978    5.00000  25.0%     -    0s
+     0     0    5.00000    0   87    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   86    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   93    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   81    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   79    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   72    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   72    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   75    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   75    4.00000    5.00000  25.0%     -    0s
+H    0     0                       4.9999971    5.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  Implied bound: 1
+  MIR: 10
+  Flow cover: 2
+  Zero half: 1
+
+Explored 1 nodes (1555 simplex iterations) in 0.36 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 5 4 3 ... -1.47948e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999997086029e+00, best bound 4.999997962487e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,T1,K0]            1 
+ x[T1,D3,K0]            1 
+ x[T2,D1,K0]            1 
+ x[T3,D0,K1]            1 
+ x[T4,D1,K2]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D1,T0,K0]            1 
+ x[D1,T2,K0]            1 
+ x[D1,D2,K2]            1 
+ x[D2,T3,K1]            1 
+ x[D2,E0,K2]            1 
+ x[D3,D0,K0]            1 
+ x[S0,T4,K2]            1 
+ x[S0,D1,K0]            1 
+ x[S0,D2,K1]            1 
+    y[T0,K0]            1 
+    y[T1,K0]            1 
+    y[T2,K0]            1 
+    y[T3,K1]            1 
+    y[T4,K2]            1 
+       r[T0]      122.421 
+       r[T1]      47.5016 
+       r[T2]      117.291 
+       r[T3]      77.7761 
+       r[T4]      64.1794 
+ p[T0,T1,K0]            1 
+ p[D1,T0,K0]            2 
+ p[D1,T2,K0]            1 
+ p[D2,T3,K1]            1 
+ p[S0,T4,K2]            1 
+ p[S0,D1,K0]            3 
+ p[S0,D2,K1]            1 
+           z    0.0291397 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:19:06
+
+Academic license - for non-commercial use only
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter Cuts to 0
+   Prev: -1  Min: -1  Max: 3  Default: -1
+Optimize a model with 976 rows, 802 columns and 4358 nonzeros
+Variable types: 5 continuous, 797 integer (5 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [9e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 171 rows and 126 columns
+Presolve time: 0.02s
+Presolved: 805 rows, 676 columns, 3778 nonzeros
+Variable types: 5 continuous, 671 integer (278 binary)
+
+Root relaxation: objective 4.974861e+00, 504 iterations, 0.02 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.97486    0   13          -    4.97486      -     -    0s
+     0     0    4.97486    0   12          -    4.97486      -     -    0s
+     0     2    4.97486    0   12          -    4.97486      -     -    0s
+*   37    21              17       4.9726514    4.97482  0.04%  16.4    0s
+*   62     7               4       4.9734923    4.97381  0.01%  14.0    0s
+
+Explored 69 nodes (1652 simplex iterations) in 0.28 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 4.97349 4.97265 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.973492310128e+00, best bound 4.973814834033e+00, gap 0.0065%
+
+    Variable            x 
+-------------------------
+ x[T0,D2,K2]            1 
+ x[T1,D0,K2]            1 
+ x[T2,T4,K2]            1 
+ x[T3,T0,K2]            1 
+ x[T4,T1,K2]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D2,T2,K2]            1 
+ x[S0,T3,K2]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+       y[T0]            1 
+       y[T1]            1 
+       y[T2]            1 
+       y[T3]            1 
+       y[T4]            1 
+       r[T0]       67.242 
+       r[T1]      57.3128 
+       r[T2]        140.5 
+       r[T3]      128.853 
+       r[T4]       108.18 
+ p[T0,D2,K2]            3 
+ p[T2,T4,K2]            2 
+ p[T3,T0,K2]            4 
+ p[T4,T1,K2]            1 
+ p[D2,T2,K2]            3 
+ p[S0,T3,K2]            5 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:23:38
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:24:03
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4767 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3813 nonzeros
+Variable types: 5 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999995e+00, 226 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.99999    0   91   -0.00000    4.99999      -     -    0s
+H    0     0                       0.9999971    4.99999   400%     -    0s
+H    0     0                       2.9999961    4.99999  66.7%     -    0s
+H    0     0                       3.9999949    4.99999  25.0%     -    0s
+     0     0    4.99999    0   84    3.99999    4.99999  25.0%     -    0s
+H    0     0                       4.9999936    4.99999  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 16
+  Flow cover: 2
+
+Explored 1 nodes (353 simplex iterations) in 0.14 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 4.99999 3.99999 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999993556552e+00, best bound 4.999994723222e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D0,K1]            1 
+ x[T1,D0,K1]            1 
+ x[T2,D0,K2]            1 
+ x[T3,D0,K2]            1 
+ x[T4,D1,K0]            1 
+ x[D0,T0,K1]            1 
+ x[D0,D4,K1]            1 
+ x[D0,D4,K2]            2 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D1,D0,K0]            1 
+ x[D2,T1,K1]            1 
+ x[D4,T2,K2]            1 
+ x[D4,T3,K2]            1 
+ x[D4,D2,K1]            1 
+ x[S0,T4,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K1]            1 
+    y[T2,K2]            1 
+    y[T3,K2]            1 
+    y[T4,K0]            1 
+       r[T0]      104.264 
+       r[T1]       101.44 
+       r[T2]      102.085 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[D0,T0,K1]            1 
+ p[D0,D4,K1]            1 
+ p[D0,D4,K2]            2 
+ p[D2,T1,K1]            1 
+ p[D4,T2,K2]            1 
+ p[D4,T3,K2]            1 
+ p[D4,D2,K1]            1 
+ p[S0,T4,K0]            1 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            2 
+           z    0.0644345 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 10:41:27
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4767 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3813 nonzeros
+Variable types: 5 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999995e+00, 226 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.99999    0   91   -0.00000    4.99999      -     -    0s
+H    0     0                       0.9999971    4.99999   400%     -    0s
+H    0     0                       2.9999961    4.99999  66.7%     -    0s
+H    0     0                       3.9999949    4.99999  25.0%     -    0s
+     0     0    4.99999    0   84    3.99999    4.99999  25.0%     -    0s
+H    0     0                       4.9999936    4.99999  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 16
+  Flow cover: 2
+
+Explored 1 nodes (353 simplex iterations) in 0.14 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 4.99999 3.99999 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999993556552e+00, best bound 4.999994723222e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D0,K1]            1 
+ x[T1,D0,K1]            1 
+ x[T2,D0,K2]            1 
+ x[T3,D0,K2]            1 
+ x[T4,D1,K0]            1 
+ x[D0,T0,K1]            1 
+ x[D0,D4,K1]            1 
+ x[D0,D4,K2]            2 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D1,D0,K0]            1 
+ x[D2,T1,K1]            1 
+ x[D4,T2,K2]            1 
+ x[D4,T3,K2]            1 
+ x[D4,D2,K1]            1 
+ x[S0,T4,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K1]            1 
+    y[T2,K2]            1 
+    y[T3,K2]            1 
+    y[T4,K0]            1 
+       r[T0]      104.264 
+       r[T1]       101.44 
+       r[T2]      102.085 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[D0,T0,K1]            1 
+ p[D0,D4,K1]            1 
+ p[D0,D4,K2]            2 
+ p[D2,T1,K1]            1 
+ p[D4,T2,K2]            1 
+ p[D4,T3,K2]            1 
+ p[D4,D2,K1]            1 
+ p[S0,T4,K0]            1 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            2 
+           z    0.0644345 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:10:11
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:10:43
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4737 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 155 rows and 100 columns
+Presolve time: 0.03s
+Presolved: 842 rows, 713 columns, 3864 nonzeros
+Variable types: 5 continuous, 708 integer (300 binary)
+
+Root relaxation: objective 4.999996e+00, 221 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0  102   -0.00000    5.00000      -     -    0s
+H    0     0                       0.9999991    5.00000   400%     -    0s
+H    0     0                       2.9999971    5.00000  66.7%     -    0s
+     0     0    5.00000    0  102    3.00000    5.00000  66.7%     -    0s
+H    0     0                       2.9999971    5.00000  66.7%     -    0s
+H    0     0                       4.9999953    5.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 16
+  Flow cover: 2
+  Mod-K: 2
+
+Explored 1 nodes (429 simplex iterations) in 0.19 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 5 3 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999995274994e+00, best bound 4.999995411323e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T1,T0,K2]            1 
+ x[T2,D2,K1]            1 
+ x[T3,E0,K2]            1 
+ x[T4,T2,K1]            1 
+ x[D0,T4,K1]            1 
+ x[D0,D4,K2]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D1,D0,K2]            1 
+ x[D2,D0,K1]            1 
+ x[D4,T1,K2]            1 
+ x[D4,T3,K2]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D4,K2]            1 
+ x[E0,D0,K0]            1 
+ x[E0,D0,K1]            1 
+ x[E0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T1,K2]            1 
+    y[T2,K1]            1 
+    y[T3,K2]            1 
+    y[T4,K1]            1 
+       r[T0]      28.6554 
+       r[T1]      103.575 
+       r[T2]      31.8593 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[T1,T0,K2]            1 
+ p[T3,E0,K2]            1 
+ p[T4,T2,K1]            1 
+ p[D0,T4,K1]            2 
+ p[D0,D4,K2]            1 
+ p[D0,E0,K1]            1 
+ p[D4,T1,K2]            2 
+ p[D4,T3,K2]            2 
+ p[S0,D0,K1]            2 
+ p[S0,D4,K2]            3 
+ p[E0,D0,K1]            1 
+ p[E0,D0,K2]            1 
+           z    0.0472501 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:13:51
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4737 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 60 rows and 4 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:17:56
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 991 rows, 813 columns and 4701 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 107 rows and 10 columns
+Presolve time: 0.02s
+Presolved: 884 rows, 803 columns, 4128 nonzeros
+Variable types: 5 continuous, 798 integer (342 binary)
+
+Root relaxation: objective 4.999995e+00, 46 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+H    0     0                       4.9999947   15.00000   200%     -    0s
+     0     0          -    0         4.99999    4.99999  0.00%     -    0s
+
+Explored 0 nodes (95 simplex iterations) in 0.06 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 4.99999 -1.71282e-06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999994659975e+00, best bound 4.999994659975e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,S0,K0]            1 
+ x[T1,S0,K0]            1 
+ x[T2,S0,K1]            1 
+ x[T3,S0,K0]            1 
+ x[T4,S0,K1]            1 
+ x[D0,S0,K0]            1 
+ x[D0,S0,K1]            1 
+ x[D0,S0,K2]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+ x[S0,E0,K0]            1 
+ x[E0,T0,K0]            1 
+ x[E0,T1,K0]            1 
+ x[E0,T2,K1]            1 
+ x[E0,T3,K0]            1 
+ x[E0,T4,K1]            1 
+ x[E0,D0,K0]            1 
+ x[E0,D0,K1]            1 
+ x[E0,D0,K2]            1 
+ x[E0,S0,K0]            1 
+ x[E0,S0,K1]            1 
+ x[E0,S0,K2]            1 
+    y[T0,K0]            1 
+    y[T1,K0]            1 
+    y[T2,K1]            1 
+    y[T3,K0]            1 
+    y[T4,K1]            1 
+ p[D0,E0,K1]            2 
+ p[S0,D0,K1]            2 
+ p[S0,E0,K0]            3 
+ p[E0,T0,K0]            1 
+ p[E0,T1,K0]            1 
+ p[E0,T2,K1]            1 
+ p[E0,T3,K0]            1 
+ p[E0,T4,K1]            1 
+           z    0.0534002 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:20:47
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 994 rows, 813 columns and 4734 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 152 rows and 100 columns
+Presolve time: 0.03s
+Presolved: 842 rows, 713 columns, 3864 nonzeros
+Variable types: 5 continuous, 708 integer (300 binary)
+
+Root relaxation: objective 4.999996e+00, 221 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0  102   -0.00000    5.00000      -     -    0s
+H    0     0                       0.9999991    5.00000   400%     -    0s
+H    0     0                       2.9999971    5.00000  66.7%     -    0s
+     0     0    5.00000    0  102    3.00000    5.00000  66.7%     -    0s
+H    0     0                       2.9999971    5.00000  66.7%     -    0s
+H    0     0                       4.9999953    5.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 16
+  Flow cover: 2
+  Mod-K: 2
+
+Explored 1 nodes (429 simplex iterations) in 0.16 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 5 3 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999995274994e+00, best bound 4.999995411323e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T1,T0,K2]            1 
+ x[T2,D2,K1]            1 
+ x[T3,E0,K2]            1 
+ x[T4,T2,K1]            1 
+ x[D0,T4,K1]            1 
+ x[D0,D4,K2]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D1,D0,K2]            1 
+ x[D2,D0,K1]            1 
+ x[D4,T1,K2]            1 
+ x[D4,T3,K2]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D4,K2]            1 
+ x[E0,D0,K0]            1 
+ x[E0,D0,K1]            1 
+ x[E0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T1,K2]            1 
+    y[T2,K1]            1 
+    y[T3,K2]            1 
+    y[T4,K1]            1 
+       r[T0]      28.6554 
+       r[T1]      103.575 
+       r[T2]      31.8593 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[T1,T0,K2]            1 
+ p[T3,E0,K2]            1 
+ p[T4,T2,K1]            1 
+ p[D0,T4,K1]            2 
+ p[D0,D4,K2]            1 
+ p[D0,E0,K1]            1 
+ p[D4,T1,K2]            2 
+ p[D4,T3,K2]            2 
+ p[S0,D0,K1]            2 
+ p[S0,D4,K2]            3 
+ p[E0,D0,K1]            1 
+ p[E0,D0,K2]            1 
+           z    0.0472501 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:31:04
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 994 rows, 813 columns and 4734 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 152 rows and 100 columns
+Presolve time: 0.03s
+Presolved: 842 rows, 713 columns, 3864 nonzeros
+Variable types: 5 continuous, 708 integer (300 binary)
+
+Root relaxation: objective 4.999996e+00, 221 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0  102   -0.00000    5.00000      -     -    0s
+H    0     0                       0.9999991    5.00000   400%     -    0s
+H    0     0                       2.9999971    5.00000  66.7%     -    0s
+     0     0    5.00000    0  102    3.00000    5.00000  66.7%     -    0s
+H    0     0                       2.9999971    5.00000  66.7%     -    0s
+H    0     0                       4.9999953    5.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 16
+  Flow cover: 2
+  Mod-K: 2
+
+Explored 1 nodes (429 simplex iterations) in 0.18 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 5 3 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999995274994e+00, best bound 4.999995411323e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T1,T0,K2]            1 
+ x[T2,D2,K1]            1 
+ x[T3,E0,K2]            1 
+ x[T4,T2,K1]            1 
+ x[D0,T4,K1]            1 
+ x[D0,D4,K2]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D1,D0,K2]            1 
+ x[D2,D0,K1]            1 
+ x[D4,T1,K2]            1 
+ x[D4,T3,K2]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D4,K2]            1 
+ x[E0,D0,K0]            1 
+ x[E0,D0,K1]            1 
+ x[E0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T1,K2]            1 
+    y[T2,K1]            1 
+    y[T3,K2]            1 
+    y[T4,K1]            1 
+       r[T0]      28.6554 
+       r[T1]      103.575 
+       r[T2]      31.8593 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[T1,T0,K2]            1 
+ p[T3,E0,K2]            1 
+ p[T4,T2,K1]            1 
+ p[D0,T4,K1]            2 
+ p[D0,D4,K2]            1 
+ p[D0,E0,K1]            1 
+ p[D4,T1,K2]            2 
+ p[D4,T3,K2]            2 
+ p[S0,D0,K1]            2 
+ p[S0,D4,K2]            3 
+ p[E0,D0,K1]            1 
+ p[E0,D0,K2]            1 
+           z    0.0472501 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:35:10
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4737 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 60 rows and 4 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:37:08
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4737 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 60 rows and 4 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:39:27
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 996 rows, 813 columns and 4704 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 60 rows and 4 columns
+Presolve time: 0.00s
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+    Variable            x 
+-------------------------
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 11:40:39
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4767 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3813 nonzeros
+Variable types: 5 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999995e+00, 226 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.99999    0   91   -0.00000    4.99999      -     -    0s
+H    0     0                       0.9999971    4.99999   400%     -    0s
+H    0     0                       2.9999961    4.99999  66.7%     -    0s
+H    0     0                       3.9999949    4.99999  25.0%     -    0s
+     0     0    4.99999    0   84    3.99999    4.99999  25.0%     -    0s
+H    0     0                       4.9999936    4.99999  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 16
+  Flow cover: 2
+
+Explored 1 nodes (353 simplex iterations) in 0.16 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 4.99999 3.99999 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999993556552e+00, best bound 4.999994723222e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D0,K1]            1 
+ x[T1,D0,K1]            1 
+ x[T2,D0,K2]            1 
+ x[T3,D0,K2]            1 
+ x[T4,D1,K0]            1 
+ x[D0,T0,K1]            1 
+ x[D0,D4,K1]            1 
+ x[D0,D4,K2]            2 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D1,D0,K0]            1 
+ x[D2,T1,K1]            1 
+ x[D4,T2,K2]            1 
+ x[D4,T3,K2]            1 
+ x[D4,D2,K1]            1 
+ x[S0,T4,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K1]            1 
+    y[T2,K2]            1 
+    y[T3,K2]            1 
+    y[T4,K0]            1 
+       r[T0]      104.264 
+       r[T1]       101.44 
+       r[T2]      102.085 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[D0,T0,K1]            1 
+ p[D0,D4,K1]            1 
+ p[D0,D4,K2]            2 
+ p[D2,T1,K1]            1 
+ p[D4,T2,K2]            1 
+ p[D4,T3,K2]            1 
+ p[D4,D2,K1]            1 
+ p[S0,T4,K0]            1 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            2 
+           z    0.0644345 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 12:18:44
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4767 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3813 nonzeros
+Variable types: 5 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999995e+00, 226 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.99999    0   91   -0.00000    4.99999      -     -    0s
+H    0     0                       0.9999971    4.99999   400%     -    0s
+H    0     0                       2.9999961    4.99999  66.7%     -    0s
+H    0     0                       3.9999949    4.99999  25.0%     -    0s
+     0     0    4.99999    0   84    3.99999    4.99999  25.0%     -    0s
+H    0     0                       4.9999936    4.99999  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 16
+  Flow cover: 2
+
+Explored 1 nodes (353 simplex iterations) in 0.15 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 4.99999 3.99999 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999993556552e+00, best bound 4.999994723222e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D0,K1]            1 
+ x[T1,D0,K1]            1 
+ x[T2,D0,K2]            1 
+ x[T3,D0,K2]            1 
+ x[T4,D1,K0]            1 
+ x[D0,T0,K1]            1 
+ x[D0,D4,K1]            1 
+ x[D0,D4,K2]            2 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D1,D0,K0]            1 
+ x[D2,T1,K1]            1 
+ x[D4,T2,K2]            1 
+ x[D4,T3,K2]            1 
+ x[D4,D2,K1]            1 
+ x[S0,T4,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K1]            1 
+    y[T2,K2]            1 
+    y[T3,K2]            1 
+    y[T4,K0]            1 
+       r[T0]      104.264 
+       r[T1]       101.44 
+       r[T2]      102.085 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[D0,T0,K1]            1 
+ p[D0,D4,K1]            1 
+ p[D0,D4,K2]            2 
+ p[D2,T1,K1]            1 
+ p[D4,T2,K2]            1 
+ p[D4,T3,K2]            1 
+ p[D4,D2,K1]            1 
+ p[S0,T4,K0]            1 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            2 
+           z    0.0644345 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 12:26:38
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 12:27:53
+
+Academic license - for non-commercial use only
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 12:29:06
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 3967 rows, 813 columns and 10167 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 3967 rows and 813 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -0.000000000000e+00, best bound -0.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[S0,E0,K0]            1 
+ x[S0,E0,K1]            1 
+ x[S0,E0,K2]            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 12:33:24
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 3697 rows, 813 columns and 9627 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 3697 rows and 813 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -0.000000000000e+00, best bound -0.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[S0,E0,K0]            1 
+ x[S0,E0,K1]            1 
+ x[S0,E0,K2]            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 12:34:20
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 3697 rows, 813 columns and 9627 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000000
+Presolve removed 3697 rows and 813 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.03 seconds
+Thread count was 1 (of 4 available processors)
+
+Solution count 1: -0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -0.000000000000e+00, best bound -0.000000000000e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[S0,E0,K0]            1 
+ x[S0,E0,K1]            1 
+ x[S0,E0,K2]            1 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 12:41:47
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4767 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3813 nonzeros
+Variable types: 5 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999995e+00, 226 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.99999    0   91   -0.00000    4.99999      -     -    0s
+H    0     0                       0.9999971    4.99999   400%     -    0s
+H    0     0                       2.9999961    4.99999  66.7%     -    0s
+H    0     0                       3.9999949    4.99999  25.0%     -    0s
+     0     0    4.99999    0   84    3.99999    4.99999  25.0%     -    0s
+H    0     0                       4.9999936    4.99999  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 16
+  Flow cover: 2
+
+Explored 1 nodes (353 simplex iterations) in 0.16 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 4.99999 3.99999 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999993556552e+00, best bound 4.999994723222e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D0,K1]            1 
+ x[T1,D0,K1]            1 
+ x[T2,D0,K2]            1 
+ x[T3,D0,K2]            1 
+ x[T4,D1,K0]            1 
+ x[D0,T0,K1]            1 
+ x[D0,D4,K1]            1 
+ x[D0,D4,K2]            2 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D1,D0,K0]            1 
+ x[D2,T1,K1]            1 
+ x[D4,T2,K2]            1 
+ x[D4,T3,K2]            1 
+ x[D4,D2,K1]            1 
+ x[S0,T4,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K1]            1 
+    y[T2,K2]            1 
+    y[T3,K2]            1 
+    y[T4,K0]            1 
+       r[T0]      104.264 
+       r[T1]       101.44 
+       r[T2]      102.085 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[D0,T0,K1]            1 
+ p[D0,D4,K1]            1 
+ p[D0,D4,K2]            2 
+ p[D2,T1,K1]            1 
+ p[D4,T2,K2]            1 
+ p[D4,T3,K2]            1 
+ p[D4,D2,K1]            1 
+ p[S0,T4,K0]            1 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            2 
+           z    0.0644345 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 12:48:39
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4809 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000045
+Presolve removed 176 rows and 133 columns
+Presolve time: 0.03s
+Presolved: 821 rows, 680 columns, 3786 nonzeros
+Variable types: 5 continuous, 675 integer (285 binary)
+
+Root relaxation: objective 4.999992e+00, 213 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.99999    0   95   -0.00000    4.99999      -     -    0s
+H    0     0                       1.9999937    4.99999   150%     -    0s
+H    0     0                       3.9999937    4.99999  25.0%     -    0s
+     0     0    4.99999    0   95    3.99999    4.99999  25.0%     -    0s
+H    0     0                       4.9999936    4.99999  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 17
+  Flow cover: 6
+
+Explored 1 nodes (350 simplex iterations) in 0.16 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 4.99999 3.99999 1.99999 -4.50556e-06 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999993617588e+00, best bound 4.999993617588e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K2]            1 
+ x[T1,E0,K2]            1 
+ x[T2,D2,K1]            1 
+ x[T3,D4,K0]            1 
+ x[T4,T2,K1]            1 
+ x[D0,T0,K2]            1 
+ x[D0,T4,K1]            1 
+ x[D1,D4,K2]            1 
+ x[D2,E0,K1]            1 
+ x[D3,E0,K0]            1 
+ x[D4,T1,K2]            1 
+ x[D4,D3,K0]            1 
+ x[S0,T3,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K2]            1 
+    y[T1,K2]            1 
+    y[T2,K1]            1 
+    y[T3,K0]            1 
+    y[T4,K1]            1 
+       r[T0]      104.264 
+       r[T1]      103.575 
+       r[T2]      31.8593 
+       r[T3]        125.3 
+       r[T4]      64.1794 
+ p[T0,D1,K2]            1 
+ p[T4,T2,K1]            1 
+ p[D0,T0,K2]            2 
+ p[D0,T4,K1]            2 
+ p[D1,D4,K2]            1 
+ p[D4,T1,K2]            1 
+ p[S0,T3,K0]            1 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            2 
+           z    0.0638241 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 13:00:27
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4809 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [5e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000019
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3816 nonzeros
+Variable types: 5 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999995e+00, 206 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0   92   -0.00000    5.00000      -     -    0s
+H    0     0                       2.9999963    5.00000  66.7%     -    0s
+H    0     0                       3.9999952    5.00000  25.0%     -    0s
+H    0     0                       3.9999962    5.00000  25.0%     -    0s
+     0     0    4.99999    0   79    4.00000    4.99999  25.0%     -    0s
+     0     0    4.99999    0   69    4.00000    4.99999  25.0%     -    0s
+     0     0    4.99999    0   80    4.00000    4.99999  25.0%     -    0s
+     0     0    4.99999    0   78    4.00000    4.99999  25.0%     -    0s
+     0     0    4.99999    0   81    4.00000    4.99999  25.0%     -    0s
+     0     0    4.99999    0   81    4.00000    4.99999  25.0%     -    0s
+H    0     0                       4.9999950    4.99999  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 16
+
+Explored 1 nodes (469 simplex iterations) in 0.22 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 4.99999 4 4 ... -1.86346e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999994953835e+00, best bound 4.999994953835e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K1]            1 
+ x[T1,E0,K2]            1 
+ x[T2,D2,K2]            1 
+ x[T3,D4,K0]            1 
+ x[T4,T1,K2]            1 
+ x[D0,D4,K1]            1 
+ x[D0,E0,K0]            1 
+ x[D1,T0,K1]            1 
+ x[D1,D4,K1]            1 
+ x[D2,T4,K2]            1 
+ x[D3,D1,K1]            1 
+ x[D4,T2,K2]            1 
+ x[D4,D0,K0]            1 
+ x[D4,D3,K1]            1 
+ x[D4,E0,K1]            1 
+ x[S0,T3,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D4,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K0]            1 
+    y[T4,K2]            1 
+       r[T0]      122.421 
+       r[T1]      57.5407 
+       r[T2]      102.085 
+       r[T3]      131.013 
+       r[T4]      108.408 
+ p[T2,D2,K2]            2 
+ p[T4,T1,K2]            1 
+ p[D0,D4,K1]            1 
+ p[D1,T0,K1]            1 
+ p[D2,T4,K2]            2 
+ p[D3,D1,K1]            1 
+ p[D4,T2,K2]            3 
+ p[D4,D3,K1]            1 
+ p[S0,T3,K0]            1 
+ p[S0,D0,K1]            1 
+ p[S0,D4,K2]            3 
+           z    0.0504616 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 13:01:48
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4809 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [1e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3816 nonzeros
+Variable types: 5 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999995e+00, 205 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0   84   -0.00000    5.00000      -     -    0s
+H    0     0                      -0.0000001    5.00000      -     -    0s
+H    0     0                       0.9999993    5.00000   400%     -    0s
+H    0     0                       3.9999953    5.00000  25.0%     -    0s
+     0     0    5.00000    0   82    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   72    4.00000    5.00000  25.0%     -    0s
+     0     0    5.00000    0   70    4.00000    5.00000  25.0%     -    0s
+H    0     0                       4.9999935    5.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 18
+  Flow cover: 2
+  Zero half: 2
+
+Explored 1 nodes (435 simplex iterations) in 0.18 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 4.99999 4 0.999999 ... -1.74093e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999993516580e+00, best bound 4.999995013723e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D1,K1]            1 
+ x[T1,D0,K2]            1 
+ x[T2,D0,K2]            1 
+ x[T3,T0,K1]            1 
+ x[T4,D3,K0]            1 
+ x[D0,T2,K2]            1 
+ x[D0,D4,K2]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K2]            1 
+ x[D1,D4,K1]            1 
+ x[D3,T1,K2]            1 
+ x[D3,D0,K0]            1 
+ x[D3,D0,K2]            1 
+ x[D4,D3,K2]            2 
+ x[D4,E0,K1]            1 
+ x[S0,T3,K1]            1 
+ x[S0,T4,K0]            1 
+ x[S0,D4,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K2]            1 
+    y[T2,K2]            1 
+    y[T3,K1]            1 
+    y[T4,K0]            1 
+       r[T0]      67.7528 
+       r[T1]      122.151 
+       r[T2]      90.6594 
+       r[T3]      129.363 
+       r[T4]      63.4831 
+ p[T3,T0,K1]            1 
+ p[D0,T2,K2]            1 
+ p[D3,T1,K2]            1 
+ p[D3,D0,K2]            1 
+ p[D4,D3,K2]            2 
+ p[S0,T3,K1]            2 
+ p[S0,T4,K0]            1 
+ p[S0,D4,K2]            2 
+           z    0.0648342 
+
+Gurobi 8.1.0 (win64, Python) logging started 04/22/19 13:03:47
+
+Academic license - for non-commercial use only
+Changed value of parameter TimeLimit to 30.0
+   Prev: 1e+100  Min: 0.0  Max: 1e+100  Default: 1e+100
+Optimize a model with 997 rows, 813 columns and 4767 nonzeros
+Variable types: 6 continuous, 807 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [9e-04, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 1e+06]
+Found heuristic solution: objective -0.0000017
+Presolve removed 167 rows and 127 columns
+Presolve time: 0.02s
+Presolved: 830 rows, 686 columns, 3813 nonzeros
+Variable types: 5 continuous, 681 integer (288 binary)
+
+Root relaxation: objective 4.999995e+00, 226 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.99999    0   91   -0.00000    4.99999      -     -    0s
+H    0     0                       0.9999971    4.99999   400%     -    0s
+H    0     0                       2.9999961    4.99999  66.7%     -    0s
+H    0     0                       3.9999949    4.99999  25.0%     -    0s
+     0     0    4.99999    0   84    3.99999    4.99999  25.0%     -    0s
+H    0     0                       4.9999936    4.99999  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 3
+  MIR: 16
+  Flow cover: 2
+
+Explored 1 nodes (353 simplex iterations) in 0.15 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 4.99999 3.99999 3 ... -1.71282e-06
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.999993556552e+00, best bound 4.999994723222e+00, gap 0.0000%
+
+    Variable            x 
+-------------------------
+ x[T0,D0,K1]            1 
+ x[T1,D0,K1]            1 
+ x[T2,D0,K2]            1 
+ x[T3,D0,K2]            1 
+ x[T4,D1,K0]            1 
+ x[D0,T0,K1]            1 
+ x[D0,D4,K1]            1 
+ x[D0,D4,K2]            2 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[D0,E0,K2]            1 
+ x[D1,D0,K0]            1 
+ x[D2,T1,K1]            1 
+ x[D4,T2,K2]            1 
+ x[D4,T3,K2]            1 
+ x[D4,D2,K1]            1 
+ x[S0,T4,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K1]            1 
+    y[T2,K2]            1 
+    y[T3,K2]            1 
+    y[T4,K0]            1 
+       r[T0]      104.264 
+       r[T1]       101.44 
+       r[T2]      102.085 
+       r[T3]      117.251 
+       r[T4]      64.1794 
+ p[D0,T0,K1]            1 
+ p[D0,D4,K1]            1 
+ p[D0,D4,K2]            2 
+ p[D2,T1,K1]            1 
+ p[D4,T2,K2]            1 
+ p[D4,T3,K2]            1 
+ p[D4,D2,K1]            1 
+ p[S0,T4,K0]            1 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            2 
+           z    0.0644345 
