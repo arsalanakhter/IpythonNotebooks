@@ -1,4 +1,4 @@
-\ Model TOBasicTaskFlowBasedSubtourArcBasedFuel
+\ Model TOBasicLazySubtourArcBasedFuel
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Maximize
   - 0.00749192237166433 x[T0,T1,K0] - 0.00749192237166433 x[T0,T1,K1]
@@ -404,211 +404,7 @@ Maximize
    - 0.00728823779607165 x[E0,D1,K2] - 0.00369799344077056 x[E0,D2,K0]
    - 0.00369799344077056 x[E0,D2,K1] - 0.00369799344077056 x[E0,D2,K2]
    + y[T0] + y[T1] + y[T2] + y[T3] + y[T4] + y[T5] + y[T6] + y[T7] + y[T8]
-   + y[T9] + y[T10] + y[T11] + 0 q[T0,T1,K0] + 0 q[T0,T1,K1]
-   + 0 q[T0,T1,K2] + 0 q[T0,T2,K0] + 0 q[T0,T2,K1] + 0 q[T0,T2,K2]
-   + 0 q[T0,T3,K0] + 0 q[T0,T3,K1] + 0 q[T0,T3,K2] + 0 q[T0,T4,K0]
-   + 0 q[T0,T4,K1] + 0 q[T0,T4,K2] + 0 q[T0,T5,K0] + 0 q[T0,T5,K1]
-   + 0 q[T0,T5,K2] + 0 q[T0,T6,K0] + 0 q[T0,T6,K1] + 0 q[T0,T6,K2]
-   + 0 q[T0,T7,K0] + 0 q[T0,T7,K1] + 0 q[T0,T7,K2] + 0 q[T0,T8,K0]
-   + 0 q[T0,T8,K1] + 0 q[T0,T8,K2] + 0 q[T0,T9,K0] + 0 q[T0,T9,K1]
-   + 0 q[T0,T9,K2] + 0 q[T0,T10,K0] + 0 q[T0,T10,K1] + 0 q[T0,T10,K2]
-   + 0 q[T0,T11,K0] + 0 q[T0,T11,K1] + 0 q[T0,T11,K2] + 0 q[T0,D0,K0]
-   + 0 q[T0,D0,K1] + 0 q[T0,D0,K2] + 0 q[T0,D1,K0] + 0 q[T0,D1,K1]
-   + 0 q[T0,D1,K2] + 0 q[T0,D2,K0] + 0 q[T0,D2,K1] + 0 q[T0,D2,K2]
-   + 0 q[T0,S0,K0] + 0 q[T0,S0,K1] + 0 q[T0,S0,K2] + 0 q[T0,E0,K0]
-   + 0 q[T0,E0,K1] + 0 q[T0,E0,K2] + 0 q[T1,T0,K0] + 0 q[T1,T0,K1]
-   + 0 q[T1,T0,K2] + 0 q[T1,T2,K0] + 0 q[T1,T2,K1] + 0 q[T1,T2,K2]
-   + 0 q[T1,T3,K0] + 0 q[T1,T3,K1] + 0 q[T1,T3,K2] + 0 q[T1,T4,K0]
-   + 0 q[T1,T4,K1] + 0 q[T1,T4,K2] + 0 q[T1,T5,K0] + 0 q[T1,T5,K1]
-   + 0 q[T1,T5,K2] + 0 q[T1,T6,K0] + 0 q[T1,T6,K1] + 0 q[T1,T6,K2]
-   + 0 q[T1,T7,K0] + 0 q[T1,T7,K1] + 0 q[T1,T7,K2] + 0 q[T1,T8,K0]
-   + 0 q[T1,T8,K1] + 0 q[T1,T8,K2] + 0 q[T1,T9,K0] + 0 q[T1,T9,K1]
-   + 0 q[T1,T9,K2] + 0 q[T1,T10,K0] + 0 q[T1,T10,K1] + 0 q[T1,T10,K2]
-   + 0 q[T1,T11,K0] + 0 q[T1,T11,K1] + 0 q[T1,T11,K2] + 0 q[T1,D0,K0]
-   + 0 q[T1,D0,K1] + 0 q[T1,D0,K2] + 0 q[T1,D1,K0] + 0 q[T1,D1,K1]
-   + 0 q[T1,D1,K2] + 0 q[T1,D2,K0] + 0 q[T1,D2,K1] + 0 q[T1,D2,K2]
-   + 0 q[T1,S0,K0] + 0 q[T1,S0,K1] + 0 q[T1,S0,K2] + 0 q[T1,E0,K0]
-   + 0 q[T1,E0,K1] + 0 q[T1,E0,K2] + 0 q[T2,T0,K0] + 0 q[T2,T0,K1]
-   + 0 q[T2,T0,K2] + 0 q[T2,T1,K0] + 0 q[T2,T1,K1] + 0 q[T2,T1,K2]
-   + 0 q[T2,T3,K0] + 0 q[T2,T3,K1] + 0 q[T2,T3,K2] + 0 q[T2,T4,K0]
-   + 0 q[T2,T4,K1] + 0 q[T2,T4,K2] + 0 q[T2,T5,K0] + 0 q[T2,T5,K1]
-   + 0 q[T2,T5,K2] + 0 q[T2,T6,K0] + 0 q[T2,T6,K1] + 0 q[T2,T6,K2]
-   + 0 q[T2,T7,K0] + 0 q[T2,T7,K1] + 0 q[T2,T7,K2] + 0 q[T2,T8,K0]
-   + 0 q[T2,T8,K1] + 0 q[T2,T8,K2] + 0 q[T2,T9,K0] + 0 q[T2,T9,K1]
-   + 0 q[T2,T9,K2] + 0 q[T2,T10,K0] + 0 q[T2,T10,K1] + 0 q[T2,T10,K2]
-   + 0 q[T2,T11,K0] + 0 q[T2,T11,K1] + 0 q[T2,T11,K2] + 0 q[T2,D0,K0]
-   + 0 q[T2,D0,K1] + 0 q[T2,D0,K2] + 0 q[T2,D1,K0] + 0 q[T2,D1,K1]
-   + 0 q[T2,D1,K2] + 0 q[T2,D2,K0] + 0 q[T2,D2,K1] + 0 q[T2,D2,K2]
-   + 0 q[T2,S0,K0] + 0 q[T2,S0,K1] + 0 q[T2,S0,K2] + 0 q[T2,E0,K0]
-   + 0 q[T2,E0,K1] + 0 q[T2,E0,K2] + 0 q[T3,T0,K0] + 0 q[T3,T0,K1]
-   + 0 q[T3,T0,K2] + 0 q[T3,T1,K0] + 0 q[T3,T1,K1] + 0 q[T3,T1,K2]
-   + 0 q[T3,T2,K0] + 0 q[T3,T2,K1] + 0 q[T3,T2,K2] + 0 q[T3,T4,K0]
-   + 0 q[T3,T4,K1] + 0 q[T3,T4,K2] + 0 q[T3,T5,K0] + 0 q[T3,T5,K1]
-   + 0 q[T3,T5,K2] + 0 q[T3,T6,K0] + 0 q[T3,T6,K1] + 0 q[T3,T6,K2]
-   + 0 q[T3,T7,K0] + 0 q[T3,T7,K1] + 0 q[T3,T7,K2] + 0 q[T3,T8,K0]
-   + 0 q[T3,T8,K1] + 0 q[T3,T8,K2] + 0 q[T3,T9,K0] + 0 q[T3,T9,K1]
-   + 0 q[T3,T9,K2] + 0 q[T3,T10,K0] + 0 q[T3,T10,K1] + 0 q[T3,T10,K2]
-   + 0 q[T3,T11,K0] + 0 q[T3,T11,K1] + 0 q[T3,T11,K2] + 0 q[T3,D0,K0]
-   + 0 q[T3,D0,K1] + 0 q[T3,D0,K2] + 0 q[T3,D1,K0] + 0 q[T3,D1,K1]
-   + 0 q[T3,D1,K2] + 0 q[T3,D2,K0] + 0 q[T3,D2,K1] + 0 q[T3,D2,K2]
-   + 0 q[T3,S0,K0] + 0 q[T3,S0,K1] + 0 q[T3,S0,K2] + 0 q[T3,E0,K0]
-   + 0 q[T3,E0,K1] + 0 q[T3,E0,K2] + 0 q[T4,T0,K0] + 0 q[T4,T0,K1]
-   + 0 q[T4,T0,K2] + 0 q[T4,T1,K0] + 0 q[T4,T1,K1] + 0 q[T4,T1,K2]
-   + 0 q[T4,T2,K0] + 0 q[T4,T2,K1] + 0 q[T4,T2,K2] + 0 q[T4,T3,K0]
-   + 0 q[T4,T3,K1] + 0 q[T4,T3,K2] + 0 q[T4,T5,K0] + 0 q[T4,T5,K1]
-   + 0 q[T4,T5,K2] + 0 q[T4,T6,K0] + 0 q[T4,T6,K1] + 0 q[T4,T6,K2]
-   + 0 q[T4,T7,K0] + 0 q[T4,T7,K1] + 0 q[T4,T7,K2] + 0 q[T4,T8,K0]
-   + 0 q[T4,T8,K1] + 0 q[T4,T8,K2] + 0 q[T4,T9,K0] + 0 q[T4,T9,K1]
-   + 0 q[T4,T9,K2] + 0 q[T4,T10,K0] + 0 q[T4,T10,K1] + 0 q[T4,T10,K2]
-   + 0 q[T4,T11,K0] + 0 q[T4,T11,K1] + 0 q[T4,T11,K2] + 0 q[T4,D0,K0]
-   + 0 q[T4,D0,K1] + 0 q[T4,D0,K2] + 0 q[T4,D1,K0] + 0 q[T4,D1,K1]
-   + 0 q[T4,D1,K2] + 0 q[T4,D2,K0] + 0 q[T4,D2,K1] + 0 q[T4,D2,K2]
-   + 0 q[T4,S0,K0] + 0 q[T4,S0,K1] + 0 q[T4,S0,K2] + 0 q[T4,E0,K0]
-   + 0 q[T4,E0,K1] + 0 q[T4,E0,K2] + 0 q[T5,T0,K0] + 0 q[T5,T0,K1]
-   + 0 q[T5,T0,K2] + 0 q[T5,T1,K0] + 0 q[T5,T1,K1] + 0 q[T5,T1,K2]
-   + 0 q[T5,T2,K0] + 0 q[T5,T2,K1] + 0 q[T5,T2,K2] + 0 q[T5,T3,K0]
-   + 0 q[T5,T3,K1] + 0 q[T5,T3,K2] + 0 q[T5,T4,K0] + 0 q[T5,T4,K1]
-   + 0 q[T5,T4,K2] + 0 q[T5,T6,K0] + 0 q[T5,T6,K1] + 0 q[T5,T6,K2]
-   + 0 q[T5,T7,K0] + 0 q[T5,T7,K1] + 0 q[T5,T7,K2] + 0 q[T5,T8,K0]
-   + 0 q[T5,T8,K1] + 0 q[T5,T8,K2] + 0 q[T5,T9,K0] + 0 q[T5,T9,K1]
-   + 0 q[T5,T9,K2] + 0 q[T5,T10,K0] + 0 q[T5,T10,K1] + 0 q[T5,T10,K2]
-   + 0 q[T5,T11,K0] + 0 q[T5,T11,K1] + 0 q[T5,T11,K2] + 0 q[T5,D0,K0]
-   + 0 q[T5,D0,K1] + 0 q[T5,D0,K2] + 0 q[T5,D1,K0] + 0 q[T5,D1,K1]
-   + 0 q[T5,D1,K2] + 0 q[T5,D2,K0] + 0 q[T5,D2,K1] + 0 q[T5,D2,K2]
-   + 0 q[T5,S0,K0] + 0 q[T5,S0,K1] + 0 q[T5,S0,K2] + 0 q[T5,E0,K0]
-   + 0 q[T5,E0,K1] + 0 q[T5,E0,K2] + 0 q[T6,T0,K0] + 0 q[T6,T0,K1]
-   + 0 q[T6,T0,K2] + 0 q[T6,T1,K0] + 0 q[T6,T1,K1] + 0 q[T6,T1,K2]
-   + 0 q[T6,T2,K0] + 0 q[T6,T2,K1] + 0 q[T6,T2,K2] + 0 q[T6,T3,K0]
-   + 0 q[T6,T3,K1] + 0 q[T6,T3,K2] + 0 q[T6,T4,K0] + 0 q[T6,T4,K1]
-   + 0 q[T6,T4,K2] + 0 q[T6,T5,K0] + 0 q[T6,T5,K1] + 0 q[T6,T5,K2]
-   + 0 q[T6,T7,K0] + 0 q[T6,T7,K1] + 0 q[T6,T7,K2] + 0 q[T6,T8,K0]
-   + 0 q[T6,T8,K1] + 0 q[T6,T8,K2] + 0 q[T6,T9,K0] + 0 q[T6,T9,K1]
-   + 0 q[T6,T9,K2] + 0 q[T6,T10,K0] + 0 q[T6,T10,K1] + 0 q[T6,T10,K2]
-   + 0 q[T6,T11,K0] + 0 q[T6,T11,K1] + 0 q[T6,T11,K2] + 0 q[T6,D0,K0]
-   + 0 q[T6,D0,K1] + 0 q[T6,D0,K2] + 0 q[T6,D1,K0] + 0 q[T6,D1,K1]
-   + 0 q[T6,D1,K2] + 0 q[T6,D2,K0] + 0 q[T6,D2,K1] + 0 q[T6,D2,K2]
-   + 0 q[T6,S0,K0] + 0 q[T6,S0,K1] + 0 q[T6,S0,K2] + 0 q[T6,E0,K0]
-   + 0 q[T6,E0,K1] + 0 q[T6,E0,K2] + 0 q[T7,T0,K0] + 0 q[T7,T0,K1]
-   + 0 q[T7,T0,K2] + 0 q[T7,T1,K0] + 0 q[T7,T1,K1] + 0 q[T7,T1,K2]
-   + 0 q[T7,T2,K0] + 0 q[T7,T2,K1] + 0 q[T7,T2,K2] + 0 q[T7,T3,K0]
-   + 0 q[T7,T3,K1] + 0 q[T7,T3,K2] + 0 q[T7,T4,K0] + 0 q[T7,T4,K1]
-   + 0 q[T7,T4,K2] + 0 q[T7,T5,K0] + 0 q[T7,T5,K1] + 0 q[T7,T5,K2]
-   + 0 q[T7,T6,K0] + 0 q[T7,T6,K1] + 0 q[T7,T6,K2] + 0 q[T7,T8,K0]
-   + 0 q[T7,T8,K1] + 0 q[T7,T8,K2] + 0 q[T7,T9,K0] + 0 q[T7,T9,K1]
-   + 0 q[T7,T9,K2] + 0 q[T7,T10,K0] + 0 q[T7,T10,K1] + 0 q[T7,T10,K2]
-   + 0 q[T7,T11,K0] + 0 q[T7,T11,K1] + 0 q[T7,T11,K2] + 0 q[T7,D0,K0]
-   + 0 q[T7,D0,K1] + 0 q[T7,D0,K2] + 0 q[T7,D1,K0] + 0 q[T7,D1,K1]
-   + 0 q[T7,D1,K2] + 0 q[T7,D2,K0] + 0 q[T7,D2,K1] + 0 q[T7,D2,K2]
-   + 0 q[T7,S0,K0] + 0 q[T7,S0,K1] + 0 q[T7,S0,K2] + 0 q[T7,E0,K0]
-   + 0 q[T7,E0,K1] + 0 q[T7,E0,K2] + 0 q[T8,T0,K0] + 0 q[T8,T0,K1]
-   + 0 q[T8,T0,K2] + 0 q[T8,T1,K0] + 0 q[T8,T1,K1] + 0 q[T8,T1,K2]
-   + 0 q[T8,T2,K0] + 0 q[T8,T2,K1] + 0 q[T8,T2,K2] + 0 q[T8,T3,K0]
-   + 0 q[T8,T3,K1] + 0 q[T8,T3,K2] + 0 q[T8,T4,K0] + 0 q[T8,T4,K1]
-   + 0 q[T8,T4,K2] + 0 q[T8,T5,K0] + 0 q[T8,T5,K1] + 0 q[T8,T5,K2]
-   + 0 q[T8,T6,K0] + 0 q[T8,T6,K1] + 0 q[T8,T6,K2] + 0 q[T8,T7,K0]
-   + 0 q[T8,T7,K1] + 0 q[T8,T7,K2] + 0 q[T8,T9,K0] + 0 q[T8,T9,K1]
-   + 0 q[T8,T9,K2] + 0 q[T8,T10,K0] + 0 q[T8,T10,K1] + 0 q[T8,T10,K2]
-   + 0 q[T8,T11,K0] + 0 q[T8,T11,K1] + 0 q[T8,T11,K2] + 0 q[T8,D0,K0]
-   + 0 q[T8,D0,K1] + 0 q[T8,D0,K2] + 0 q[T8,D1,K0] + 0 q[T8,D1,K1]
-   + 0 q[T8,D1,K2] + 0 q[T8,D2,K0] + 0 q[T8,D2,K1] + 0 q[T8,D2,K2]
-   + 0 q[T8,S0,K0] + 0 q[T8,S0,K1] + 0 q[T8,S0,K2] + 0 q[T8,E0,K0]
-   + 0 q[T8,E0,K1] + 0 q[T8,E0,K2] + 0 q[T9,T0,K0] + 0 q[T9,T0,K1]
-   + 0 q[T9,T0,K2] + 0 q[T9,T1,K0] + 0 q[T9,T1,K1] + 0 q[T9,T1,K2]
-   + 0 q[T9,T2,K0] + 0 q[T9,T2,K1] + 0 q[T9,T2,K2] + 0 q[T9,T3,K0]
-   + 0 q[T9,T3,K1] + 0 q[T9,T3,K2] + 0 q[T9,T4,K0] + 0 q[T9,T4,K1]
-   + 0 q[T9,T4,K2] + 0 q[T9,T5,K0] + 0 q[T9,T5,K1] + 0 q[T9,T5,K2]
-   + 0 q[T9,T6,K0] + 0 q[T9,T6,K1] + 0 q[T9,T6,K2] + 0 q[T9,T7,K0]
-   + 0 q[T9,T7,K1] + 0 q[T9,T7,K2] + 0 q[T9,T8,K0] + 0 q[T9,T8,K1]
-   + 0 q[T9,T8,K2] + 0 q[T9,T10,K0] + 0 q[T9,T10,K1] + 0 q[T9,T10,K2]
-   + 0 q[T9,T11,K0] + 0 q[T9,T11,K1] + 0 q[T9,T11,K2] + 0 q[T9,D0,K0]
-   + 0 q[T9,D0,K1] + 0 q[T9,D0,K2] + 0 q[T9,D1,K0] + 0 q[T9,D1,K1]
-   + 0 q[T9,D1,K2] + 0 q[T9,D2,K0] + 0 q[T9,D2,K1] + 0 q[T9,D2,K2]
-   + 0 q[T9,S0,K0] + 0 q[T9,S0,K1] + 0 q[T9,S0,K2] + 0 q[T9,E0,K0]
-   + 0 q[T9,E0,K1] + 0 q[T9,E0,K2] + 0 q[T10,T0,K0] + 0 q[T10,T0,K1]
-   + 0 q[T10,T0,K2] + 0 q[T10,T1,K0] + 0 q[T10,T1,K1] + 0 q[T10,T1,K2]
-   + 0 q[T10,T2,K0] + 0 q[T10,T2,K1] + 0 q[T10,T2,K2] + 0 q[T10,T3,K0]
-   + 0 q[T10,T3,K1] + 0 q[T10,T3,K2] + 0 q[T10,T4,K0] + 0 q[T10,T4,K1]
-   + 0 q[T10,T4,K2] + 0 q[T10,T5,K0] + 0 q[T10,T5,K1] + 0 q[T10,T5,K2]
-   + 0 q[T10,T6,K0] + 0 q[T10,T6,K1] + 0 q[T10,T6,K2] + 0 q[T10,T7,K0]
-   + 0 q[T10,T7,K1] + 0 q[T10,T7,K2] + 0 q[T10,T8,K0] + 0 q[T10,T8,K1]
-   + 0 q[T10,T8,K2] + 0 q[T10,T9,K0] + 0 q[T10,T9,K1] + 0 q[T10,T9,K2]
-   + 0 q[T10,T11,K0] + 0 q[T10,T11,K1] + 0 q[T10,T11,K2] + 0 q[T10,D0,K0]
-   + 0 q[T10,D0,K1] + 0 q[T10,D0,K2] + 0 q[T10,D1,K0] + 0 q[T10,D1,K1]
-   + 0 q[T10,D1,K2] + 0 q[T10,D2,K0] + 0 q[T10,D2,K1] + 0 q[T10,D2,K2]
-   + 0 q[T10,S0,K0] + 0 q[T10,S0,K1] + 0 q[T10,S0,K2] + 0 q[T10,E0,K0]
-   + 0 q[T10,E0,K1] + 0 q[T10,E0,K2] + 0 q[T11,T0,K0] + 0 q[T11,T0,K1]
-   + 0 q[T11,T0,K2] + 0 q[T11,T1,K0] + 0 q[T11,T1,K1] + 0 q[T11,T1,K2]
-   + 0 q[T11,T2,K0] + 0 q[T11,T2,K1] + 0 q[T11,T2,K2] + 0 q[T11,T3,K0]
-   + 0 q[T11,T3,K1] + 0 q[T11,T3,K2] + 0 q[T11,T4,K0] + 0 q[T11,T4,K1]
-   + 0 q[T11,T4,K2] + 0 q[T11,T5,K0] + 0 q[T11,T5,K1] + 0 q[T11,T5,K2]
-   + 0 q[T11,T6,K0] + 0 q[T11,T6,K1] + 0 q[T11,T6,K2] + 0 q[T11,T7,K0]
-   + 0 q[T11,T7,K1] + 0 q[T11,T7,K2] + 0 q[T11,T8,K0] + 0 q[T11,T8,K1]
-   + 0 q[T11,T8,K2] + 0 q[T11,T9,K0] + 0 q[T11,T9,K1] + 0 q[T11,T9,K2]
-   + 0 q[T11,T10,K0] + 0 q[T11,T10,K1] + 0 q[T11,T10,K2] + 0 q[T11,D0,K0]
-   + 0 q[T11,D0,K1] + 0 q[T11,D0,K2] + 0 q[T11,D1,K0] + 0 q[T11,D1,K1]
-   + 0 q[T11,D1,K2] + 0 q[T11,D2,K0] + 0 q[T11,D2,K1] + 0 q[T11,D2,K2]
-   + 0 q[T11,S0,K0] + 0 q[T11,S0,K1] + 0 q[T11,S0,K2] + 0 q[T11,E0,K0]
-   + 0 q[T11,E0,K1] + 0 q[T11,E0,K2] + 0 q[D0,T0,K0] + 0 q[D0,T0,K1]
-   + 0 q[D0,T0,K2] + 0 q[D0,T1,K0] + 0 q[D0,T1,K1] + 0 q[D0,T1,K2]
-   + 0 q[D0,T2,K0] + 0 q[D0,T2,K1] + 0 q[D0,T2,K2] + 0 q[D0,T3,K0]
-   + 0 q[D0,T3,K1] + 0 q[D0,T3,K2] + 0 q[D0,T4,K0] + 0 q[D0,T4,K1]
-   + 0 q[D0,T4,K2] + 0 q[D0,T5,K0] + 0 q[D0,T5,K1] + 0 q[D0,T5,K2]
-   + 0 q[D0,T6,K0] + 0 q[D0,T6,K1] + 0 q[D0,T6,K2] + 0 q[D0,T7,K0]
-   + 0 q[D0,T7,K1] + 0 q[D0,T7,K2] + 0 q[D0,T8,K0] + 0 q[D0,T8,K1]
-   + 0 q[D0,T8,K2] + 0 q[D0,T9,K0] + 0 q[D0,T9,K1] + 0 q[D0,T9,K2]
-   + 0 q[D0,T10,K0] + 0 q[D0,T10,K1] + 0 q[D0,T10,K2] + 0 q[D0,T11,K0]
-   + 0 q[D0,T11,K1] + 0 q[D0,T11,K2] + 0 q[D0,D1,K0] + 0 q[D0,D1,K1]
-   + 0 q[D0,D1,K2] + 0 q[D0,D2,K0] + 0 q[D0,D2,K1] + 0 q[D0,D2,K2]
-   + 0 q[D0,S0,K0] + 0 q[D0,S0,K1] + 0 q[D0,S0,K2] + 0 q[D0,E0,K0]
-   + 0 q[D0,E0,K1] + 0 q[D0,E0,K2] + 0 q[D1,T0,K0] + 0 q[D1,T0,K1]
-   + 0 q[D1,T0,K2] + 0 q[D1,T1,K0] + 0 q[D1,T1,K1] + 0 q[D1,T1,K2]
-   + 0 q[D1,T2,K0] + 0 q[D1,T2,K1] + 0 q[D1,T2,K2] + 0 q[D1,T3,K0]
-   + 0 q[D1,T3,K1] + 0 q[D1,T3,K2] + 0 q[D1,T4,K0] + 0 q[D1,T4,K1]
-   + 0 q[D1,T4,K2] + 0 q[D1,T5,K0] + 0 q[D1,T5,K1] + 0 q[D1,T5,K2]
-   + 0 q[D1,T6,K0] + 0 q[D1,T6,K1] + 0 q[D1,T6,K2] + 0 q[D1,T7,K0]
-   + 0 q[D1,T7,K1] + 0 q[D1,T7,K2] + 0 q[D1,T8,K0] + 0 q[D1,T8,K1]
-   + 0 q[D1,T8,K2] + 0 q[D1,T9,K0] + 0 q[D1,T9,K1] + 0 q[D1,T9,K2]
-   + 0 q[D1,T10,K0] + 0 q[D1,T10,K1] + 0 q[D1,T10,K2] + 0 q[D1,T11,K0]
-   + 0 q[D1,T11,K1] + 0 q[D1,T11,K2] + 0 q[D1,D0,K0] + 0 q[D1,D0,K1]
-   + 0 q[D1,D0,K2] + 0 q[D1,D2,K0] + 0 q[D1,D2,K1] + 0 q[D1,D2,K2]
-   + 0 q[D1,S0,K0] + 0 q[D1,S0,K1] + 0 q[D1,S0,K2] + 0 q[D1,E0,K0]
-   + 0 q[D1,E0,K1] + 0 q[D1,E0,K2] + 0 q[D2,T0,K0] + 0 q[D2,T0,K1]
-   + 0 q[D2,T0,K2] + 0 q[D2,T1,K0] + 0 q[D2,T1,K1] + 0 q[D2,T1,K2]
-   + 0 q[D2,T2,K0] + 0 q[D2,T2,K1] + 0 q[D2,T2,K2] + 0 q[D2,T3,K0]
-   + 0 q[D2,T3,K1] + 0 q[D2,T3,K2] + 0 q[D2,T4,K0] + 0 q[D2,T4,K1]
-   + 0 q[D2,T4,K2] + 0 q[D2,T5,K0] + 0 q[D2,T5,K1] + 0 q[D2,T5,K2]
-   + 0 q[D2,T6,K0] + 0 q[D2,T6,K1] + 0 q[D2,T6,K2] + 0 q[D2,T7,K0]
-   + 0 q[D2,T7,K1] + 0 q[D2,T7,K2] + 0 q[D2,T8,K0] + 0 q[D2,T8,K1]
-   + 0 q[D2,T8,K2] + 0 q[D2,T9,K0] + 0 q[D2,T9,K1] + 0 q[D2,T9,K2]
-   + 0 q[D2,T10,K0] + 0 q[D2,T10,K1] + 0 q[D2,T10,K2] + 0 q[D2,T11,K0]
-   + 0 q[D2,T11,K1] + 0 q[D2,T11,K2] + 0 q[D2,D0,K0] + 0 q[D2,D0,K1]
-   + 0 q[D2,D0,K2] + 0 q[D2,D1,K0] + 0 q[D2,D1,K1] + 0 q[D2,D1,K2]
-   + 0 q[D2,S0,K0] + 0 q[D2,S0,K1] + 0 q[D2,S0,K2] + 0 q[D2,E0,K0]
-   + 0 q[D2,E0,K1] + 0 q[D2,E0,K2] + 0 q[S0,T0,K0] + 0 q[S0,T0,K1]
-   + 0 q[S0,T0,K2] + 0 q[S0,T1,K0] + 0 q[S0,T1,K1] + 0 q[S0,T1,K2]
-   + 0 q[S0,T2,K0] + 0 q[S0,T2,K1] + 0 q[S0,T2,K2] + 0 q[S0,T3,K0]
-   + 0 q[S0,T3,K1] + 0 q[S0,T3,K2] + 0 q[S0,T4,K0] + 0 q[S0,T4,K1]
-   + 0 q[S0,T4,K2] + 0 q[S0,T5,K0] + 0 q[S0,T5,K1] + 0 q[S0,T5,K2]
-   + 0 q[S0,T6,K0] + 0 q[S0,T6,K1] + 0 q[S0,T6,K2] + 0 q[S0,T7,K0]
-   + 0 q[S0,T7,K1] + 0 q[S0,T7,K2] + 0 q[S0,T8,K0] + 0 q[S0,T8,K1]
-   + 0 q[S0,T8,K2] + 0 q[S0,T9,K0] + 0 q[S0,T9,K1] + 0 q[S0,T9,K2]
-   + 0 q[S0,T10,K0] + 0 q[S0,T10,K1] + 0 q[S0,T10,K2] + 0 q[S0,T11,K0]
-   + 0 q[S0,T11,K1] + 0 q[S0,T11,K2] + 0 q[S0,D0,K0] + 0 q[S0,D0,K1]
-   + 0 q[S0,D0,K2] + 0 q[S0,D1,K0] + 0 q[S0,D1,K1] + 0 q[S0,D1,K2]
-   + 0 q[S0,D2,K0] + 0 q[S0,D2,K1] + 0 q[S0,D2,K2] + 0 q[S0,E0,K0]
-   + 0 q[S0,E0,K1] + 0 q[S0,E0,K2] + 0 q[E0,T0,K0] + 0 q[E0,T0,K1]
-   + 0 q[E0,T0,K2] + 0 q[E0,T1,K0] + 0 q[E0,T1,K1] + 0 q[E0,T1,K2]
-   + 0 q[E0,T2,K0] + 0 q[E0,T2,K1] + 0 q[E0,T2,K2] + 0 q[E0,T3,K0]
-   + 0 q[E0,T3,K1] + 0 q[E0,T3,K2] + 0 q[E0,T4,K0] + 0 q[E0,T4,K1]
-   + 0 q[E0,T4,K2] + 0 q[E0,T5,K0] + 0 q[E0,T5,K1] + 0 q[E0,T5,K2]
-   + 0 q[E0,T6,K0] + 0 q[E0,T6,K1] + 0 q[E0,T6,K2] + 0 q[E0,T7,K0]
-   + 0 q[E0,T7,K1] + 0 q[E0,T7,K2] + 0 q[E0,T8,K0] + 0 q[E0,T8,K1]
-   + 0 q[E0,T8,K2] + 0 q[E0,T9,K0] + 0 q[E0,T9,K1] + 0 q[E0,T9,K2]
-   + 0 q[E0,T10,K0] + 0 q[E0,T10,K1] + 0 q[E0,T10,K2] + 0 q[E0,T11,K0]
-   + 0 q[E0,T11,K1] + 0 q[E0,T11,K2] + 0 q[E0,D0,K0] + 0 q[E0,D0,K1]
-   + 0 q[E0,D0,K2] + 0 q[E0,D1,K0] + 0 q[E0,D1,K1] + 0 q[E0,D1,K2]
-   + 0 q[E0,D2,K0] + 0 q[E0,D2,K1] + 0 q[E0,D2,K2] + 0 q[E0,S0,K0]
-   + 0 q[E0,S0,K1] + 0 q[E0,S0,K2]
+   + y[T9] + y[T10] + y[T11]
 Subject To
  c2: x[S0,T0,K0] + x[S0,T0,K1] + x[S0,T0,K2] + x[S0,T1,K0] + x[S0,T1,K1]
    + x[S0,T1,K2] + x[S0,T2,K0] + x[S0,T2,K1] + x[S0,T2,K2] + x[S0,T3,K0]
@@ -1283,3072 +1079,1552 @@ Subject To
    + x[T11,D2,K1] + x[T11,D2,K2] + x[T11,S0,K0] + x[T11,S0,K1]
    + x[T11,S0,K2] + x[T11,E0,K0] + x[T11,E0,K1] + x[T11,E0,K2] - y[T11]
    = 0
- c11[K0]: - x[T0,T1,K0] - x[T0,T2,K0] - x[T0,T3,K0] - x[T0,T4,K0]
-   - x[T0,T5,K0] - x[T0,T6,K0] - x[T0,T7,K0] - x[T0,T8,K0] - x[T0,T9,K0]
-   - x[T0,T10,K0] - x[T0,T11,K0] - x[T0,D0,K0] - x[T0,D1,K0] - x[T0,D2,K0]
-   - x[T0,S0,K0] - x[T0,E0,K0] - x[T1,T0,K0] - x[T1,T2,K0] - x[T1,T3,K0]
-   - x[T1,T4,K0] - x[T1,T5,K0] - x[T1,T6,K0] - x[T1,T7,K0] - x[T1,T8,K0]
-   - x[T1,T9,K0] - x[T1,T10,K0] - x[T1,T11,K0] - x[T1,D0,K0] - x[T1,D1,K0]
-   - x[T1,D2,K0] - x[T1,S0,K0] - x[T1,E0,K0] - x[T2,T0,K0] - x[T2,T1,K0]
-   - x[T2,T3,K0] - x[T2,T4,K0] - x[T2,T5,K0] - x[T2,T6,K0] - x[T2,T7,K0]
-   - x[T2,T8,K0] - x[T2,T9,K0] - x[T2,T10,K0] - x[T2,T11,K0] - x[T2,D0,K0]
-   - x[T2,D1,K0] - x[T2,D2,K0] - x[T2,S0,K0] - x[T2,E0,K0] - x[T3,T0,K0]
-   - x[T3,T1,K0] - x[T3,T2,K0] - x[T3,T4,K0] - x[T3,T5,K0] - x[T3,T6,K0]
-   - x[T3,T7,K0] - x[T3,T8,K0] - x[T3,T9,K0] - x[T3,T10,K0] - x[T3,T11,K0]
-   - x[T3,D0,K0] - x[T3,D1,K0] - x[T3,D2,K0] - x[T3,S0,K0] - x[T3,E0,K0]
-   - x[T4,T0,K0] - x[T4,T1,K0] - x[T4,T2,K0] - x[T4,T3,K0] - x[T4,T5,K0]
-   - x[T4,T6,K0] - x[T4,T7,K0] - x[T4,T8,K0] - x[T4,T9,K0] - x[T4,T10,K0]
-   - x[T4,T11,K0] - x[T4,D0,K0] - x[T4,D1,K0] - x[T4,D2,K0] - x[T4,S0,K0]
-   - x[T4,E0,K0] - x[T5,T0,K0] - x[T5,T1,K0] - x[T5,T2,K0] - x[T5,T3,K0]
-   - x[T5,T4,K0] - x[T5,T6,K0] - x[T5,T7,K0] - x[T5,T8,K0] - x[T5,T9,K0]
-   - x[T5,T10,K0] - x[T5,T11,K0] - x[T5,D0,K0] - x[T5,D1,K0] - x[T5,D2,K0]
-   - x[T5,S0,K0] - x[T5,E0,K0] - x[T6,T0,K0] - x[T6,T1,K0] - x[T6,T2,K0]
-   - x[T6,T3,K0] - x[T6,T4,K0] - x[T6,T5,K0] - x[T6,T7,K0] - x[T6,T8,K0]
-   - x[T6,T9,K0] - x[T6,T10,K0] - x[T6,T11,K0] - x[T6,D0,K0] - x[T6,D1,K0]
-   - x[T6,D2,K0] - x[T6,S0,K0] - x[T6,E0,K0] - x[T7,T0,K0] - x[T7,T1,K0]
-   - x[T7,T2,K0] - x[T7,T3,K0] - x[T7,T4,K0] - x[T7,T5,K0] - x[T7,T6,K0]
-   - x[T7,T8,K0] - x[T7,T9,K0] - x[T7,T10,K0] - x[T7,T11,K0] - x[T7,D0,K0]
-   - x[T7,D1,K0] - x[T7,D2,K0] - x[T7,S0,K0] - x[T7,E0,K0] - x[T8,T0,K0]
-   - x[T8,T1,K0] - x[T8,T2,K0] - x[T8,T3,K0] - x[T8,T4,K0] - x[T8,T5,K0]
-   - x[T8,T6,K0] - x[T8,T7,K0] - x[T8,T9,K0] - x[T8,T10,K0] - x[T8,T11,K0]
-   - x[T8,D0,K0] - x[T8,D1,K0] - x[T8,D2,K0] - x[T8,S0,K0] - x[T8,E0,K0]
-   - x[T9,T0,K0] - x[T9,T1,K0] - x[T9,T2,K0] - x[T9,T3,K0] - x[T9,T4,K0]
-   - x[T9,T5,K0] - x[T9,T6,K0] - x[T9,T7,K0] - x[T9,T8,K0] - x[T9,T10,K0]
-   - x[T9,T11,K0] - x[T9,D0,K0] - x[T9,D1,K0] - x[T9,D2,K0] - x[T9,S0,K0]
-   - x[T9,E0,K0] - x[T10,T0,K0] - x[T10,T1,K0] - x[T10,T2,K0]
-   - x[T10,T3,K0] - x[T10,T4,K0] - x[T10,T5,K0] - x[T10,T6,K0]
-   - x[T10,T7,K0] - x[T10,T8,K0] - x[T10,T9,K0] - x[T10,T11,K0]
-   - x[T10,D0,K0] - x[T10,D1,K0] - x[T10,D2,K0] - x[T10,S0,K0]
-   - x[T10,E0,K0] - x[T11,T0,K0] - x[T11,T1,K0] - x[T11,T2,K0]
-   - x[T11,T3,K0] - x[T11,T4,K0] - x[T11,T5,K0] - x[T11,T6,K0]
-   - x[T11,T7,K0] - x[T11,T8,K0] - x[T11,T9,K0] - x[T11,T10,K0]
-   - x[T11,D0,K0] - x[T11,D1,K0] - x[T11,D2,K0] - x[T11,S0,K0]
-   - x[T11,E0,K0] - g[T0,S0,K0] - g[T1,S0,K0] - g[T2,S0,K0] - g[T3,S0,K0]
-   - g[T4,S0,K0] - g[T5,S0,K0] - g[T6,S0,K0] - g[T7,S0,K0] - g[T8,S0,K0]
-   - g[T9,S0,K0] - g[T10,S0,K0] - g[T11,S0,K0] - g[D0,S0,K0] - g[D1,S0,K0]
-   - g[D2,S0,K0] + g[S0,T0,K0] + g[S0,T1,K0] + g[S0,T2,K0] + g[S0,T3,K0]
-   + g[S0,T4,K0] + g[S0,T5,K0] + g[S0,T6,K0] + g[S0,T7,K0] + g[S0,T8,K0]
-   + g[S0,T9,K0] + g[S0,T10,K0] + g[S0,T11,K0] + g[S0,D0,K0] + g[S0,D1,K0]
-   + g[S0,D2,K0] + g[S0,E0,K0] - g[E0,S0,K0] = 0
- c11[K1]: - x[T0,T1,K1] - x[T0,T2,K1] - x[T0,T3,K1] - x[T0,T4,K1]
-   - x[T0,T5,K1] - x[T0,T6,K1] - x[T0,T7,K1] - x[T0,T8,K1] - x[T0,T9,K1]
-   - x[T0,T10,K1] - x[T0,T11,K1] - x[T0,D0,K1] - x[T0,D1,K1] - x[T0,D2,K1]
-   - x[T0,S0,K1] - x[T0,E0,K1] - x[T1,T0,K1] - x[T1,T2,K1] - x[T1,T3,K1]
-   - x[T1,T4,K1] - x[T1,T5,K1] - x[T1,T6,K1] - x[T1,T7,K1] - x[T1,T8,K1]
-   - x[T1,T9,K1] - x[T1,T10,K1] - x[T1,T11,K1] - x[T1,D0,K1] - x[T1,D1,K1]
-   - x[T1,D2,K1] - x[T1,S0,K1] - x[T1,E0,K1] - x[T2,T0,K1] - x[T2,T1,K1]
-   - x[T2,T3,K1] - x[T2,T4,K1] - x[T2,T5,K1] - x[T2,T6,K1] - x[T2,T7,K1]
-   - x[T2,T8,K1] - x[T2,T9,K1] - x[T2,T10,K1] - x[T2,T11,K1] - x[T2,D0,K1]
-   - x[T2,D1,K1] - x[T2,D2,K1] - x[T2,S0,K1] - x[T2,E0,K1] - x[T3,T0,K1]
-   - x[T3,T1,K1] - x[T3,T2,K1] - x[T3,T4,K1] - x[T3,T5,K1] - x[T3,T6,K1]
-   - x[T3,T7,K1] - x[T3,T8,K1] - x[T3,T9,K1] - x[T3,T10,K1] - x[T3,T11,K1]
-   - x[T3,D0,K1] - x[T3,D1,K1] - x[T3,D2,K1] - x[T3,S0,K1] - x[T3,E0,K1]
-   - x[T4,T0,K1] - x[T4,T1,K1] - x[T4,T2,K1] - x[T4,T3,K1] - x[T4,T5,K1]
-   - x[T4,T6,K1] - x[T4,T7,K1] - x[T4,T8,K1] - x[T4,T9,K1] - x[T4,T10,K1]
-   - x[T4,T11,K1] - x[T4,D0,K1] - x[T4,D1,K1] - x[T4,D2,K1] - x[T4,S0,K1]
-   - x[T4,E0,K1] - x[T5,T0,K1] - x[T5,T1,K1] - x[T5,T2,K1] - x[T5,T3,K1]
-   - x[T5,T4,K1] - x[T5,T6,K1] - x[T5,T7,K1] - x[T5,T8,K1] - x[T5,T9,K1]
-   - x[T5,T10,K1] - x[T5,T11,K1] - x[T5,D0,K1] - x[T5,D1,K1] - x[T5,D2,K1]
-   - x[T5,S0,K1] - x[T5,E0,K1] - x[T6,T0,K1] - x[T6,T1,K1] - x[T6,T2,K1]
-   - x[T6,T3,K1] - x[T6,T4,K1] - x[T6,T5,K1] - x[T6,T7,K1] - x[T6,T8,K1]
-   - x[T6,T9,K1] - x[T6,T10,K1] - x[T6,T11,K1] - x[T6,D0,K1] - x[T6,D1,K1]
-   - x[T6,D2,K1] - x[T6,S0,K1] - x[T6,E0,K1] - x[T7,T0,K1] - x[T7,T1,K1]
-   - x[T7,T2,K1] - x[T7,T3,K1] - x[T7,T4,K1] - x[T7,T5,K1] - x[T7,T6,K1]
-   - x[T7,T8,K1] - x[T7,T9,K1] - x[T7,T10,K1] - x[T7,T11,K1] - x[T7,D0,K1]
-   - x[T7,D1,K1] - x[T7,D2,K1] - x[T7,S0,K1] - x[T7,E0,K1] - x[T8,T0,K1]
-   - x[T8,T1,K1] - x[T8,T2,K1] - x[T8,T3,K1] - x[T8,T4,K1] - x[T8,T5,K1]
-   - x[T8,T6,K1] - x[T8,T7,K1] - x[T8,T9,K1] - x[T8,T10,K1] - x[T8,T11,K1]
-   - x[T8,D0,K1] - x[T8,D1,K1] - x[T8,D2,K1] - x[T8,S0,K1] - x[T8,E0,K1]
-   - x[T9,T0,K1] - x[T9,T1,K1] - x[T9,T2,K1] - x[T9,T3,K1] - x[T9,T4,K1]
-   - x[T9,T5,K1] - x[T9,T6,K1] - x[T9,T7,K1] - x[T9,T8,K1] - x[T9,T10,K1]
-   - x[T9,T11,K1] - x[T9,D0,K1] - x[T9,D1,K1] - x[T9,D2,K1] - x[T9,S0,K1]
-   - x[T9,E0,K1] - x[T10,T0,K1] - x[T10,T1,K1] - x[T10,T2,K1]
-   - x[T10,T3,K1] - x[T10,T4,K1] - x[T10,T5,K1] - x[T10,T6,K1]
-   - x[T10,T7,K1] - x[T10,T8,K1] - x[T10,T9,K1] - x[T10,T11,K1]
-   - x[T10,D0,K1] - x[T10,D1,K1] - x[T10,D2,K1] - x[T10,S0,K1]
-   - x[T10,E0,K1] - x[T11,T0,K1] - x[T11,T1,K1] - x[T11,T2,K1]
-   - x[T11,T3,K1] - x[T11,T4,K1] - x[T11,T5,K1] - x[T11,T6,K1]
-   - x[T11,T7,K1] - x[T11,T8,K1] - x[T11,T9,K1] - x[T11,T10,K1]
-   - x[T11,D0,K1] - x[T11,D1,K1] - x[T11,D2,K1] - x[T11,S0,K1]
-   - x[T11,E0,K1] - g[T0,S0,K1] - g[T1,S0,K1] - g[T2,S0,K1] - g[T3,S0,K1]
-   - g[T4,S0,K1] - g[T5,S0,K1] - g[T6,S0,K1] - g[T7,S0,K1] - g[T8,S0,K1]
-   - g[T9,S0,K1] - g[T10,S0,K1] - g[T11,S0,K1] - g[D0,S0,K1] - g[D1,S0,K1]
-   - g[D2,S0,K1] + g[S0,T0,K1] + g[S0,T1,K1] + g[S0,T2,K1] + g[S0,T3,K1]
-   + g[S0,T4,K1] + g[S0,T5,K1] + g[S0,T6,K1] + g[S0,T7,K1] + g[S0,T8,K1]
-   + g[S0,T9,K1] + g[S0,T10,K1] + g[S0,T11,K1] + g[S0,D0,K1] + g[S0,D1,K1]
-   + g[S0,D2,K1] + g[S0,E0,K1] - g[E0,S0,K1] = 0
- c11[K2]: - x[T0,T1,K2] - x[T0,T2,K2] - x[T0,T3,K2] - x[T0,T4,K2]
-   - x[T0,T5,K2] - x[T0,T6,K2] - x[T0,T7,K2] - x[T0,T8,K2] - x[T0,T9,K2]
-   - x[T0,T10,K2] - x[T0,T11,K2] - x[T0,D0,K2] - x[T0,D1,K2] - x[T0,D2,K2]
-   - x[T0,S0,K2] - x[T0,E0,K2] - x[T1,T0,K2] - x[T1,T2,K2] - x[T1,T3,K2]
-   - x[T1,T4,K2] - x[T1,T5,K2] - x[T1,T6,K2] - x[T1,T7,K2] - x[T1,T8,K2]
-   - x[T1,T9,K2] - x[T1,T10,K2] - x[T1,T11,K2] - x[T1,D0,K2] - x[T1,D1,K2]
-   - x[T1,D2,K2] - x[T1,S0,K2] - x[T1,E0,K2] - x[T2,T0,K2] - x[T2,T1,K2]
-   - x[T2,T3,K2] - x[T2,T4,K2] - x[T2,T5,K2] - x[T2,T6,K2] - x[T2,T7,K2]
-   - x[T2,T8,K2] - x[T2,T9,K2] - x[T2,T10,K2] - x[T2,T11,K2] - x[T2,D0,K2]
-   - x[T2,D1,K2] - x[T2,D2,K2] - x[T2,S0,K2] - x[T2,E0,K2] - x[T3,T0,K2]
-   - x[T3,T1,K2] - x[T3,T2,K2] - x[T3,T4,K2] - x[T3,T5,K2] - x[T3,T6,K2]
-   - x[T3,T7,K2] - x[T3,T8,K2] - x[T3,T9,K2] - x[T3,T10,K2] - x[T3,T11,K2]
-   - x[T3,D0,K2] - x[T3,D1,K2] - x[T3,D2,K2] - x[T3,S0,K2] - x[T3,E0,K2]
-   - x[T4,T0,K2] - x[T4,T1,K2] - x[T4,T2,K2] - x[T4,T3,K2] - x[T4,T5,K2]
-   - x[T4,T6,K2] - x[T4,T7,K2] - x[T4,T8,K2] - x[T4,T9,K2] - x[T4,T10,K2]
-   - x[T4,T11,K2] - x[T4,D0,K2] - x[T4,D1,K2] - x[T4,D2,K2] - x[T4,S0,K2]
-   - x[T4,E0,K2] - x[T5,T0,K2] - x[T5,T1,K2] - x[T5,T2,K2] - x[T5,T3,K2]
-   - x[T5,T4,K2] - x[T5,T6,K2] - x[T5,T7,K2] - x[T5,T8,K2] - x[T5,T9,K2]
-   - x[T5,T10,K2] - x[T5,T11,K2] - x[T5,D0,K2] - x[T5,D1,K2] - x[T5,D2,K2]
-   - x[T5,S0,K2] - x[T5,E0,K2] - x[T6,T0,K2] - x[T6,T1,K2] - x[T6,T2,K2]
-   - x[T6,T3,K2] - x[T6,T4,K2] - x[T6,T5,K2] - x[T6,T7,K2] - x[T6,T8,K2]
-   - x[T6,T9,K2] - x[T6,T10,K2] - x[T6,T11,K2] - x[T6,D0,K2] - x[T6,D1,K2]
-   - x[T6,D2,K2] - x[T6,S0,K2] - x[T6,E0,K2] - x[T7,T0,K2] - x[T7,T1,K2]
-   - x[T7,T2,K2] - x[T7,T3,K2] - x[T7,T4,K2] - x[T7,T5,K2] - x[T7,T6,K2]
-   - x[T7,T8,K2] - x[T7,T9,K2] - x[T7,T10,K2] - x[T7,T11,K2] - x[T7,D0,K2]
-   - x[T7,D1,K2] - x[T7,D2,K2] - x[T7,S0,K2] - x[T7,E0,K2] - x[T8,T0,K2]
-   - x[T8,T1,K2] - x[T8,T2,K2] - x[T8,T3,K2] - x[T8,T4,K2] - x[T8,T5,K2]
-   - x[T8,T6,K2] - x[T8,T7,K2] - x[T8,T9,K2] - x[T8,T10,K2] - x[T8,T11,K2]
-   - x[T8,D0,K2] - x[T8,D1,K2] - x[T8,D2,K2] - x[T8,S0,K2] - x[T8,E0,K2]
-   - x[T9,T0,K2] - x[T9,T1,K2] - x[T9,T2,K2] - x[T9,T3,K2] - x[T9,T4,K2]
-   - x[T9,T5,K2] - x[T9,T6,K2] - x[T9,T7,K2] - x[T9,T8,K2] - x[T9,T10,K2]
-   - x[T9,T11,K2] - x[T9,D0,K2] - x[T9,D1,K2] - x[T9,D2,K2] - x[T9,S0,K2]
-   - x[T9,E0,K2] - x[T10,T0,K2] - x[T10,T1,K2] - x[T10,T2,K2]
-   - x[T10,T3,K2] - x[T10,T4,K2] - x[T10,T5,K2] - x[T10,T6,K2]
-   - x[T10,T7,K2] - x[T10,T8,K2] - x[T10,T9,K2] - x[T10,T11,K2]
-   - x[T10,D0,K2] - x[T10,D1,K2] - x[T10,D2,K2] - x[T10,S0,K2]
-   - x[T10,E0,K2] - x[T11,T0,K2] - x[T11,T1,K2] - x[T11,T2,K2]
-   - x[T11,T3,K2] - x[T11,T4,K2] - x[T11,T5,K2] - x[T11,T6,K2]
-   - x[T11,T7,K2] - x[T11,T8,K2] - x[T11,T9,K2] - x[T11,T10,K2]
-   - x[T11,D0,K2] - x[T11,D1,K2] - x[T11,D2,K2] - x[T11,S0,K2]
-   - x[T11,E0,K2] - g[T0,S0,K2] - g[T1,S0,K2] - g[T2,S0,K2] - g[T3,S0,K2]
-   - g[T4,S0,K2] - g[T5,S0,K2] - g[T6,S0,K2] - g[T7,S0,K2] - g[T8,S0,K2]
-   - g[T9,S0,K2] - g[T10,S0,K2] - g[T11,S0,K2] - g[D0,S0,K2] - g[D1,S0,K2]
-   - g[D2,S0,K2] + g[S0,T0,K2] + g[S0,T1,K2] + g[S0,T2,K2] + g[S0,T3,K2]
-   + g[S0,T4,K2] + g[S0,T5,K2] + g[S0,T6,K2] + g[S0,T7,K2] + g[S0,T8,K2]
-   + g[S0,T9,K2] + g[S0,T10,K2] + g[S0,T11,K2] + g[S0,D0,K2] + g[S0,D1,K2]
-   + g[S0,D2,K2] + g[S0,E0,K2] - g[E0,S0,K2] = 0
- c12[T0,K0]: - x[T0,T1,K0] - x[T0,T2,K0] - x[T0,T3,K0] - x[T0,T4,K0]
-   - x[T0,T5,K0] - x[T0,T6,K0] - x[T0,T7,K0] - x[T0,T8,K0] - x[T0,T9,K0]
-   - x[T0,T10,K0] - x[T0,T11,K0] - x[T0,D0,K0] - x[T0,D1,K0] - x[T0,D2,K0]
-   - x[T0,S0,K0] - x[T0,E0,K0] - g[T0,T1,K0] - g[T0,T2,K0] - g[T0,T3,K0]
-   - g[T0,T4,K0] - g[T0,T5,K0] - g[T0,T6,K0] - g[T0,T7,K0] - g[T0,T8,K0]
-   - g[T0,T9,K0] - g[T0,T10,K0] - g[T0,T11,K0] - g[T0,D0,K0] - g[T0,D1,K0]
-   - g[T0,D2,K0] - g[T0,S0,K0] - g[T0,E0,K0] + g[T1,T0,K0] + g[T2,T0,K0]
-   + g[T3,T0,K0] + g[T4,T0,K0] + g[T5,T0,K0] + g[T6,T0,K0] + g[T7,T0,K0]
-   + g[T8,T0,K0] + g[T9,T0,K0] + g[T10,T0,K0] + g[T11,T0,K0] + g[D0,T0,K0]
-   + g[D1,T0,K0] + g[D2,T0,K0] + g[S0,T0,K0] + g[E0,T0,K0] = 0
- c12[T0,K1]: - x[T0,T1,K1] - x[T0,T2,K1] - x[T0,T3,K1] - x[T0,T4,K1]
-   - x[T0,T5,K1] - x[T0,T6,K1] - x[T0,T7,K1] - x[T0,T8,K1] - x[T0,T9,K1]
-   - x[T0,T10,K1] - x[T0,T11,K1] - x[T0,D0,K1] - x[T0,D1,K1] - x[T0,D2,K1]
-   - x[T0,S0,K1] - x[T0,E0,K1] - g[T0,T1,K1] - g[T0,T2,K1] - g[T0,T3,K1]
-   - g[T0,T4,K1] - g[T0,T5,K1] - g[T0,T6,K1] - g[T0,T7,K1] - g[T0,T8,K1]
-   - g[T0,T9,K1] - g[T0,T10,K1] - g[T0,T11,K1] - g[T0,D0,K1] - g[T0,D1,K1]
-   - g[T0,D2,K1] - g[T0,S0,K1] - g[T0,E0,K1] + g[T1,T0,K1] + g[T2,T0,K1]
-   + g[T3,T0,K1] + g[T4,T0,K1] + g[T5,T0,K1] + g[T6,T0,K1] + g[T7,T0,K1]
-   + g[T8,T0,K1] + g[T9,T0,K1] + g[T10,T0,K1] + g[T11,T0,K1] + g[D0,T0,K1]
-   + g[D1,T0,K1] + g[D2,T0,K1] + g[S0,T0,K1] + g[E0,T0,K1] = 0
- c12[T0,K2]: - x[T0,T1,K2] - x[T0,T2,K2] - x[T0,T3,K2] - x[T0,T4,K2]
-   - x[T0,T5,K2] - x[T0,T6,K2] - x[T0,T7,K2] - x[T0,T8,K2] - x[T0,T9,K2]
-   - x[T0,T10,K2] - x[T0,T11,K2] - x[T0,D0,K2] - x[T0,D1,K2] - x[T0,D2,K2]
-   - x[T0,S0,K2] - x[T0,E0,K2] - g[T0,T1,K2] - g[T0,T2,K2] - g[T0,T3,K2]
-   - g[T0,T4,K2] - g[T0,T5,K2] - g[T0,T6,K2] - g[T0,T7,K2] - g[T0,T8,K2]
-   - g[T0,T9,K2] - g[T0,T10,K2] - g[T0,T11,K2] - g[T0,D0,K2] - g[T0,D1,K2]
-   - g[T0,D2,K2] - g[T0,S0,K2] - g[T0,E0,K2] + g[T1,T0,K2] + g[T2,T0,K2]
-   + g[T3,T0,K2] + g[T4,T0,K2] + g[T5,T0,K2] + g[T6,T0,K2] + g[T7,T0,K2]
-   + g[T8,T0,K2] + g[T9,T0,K2] + g[T10,T0,K2] + g[T11,T0,K2] + g[D0,T0,K2]
-   + g[D1,T0,K2] + g[D2,T0,K2] + g[S0,T0,K2] + g[E0,T0,K2] = 0
- c12[T1,K0]: - x[T1,T0,K0] - x[T1,T2,K0] - x[T1,T3,K0] - x[T1,T4,K0]
-   - x[T1,T5,K0] - x[T1,T6,K0] - x[T1,T7,K0] - x[T1,T8,K0] - x[T1,T9,K0]
-   - x[T1,T10,K0] - x[T1,T11,K0] - x[T1,D0,K0] - x[T1,D1,K0] - x[T1,D2,K0]
-   - x[T1,S0,K0] - x[T1,E0,K0] + g[T0,T1,K0] - g[T1,T0,K0] - g[T1,T2,K0]
-   - g[T1,T3,K0] - g[T1,T4,K0] - g[T1,T5,K0] - g[T1,T6,K0] - g[T1,T7,K0]
-   - g[T1,T8,K0] - g[T1,T9,K0] - g[T1,T10,K0] - g[T1,T11,K0] - g[T1,D0,K0]
-   - g[T1,D1,K0] - g[T1,D2,K0] - g[T1,S0,K0] - g[T1,E0,K0] + g[T2,T1,K0]
-   + g[T3,T1,K0] + g[T4,T1,K0] + g[T5,T1,K0] + g[T6,T1,K0] + g[T7,T1,K0]
-   + g[T8,T1,K0] + g[T9,T1,K0] + g[T10,T1,K0] + g[T11,T1,K0] + g[D0,T1,K0]
-   + g[D1,T1,K0] + g[D2,T1,K0] + g[S0,T1,K0] + g[E0,T1,K0] = 0
- c12[T1,K1]: - x[T1,T0,K1] - x[T1,T2,K1] - x[T1,T3,K1] - x[T1,T4,K1]
-   - x[T1,T5,K1] - x[T1,T6,K1] - x[T1,T7,K1] - x[T1,T8,K1] - x[T1,T9,K1]
-   - x[T1,T10,K1] - x[T1,T11,K1] - x[T1,D0,K1] - x[T1,D1,K1] - x[T1,D2,K1]
-   - x[T1,S0,K1] - x[T1,E0,K1] + g[T0,T1,K1] - g[T1,T0,K1] - g[T1,T2,K1]
-   - g[T1,T3,K1] - g[T1,T4,K1] - g[T1,T5,K1] - g[T1,T6,K1] - g[T1,T7,K1]
-   - g[T1,T8,K1] - g[T1,T9,K1] - g[T1,T10,K1] - g[T1,T11,K1] - g[T1,D0,K1]
-   - g[T1,D1,K1] - g[T1,D2,K1] - g[T1,S0,K1] - g[T1,E0,K1] + g[T2,T1,K1]
-   + g[T3,T1,K1] + g[T4,T1,K1] + g[T5,T1,K1] + g[T6,T1,K1] + g[T7,T1,K1]
-   + g[T8,T1,K1] + g[T9,T1,K1] + g[T10,T1,K1] + g[T11,T1,K1] + g[D0,T1,K1]
-   + g[D1,T1,K1] + g[D2,T1,K1] + g[S0,T1,K1] + g[E0,T1,K1] = 0
- c12[T1,K2]: - x[T1,T0,K2] - x[T1,T2,K2] - x[T1,T3,K2] - x[T1,T4,K2]
-   - x[T1,T5,K2] - x[T1,T6,K2] - x[T1,T7,K2] - x[T1,T8,K2] - x[T1,T9,K2]
-   - x[T1,T10,K2] - x[T1,T11,K2] - x[T1,D0,K2] - x[T1,D1,K2] - x[T1,D2,K2]
-   - x[T1,S0,K2] - x[T1,E0,K2] + g[T0,T1,K2] - g[T1,T0,K2] - g[T1,T2,K2]
-   - g[T1,T3,K2] - g[T1,T4,K2] - g[T1,T5,K2] - g[T1,T6,K2] - g[T1,T7,K2]
-   - g[T1,T8,K2] - g[T1,T9,K2] - g[T1,T10,K2] - g[T1,T11,K2] - g[T1,D0,K2]
-   - g[T1,D1,K2] - g[T1,D2,K2] - g[T1,S0,K2] - g[T1,E0,K2] + g[T2,T1,K2]
-   + g[T3,T1,K2] + g[T4,T1,K2] + g[T5,T1,K2] + g[T6,T1,K2] + g[T7,T1,K2]
-   + g[T8,T1,K2] + g[T9,T1,K2] + g[T10,T1,K2] + g[T11,T1,K2] + g[D0,T1,K2]
-   + g[D1,T1,K2] + g[D2,T1,K2] + g[S0,T1,K2] + g[E0,T1,K2] = 0
- c12[T2,K0]: - x[T2,T0,K0] - x[T2,T1,K0] - x[T2,T3,K0] - x[T2,T4,K0]
-   - x[T2,T5,K0] - x[T2,T6,K0] - x[T2,T7,K0] - x[T2,T8,K0] - x[T2,T9,K0]
-   - x[T2,T10,K0] - x[T2,T11,K0] - x[T2,D0,K0] - x[T2,D1,K0] - x[T2,D2,K0]
-   - x[T2,S0,K0] - x[T2,E0,K0] + g[T0,T2,K0] + g[T1,T2,K0] - g[T2,T0,K0]
-   - g[T2,T1,K0] - g[T2,T3,K0] - g[T2,T4,K0] - g[T2,T5,K0] - g[T2,T6,K0]
-   - g[T2,T7,K0] - g[T2,T8,K0] - g[T2,T9,K0] - g[T2,T10,K0] - g[T2,T11,K0]
-   - g[T2,D0,K0] - g[T2,D1,K0] - g[T2,D2,K0] - g[T2,S0,K0] - g[T2,E0,K0]
-   + g[T3,T2,K0] + g[T4,T2,K0] + g[T5,T2,K0] + g[T6,T2,K0] + g[T7,T2,K0]
-   + g[T8,T2,K0] + g[T9,T2,K0] + g[T10,T2,K0] + g[T11,T2,K0] + g[D0,T2,K0]
-   + g[D1,T2,K0] + g[D2,T2,K0] + g[S0,T2,K0] + g[E0,T2,K0] = 0
- c12[T2,K1]: - x[T2,T0,K1] - x[T2,T1,K1] - x[T2,T3,K1] - x[T2,T4,K1]
-   - x[T2,T5,K1] - x[T2,T6,K1] - x[T2,T7,K1] - x[T2,T8,K1] - x[T2,T9,K1]
-   - x[T2,T10,K1] - x[T2,T11,K1] - x[T2,D0,K1] - x[T2,D1,K1] - x[T2,D2,K1]
-   - x[T2,S0,K1] - x[T2,E0,K1] + g[T0,T2,K1] + g[T1,T2,K1] - g[T2,T0,K1]
-   - g[T2,T1,K1] - g[T2,T3,K1] - g[T2,T4,K1] - g[T2,T5,K1] - g[T2,T6,K1]
-   - g[T2,T7,K1] - g[T2,T8,K1] - g[T2,T9,K1] - g[T2,T10,K1] - g[T2,T11,K1]
-   - g[T2,D0,K1] - g[T2,D1,K1] - g[T2,D2,K1] - g[T2,S0,K1] - g[T2,E0,K1]
-   + g[T3,T2,K1] + g[T4,T2,K1] + g[T5,T2,K1] + g[T6,T2,K1] + g[T7,T2,K1]
-   + g[T8,T2,K1] + g[T9,T2,K1] + g[T10,T2,K1] + g[T11,T2,K1] + g[D0,T2,K1]
-   + g[D1,T2,K1] + g[D2,T2,K1] + g[S0,T2,K1] + g[E0,T2,K1] = 0
- c12[T2,K2]: - x[T2,T0,K2] - x[T2,T1,K2] - x[T2,T3,K2] - x[T2,T4,K2]
-   - x[T2,T5,K2] - x[T2,T6,K2] - x[T2,T7,K2] - x[T2,T8,K2] - x[T2,T9,K2]
-   - x[T2,T10,K2] - x[T2,T11,K2] - x[T2,D0,K2] - x[T2,D1,K2] - x[T2,D2,K2]
-   - x[T2,S0,K2] - x[T2,E0,K2] + g[T0,T2,K2] + g[T1,T2,K2] - g[T2,T0,K2]
-   - g[T2,T1,K2] - g[T2,T3,K2] - g[T2,T4,K2] - g[T2,T5,K2] - g[T2,T6,K2]
-   - g[T2,T7,K2] - g[T2,T8,K2] - g[T2,T9,K2] - g[T2,T10,K2] - g[T2,T11,K2]
-   - g[T2,D0,K2] - g[T2,D1,K2] - g[T2,D2,K2] - g[T2,S0,K2] - g[T2,E0,K2]
-   + g[T3,T2,K2] + g[T4,T2,K2] + g[T5,T2,K2] + g[T6,T2,K2] + g[T7,T2,K2]
-   + g[T8,T2,K2] + g[T9,T2,K2] + g[T10,T2,K2] + g[T11,T2,K2] + g[D0,T2,K2]
-   + g[D1,T2,K2] + g[D2,T2,K2] + g[S0,T2,K2] + g[E0,T2,K2] = 0
- c12[T3,K0]: - x[T3,T0,K0] - x[T3,T1,K0] - x[T3,T2,K0] - x[T3,T4,K0]
-   - x[T3,T5,K0] - x[T3,T6,K0] - x[T3,T7,K0] - x[T3,T8,K0] - x[T3,T9,K0]
-   - x[T3,T10,K0] - x[T3,T11,K0] - x[T3,D0,K0] - x[T3,D1,K0] - x[T3,D2,K0]
-   - x[T3,S0,K0] - x[T3,E0,K0] + g[T0,T3,K0] + g[T1,T3,K0] + g[T2,T3,K0]
-   - g[T3,T0,K0] - g[T3,T1,K0] - g[T3,T2,K0] - g[T3,T4,K0] - g[T3,T5,K0]
-   - g[T3,T6,K0] - g[T3,T7,K0] - g[T3,T8,K0] - g[T3,T9,K0] - g[T3,T10,K0]
-   - g[T3,T11,K0] - g[T3,D0,K0] - g[T3,D1,K0] - g[T3,D2,K0] - g[T3,S0,K0]
-   - g[T3,E0,K0] + g[T4,T3,K0] + g[T5,T3,K0] + g[T6,T3,K0] + g[T7,T3,K0]
-   + g[T8,T3,K0] + g[T9,T3,K0] + g[T10,T3,K0] + g[T11,T3,K0] + g[D0,T3,K0]
-   + g[D1,T3,K0] + g[D2,T3,K0] + g[S0,T3,K0] + g[E0,T3,K0] = 0
- c12[T3,K1]: - x[T3,T0,K1] - x[T3,T1,K1] - x[T3,T2,K1] - x[T3,T4,K1]
-   - x[T3,T5,K1] - x[T3,T6,K1] - x[T3,T7,K1] - x[T3,T8,K1] - x[T3,T9,K1]
-   - x[T3,T10,K1] - x[T3,T11,K1] - x[T3,D0,K1] - x[T3,D1,K1] - x[T3,D2,K1]
-   - x[T3,S0,K1] - x[T3,E0,K1] + g[T0,T3,K1] + g[T1,T3,K1] + g[T2,T3,K1]
-   - g[T3,T0,K1] - g[T3,T1,K1] - g[T3,T2,K1] - g[T3,T4,K1] - g[T3,T5,K1]
-   - g[T3,T6,K1] - g[T3,T7,K1] - g[T3,T8,K1] - g[T3,T9,K1] - g[T3,T10,K1]
-   - g[T3,T11,K1] - g[T3,D0,K1] - g[T3,D1,K1] - g[T3,D2,K1] - g[T3,S0,K1]
-   - g[T3,E0,K1] + g[T4,T3,K1] + g[T5,T3,K1] + g[T6,T3,K1] + g[T7,T3,K1]
-   + g[T8,T3,K1] + g[T9,T3,K1] + g[T10,T3,K1] + g[T11,T3,K1] + g[D0,T3,K1]
-   + g[D1,T3,K1] + g[D2,T3,K1] + g[S0,T3,K1] + g[E0,T3,K1] = 0
- c12[T3,K2]: - x[T3,T0,K2] - x[T3,T1,K2] - x[T3,T2,K2] - x[T3,T4,K2]
-   - x[T3,T5,K2] - x[T3,T6,K2] - x[T3,T7,K2] - x[T3,T8,K2] - x[T3,T9,K2]
-   - x[T3,T10,K2] - x[T3,T11,K2] - x[T3,D0,K2] - x[T3,D1,K2] - x[T3,D2,K2]
-   - x[T3,S0,K2] - x[T3,E0,K2] + g[T0,T3,K2] + g[T1,T3,K2] + g[T2,T3,K2]
-   - g[T3,T0,K2] - g[T3,T1,K2] - g[T3,T2,K2] - g[T3,T4,K2] - g[T3,T5,K2]
-   - g[T3,T6,K2] - g[T3,T7,K2] - g[T3,T8,K2] - g[T3,T9,K2] - g[T3,T10,K2]
-   - g[T3,T11,K2] - g[T3,D0,K2] - g[T3,D1,K2] - g[T3,D2,K2] - g[T3,S0,K2]
-   - g[T3,E0,K2] + g[T4,T3,K2] + g[T5,T3,K2] + g[T6,T3,K2] + g[T7,T3,K2]
-   + g[T8,T3,K2] + g[T9,T3,K2] + g[T10,T3,K2] + g[T11,T3,K2] + g[D0,T3,K2]
-   + g[D1,T3,K2] + g[D2,T3,K2] + g[S0,T3,K2] + g[E0,T3,K2] = 0
- c12[T4,K0]: - x[T4,T0,K0] - x[T4,T1,K0] - x[T4,T2,K0] - x[T4,T3,K0]
-   - x[T4,T5,K0] - x[T4,T6,K0] - x[T4,T7,K0] - x[T4,T8,K0] - x[T4,T9,K0]
-   - x[T4,T10,K0] - x[T4,T11,K0] - x[T4,D0,K0] - x[T4,D1,K0] - x[T4,D2,K0]
-   - x[T4,S0,K0] - x[T4,E0,K0] + g[T0,T4,K0] + g[T1,T4,K0] + g[T2,T4,K0]
-   + g[T3,T4,K0] - g[T4,T0,K0] - g[T4,T1,K0] - g[T4,T2,K0] - g[T4,T3,K0]
-   - g[T4,T5,K0] - g[T4,T6,K0] - g[T4,T7,K0] - g[T4,T8,K0] - g[T4,T9,K0]
-   - g[T4,T10,K0] - g[T4,T11,K0] - g[T4,D0,K0] - g[T4,D1,K0] - g[T4,D2,K0]
-   - g[T4,S0,K0] - g[T4,E0,K0] + g[T5,T4,K0] + g[T6,T4,K0] + g[T7,T4,K0]
-   + g[T8,T4,K0] + g[T9,T4,K0] + g[T10,T4,K0] + g[T11,T4,K0] + g[D0,T4,K0]
-   + g[D1,T4,K0] + g[D2,T4,K0] + g[S0,T4,K0] + g[E0,T4,K0] = 0
- c12[T4,K1]: - x[T4,T0,K1] - x[T4,T1,K1] - x[T4,T2,K1] - x[T4,T3,K1]
-   - x[T4,T5,K1] - x[T4,T6,K1] - x[T4,T7,K1] - x[T4,T8,K1] - x[T4,T9,K1]
-   - x[T4,T10,K1] - x[T4,T11,K1] - x[T4,D0,K1] - x[T4,D1,K1] - x[T4,D2,K1]
-   - x[T4,S0,K1] - x[T4,E0,K1] + g[T0,T4,K1] + g[T1,T4,K1] + g[T2,T4,K1]
-   + g[T3,T4,K1] - g[T4,T0,K1] - g[T4,T1,K1] - g[T4,T2,K1] - g[T4,T3,K1]
-   - g[T4,T5,K1] - g[T4,T6,K1] - g[T4,T7,K1] - g[T4,T8,K1] - g[T4,T9,K1]
-   - g[T4,T10,K1] - g[T4,T11,K1] - g[T4,D0,K1] - g[T4,D1,K1] - g[T4,D2,K1]
-   - g[T4,S0,K1] - g[T4,E0,K1] + g[T5,T4,K1] + g[T6,T4,K1] + g[T7,T4,K1]
-   + g[T8,T4,K1] + g[T9,T4,K1] + g[T10,T4,K1] + g[T11,T4,K1] + g[D0,T4,K1]
-   + g[D1,T4,K1] + g[D2,T4,K1] + g[S0,T4,K1] + g[E0,T4,K1] = 0
- c12[T4,K2]: - x[T4,T0,K2] - x[T4,T1,K2] - x[T4,T2,K2] - x[T4,T3,K2]
-   - x[T4,T5,K2] - x[T4,T6,K2] - x[T4,T7,K2] - x[T4,T8,K2] - x[T4,T9,K2]
-   - x[T4,T10,K2] - x[T4,T11,K2] - x[T4,D0,K2] - x[T4,D1,K2] - x[T4,D2,K2]
-   - x[T4,S0,K2] - x[T4,E0,K2] + g[T0,T4,K2] + g[T1,T4,K2] + g[T2,T4,K2]
-   + g[T3,T4,K2] - g[T4,T0,K2] - g[T4,T1,K2] - g[T4,T2,K2] - g[T4,T3,K2]
-   - g[T4,T5,K2] - g[T4,T6,K2] - g[T4,T7,K2] - g[T4,T8,K2] - g[T4,T9,K2]
-   - g[T4,T10,K2] - g[T4,T11,K2] - g[T4,D0,K2] - g[T4,D1,K2] - g[T4,D2,K2]
-   - g[T4,S0,K2] - g[T4,E0,K2] + g[T5,T4,K2] + g[T6,T4,K2] + g[T7,T4,K2]
-   + g[T8,T4,K2] + g[T9,T4,K2] + g[T10,T4,K2] + g[T11,T4,K2] + g[D0,T4,K2]
-   + g[D1,T4,K2] + g[D2,T4,K2] + g[S0,T4,K2] + g[E0,T4,K2] = 0
- c12[T5,K0]: - x[T5,T0,K0] - x[T5,T1,K0] - x[T5,T2,K0] - x[T5,T3,K0]
-   - x[T5,T4,K0] - x[T5,T6,K0] - x[T5,T7,K0] - x[T5,T8,K0] - x[T5,T9,K0]
-   - x[T5,T10,K0] - x[T5,T11,K0] - x[T5,D0,K0] - x[T5,D1,K0] - x[T5,D2,K0]
-   - x[T5,S0,K0] - x[T5,E0,K0] + g[T0,T5,K0] + g[T1,T5,K0] + g[T2,T5,K0]
-   + g[T3,T5,K0] + g[T4,T5,K0] - g[T5,T0,K0] - g[T5,T1,K0] - g[T5,T2,K0]
-   - g[T5,T3,K0] - g[T5,T4,K0] - g[T5,T6,K0] - g[T5,T7,K0] - g[T5,T8,K0]
-   - g[T5,T9,K0] - g[T5,T10,K0] - g[T5,T11,K0] - g[T5,D0,K0] - g[T5,D1,K0]
-   - g[T5,D2,K0] - g[T5,S0,K0] - g[T5,E0,K0] + g[T6,T5,K0] + g[T7,T5,K0]
-   + g[T8,T5,K0] + g[T9,T5,K0] + g[T10,T5,K0] + g[T11,T5,K0] + g[D0,T5,K0]
-   + g[D1,T5,K0] + g[D2,T5,K0] + g[S0,T5,K0] + g[E0,T5,K0] = 0
- c12[T5,K1]: - x[T5,T0,K1] - x[T5,T1,K1] - x[T5,T2,K1] - x[T5,T3,K1]
-   - x[T5,T4,K1] - x[T5,T6,K1] - x[T5,T7,K1] - x[T5,T8,K1] - x[T5,T9,K1]
-   - x[T5,T10,K1] - x[T5,T11,K1] - x[T5,D0,K1] - x[T5,D1,K1] - x[T5,D2,K1]
-   - x[T5,S0,K1] - x[T5,E0,K1] + g[T0,T5,K1] + g[T1,T5,K1] + g[T2,T5,K1]
-   + g[T3,T5,K1] + g[T4,T5,K1] - g[T5,T0,K1] - g[T5,T1,K1] - g[T5,T2,K1]
-   - g[T5,T3,K1] - g[T5,T4,K1] - g[T5,T6,K1] - g[T5,T7,K1] - g[T5,T8,K1]
-   - g[T5,T9,K1] - g[T5,T10,K1] - g[T5,T11,K1] - g[T5,D0,K1] - g[T5,D1,K1]
-   - g[T5,D2,K1] - g[T5,S0,K1] - g[T5,E0,K1] + g[T6,T5,K1] + g[T7,T5,K1]
-   + g[T8,T5,K1] + g[T9,T5,K1] + g[T10,T5,K1] + g[T11,T5,K1] + g[D0,T5,K1]
-   + g[D1,T5,K1] + g[D2,T5,K1] + g[S0,T5,K1] + g[E0,T5,K1] = 0
- c12[T5,K2]: - x[T5,T0,K2] - x[T5,T1,K2] - x[T5,T2,K2] - x[T5,T3,K2]
-   - x[T5,T4,K2] - x[T5,T6,K2] - x[T5,T7,K2] - x[T5,T8,K2] - x[T5,T9,K2]
-   - x[T5,T10,K2] - x[T5,T11,K2] - x[T5,D0,K2] - x[T5,D1,K2] - x[T5,D2,K2]
-   - x[T5,S0,K2] - x[T5,E0,K2] + g[T0,T5,K2] + g[T1,T5,K2] + g[T2,T5,K2]
-   + g[T3,T5,K2] + g[T4,T5,K2] - g[T5,T0,K2] - g[T5,T1,K2] - g[T5,T2,K2]
-   - g[T5,T3,K2] - g[T5,T4,K2] - g[T5,T6,K2] - g[T5,T7,K2] - g[T5,T8,K2]
-   - g[T5,T9,K2] - g[T5,T10,K2] - g[T5,T11,K2] - g[T5,D0,K2] - g[T5,D1,K2]
-   - g[T5,D2,K2] - g[T5,S0,K2] - g[T5,E0,K2] + g[T6,T5,K2] + g[T7,T5,K2]
-   + g[T8,T5,K2] + g[T9,T5,K2] + g[T10,T5,K2] + g[T11,T5,K2] + g[D0,T5,K2]
-   + g[D1,T5,K2] + g[D2,T5,K2] + g[S0,T5,K2] + g[E0,T5,K2] = 0
- c12[T6,K0]: - x[T6,T0,K0] - x[T6,T1,K0] - x[T6,T2,K0] - x[T6,T3,K0]
-   - x[T6,T4,K0] - x[T6,T5,K0] - x[T6,T7,K0] - x[T6,T8,K0] - x[T6,T9,K0]
-   - x[T6,T10,K0] - x[T6,T11,K0] - x[T6,D0,K0] - x[T6,D1,K0] - x[T6,D2,K0]
-   - x[T6,S0,K0] - x[T6,E0,K0] + g[T0,T6,K0] + g[T1,T6,K0] + g[T2,T6,K0]
-   + g[T3,T6,K0] + g[T4,T6,K0] + g[T5,T6,K0] - g[T6,T0,K0] - g[T6,T1,K0]
-   - g[T6,T2,K0] - g[T6,T3,K0] - g[T6,T4,K0] - g[T6,T5,K0] - g[T6,T7,K0]
-   - g[T6,T8,K0] - g[T6,T9,K0] - g[T6,T10,K0] - g[T6,T11,K0] - g[T6,D0,K0]
-   - g[T6,D1,K0] - g[T6,D2,K0] - g[T6,S0,K0] - g[T6,E0,K0] + g[T7,T6,K0]
-   + g[T8,T6,K0] + g[T9,T6,K0] + g[T10,T6,K0] + g[T11,T6,K0] + g[D0,T6,K0]
-   + g[D1,T6,K0] + g[D2,T6,K0] + g[S0,T6,K0] + g[E0,T6,K0] = 0
- c12[T6,K1]: - x[T6,T0,K1] - x[T6,T1,K1] - x[T6,T2,K1] - x[T6,T3,K1]
-   - x[T6,T4,K1] - x[T6,T5,K1] - x[T6,T7,K1] - x[T6,T8,K1] - x[T6,T9,K1]
-   - x[T6,T10,K1] - x[T6,T11,K1] - x[T6,D0,K1] - x[T6,D1,K1] - x[T6,D2,K1]
-   - x[T6,S0,K1] - x[T6,E0,K1] + g[T0,T6,K1] + g[T1,T6,K1] + g[T2,T6,K1]
-   + g[T3,T6,K1] + g[T4,T6,K1] + g[T5,T6,K1] - g[T6,T0,K1] - g[T6,T1,K1]
-   - g[T6,T2,K1] - g[T6,T3,K1] - g[T6,T4,K1] - g[T6,T5,K1] - g[T6,T7,K1]
-   - g[T6,T8,K1] - g[T6,T9,K1] - g[T6,T10,K1] - g[T6,T11,K1] - g[T6,D0,K1]
-   - g[T6,D1,K1] - g[T6,D2,K1] - g[T6,S0,K1] - g[T6,E0,K1] + g[T7,T6,K1]
-   + g[T8,T6,K1] + g[T9,T6,K1] + g[T10,T6,K1] + g[T11,T6,K1] + g[D0,T6,K1]
-   + g[D1,T6,K1] + g[D2,T6,K1] + g[S0,T6,K1] + g[E0,T6,K1] = 0
- c12[T6,K2]: - x[T6,T0,K2] - x[T6,T1,K2] - x[T6,T2,K2] - x[T6,T3,K2]
-   - x[T6,T4,K2] - x[T6,T5,K2] - x[T6,T7,K2] - x[T6,T8,K2] - x[T6,T9,K2]
-   - x[T6,T10,K2] - x[T6,T11,K2] - x[T6,D0,K2] - x[T6,D1,K2] - x[T6,D2,K2]
-   - x[T6,S0,K2] - x[T6,E0,K2] + g[T0,T6,K2] + g[T1,T6,K2] + g[T2,T6,K2]
-   + g[T3,T6,K2] + g[T4,T6,K2] + g[T5,T6,K2] - g[T6,T0,K2] - g[T6,T1,K2]
-   - g[T6,T2,K2] - g[T6,T3,K2] - g[T6,T4,K2] - g[T6,T5,K2] - g[T6,T7,K2]
-   - g[T6,T8,K2] - g[T6,T9,K2] - g[T6,T10,K2] - g[T6,T11,K2] - g[T6,D0,K2]
-   - g[T6,D1,K2] - g[T6,D2,K2] - g[T6,S0,K2] - g[T6,E0,K2] + g[T7,T6,K2]
-   + g[T8,T6,K2] + g[T9,T6,K2] + g[T10,T6,K2] + g[T11,T6,K2] + g[D0,T6,K2]
-   + g[D1,T6,K2] + g[D2,T6,K2] + g[S0,T6,K2] + g[E0,T6,K2] = 0
- c12[T7,K0]: - x[T7,T0,K0] - x[T7,T1,K0] - x[T7,T2,K0] - x[T7,T3,K0]
-   - x[T7,T4,K0] - x[T7,T5,K0] - x[T7,T6,K0] - x[T7,T8,K0] - x[T7,T9,K0]
-   - x[T7,T10,K0] - x[T7,T11,K0] - x[T7,D0,K0] - x[T7,D1,K0] - x[T7,D2,K0]
-   - x[T7,S0,K0] - x[T7,E0,K0] + g[T0,T7,K0] + g[T1,T7,K0] + g[T2,T7,K0]
-   + g[T3,T7,K0] + g[T4,T7,K0] + g[T5,T7,K0] + g[T6,T7,K0] - g[T7,T0,K0]
-   - g[T7,T1,K0] - g[T7,T2,K0] - g[T7,T3,K0] - g[T7,T4,K0] - g[T7,T5,K0]
-   - g[T7,T6,K0] - g[T7,T8,K0] - g[T7,T9,K0] - g[T7,T10,K0] - g[T7,T11,K0]
-   - g[T7,D0,K0] - g[T7,D1,K0] - g[T7,D2,K0] - g[T7,S0,K0] - g[T7,E0,K0]
-   + g[T8,T7,K0] + g[T9,T7,K0] + g[T10,T7,K0] + g[T11,T7,K0] + g[D0,T7,K0]
-   + g[D1,T7,K0] + g[D2,T7,K0] + g[S0,T7,K0] + g[E0,T7,K0] = 0
- c12[T7,K1]: - x[T7,T0,K1] - x[T7,T1,K1] - x[T7,T2,K1] - x[T7,T3,K1]
-   - x[T7,T4,K1] - x[T7,T5,K1] - x[T7,T6,K1] - x[T7,T8,K1] - x[T7,T9,K1]
-   - x[T7,T10,K1] - x[T7,T11,K1] - x[T7,D0,K1] - x[T7,D1,K1] - x[T7,D2,K1]
-   - x[T7,S0,K1] - x[T7,E0,K1] + g[T0,T7,K1] + g[T1,T7,K1] + g[T2,T7,K1]
-   + g[T3,T7,K1] + g[T4,T7,K1] + g[T5,T7,K1] + g[T6,T7,K1] - g[T7,T0,K1]
-   - g[T7,T1,K1] - g[T7,T2,K1] - g[T7,T3,K1] - g[T7,T4,K1] - g[T7,T5,K1]
-   - g[T7,T6,K1] - g[T7,T8,K1] - g[T7,T9,K1] - g[T7,T10,K1] - g[T7,T11,K1]
-   - g[T7,D0,K1] - g[T7,D1,K1] - g[T7,D2,K1] - g[T7,S0,K1] - g[T7,E0,K1]
-   + g[T8,T7,K1] + g[T9,T7,K1] + g[T10,T7,K1] + g[T11,T7,K1] + g[D0,T7,K1]
-   + g[D1,T7,K1] + g[D2,T7,K1] + g[S0,T7,K1] + g[E0,T7,K1] = 0
- c12[T7,K2]: - x[T7,T0,K2] - x[T7,T1,K2] - x[T7,T2,K2] - x[T7,T3,K2]
-   - x[T7,T4,K2] - x[T7,T5,K2] - x[T7,T6,K2] - x[T7,T8,K2] - x[T7,T9,K2]
-   - x[T7,T10,K2] - x[T7,T11,K2] - x[T7,D0,K2] - x[T7,D1,K2] - x[T7,D2,K2]
-   - x[T7,S0,K2] - x[T7,E0,K2] + g[T0,T7,K2] + g[T1,T7,K2] + g[T2,T7,K2]
-   + g[T3,T7,K2] + g[T4,T7,K2] + g[T5,T7,K2] + g[T6,T7,K2] - g[T7,T0,K2]
-   - g[T7,T1,K2] - g[T7,T2,K2] - g[T7,T3,K2] - g[T7,T4,K2] - g[T7,T5,K2]
-   - g[T7,T6,K2] - g[T7,T8,K2] - g[T7,T9,K2] - g[T7,T10,K2] - g[T7,T11,K2]
-   - g[T7,D0,K2] - g[T7,D1,K2] - g[T7,D2,K2] - g[T7,S0,K2] - g[T7,E0,K2]
-   + g[T8,T7,K2] + g[T9,T7,K2] + g[T10,T7,K2] + g[T11,T7,K2] + g[D0,T7,K2]
-   + g[D1,T7,K2] + g[D2,T7,K2] + g[S0,T7,K2] + g[E0,T7,K2] = 0
- c12[T8,K0]: - x[T8,T0,K0] - x[T8,T1,K0] - x[T8,T2,K0] - x[T8,T3,K0]
-   - x[T8,T4,K0] - x[T8,T5,K0] - x[T8,T6,K0] - x[T8,T7,K0] - x[T8,T9,K0]
-   - x[T8,T10,K0] - x[T8,T11,K0] - x[T8,D0,K0] - x[T8,D1,K0] - x[T8,D2,K0]
-   - x[T8,S0,K0] - x[T8,E0,K0] + g[T0,T8,K0] + g[T1,T8,K0] + g[T2,T8,K0]
-   + g[T3,T8,K0] + g[T4,T8,K0] + g[T5,T8,K0] + g[T6,T8,K0] + g[T7,T8,K0]
-   - g[T8,T0,K0] - g[T8,T1,K0] - g[T8,T2,K0] - g[T8,T3,K0] - g[T8,T4,K0]
-   - g[T8,T5,K0] - g[T8,T6,K0] - g[T8,T7,K0] - g[T8,T9,K0] - g[T8,T10,K0]
-   - g[T8,T11,K0] - g[T8,D0,K0] - g[T8,D1,K0] - g[T8,D2,K0] - g[T8,S0,K0]
-   - g[T8,E0,K0] + g[T9,T8,K0] + g[T10,T8,K0] + g[T11,T8,K0] + g[D0,T8,K0]
-   + g[D1,T8,K0] + g[D2,T8,K0] + g[S0,T8,K0] + g[E0,T8,K0] = 0
- c12[T8,K1]: - x[T8,T0,K1] - x[T8,T1,K1] - x[T8,T2,K1] - x[T8,T3,K1]
-   - x[T8,T4,K1] - x[T8,T5,K1] - x[T8,T6,K1] - x[T8,T7,K1] - x[T8,T9,K1]
-   - x[T8,T10,K1] - x[T8,T11,K1] - x[T8,D0,K1] - x[T8,D1,K1] - x[T8,D2,K1]
-   - x[T8,S0,K1] - x[T8,E0,K1] + g[T0,T8,K1] + g[T1,T8,K1] + g[T2,T8,K1]
-   + g[T3,T8,K1] + g[T4,T8,K1] + g[T5,T8,K1] + g[T6,T8,K1] + g[T7,T8,K1]
-   - g[T8,T0,K1] - g[T8,T1,K1] - g[T8,T2,K1] - g[T8,T3,K1] - g[T8,T4,K1]
-   - g[T8,T5,K1] - g[T8,T6,K1] - g[T8,T7,K1] - g[T8,T9,K1] - g[T8,T10,K1]
-   - g[T8,T11,K1] - g[T8,D0,K1] - g[T8,D1,K1] - g[T8,D2,K1] - g[T8,S0,K1]
-   - g[T8,E0,K1] + g[T9,T8,K1] + g[T10,T8,K1] + g[T11,T8,K1] + g[D0,T8,K1]
-   + g[D1,T8,K1] + g[D2,T8,K1] + g[S0,T8,K1] + g[E0,T8,K1] = 0
- c12[T8,K2]: - x[T8,T0,K2] - x[T8,T1,K2] - x[T8,T2,K2] - x[T8,T3,K2]
-   - x[T8,T4,K2] - x[T8,T5,K2] - x[T8,T6,K2] - x[T8,T7,K2] - x[T8,T9,K2]
-   - x[T8,T10,K2] - x[T8,T11,K2] - x[T8,D0,K2] - x[T8,D1,K2] - x[T8,D2,K2]
-   - x[T8,S0,K2] - x[T8,E0,K2] + g[T0,T8,K2] + g[T1,T8,K2] + g[T2,T8,K2]
-   + g[T3,T8,K2] + g[T4,T8,K2] + g[T5,T8,K2] + g[T6,T8,K2] + g[T7,T8,K2]
-   - g[T8,T0,K2] - g[T8,T1,K2] - g[T8,T2,K2] - g[T8,T3,K2] - g[T8,T4,K2]
-   - g[T8,T5,K2] - g[T8,T6,K2] - g[T8,T7,K2] - g[T8,T9,K2] - g[T8,T10,K2]
-   - g[T8,T11,K2] - g[T8,D0,K2] - g[T8,D1,K2] - g[T8,D2,K2] - g[T8,S0,K2]
-   - g[T8,E0,K2] + g[T9,T8,K2] + g[T10,T8,K2] + g[T11,T8,K2] + g[D0,T8,K2]
-   + g[D1,T8,K2] + g[D2,T8,K2] + g[S0,T8,K2] + g[E0,T8,K2] = 0
- c12[T9,K0]: - x[T9,T0,K0] - x[T9,T1,K0] - x[T9,T2,K0] - x[T9,T3,K0]
-   - x[T9,T4,K0] - x[T9,T5,K0] - x[T9,T6,K0] - x[T9,T7,K0] - x[T9,T8,K0]
-   - x[T9,T10,K0] - x[T9,T11,K0] - x[T9,D0,K0] - x[T9,D1,K0] - x[T9,D2,K0]
-   - x[T9,S0,K0] - x[T9,E0,K0] + g[T0,T9,K0] + g[T1,T9,K0] + g[T2,T9,K0]
-   + g[T3,T9,K0] + g[T4,T9,K0] + g[T5,T9,K0] + g[T6,T9,K0] + g[T7,T9,K0]
-   + g[T8,T9,K0] - g[T9,T0,K0] - g[T9,T1,K0] - g[T9,T2,K0] - g[T9,T3,K0]
-   - g[T9,T4,K0] - g[T9,T5,K0] - g[T9,T6,K0] - g[T9,T7,K0] - g[T9,T8,K0]
-   - g[T9,T10,K0] - g[T9,T11,K0] - g[T9,D0,K0] - g[T9,D1,K0] - g[T9,D2,K0]
-   - g[T9,S0,K0] - g[T9,E0,K0] + g[T10,T9,K0] + g[T11,T9,K0] + g[D0,T9,K0]
-   + g[D1,T9,K0] + g[D2,T9,K0] + g[S0,T9,K0] + g[E0,T9,K0] = 0
- c12[T9,K1]: - x[T9,T0,K1] - x[T9,T1,K1] - x[T9,T2,K1] - x[T9,T3,K1]
-   - x[T9,T4,K1] - x[T9,T5,K1] - x[T9,T6,K1] - x[T9,T7,K1] - x[T9,T8,K1]
-   - x[T9,T10,K1] - x[T9,T11,K1] - x[T9,D0,K1] - x[T9,D1,K1] - x[T9,D2,K1]
-   - x[T9,S0,K1] - x[T9,E0,K1] + g[T0,T9,K1] + g[T1,T9,K1] + g[T2,T9,K1]
-   + g[T3,T9,K1] + g[T4,T9,K1] + g[T5,T9,K1] + g[T6,T9,K1] + g[T7,T9,K1]
-   + g[T8,T9,K1] - g[T9,T0,K1] - g[T9,T1,K1] - g[T9,T2,K1] - g[T9,T3,K1]
-   - g[T9,T4,K1] - g[T9,T5,K1] - g[T9,T6,K1] - g[T9,T7,K1] - g[T9,T8,K1]
-   - g[T9,T10,K1] - g[T9,T11,K1] - g[T9,D0,K1] - g[T9,D1,K1] - g[T9,D2,K1]
-   - g[T9,S0,K1] - g[T9,E0,K1] + g[T10,T9,K1] + g[T11,T9,K1] + g[D0,T9,K1]
-   + g[D1,T9,K1] + g[D2,T9,K1] + g[S0,T9,K1] + g[E0,T9,K1] = 0
- c12[T9,K2]: - x[T9,T0,K2] - x[T9,T1,K2] - x[T9,T2,K2] - x[T9,T3,K2]
-   - x[T9,T4,K2] - x[T9,T5,K2] - x[T9,T6,K2] - x[T9,T7,K2] - x[T9,T8,K2]
-   - x[T9,T10,K2] - x[T9,T11,K2] - x[T9,D0,K2] - x[T9,D1,K2] - x[T9,D2,K2]
-   - x[T9,S0,K2] - x[T9,E0,K2] + g[T0,T9,K2] + g[T1,T9,K2] + g[T2,T9,K2]
-   + g[T3,T9,K2] + g[T4,T9,K2] + g[T5,T9,K2] + g[T6,T9,K2] + g[T7,T9,K2]
-   + g[T8,T9,K2] - g[T9,T0,K2] - g[T9,T1,K2] - g[T9,T2,K2] - g[T9,T3,K2]
-   - g[T9,T4,K2] - g[T9,T5,K2] - g[T9,T6,K2] - g[T9,T7,K2] - g[T9,T8,K2]
-   - g[T9,T10,K2] - g[T9,T11,K2] - g[T9,D0,K2] - g[T9,D1,K2] - g[T9,D2,K2]
-   - g[T9,S0,K2] - g[T9,E0,K2] + g[T10,T9,K2] + g[T11,T9,K2] + g[D0,T9,K2]
-   + g[D1,T9,K2] + g[D2,T9,K2] + g[S0,T9,K2] + g[E0,T9,K2] = 0
- c12[T10,K0]: - x[T10,T0,K0] - x[T10,T1,K0] - x[T10,T2,K0] - x[T10,T3,K0]
-   - x[T10,T4,K0] - x[T10,T5,K0] - x[T10,T6,K0] - x[T10,T7,K0]
-   - x[T10,T8,K0] - x[T10,T9,K0] - x[T10,T11,K0] - x[T10,D0,K0]
-   - x[T10,D1,K0] - x[T10,D2,K0] - x[T10,S0,K0] - x[T10,E0,K0]
-   + g[T0,T10,K0] + g[T1,T10,K0] + g[T2,T10,K0] + g[T3,T10,K0]
-   + g[T4,T10,K0] + g[T5,T10,K0] + g[T6,T10,K0] + g[T7,T10,K0]
-   + g[T8,T10,K0] + g[T9,T10,K0] - g[T10,T0,K0] - g[T10,T1,K0]
-   - g[T10,T2,K0] - g[T10,T3,K0] - g[T10,T4,K0] - g[T10,T5,K0]
-   - g[T10,T6,K0] - g[T10,T7,K0] - g[T10,T8,K0] - g[T10,T9,K0]
-   - g[T10,T11,K0] - g[T10,D0,K0] - g[T10,D1,K0] - g[T10,D2,K0]
-   - g[T10,S0,K0] - g[T10,E0,K0] + g[T11,T10,K0] + g[D0,T10,K0]
-   + g[D1,T10,K0] + g[D2,T10,K0] + g[S0,T10,K0] + g[E0,T10,K0] = 0
- c12[T10,K1]: - x[T10,T0,K1] - x[T10,T1,K1] - x[T10,T2,K1] - x[T10,T3,K1]
-   - x[T10,T4,K1] - x[T10,T5,K1] - x[T10,T6,K1] - x[T10,T7,K1]
-   - x[T10,T8,K1] - x[T10,T9,K1] - x[T10,T11,K1] - x[T10,D0,K1]
-   - x[T10,D1,K1] - x[T10,D2,K1] - x[T10,S0,K1] - x[T10,E0,K1]
-   + g[T0,T10,K1] + g[T1,T10,K1] + g[T2,T10,K1] + g[T3,T10,K1]
-   + g[T4,T10,K1] + g[T5,T10,K1] + g[T6,T10,K1] + g[T7,T10,K1]
-   + g[T8,T10,K1] + g[T9,T10,K1] - g[T10,T0,K1] - g[T10,T1,K1]
-   - g[T10,T2,K1] - g[T10,T3,K1] - g[T10,T4,K1] - g[T10,T5,K1]
-   - g[T10,T6,K1] - g[T10,T7,K1] - g[T10,T8,K1] - g[T10,T9,K1]
-   - g[T10,T11,K1] - g[T10,D0,K1] - g[T10,D1,K1] - g[T10,D2,K1]
-   - g[T10,S0,K1] - g[T10,E0,K1] + g[T11,T10,K1] + g[D0,T10,K1]
-   + g[D1,T10,K1] + g[D2,T10,K1] + g[S0,T10,K1] + g[E0,T10,K1] = 0
- c12[T10,K2]: - x[T10,T0,K2] - x[T10,T1,K2] - x[T10,T2,K2] - x[T10,T3,K2]
-   - x[T10,T4,K2] - x[T10,T5,K2] - x[T10,T6,K2] - x[T10,T7,K2]
-   - x[T10,T8,K2] - x[T10,T9,K2] - x[T10,T11,K2] - x[T10,D0,K2]
-   - x[T10,D1,K2] - x[T10,D2,K2] - x[T10,S0,K2] - x[T10,E0,K2]
-   + g[T0,T10,K2] + g[T1,T10,K2] + g[T2,T10,K2] + g[T3,T10,K2]
-   + g[T4,T10,K2] + g[T5,T10,K2] + g[T6,T10,K2] + g[T7,T10,K2]
-   + g[T8,T10,K2] + g[T9,T10,K2] - g[T10,T0,K2] - g[T10,T1,K2]
-   - g[T10,T2,K2] - g[T10,T3,K2] - g[T10,T4,K2] - g[T10,T5,K2]
-   - g[T10,T6,K2] - g[T10,T7,K2] - g[T10,T8,K2] - g[T10,T9,K2]
-   - g[T10,T11,K2] - g[T10,D0,K2] - g[T10,D1,K2] - g[T10,D2,K2]
-   - g[T10,S0,K2] - g[T10,E0,K2] + g[T11,T10,K2] + g[D0,T10,K2]
-   + g[D1,T10,K2] + g[D2,T10,K2] + g[S0,T10,K2] + g[E0,T10,K2] = 0
- c12[T11,K0]: - x[T11,T0,K0] - x[T11,T1,K0] - x[T11,T2,K0] - x[T11,T3,K0]
-   - x[T11,T4,K0] - x[T11,T5,K0] - x[T11,T6,K0] - x[T11,T7,K0]
-   - x[T11,T8,K0] - x[T11,T9,K0] - x[T11,T10,K0] - x[T11,D0,K0]
-   - x[T11,D1,K0] - x[T11,D2,K0] - x[T11,S0,K0] - x[T11,E0,K0]
-   + g[T0,T11,K0] + g[T1,T11,K0] + g[T2,T11,K0] + g[T3,T11,K0]
-   + g[T4,T11,K0] + g[T5,T11,K0] + g[T6,T11,K0] + g[T7,T11,K0]
-   + g[T8,T11,K0] + g[T9,T11,K0] + g[T10,T11,K0] - g[T11,T0,K0]
-   - g[T11,T1,K0] - g[T11,T2,K0] - g[T11,T3,K0] - g[T11,T4,K0]
-   - g[T11,T5,K0] - g[T11,T6,K0] - g[T11,T7,K0] - g[T11,T8,K0]
-   - g[T11,T9,K0] - g[T11,T10,K0] - g[T11,D0,K0] - g[T11,D1,K0]
-   - g[T11,D2,K0] - g[T11,S0,K0] - g[T11,E0,K0] + g[D0,T11,K0]
-   + g[D1,T11,K0] + g[D2,T11,K0] + g[S0,T11,K0] + g[E0,T11,K0] = 0
- c12[T11,K1]: - x[T11,T0,K1] - x[T11,T1,K1] - x[T11,T2,K1] - x[T11,T3,K1]
-   - x[T11,T4,K1] - x[T11,T5,K1] - x[T11,T6,K1] - x[T11,T7,K1]
-   - x[T11,T8,K1] - x[T11,T9,K1] - x[T11,T10,K1] - x[T11,D0,K1]
-   - x[T11,D1,K1] - x[T11,D2,K1] - x[T11,S0,K1] - x[T11,E0,K1]
-   + g[T0,T11,K1] + g[T1,T11,K1] + g[T2,T11,K1] + g[T3,T11,K1]
-   + g[T4,T11,K1] + g[T5,T11,K1] + g[T6,T11,K1] + g[T7,T11,K1]
-   + g[T8,T11,K1] + g[T9,T11,K1] + g[T10,T11,K1] - g[T11,T0,K1]
-   - g[T11,T1,K1] - g[T11,T2,K1] - g[T11,T3,K1] - g[T11,T4,K1]
-   - g[T11,T5,K1] - g[T11,T6,K1] - g[T11,T7,K1] - g[T11,T8,K1]
-   - g[T11,T9,K1] - g[T11,T10,K1] - g[T11,D0,K1] - g[T11,D1,K1]
-   - g[T11,D2,K1] - g[T11,S0,K1] - g[T11,E0,K1] + g[D0,T11,K1]
-   + g[D1,T11,K1] + g[D2,T11,K1] + g[S0,T11,K1] + g[E0,T11,K1] = 0
- c12[T11,K2]: - x[T11,T0,K2] - x[T11,T1,K2] - x[T11,T2,K2] - x[T11,T3,K2]
-   - x[T11,T4,K2] - x[T11,T5,K2] - x[T11,T6,K2] - x[T11,T7,K2]
-   - x[T11,T8,K2] - x[T11,T9,K2] - x[T11,T10,K2] - x[T11,D0,K2]
-   - x[T11,D1,K2] - x[T11,D2,K2] - x[T11,S0,K2] - x[T11,E0,K2]
-   + g[T0,T11,K2] + g[T1,T11,K2] + g[T2,T11,K2] + g[T3,T11,K2]
-   + g[T4,T11,K2] + g[T5,T11,K2] + g[T6,T11,K2] + g[T7,T11,K2]
-   + g[T8,T11,K2] + g[T9,T11,K2] + g[T10,T11,K2] - g[T11,T0,K2]
-   - g[T11,T1,K2] - g[T11,T2,K2] - g[T11,T3,K2] - g[T11,T4,K2]
-   - g[T11,T5,K2] - g[T11,T6,K2] - g[T11,T7,K2] - g[T11,T8,K2]
-   - g[T11,T9,K2] - g[T11,T10,K2] - g[T11,D0,K2] - g[T11,D1,K2]
-   - g[T11,D2,K2] - g[T11,S0,K2] - g[T11,E0,K2] + g[D0,T11,K2]
-   + g[D1,T11,K2] + g[D2,T11,K2] + g[S0,T11,K2] + g[E0,T11,K2] = 0
- c13[D0,K0]: g[T0,D0,K0] + g[T1,D0,K0] + g[T2,D0,K0] + g[T3,D0,K0]
-   + g[T4,D0,K0] + g[T5,D0,K0] + g[T6,D0,K0] + g[T7,D0,K0] + g[T8,D0,K0]
-   + g[T9,D0,K0] + g[T10,D0,K0] + g[T11,D0,K0] - g[D0,T0,K0] - g[D0,T1,K0]
-   - g[D0,T2,K0] - g[D0,T3,K0] - g[D0,T4,K0] - g[D0,T5,K0] - g[D0,T6,K0]
-   - g[D0,T7,K0] - g[D0,T8,K0] - g[D0,T9,K0] - g[D0,T10,K0] - g[D0,T11,K0]
-   - g[D0,D1,K0] - g[D0,D2,K0] - g[D0,S0,K0] - g[D0,E0,K0] + g[D1,D0,K0]
-   + g[D2,D0,K0] + g[S0,D0,K0] + g[E0,D0,K0] = 0
- c13[D0,K1]: g[T0,D0,K1] + g[T1,D0,K1] + g[T2,D0,K1] + g[T3,D0,K1]
-   + g[T4,D0,K1] + g[T5,D0,K1] + g[T6,D0,K1] + g[T7,D0,K1] + g[T8,D0,K1]
-   + g[T9,D0,K1] + g[T10,D0,K1] + g[T11,D0,K1] - g[D0,T0,K1] - g[D0,T1,K1]
-   - g[D0,T2,K1] - g[D0,T3,K1] - g[D0,T4,K1] - g[D0,T5,K1] - g[D0,T6,K1]
-   - g[D0,T7,K1] - g[D0,T8,K1] - g[D0,T9,K1] - g[D0,T10,K1] - g[D0,T11,K1]
-   - g[D0,D1,K1] - g[D0,D2,K1] - g[D0,S0,K1] - g[D0,E0,K1] + g[D1,D0,K1]
-   + g[D2,D0,K1] + g[S0,D0,K1] + g[E0,D0,K1] = 0
- c13[D0,K2]: g[T0,D0,K2] + g[T1,D0,K2] + g[T2,D0,K2] + g[T3,D0,K2]
-   + g[T4,D0,K2] + g[T5,D0,K2] + g[T6,D0,K2] + g[T7,D0,K2] + g[T8,D0,K2]
-   + g[T9,D0,K2] + g[T10,D0,K2] + g[T11,D0,K2] - g[D0,T0,K2] - g[D0,T1,K2]
-   - g[D0,T2,K2] - g[D0,T3,K2] - g[D0,T4,K2] - g[D0,T5,K2] - g[D0,T6,K2]
-   - g[D0,T7,K2] - g[D0,T8,K2] - g[D0,T9,K2] - g[D0,T10,K2] - g[D0,T11,K2]
-   - g[D0,D1,K2] - g[D0,D2,K2] - g[D0,S0,K2] - g[D0,E0,K2] + g[D1,D0,K2]
-   + g[D2,D0,K2] + g[S0,D0,K2] + g[E0,D0,K2] = 0
- c13[D1,K0]: g[T0,D1,K0] + g[T1,D1,K0] + g[T2,D1,K0] + g[T3,D1,K0]
-   + g[T4,D1,K0] + g[T5,D1,K0] + g[T6,D1,K0] + g[T7,D1,K0] + g[T8,D1,K0]
-   + g[T9,D1,K0] + g[T10,D1,K0] + g[T11,D1,K0] + g[D0,D1,K0] - g[D1,T0,K0]
-   - g[D1,T1,K0] - g[D1,T2,K0] - g[D1,T3,K0] - g[D1,T4,K0] - g[D1,T5,K0]
-   - g[D1,T6,K0] - g[D1,T7,K0] - g[D1,T8,K0] - g[D1,T9,K0] - g[D1,T10,K0]
-   - g[D1,T11,K0] - g[D1,D0,K0] - g[D1,D2,K0] - g[D1,S0,K0] - g[D1,E0,K0]
-   + g[D2,D1,K0] + g[S0,D1,K0] + g[E0,D1,K0] = 0
- c13[D1,K1]: g[T0,D1,K1] + g[T1,D1,K1] + g[T2,D1,K1] + g[T3,D1,K1]
-   + g[T4,D1,K1] + g[T5,D1,K1] + g[T6,D1,K1] + g[T7,D1,K1] + g[T8,D1,K1]
-   + g[T9,D1,K1] + g[T10,D1,K1] + g[T11,D1,K1] + g[D0,D1,K1] - g[D1,T0,K1]
-   - g[D1,T1,K1] - g[D1,T2,K1] - g[D1,T3,K1] - g[D1,T4,K1] - g[D1,T5,K1]
-   - g[D1,T6,K1] - g[D1,T7,K1] - g[D1,T8,K1] - g[D1,T9,K1] - g[D1,T10,K1]
-   - g[D1,T11,K1] - g[D1,D0,K1] - g[D1,D2,K1] - g[D1,S0,K1] - g[D1,E0,K1]
-   + g[D2,D1,K1] + g[S0,D1,K1] + g[E0,D1,K1] = 0
- c13[D1,K2]: g[T0,D1,K2] + g[T1,D1,K2] + g[T2,D1,K2] + g[T3,D1,K2]
-   + g[T4,D1,K2] + g[T5,D1,K2] + g[T6,D1,K2] + g[T7,D1,K2] + g[T8,D1,K2]
-   + g[T9,D1,K2] + g[T10,D1,K2] + g[T11,D1,K2] + g[D0,D1,K2] - g[D1,T0,K2]
-   - g[D1,T1,K2] - g[D1,T2,K2] - g[D1,T3,K2] - g[D1,T4,K2] - g[D1,T5,K2]
-   - g[D1,T6,K2] - g[D1,T7,K2] - g[D1,T8,K2] - g[D1,T9,K2] - g[D1,T10,K2]
-   - g[D1,T11,K2] - g[D1,D0,K2] - g[D1,D2,K2] - g[D1,S0,K2] - g[D1,E0,K2]
-   + g[D2,D1,K2] + g[S0,D1,K2] + g[E0,D1,K2] = 0
- c13[D2,K0]: g[T0,D2,K0] + g[T1,D2,K0] + g[T2,D2,K0] + g[T3,D2,K0]
-   + g[T4,D2,K0] + g[T5,D2,K0] + g[T6,D2,K0] + g[T7,D2,K0] + g[T8,D2,K0]
-   + g[T9,D2,K0] + g[T10,D2,K0] + g[T11,D2,K0] + g[D0,D2,K0] + g[D1,D2,K0]
-   - g[D2,T0,K0] - g[D2,T1,K0] - g[D2,T2,K0] - g[D2,T3,K0] - g[D2,T4,K0]
-   - g[D2,T5,K0] - g[D2,T6,K0] - g[D2,T7,K0] - g[D2,T8,K0] - g[D2,T9,K0]
-   - g[D2,T10,K0] - g[D2,T11,K0] - g[D2,D0,K0] - g[D2,D1,K0] - g[D2,S0,K0]
-   - g[D2,E0,K0] + g[S0,D2,K0] + g[E0,D2,K0] = 0
- c13[D2,K1]: g[T0,D2,K1] + g[T1,D2,K1] + g[T2,D2,K1] + g[T3,D2,K1]
-   + g[T4,D2,K1] + g[T5,D2,K1] + g[T6,D2,K1] + g[T7,D2,K1] + g[T8,D2,K1]
-   + g[T9,D2,K1] + g[T10,D2,K1] + g[T11,D2,K1] + g[D0,D2,K1] + g[D1,D2,K1]
-   - g[D2,T0,K1] - g[D2,T1,K1] - g[D2,T2,K1] - g[D2,T3,K1] - g[D2,T4,K1]
-   - g[D2,T5,K1] - g[D2,T6,K1] - g[D2,T7,K1] - g[D2,T8,K1] - g[D2,T9,K1]
-   - g[D2,T10,K1] - g[D2,T11,K1] - g[D2,D0,K1] - g[D2,D1,K1] - g[D2,S0,K1]
-   - g[D2,E0,K1] + g[S0,D2,K1] + g[E0,D2,K1] = 0
- c13[D2,K2]: g[T0,D2,K2] + g[T1,D2,K2] + g[T2,D2,K2] + g[T3,D2,K2]
-   + g[T4,D2,K2] + g[T5,D2,K2] + g[T6,D2,K2] + g[T7,D2,K2] + g[T8,D2,K2]
-   + g[T9,D2,K2] + g[T10,D2,K2] + g[T11,D2,K2] + g[D0,D2,K2] + g[D1,D2,K2]
-   - g[D2,T0,K2] - g[D2,T1,K2] - g[D2,T2,K2] - g[D2,T3,K2] - g[D2,T4,K2]
-   - g[D2,T5,K2] - g[D2,T6,K2] - g[D2,T7,K2] - g[D2,T8,K2] - g[D2,T9,K2]
-   - g[D2,T10,K2] - g[D2,T11,K2] - g[D2,D0,K2] - g[D2,D1,K2] - g[D2,S0,K2]
-   - g[D2,E0,K2] + g[S0,D2,K2] + g[E0,D2,K2] = 0
- c14[T0,T1,K0]: - 12 x[T0,T1,K0] + g[T0,T1,K0] <= 0
- c14[T0,T1,K1]: - 12 x[T0,T1,K1] + g[T0,T1,K1] <= 0
- c14[T0,T1,K2]: - 12 x[T0,T1,K2] + g[T0,T1,K2] <= 0
- c14[T0,T2,K0]: - 12 x[T0,T2,K0] + g[T0,T2,K0] <= 0
- c14[T0,T2,K1]: - 12 x[T0,T2,K1] + g[T0,T2,K1] <= 0
- c14[T0,T2,K2]: - 12 x[T0,T2,K2] + g[T0,T2,K2] <= 0
- c14[T0,T3,K0]: - 12 x[T0,T3,K0] + g[T0,T3,K0] <= 0
- c14[T0,T3,K1]: - 12 x[T0,T3,K1] + g[T0,T3,K1] <= 0
- c14[T0,T3,K2]: - 12 x[T0,T3,K2] + g[T0,T3,K2] <= 0
- c14[T0,T4,K0]: - 12 x[T0,T4,K0] + g[T0,T4,K0] <= 0
- c14[T0,T4,K1]: - 12 x[T0,T4,K1] + g[T0,T4,K1] <= 0
- c14[T0,T4,K2]: - 12 x[T0,T4,K2] + g[T0,T4,K2] <= 0
- c14[T0,T5,K0]: - 12 x[T0,T5,K0] + g[T0,T5,K0] <= 0
- c14[T0,T5,K1]: - 12 x[T0,T5,K1] + g[T0,T5,K1] <= 0
- c14[T0,T5,K2]: - 12 x[T0,T5,K2] + g[T0,T5,K2] <= 0
- c14[T0,T6,K0]: - 12 x[T0,T6,K0] + g[T0,T6,K0] <= 0
- c14[T0,T6,K1]: - 12 x[T0,T6,K1] + g[T0,T6,K1] <= 0
- c14[T0,T6,K2]: - 12 x[T0,T6,K2] + g[T0,T6,K2] <= 0
- c14[T0,T7,K0]: - 12 x[T0,T7,K0] + g[T0,T7,K0] <= 0
- c14[T0,T7,K1]: - 12 x[T0,T7,K1] + g[T0,T7,K1] <= 0
- c14[T0,T7,K2]: - 12 x[T0,T7,K2] + g[T0,T7,K2] <= 0
- c14[T0,T8,K0]: - 12 x[T0,T8,K0] + g[T0,T8,K0] <= 0
- c14[T0,T8,K1]: - 12 x[T0,T8,K1] + g[T0,T8,K1] <= 0
- c14[T0,T8,K2]: - 12 x[T0,T8,K2] + g[T0,T8,K2] <= 0
- c14[T0,T9,K0]: - 12 x[T0,T9,K0] + g[T0,T9,K0] <= 0
- c14[T0,T9,K1]: - 12 x[T0,T9,K1] + g[T0,T9,K1] <= 0
- c14[T0,T9,K2]: - 12 x[T0,T9,K2] + g[T0,T9,K2] <= 0
- c14[T0,T10,K0]: - 12 x[T0,T10,K0] + g[T0,T10,K0] <= 0
- c14[T0,T10,K1]: - 12 x[T0,T10,K1] + g[T0,T10,K1] <= 0
- c14[T0,T10,K2]: - 12 x[T0,T10,K2] + g[T0,T10,K2] <= 0
- c14[T0,T11,K0]: - 12 x[T0,T11,K0] + g[T0,T11,K0] <= 0
- c14[T0,T11,K1]: - 12 x[T0,T11,K1] + g[T0,T11,K1] <= 0
- c14[T0,T11,K2]: - 12 x[T0,T11,K2] + g[T0,T11,K2] <= 0
- c14[T0,D0,K0]: - 12 x[T0,D0,K0] + g[T0,D0,K0] <= 0
- c14[T0,D0,K1]: - 12 x[T0,D0,K1] + g[T0,D0,K1] <= 0
- c14[T0,D0,K2]: - 12 x[T0,D0,K2] + g[T0,D0,K2] <= 0
- c14[T0,D1,K0]: - 12 x[T0,D1,K0] + g[T0,D1,K0] <= 0
- c14[T0,D1,K1]: - 12 x[T0,D1,K1] + g[T0,D1,K1] <= 0
- c14[T0,D1,K2]: - 12 x[T0,D1,K2] + g[T0,D1,K2] <= 0
- c14[T0,D2,K0]: - 12 x[T0,D2,K0] + g[T0,D2,K0] <= 0
- c14[T0,D2,K1]: - 12 x[T0,D2,K1] + g[T0,D2,K1] <= 0
- c14[T0,D2,K2]: - 12 x[T0,D2,K2] + g[T0,D2,K2] <= 0
- c14[T0,S0,K0]: - 12 x[T0,S0,K0] + g[T0,S0,K0] <= 0
- c14[T0,S0,K1]: - 12 x[T0,S0,K1] + g[T0,S0,K1] <= 0
- c14[T0,S0,K2]: - 12 x[T0,S0,K2] + g[T0,S0,K2] <= 0
- c14[T0,E0,K0]: - 12 x[T0,E0,K0] + g[T0,E0,K0] <= 0
- c14[T0,E0,K1]: - 12 x[T0,E0,K1] + g[T0,E0,K1] <= 0
- c14[T0,E0,K2]: - 12 x[T0,E0,K2] + g[T0,E0,K2] <= 0
- c14[T1,T0,K0]: - 12 x[T1,T0,K0] + g[T1,T0,K0] <= 0
- c14[T1,T0,K1]: - 12 x[T1,T0,K1] + g[T1,T0,K1] <= 0
- c14[T1,T0,K2]: - 12 x[T1,T0,K2] + g[T1,T0,K2] <= 0
- c14[T1,T2,K0]: - 12 x[T1,T2,K0] + g[T1,T2,K0] <= 0
- c14[T1,T2,K1]: - 12 x[T1,T2,K1] + g[T1,T2,K1] <= 0
- c14[T1,T2,K2]: - 12 x[T1,T2,K2] + g[T1,T2,K2] <= 0
- c14[T1,T3,K0]: - 12 x[T1,T3,K0] + g[T1,T3,K0] <= 0
- c14[T1,T3,K1]: - 12 x[T1,T3,K1] + g[T1,T3,K1] <= 0
- c14[T1,T3,K2]: - 12 x[T1,T3,K2] + g[T1,T3,K2] <= 0
- c14[T1,T4,K0]: - 12 x[T1,T4,K0] + g[T1,T4,K0] <= 0
- c14[T1,T4,K1]: - 12 x[T1,T4,K1] + g[T1,T4,K1] <= 0
- c14[T1,T4,K2]: - 12 x[T1,T4,K2] + g[T1,T4,K2] <= 0
- c14[T1,T5,K0]: - 12 x[T1,T5,K0] + g[T1,T5,K0] <= 0
- c14[T1,T5,K1]: - 12 x[T1,T5,K1] + g[T1,T5,K1] <= 0
- c14[T1,T5,K2]: - 12 x[T1,T5,K2] + g[T1,T5,K2] <= 0
- c14[T1,T6,K0]: - 12 x[T1,T6,K0] + g[T1,T6,K0] <= 0
- c14[T1,T6,K1]: - 12 x[T1,T6,K1] + g[T1,T6,K1] <= 0
- c14[T1,T6,K2]: - 12 x[T1,T6,K2] + g[T1,T6,K2] <= 0
- c14[T1,T7,K0]: - 12 x[T1,T7,K0] + g[T1,T7,K0] <= 0
- c14[T1,T7,K1]: - 12 x[T1,T7,K1] + g[T1,T7,K1] <= 0
- c14[T1,T7,K2]: - 12 x[T1,T7,K2] + g[T1,T7,K2] <= 0
- c14[T1,T8,K0]: - 12 x[T1,T8,K0] + g[T1,T8,K0] <= 0
- c14[T1,T8,K1]: - 12 x[T1,T8,K1] + g[T1,T8,K1] <= 0
- c14[T1,T8,K2]: - 12 x[T1,T8,K2] + g[T1,T8,K2] <= 0
- c14[T1,T9,K0]: - 12 x[T1,T9,K0] + g[T1,T9,K0] <= 0
- c14[T1,T9,K1]: - 12 x[T1,T9,K1] + g[T1,T9,K1] <= 0
- c14[T1,T9,K2]: - 12 x[T1,T9,K2] + g[T1,T9,K2] <= 0
- c14[T1,T10,K0]: - 12 x[T1,T10,K0] + g[T1,T10,K0] <= 0
- c14[T1,T10,K1]: - 12 x[T1,T10,K1] + g[T1,T10,K1] <= 0
- c14[T1,T10,K2]: - 12 x[T1,T10,K2] + g[T1,T10,K2] <= 0
- c14[T1,T11,K0]: - 12 x[T1,T11,K0] + g[T1,T11,K0] <= 0
- c14[T1,T11,K1]: - 12 x[T1,T11,K1] + g[T1,T11,K1] <= 0
- c14[T1,T11,K2]: - 12 x[T1,T11,K2] + g[T1,T11,K2] <= 0
- c14[T1,D0,K0]: - 12 x[T1,D0,K0] + g[T1,D0,K0] <= 0
- c14[T1,D0,K1]: - 12 x[T1,D0,K1] + g[T1,D0,K1] <= 0
- c14[T1,D0,K2]: - 12 x[T1,D0,K2] + g[T1,D0,K2] <= 0
- c14[T1,D1,K0]: - 12 x[T1,D1,K0] + g[T1,D1,K0] <= 0
- c14[T1,D1,K1]: - 12 x[T1,D1,K1] + g[T1,D1,K1] <= 0
- c14[T1,D1,K2]: - 12 x[T1,D1,K2] + g[T1,D1,K2] <= 0
- c14[T1,D2,K0]: - 12 x[T1,D2,K0] + g[T1,D2,K0] <= 0
- c14[T1,D2,K1]: - 12 x[T1,D2,K1] + g[T1,D2,K1] <= 0
- c14[T1,D2,K2]: - 12 x[T1,D2,K2] + g[T1,D2,K2] <= 0
- c14[T1,S0,K0]: - 12 x[T1,S0,K0] + g[T1,S0,K0] <= 0
- c14[T1,S0,K1]: - 12 x[T1,S0,K1] + g[T1,S0,K1] <= 0
- c14[T1,S0,K2]: - 12 x[T1,S0,K2] + g[T1,S0,K2] <= 0
- c14[T1,E0,K0]: - 12 x[T1,E0,K0] + g[T1,E0,K0] <= 0
- c14[T1,E0,K1]: - 12 x[T1,E0,K1] + g[T1,E0,K1] <= 0
- c14[T1,E0,K2]: - 12 x[T1,E0,K2] + g[T1,E0,K2] <= 0
- c14[T2,T0,K0]: - 12 x[T2,T0,K0] + g[T2,T0,K0] <= 0
- c14[T2,T0,K1]: - 12 x[T2,T0,K1] + g[T2,T0,K1] <= 0
- c14[T2,T0,K2]: - 12 x[T2,T0,K2] + g[T2,T0,K2] <= 0
- c14[T2,T1,K0]: - 12 x[T2,T1,K0] + g[T2,T1,K0] <= 0
- c14[T2,T1,K1]: - 12 x[T2,T1,K1] + g[T2,T1,K1] <= 0
- c14[T2,T1,K2]: - 12 x[T2,T1,K2] + g[T2,T1,K2] <= 0
- c14[T2,T3,K0]: - 12 x[T2,T3,K0] + g[T2,T3,K0] <= 0
- c14[T2,T3,K1]: - 12 x[T2,T3,K1] + g[T2,T3,K1] <= 0
- c14[T2,T3,K2]: - 12 x[T2,T3,K2] + g[T2,T3,K2] <= 0
- c14[T2,T4,K0]: - 12 x[T2,T4,K0] + g[T2,T4,K0] <= 0
- c14[T2,T4,K1]: - 12 x[T2,T4,K1] + g[T2,T4,K1] <= 0
- c14[T2,T4,K2]: - 12 x[T2,T4,K2] + g[T2,T4,K2] <= 0
- c14[T2,T5,K0]: - 12 x[T2,T5,K0] + g[T2,T5,K0] <= 0
- c14[T2,T5,K1]: - 12 x[T2,T5,K1] + g[T2,T5,K1] <= 0
- c14[T2,T5,K2]: - 12 x[T2,T5,K2] + g[T2,T5,K2] <= 0
- c14[T2,T6,K0]: - 12 x[T2,T6,K0] + g[T2,T6,K0] <= 0
- c14[T2,T6,K1]: - 12 x[T2,T6,K1] + g[T2,T6,K1] <= 0
- c14[T2,T6,K2]: - 12 x[T2,T6,K2] + g[T2,T6,K2] <= 0
- c14[T2,T7,K0]: - 12 x[T2,T7,K0] + g[T2,T7,K0] <= 0
- c14[T2,T7,K1]: - 12 x[T2,T7,K1] + g[T2,T7,K1] <= 0
- c14[T2,T7,K2]: - 12 x[T2,T7,K2] + g[T2,T7,K2] <= 0
- c14[T2,T8,K0]: - 12 x[T2,T8,K0] + g[T2,T8,K0] <= 0
- c14[T2,T8,K1]: - 12 x[T2,T8,K1] + g[T2,T8,K1] <= 0
- c14[T2,T8,K2]: - 12 x[T2,T8,K2] + g[T2,T8,K2] <= 0
- c14[T2,T9,K0]: - 12 x[T2,T9,K0] + g[T2,T9,K0] <= 0
- c14[T2,T9,K1]: - 12 x[T2,T9,K1] + g[T2,T9,K1] <= 0
- c14[T2,T9,K2]: - 12 x[T2,T9,K2] + g[T2,T9,K2] <= 0
- c14[T2,T10,K0]: - 12 x[T2,T10,K0] + g[T2,T10,K0] <= 0
- c14[T2,T10,K1]: - 12 x[T2,T10,K1] + g[T2,T10,K1] <= 0
- c14[T2,T10,K2]: - 12 x[T2,T10,K2] + g[T2,T10,K2] <= 0
- c14[T2,T11,K0]: - 12 x[T2,T11,K0] + g[T2,T11,K0] <= 0
- c14[T2,T11,K1]: - 12 x[T2,T11,K1] + g[T2,T11,K1] <= 0
- c14[T2,T11,K2]: - 12 x[T2,T11,K2] + g[T2,T11,K2] <= 0
- c14[T2,D0,K0]: - 12 x[T2,D0,K0] + g[T2,D0,K0] <= 0
- c14[T2,D0,K1]: - 12 x[T2,D0,K1] + g[T2,D0,K1] <= 0
- c14[T2,D0,K2]: - 12 x[T2,D0,K2] + g[T2,D0,K2] <= 0
- c14[T2,D1,K0]: - 12 x[T2,D1,K0] + g[T2,D1,K0] <= 0
- c14[T2,D1,K1]: - 12 x[T2,D1,K1] + g[T2,D1,K1] <= 0
- c14[T2,D1,K2]: - 12 x[T2,D1,K2] + g[T2,D1,K2] <= 0
- c14[T2,D2,K0]: - 12 x[T2,D2,K0] + g[T2,D2,K0] <= 0
- c14[T2,D2,K1]: - 12 x[T2,D2,K1] + g[T2,D2,K1] <= 0
- c14[T2,D2,K2]: - 12 x[T2,D2,K2] + g[T2,D2,K2] <= 0
- c14[T2,S0,K0]: - 12 x[T2,S0,K0] + g[T2,S0,K0] <= 0
- c14[T2,S0,K1]: - 12 x[T2,S0,K1] + g[T2,S0,K1] <= 0
- c14[T2,S0,K2]: - 12 x[T2,S0,K2] + g[T2,S0,K2] <= 0
- c14[T2,E0,K0]: - 12 x[T2,E0,K0] + g[T2,E0,K0] <= 0
- c14[T2,E0,K1]: - 12 x[T2,E0,K1] + g[T2,E0,K1] <= 0
- c14[T2,E0,K2]: - 12 x[T2,E0,K2] + g[T2,E0,K2] <= 0
- c14[T3,T0,K0]: - 12 x[T3,T0,K0] + g[T3,T0,K0] <= 0
- c14[T3,T0,K1]: - 12 x[T3,T0,K1] + g[T3,T0,K1] <= 0
- c14[T3,T0,K2]: - 12 x[T3,T0,K2] + g[T3,T0,K2] <= 0
- c14[T3,T1,K0]: - 12 x[T3,T1,K0] + g[T3,T1,K0] <= 0
- c14[T3,T1,K1]: - 12 x[T3,T1,K1] + g[T3,T1,K1] <= 0
- c14[T3,T1,K2]: - 12 x[T3,T1,K2] + g[T3,T1,K2] <= 0
- c14[T3,T2,K0]: - 12 x[T3,T2,K0] + g[T3,T2,K0] <= 0
- c14[T3,T2,K1]: - 12 x[T3,T2,K1] + g[T3,T2,K1] <= 0
- c14[T3,T2,K2]: - 12 x[T3,T2,K2] + g[T3,T2,K2] <= 0
- c14[T3,T4,K0]: - 12 x[T3,T4,K0] + g[T3,T4,K0] <= 0
- c14[T3,T4,K1]: - 12 x[T3,T4,K1] + g[T3,T4,K1] <= 0
- c14[T3,T4,K2]: - 12 x[T3,T4,K2] + g[T3,T4,K2] <= 0
- c14[T3,T5,K0]: - 12 x[T3,T5,K0] + g[T3,T5,K0] <= 0
- c14[T3,T5,K1]: - 12 x[T3,T5,K1] + g[T3,T5,K1] <= 0
- c14[T3,T5,K2]: - 12 x[T3,T5,K2] + g[T3,T5,K2] <= 0
- c14[T3,T6,K0]: - 12 x[T3,T6,K0] + g[T3,T6,K0] <= 0
- c14[T3,T6,K1]: - 12 x[T3,T6,K1] + g[T3,T6,K1] <= 0
- c14[T3,T6,K2]: - 12 x[T3,T6,K2] + g[T3,T6,K2] <= 0
- c14[T3,T7,K0]: - 12 x[T3,T7,K0] + g[T3,T7,K0] <= 0
- c14[T3,T7,K1]: - 12 x[T3,T7,K1] + g[T3,T7,K1] <= 0
- c14[T3,T7,K2]: - 12 x[T3,T7,K2] + g[T3,T7,K2] <= 0
- c14[T3,T8,K0]: - 12 x[T3,T8,K0] + g[T3,T8,K0] <= 0
- c14[T3,T8,K1]: - 12 x[T3,T8,K1] + g[T3,T8,K1] <= 0
- c14[T3,T8,K2]: - 12 x[T3,T8,K2] + g[T3,T8,K2] <= 0
- c14[T3,T9,K0]: - 12 x[T3,T9,K0] + g[T3,T9,K0] <= 0
- c14[T3,T9,K1]: - 12 x[T3,T9,K1] + g[T3,T9,K1] <= 0
- c14[T3,T9,K2]: - 12 x[T3,T9,K2] + g[T3,T9,K2] <= 0
- c14[T3,T10,K0]: - 12 x[T3,T10,K0] + g[T3,T10,K0] <= 0
- c14[T3,T10,K1]: - 12 x[T3,T10,K1] + g[T3,T10,K1] <= 0
- c14[T3,T10,K2]: - 12 x[T3,T10,K2] + g[T3,T10,K2] <= 0
- c14[T3,T11,K0]: - 12 x[T3,T11,K0] + g[T3,T11,K0] <= 0
- c14[T3,T11,K1]: - 12 x[T3,T11,K1] + g[T3,T11,K1] <= 0
- c14[T3,T11,K2]: - 12 x[T3,T11,K2] + g[T3,T11,K2] <= 0
- c14[T3,D0,K0]: - 12 x[T3,D0,K0] + g[T3,D0,K0] <= 0
- c14[T3,D0,K1]: - 12 x[T3,D0,K1] + g[T3,D0,K1] <= 0
- c14[T3,D0,K2]: - 12 x[T3,D0,K2] + g[T3,D0,K2] <= 0
- c14[T3,D1,K0]: - 12 x[T3,D1,K0] + g[T3,D1,K0] <= 0
- c14[T3,D1,K1]: - 12 x[T3,D1,K1] + g[T3,D1,K1] <= 0
- c14[T3,D1,K2]: - 12 x[T3,D1,K2] + g[T3,D1,K2] <= 0
- c14[T3,D2,K0]: - 12 x[T3,D2,K0] + g[T3,D2,K0] <= 0
- c14[T3,D2,K1]: - 12 x[T3,D2,K1] + g[T3,D2,K1] <= 0
- c14[T3,D2,K2]: - 12 x[T3,D2,K2] + g[T3,D2,K2] <= 0
- c14[T3,S0,K0]: - 12 x[T3,S0,K0] + g[T3,S0,K0] <= 0
- c14[T3,S0,K1]: - 12 x[T3,S0,K1] + g[T3,S0,K1] <= 0
- c14[T3,S0,K2]: - 12 x[T3,S0,K2] + g[T3,S0,K2] <= 0
- c14[T3,E0,K0]: - 12 x[T3,E0,K0] + g[T3,E0,K0] <= 0
- c14[T3,E0,K1]: - 12 x[T3,E0,K1] + g[T3,E0,K1] <= 0
- c14[T3,E0,K2]: - 12 x[T3,E0,K2] + g[T3,E0,K2] <= 0
- c14[T4,T0,K0]: - 12 x[T4,T0,K0] + g[T4,T0,K0] <= 0
- c14[T4,T0,K1]: - 12 x[T4,T0,K1] + g[T4,T0,K1] <= 0
- c14[T4,T0,K2]: - 12 x[T4,T0,K2] + g[T4,T0,K2] <= 0
- c14[T4,T1,K0]: - 12 x[T4,T1,K0] + g[T4,T1,K0] <= 0
- c14[T4,T1,K1]: - 12 x[T4,T1,K1] + g[T4,T1,K1] <= 0
- c14[T4,T1,K2]: - 12 x[T4,T1,K2] + g[T4,T1,K2] <= 0
- c14[T4,T2,K0]: - 12 x[T4,T2,K0] + g[T4,T2,K0] <= 0
- c14[T4,T2,K1]: - 12 x[T4,T2,K1] + g[T4,T2,K1] <= 0
- c14[T4,T2,K2]: - 12 x[T4,T2,K2] + g[T4,T2,K2] <= 0
- c14[T4,T3,K0]: - 12 x[T4,T3,K0] + g[T4,T3,K0] <= 0
- c14[T4,T3,K1]: - 12 x[T4,T3,K1] + g[T4,T3,K1] <= 0
- c14[T4,T3,K2]: - 12 x[T4,T3,K2] + g[T4,T3,K2] <= 0
- c14[T4,T5,K0]: - 12 x[T4,T5,K0] + g[T4,T5,K0] <= 0
- c14[T4,T5,K1]: - 12 x[T4,T5,K1] + g[T4,T5,K1] <= 0
- c14[T4,T5,K2]: - 12 x[T4,T5,K2] + g[T4,T5,K2] <= 0
- c14[T4,T6,K0]: - 12 x[T4,T6,K0] + g[T4,T6,K0] <= 0
- c14[T4,T6,K1]: - 12 x[T4,T6,K1] + g[T4,T6,K1] <= 0
- c14[T4,T6,K2]: - 12 x[T4,T6,K2] + g[T4,T6,K2] <= 0
- c14[T4,T7,K0]: - 12 x[T4,T7,K0] + g[T4,T7,K0] <= 0
- c14[T4,T7,K1]: - 12 x[T4,T7,K1] + g[T4,T7,K1] <= 0
- c14[T4,T7,K2]: - 12 x[T4,T7,K2] + g[T4,T7,K2] <= 0
- c14[T4,T8,K0]: - 12 x[T4,T8,K0] + g[T4,T8,K0] <= 0
- c14[T4,T8,K1]: - 12 x[T4,T8,K1] + g[T4,T8,K1] <= 0
- c14[T4,T8,K2]: - 12 x[T4,T8,K2] + g[T4,T8,K2] <= 0
- c14[T4,T9,K0]: - 12 x[T4,T9,K0] + g[T4,T9,K0] <= 0
- c14[T4,T9,K1]: - 12 x[T4,T9,K1] + g[T4,T9,K1] <= 0
- c14[T4,T9,K2]: - 12 x[T4,T9,K2] + g[T4,T9,K2] <= 0
- c14[T4,T10,K0]: - 12 x[T4,T10,K0] + g[T4,T10,K0] <= 0
- c14[T4,T10,K1]: - 12 x[T4,T10,K1] + g[T4,T10,K1] <= 0
- c14[T4,T10,K2]: - 12 x[T4,T10,K2] + g[T4,T10,K2] <= 0
- c14[T4,T11,K0]: - 12 x[T4,T11,K0] + g[T4,T11,K0] <= 0
- c14[T4,T11,K1]: - 12 x[T4,T11,K1] + g[T4,T11,K1] <= 0
- c14[T4,T11,K2]: - 12 x[T4,T11,K2] + g[T4,T11,K2] <= 0
- c14[T4,D0,K0]: - 12 x[T4,D0,K0] + g[T4,D0,K0] <= 0
- c14[T4,D0,K1]: - 12 x[T4,D0,K1] + g[T4,D0,K1] <= 0
- c14[T4,D0,K2]: - 12 x[T4,D0,K2] + g[T4,D0,K2] <= 0
- c14[T4,D1,K0]: - 12 x[T4,D1,K0] + g[T4,D1,K0] <= 0
- c14[T4,D1,K1]: - 12 x[T4,D1,K1] + g[T4,D1,K1] <= 0
- c14[T4,D1,K2]: - 12 x[T4,D1,K2] + g[T4,D1,K2] <= 0
- c14[T4,D2,K0]: - 12 x[T4,D2,K0] + g[T4,D2,K0] <= 0
- c14[T4,D2,K1]: - 12 x[T4,D2,K1] + g[T4,D2,K1] <= 0
- c14[T4,D2,K2]: - 12 x[T4,D2,K2] + g[T4,D2,K2] <= 0
- c14[T4,S0,K0]: - 12 x[T4,S0,K0] + g[T4,S0,K0] <= 0
- c14[T4,S0,K1]: - 12 x[T4,S0,K1] + g[T4,S0,K1] <= 0
- c14[T4,S0,K2]: - 12 x[T4,S0,K2] + g[T4,S0,K2] <= 0
- c14[T4,E0,K0]: - 12 x[T4,E0,K0] + g[T4,E0,K0] <= 0
- c14[T4,E0,K1]: - 12 x[T4,E0,K1] + g[T4,E0,K1] <= 0
- c14[T4,E0,K2]: - 12 x[T4,E0,K2] + g[T4,E0,K2] <= 0
- c14[T5,T0,K0]: - 12 x[T5,T0,K0] + g[T5,T0,K0] <= 0
- c14[T5,T0,K1]: - 12 x[T5,T0,K1] + g[T5,T0,K1] <= 0
- c14[T5,T0,K2]: - 12 x[T5,T0,K2] + g[T5,T0,K2] <= 0
- c14[T5,T1,K0]: - 12 x[T5,T1,K0] + g[T5,T1,K0] <= 0
- c14[T5,T1,K1]: - 12 x[T5,T1,K1] + g[T5,T1,K1] <= 0
- c14[T5,T1,K2]: - 12 x[T5,T1,K2] + g[T5,T1,K2] <= 0
- c14[T5,T2,K0]: - 12 x[T5,T2,K0] + g[T5,T2,K0] <= 0
- c14[T5,T2,K1]: - 12 x[T5,T2,K1] + g[T5,T2,K1] <= 0
- c14[T5,T2,K2]: - 12 x[T5,T2,K2] + g[T5,T2,K2] <= 0
- c14[T5,T3,K0]: - 12 x[T5,T3,K0] + g[T5,T3,K0] <= 0
- c14[T5,T3,K1]: - 12 x[T5,T3,K1] + g[T5,T3,K1] <= 0
- c14[T5,T3,K2]: - 12 x[T5,T3,K2] + g[T5,T3,K2] <= 0
- c14[T5,T4,K0]: - 12 x[T5,T4,K0] + g[T5,T4,K0] <= 0
- c14[T5,T4,K1]: - 12 x[T5,T4,K1] + g[T5,T4,K1] <= 0
- c14[T5,T4,K2]: - 12 x[T5,T4,K2] + g[T5,T4,K2] <= 0
- c14[T5,T6,K0]: - 12 x[T5,T6,K0] + g[T5,T6,K0] <= 0
- c14[T5,T6,K1]: - 12 x[T5,T6,K1] + g[T5,T6,K1] <= 0
- c14[T5,T6,K2]: - 12 x[T5,T6,K2] + g[T5,T6,K2] <= 0
- c14[T5,T7,K0]: - 12 x[T5,T7,K0] + g[T5,T7,K0] <= 0
- c14[T5,T7,K1]: - 12 x[T5,T7,K1] + g[T5,T7,K1] <= 0
- c14[T5,T7,K2]: - 12 x[T5,T7,K2] + g[T5,T7,K2] <= 0
- c14[T5,T8,K0]: - 12 x[T5,T8,K0] + g[T5,T8,K0] <= 0
- c14[T5,T8,K1]: - 12 x[T5,T8,K1] + g[T5,T8,K1] <= 0
- c14[T5,T8,K2]: - 12 x[T5,T8,K2] + g[T5,T8,K2] <= 0
- c14[T5,T9,K0]: - 12 x[T5,T9,K0] + g[T5,T9,K0] <= 0
- c14[T5,T9,K1]: - 12 x[T5,T9,K1] + g[T5,T9,K1] <= 0
- c14[T5,T9,K2]: - 12 x[T5,T9,K2] + g[T5,T9,K2] <= 0
- c14[T5,T10,K0]: - 12 x[T5,T10,K0] + g[T5,T10,K0] <= 0
- c14[T5,T10,K1]: - 12 x[T5,T10,K1] + g[T5,T10,K1] <= 0
- c14[T5,T10,K2]: - 12 x[T5,T10,K2] + g[T5,T10,K2] <= 0
- c14[T5,T11,K0]: - 12 x[T5,T11,K0] + g[T5,T11,K0] <= 0
- c14[T5,T11,K1]: - 12 x[T5,T11,K1] + g[T5,T11,K1] <= 0
- c14[T5,T11,K2]: - 12 x[T5,T11,K2] + g[T5,T11,K2] <= 0
- c14[T5,D0,K0]: - 12 x[T5,D0,K0] + g[T5,D0,K0] <= 0
- c14[T5,D0,K1]: - 12 x[T5,D0,K1] + g[T5,D0,K1] <= 0
- c14[T5,D0,K2]: - 12 x[T5,D0,K2] + g[T5,D0,K2] <= 0
- c14[T5,D1,K0]: - 12 x[T5,D1,K0] + g[T5,D1,K0] <= 0
- c14[T5,D1,K1]: - 12 x[T5,D1,K1] + g[T5,D1,K1] <= 0
- c14[T5,D1,K2]: - 12 x[T5,D1,K2] + g[T5,D1,K2] <= 0
- c14[T5,D2,K0]: - 12 x[T5,D2,K0] + g[T5,D2,K0] <= 0
- c14[T5,D2,K1]: - 12 x[T5,D2,K1] + g[T5,D2,K1] <= 0
- c14[T5,D2,K2]: - 12 x[T5,D2,K2] + g[T5,D2,K2] <= 0
- c14[T5,S0,K0]: - 12 x[T5,S0,K0] + g[T5,S0,K0] <= 0
- c14[T5,S0,K1]: - 12 x[T5,S0,K1] + g[T5,S0,K1] <= 0
- c14[T5,S0,K2]: - 12 x[T5,S0,K2] + g[T5,S0,K2] <= 0
- c14[T5,E0,K0]: - 12 x[T5,E0,K0] + g[T5,E0,K0] <= 0
- c14[T5,E0,K1]: - 12 x[T5,E0,K1] + g[T5,E0,K1] <= 0
- c14[T5,E0,K2]: - 12 x[T5,E0,K2] + g[T5,E0,K2] <= 0
- c14[T6,T0,K0]: - 12 x[T6,T0,K0] + g[T6,T0,K0] <= 0
- c14[T6,T0,K1]: - 12 x[T6,T0,K1] + g[T6,T0,K1] <= 0
- c14[T6,T0,K2]: - 12 x[T6,T0,K2] + g[T6,T0,K2] <= 0
- c14[T6,T1,K0]: - 12 x[T6,T1,K0] + g[T6,T1,K0] <= 0
- c14[T6,T1,K1]: - 12 x[T6,T1,K1] + g[T6,T1,K1] <= 0
- c14[T6,T1,K2]: - 12 x[T6,T1,K2] + g[T6,T1,K2] <= 0
- c14[T6,T2,K0]: - 12 x[T6,T2,K0] + g[T6,T2,K0] <= 0
- c14[T6,T2,K1]: - 12 x[T6,T2,K1] + g[T6,T2,K1] <= 0
- c14[T6,T2,K2]: - 12 x[T6,T2,K2] + g[T6,T2,K2] <= 0
- c14[T6,T3,K0]: - 12 x[T6,T3,K0] + g[T6,T3,K0] <= 0
- c14[T6,T3,K1]: - 12 x[T6,T3,K1] + g[T6,T3,K1] <= 0
- c14[T6,T3,K2]: - 12 x[T6,T3,K2] + g[T6,T3,K2] <= 0
- c14[T6,T4,K0]: - 12 x[T6,T4,K0] + g[T6,T4,K0] <= 0
- c14[T6,T4,K1]: - 12 x[T6,T4,K1] + g[T6,T4,K1] <= 0
- c14[T6,T4,K2]: - 12 x[T6,T4,K2] + g[T6,T4,K2] <= 0
- c14[T6,T5,K0]: - 12 x[T6,T5,K0] + g[T6,T5,K0] <= 0
- c14[T6,T5,K1]: - 12 x[T6,T5,K1] + g[T6,T5,K1] <= 0
- c14[T6,T5,K2]: - 12 x[T6,T5,K2] + g[T6,T5,K2] <= 0
- c14[T6,T7,K0]: - 12 x[T6,T7,K0] + g[T6,T7,K0] <= 0
- c14[T6,T7,K1]: - 12 x[T6,T7,K1] + g[T6,T7,K1] <= 0
- c14[T6,T7,K2]: - 12 x[T6,T7,K2] + g[T6,T7,K2] <= 0
- c14[T6,T8,K0]: - 12 x[T6,T8,K0] + g[T6,T8,K0] <= 0
- c14[T6,T8,K1]: - 12 x[T6,T8,K1] + g[T6,T8,K1] <= 0
- c14[T6,T8,K2]: - 12 x[T6,T8,K2] + g[T6,T8,K2] <= 0
- c14[T6,T9,K0]: - 12 x[T6,T9,K0] + g[T6,T9,K0] <= 0
- c14[T6,T9,K1]: - 12 x[T6,T9,K1] + g[T6,T9,K1] <= 0
- c14[T6,T9,K2]: - 12 x[T6,T9,K2] + g[T6,T9,K2] <= 0
- c14[T6,T10,K0]: - 12 x[T6,T10,K0] + g[T6,T10,K0] <= 0
- c14[T6,T10,K1]: - 12 x[T6,T10,K1] + g[T6,T10,K1] <= 0
- c14[T6,T10,K2]: - 12 x[T6,T10,K2] + g[T6,T10,K2] <= 0
- c14[T6,T11,K0]: - 12 x[T6,T11,K0] + g[T6,T11,K0] <= 0
- c14[T6,T11,K1]: - 12 x[T6,T11,K1] + g[T6,T11,K1] <= 0
- c14[T6,T11,K2]: - 12 x[T6,T11,K2] + g[T6,T11,K2] <= 0
- c14[T6,D0,K0]: - 12 x[T6,D0,K0] + g[T6,D0,K0] <= 0
- c14[T6,D0,K1]: - 12 x[T6,D0,K1] + g[T6,D0,K1] <= 0
- c14[T6,D0,K2]: - 12 x[T6,D0,K2] + g[T6,D0,K2] <= 0
- c14[T6,D1,K0]: - 12 x[T6,D1,K0] + g[T6,D1,K0] <= 0
- c14[T6,D1,K1]: - 12 x[T6,D1,K1] + g[T6,D1,K1] <= 0
- c14[T6,D1,K2]: - 12 x[T6,D1,K2] + g[T6,D1,K2] <= 0
- c14[T6,D2,K0]: - 12 x[T6,D2,K0] + g[T6,D2,K0] <= 0
- c14[T6,D2,K1]: - 12 x[T6,D2,K1] + g[T6,D2,K1] <= 0
- c14[T6,D2,K2]: - 12 x[T6,D2,K2] + g[T6,D2,K2] <= 0
- c14[T6,S0,K0]: - 12 x[T6,S0,K0] + g[T6,S0,K0] <= 0
- c14[T6,S0,K1]: - 12 x[T6,S0,K1] + g[T6,S0,K1] <= 0
- c14[T6,S0,K2]: - 12 x[T6,S0,K2] + g[T6,S0,K2] <= 0
- c14[T6,E0,K0]: - 12 x[T6,E0,K0] + g[T6,E0,K0] <= 0
- c14[T6,E0,K1]: - 12 x[T6,E0,K1] + g[T6,E0,K1] <= 0
- c14[T6,E0,K2]: - 12 x[T6,E0,K2] + g[T6,E0,K2] <= 0
- c14[T7,T0,K0]: - 12 x[T7,T0,K0] + g[T7,T0,K0] <= 0
- c14[T7,T0,K1]: - 12 x[T7,T0,K1] + g[T7,T0,K1] <= 0
- c14[T7,T0,K2]: - 12 x[T7,T0,K2] + g[T7,T0,K2] <= 0
- c14[T7,T1,K0]: - 12 x[T7,T1,K0] + g[T7,T1,K0] <= 0
- c14[T7,T1,K1]: - 12 x[T7,T1,K1] + g[T7,T1,K1] <= 0
- c14[T7,T1,K2]: - 12 x[T7,T1,K2] + g[T7,T1,K2] <= 0
- c14[T7,T2,K0]: - 12 x[T7,T2,K0] + g[T7,T2,K0] <= 0
- c14[T7,T2,K1]: - 12 x[T7,T2,K1] + g[T7,T2,K1] <= 0
- c14[T7,T2,K2]: - 12 x[T7,T2,K2] + g[T7,T2,K2] <= 0
- c14[T7,T3,K0]: - 12 x[T7,T3,K0] + g[T7,T3,K0] <= 0
- c14[T7,T3,K1]: - 12 x[T7,T3,K1] + g[T7,T3,K1] <= 0
- c14[T7,T3,K2]: - 12 x[T7,T3,K2] + g[T7,T3,K2] <= 0
- c14[T7,T4,K0]: - 12 x[T7,T4,K0] + g[T7,T4,K0] <= 0
- c14[T7,T4,K1]: - 12 x[T7,T4,K1] + g[T7,T4,K1] <= 0
- c14[T7,T4,K2]: - 12 x[T7,T4,K2] + g[T7,T4,K2] <= 0
- c14[T7,T5,K0]: - 12 x[T7,T5,K0] + g[T7,T5,K0] <= 0
- c14[T7,T5,K1]: - 12 x[T7,T5,K1] + g[T7,T5,K1] <= 0
- c14[T7,T5,K2]: - 12 x[T7,T5,K2] + g[T7,T5,K2] <= 0
- c14[T7,T6,K0]: - 12 x[T7,T6,K0] + g[T7,T6,K0] <= 0
- c14[T7,T6,K1]: - 12 x[T7,T6,K1] + g[T7,T6,K1] <= 0
- c14[T7,T6,K2]: - 12 x[T7,T6,K2] + g[T7,T6,K2] <= 0
- c14[T7,T8,K0]: - 12 x[T7,T8,K0] + g[T7,T8,K0] <= 0
- c14[T7,T8,K1]: - 12 x[T7,T8,K1] + g[T7,T8,K1] <= 0
- c14[T7,T8,K2]: - 12 x[T7,T8,K2] + g[T7,T8,K2] <= 0
- c14[T7,T9,K0]: - 12 x[T7,T9,K0] + g[T7,T9,K0] <= 0
- c14[T7,T9,K1]: - 12 x[T7,T9,K1] + g[T7,T9,K1] <= 0
- c14[T7,T9,K2]: - 12 x[T7,T9,K2] + g[T7,T9,K2] <= 0
- c14[T7,T10,K0]: - 12 x[T7,T10,K0] + g[T7,T10,K0] <= 0
- c14[T7,T10,K1]: - 12 x[T7,T10,K1] + g[T7,T10,K1] <= 0
- c14[T7,T10,K2]: - 12 x[T7,T10,K2] + g[T7,T10,K2] <= 0
- c14[T7,T11,K0]: - 12 x[T7,T11,K0] + g[T7,T11,K0] <= 0
- c14[T7,T11,K1]: - 12 x[T7,T11,K1] + g[T7,T11,K1] <= 0
- c14[T7,T11,K2]: - 12 x[T7,T11,K2] + g[T7,T11,K2] <= 0
- c14[T7,D0,K0]: - 12 x[T7,D0,K0] + g[T7,D0,K0] <= 0
- c14[T7,D0,K1]: - 12 x[T7,D0,K1] + g[T7,D0,K1] <= 0
- c14[T7,D0,K2]: - 12 x[T7,D0,K2] + g[T7,D0,K2] <= 0
- c14[T7,D1,K0]: - 12 x[T7,D1,K0] + g[T7,D1,K0] <= 0
- c14[T7,D1,K1]: - 12 x[T7,D1,K1] + g[T7,D1,K1] <= 0
- c14[T7,D1,K2]: - 12 x[T7,D1,K2] + g[T7,D1,K2] <= 0
- c14[T7,D2,K0]: - 12 x[T7,D2,K0] + g[T7,D2,K0] <= 0
- c14[T7,D2,K1]: - 12 x[T7,D2,K1] + g[T7,D2,K1] <= 0
- c14[T7,D2,K2]: - 12 x[T7,D2,K2] + g[T7,D2,K2] <= 0
- c14[T7,S0,K0]: - 12 x[T7,S0,K0] + g[T7,S0,K0] <= 0
- c14[T7,S0,K1]: - 12 x[T7,S0,K1] + g[T7,S0,K1] <= 0
- c14[T7,S0,K2]: - 12 x[T7,S0,K2] + g[T7,S0,K2] <= 0
- c14[T7,E0,K0]: - 12 x[T7,E0,K0] + g[T7,E0,K0] <= 0
- c14[T7,E0,K1]: - 12 x[T7,E0,K1] + g[T7,E0,K1] <= 0
- c14[T7,E0,K2]: - 12 x[T7,E0,K2] + g[T7,E0,K2] <= 0
- c14[T8,T0,K0]: - 12 x[T8,T0,K0] + g[T8,T0,K0] <= 0
- c14[T8,T0,K1]: - 12 x[T8,T0,K1] + g[T8,T0,K1] <= 0
- c14[T8,T0,K2]: - 12 x[T8,T0,K2] + g[T8,T0,K2] <= 0
- c14[T8,T1,K0]: - 12 x[T8,T1,K0] + g[T8,T1,K0] <= 0
- c14[T8,T1,K1]: - 12 x[T8,T1,K1] + g[T8,T1,K1] <= 0
- c14[T8,T1,K2]: - 12 x[T8,T1,K2] + g[T8,T1,K2] <= 0
- c14[T8,T2,K0]: - 12 x[T8,T2,K0] + g[T8,T2,K0] <= 0
- c14[T8,T2,K1]: - 12 x[T8,T2,K1] + g[T8,T2,K1] <= 0
- c14[T8,T2,K2]: - 12 x[T8,T2,K2] + g[T8,T2,K2] <= 0
- c14[T8,T3,K0]: - 12 x[T8,T3,K0] + g[T8,T3,K0] <= 0
- c14[T8,T3,K1]: - 12 x[T8,T3,K1] + g[T8,T3,K1] <= 0
- c14[T8,T3,K2]: - 12 x[T8,T3,K2] + g[T8,T3,K2] <= 0
- c14[T8,T4,K0]: - 12 x[T8,T4,K0] + g[T8,T4,K0] <= 0
- c14[T8,T4,K1]: - 12 x[T8,T4,K1] + g[T8,T4,K1] <= 0
- c14[T8,T4,K2]: - 12 x[T8,T4,K2] + g[T8,T4,K2] <= 0
- c14[T8,T5,K0]: - 12 x[T8,T5,K0] + g[T8,T5,K0] <= 0
- c14[T8,T5,K1]: - 12 x[T8,T5,K1] + g[T8,T5,K1] <= 0
- c14[T8,T5,K2]: - 12 x[T8,T5,K2] + g[T8,T5,K2] <= 0
- c14[T8,T6,K0]: - 12 x[T8,T6,K0] + g[T8,T6,K0] <= 0
- c14[T8,T6,K1]: - 12 x[T8,T6,K1] + g[T8,T6,K1] <= 0
- c14[T8,T6,K2]: - 12 x[T8,T6,K2] + g[T8,T6,K2] <= 0
- c14[T8,T7,K0]: - 12 x[T8,T7,K0] + g[T8,T7,K0] <= 0
- c14[T8,T7,K1]: - 12 x[T8,T7,K1] + g[T8,T7,K1] <= 0
- c14[T8,T7,K2]: - 12 x[T8,T7,K2] + g[T8,T7,K2] <= 0
- c14[T8,T9,K0]: - 12 x[T8,T9,K0] + g[T8,T9,K0] <= 0
- c14[T8,T9,K1]: - 12 x[T8,T9,K1] + g[T8,T9,K1] <= 0
- c14[T8,T9,K2]: - 12 x[T8,T9,K2] + g[T8,T9,K2] <= 0
- c14[T8,T10,K0]: - 12 x[T8,T10,K0] + g[T8,T10,K0] <= 0
- c14[T8,T10,K1]: - 12 x[T8,T10,K1] + g[T8,T10,K1] <= 0
- c14[T8,T10,K2]: - 12 x[T8,T10,K2] + g[T8,T10,K2] <= 0
- c14[T8,T11,K0]: - 12 x[T8,T11,K0] + g[T8,T11,K0] <= 0
- c14[T8,T11,K1]: - 12 x[T8,T11,K1] + g[T8,T11,K1] <= 0
- c14[T8,T11,K2]: - 12 x[T8,T11,K2] + g[T8,T11,K2] <= 0
- c14[T8,D0,K0]: - 12 x[T8,D0,K0] + g[T8,D0,K0] <= 0
- c14[T8,D0,K1]: - 12 x[T8,D0,K1] + g[T8,D0,K1] <= 0
- c14[T8,D0,K2]: - 12 x[T8,D0,K2] + g[T8,D0,K2] <= 0
- c14[T8,D1,K0]: - 12 x[T8,D1,K0] + g[T8,D1,K0] <= 0
- c14[T8,D1,K1]: - 12 x[T8,D1,K1] + g[T8,D1,K1] <= 0
- c14[T8,D1,K2]: - 12 x[T8,D1,K2] + g[T8,D1,K2] <= 0
- c14[T8,D2,K0]: - 12 x[T8,D2,K0] + g[T8,D2,K0] <= 0
- c14[T8,D2,K1]: - 12 x[T8,D2,K1] + g[T8,D2,K1] <= 0
- c14[T8,D2,K2]: - 12 x[T8,D2,K2] + g[T8,D2,K2] <= 0
- c14[T8,S0,K0]: - 12 x[T8,S0,K0] + g[T8,S0,K0] <= 0
- c14[T8,S0,K1]: - 12 x[T8,S0,K1] + g[T8,S0,K1] <= 0
- c14[T8,S0,K2]: - 12 x[T8,S0,K2] + g[T8,S0,K2] <= 0
- c14[T8,E0,K0]: - 12 x[T8,E0,K0] + g[T8,E0,K0] <= 0
- c14[T8,E0,K1]: - 12 x[T8,E0,K1] + g[T8,E0,K1] <= 0
- c14[T8,E0,K2]: - 12 x[T8,E0,K2] + g[T8,E0,K2] <= 0
- c14[T9,T0,K0]: - 12 x[T9,T0,K0] + g[T9,T0,K0] <= 0
- c14[T9,T0,K1]: - 12 x[T9,T0,K1] + g[T9,T0,K1] <= 0
- c14[T9,T0,K2]: - 12 x[T9,T0,K2] + g[T9,T0,K2] <= 0
- c14[T9,T1,K0]: - 12 x[T9,T1,K0] + g[T9,T1,K0] <= 0
- c14[T9,T1,K1]: - 12 x[T9,T1,K1] + g[T9,T1,K1] <= 0
- c14[T9,T1,K2]: - 12 x[T9,T1,K2] + g[T9,T1,K2] <= 0
- c14[T9,T2,K0]: - 12 x[T9,T2,K0] + g[T9,T2,K0] <= 0
- c14[T9,T2,K1]: - 12 x[T9,T2,K1] + g[T9,T2,K1] <= 0
- c14[T9,T2,K2]: - 12 x[T9,T2,K2] + g[T9,T2,K2] <= 0
- c14[T9,T3,K0]: - 12 x[T9,T3,K0] + g[T9,T3,K0] <= 0
- c14[T9,T3,K1]: - 12 x[T9,T3,K1] + g[T9,T3,K1] <= 0
- c14[T9,T3,K2]: - 12 x[T9,T3,K2] + g[T9,T3,K2] <= 0
- c14[T9,T4,K0]: - 12 x[T9,T4,K0] + g[T9,T4,K0] <= 0
- c14[T9,T4,K1]: - 12 x[T9,T4,K1] + g[T9,T4,K1] <= 0
- c14[T9,T4,K2]: - 12 x[T9,T4,K2] + g[T9,T4,K2] <= 0
- c14[T9,T5,K0]: - 12 x[T9,T5,K0] + g[T9,T5,K0] <= 0
- c14[T9,T5,K1]: - 12 x[T9,T5,K1] + g[T9,T5,K1] <= 0
- c14[T9,T5,K2]: - 12 x[T9,T5,K2] + g[T9,T5,K2] <= 0
- c14[T9,T6,K0]: - 12 x[T9,T6,K0] + g[T9,T6,K0] <= 0
- c14[T9,T6,K1]: - 12 x[T9,T6,K1] + g[T9,T6,K1] <= 0
- c14[T9,T6,K2]: - 12 x[T9,T6,K2] + g[T9,T6,K2] <= 0
- c14[T9,T7,K0]: - 12 x[T9,T7,K0] + g[T9,T7,K0] <= 0
- c14[T9,T7,K1]: - 12 x[T9,T7,K1] + g[T9,T7,K1] <= 0
- c14[T9,T7,K2]: - 12 x[T9,T7,K2] + g[T9,T7,K2] <= 0
- c14[T9,T8,K0]: - 12 x[T9,T8,K0] + g[T9,T8,K0] <= 0
- c14[T9,T8,K1]: - 12 x[T9,T8,K1] + g[T9,T8,K1] <= 0
- c14[T9,T8,K2]: - 12 x[T9,T8,K2] + g[T9,T8,K2] <= 0
- c14[T9,T10,K0]: - 12 x[T9,T10,K0] + g[T9,T10,K0] <= 0
- c14[T9,T10,K1]: - 12 x[T9,T10,K1] + g[T9,T10,K1] <= 0
- c14[T9,T10,K2]: - 12 x[T9,T10,K2] + g[T9,T10,K2] <= 0
- c14[T9,T11,K0]: - 12 x[T9,T11,K0] + g[T9,T11,K0] <= 0
- c14[T9,T11,K1]: - 12 x[T9,T11,K1] + g[T9,T11,K1] <= 0
- c14[T9,T11,K2]: - 12 x[T9,T11,K2] + g[T9,T11,K2] <= 0
- c14[T9,D0,K0]: - 12 x[T9,D0,K0] + g[T9,D0,K0] <= 0
- c14[T9,D0,K1]: - 12 x[T9,D0,K1] + g[T9,D0,K1] <= 0
- c14[T9,D0,K2]: - 12 x[T9,D0,K2] + g[T9,D0,K2] <= 0
- c14[T9,D1,K0]: - 12 x[T9,D1,K0] + g[T9,D1,K0] <= 0
- c14[T9,D1,K1]: - 12 x[T9,D1,K1] + g[T9,D1,K1] <= 0
- c14[T9,D1,K2]: - 12 x[T9,D1,K2] + g[T9,D1,K2] <= 0
- c14[T9,D2,K0]: - 12 x[T9,D2,K0] + g[T9,D2,K0] <= 0
- c14[T9,D2,K1]: - 12 x[T9,D2,K1] + g[T9,D2,K1] <= 0
- c14[T9,D2,K2]: - 12 x[T9,D2,K2] + g[T9,D2,K2] <= 0
- c14[T9,S0,K0]: - 12 x[T9,S0,K0] + g[T9,S0,K0] <= 0
- c14[T9,S0,K1]: - 12 x[T9,S0,K1] + g[T9,S0,K1] <= 0
- c14[T9,S0,K2]: - 12 x[T9,S0,K2] + g[T9,S0,K2] <= 0
- c14[T9,E0,K0]: - 12 x[T9,E0,K0] + g[T9,E0,K0] <= 0
- c14[T9,E0,K1]: - 12 x[T9,E0,K1] + g[T9,E0,K1] <= 0
- c14[T9,E0,K2]: - 12 x[T9,E0,K2] + g[T9,E0,K2] <= 0
- c14[T10,T0,K0]: - 12 x[T10,T0,K0] + g[T10,T0,K0] <= 0
- c14[T10,T0,K1]: - 12 x[T10,T0,K1] + g[T10,T0,K1] <= 0
- c14[T10,T0,K2]: - 12 x[T10,T0,K2] + g[T10,T0,K2] <= 0
- c14[T10,T1,K0]: - 12 x[T10,T1,K0] + g[T10,T1,K0] <= 0
- c14[T10,T1,K1]: - 12 x[T10,T1,K1] + g[T10,T1,K1] <= 0
- c14[T10,T1,K2]: - 12 x[T10,T1,K2] + g[T10,T1,K2] <= 0
- c14[T10,T2,K0]: - 12 x[T10,T2,K0] + g[T10,T2,K0] <= 0
- c14[T10,T2,K1]: - 12 x[T10,T2,K1] + g[T10,T2,K1] <= 0
- c14[T10,T2,K2]: - 12 x[T10,T2,K2] + g[T10,T2,K2] <= 0
- c14[T10,T3,K0]: - 12 x[T10,T3,K0] + g[T10,T3,K0] <= 0
- c14[T10,T3,K1]: - 12 x[T10,T3,K1] + g[T10,T3,K1] <= 0
- c14[T10,T3,K2]: - 12 x[T10,T3,K2] + g[T10,T3,K2] <= 0
- c14[T10,T4,K0]: - 12 x[T10,T4,K0] + g[T10,T4,K0] <= 0
- c14[T10,T4,K1]: - 12 x[T10,T4,K1] + g[T10,T4,K1] <= 0
- c14[T10,T4,K2]: - 12 x[T10,T4,K2] + g[T10,T4,K2] <= 0
- c14[T10,T5,K0]: - 12 x[T10,T5,K0] + g[T10,T5,K0] <= 0
- c14[T10,T5,K1]: - 12 x[T10,T5,K1] + g[T10,T5,K1] <= 0
- c14[T10,T5,K2]: - 12 x[T10,T5,K2] + g[T10,T5,K2] <= 0
- c14[T10,T6,K0]: - 12 x[T10,T6,K0] + g[T10,T6,K0] <= 0
- c14[T10,T6,K1]: - 12 x[T10,T6,K1] + g[T10,T6,K1] <= 0
- c14[T10,T6,K2]: - 12 x[T10,T6,K2] + g[T10,T6,K2] <= 0
- c14[T10,T7,K0]: - 12 x[T10,T7,K0] + g[T10,T7,K0] <= 0
- c14[T10,T7,K1]: - 12 x[T10,T7,K1] + g[T10,T7,K1] <= 0
- c14[T10,T7,K2]: - 12 x[T10,T7,K2] + g[T10,T7,K2] <= 0
- c14[T10,T8,K0]: - 12 x[T10,T8,K0] + g[T10,T8,K0] <= 0
- c14[T10,T8,K1]: - 12 x[T10,T8,K1] + g[T10,T8,K1] <= 0
- c14[T10,T8,K2]: - 12 x[T10,T8,K2] + g[T10,T8,K2] <= 0
- c14[T10,T9,K0]: - 12 x[T10,T9,K0] + g[T10,T9,K0] <= 0
- c14[T10,T9,K1]: - 12 x[T10,T9,K1] + g[T10,T9,K1] <= 0
- c14[T10,T9,K2]: - 12 x[T10,T9,K2] + g[T10,T9,K2] <= 0
- c14[T10,T11,K0]: - 12 x[T10,T11,K0] + g[T10,T11,K0] <= 0
- c14[T10,T11,K1]: - 12 x[T10,T11,K1] + g[T10,T11,K1] <= 0
- c14[T10,T11,K2]: - 12 x[T10,T11,K2] + g[T10,T11,K2] <= 0
- c14[T10,D0,K0]: - 12 x[T10,D0,K0] + g[T10,D0,K0] <= 0
- c14[T10,D0,K1]: - 12 x[T10,D0,K1] + g[T10,D0,K1] <= 0
- c14[T10,D0,K2]: - 12 x[T10,D0,K2] + g[T10,D0,K2] <= 0
- c14[T10,D1,K0]: - 12 x[T10,D1,K0] + g[T10,D1,K0] <= 0
- c14[T10,D1,K1]: - 12 x[T10,D1,K1] + g[T10,D1,K1] <= 0
- c14[T10,D1,K2]: - 12 x[T10,D1,K2] + g[T10,D1,K2] <= 0
- c14[T10,D2,K0]: - 12 x[T10,D2,K0] + g[T10,D2,K0] <= 0
- c14[T10,D2,K1]: - 12 x[T10,D2,K1] + g[T10,D2,K1] <= 0
- c14[T10,D2,K2]: - 12 x[T10,D2,K2] + g[T10,D2,K2] <= 0
- c14[T10,S0,K0]: - 12 x[T10,S0,K0] + g[T10,S0,K0] <= 0
- c14[T10,S0,K1]: - 12 x[T10,S0,K1] + g[T10,S0,K1] <= 0
- c14[T10,S0,K2]: - 12 x[T10,S0,K2] + g[T10,S0,K2] <= 0
- c14[T10,E0,K0]: - 12 x[T10,E0,K0] + g[T10,E0,K0] <= 0
- c14[T10,E0,K1]: - 12 x[T10,E0,K1] + g[T10,E0,K1] <= 0
- c14[T10,E0,K2]: - 12 x[T10,E0,K2] + g[T10,E0,K2] <= 0
- c14[T11,T0,K0]: - 12 x[T11,T0,K0] + g[T11,T0,K0] <= 0
- c14[T11,T0,K1]: - 12 x[T11,T0,K1] + g[T11,T0,K1] <= 0
- c14[T11,T0,K2]: - 12 x[T11,T0,K2] + g[T11,T0,K2] <= 0
- c14[T11,T1,K0]: - 12 x[T11,T1,K0] + g[T11,T1,K0] <= 0
- c14[T11,T1,K1]: - 12 x[T11,T1,K1] + g[T11,T1,K1] <= 0
- c14[T11,T1,K2]: - 12 x[T11,T1,K2] + g[T11,T1,K2] <= 0
- c14[T11,T2,K0]: - 12 x[T11,T2,K0] + g[T11,T2,K0] <= 0
- c14[T11,T2,K1]: - 12 x[T11,T2,K1] + g[T11,T2,K1] <= 0
- c14[T11,T2,K2]: - 12 x[T11,T2,K2] + g[T11,T2,K2] <= 0
- c14[T11,T3,K0]: - 12 x[T11,T3,K0] + g[T11,T3,K0] <= 0
- c14[T11,T3,K1]: - 12 x[T11,T3,K1] + g[T11,T3,K1] <= 0
- c14[T11,T3,K2]: - 12 x[T11,T3,K2] + g[T11,T3,K2] <= 0
- c14[T11,T4,K0]: - 12 x[T11,T4,K0] + g[T11,T4,K0] <= 0
- c14[T11,T4,K1]: - 12 x[T11,T4,K1] + g[T11,T4,K1] <= 0
- c14[T11,T4,K2]: - 12 x[T11,T4,K2] + g[T11,T4,K2] <= 0
- c14[T11,T5,K0]: - 12 x[T11,T5,K0] + g[T11,T5,K0] <= 0
- c14[T11,T5,K1]: - 12 x[T11,T5,K1] + g[T11,T5,K1] <= 0
- c14[T11,T5,K2]: - 12 x[T11,T5,K2] + g[T11,T5,K2] <= 0
- c14[T11,T6,K0]: - 12 x[T11,T6,K0] + g[T11,T6,K0] <= 0
- c14[T11,T6,K1]: - 12 x[T11,T6,K1] + g[T11,T6,K1] <= 0
- c14[T11,T6,K2]: - 12 x[T11,T6,K2] + g[T11,T6,K2] <= 0
- c14[T11,T7,K0]: - 12 x[T11,T7,K0] + g[T11,T7,K0] <= 0
- c14[T11,T7,K1]: - 12 x[T11,T7,K1] + g[T11,T7,K1] <= 0
- c14[T11,T7,K2]: - 12 x[T11,T7,K2] + g[T11,T7,K2] <= 0
- c14[T11,T8,K0]: - 12 x[T11,T8,K0] + g[T11,T8,K0] <= 0
- c14[T11,T8,K1]: - 12 x[T11,T8,K1] + g[T11,T8,K1] <= 0
- c14[T11,T8,K2]: - 12 x[T11,T8,K2] + g[T11,T8,K2] <= 0
- c14[T11,T9,K0]: - 12 x[T11,T9,K0] + g[T11,T9,K0] <= 0
- c14[T11,T9,K1]: - 12 x[T11,T9,K1] + g[T11,T9,K1] <= 0
- c14[T11,T9,K2]: - 12 x[T11,T9,K2] + g[T11,T9,K2] <= 0
- c14[T11,T10,K0]: - 12 x[T11,T10,K0] + g[T11,T10,K0] <= 0
- c14[T11,T10,K1]: - 12 x[T11,T10,K1] + g[T11,T10,K1] <= 0
- c14[T11,T10,K2]: - 12 x[T11,T10,K2] + g[T11,T10,K2] <= 0
- c14[T11,D0,K0]: - 12 x[T11,D0,K0] + g[T11,D0,K0] <= 0
- c14[T11,D0,K1]: - 12 x[T11,D0,K1] + g[T11,D0,K1] <= 0
- c14[T11,D0,K2]: - 12 x[T11,D0,K2] + g[T11,D0,K2] <= 0
- c14[T11,D1,K0]: - 12 x[T11,D1,K0] + g[T11,D1,K0] <= 0
- c14[T11,D1,K1]: - 12 x[T11,D1,K1] + g[T11,D1,K1] <= 0
- c14[T11,D1,K2]: - 12 x[T11,D1,K2] + g[T11,D1,K2] <= 0
- c14[T11,D2,K0]: - 12 x[T11,D2,K0] + g[T11,D2,K0] <= 0
- c14[T11,D2,K1]: - 12 x[T11,D2,K1] + g[T11,D2,K1] <= 0
- c14[T11,D2,K2]: - 12 x[T11,D2,K2] + g[T11,D2,K2] <= 0
- c14[T11,S0,K0]: - 12 x[T11,S0,K0] + g[T11,S0,K0] <= 0
- c14[T11,S0,K1]: - 12 x[T11,S0,K1] + g[T11,S0,K1] <= 0
- c14[T11,S0,K2]: - 12 x[T11,S0,K2] + g[T11,S0,K2] <= 0
- c14[T11,E0,K0]: - 12 x[T11,E0,K0] + g[T11,E0,K0] <= 0
- c14[T11,E0,K1]: - 12 x[T11,E0,K1] + g[T11,E0,K1] <= 0
- c14[T11,E0,K2]: - 12 x[T11,E0,K2] + g[T11,E0,K2] <= 0
- c14[D0,T0,K0]: - 12 x[D0,T0,K0] + g[D0,T0,K0] <= 0
- c14[D0,T0,K1]: - 12 x[D0,T0,K1] + g[D0,T0,K1] <= 0
- c14[D0,T0,K2]: - 12 x[D0,T0,K2] + g[D0,T0,K2] <= 0
- c14[D0,T1,K0]: - 12 x[D0,T1,K0] + g[D0,T1,K0] <= 0
- c14[D0,T1,K1]: - 12 x[D0,T1,K1] + g[D0,T1,K1] <= 0
- c14[D0,T1,K2]: - 12 x[D0,T1,K2] + g[D0,T1,K2] <= 0
- c14[D0,T2,K0]: - 12 x[D0,T2,K0] + g[D0,T2,K0] <= 0
- c14[D0,T2,K1]: - 12 x[D0,T2,K1] + g[D0,T2,K1] <= 0
- c14[D0,T2,K2]: - 12 x[D0,T2,K2] + g[D0,T2,K2] <= 0
- c14[D0,T3,K0]: - 12 x[D0,T3,K0] + g[D0,T3,K0] <= 0
- c14[D0,T3,K1]: - 12 x[D0,T3,K1] + g[D0,T3,K1] <= 0
- c14[D0,T3,K2]: - 12 x[D0,T3,K2] + g[D0,T3,K2] <= 0
- c14[D0,T4,K0]: - 12 x[D0,T4,K0] + g[D0,T4,K0] <= 0
- c14[D0,T4,K1]: - 12 x[D0,T4,K1] + g[D0,T4,K1] <= 0
- c14[D0,T4,K2]: - 12 x[D0,T4,K2] + g[D0,T4,K2] <= 0
- c14[D0,T5,K0]: - 12 x[D0,T5,K0] + g[D0,T5,K0] <= 0
- c14[D0,T5,K1]: - 12 x[D0,T5,K1] + g[D0,T5,K1] <= 0
- c14[D0,T5,K2]: - 12 x[D0,T5,K2] + g[D0,T5,K2] <= 0
- c14[D0,T6,K0]: - 12 x[D0,T6,K0] + g[D0,T6,K0] <= 0
- c14[D0,T6,K1]: - 12 x[D0,T6,K1] + g[D0,T6,K1] <= 0
- c14[D0,T6,K2]: - 12 x[D0,T6,K2] + g[D0,T6,K2] <= 0
- c14[D0,T7,K0]: - 12 x[D0,T7,K0] + g[D0,T7,K0] <= 0
- c14[D0,T7,K1]: - 12 x[D0,T7,K1] + g[D0,T7,K1] <= 0
- c14[D0,T7,K2]: - 12 x[D0,T7,K2] + g[D0,T7,K2] <= 0
- c14[D0,T8,K0]: - 12 x[D0,T8,K0] + g[D0,T8,K0] <= 0
- c14[D0,T8,K1]: - 12 x[D0,T8,K1] + g[D0,T8,K1] <= 0
- c14[D0,T8,K2]: - 12 x[D0,T8,K2] + g[D0,T8,K2] <= 0
- c14[D0,T9,K0]: - 12 x[D0,T9,K0] + g[D0,T9,K0] <= 0
- c14[D0,T9,K1]: - 12 x[D0,T9,K1] + g[D0,T9,K1] <= 0
- c14[D0,T9,K2]: - 12 x[D0,T9,K2] + g[D0,T9,K2] <= 0
- c14[D0,T10,K0]: - 12 x[D0,T10,K0] + g[D0,T10,K0] <= 0
- c14[D0,T10,K1]: - 12 x[D0,T10,K1] + g[D0,T10,K1] <= 0
- c14[D0,T10,K2]: - 12 x[D0,T10,K2] + g[D0,T10,K2] <= 0
- c14[D0,T11,K0]: - 12 x[D0,T11,K0] + g[D0,T11,K0] <= 0
- c14[D0,T11,K1]: - 12 x[D0,T11,K1] + g[D0,T11,K1] <= 0
- c14[D0,T11,K2]: - 12 x[D0,T11,K2] + g[D0,T11,K2] <= 0
- c14[D0,D1,K0]: - 12 x[D0,D1,K0] + g[D0,D1,K0] <= 0
- c14[D0,D1,K1]: - 12 x[D0,D1,K1] + g[D0,D1,K1] <= 0
- c14[D0,D1,K2]: - 12 x[D0,D1,K2] + g[D0,D1,K2] <= 0
- c14[D0,D2,K0]: - 12 x[D0,D2,K0] + g[D0,D2,K0] <= 0
- c14[D0,D2,K1]: - 12 x[D0,D2,K1] + g[D0,D2,K1] <= 0
- c14[D0,D2,K2]: - 12 x[D0,D2,K2] + g[D0,D2,K2] <= 0
- c14[D0,S0,K0]: - 12 x[D0,S0,K0] + g[D0,S0,K0] <= 0
- c14[D0,S0,K1]: - 12 x[D0,S0,K1] + g[D0,S0,K1] <= 0
- c14[D0,S0,K2]: - 12 x[D0,S0,K2] + g[D0,S0,K2] <= 0
- c14[D0,E0,K0]: - 12 x[D0,E0,K0] + g[D0,E0,K0] <= 0
- c14[D0,E0,K1]: - 12 x[D0,E0,K1] + g[D0,E0,K1] <= 0
- c14[D0,E0,K2]: - 12 x[D0,E0,K2] + g[D0,E0,K2] <= 0
- c14[D1,T0,K0]: - 12 x[D1,T0,K0] + g[D1,T0,K0] <= 0
- c14[D1,T0,K1]: - 12 x[D1,T0,K1] + g[D1,T0,K1] <= 0
- c14[D1,T0,K2]: - 12 x[D1,T0,K2] + g[D1,T0,K2] <= 0
- c14[D1,T1,K0]: - 12 x[D1,T1,K0] + g[D1,T1,K0] <= 0
- c14[D1,T1,K1]: - 12 x[D1,T1,K1] + g[D1,T1,K1] <= 0
- c14[D1,T1,K2]: - 12 x[D1,T1,K2] + g[D1,T1,K2] <= 0
- c14[D1,T2,K0]: - 12 x[D1,T2,K0] + g[D1,T2,K0] <= 0
- c14[D1,T2,K1]: - 12 x[D1,T2,K1] + g[D1,T2,K1] <= 0
- c14[D1,T2,K2]: - 12 x[D1,T2,K2] + g[D1,T2,K2] <= 0
- c14[D1,T3,K0]: - 12 x[D1,T3,K0] + g[D1,T3,K0] <= 0
- c14[D1,T3,K1]: - 12 x[D1,T3,K1] + g[D1,T3,K1] <= 0
- c14[D1,T3,K2]: - 12 x[D1,T3,K2] + g[D1,T3,K2] <= 0
- c14[D1,T4,K0]: - 12 x[D1,T4,K0] + g[D1,T4,K0] <= 0
- c14[D1,T4,K1]: - 12 x[D1,T4,K1] + g[D1,T4,K1] <= 0
- c14[D1,T4,K2]: - 12 x[D1,T4,K2] + g[D1,T4,K2] <= 0
- c14[D1,T5,K0]: - 12 x[D1,T5,K0] + g[D1,T5,K0] <= 0
- c14[D1,T5,K1]: - 12 x[D1,T5,K1] + g[D1,T5,K1] <= 0
- c14[D1,T5,K2]: - 12 x[D1,T5,K2] + g[D1,T5,K2] <= 0
- c14[D1,T6,K0]: - 12 x[D1,T6,K0] + g[D1,T6,K0] <= 0
- c14[D1,T6,K1]: - 12 x[D1,T6,K1] + g[D1,T6,K1] <= 0
- c14[D1,T6,K2]: - 12 x[D1,T6,K2] + g[D1,T6,K2] <= 0
- c14[D1,T7,K0]: - 12 x[D1,T7,K0] + g[D1,T7,K0] <= 0
- c14[D1,T7,K1]: - 12 x[D1,T7,K1] + g[D1,T7,K1] <= 0
- c14[D1,T7,K2]: - 12 x[D1,T7,K2] + g[D1,T7,K2] <= 0
- c14[D1,T8,K0]: - 12 x[D1,T8,K0] + g[D1,T8,K0] <= 0
- c14[D1,T8,K1]: - 12 x[D1,T8,K1] + g[D1,T8,K1] <= 0
- c14[D1,T8,K2]: - 12 x[D1,T8,K2] + g[D1,T8,K2] <= 0
- c14[D1,T9,K0]: - 12 x[D1,T9,K0] + g[D1,T9,K0] <= 0
- c14[D1,T9,K1]: - 12 x[D1,T9,K1] + g[D1,T9,K1] <= 0
- c14[D1,T9,K2]: - 12 x[D1,T9,K2] + g[D1,T9,K2] <= 0
- c14[D1,T10,K0]: - 12 x[D1,T10,K0] + g[D1,T10,K0] <= 0
- c14[D1,T10,K1]: - 12 x[D1,T10,K1] + g[D1,T10,K1] <= 0
- c14[D1,T10,K2]: - 12 x[D1,T10,K2] + g[D1,T10,K2] <= 0
- c14[D1,T11,K0]: - 12 x[D1,T11,K0] + g[D1,T11,K0] <= 0
- c14[D1,T11,K1]: - 12 x[D1,T11,K1] + g[D1,T11,K1] <= 0
- c14[D1,T11,K2]: - 12 x[D1,T11,K2] + g[D1,T11,K2] <= 0
- c14[D1,D0,K0]: - 12 x[D1,D0,K0] + g[D1,D0,K0] <= 0
- c14[D1,D0,K1]: - 12 x[D1,D0,K1] + g[D1,D0,K1] <= 0
- c14[D1,D0,K2]: - 12 x[D1,D0,K2] + g[D1,D0,K2] <= 0
- c14[D1,D2,K0]: - 12 x[D1,D2,K0] + g[D1,D2,K0] <= 0
- c14[D1,D2,K1]: - 12 x[D1,D2,K1] + g[D1,D2,K1] <= 0
- c14[D1,D2,K2]: - 12 x[D1,D2,K2] + g[D1,D2,K2] <= 0
- c14[D1,S0,K0]: - 12 x[D1,S0,K0] + g[D1,S0,K0] <= 0
- c14[D1,S0,K1]: - 12 x[D1,S0,K1] + g[D1,S0,K1] <= 0
- c14[D1,S0,K2]: - 12 x[D1,S0,K2] + g[D1,S0,K2] <= 0
- c14[D1,E0,K0]: - 12 x[D1,E0,K0] + g[D1,E0,K0] <= 0
- c14[D1,E0,K1]: - 12 x[D1,E0,K1] + g[D1,E0,K1] <= 0
- c14[D1,E0,K2]: - 12 x[D1,E0,K2] + g[D1,E0,K2] <= 0
- c14[D2,T0,K0]: - 12 x[D2,T0,K0] + g[D2,T0,K0] <= 0
- c14[D2,T0,K1]: - 12 x[D2,T0,K1] + g[D2,T0,K1] <= 0
- c14[D2,T0,K2]: - 12 x[D2,T0,K2] + g[D2,T0,K2] <= 0
- c14[D2,T1,K0]: - 12 x[D2,T1,K0] + g[D2,T1,K0] <= 0
- c14[D2,T1,K1]: - 12 x[D2,T1,K1] + g[D2,T1,K1] <= 0
- c14[D2,T1,K2]: - 12 x[D2,T1,K2] + g[D2,T1,K2] <= 0
- c14[D2,T2,K0]: - 12 x[D2,T2,K0] + g[D2,T2,K0] <= 0
- c14[D2,T2,K1]: - 12 x[D2,T2,K1] + g[D2,T2,K1] <= 0
- c14[D2,T2,K2]: - 12 x[D2,T2,K2] + g[D2,T2,K2] <= 0
- c14[D2,T3,K0]: - 12 x[D2,T3,K0] + g[D2,T3,K0] <= 0
- c14[D2,T3,K1]: - 12 x[D2,T3,K1] + g[D2,T3,K1] <= 0
- c14[D2,T3,K2]: - 12 x[D2,T3,K2] + g[D2,T3,K2] <= 0
- c14[D2,T4,K0]: - 12 x[D2,T4,K0] + g[D2,T4,K0] <= 0
- c14[D2,T4,K1]: - 12 x[D2,T4,K1] + g[D2,T4,K1] <= 0
- c14[D2,T4,K2]: - 12 x[D2,T4,K2] + g[D2,T4,K2] <= 0
- c14[D2,T5,K0]: - 12 x[D2,T5,K0] + g[D2,T5,K0] <= 0
- c14[D2,T5,K1]: - 12 x[D2,T5,K1] + g[D2,T5,K1] <= 0
- c14[D2,T5,K2]: - 12 x[D2,T5,K2] + g[D2,T5,K2] <= 0
- c14[D2,T6,K0]: - 12 x[D2,T6,K0] + g[D2,T6,K0] <= 0
- c14[D2,T6,K1]: - 12 x[D2,T6,K1] + g[D2,T6,K1] <= 0
- c14[D2,T6,K2]: - 12 x[D2,T6,K2] + g[D2,T6,K2] <= 0
- c14[D2,T7,K0]: - 12 x[D2,T7,K0] + g[D2,T7,K0] <= 0
- c14[D2,T7,K1]: - 12 x[D2,T7,K1] + g[D2,T7,K1] <= 0
- c14[D2,T7,K2]: - 12 x[D2,T7,K2] + g[D2,T7,K2] <= 0
- c14[D2,T8,K0]: - 12 x[D2,T8,K0] + g[D2,T8,K0] <= 0
- c14[D2,T8,K1]: - 12 x[D2,T8,K1] + g[D2,T8,K1] <= 0
- c14[D2,T8,K2]: - 12 x[D2,T8,K2] + g[D2,T8,K2] <= 0
- c14[D2,T9,K0]: - 12 x[D2,T9,K0] + g[D2,T9,K0] <= 0
- c14[D2,T9,K1]: - 12 x[D2,T9,K1] + g[D2,T9,K1] <= 0
- c14[D2,T9,K2]: - 12 x[D2,T9,K2] + g[D2,T9,K2] <= 0
- c14[D2,T10,K0]: - 12 x[D2,T10,K0] + g[D2,T10,K0] <= 0
- c14[D2,T10,K1]: - 12 x[D2,T10,K1] + g[D2,T10,K1] <= 0
- c14[D2,T10,K2]: - 12 x[D2,T10,K2] + g[D2,T10,K2] <= 0
- c14[D2,T11,K0]: - 12 x[D2,T11,K0] + g[D2,T11,K0] <= 0
- c14[D2,T11,K1]: - 12 x[D2,T11,K1] + g[D2,T11,K1] <= 0
- c14[D2,T11,K2]: - 12 x[D2,T11,K2] + g[D2,T11,K2] <= 0
- c14[D2,D0,K0]: - 12 x[D2,D0,K0] + g[D2,D0,K0] <= 0
- c14[D2,D0,K1]: - 12 x[D2,D0,K1] + g[D2,D0,K1] <= 0
- c14[D2,D0,K2]: - 12 x[D2,D0,K2] + g[D2,D0,K2] <= 0
- c14[D2,D1,K0]: - 12 x[D2,D1,K0] + g[D2,D1,K0] <= 0
- c14[D2,D1,K1]: - 12 x[D2,D1,K1] + g[D2,D1,K1] <= 0
- c14[D2,D1,K2]: - 12 x[D2,D1,K2] + g[D2,D1,K2] <= 0
- c14[D2,S0,K0]: - 12 x[D2,S0,K0] + g[D2,S0,K0] <= 0
- c14[D2,S0,K1]: - 12 x[D2,S0,K1] + g[D2,S0,K1] <= 0
- c14[D2,S0,K2]: - 12 x[D2,S0,K2] + g[D2,S0,K2] <= 0
- c14[D2,E0,K0]: - 12 x[D2,E0,K0] + g[D2,E0,K0] <= 0
- c14[D2,E0,K1]: - 12 x[D2,E0,K1] + g[D2,E0,K1] <= 0
- c14[D2,E0,K2]: - 12 x[D2,E0,K2] + g[D2,E0,K2] <= 0
- c14[S0,T0,K0]: - 12 x[S0,T0,K0] + g[S0,T0,K0] <= 0
- c14[S0,T0,K1]: - 12 x[S0,T0,K1] + g[S0,T0,K1] <= 0
- c14[S0,T0,K2]: - 12 x[S0,T0,K2] + g[S0,T0,K2] <= 0
- c14[S0,T1,K0]: - 12 x[S0,T1,K0] + g[S0,T1,K0] <= 0
- c14[S0,T1,K1]: - 12 x[S0,T1,K1] + g[S0,T1,K1] <= 0
- c14[S0,T1,K2]: - 12 x[S0,T1,K2] + g[S0,T1,K2] <= 0
- c14[S0,T2,K0]: - 12 x[S0,T2,K0] + g[S0,T2,K0] <= 0
- c14[S0,T2,K1]: - 12 x[S0,T2,K1] + g[S0,T2,K1] <= 0
- c14[S0,T2,K2]: - 12 x[S0,T2,K2] + g[S0,T2,K2] <= 0
- c14[S0,T3,K0]: - 12 x[S0,T3,K0] + g[S0,T3,K0] <= 0
- c14[S0,T3,K1]: - 12 x[S0,T3,K1] + g[S0,T3,K1] <= 0
- c14[S0,T3,K2]: - 12 x[S0,T3,K2] + g[S0,T3,K2] <= 0
- c14[S0,T4,K0]: - 12 x[S0,T4,K0] + g[S0,T4,K0] <= 0
- c14[S0,T4,K1]: - 12 x[S0,T4,K1] + g[S0,T4,K1] <= 0
- c14[S0,T4,K2]: - 12 x[S0,T4,K2] + g[S0,T4,K2] <= 0
- c14[S0,T5,K0]: - 12 x[S0,T5,K0] + g[S0,T5,K0] <= 0
- c14[S0,T5,K1]: - 12 x[S0,T5,K1] + g[S0,T5,K1] <= 0
- c14[S0,T5,K2]: - 12 x[S0,T5,K2] + g[S0,T5,K2] <= 0
- c14[S0,T6,K0]: - 12 x[S0,T6,K0] + g[S0,T6,K0] <= 0
- c14[S0,T6,K1]: - 12 x[S0,T6,K1] + g[S0,T6,K1] <= 0
- c14[S0,T6,K2]: - 12 x[S0,T6,K2] + g[S0,T6,K2] <= 0
- c14[S0,T7,K0]: - 12 x[S0,T7,K0] + g[S0,T7,K0] <= 0
- c14[S0,T7,K1]: - 12 x[S0,T7,K1] + g[S0,T7,K1] <= 0
- c14[S0,T7,K2]: - 12 x[S0,T7,K2] + g[S0,T7,K2] <= 0
- c14[S0,T8,K0]: - 12 x[S0,T8,K0] + g[S0,T8,K0] <= 0
- c14[S0,T8,K1]: - 12 x[S0,T8,K1] + g[S0,T8,K1] <= 0
- c14[S0,T8,K2]: - 12 x[S0,T8,K2] + g[S0,T8,K2] <= 0
- c14[S0,T9,K0]: - 12 x[S0,T9,K0] + g[S0,T9,K0] <= 0
- c14[S0,T9,K1]: - 12 x[S0,T9,K1] + g[S0,T9,K1] <= 0
- c14[S0,T9,K2]: - 12 x[S0,T9,K2] + g[S0,T9,K2] <= 0
- c14[S0,T10,K0]: - 12 x[S0,T10,K0] + g[S0,T10,K0] <= 0
- c14[S0,T10,K1]: - 12 x[S0,T10,K1] + g[S0,T10,K1] <= 0
- c14[S0,T10,K2]: - 12 x[S0,T10,K2] + g[S0,T10,K2] <= 0
- c14[S0,T11,K0]: - 12 x[S0,T11,K0] + g[S0,T11,K0] <= 0
- c14[S0,T11,K1]: - 12 x[S0,T11,K1] + g[S0,T11,K1] <= 0
- c14[S0,T11,K2]: - 12 x[S0,T11,K2] + g[S0,T11,K2] <= 0
- c14[S0,D0,K0]: - 12 x[S0,D0,K0] + g[S0,D0,K0] <= 0
- c14[S0,D0,K1]: - 12 x[S0,D0,K1] + g[S0,D0,K1] <= 0
- c14[S0,D0,K2]: - 12 x[S0,D0,K2] + g[S0,D0,K2] <= 0
- c14[S0,D1,K0]: - 12 x[S0,D1,K0] + g[S0,D1,K0] <= 0
- c14[S0,D1,K1]: - 12 x[S0,D1,K1] + g[S0,D1,K1] <= 0
- c14[S0,D1,K2]: - 12 x[S0,D1,K2] + g[S0,D1,K2] <= 0
- c14[S0,D2,K0]: - 12 x[S0,D2,K0] + g[S0,D2,K0] <= 0
- c14[S0,D2,K1]: - 12 x[S0,D2,K1] + g[S0,D2,K1] <= 0
- c14[S0,D2,K2]: - 12 x[S0,D2,K2] + g[S0,D2,K2] <= 0
- c14[S0,E0,K0]: - 12 x[S0,E0,K0] + g[S0,E0,K0] <= 0
- c14[S0,E0,K1]: - 12 x[S0,E0,K1] + g[S0,E0,K1] <= 0
- c14[S0,E0,K2]: - 12 x[S0,E0,K2] + g[S0,E0,K2] <= 0
- c14[E0,T0,K0]: - 12 x[E0,T0,K0] + g[E0,T0,K0] <= 0
- c14[E0,T0,K1]: - 12 x[E0,T0,K1] + g[E0,T0,K1] <= 0
- c14[E0,T0,K2]: - 12 x[E0,T0,K2] + g[E0,T0,K2] <= 0
- c14[E0,T1,K0]: - 12 x[E0,T1,K0] + g[E0,T1,K0] <= 0
- c14[E0,T1,K1]: - 12 x[E0,T1,K1] + g[E0,T1,K1] <= 0
- c14[E0,T1,K2]: - 12 x[E0,T1,K2] + g[E0,T1,K2] <= 0
- c14[E0,T2,K0]: - 12 x[E0,T2,K0] + g[E0,T2,K0] <= 0
- c14[E0,T2,K1]: - 12 x[E0,T2,K1] + g[E0,T2,K1] <= 0
- c14[E0,T2,K2]: - 12 x[E0,T2,K2] + g[E0,T2,K2] <= 0
- c14[E0,T3,K0]: - 12 x[E0,T3,K0] + g[E0,T3,K0] <= 0
- c14[E0,T3,K1]: - 12 x[E0,T3,K1] + g[E0,T3,K1] <= 0
- c14[E0,T3,K2]: - 12 x[E0,T3,K2] + g[E0,T3,K2] <= 0
- c14[E0,T4,K0]: - 12 x[E0,T4,K0] + g[E0,T4,K0] <= 0
- c14[E0,T4,K1]: - 12 x[E0,T4,K1] + g[E0,T4,K1] <= 0
- c14[E0,T4,K2]: - 12 x[E0,T4,K2] + g[E0,T4,K2] <= 0
- c14[E0,T5,K0]: - 12 x[E0,T5,K0] + g[E0,T5,K0] <= 0
- c14[E0,T5,K1]: - 12 x[E0,T5,K1] + g[E0,T5,K1] <= 0
- c14[E0,T5,K2]: - 12 x[E0,T5,K2] + g[E0,T5,K2] <= 0
- c14[E0,T6,K0]: - 12 x[E0,T6,K0] + g[E0,T6,K0] <= 0
- c14[E0,T6,K1]: - 12 x[E0,T6,K1] + g[E0,T6,K1] <= 0
- c14[E0,T6,K2]: - 12 x[E0,T6,K2] + g[E0,T6,K2] <= 0
- c14[E0,T7,K0]: - 12 x[E0,T7,K0] + g[E0,T7,K0] <= 0
- c14[E0,T7,K1]: - 12 x[E0,T7,K1] + g[E0,T7,K1] <= 0
- c14[E0,T7,K2]: - 12 x[E0,T7,K2] + g[E0,T7,K2] <= 0
- c14[E0,T8,K0]: - 12 x[E0,T8,K0] + g[E0,T8,K0] <= 0
- c14[E0,T8,K1]: - 12 x[E0,T8,K1] + g[E0,T8,K1] <= 0
- c14[E0,T8,K2]: - 12 x[E0,T8,K2] + g[E0,T8,K2] <= 0
- c14[E0,T9,K0]: - 12 x[E0,T9,K0] + g[E0,T9,K0] <= 0
- c14[E0,T9,K1]: - 12 x[E0,T9,K1] + g[E0,T9,K1] <= 0
- c14[E0,T9,K2]: - 12 x[E0,T9,K2] + g[E0,T9,K2] <= 0
- c14[E0,T10,K0]: - 12 x[E0,T10,K0] + g[E0,T10,K0] <= 0
- c14[E0,T10,K1]: - 12 x[E0,T10,K1] + g[E0,T10,K1] <= 0
- c14[E0,T10,K2]: - 12 x[E0,T10,K2] + g[E0,T10,K2] <= 0
- c14[E0,T11,K0]: - 12 x[E0,T11,K0] + g[E0,T11,K0] <= 0
- c14[E0,T11,K1]: - 12 x[E0,T11,K1] + g[E0,T11,K1] <= 0
- c14[E0,T11,K2]: - 12 x[E0,T11,K2] + g[E0,T11,K2] <= 0
- c14[E0,D0,K0]: - 12 x[E0,D0,K0] + g[E0,D0,K0] <= 0
- c14[E0,D0,K1]: - 12 x[E0,D0,K1] + g[E0,D0,K1] <= 0
- c14[E0,D0,K2]: - 12 x[E0,D0,K2] + g[E0,D0,K2] <= 0
- c14[E0,D1,K0]: - 12 x[E0,D1,K0] + g[E0,D1,K0] <= 0
- c14[E0,D1,K1]: - 12 x[E0,D1,K1] + g[E0,D1,K1] <= 0
- c14[E0,D1,K2]: - 12 x[E0,D1,K2] + g[E0,D1,K2] <= 0
- c14[E0,D2,K0]: - 12 x[E0,D2,K0] + g[E0,D2,K0] <= 0
- c14[E0,D2,K1]: - 12 x[E0,D2,K1] + g[E0,D2,K1] <= 0
- c14[E0,D2,K2]: - 12 x[E0,D2,K2] + g[E0,D2,K2] <= 0
- c14[E0,S0,K0]: - 12 x[E0,S0,K0] + g[E0,S0,K0] <= 0
- c14[E0,S0,K1]: - 12 x[E0,S0,K1] + g[E0,S0,K1] <= 0
- c14[E0,S0,K2]: - 12 x[E0,S0,K2] + g[E0,S0,K2] <= 0
- c15[T0,T1,K0]: 1e+06 x[T0,T1,K0] - r[T0] + r[T1] <= 999925.0807762834
- c15[T0,T1,K1]: 1e+06 x[T0,T1,K1] - r[T0] + r[T1] <= 999925.0807762834
- c15[T0,T1,K2]: 1e+06 x[T0,T1,K2] - r[T0] + r[T1] <= 999925.0807762834
- c15[T0,T2,K0]: 1e+06 x[T0,T2,K0] - r[T0] + r[T2] <= 999956.6335595351
- c15[T0,T2,K1]: 1e+06 x[T0,T2,K1] - r[T0] + r[T2] <= 999956.6335595351
- c15[T0,T2,K2]: 1e+06 x[T0,T2,K2] - r[T0] + r[T2] <= 999956.6335595351
- c15[T0,T3,K0]: 1e+06 x[T0,T3,K0] - r[T0] + r[T3] <= 999938.3895143592
- c15[T0,T3,K1]: 1e+06 x[T0,T3,K1] - r[T0] + r[T3] <= 999938.3895143592
- c15[T0,T3,K2]: 1e+06 x[T0,T3,K2] - r[T0] + r[T3] <= 999938.3895143592
- c15[T0,T4,K0]: 1e+06 x[T0,T4,K0] - r[T0] + r[T4] <= 999924.4454098233
- c15[T0,T4,K1]: 1e+06 x[T0,T4,K1] - r[T0] + r[T4] <= 999924.4454098233
- c15[T0,T4,K2]: 1e+06 x[T0,T4,K2] - r[T0] + r[T4] <= 999924.4454098233
- c15[T0,T5,K0]: 1e+06 x[T0,T5,K0] - r[T0] + r[T5] <= 999954.2638606379
- c15[T0,T5,K1]: 1e+06 x[T0,T5,K1] - r[T0] + r[T5] <= 999954.2638606379
- c15[T0,T5,K2]: 1e+06 x[T0,T5,K2] - r[T0] + r[T5] <= 999954.2638606379
- c15[T0,T6,K0]: 1e+06 x[T0,T6,K0] - r[T0] + r[T6] <= 999972.4207969297
- c15[T0,T6,K1]: 1e+06 x[T0,T6,K1] - r[T0] + r[T6] <= 999972.4207969297
- c15[T0,T6,K2]: 1e+06 x[T0,T6,K2] - r[T0] + r[T6] <= 999972.4207969297
- c15[T0,T7,K0]: 1e+06 x[T0,T7,K0] - r[T0] + r[T7] <= 999965.3246563607
- c15[T0,T7,K1]: 1e+06 x[T0,T7,K1] - r[T0] + r[T7] <= 999965.3246563607
- c15[T0,T7,K2]: 1e+06 x[T0,T7,K2] - r[T0] + r[T7] <= 999965.3246563607
- c15[T0,T8,K0]: 1e+06 x[T0,T8,K0] - r[T0] + r[T8] <= 999948.556072339
- c15[T0,T8,K1]: 1e+06 x[T0,T8,K1] - r[T0] + r[T8] <= 999948.556072339
- c15[T0,T8,K2]: 1e+06 x[T0,T8,K2] - r[T0] + r[T8] <= 999948.556072339
- c15[T0,T9,K0]: 1e+06 x[T0,T9,K0] - r[T0] + r[T9] <= 999959.4145759363
- c15[T0,T9,K1]: 1e+06 x[T0,T9,K1] - r[T0] + r[T9] <= 999959.4145759363
- c15[T0,T9,K2]: 1e+06 x[T0,T9,K2] - r[T0] + r[T9] <= 999959.4145759363
- c15[T0,T10,K0]: 1e+06 x[T0,T10,K0] - r[T0] + r[T10] <= 999971.8162613688
- c15[T0,T10,K1]: 1e+06 x[T0,T10,K1] - r[T0] + r[T10] <= 999971.8162613688
- c15[T0,T10,K2]: 1e+06 x[T0,T10,K2] - r[T0] + r[T10] <= 999971.8162613688
- c15[T0,T11,K0]: 1e+06 x[T0,T11,K0] - r[T0] + r[T11] <= 999966.7065044609
- c15[T0,T11,K1]: 1e+06 x[T0,T11,K1] - r[T0] + r[T11] <= 999966.7065044609
- c15[T0,T11,K2]: 1e+06 x[T0,T11,K2] - r[T0] + r[T11] <= 999966.7065044609
- c15[T1,T0,K0]: 1e+06 x[T1,T0,K0] + r[T0] - r[T1] <= 999925.0807762834
- c15[T1,T0,K1]: 1e+06 x[T1,T0,K1] + r[T0] - r[T1] <= 999925.0807762834
- c15[T1,T0,K2]: 1e+06 x[T1,T0,K2] + r[T0] - r[T1] <= 999925.0807762834
- c15[T1,T2,K0]: 1e+06 x[T1,T2,K0] - r[T1] + r[T2] <= 999952.2887707482
- c15[T1,T2,K1]: 1e+06 x[T1,T2,K1] - r[T1] + r[T2] <= 999952.2887707482
- c15[T1,T2,K2]: 1e+06 x[T1,T2,K2] - r[T1] + r[T2] <= 999952.2887707482
- c15[T1,T3,K0]: 1e+06 x[T1,T3,K0] - r[T1] + r[T3] <= 999928.7605552734
- c15[T1,T3,K1]: 1e+06 x[T1,T3,K1] - r[T1] + r[T3] <= 999928.7605552734
- c15[T1,T3,K2]: 1e+06 x[T1,T3,K2] - r[T1] + r[T3] <= 999928.7605552734
- c15[T1,T4,K0]: 1e+06 x[T1,T4,K0] - r[T1] + r[T4] <= 999949.1326551973
- c15[T1,T4,K1]: 1e+06 x[T1,T4,K1] - r[T1] + r[T4] <= 999949.1326551973
- c15[T1,T4,K2]: 1e+06 x[T1,T4,K2] - r[T1] + r[T4] <= 999949.1326551973
- c15[T1,T5,K0]: 1e+06 x[T1,T5,K0] - r[T1] + r[T5] <= 999945.0436354316
- c15[T1,T5,K1]: 1e+06 x[T1,T5,K1] - r[T1] + r[T5] <= 999945.0436354316
- c15[T1,T5,K2]: 1e+06 x[T1,T5,K2] - r[T1] + r[T5] <= 999945.0436354316
- c15[T1,T6,K0]: 1e+06 x[T1,T6,K0] - r[T1] + r[T6] <= 999922.2103261701
- c15[T1,T6,K1]: 1e+06 x[T1,T6,K1] - r[T1] + r[T6] <= 999922.2103261701
- c15[T1,T6,K2]: 1e+06 x[T1,T6,K2] - r[T1] + r[T6] <= 999922.2103261701
- c15[T1,T7,K0]: 1e+06 x[T1,T7,K0] - r[T1] + r[T7] <= 999951.4396560346
- c15[T1,T7,K1]: 1e+06 x[T1,T7,K1] - r[T1] + r[T7] <= 999951.4396560346
- c15[T1,T7,K2]: 1e+06 x[T1,T7,K2] - r[T1] + r[T7] <= 999951.4396560346
- c15[T1,T8,K0]: 1e+06 x[T1,T8,K0] - r[T1] + r[T8] <= 999972.1507579541
- c15[T1,T8,K1]: 1e+06 x[T1,T8,K1] - r[T1] + r[T8] <= 999972.1507579541
- c15[T1,T8,K2]: 1e+06 x[T1,T8,K2] - r[T1] + r[T8] <= 999972.1507579541
- c15[T1,T9,K0]: 1e+06 x[T1,T9,K0] - r[T1] + r[T9] <= 999953.5746014457
- c15[T1,T9,K1]: 1e+06 x[T1,T9,K1] - r[T1] + r[T9] <= 999953.5746014457
- c15[T1,T9,K2]: 1e+06 x[T1,T9,K2] - r[T1] + r[T9] <= 999953.5746014457
- c15[T1,T10,K0]: 1e+06 x[T1,T10,K0] - r[T1] + r[T10] <= 999929.1059979674
- c15[T1,T10,K1]: 1e+06 x[T1,T10,K1] - r[T1] + r[T10] <= 999929.1059979674
- c15[T1,T10,K2]: 1e+06 x[T1,T10,K2] - r[T1] + r[T10] <= 999929.1059979674
- c15[T1,T11,K0]: 1e+06 x[T1,T11,K0] - r[T1] + r[T11] <= 999950.6147051923
- c15[T1,T11,K1]: 1e+06 x[T1,T11,K1] - r[T1] + r[T11] <= 999950.6147051923
- c15[T1,T11,K2]: 1e+06 x[T1,T11,K2] - r[T1] + r[T11] <= 999950.6147051923
- c15[T2,T0,K0]: 1e+06 x[T2,T0,K0] + r[T0] - r[T2] <= 999956.6335595351
- c15[T2,T0,K1]: 1e+06 x[T2,T0,K1] + r[T0] - r[T2] <= 999956.6335595351
- c15[T2,T0,K2]: 1e+06 x[T2,T0,K2] + r[T0] - r[T2] <= 999956.6335595351
- c15[T2,T1,K0]: 1e+06 x[T2,T1,K0] + r[T1] - r[T2] <= 999952.2887707482
- c15[T2,T1,K1]: 1e+06 x[T2,T1,K1] + r[T1] - r[T2] <= 999952.2887707482
- c15[T2,T1,K2]: 1e+06 x[T2,T1,K2] + r[T1] - r[T2] <= 999952.2887707482
- c15[T2,T3,K0]: 1e+06 x[T2,T3,K0] - r[T2] + r[T3] <= 999919.5321419063
- c15[T2,T3,K1]: 1e+06 x[T2,T3,K1] - r[T2] + r[T3] <= 999919.5321419063
- c15[T2,T3,K2]: 1e+06 x[T2,T3,K2] - r[T2] + r[T3] <= 999919.5321419063
- c15[T2,T4,K0]: 1e+06 x[T2,T4,K0] - r[T2] + r[T4] <= 999967.679908424
- c15[T2,T4,K1]: 1e+06 x[T2,T4,K1] - r[T2] + r[T4] <= 999967.679908424
- c15[T2,T4,K2]: 1e+06 x[T2,T4,K2] - r[T2] + r[T4] <= 999967.679908424
- c15[T2,T5,K0]: 1e+06 x[T2,T5,K0] - r[T2] + r[T5] <= 999940.659361889
- c15[T2,T5,K1]: 1e+06 x[T2,T5,K1] - r[T2] + r[T5] <= 999940.659361889
- c15[T2,T5,K2]: 1e+06 x[T2,T5,K2] - r[T2] + r[T5] <= 999940.659361889
- c15[T2,T6,K0]: 1e+06 x[T2,T6,K0] - r[T2] + r[T6] <= 999967.2907796106
- c15[T2,T6,K1]: 1e+06 x[T2,T6,K1] - r[T2] + r[T6] <= 999967.2907796106
- c15[T2,T6,K2]: 1e+06 x[T2,T6,K2] - r[T2] + r[T6] <= 999967.2907796106
- c15[T2,T7,K0]: 1e+06 x[T2,T7,K0] - r[T2] + r[T7] <= 999990.5002167369
- c15[T2,T7,K1]: 1e+06 x[T2,T7,K1] - r[T2] + r[T7] <= 999990.5002167369
- c15[T2,T7,K2]: 1e+06 x[T2,T7,K2] - r[T2] + r[T7] <= 999990.5002167369
- c15[T2,T8,K0]: 1e+06 x[T2,T8,K0] - r[T2] + r[T8] <= 999958.9356844733
- c15[T2,T8,K1]: 1e+06 x[T2,T8,K1] - r[T2] + r[T8] <= 999958.9356844733
- c15[T2,T8,K2]: 1e+06 x[T2,T8,K2] - r[T2] + r[T8] <= 999958.9356844733
- c15[T2,T9,K0]: 1e+06 x[T2,T9,K0] - r[T2] + r[T9] <= 999952.0851875966
- c15[T2,T9,K1]: 1e+06 x[T2,T9,K1] - r[T2] + r[T9] <= 999952.0851875966
- c15[T2,T9,K2]: 1e+06 x[T2,T9,K2] - r[T2] + r[T9] <= 999952.0851875966
- c15[T2,T10,K0]: 1e+06 x[T2,T10,K0] - r[T2] + r[T10] <= 999974.3876688074
- c15[T2,T10,K1]: 1e+06 x[T2,T10,K1] - r[T2] + r[T10] <= 999974.3876688074
- c15[T2,T10,K2]: 1e+06 x[T2,T10,K2] - r[T2] + r[T10] <= 999974.3876688074
- c15[T2,T11,K0]: 1e+06 x[T2,T11,K0] - r[T2] + r[T11] <= 999989.2336873224
- c15[T2,T11,K1]: 1e+06 x[T2,T11,K1] - r[T2] + r[T11] <= 999989.2336873224
- c15[T2,T11,K2]: 1e+06 x[T2,T11,K2] - r[T2] + r[T11] <= 999989.2336873224
- c15[T3,T0,K0]: 1e+06 x[T3,T0,K0] + r[T0] - r[T3] <= 999938.3895143592
- c15[T3,T0,K1]: 1e+06 x[T3,T0,K1] + r[T0] - r[T3] <= 999938.3895143592
- c15[T3,T0,K2]: 1e+06 x[T3,T0,K2] + r[T0] - r[T3] <= 999938.3895143592
- c15[T3,T1,K0]: 1e+06 x[T3,T1,K0] + r[T1] - r[T3] <= 999928.7605552734
- c15[T3,T1,K1]: 1e+06 x[T3,T1,K1] + r[T1] - r[T3] <= 999928.7605552734
- c15[T3,T1,K2]: 1e+06 x[T3,T1,K2] + r[T1] - r[T3] <= 999928.7605552734
- c15[T3,T2,K0]: 1e+06 x[T3,T2,K0] + r[T2] - r[T3] <= 999919.5321419063
- c15[T3,T2,K1]: 1e+06 x[T3,T2,K1] + r[T2] - r[T3] <= 999919.5321419063
- c15[T3,T2,K2]: 1e+06 x[T3,T2,K2] + r[T2] - r[T3] <= 999919.5321419063
- c15[T3,T4,K0]: 1e+06 x[T3,T4,K0] - r[T3] + r[T4] <= 999893.4032397346
- c15[T3,T4,K1]: 1e+06 x[T3,T4,K1] - r[T3] + r[T4] <= 999893.4032397346
- c15[T3,T4,K2]: 1e+06 x[T3,T4,K2] - r[T3] + r[T4] <= 999893.4032397346
- c15[T3,T5,K0]: 1e+06 x[T3,T5,K0] - r[T3] + r[T5] <= 999978.8525147698
- c15[T3,T5,K1]: 1e+06 x[T3,T5,K1] - r[T3] + r[T5] <= 999978.8525147698
- c15[T3,T5,K2]: 1e+06 x[T3,T5,K2] - r[T3] + r[T5] <= 999978.8525147698
- c15[T3,T6,K0]: 1e+06 x[T3,T6,K0] - r[T3] + r[T6] <= 999913.8401128156
- c15[T3,T6,K1]: 1e+06 x[T3,T6,K1] - r[T3] + r[T6] <= 999913.8401128156
- c15[T3,T6,K2]: 1e+06 x[T3,T6,K2] - r[T3] + r[T6] <= 999913.8401128156
- c15[T3,T7,K0]: 1e+06 x[T3,T7,K0] - r[T3] + r[T7] <= 999927.7760935165
- c15[T3,T7,K1]: 1e+06 x[T3,T7,K1] - r[T3] + r[T7] <= 999927.7760935165
- c15[T3,T7,K2]: 1e+06 x[T3,T7,K2] - r[T3] + r[T7] <= 999927.7760935165
- c15[T3,T8,K0]: 1e+06 x[T3,T8,K0] - r[T3] + r[T8] <= 999952.9650847626
- c15[T3,T8,K1]: 1e+06 x[T3,T8,K1] - r[T3] + r[T8] <= 999952.9650847626
- c15[T3,T8,K2]: 1e+06 x[T3,T8,K2] - r[T3] + r[T8] <= 999952.9650847626
- c15[T3,T9,K0]: 1e+06 x[T3,T9,K0] - r[T3] + r[T9] <= 999967.2505709908
- c15[T3,T9,K1]: 1e+06 x[T3,T9,K1] - r[T3] + r[T9] <= 999967.2505709908
- c15[T3,T9,K2]: 1e+06 x[T3,T9,K2] - r[T3] + r[T9] <= 999967.2505709908
- c15[T3,T10,K0]: 1e+06 x[T3,T10,K0] - r[T3] + r[T10] <= 999916.6053310096
- c15[T3,T10,K1]: 1e+06 x[T3,T10,K1] - r[T3] + r[T10] <= 999916.6053310096
- c15[T3,T10,K2]: 1e+06 x[T3,T10,K2] - r[T3] + r[T10] <= 999916.6053310096
- c15[T3,T11,K0]: 1e+06 x[T3,T11,K0] - r[T3] + r[T11] <= 999928.5224401588
- c15[T3,T11,K1]: 1e+06 x[T3,T11,K1] - r[T3] + r[T11] <= 999928.5224401588
- c15[T3,T11,K2]: 1e+06 x[T3,T11,K2] - r[T3] + r[T11] <= 999928.5224401588
- c15[T4,T0,K0]: 1e+06 x[T4,T0,K0] + r[T0] - r[T4] <= 999924.4454098233
- c15[T4,T0,K1]: 1e+06 x[T4,T0,K1] + r[T0] - r[T4] <= 999924.4454098233
- c15[T4,T0,K2]: 1e+06 x[T4,T0,K2] + r[T0] - r[T4] <= 999924.4454098233
- c15[T4,T1,K0]: 1e+06 x[T4,T1,K0] + r[T1] - r[T4] <= 999949.1326551973
- c15[T4,T1,K1]: 1e+06 x[T4,T1,K1] + r[T1] - r[T4] <= 999949.1326551973
- c15[T4,T1,K2]: 1e+06 x[T4,T1,K2] + r[T1] - r[T4] <= 999949.1326551973
- c15[T4,T2,K0]: 1e+06 x[T4,T2,K0] + r[T2] - r[T4] <= 999967.679908424
- c15[T4,T2,K1]: 1e+06 x[T4,T2,K1] + r[T2] - r[T4] <= 999967.679908424
- c15[T4,T2,K2]: 1e+06 x[T4,T2,K2] + r[T2] - r[T4] <= 999967.679908424
- c15[T4,T3,K0]: 1e+06 x[T4,T3,K0] + r[T3] - r[T4] <= 999893.4032397346
- c15[T4,T3,K1]: 1e+06 x[T4,T3,K1] + r[T3] - r[T4] <= 999893.4032397346
- c15[T4,T3,K2]: 1e+06 x[T4,T3,K2] + r[T3] - r[T4] <= 999893.4032397346
- c15[T4,T5,K0]: 1e+06 x[T4,T5,K0] - r[T4] + r[T5] <= 999914.1793859913
- c15[T4,T5,K1]: 1e+06 x[T4,T5,K1] - r[T4] + r[T5] <= 999914.1793859913
- c15[T4,T5,K2]: 1e+06 x[T4,T5,K2] - r[T4] + r[T5] <= 999914.1793859913
- c15[T4,T6,K0]: 1e+06 x[T4,T6,K0] - r[T4] + r[T6] <= 999940.2097169261
- c15[T4,T6,K1]: 1e+06 x[T4,T6,K1] - r[T4] + r[T6] <= 999940.2097169261
- c15[T4,T6,K2]: 1e+06 x[T4,T6,K2] - r[T4] + r[T6] <= 999940.2097169261
- c15[T4,T7,K0]: 1e+06 x[T4,T7,K0] - r[T4] + r[T7] <= 999958.4080817275
- c15[T4,T7,K1]: 1e+06 x[T4,T7,K1] - r[T4] + r[T7] <= 999958.4080817275
- c15[T4,T7,K2]: 1e+06 x[T4,T7,K2] - r[T4] + r[T7] <= 999958.4080817275
- c15[T4,T8,K0]: 1e+06 x[T4,T8,K0] - r[T4] + r[T8] <= 999939.0295746358
- c15[T4,T8,K1]: 1e+06 x[T4,T8,K1] - r[T4] + r[T8] <= 999939.0295746358
- c15[T4,T8,K2]: 1e+06 x[T4,T8,K2] - r[T4] + r[T8] <= 999939.0295746358
- c15[T4,T9,K0]: 1e+06 x[T4,T9,K0] - r[T4] + r[T9] <= 999925.8060473451
- c15[T4,T9,K1]: 1e+06 x[T4,T9,K1] - r[T4] + r[T9] <= 999925.8060473451
- c15[T4,T9,K2]: 1e+06 x[T4,T9,K2] - r[T4] + r[T9] <= 999925.8060473451
- c15[T4,T10,K0]: 1e+06 x[T4,T10,K0] - r[T4] + r[T10] <= 999946.4507830001
- c15[T4,T10,K1]: 1e+06 x[T4,T10,K1] - r[T4] + r[T10] <= 999946.4507830001
- c15[T4,T10,K2]: 1e+06 x[T4,T10,K2] - r[T4] + r[T10] <= 999946.4507830001
- c15[T4,T11,K0]: 1e+06 x[T4,T11,K0] - r[T4] + r[T11] <= 999957.0664859073
- c15[T4,T11,K1]: 1e+06 x[T4,T11,K1] - r[T4] + r[T11] <= 999957.0664859073
- c15[T4,T11,K2]: 1e+06 x[T4,T11,K2] - r[T4] + r[T11] <= 999957.0664859073
- c15[T5,T0,K0]: 1e+06 x[T5,T0,K0] + r[T0] - r[T5] <= 999954.2638606379
- c15[T5,T0,K1]: 1e+06 x[T5,T0,K1] + r[T0] - r[T5] <= 999954.2638606379
- c15[T5,T0,K2]: 1e+06 x[T5,T0,K2] + r[T0] - r[T5] <= 999954.2638606379
- c15[T5,T1,K0]: 1e+06 x[T5,T1,K0] + r[T1] - r[T5] <= 999945.0436354316
- c15[T5,T1,K1]: 1e+06 x[T5,T1,K1] + r[T1] - r[T5] <= 999945.0436354316
- c15[T5,T1,K2]: 1e+06 x[T5,T1,K2] + r[T1] - r[T5] <= 999945.0436354316
- c15[T5,T2,K0]: 1e+06 x[T5,T2,K0] + r[T2] - r[T5] <= 999940.659361889
- c15[T5,T2,K1]: 1e+06 x[T5,T2,K1] + r[T2] - r[T5] <= 999940.659361889
- c15[T5,T2,K2]: 1e+06 x[T5,T2,K2] + r[T2] - r[T5] <= 999940.659361889
- c15[T5,T3,K0]: 1e+06 x[T5,T3,K0] + r[T3] - r[T5] <= 999978.8525147698
- c15[T5,T3,K1]: 1e+06 x[T5,T3,K1] + r[T3] - r[T5] <= 999978.8525147698
- c15[T5,T3,K2]: 1e+06 x[T5,T3,K2] + r[T3] - r[T5] <= 999978.8525147698
- c15[T5,T4,K0]: 1e+06 x[T5,T4,K0] + r[T4] - r[T5] <= 999914.1793859913
- c15[T5,T4,K1]: 1e+06 x[T5,T4,K1] + r[T4] - r[T5] <= 999914.1793859913
- c15[T5,T4,K2]: 1e+06 x[T5,T4,K2] + r[T4] - r[T5] <= 999914.1793859913
- c15[T5,T6,K0]: 1e+06 x[T5,T6,K0] - r[T5] + r[T6] <= 999932.5193570775
- c15[T5,T6,K1]: 1e+06 x[T5,T6,K1] - r[T5] + r[T6] <= 999932.5193570775
- c15[T5,T6,K2]: 1e+06 x[T5,T6,K2] - r[T5] + r[T6] <= 999932.5193570775
- c15[T5,T7,K0]: 1e+06 x[T5,T7,K0] - r[T5] + r[T7] <= 999948.7758170111
- c15[T5,T7,K1]: 1e+06 x[T5,T7,K1] - r[T5] + r[T7] <= 999948.7758170111
- c15[T5,T7,K2]: 1e+06 x[T5,T7,K2] - r[T5] + r[T7] <= 999948.7758170111
- c15[T5,T8,K0]: 1e+06 x[T5,T8,K0] - r[T5] + r[T8] <= 999971.8496893599
- c15[T5,T8,K1]: 1e+06 x[T5,T8,K1] - r[T5] + r[T8] <= 999971.8496893599
- c15[T5,T8,K2]: 1e+06 x[T5,T8,K2] - r[T5] + r[T8] <= 999971.8496893599
- c15[T5,T9,K0]: 1e+06 x[T5,T9,K0] - r[T5] + r[T9] <= 999988.3327370879
- c15[T5,T9,K1]: 1e+06 x[T5,T9,K1] - r[T5] + r[T9] <= 999988.3327370879
- c15[T5,T9,K2]: 1e+06 x[T5,T9,K2] - r[T5] + r[T9] <= 999988.3327370879
- c15[T5,T10,K0]: 1e+06 x[T5,T10,K0] - r[T5] + r[T10] <= 999936.0632437139
- c15[T5,T10,K1]: 1e+06 x[T5,T10,K1] - r[T5] + r[T10] <= 999936.0632437139
- c15[T5,T10,K2]: 1e+06 x[T5,T10,K2] - r[T5] + r[T10] <= 999936.0632437139
- c15[T5,T11,K0]: 1e+06 x[T5,T11,K0] - r[T5] + r[T11] <= 999949.4694623405
- c15[T5,T11,K1]: 1e+06 x[T5,T11,K1] - r[T5] + r[T11] <= 999949.4694623405
- c15[T5,T11,K2]: 1e+06 x[T5,T11,K2] - r[T5] + r[T11] <= 999949.4694623405
- c15[T6,T0,K0]: 1e+06 x[T6,T0,K0] + r[T0] - r[T6] <= 999972.4207969297
- c15[T6,T0,K1]: 1e+06 x[T6,T0,K1] + r[T0] - r[T6] <= 999972.4207969297
- c15[T6,T0,K2]: 1e+06 x[T6,T0,K2] + r[T0] - r[T6] <= 999972.4207969297
- c15[T6,T1,K0]: 1e+06 x[T6,T1,K0] + r[T1] - r[T6] <= 999922.2103261701
- c15[T6,T1,K1]: 1e+06 x[T6,T1,K1] + r[T1] - r[T6] <= 999922.2103261701
- c15[T6,T1,K2]: 1e+06 x[T6,T1,K2] + r[T1] - r[T6] <= 999922.2103261701
- c15[T6,T2,K0]: 1e+06 x[T6,T2,K0] + r[T2] - r[T6] <= 999967.2907796106
- c15[T6,T2,K1]: 1e+06 x[T6,T2,K1] + r[T2] - r[T6] <= 999967.2907796106
- c15[T6,T2,K2]: 1e+06 x[T6,T2,K2] + r[T2] - r[T6] <= 999967.2907796106
- c15[T6,T3,K0]: 1e+06 x[T6,T3,K0] + r[T3] - r[T6] <= 999913.8401128156
- c15[T6,T3,K1]: 1e+06 x[T6,T3,K1] + r[T3] - r[T6] <= 999913.8401128156
- c15[T6,T3,K2]: 1e+06 x[T6,T3,K2] + r[T3] - r[T6] <= 999913.8401128156
- c15[T6,T4,K0]: 1e+06 x[T6,T4,K0] + r[T4] - r[T6] <= 999940.2097169261
- c15[T6,T4,K1]: 1e+06 x[T6,T4,K1] + r[T4] - r[T6] <= 999940.2097169261
- c15[T6,T4,K2]: 1e+06 x[T6,T4,K2] + r[T4] - r[T6] <= 999940.2097169261
- c15[T6,T5,K0]: 1e+06 x[T6,T5,K0] + r[T5] - r[T6] <= 999932.5193570775
- c15[T6,T5,K1]: 1e+06 x[T6,T5,K1] + r[T5] - r[T6] <= 999932.5193570775
- c15[T6,T5,K2]: 1e+06 x[T6,T5,K2] + r[T5] - r[T6] <= 999932.5193570775
- c15[T6,T7,K0]: 1e+06 x[T6,T7,K0] - r[T6] + r[T7] <= 999970.7571483913
- c15[T6,T7,K1]: 1e+06 x[T6,T7,K1] - r[T6] + r[T7] <= 999970.7571483913
- c15[T6,T7,K2]: 1e+06 x[T6,T7,K2] - r[T6] + r[T7] <= 999970.7571483913
- c15[T6,T8,K0]: 1e+06 x[T6,T8,K0] - r[T6] + r[T8] <= 999937.7906849183
- c15[T6,T8,K1]: 1e+06 x[T6,T8,K1] - r[T6] + r[T8] <= 999937.7906849183
- c15[T6,T8,K2]: 1e+06 x[T6,T8,K2] - r[T6] + r[T8] <= 999937.7906849183
- c15[T6,T9,K0]: 1e+06 x[T6,T9,K0] - r[T6] + r[T9] <= 999941.0578098868
- c15[T6,T9,K1]: 1e+06 x[T6,T9,K1] - r[T6] + r[T9] <= 999941.0578098868
- c15[T6,T9,K2]: 1e+06 x[T6,T9,K2] - r[T6] + r[T9] <= 999941.0578098868
- c15[T6,T10,K0]: 1e+06 x[T6,T10,K0] - r[T6] + r[T10] <= 999992.8801597492
- c15[T6,T10,K1]: 1e+06 x[T6,T10,K1] - r[T6] + r[T10] <= 999992.8801597492
- c15[T6,T10,K2]: 1e+06 x[T6,T10,K2] - r[T6] + r[T10] <= 999992.8801597492
- c15[T6,T11,K0]: 1e+06 x[T6,T11,K0] - r[T6] + r[T11] <= 999971.5910918344
- c15[T6,T11,K1]: 1e+06 x[T6,T11,K1] - r[T6] + r[T11] <= 999971.5910918344
- c15[T6,T11,K2]: 1e+06 x[T6,T11,K2] - r[T6] + r[T11] <= 999971.5910918344
- c15[T7,T0,K0]: 1e+06 x[T7,T0,K0] + r[T0] - r[T7] <= 999965.3246563607
- c15[T7,T0,K1]: 1e+06 x[T7,T0,K1] + r[T0] - r[T7] <= 999965.3246563607
- c15[T7,T0,K2]: 1e+06 x[T7,T0,K2] + r[T0] - r[T7] <= 999965.3246563607
- c15[T7,T1,K0]: 1e+06 x[T7,T1,K0] + r[T1] - r[T7] <= 999951.4396560346
- c15[T7,T1,K1]: 1e+06 x[T7,T1,K1] + r[T1] - r[T7] <= 999951.4396560346
- c15[T7,T1,K2]: 1e+06 x[T7,T1,K2] + r[T1] - r[T7] <= 999951.4396560346
- c15[T7,T2,K0]: 1e+06 x[T7,T2,K0] + r[T2] - r[T7] <= 999990.5002167369
- c15[T7,T2,K1]: 1e+06 x[T7,T2,K1] + r[T2] - r[T7] <= 999990.5002167369
- c15[T7,T2,K2]: 1e+06 x[T7,T2,K2] + r[T2] - r[T7] <= 999990.5002167369
- c15[T7,T3,K0]: 1e+06 x[T7,T3,K0] + r[T3] - r[T7] <= 999927.7760935165
- c15[T7,T3,K1]: 1e+06 x[T7,T3,K1] + r[T3] - r[T7] <= 999927.7760935165
- c15[T7,T3,K2]: 1e+06 x[T7,T3,K2] + r[T3] - r[T7] <= 999927.7760935165
- c15[T7,T4,K0]: 1e+06 x[T7,T4,K0] + r[T4] - r[T7] <= 999958.4080817275
- c15[T7,T4,K1]: 1e+06 x[T7,T4,K1] + r[T4] - r[T7] <= 999958.4080817275
- c15[T7,T4,K2]: 1e+06 x[T7,T4,K2] + r[T4] - r[T7] <= 999958.4080817275
- c15[T7,T5,K0]: 1e+06 x[T7,T5,K0] + r[T5] - r[T7] <= 999948.7758170111
- c15[T7,T5,K1]: 1e+06 x[T7,T5,K1] + r[T5] - r[T7] <= 999948.7758170111
- c15[T7,T5,K2]: 1e+06 x[T7,T5,K2] + r[T5] - r[T7] <= 999948.7758170111
- c15[T7,T6,K0]: 1e+06 x[T7,T6,K0] + r[T6] - r[T7] <= 999970.7571483913
- c15[T7,T6,K1]: 1e+06 x[T7,T6,K1] + r[T6] - r[T7] <= 999970.7571483913
- c15[T7,T6,K2]: 1e+06 x[T7,T6,K2] + r[T6] - r[T7] <= 999970.7571483913
- c15[T7,T8,K0]: 1e+06 x[T7,T8,K0] - r[T7] + r[T8] <= 999963.713843741
- c15[T7,T8,K1]: 1e+06 x[T7,T8,K1] - r[T7] + r[T8] <= 999963.713843741
- c15[T7,T8,K2]: 1e+06 x[T7,T8,K2] - r[T7] + r[T8] <= 999963.713843741
- c15[T7,T9,K0]: 1e+06 x[T7,T9,K0] - r[T7] + r[T9] <= 999959.889874686
- c15[T7,T9,K1]: 1e+06 x[T7,T9,K1] - r[T7] + r[T9] <= 999959.889874686
- c15[T7,T9,K2]: 1e+06 x[T7,T9,K2] - r[T7] + r[T9] <= 999959.889874686
- c15[T7,T10,K0]: 1e+06 x[T7,T10,K0] - r[T7] + r[T10] <= 999977.659530498
- c15[T7,T10,K1]: 1e+06 x[T7,T10,K1] - r[T7] + r[T10] <= 999977.659530498
- c15[T7,T10,K2]: 1e+06 x[T7,T10,K2] - r[T7] + r[T10] <= 999977.659530498
- c15[T7,T11,K0]: 1e+06 x[T7,T11,K0] - r[T7] + r[T11] <= 999998.6176166136
- c15[T7,T11,K1]: 1e+06 x[T7,T11,K1] - r[T7] + r[T11] <= 999998.6176166136
- c15[T7,T11,K2]: 1e+06 x[T7,T11,K2] - r[T7] + r[T11] <= 999998.6176166136
- c15[T8,T0,K0]: 1e+06 x[T8,T0,K0] + r[T0] - r[T8] <= 999948.556072339
- c15[T8,T0,K1]: 1e+06 x[T8,T0,K1] + r[T0] - r[T8] <= 999948.556072339
- c15[T8,T0,K2]: 1e+06 x[T8,T0,K2] + r[T0] - r[T8] <= 999948.556072339
- c15[T8,T1,K0]: 1e+06 x[T8,T1,K0] + r[T1] - r[T8] <= 999972.1507579541
- c15[T8,T1,K1]: 1e+06 x[T8,T1,K1] + r[T1] - r[T8] <= 999972.1507579541
- c15[T8,T1,K2]: 1e+06 x[T8,T1,K2] + r[T1] - r[T8] <= 999972.1507579541
- c15[T8,T2,K0]: 1e+06 x[T8,T2,K0] + r[T2] - r[T8] <= 999958.9356844733
- c15[T8,T2,K1]: 1e+06 x[T8,T2,K1] + r[T2] - r[T8] <= 999958.9356844733
- c15[T8,T2,K2]: 1e+06 x[T8,T2,K2] + r[T2] - r[T8] <= 999958.9356844733
- c15[T8,T3,K0]: 1e+06 x[T8,T3,K0] + r[T3] - r[T8] <= 999952.9650847626
- c15[T8,T3,K1]: 1e+06 x[T8,T3,K1] + r[T3] - r[T8] <= 999952.9650847626
- c15[T8,T3,K2]: 1e+06 x[T8,T3,K2] + r[T3] - r[T8] <= 999952.9650847626
- c15[T8,T4,K0]: 1e+06 x[T8,T4,K0] + r[T4] - r[T8] <= 999939.0295746358
- c15[T8,T4,K1]: 1e+06 x[T8,T4,K1] + r[T4] - r[T8] <= 999939.0295746358
- c15[T8,T4,K2]: 1e+06 x[T8,T4,K2] + r[T4] - r[T8] <= 999939.0295746358
- c15[T8,T5,K0]: 1e+06 x[T8,T5,K0] + r[T5] - r[T8] <= 999971.8496893599
- c15[T8,T5,K1]: 1e+06 x[T8,T5,K1] + r[T5] - r[T8] <= 999971.8496893599
- c15[T8,T5,K2]: 1e+06 x[T8,T5,K2] + r[T5] - r[T8] <= 999971.8496893599
- c15[T8,T6,K0]: 1e+06 x[T8,T6,K0] + r[T6] - r[T8] <= 999937.7906849183
- c15[T8,T6,K1]: 1e+06 x[T8,T6,K1] + r[T6] - r[T8] <= 999937.7906849183
- c15[T8,T6,K2]: 1e+06 x[T8,T6,K2] + r[T6] - r[T8] <= 999937.7906849183
- c15[T8,T7,K0]: 1e+06 x[T8,T7,K0] + r[T7] - r[T8] <= 999963.713843741
- c15[T8,T7,K1]: 1e+06 x[T8,T7,K1] + r[T7] - r[T8] <= 999963.713843741
- c15[T8,T7,K2]: 1e+06 x[T8,T7,K2] + r[T7] - r[T8] <= 999963.713843741
- c15[T8,T9,K0]: 1e+06 x[T8,T9,K0] - r[T8] + r[T9] <= 999981.3771837504
- c15[T8,T9,K1]: 1e+06 x[T8,T9,K1] - r[T8] + r[T9] <= 999981.3771837504
- c15[T8,T9,K2]: 1e+06 x[T8,T9,K2] - r[T8] + r[T9] <= 999981.3771837504
- c15[T8,T10,K0]: 1e+06 x[T8,T10,K0] - r[T8] + r[T10] <= 999943.6396729777
- c15[T8,T10,K1]: 1e+06 x[T8,T10,K1] - r[T8] + r[T10] <= 999943.6396729777
- c15[T8,T10,K2]: 1e+06 x[T8,T10,K2] - r[T8] + r[T10] <= 999943.6396729777
- c15[T8,T11,K0]: 1e+06 x[T8,T11,K0] - r[T8] + r[T11] <= 999963.6552362464
- c15[T8,T11,K1]: 1e+06 x[T8,T11,K1] - r[T8] + r[T11] <= 999963.6552362464
- c15[T8,T11,K2]: 1e+06 x[T8,T11,K2] - r[T8] + r[T11] <= 999963.6552362464
- c15[T9,T0,K0]: 1e+06 x[T9,T0,K0] + r[T0] - r[T9] <= 999959.4145759363
- c15[T9,T0,K1]: 1e+06 x[T9,T0,K1] + r[T0] - r[T9] <= 999959.4145759363
- c15[T9,T0,K2]: 1e+06 x[T9,T0,K2] + r[T0] - r[T9] <= 999959.4145759363
- c15[T9,T1,K0]: 1e+06 x[T9,T1,K0] + r[T1] - r[T9] <= 999953.5746014457
- c15[T9,T1,K1]: 1e+06 x[T9,T1,K1] + r[T1] - r[T9] <= 999953.5746014457
- c15[T9,T1,K2]: 1e+06 x[T9,T1,K2] + r[T1] - r[T9] <= 999953.5746014457
- c15[T9,T2,K0]: 1e+06 x[T9,T2,K0] + r[T2] - r[T9] <= 999952.0851875966
- c15[T9,T2,K1]: 1e+06 x[T9,T2,K1] + r[T2] - r[T9] <= 999952.0851875966
- c15[T9,T2,K2]: 1e+06 x[T9,T2,K2] + r[T2] - r[T9] <= 999952.0851875966
- c15[T9,T3,K0]: 1e+06 x[T9,T3,K0] + r[T3] - r[T9] <= 999967.2505709908
- c15[T9,T3,K1]: 1e+06 x[T9,T3,K1] + r[T3] - r[T9] <= 999967.2505709908
- c15[T9,T3,K2]: 1e+06 x[T9,T3,K2] + r[T3] - r[T9] <= 999967.2505709908
- c15[T9,T4,K0]: 1e+06 x[T9,T4,K0] + r[T4] - r[T9] <= 999925.8060473451
- c15[T9,T4,K1]: 1e+06 x[T9,T4,K1] + r[T4] - r[T9] <= 999925.8060473451
- c15[T9,T4,K2]: 1e+06 x[T9,T4,K2] + r[T4] - r[T9] <= 999925.8060473451
- c15[T9,T5,K0]: 1e+06 x[T9,T5,K0] + r[T5] - r[T9] <= 999988.3327370879
- c15[T9,T5,K1]: 1e+06 x[T9,T5,K1] + r[T5] - r[T9] <= 999988.3327370879
- c15[T9,T5,K2]: 1e+06 x[T9,T5,K2] + r[T5] - r[T9] <= 999988.3327370879
- c15[T9,T6,K0]: 1e+06 x[T9,T6,K0] + r[T6] - r[T9] <= 999941.0578098868
- c15[T9,T6,K1]: 1e+06 x[T9,T6,K1] + r[T6] - r[T9] <= 999941.0578098868
- c15[T9,T6,K2]: 1e+06 x[T9,T6,K2] + r[T6] - r[T9] <= 999941.0578098868
- c15[T9,T7,K0]: 1e+06 x[T9,T7,K0] + r[T7] - r[T9] <= 999959.889874686
- c15[T9,T7,K1]: 1e+06 x[T9,T7,K1] + r[T7] - r[T9] <= 999959.889874686
- c15[T9,T7,K2]: 1e+06 x[T9,T7,K2] + r[T7] - r[T9] <= 999959.889874686
- c15[T9,T8,K0]: 1e+06 x[T9,T8,K0] + r[T8] - r[T9] <= 999981.3771837504
- c15[T9,T8,K1]: 1e+06 x[T9,T8,K1] + r[T8] - r[T9] <= 999981.3771837504
- c15[T9,T8,K2]: 1e+06 x[T9,T8,K2] + r[T8] - r[T9] <= 999981.3771837504
- c15[T9,T10,K0]: 1e+06 x[T9,T10,K0] - r[T9] + r[T10] <= 999945.3344331528
- c15[T9,T10,K1]: 1e+06 x[T9,T10,K1] - r[T9] + r[T10] <= 999945.3344331528
- c15[T9,T10,K2]: 1e+06 x[T9,T10,K2] - r[T9] + r[T10] <= 999945.3344331528
- c15[T9,T11,K0]: 1e+06 x[T9,T11,K0] - r[T9] + r[T11] <= 999960.4829323532
- c15[T9,T11,K1]: 1e+06 x[T9,T11,K1] - r[T9] + r[T11] <= 999960.4829323532
- c15[T9,T11,K2]: 1e+06 x[T9,T11,K2] - r[T9] + r[T11] <= 999960.4829323532
- c15[T10,T0,K0]: 1e+06 x[T10,T0,K0] + r[T0] - r[T10] <= 999971.8162613688
- c15[T10,T0,K1]: 1e+06 x[T10,T0,K1] + r[T0] - r[T10] <= 999971.8162613688
- c15[T10,T0,K2]: 1e+06 x[T10,T0,K2] + r[T0] - r[T10] <= 999971.8162613688
- c15[T10,T1,K0]: 1e+06 x[T10,T1,K0] + r[T1] - r[T10] <= 999929.1059979674
- c15[T10,T1,K1]: 1e+06 x[T10,T1,K1] + r[T1] - r[T10] <= 999929.1059979674
- c15[T10,T1,K2]: 1e+06 x[T10,T1,K2] + r[T1] - r[T10] <= 999929.1059979674
- c15[T10,T2,K0]: 1e+06 x[T10,T2,K0] + r[T2] - r[T10] <= 999974.3876688074
- c15[T10,T2,K1]: 1e+06 x[T10,T2,K1] + r[T2] - r[T10] <= 999974.3876688074
- c15[T10,T2,K2]: 1e+06 x[T10,T2,K2] + r[T2] - r[T10] <= 999974.3876688074
- c15[T10,T3,K0]: 1e+06 x[T10,T3,K0] + r[T3] - r[T10] <= 999916.6053310096
- c15[T10,T3,K1]: 1e+06 x[T10,T3,K1] + r[T3] - r[T10] <= 999916.6053310096
- c15[T10,T3,K2]: 1e+06 x[T10,T3,K2] + r[T3] - r[T10] <= 999916.6053310096
- c15[T10,T4,K0]: 1e+06 x[T10,T4,K0] + r[T4] - r[T10] <= 999946.4507830001
- c15[T10,T4,K1]: 1e+06 x[T10,T4,K1] + r[T4] - r[T10] <= 999946.4507830001
- c15[T10,T4,K2]: 1e+06 x[T10,T4,K2] + r[T4] - r[T10] <= 999946.4507830001
- c15[T10,T5,K0]: 1e+06 x[T10,T5,K0] + r[T5] - r[T10] <= 999936.0632437139
- c15[T10,T5,K1]: 1e+06 x[T10,T5,K1] + r[T5] - r[T10] <= 999936.0632437139
- c15[T10,T5,K2]: 1e+06 x[T10,T5,K2] + r[T5] - r[T10] <= 999936.0632437139
- c15[T10,T6,K0]: 1e+06 x[T10,T6,K0] + r[T6] - r[T10] <= 999992.8801597492
- c15[T10,T6,K1]: 1e+06 x[T10,T6,K1] + r[T6] - r[T10] <= 999992.8801597492
- c15[T10,T6,K2]: 1e+06 x[T10,T6,K2] + r[T6] - r[T10] <= 999992.8801597492
- c15[T10,T7,K0]: 1e+06 x[T10,T7,K0] + r[T7] - r[T10] <= 999977.659530498
- c15[T10,T7,K1]: 1e+06 x[T10,T7,K1] + r[T7] - r[T10] <= 999977.659530498
- c15[T10,T7,K2]: 1e+06 x[T10,T7,K2] + r[T7] - r[T10] <= 999977.659530498
- c15[T10,T8,K0]: 1e+06 x[T10,T8,K0] + r[T8] - r[T10] <= 999943.6396729777
- c15[T10,T8,K1]: 1e+06 x[T10,T8,K1] + r[T8] - r[T10] <= 999943.6396729777
- c15[T10,T8,K2]: 1e+06 x[T10,T8,K2] + r[T8] - r[T10] <= 999943.6396729777
- c15[T10,T9,K0]: 1e+06 x[T10,T9,K0] + r[T9] - r[T10] <= 999945.3344331528
- c15[T10,T9,K1]: 1e+06 x[T10,T9,K1] + r[T9] - r[T10] <= 999945.3344331528
- c15[T10,T9,K2]: 1e+06 x[T10,T9,K2] + r[T9] - r[T10] <= 999945.3344331528
- c15[T10,T11,K0]: 1e+06 x[T10,T11,K0] - r[T10] + r[T11]
-   <= 999978.4078422734
- c15[T10,T11,K1]: 1e+06 x[T10,T11,K1] - r[T10] + r[T11]
-   <= 999978.4078422734
- c15[T10,T11,K2]: 1e+06 x[T10,T11,K2] - r[T10] + r[T11]
-   <= 999978.4078422734
- c15[T11,T0,K0]: 1e+06 x[T11,T0,K0] + r[T0] - r[T11] <= 999966.7065044609
- c15[T11,T0,K1]: 1e+06 x[T11,T0,K1] + r[T0] - r[T11] <= 999966.7065044609
- c15[T11,T0,K2]: 1e+06 x[T11,T0,K2] + r[T0] - r[T11] <= 999966.7065044609
- c15[T11,T1,K0]: 1e+06 x[T11,T1,K0] + r[T1] - r[T11] <= 999950.6147051923
- c15[T11,T1,K1]: 1e+06 x[T11,T1,K1] + r[T1] - r[T11] <= 999950.6147051923
- c15[T11,T1,K2]: 1e+06 x[T11,T1,K2] + r[T1] - r[T11] <= 999950.6147051923
- c15[T11,T2,K0]: 1e+06 x[T11,T2,K0] + r[T2] - r[T11] <= 999989.2336873224
- c15[T11,T2,K1]: 1e+06 x[T11,T2,K1] + r[T2] - r[T11] <= 999989.2336873224
- c15[T11,T2,K2]: 1e+06 x[T11,T2,K2] + r[T2] - r[T11] <= 999989.2336873224
- c15[T11,T3,K0]: 1e+06 x[T11,T3,K0] + r[T3] - r[T11] <= 999928.5224401588
- c15[T11,T3,K1]: 1e+06 x[T11,T3,K1] + r[T3] - r[T11] <= 999928.5224401588
- c15[T11,T3,K2]: 1e+06 x[T11,T3,K2] + r[T3] - r[T11] <= 999928.5224401588
- c15[T11,T4,K0]: 1e+06 x[T11,T4,K0] + r[T4] - r[T11] <= 999957.0664859073
- c15[T11,T4,K1]: 1e+06 x[T11,T4,K1] + r[T4] - r[T11] <= 999957.0664859073
- c15[T11,T4,K2]: 1e+06 x[T11,T4,K2] + r[T4] - r[T11] <= 999957.0664859073
- c15[T11,T5,K0]: 1e+06 x[T11,T5,K0] + r[T5] - r[T11] <= 999949.4694623405
- c15[T11,T5,K1]: 1e+06 x[T11,T5,K1] + r[T5] - r[T11] <= 999949.4694623405
- c15[T11,T5,K2]: 1e+06 x[T11,T5,K2] + r[T5] - r[T11] <= 999949.4694623405
- c15[T11,T6,K0]: 1e+06 x[T11,T6,K0] + r[T6] - r[T11] <= 999971.5910918344
- c15[T11,T6,K1]: 1e+06 x[T11,T6,K1] + r[T6] - r[T11] <= 999971.5910918344
- c15[T11,T6,K2]: 1e+06 x[T11,T6,K2] + r[T6] - r[T11] <= 999971.5910918344
- c15[T11,T7,K0]: 1e+06 x[T11,T7,K0] + r[T7] - r[T11] <= 999998.6176166136
- c15[T11,T7,K1]: 1e+06 x[T11,T7,K1] + r[T7] - r[T11] <= 999998.6176166136
- c15[T11,T7,K2]: 1e+06 x[T11,T7,K2] + r[T7] - r[T11] <= 999998.6176166136
- c15[T11,T8,K0]: 1e+06 x[T11,T8,K0] + r[T8] - r[T11] <= 999963.6552362464
- c15[T11,T8,K1]: 1e+06 x[T11,T8,K1] + r[T8] - r[T11] <= 999963.6552362464
- c15[T11,T8,K2]: 1e+06 x[T11,T8,K2] + r[T8] - r[T11] <= 999963.6552362464
- c15[T11,T9,K0]: 1e+06 x[T11,T9,K0] + r[T9] - r[T11] <= 999960.4829323532
- c15[T11,T9,K1]: 1e+06 x[T11,T9,K1] + r[T9] - r[T11] <= 999960.4829323532
- c15[T11,T9,K2]: 1e+06 x[T11,T9,K2] + r[T9] - r[T11] <= 999960.4829323532
- c15[T11,T10,K0]: 1e+06 x[T11,T10,K0] + r[T10] - r[T11]
-   <= 999978.4078422734
- c15[T11,T10,K1]: 1e+06 x[T11,T10,K1] + r[T10] - r[T11]
-   <= 999978.4078422734
- c15[T11,T10,K2]: 1e+06 x[T11,T10,K2] + r[T10] - r[T11]
-   <= 999978.4078422734
- c16[T0,T1,K0]: - 1e+06 x[T0,T1,K0] - r[T0] + r[T1]
-   >= -1.0000749192237166e+06
- c16[T0,T1,K1]: - 1e+06 x[T0,T1,K1] - r[T0] + r[T1]
-   >= -1.0000749192237166e+06
- c16[T0,T1,K2]: - 1e+06 x[T0,T1,K2] - r[T0] + r[T1]
-   >= -1.0000749192237166e+06
- c16[T0,T2,K0]: - 1e+06 x[T0,T2,K0] - r[T0] + r[T2]
-   >= -1.0000433664404649e+06
- c16[T0,T2,K1]: - 1e+06 x[T0,T2,K1] - r[T0] + r[T2]
-   >= -1.0000433664404649e+06
- c16[T0,T2,K2]: - 1e+06 x[T0,T2,K2] - r[T0] + r[T2]
-   >= -1.0000433664404649e+06
- c16[T0,T3,K0]: - 1e+06 x[T0,T3,K0] - r[T0] + r[T3]
-   >= -1.0000616104856408e+06
- c16[T0,T3,K1]: - 1e+06 x[T0,T3,K1] - r[T0] + r[T3]
-   >= -1.0000616104856408e+06
- c16[T0,T3,K2]: - 1e+06 x[T0,T3,K2] - r[T0] + r[T3]
-   >= -1.0000616104856408e+06
- c16[T0,T4,K0]: - 1e+06 x[T0,T4,K0] - r[T0] + r[T4]
-   >= -1.0000755545901767e+06
- c16[T0,T4,K1]: - 1e+06 x[T0,T4,K1] - r[T0] + r[T4]
-   >= -1.0000755545901767e+06
- c16[T0,T4,K2]: - 1e+06 x[T0,T4,K2] - r[T0] + r[T4]
-   >= -1.0000755545901767e+06
- c16[T0,T5,K0]: - 1e+06 x[T0,T5,K0] - r[T0] + r[T5]
-   >= -1.0000457361393621e+06
- c16[T0,T5,K1]: - 1e+06 x[T0,T5,K1] - r[T0] + r[T5]
-   >= -1.0000457361393621e+06
- c16[T0,T5,K2]: - 1e+06 x[T0,T5,K2] - r[T0] + r[T5]
-   >= -1.0000457361393621e+06
- c16[T0,T6,K0]: - 1e+06 x[T0,T6,K0] - r[T0] + r[T6]
-   >= -1.0000275792030703e+06
- c16[T0,T6,K1]: - 1e+06 x[T0,T6,K1] - r[T0] + r[T6]
-   >= -1.0000275792030703e+06
- c16[T0,T6,K2]: - 1e+06 x[T0,T6,K2] - r[T0] + r[T6]
-   >= -1.0000275792030703e+06
- c16[T0,T7,K0]: - 1e+06 x[T0,T7,K0] - r[T0] + r[T7]
-   >= -1.0000346753436393e+06
- c16[T0,T7,K1]: - 1e+06 x[T0,T7,K1] - r[T0] + r[T7]
-   >= -1.0000346753436393e+06
- c16[T0,T7,K2]: - 1e+06 x[T0,T7,K2] - r[T0] + r[T7]
-   >= -1.0000346753436393e+06
- c16[T0,T8,K0]: - 1e+06 x[T0,T8,K0] - r[T0] + r[T8]
-   >= -1.0000514439276611e+06
- c16[T0,T8,K1]: - 1e+06 x[T0,T8,K1] - r[T0] + r[T8]
-   >= -1.0000514439276611e+06
- c16[T0,T8,K2]: - 1e+06 x[T0,T8,K2] - r[T0] + r[T8]
-   >= -1.0000514439276611e+06
- c16[T0,T9,K0]: - 1e+06 x[T0,T9,K0] - r[T0] + r[T9]
-   >= -1.0000405854240637e+06
- c16[T0,T9,K1]: - 1e+06 x[T0,T9,K1] - r[T0] + r[T9]
-   >= -1.0000405854240637e+06
- c16[T0,T9,K2]: - 1e+06 x[T0,T9,K2] - r[T0] + r[T9]
-   >= -1.0000405854240637e+06
- c16[T0,T10,K0]: - 1e+06 x[T0,T10,K0] - r[T0] + r[T10]
-   >= -1.0000281837386312e+06
- c16[T0,T10,K1]: - 1e+06 x[T0,T10,K1] - r[T0] + r[T10]
-   >= -1.0000281837386312e+06
- c16[T0,T10,K2]: - 1e+06 x[T0,T10,K2] - r[T0] + r[T10]
-   >= -1.0000281837386312e+06
- c16[T0,T11,K0]: - 1e+06 x[T0,T11,K0] - r[T0] + r[T11]
-   >= -1.0000332934955391e+06
- c16[T0,T11,K1]: - 1e+06 x[T0,T11,K1] - r[T0] + r[T11]
-   >= -1.0000332934955391e+06
- c16[T0,T11,K2]: - 1e+06 x[T0,T11,K2] - r[T0] + r[T11]
-   >= -1.0000332934955391e+06
- c16[T1,T0,K0]: - 1e+06 x[T1,T0,K0] + r[T0] - r[T1]
-   >= -1.0000749192237166e+06
- c16[T1,T0,K1]: - 1e+06 x[T1,T0,K1] + r[T0] - r[T1]
-   >= -1.0000749192237166e+06
- c16[T1,T0,K2]: - 1e+06 x[T1,T0,K2] + r[T0] - r[T1]
-   >= -1.0000749192237166e+06
- c16[T1,T2,K0]: - 1e+06 x[T1,T2,K0] - r[T1] + r[T2]
-   >= -1.0000477112292518e+06
- c16[T1,T2,K1]: - 1e+06 x[T1,T2,K1] - r[T1] + r[T2]
-   >= -1.0000477112292518e+06
- c16[T1,T2,K2]: - 1e+06 x[T1,T2,K2] - r[T1] + r[T2]
-   >= -1.0000477112292518e+06
- c16[T1,T3,K0]: - 1e+06 x[T1,T3,K0] - r[T1] + r[T3]
-   >= -1.0000712394447266e+06
- c16[T1,T3,K1]: - 1e+06 x[T1,T3,K1] - r[T1] + r[T3]
-   >= -1.0000712394447266e+06
- c16[T1,T3,K2]: - 1e+06 x[T1,T3,K2] - r[T1] + r[T3]
-   >= -1.0000712394447266e+06
- c16[T1,T4,K0]: - 1e+06 x[T1,T4,K0] - r[T1] + r[T4]
-   >= -1.0000508673448027e+06
- c16[T1,T4,K1]: - 1e+06 x[T1,T4,K1] - r[T1] + r[T4]
-   >= -1.0000508673448027e+06
- c16[T1,T4,K2]: - 1e+06 x[T1,T4,K2] - r[T1] + r[T4]
-   >= -1.0000508673448027e+06
- c16[T1,T5,K0]: - 1e+06 x[T1,T5,K0] - r[T1] + r[T5]
-   >= -1.0000549563645684e+06
- c16[T1,T5,K1]: - 1e+06 x[T1,T5,K1] - r[T1] + r[T5]
-   >= -1.0000549563645684e+06
- c16[T1,T5,K2]: - 1e+06 x[T1,T5,K2] - r[T1] + r[T5]
-   >= -1.0000549563645684e+06
- c16[T1,T6,K0]: - 1e+06 x[T1,T6,K0] - r[T1] + r[T6]
-   >= -1.0000777896738299e+06
- c16[T1,T6,K1]: - 1e+06 x[T1,T6,K1] - r[T1] + r[T6]
-   >= -1.0000777896738299e+06
- c16[T1,T6,K2]: - 1e+06 x[T1,T6,K2] - r[T1] + r[T6]
-   >= -1.0000777896738299e+06
- c16[T1,T7,K0]: - 1e+06 x[T1,T7,K0] - r[T1] + r[T7]
-   >= -1.0000485603439654e+06
- c16[T1,T7,K1]: - 1e+06 x[T1,T7,K1] - r[T1] + r[T7]
-   >= -1.0000485603439654e+06
- c16[T1,T7,K2]: - 1e+06 x[T1,T7,K2] - r[T1] + r[T7]
-   >= -1.0000485603439654e+06
- c16[T1,T8,K0]: - 1e+06 x[T1,T8,K0] - r[T1] + r[T8]
-   >= -1.0000278492420459e+06
- c16[T1,T8,K1]: - 1e+06 x[T1,T8,K1] - r[T1] + r[T8]
-   >= -1.0000278492420459e+06
- c16[T1,T8,K2]: - 1e+06 x[T1,T8,K2] - r[T1] + r[T8]
-   >= -1.0000278492420459e+06
- c16[T1,T9,K0]: - 1e+06 x[T1,T9,K0] - r[T1] + r[T9]
-   >= -1.0000464253985543e+06
- c16[T1,T9,K1]: - 1e+06 x[T1,T9,K1] - r[T1] + r[T9]
-   >= -1.0000464253985543e+06
- c16[T1,T9,K2]: - 1e+06 x[T1,T9,K2] - r[T1] + r[T9]
-   >= -1.0000464253985543e+06
- c16[T1,T10,K0]: - 1e+06 x[T1,T10,K0] - r[T1] + r[T10]
-   >= -1.0000708940020326e+06
- c16[T1,T10,K1]: - 1e+06 x[T1,T10,K1] - r[T1] + r[T10]
-   >= -1.0000708940020326e+06
- c16[T1,T10,K2]: - 1e+06 x[T1,T10,K2] - r[T1] + r[T10]
-   >= -1.0000708940020326e+06
- c16[T1,T11,K0]: - 1e+06 x[T1,T11,K0] - r[T1] + r[T11]
-   >= -1.0000493852948077e+06
- c16[T1,T11,K1]: - 1e+06 x[T1,T11,K1] - r[T1] + r[T11]
-   >= -1.0000493852948077e+06
- c16[T1,T11,K2]: - 1e+06 x[T1,T11,K2] - r[T1] + r[T11]
-   >= -1.0000493852948077e+06
- c16[T2,T0,K0]: - 1e+06 x[T2,T0,K0] + r[T0] - r[T2]
-   >= -1.0000433664404649e+06
- c16[T2,T0,K1]: - 1e+06 x[T2,T0,K1] + r[T0] - r[T2]
-   >= -1.0000433664404649e+06
- c16[T2,T0,K2]: - 1e+06 x[T2,T0,K2] + r[T0] - r[T2]
-   >= -1.0000433664404649e+06
- c16[T2,T1,K0]: - 1e+06 x[T2,T1,K0] + r[T1] - r[T2]
-   >= -1.0000477112292518e+06
- c16[T2,T1,K1]: - 1e+06 x[T2,T1,K1] + r[T1] - r[T2]
-   >= -1.0000477112292518e+06
- c16[T2,T1,K2]: - 1e+06 x[T2,T1,K2] + r[T1] - r[T2]
-   >= -1.0000477112292518e+06
- c16[T2,T3,K0]: - 1e+06 x[T2,T3,K0] - r[T2] + r[T3]
-   >= -1.0000804678580937e+06
- c16[T2,T3,K1]: - 1e+06 x[T2,T3,K1] - r[T2] + r[T3]
-   >= -1.0000804678580937e+06
- c16[T2,T3,K2]: - 1e+06 x[T2,T3,K2] - r[T2] + r[T3]
-   >= -1.0000804678580937e+06
- c16[T2,T4,K0]: - 1e+06 x[T2,T4,K0] - r[T2] + r[T4]
-   >= -1.000032320091576e+06
- c16[T2,T4,K1]: - 1e+06 x[T2,T4,K1] - r[T2] + r[T4]
-   >= -1.000032320091576e+06
- c16[T2,T4,K2]: - 1e+06 x[T2,T4,K2] - r[T2] + r[T4]
-   >= -1.000032320091576e+06
- c16[T2,T5,K0]: - 1e+06 x[T2,T5,K0] - r[T2] + r[T5]
-   >= -1.000059340638111e+06
- c16[T2,T5,K1]: - 1e+06 x[T2,T5,K1] - r[T2] + r[T5]
-   >= -1.000059340638111e+06
- c16[T2,T5,K2]: - 1e+06 x[T2,T5,K2] - r[T2] + r[T5]
-   >= -1.000059340638111e+06
- c16[T2,T6,K0]: - 1e+06 x[T2,T6,K0] - r[T2] + r[T6]
-   >= -1.0000327092203894e+06
- c16[T2,T6,K1]: - 1e+06 x[T2,T6,K1] - r[T2] + r[T6]
-   >= -1.0000327092203894e+06
- c16[T2,T6,K2]: - 1e+06 x[T2,T6,K2] - r[T2] + r[T6]
-   >= -1.0000327092203894e+06
- c16[T2,T7,K0]: - 1e+06 x[T2,T7,K0] - r[T2] + r[T7]
-   >= -1.0000094997832631e+06
- c16[T2,T7,K1]: - 1e+06 x[T2,T7,K1] - r[T2] + r[T7]
-   >= -1.0000094997832631e+06
- c16[T2,T7,K2]: - 1e+06 x[T2,T7,K2] - r[T2] + r[T7]
-   >= -1.0000094997832631e+06
- c16[T2,T8,K0]: - 1e+06 x[T2,T8,K0] - r[T2] + r[T8]
-   >= -1.0000410643155267e+06
- c16[T2,T8,K1]: - 1e+06 x[T2,T8,K1] - r[T2] + r[T8]
-   >= -1.0000410643155267e+06
- c16[T2,T8,K2]: - 1e+06 x[T2,T8,K2] - r[T2] + r[T8]
-   >= -1.0000410643155267e+06
- c16[T2,T9,K0]: - 1e+06 x[T2,T9,K0] - r[T2] + r[T9]
-   >= -1.0000479148124034e+06
- c16[T2,T9,K1]: - 1e+06 x[T2,T9,K1] - r[T2] + r[T9]
-   >= -1.0000479148124034e+06
- c16[T2,T9,K2]: - 1e+06 x[T2,T9,K2] - r[T2] + r[T9]
-   >= -1.0000479148124034e+06
- c16[T2,T10,K0]: - 1e+06 x[T2,T10,K0] - r[T2] + r[T10]
-   >= -1.0000256123311926e+06
- c16[T2,T10,K1]: - 1e+06 x[T2,T10,K1] - r[T2] + r[T10]
-   >= -1.0000256123311926e+06
- c16[T2,T10,K2]: - 1e+06 x[T2,T10,K2] - r[T2] + r[T10]
-   >= -1.0000256123311926e+06
- c16[T2,T11,K0]: - 1e+06 x[T2,T11,K0] - r[T2] + r[T11]
-   >= -1.0000107663126776e+06
- c16[T2,T11,K1]: - 1e+06 x[T2,T11,K1] - r[T2] + r[T11]
-   >= -1.0000107663126776e+06
- c16[T2,T11,K2]: - 1e+06 x[T2,T11,K2] - r[T2] + r[T11]
-   >= -1.0000107663126776e+06
- c16[T3,T0,K0]: - 1e+06 x[T3,T0,K0] + r[T0] - r[T3]
-   >= -1.0000616104856408e+06
- c16[T3,T0,K1]: - 1e+06 x[T3,T0,K1] + r[T0] - r[T3]
-   >= -1.0000616104856408e+06
- c16[T3,T0,K2]: - 1e+06 x[T3,T0,K2] + r[T0] - r[T3]
-   >= -1.0000616104856408e+06
- c16[T3,T1,K0]: - 1e+06 x[T3,T1,K0] + r[T1] - r[T3]
-   >= -1.0000712394447266e+06
- c16[T3,T1,K1]: - 1e+06 x[T3,T1,K1] + r[T1] - r[T3]
-   >= -1.0000712394447266e+06
- c16[T3,T1,K2]: - 1e+06 x[T3,T1,K2] + r[T1] - r[T3]
-   >= -1.0000712394447266e+06
- c16[T3,T2,K0]: - 1e+06 x[T3,T2,K0] + r[T2] - r[T3]
-   >= -1.0000804678580937e+06
- c16[T3,T2,K1]: - 1e+06 x[T3,T2,K1] + r[T2] - r[T3]
-   >= -1.0000804678580937e+06
- c16[T3,T2,K2]: - 1e+06 x[T3,T2,K2] + r[T2] - r[T3]
-   >= -1.0000804678580937e+06
- c16[T3,T4,K0]: - 1e+06 x[T3,T4,K0] - r[T3] + r[T4]
-   >= -1.0001065967602654e+06
- c16[T3,T4,K1]: - 1e+06 x[T3,T4,K1] - r[T3] + r[T4]
-   >= -1.0001065967602654e+06
- c16[T3,T4,K2]: - 1e+06 x[T3,T4,K2] - r[T3] + r[T4]
-   >= -1.0001065967602654e+06
- c16[T3,T5,K0]: - 1e+06 x[T3,T5,K0] - r[T3] + r[T5]
-   >= -1.0000211474852302e+06
- c16[T3,T5,K1]: - 1e+06 x[T3,T5,K1] - r[T3] + r[T5]
-   >= -1.0000211474852302e+06
- c16[T3,T5,K2]: - 1e+06 x[T3,T5,K2] - r[T3] + r[T5]
-   >= -1.0000211474852302e+06
- c16[T3,T6,K0]: - 1e+06 x[T3,T6,K0] - r[T3] + r[T6]
-   >= -1.0000861598871844e+06
- c16[T3,T6,K1]: - 1e+06 x[T3,T6,K1] - r[T3] + r[T6]
-   >= -1.0000861598871844e+06
- c16[T3,T6,K2]: - 1e+06 x[T3,T6,K2] - r[T3] + r[T6]
-   >= -1.0000861598871844e+06
- c16[T3,T7,K0]: - 1e+06 x[T3,T7,K0] - r[T3] + r[T7]
-   >= -1.0000722239064835e+06
- c16[T3,T7,K1]: - 1e+06 x[T3,T7,K1] - r[T3] + r[T7]
-   >= -1.0000722239064835e+06
- c16[T3,T7,K2]: - 1e+06 x[T3,T7,K2] - r[T3] + r[T7]
-   >= -1.0000722239064835e+06
- c16[T3,T8,K0]: - 1e+06 x[T3,T8,K0] - r[T3] + r[T8]
-   >= -1.0000470349152375e+06
- c16[T3,T8,K1]: - 1e+06 x[T3,T8,K1] - r[T3] + r[T8]
-   >= -1.0000470349152375e+06
- c16[T3,T8,K2]: - 1e+06 x[T3,T8,K2] - r[T3] + r[T8]
-   >= -1.0000470349152375e+06
- c16[T3,T9,K0]: - 1e+06 x[T3,T9,K0] - r[T3] + r[T9]
-   >= -1.0000327494290092e+06
- c16[T3,T9,K1]: - 1e+06 x[T3,T9,K1] - r[T3] + r[T9]
-   >= -1.0000327494290092e+06
- c16[T3,T9,K2]: - 1e+06 x[T3,T9,K2] - r[T3] + r[T9]
-   >= -1.0000327494290092e+06
- c16[T3,T10,K0]: - 1e+06 x[T3,T10,K0] - r[T3] + r[T10]
-   >= -1.0000833946689904e+06
- c16[T3,T10,K1]: - 1e+06 x[T3,T10,K1] - r[T3] + r[T10]
-   >= -1.0000833946689904e+06
- c16[T3,T10,K2]: - 1e+06 x[T3,T10,K2] - r[T3] + r[T10]
-   >= -1.0000833946689904e+06
- c16[T3,T11,K0]: - 1e+06 x[T3,T11,K0] - r[T3] + r[T11]
-   >= -1.0000714775598412e+06
- c16[T3,T11,K1]: - 1e+06 x[T3,T11,K1] - r[T3] + r[T11]
-   >= -1.0000714775598412e+06
- c16[T3,T11,K2]: - 1e+06 x[T3,T11,K2] - r[T3] + r[T11]
-   >= -1.0000714775598412e+06
- c16[T4,T0,K0]: - 1e+06 x[T4,T0,K0] + r[T0] - r[T4]
-   >= -1.0000755545901767e+06
- c16[T4,T0,K1]: - 1e+06 x[T4,T0,K1] + r[T0] - r[T4]
-   >= -1.0000755545901767e+06
- c16[T4,T0,K2]: - 1e+06 x[T4,T0,K2] + r[T0] - r[T4]
-   >= -1.0000755545901767e+06
- c16[T4,T1,K0]: - 1e+06 x[T4,T1,K0] + r[T1] - r[T4]
-   >= -1.0000508673448027e+06
- c16[T4,T1,K1]: - 1e+06 x[T4,T1,K1] + r[T1] - r[T4]
-   >= -1.0000508673448027e+06
- c16[T4,T1,K2]: - 1e+06 x[T4,T1,K2] + r[T1] - r[T4]
-   >= -1.0000508673448027e+06
- c16[T4,T2,K0]: - 1e+06 x[T4,T2,K0] + r[T2] - r[T4]
-   >= -1.000032320091576e+06
- c16[T4,T2,K1]: - 1e+06 x[T4,T2,K1] + r[T2] - r[T4]
-   >= -1.000032320091576e+06
- c16[T4,T2,K2]: - 1e+06 x[T4,T2,K2] + r[T2] - r[T4]
-   >= -1.000032320091576e+06
- c16[T4,T3,K0]: - 1e+06 x[T4,T3,K0] + r[T3] - r[T4]
-   >= -1.0001065967602654e+06
- c16[T4,T3,K1]: - 1e+06 x[T4,T3,K1] + r[T3] - r[T4]
-   >= -1.0001065967602654e+06
- c16[T4,T3,K2]: - 1e+06 x[T4,T3,K2] + r[T3] - r[T4]
-   >= -1.0001065967602654e+06
- c16[T4,T5,K0]: - 1e+06 x[T4,T5,K0] - r[T4] + r[T5]
-   >= -1.0000858206140087e+06
- c16[T4,T5,K1]: - 1e+06 x[T4,T5,K1] - r[T4] + r[T5]
-   >= -1.0000858206140087e+06
- c16[T4,T5,K2]: - 1e+06 x[T4,T5,K2] - r[T4] + r[T5]
-   >= -1.0000858206140087e+06
- c16[T4,T6,K0]: - 1e+06 x[T4,T6,K0] - r[T4] + r[T6]
-   >= -1.0000597902830739e+06
- c16[T4,T6,K1]: - 1e+06 x[T4,T6,K1] - r[T4] + r[T6]
-   >= -1.0000597902830739e+06
- c16[T4,T6,K2]: - 1e+06 x[T4,T6,K2] - r[T4] + r[T6]
-   >= -1.0000597902830739e+06
- c16[T4,T7,K0]: - 1e+06 x[T4,T7,K0] - r[T4] + r[T7]
-   >= -1.0000415919182725e+06
- c16[T4,T7,K1]: - 1e+06 x[T4,T7,K1] - r[T4] + r[T7]
-   >= -1.0000415919182725e+06
- c16[T4,T7,K2]: - 1e+06 x[T4,T7,K2] - r[T4] + r[T7]
-   >= -1.0000415919182725e+06
- c16[T4,T8,K0]: - 1e+06 x[T4,T8,K0] - r[T4] + r[T8]
-   >= -1.0000609704253642e+06
- c16[T4,T8,K1]: - 1e+06 x[T4,T8,K1] - r[T4] + r[T8]
-   >= -1.0000609704253642e+06
- c16[T4,T8,K2]: - 1e+06 x[T4,T8,K2] - r[T4] + r[T8]
-   >= -1.0000609704253642e+06
- c16[T4,T9,K0]: - 1e+06 x[T4,T9,K0] - r[T4] + r[T9]
-   >= -1.000074193952655e+06
- c16[T4,T9,K1]: - 1e+06 x[T4,T9,K1] - r[T4] + r[T9]
-   >= -1.000074193952655e+06
- c16[T4,T9,K2]: - 1e+06 x[T4,T9,K2] - r[T4] + r[T9]
-   >= -1.000074193952655e+06
- c16[T4,T10,K0]: - 1e+06 x[T4,T10,K0] - r[T4] + r[T10]
-   >= -1.0000535492169999e+06
- c16[T4,T10,K1]: - 1e+06 x[T4,T10,K1] - r[T4] + r[T10]
-   >= -1.0000535492169999e+06
- c16[T4,T10,K2]: - 1e+06 x[T4,T10,K2] - r[T4] + r[T10]
-   >= -1.0000535492169999e+06
- c16[T4,T11,K0]: - 1e+06 x[T4,T11,K0] - r[T4] + r[T11]
-   >= -1.0000429335140927e+06
- c16[T4,T11,K1]: - 1e+06 x[T4,T11,K1] - r[T4] + r[T11]
-   >= -1.0000429335140927e+06
- c16[T4,T11,K2]: - 1e+06 x[T4,T11,K2] - r[T4] + r[T11]
-   >= -1.0000429335140927e+06
- c16[T5,T0,K0]: - 1e+06 x[T5,T0,K0] + r[T0] - r[T5]
-   >= -1.0000457361393621e+06
- c16[T5,T0,K1]: - 1e+06 x[T5,T0,K1] + r[T0] - r[T5]
-   >= -1.0000457361393621e+06
- c16[T5,T0,K2]: - 1e+06 x[T5,T0,K2] + r[T0] - r[T5]
-   >= -1.0000457361393621e+06
- c16[T5,T1,K0]: - 1e+06 x[T5,T1,K0] + r[T1] - r[T5]
-   >= -1.0000549563645684e+06
- c16[T5,T1,K1]: - 1e+06 x[T5,T1,K1] + r[T1] - r[T5]
-   >= -1.0000549563645684e+06
- c16[T5,T1,K2]: - 1e+06 x[T5,T1,K2] + r[T1] - r[T5]
-   >= -1.0000549563645684e+06
- c16[T5,T2,K0]: - 1e+06 x[T5,T2,K0] + r[T2] - r[T5]
-   >= -1.000059340638111e+06
- c16[T5,T2,K1]: - 1e+06 x[T5,T2,K1] + r[T2] - r[T5]
-   >= -1.000059340638111e+06
- c16[T5,T2,K2]: - 1e+06 x[T5,T2,K2] + r[T2] - r[T5]
-   >= -1.000059340638111e+06
- c16[T5,T3,K0]: - 1e+06 x[T5,T3,K0] + r[T3] - r[T5]
-   >= -1.0000211474852302e+06
- c16[T5,T3,K1]: - 1e+06 x[T5,T3,K1] + r[T3] - r[T5]
-   >= -1.0000211474852302e+06
- c16[T5,T3,K2]: - 1e+06 x[T5,T3,K2] + r[T3] - r[T5]
-   >= -1.0000211474852302e+06
- c16[T5,T4,K0]: - 1e+06 x[T5,T4,K0] + r[T4] - r[T5]
-   >= -1.0000858206140087e+06
- c16[T5,T4,K1]: - 1e+06 x[T5,T4,K1] + r[T4] - r[T5]
-   >= -1.0000858206140087e+06
- c16[T5,T4,K2]: - 1e+06 x[T5,T4,K2] + r[T4] - r[T5]
-   >= -1.0000858206140087e+06
- c16[T5,T6,K0]: - 1e+06 x[T5,T6,K0] - r[T5] + r[T6]
-   >= -1.0000674806429225e+06
- c16[T5,T6,K1]: - 1e+06 x[T5,T6,K1] - r[T5] + r[T6]
-   >= -1.0000674806429225e+06
- c16[T5,T6,K2]: - 1e+06 x[T5,T6,K2] - r[T5] + r[T6]
-   >= -1.0000674806429225e+06
- c16[T5,T7,K0]: - 1e+06 x[T5,T7,K0] - r[T5] + r[T7]
-   >= -1.0000512241829889e+06
- c16[T5,T7,K1]: - 1e+06 x[T5,T7,K1] - r[T5] + r[T7]
-   >= -1.0000512241829889e+06
- c16[T5,T7,K2]: - 1e+06 x[T5,T7,K2] - r[T5] + r[T7]
-   >= -1.0000512241829889e+06
- c16[T5,T8,K0]: - 1e+06 x[T5,T8,K0] - r[T5] + r[T8]
-   >= -1.0000281503106401e+06
- c16[T5,T8,K1]: - 1e+06 x[T5,T8,K1] - r[T5] + r[T8]
-   >= -1.0000281503106401e+06
- c16[T5,T8,K2]: - 1e+06 x[T5,T8,K2] - r[T5] + r[T8]
-   >= -1.0000281503106401e+06
- c16[T5,T9,K0]: - 1e+06 x[T5,T9,K0] - r[T5] + r[T9]
-   >= -1.0000116672629121e+06
- c16[T5,T9,K1]: - 1e+06 x[T5,T9,K1] - r[T5] + r[T9]
-   >= -1.0000116672629121e+06
- c16[T5,T9,K2]: - 1e+06 x[T5,T9,K2] - r[T5] + r[T9]
-   >= -1.0000116672629121e+06
- c16[T5,T10,K0]: - 1e+06 x[T5,T10,K0] - r[T5] + r[T10]
-   >= -1.0000639367562861e+06
- c16[T5,T10,K1]: - 1e+06 x[T5,T10,K1] - r[T5] + r[T10]
-   >= -1.0000639367562861e+06
- c16[T5,T10,K2]: - 1e+06 x[T5,T10,K2] - r[T5] + r[T10]
-   >= -1.0000639367562861e+06
- c16[T5,T11,K0]: - 1e+06 x[T5,T11,K0] - r[T5] + r[T11]
-   >= -1.0000505305376595e+06
- c16[T5,T11,K1]: - 1e+06 x[T5,T11,K1] - r[T5] + r[T11]
-   >= -1.0000505305376595e+06
- c16[T5,T11,K2]: - 1e+06 x[T5,T11,K2] - r[T5] + r[T11]
-   >= -1.0000505305376595e+06
- c16[T6,T0,K0]: - 1e+06 x[T6,T0,K0] + r[T0] - r[T6]
-   >= -1.0000275792030703e+06
- c16[T6,T0,K1]: - 1e+06 x[T6,T0,K1] + r[T0] - r[T6]
-   >= -1.0000275792030703e+06
- c16[T6,T0,K2]: - 1e+06 x[T6,T0,K2] + r[T0] - r[T6]
-   >= -1.0000275792030703e+06
- c16[T6,T1,K0]: - 1e+06 x[T6,T1,K0] + r[T1] - r[T6]
-   >= -1.0000777896738299e+06
- c16[T6,T1,K1]: - 1e+06 x[T6,T1,K1] + r[T1] - r[T6]
-   >= -1.0000777896738299e+06
- c16[T6,T1,K2]: - 1e+06 x[T6,T1,K2] + r[T1] - r[T6]
-   >= -1.0000777896738299e+06
- c16[T6,T2,K0]: - 1e+06 x[T6,T2,K0] + r[T2] - r[T6]
-   >= -1.0000327092203894e+06
- c16[T6,T2,K1]: - 1e+06 x[T6,T2,K1] + r[T2] - r[T6]
-   >= -1.0000327092203894e+06
- c16[T6,T2,K2]: - 1e+06 x[T6,T2,K2] + r[T2] - r[T6]
-   >= -1.0000327092203894e+06
- c16[T6,T3,K0]: - 1e+06 x[T6,T3,K0] + r[T3] - r[T6]
-   >= -1.0000861598871844e+06
- c16[T6,T3,K1]: - 1e+06 x[T6,T3,K1] + r[T3] - r[T6]
-   >= -1.0000861598871844e+06
- c16[T6,T3,K2]: - 1e+06 x[T6,T3,K2] + r[T3] - r[T6]
-   >= -1.0000861598871844e+06
- c16[T6,T4,K0]: - 1e+06 x[T6,T4,K0] + r[T4] - r[T6]
-   >= -1.0000597902830739e+06
- c16[T6,T4,K1]: - 1e+06 x[T6,T4,K1] + r[T4] - r[T6]
-   >= -1.0000597902830739e+06
- c16[T6,T4,K2]: - 1e+06 x[T6,T4,K2] + r[T4] - r[T6]
-   >= -1.0000597902830739e+06
- c16[T6,T5,K0]: - 1e+06 x[T6,T5,K0] + r[T5] - r[T6]
-   >= -1.0000674806429225e+06
- c16[T6,T5,K1]: - 1e+06 x[T6,T5,K1] + r[T5] - r[T6]
-   >= -1.0000674806429225e+06
- c16[T6,T5,K2]: - 1e+06 x[T6,T5,K2] + r[T5] - r[T6]
-   >= -1.0000674806429225e+06
- c16[T6,T7,K0]: - 1e+06 x[T6,T7,K0] - r[T6] + r[T7]
-   >= -1.0000292428516087e+06
- c16[T6,T7,K1]: - 1e+06 x[T6,T7,K1] - r[T6] + r[T7]
-   >= -1.0000292428516087e+06
- c16[T6,T7,K2]: - 1e+06 x[T6,T7,K2] - r[T6] + r[T7]
-   >= -1.0000292428516087e+06
- c16[T6,T8,K0]: - 1e+06 x[T6,T8,K0] - r[T6] + r[T8]
-   >= -1.0000622093150817e+06
- c16[T6,T8,K1]: - 1e+06 x[T6,T8,K1] - r[T6] + r[T8]
-   >= -1.0000622093150817e+06
- c16[T6,T8,K2]: - 1e+06 x[T6,T8,K2] - r[T6] + r[T8]
-   >= -1.0000622093150817e+06
- c16[T6,T9,K0]: - 1e+06 x[T6,T9,K0] - r[T6] + r[T9]
-   >= -1.0000589421901132e+06
- c16[T6,T9,K1]: - 1e+06 x[T6,T9,K1] - r[T6] + r[T9]
-   >= -1.0000589421901132e+06
- c16[T6,T9,K2]: - 1e+06 x[T6,T9,K2] - r[T6] + r[T9]
-   >= -1.0000589421901132e+06
- c16[T6,T10,K0]: - 1e+06 x[T6,T10,K0] - r[T6] + r[T10]
-   >= -1.0000071198402508e+06
- c16[T6,T10,K1]: - 1e+06 x[T6,T10,K1] - r[T6] + r[T10]
-   >= -1.0000071198402508e+06
- c16[T6,T10,K2]: - 1e+06 x[T6,T10,K2] - r[T6] + r[T10]
-   >= -1.0000071198402508e+06
- c16[T6,T11,K0]: - 1e+06 x[T6,T11,K0] - r[T6] + r[T11]
-   >= -1.0000284089081656e+06
- c16[T6,T11,K1]: - 1e+06 x[T6,T11,K1] - r[T6] + r[T11]
-   >= -1.0000284089081656e+06
- c16[T6,T11,K2]: - 1e+06 x[T6,T11,K2] - r[T6] + r[T11]
-   >= -1.0000284089081656e+06
- c16[T7,T0,K0]: - 1e+06 x[T7,T0,K0] + r[T0] - r[T7]
-   >= -1.0000346753436393e+06
- c16[T7,T0,K1]: - 1e+06 x[T7,T0,K1] + r[T0] - r[T7]
-   >= -1.0000346753436393e+06
- c16[T7,T0,K2]: - 1e+06 x[T7,T0,K2] + r[T0] - r[T7]
-   >= -1.0000346753436393e+06
- c16[T7,T1,K0]: - 1e+06 x[T7,T1,K0] + r[T1] - r[T7]
-   >= -1.0000485603439654e+06
- c16[T7,T1,K1]: - 1e+06 x[T7,T1,K1] + r[T1] - r[T7]
-   >= -1.0000485603439654e+06
- c16[T7,T1,K2]: - 1e+06 x[T7,T1,K2] + r[T1] - r[T7]
-   >= -1.0000485603439654e+06
- c16[T7,T2,K0]: - 1e+06 x[T7,T2,K0] + r[T2] - r[T7]
-   >= -1.0000094997832631e+06
- c16[T7,T2,K1]: - 1e+06 x[T7,T2,K1] + r[T2] - r[T7]
-   >= -1.0000094997832631e+06
- c16[T7,T2,K2]: - 1e+06 x[T7,T2,K2] + r[T2] - r[T7]
-   >= -1.0000094997832631e+06
- c16[T7,T3,K0]: - 1e+06 x[T7,T3,K0] + r[T3] - r[T7]
-   >= -1.0000722239064835e+06
- c16[T7,T3,K1]: - 1e+06 x[T7,T3,K1] + r[T3] - r[T7]
-   >= -1.0000722239064835e+06
- c16[T7,T3,K2]: - 1e+06 x[T7,T3,K2] + r[T3] - r[T7]
-   >= -1.0000722239064835e+06
- c16[T7,T4,K0]: - 1e+06 x[T7,T4,K0] + r[T4] - r[T7]
-   >= -1.0000415919182725e+06
- c16[T7,T4,K1]: - 1e+06 x[T7,T4,K1] + r[T4] - r[T7]
-   >= -1.0000415919182725e+06
- c16[T7,T4,K2]: - 1e+06 x[T7,T4,K2] + r[T4] - r[T7]
-   >= -1.0000415919182725e+06
- c16[T7,T5,K0]: - 1e+06 x[T7,T5,K0] + r[T5] - r[T7]
-   >= -1.0000512241829889e+06
- c16[T7,T5,K1]: - 1e+06 x[T7,T5,K1] + r[T5] - r[T7]
-   >= -1.0000512241829889e+06
- c16[T7,T5,K2]: - 1e+06 x[T7,T5,K2] + r[T5] - r[T7]
-   >= -1.0000512241829889e+06
- c16[T7,T6,K0]: - 1e+06 x[T7,T6,K0] + r[T6] - r[T7]
-   >= -1.0000292428516087e+06
- c16[T7,T6,K1]: - 1e+06 x[T7,T6,K1] + r[T6] - r[T7]
-   >= -1.0000292428516087e+06
- c16[T7,T6,K2]: - 1e+06 x[T7,T6,K2] + r[T6] - r[T7]
-   >= -1.0000292428516087e+06
- c16[T7,T8,K0]: - 1e+06 x[T7,T8,K0] - r[T7] + r[T8]
-   >= -1.000036286156259e+06
- c16[T7,T8,K1]: - 1e+06 x[T7,T8,K1] - r[T7] + r[T8]
-   >= -1.000036286156259e+06
- c16[T7,T8,K2]: - 1e+06 x[T7,T8,K2] - r[T7] + r[T8]
-   >= -1.000036286156259e+06
- c16[T7,T9,K0]: - 1e+06 x[T7,T9,K0] - r[T7] + r[T9]
-   >= -1.000040110125314e+06
- c16[T7,T9,K1]: - 1e+06 x[T7,T9,K1] - r[T7] + r[T9]
-   >= -1.000040110125314e+06
- c16[T7,T9,K2]: - 1e+06 x[T7,T9,K2] - r[T7] + r[T9]
-   >= -1.000040110125314e+06
- c16[T7,T10,K0]: - 1e+06 x[T7,T10,K0] - r[T7] + r[T10]
-   >= -1.000022340469502e+06
- c16[T7,T10,K1]: - 1e+06 x[T7,T10,K1] - r[T7] + r[T10]
-   >= -1.000022340469502e+06
- c16[T7,T10,K2]: - 1e+06 x[T7,T10,K2] - r[T7] + r[T10]
-   >= -1.000022340469502e+06
- c16[T7,T11,K0]: - 1e+06 x[T7,T11,K0] - r[T7] + r[T11]
-   >= -1.0000013823833864e+06
- c16[T7,T11,K1]: - 1e+06 x[T7,T11,K1] - r[T7] + r[T11]
-   >= -1.0000013823833864e+06
- c16[T7,T11,K2]: - 1e+06 x[T7,T11,K2] - r[T7] + r[T11]
-   >= -1.0000013823833864e+06
- c16[T8,T0,K0]: - 1e+06 x[T8,T0,K0] + r[T0] - r[T8]
-   >= -1.0000514439276611e+06
- c16[T8,T0,K1]: - 1e+06 x[T8,T0,K1] + r[T0] - r[T8]
-   >= -1.0000514439276611e+06
- c16[T8,T0,K2]: - 1e+06 x[T8,T0,K2] + r[T0] - r[T8]
-   >= -1.0000514439276611e+06
- c16[T8,T1,K0]: - 1e+06 x[T8,T1,K0] + r[T1] - r[T8]
-   >= -1.0000278492420459e+06
- c16[T8,T1,K1]: - 1e+06 x[T8,T1,K1] + r[T1] - r[T8]
-   >= -1.0000278492420459e+06
- c16[T8,T1,K2]: - 1e+06 x[T8,T1,K2] + r[T1] - r[T8]
-   >= -1.0000278492420459e+06
- c16[T8,T2,K0]: - 1e+06 x[T8,T2,K0] + r[T2] - r[T8]
-   >= -1.0000410643155267e+06
- c16[T8,T2,K1]: - 1e+06 x[T8,T2,K1] + r[T2] - r[T8]
-   >= -1.0000410643155267e+06
- c16[T8,T2,K2]: - 1e+06 x[T8,T2,K2] + r[T2] - r[T8]
-   >= -1.0000410643155267e+06
- c16[T8,T3,K0]: - 1e+06 x[T8,T3,K0] + r[T3] - r[T8]
-   >= -1.0000470349152375e+06
- c16[T8,T3,K1]: - 1e+06 x[T8,T3,K1] + r[T3] - r[T8]
-   >= -1.0000470349152375e+06
- c16[T8,T3,K2]: - 1e+06 x[T8,T3,K2] + r[T3] - r[T8]
-   >= -1.0000470349152375e+06
- c16[T8,T4,K0]: - 1e+06 x[T8,T4,K0] + r[T4] - r[T8]
-   >= -1.0000609704253642e+06
- c16[T8,T4,K1]: - 1e+06 x[T8,T4,K1] + r[T4] - r[T8]
-   >= -1.0000609704253642e+06
- c16[T8,T4,K2]: - 1e+06 x[T8,T4,K2] + r[T4] - r[T8]
-   >= -1.0000609704253642e+06
- c16[T8,T5,K0]: - 1e+06 x[T8,T5,K0] + r[T5] - r[T8]
-   >= -1.0000281503106401e+06
- c16[T8,T5,K1]: - 1e+06 x[T8,T5,K1] + r[T5] - r[T8]
-   >= -1.0000281503106401e+06
- c16[T8,T5,K2]: - 1e+06 x[T8,T5,K2] + r[T5] - r[T8]
-   >= -1.0000281503106401e+06
- c16[T8,T6,K0]: - 1e+06 x[T8,T6,K0] + r[T6] - r[T8]
-   >= -1.0000622093150817e+06
- c16[T8,T6,K1]: - 1e+06 x[T8,T6,K1] + r[T6] - r[T8]
-   >= -1.0000622093150817e+06
- c16[T8,T6,K2]: - 1e+06 x[T8,T6,K2] + r[T6] - r[T8]
-   >= -1.0000622093150817e+06
- c16[T8,T7,K0]: - 1e+06 x[T8,T7,K0] + r[T7] - r[T8]
-   >= -1.000036286156259e+06
- c16[T8,T7,K1]: - 1e+06 x[T8,T7,K1] + r[T7] - r[T8]
-   >= -1.000036286156259e+06
- c16[T8,T7,K2]: - 1e+06 x[T8,T7,K2] + r[T7] - r[T8]
-   >= -1.000036286156259e+06
- c16[T8,T9,K0]: - 1e+06 x[T8,T9,K0] - r[T8] + r[T9]
-   >= -1.0000186228162496e+06
- c16[T8,T9,K1]: - 1e+06 x[T8,T9,K1] - r[T8] + r[T9]
-   >= -1.0000186228162496e+06
- c16[T8,T9,K2]: - 1e+06 x[T8,T9,K2] - r[T8] + r[T9]
-   >= -1.0000186228162496e+06
- c16[T8,T10,K0]: - 1e+06 x[T8,T10,K0] - r[T8] + r[T10]
-   >= -1.0000563603270223e+06
- c16[T8,T10,K1]: - 1e+06 x[T8,T10,K1] - r[T8] + r[T10]
-   >= -1.0000563603270223e+06
- c16[T8,T10,K2]: - 1e+06 x[T8,T10,K2] - r[T8] + r[T10]
-   >= -1.0000563603270223e+06
- c16[T8,T11,K0]: - 1e+06 x[T8,T11,K0] - r[T8] + r[T11]
-   >= -1.0000363447637536e+06
- c16[T8,T11,K1]: - 1e+06 x[T8,T11,K1] - r[T8] + r[T11]
-   >= -1.0000363447637536e+06
- c16[T8,T11,K2]: - 1e+06 x[T8,T11,K2] - r[T8] + r[T11]
-   >= -1.0000363447637536e+06
- c16[T9,T0,K0]: - 1e+06 x[T9,T0,K0] + r[T0] - r[T9]
-   >= -1.0000405854240637e+06
- c16[T9,T0,K1]: - 1e+06 x[T9,T0,K1] + r[T0] - r[T9]
-   >= -1.0000405854240637e+06
- c16[T9,T0,K2]: - 1e+06 x[T9,T0,K2] + r[T0] - r[T9]
-   >= -1.0000405854240637e+06
- c16[T9,T1,K0]: - 1e+06 x[T9,T1,K0] + r[T1] - r[T9]
-   >= -1.0000464253985543e+06
- c16[T9,T1,K1]: - 1e+06 x[T9,T1,K1] + r[T1] - r[T9]
-   >= -1.0000464253985543e+06
- c16[T9,T1,K2]: - 1e+06 x[T9,T1,K2] + r[T1] - r[T9]
-   >= -1.0000464253985543e+06
- c16[T9,T2,K0]: - 1e+06 x[T9,T2,K0] + r[T2] - r[T9]
-   >= -1.0000479148124034e+06
- c16[T9,T2,K1]: - 1e+06 x[T9,T2,K1] + r[T2] - r[T9]
-   >= -1.0000479148124034e+06
- c16[T9,T2,K2]: - 1e+06 x[T9,T2,K2] + r[T2] - r[T9]
-   >= -1.0000479148124034e+06
- c16[T9,T3,K0]: - 1e+06 x[T9,T3,K0] + r[T3] - r[T9]
-   >= -1.0000327494290092e+06
- c16[T9,T3,K1]: - 1e+06 x[T9,T3,K1] + r[T3] - r[T9]
-   >= -1.0000327494290092e+06
- c16[T9,T3,K2]: - 1e+06 x[T9,T3,K2] + r[T3] - r[T9]
-   >= -1.0000327494290092e+06
- c16[T9,T4,K0]: - 1e+06 x[T9,T4,K0] + r[T4] - r[T9]
-   >= -1.000074193952655e+06
- c16[T9,T4,K1]: - 1e+06 x[T9,T4,K1] + r[T4] - r[T9]
-   >= -1.000074193952655e+06
- c16[T9,T4,K2]: - 1e+06 x[T9,T4,K2] + r[T4] - r[T9]
-   >= -1.000074193952655e+06
- c16[T9,T5,K0]: - 1e+06 x[T9,T5,K0] + r[T5] - r[T9]
-   >= -1.0000116672629121e+06
- c16[T9,T5,K1]: - 1e+06 x[T9,T5,K1] + r[T5] - r[T9]
-   >= -1.0000116672629121e+06
- c16[T9,T5,K2]: - 1e+06 x[T9,T5,K2] + r[T5] - r[T9]
-   >= -1.0000116672629121e+06
- c16[T9,T6,K0]: - 1e+06 x[T9,T6,K0] + r[T6] - r[T9]
-   >= -1.0000589421901132e+06
- c16[T9,T6,K1]: - 1e+06 x[T9,T6,K1] + r[T6] - r[T9]
-   >= -1.0000589421901132e+06
- c16[T9,T6,K2]: - 1e+06 x[T9,T6,K2] + r[T6] - r[T9]
-   >= -1.0000589421901132e+06
- c16[T9,T7,K0]: - 1e+06 x[T9,T7,K0] + r[T7] - r[T9]
-   >= -1.000040110125314e+06
- c16[T9,T7,K1]: - 1e+06 x[T9,T7,K1] + r[T7] - r[T9]
-   >= -1.000040110125314e+06
- c16[T9,T7,K2]: - 1e+06 x[T9,T7,K2] + r[T7] - r[T9]
-   >= -1.000040110125314e+06
- c16[T9,T8,K0]: - 1e+06 x[T9,T8,K0] + r[T8] - r[T9]
-   >= -1.0000186228162496e+06
- c16[T9,T8,K1]: - 1e+06 x[T9,T8,K1] + r[T8] - r[T9]
-   >= -1.0000186228162496e+06
- c16[T9,T8,K2]: - 1e+06 x[T9,T8,K2] + r[T8] - r[T9]
-   >= -1.0000186228162496e+06
- c16[T9,T10,K0]: - 1e+06 x[T9,T10,K0] - r[T9] + r[T10]
-   >= -1.0000546655668472e+06
- c16[T9,T10,K1]: - 1e+06 x[T9,T10,K1] - r[T9] + r[T10]
-   >= -1.0000546655668472e+06
- c16[T9,T10,K2]: - 1e+06 x[T9,T10,K2] - r[T9] + r[T10]
-   >= -1.0000546655668472e+06
- c16[T9,T11,K0]: - 1e+06 x[T9,T11,K0] - r[T9] + r[T11]
-   >= -1.0000395170676468e+06
- c16[T9,T11,K1]: - 1e+06 x[T9,T11,K1] - r[T9] + r[T11]
-   >= -1.0000395170676468e+06
- c16[T9,T11,K2]: - 1e+06 x[T9,T11,K2] - r[T9] + r[T11]
-   >= -1.0000395170676468e+06
- c16[T10,T0,K0]: - 1e+06 x[T10,T0,K0] + r[T0] - r[T10]
-   >= -1.0000281837386312e+06
- c16[T10,T0,K1]: - 1e+06 x[T10,T0,K1] + r[T0] - r[T10]
-   >= -1.0000281837386312e+06
- c16[T10,T0,K2]: - 1e+06 x[T10,T0,K2] + r[T0] - r[T10]
-   >= -1.0000281837386312e+06
- c16[T10,T1,K0]: - 1e+06 x[T10,T1,K0] + r[T1] - r[T10]
-   >= -1.0000708940020326e+06
- c16[T10,T1,K1]: - 1e+06 x[T10,T1,K1] + r[T1] - r[T10]
-   >= -1.0000708940020326e+06
- c16[T10,T1,K2]: - 1e+06 x[T10,T1,K2] + r[T1] - r[T10]
-   >= -1.0000708940020326e+06
- c16[T10,T2,K0]: - 1e+06 x[T10,T2,K0] + r[T2] - r[T10]
-   >= -1.0000256123311926e+06
- c16[T10,T2,K1]: - 1e+06 x[T10,T2,K1] + r[T2] - r[T10]
-   >= -1.0000256123311926e+06
- c16[T10,T2,K2]: - 1e+06 x[T10,T2,K2] + r[T2] - r[T10]
-   >= -1.0000256123311926e+06
- c16[T10,T3,K0]: - 1e+06 x[T10,T3,K0] + r[T3] - r[T10]
-   >= -1.0000833946689904e+06
- c16[T10,T3,K1]: - 1e+06 x[T10,T3,K1] + r[T3] - r[T10]
-   >= -1.0000833946689904e+06
- c16[T10,T3,K2]: - 1e+06 x[T10,T3,K2] + r[T3] - r[T10]
-   >= -1.0000833946689904e+06
- c16[T10,T4,K0]: - 1e+06 x[T10,T4,K0] + r[T4] - r[T10]
-   >= -1.0000535492169999e+06
- c16[T10,T4,K1]: - 1e+06 x[T10,T4,K1] + r[T4] - r[T10]
-   >= -1.0000535492169999e+06
- c16[T10,T4,K2]: - 1e+06 x[T10,T4,K2] + r[T4] - r[T10]
-   >= -1.0000535492169999e+06
- c16[T10,T5,K0]: - 1e+06 x[T10,T5,K0] + r[T5] - r[T10]
-   >= -1.0000639367562861e+06
- c16[T10,T5,K1]: - 1e+06 x[T10,T5,K1] + r[T5] - r[T10]
-   >= -1.0000639367562861e+06
- c16[T10,T5,K2]: - 1e+06 x[T10,T5,K2] + r[T5] - r[T10]
-   >= -1.0000639367562861e+06
- c16[T10,T6,K0]: - 1e+06 x[T10,T6,K0] + r[T6] - r[T10]
-   >= -1.0000071198402508e+06
- c16[T10,T6,K1]: - 1e+06 x[T10,T6,K1] + r[T6] - r[T10]
-   >= -1.0000071198402508e+06
- c16[T10,T6,K2]: - 1e+06 x[T10,T6,K2] + r[T6] - r[T10]
-   >= -1.0000071198402508e+06
- c16[T10,T7,K0]: - 1e+06 x[T10,T7,K0] + r[T7] - r[T10]
-   >= -1.000022340469502e+06
- c16[T10,T7,K1]: - 1e+06 x[T10,T7,K1] + r[T7] - r[T10]
-   >= -1.000022340469502e+06
- c16[T10,T7,K2]: - 1e+06 x[T10,T7,K2] + r[T7] - r[T10]
-   >= -1.000022340469502e+06
- c16[T10,T8,K0]: - 1e+06 x[T10,T8,K0] + r[T8] - r[T10]
-   >= -1.0000563603270223e+06
- c16[T10,T8,K1]: - 1e+06 x[T10,T8,K1] + r[T8] - r[T10]
-   >= -1.0000563603270223e+06
- c16[T10,T8,K2]: - 1e+06 x[T10,T8,K2] + r[T8] - r[T10]
-   >= -1.0000563603270223e+06
- c16[T10,T9,K0]: - 1e+06 x[T10,T9,K0] + r[T9] - r[T10]
-   >= -1.0000546655668472e+06
- c16[T10,T9,K1]: - 1e+06 x[T10,T9,K1] + r[T9] - r[T10]
-   >= -1.0000546655668472e+06
- c16[T10,T9,K2]: - 1e+06 x[T10,T9,K2] + r[T9] - r[T10]
-   >= -1.0000546655668472e+06
- c16[T10,T11,K0]: - 1e+06 x[T10,T11,K0] - r[T10] + r[T11]
-   >= -1.0000215921577266e+06
- c16[T10,T11,K1]: - 1e+06 x[T10,T11,K1] - r[T10] + r[T11]
-   >= -1.0000215921577266e+06
- c16[T10,T11,K2]: - 1e+06 x[T10,T11,K2] - r[T10] + r[T11]
-   >= -1.0000215921577266e+06
- c16[T11,T0,K0]: - 1e+06 x[T11,T0,K0] + r[T0] - r[T11]
-   >= -1.0000332934955391e+06
- c16[T11,T0,K1]: - 1e+06 x[T11,T0,K1] + r[T0] - r[T11]
-   >= -1.0000332934955391e+06
- c16[T11,T0,K2]: - 1e+06 x[T11,T0,K2] + r[T0] - r[T11]
-   >= -1.0000332934955391e+06
- c16[T11,T1,K0]: - 1e+06 x[T11,T1,K0] + r[T1] - r[T11]
-   >= -1.0000493852948077e+06
- c16[T11,T1,K1]: - 1e+06 x[T11,T1,K1] + r[T1] - r[T11]
-   >= -1.0000493852948077e+06
- c16[T11,T1,K2]: - 1e+06 x[T11,T1,K2] + r[T1] - r[T11]
-   >= -1.0000493852948077e+06
- c16[T11,T2,K0]: - 1e+06 x[T11,T2,K0] + r[T2] - r[T11]
-   >= -1.0000107663126776e+06
- c16[T11,T2,K1]: - 1e+06 x[T11,T2,K1] + r[T2] - r[T11]
-   >= -1.0000107663126776e+06
- c16[T11,T2,K2]: - 1e+06 x[T11,T2,K2] + r[T2] - r[T11]
-   >= -1.0000107663126776e+06
- c16[T11,T3,K0]: - 1e+06 x[T11,T3,K0] + r[T3] - r[T11]
-   >= -1.0000714775598412e+06
- c16[T11,T3,K1]: - 1e+06 x[T11,T3,K1] + r[T3] - r[T11]
-   >= -1.0000714775598412e+06
- c16[T11,T3,K2]: - 1e+06 x[T11,T3,K2] + r[T3] - r[T11]
-   >= -1.0000714775598412e+06
- c16[T11,T4,K0]: - 1e+06 x[T11,T4,K0] + r[T4] - r[T11]
-   >= -1.0000429335140927e+06
- c16[T11,T4,K1]: - 1e+06 x[T11,T4,K1] + r[T4] - r[T11]
-   >= -1.0000429335140927e+06
- c16[T11,T4,K2]: - 1e+06 x[T11,T4,K2] + r[T4] - r[T11]
-   >= -1.0000429335140927e+06
- c16[T11,T5,K0]: - 1e+06 x[T11,T5,K0] + r[T5] - r[T11]
-   >= -1.0000505305376595e+06
- c16[T11,T5,K1]: - 1e+06 x[T11,T5,K1] + r[T5] - r[T11]
-   >= -1.0000505305376595e+06
- c16[T11,T5,K2]: - 1e+06 x[T11,T5,K2] + r[T5] - r[T11]
-   >= -1.0000505305376595e+06
- c16[T11,T6,K0]: - 1e+06 x[T11,T6,K0] + r[T6] - r[T11]
-   >= -1.0000284089081656e+06
- c16[T11,T6,K1]: - 1e+06 x[T11,T6,K1] + r[T6] - r[T11]
-   >= -1.0000284089081656e+06
- c16[T11,T6,K2]: - 1e+06 x[T11,T6,K2] + r[T6] - r[T11]
-   >= -1.0000284089081656e+06
- c16[T11,T7,K0]: - 1e+06 x[T11,T7,K0] + r[T7] - r[T11]
-   >= -1.0000013823833864e+06
- c16[T11,T7,K1]: - 1e+06 x[T11,T7,K1] + r[T7] - r[T11]
-   >= -1.0000013823833864e+06
- c16[T11,T7,K2]: - 1e+06 x[T11,T7,K2] + r[T7] - r[T11]
-   >= -1.0000013823833864e+06
- c16[T11,T8,K0]: - 1e+06 x[T11,T8,K0] + r[T8] - r[T11]
-   >= -1.0000363447637536e+06
- c16[T11,T8,K1]: - 1e+06 x[T11,T8,K1] + r[T8] - r[T11]
-   >= -1.0000363447637536e+06
- c16[T11,T8,K2]: - 1e+06 x[T11,T8,K2] + r[T8] - r[T11]
-   >= -1.0000363447637536e+06
- c16[T11,T9,K0]: - 1e+06 x[T11,T9,K0] + r[T9] - r[T11]
-   >= -1.0000395170676468e+06
- c16[T11,T9,K1]: - 1e+06 x[T11,T9,K1] + r[T9] - r[T11]
-   >= -1.0000395170676468e+06
- c16[T11,T9,K2]: - 1e+06 x[T11,T9,K2] + r[T9] - r[T11]
-   >= -1.0000395170676468e+06
- c16[T11,T10,K0]: - 1e+06 x[T11,T10,K0] + r[T10] - r[T11]
-   >= -1.0000215921577266e+06
- c16[T11,T10,K1]: - 1e+06 x[T11,T10,K1] + r[T10] - r[T11]
-   >= -1.0000215921577266e+06
- c16[T11,T10,K2]: - 1e+06 x[T11,T10,K2] + r[T10] - r[T11]
-   >= -1.0000215921577266e+06
- c18[D0,T0,K0]: 1e+06 x[D0,T0,K0] + r[T0] <= 1.0000826917476519e+06
- c18[D0,T0,K1]: 1e+06 x[D0,T0,K1] + r[T0] <= 1.0000826917476519e+06
- c18[D0,T0,K2]: 1e+06 x[D0,T0,K2] + r[T0] <= 1.0000826917476519e+06
- c18[D0,T1,K0]: 1e+06 x[D0,T1,K0] + r[T1] <= 1.0000574359439602e+06
- c18[D0,T1,K1]: 1e+06 x[D0,T1,K1] + r[T1] <= 1.0000574359439602e+06
- c18[D0,T1,K2]: 1e+06 x[D0,T1,K2] + r[T1] <= 1.0000574359439602e+06
- c18[D0,T2,K0]: 1e+06 x[D0,T2,K0] + r[T2] <= 1.0001051089962954e+06
- c18[D0,T2,K1]: 1e+06 x[D0,T2,K1] + r[T2] <= 1.0001051089962954e+06
- c18[D0,T2,K2]: 1e+06 x[D0,T2,K2] + r[T2] <= 1.0001051089962954e+06
- c18[D0,T3,K0]: 1e+06 x[D0,T3,K0] + r[T3] <= 1.0000322295678237e+06
- c18[D0,T3,K1]: 1e+06 x[D0,T3,K1] + r[T3] <= 1.0000322295678237e+06
- c18[D0,T3,K2]: 1e+06 x[D0,T3,K2] + r[T3] <= 1.0000322295678237e+06
- c18[D0,T4,K0]: 1e+06 x[D0,T4,K0] + r[T4] <= 1.000084340864426e+06
- c18[D0,T4,K1]: 1e+06 x[D0,T4,K1] + r[T4] <= 1.000084340864426e+06
- c18[D0,T4,K2]: 1e+06 x[D0,T4,K2] + r[T4] <= 1.000084340864426e+06
- c18[D0,T5,K0]: 1e+06 x[D0,T5,K0] + r[T5] <= 1.0000527272831148e+06
- c18[D0,T5,K1]: 1e+06 x[D0,T5,K1] + r[T5] <= 1.0000527272831148e+06
- c18[D0,T5,K2]: 1e+06 x[D0,T5,K2] + r[T5] <= 1.0000527272831148e+06
- c18[D0,T6,K0]: 1e+06 x[D0,T6,K0] + r[T6] <= 1.0001052836601483e+06
- c18[D0,T6,K1]: 1e+06 x[D0,T6,K1] + r[T6] <= 1.0001052836601483e+06
- c18[D0,T6,K2]: 1e+06 x[D0,T6,K2] + r[T6] <= 1.0001052836601483e+06
- c18[D0,T7,K0]: 1e+06 x[D0,T7,K0] + r[T7] <= 1.0001022562251091e+06
- c18[D0,T7,K1]: 1e+06 x[D0,T7,K1] + r[T7] <= 1.0001022562251091e+06
- c18[D0,T7,K2]: 1e+06 x[D0,T7,K2] + r[T7] <= 1.0001022562251091e+06
- c18[D0,T8,K0]: 1e+06 x[D0,T8,K0] + r[T8] <= 1.0000660334846717e+06
- c18[D0,T8,K1]: 1e+06 x[D0,T8,K1] + r[T8] <= 1.0000660334846717e+06
- c18[D0,T8,K2]: 1e+06 x[D0,T8,K2] + r[T8] <= 1.0000660334846717e+06
- c18[D0,T9,K0]: 1e+06 x[D0,T9,K0] + r[T9] <= 1.0000632296271358e+06
- c18[D0,T9,K1]: 1e+06 x[D0,T9,K1] + r[T9] <= 1.0000632296271358e+06
- c18[D0,T9,K2]: 1e+06 x[D0,T9,K2] + r[T9] <= 1.0000632296271358e+06
- c18[D0,T10,K0]: 1e+06 x[D0,T10,K0] + r[T10] <= 1.0001101702945922e+06
- c18[D0,T10,K1]: 1e+06 x[D0,T10,K1] + r[T10] <= 1.0001101702945922e+06
- c18[D0,T10,K2]: 1e+06 x[D0,T10,K2] + r[T10] <= 1.0001101702945922e+06
- c18[D0,T11,K0]: 1e+06 x[D0,T11,K0] + r[T11] <= 1.0001021153798907e+06
- c18[D0,T11,K1]: 1e+06 x[D0,T11,K1] + r[T11] <= 1.0001021153798907e+06
- c18[D0,T11,K2]: 1e+06 x[D0,T11,K2] + r[T11] <= 1.0001021153798907e+06
- c18[D1,T0,K0]: 1e+06 x[D1,T0,K0] + r[T0] <= 1.0000941706726542e+06
- c18[D1,T0,K1]: 1e+06 x[D1,T0,K1] + r[T0] <= 1.0000941706726542e+06
- c18[D1,T0,K2]: 1e+06 x[D1,T0,K2] + r[T0] <= 1.0000941706726542e+06
- c18[D1,T1,K0]: 1e+06 x[D1,T1,K0] + r[T1] <= 1.0000360838009788e+06
- c18[D1,T1,K1]: 1e+06 x[D1,T1,K1] + r[T1] <= 1.0000360838009788e+06
- c18[D1,T1,K2]: 1e+06 x[D1,T1,K2] + r[T1] <= 1.0000360838009788e+06
- c18[D1,T2,K0]: 1e+06 x[D1,T2,K0] + r[T2] <= 1.0000544288163503e+06
- c18[D1,T2,K1]: 1e+06 x[D1,T2,K1] + r[T2] <= 1.0000544288163503e+06
- c18[D1,T2,K2]: 1e+06 x[D1,T2,K2] + r[T2] <= 1.0000544288163503e+06
- c18[D1,T3,K0]: 1e+06 x[D1,T3,K0] + r[T3] <= 1.000079664897762e+06
- c18[D1,T3,K1]: 1e+06 x[D1,T3,K1] + r[T3] <= 1.000079664897762e+06
- c18[D1,T3,K2]: 1e+06 x[D1,T3,K2] + r[T3] <= 1.000079664897762e+06
- c18[D1,T4,K0]: 1e+06 x[D1,T4,K0] + r[T4] <= 1.0000223369361825e+06
- c18[D1,T4,K1]: 1e+06 x[D1,T4,K1] + r[T4] <= 1.0000223369361825e+06
- c18[D1,T4,K2]: 1e+06 x[D1,T4,K2] + r[T4] <= 1.0000223369361825e+06
- c18[D1,T5,K0]: 1e+06 x[D1,T5,K0] + r[T5] <= 1.0000845880061241e+06
- c18[D1,T5,K1]: 1e+06 x[D1,T5,K1] + r[T5] <= 1.0000845880061241e+06
- c18[D1,T5,K2]: 1e+06 x[D1,T5,K2] + r[T5] <= 1.0000845880061241e+06
- c18[D1,T6,K0]: 1e+06 x[D1,T6,K0] + r[T6] <= 1.0000669334505245e+06
- c18[D1,T6,K1]: 1e+06 x[D1,T6,K1] + r[T6] <= 1.0000669334505245e+06
- c18[D1,T6,K2]: 1e+06 x[D1,T6,K2] + r[T6] <= 1.0000669334505245e+06
- c18[D1,T7,K0]: 1e+06 x[D1,T7,K0] + r[T7] <= 1.0000638670542015e+06
- c18[D1,T7,K1]: 1e+06 x[D1,T7,K1] + r[T7] <= 1.0000638670542015e+06
- c18[D1,T7,K2]: 1e+06 x[D1,T7,K2] + r[T7] <= 1.0000638670542015e+06
- c18[D1,T8,K0]: 1e+06 x[D1,T8,K0] + r[T8] <= 1.0000636407276568e+06
- c18[D1,T8,K1]: 1e+06 x[D1,T8,K1] + r[T8] <= 1.0000636407276568e+06
- c18[D1,T8,K2]: 1e+06 x[D1,T8,K2] + r[T8] <= 1.0000636407276568e+06
- c18[D1,T9,K0]: 1e+06 x[D1,T9,K0] + r[T9] <= 1.0000813316940293e+06
- c18[D1,T9,K1]: 1e+06 x[D1,T9,K1] + r[T9] <= 1.0000813316940293e+06
- c18[D1,T9,K2]: 1e+06 x[D1,T9,K2] + r[T9] <= 1.0000813316940293e+06
- c18[D1,T10,K0]: 1e+06 x[D1,T10,K0] + r[T10] <= 1.0000659977197074e+06
- c18[D1,T10,K1]: 1e+06 x[D1,T10,K1] + r[T10] <= 1.0000659977197074e+06
- c18[D1,T10,K2]: 1e+06 x[D1,T10,K2] + r[T10] <= 1.0000659977197074e+06
- c18[D1,T11,K0]: 1e+06 x[D1,T11,K0] + r[T11] <= 1.0000651784934325e+06
- c18[D1,T11,K1]: 1e+06 x[D1,T11,K1] + r[T11] <= 1.0000651784934325e+06
- c18[D1,T11,K2]: 1e+06 x[D1,T11,K2] + r[T11] <= 1.0000651784934325e+06
- c18[D2,T0,K0]: 1e+06 x[D2,T0,K0] + r[T0] <= 1.0000711636147939e+06
- c18[D2,T0,K1]: 1e+06 x[D2,T0,K1] + r[T0] <= 1.0000711636147939e+06
- c18[D2,T0,K2]: 1e+06 x[D2,T0,K2] + r[T0] <= 1.0000711636147939e+06
- c18[D2,T1,K0]: 1e+06 x[D2,T1,K0] + r[T1] <= 1.0000943248707008e+06
- c18[D2,T1,K1]: 1e+06 x[D2,T1,K1] + r[T1] <= 1.0000943248707008e+06
- c18[D2,T1,K2]: 1e+06 x[D2,T1,K2] + r[T1] <= 1.0000943248707008e+06
- c18[D2,T2,K0]: 1e+06 x[D2,T2,K0] + r[T2] <= 1.0001077003225297e+06
- c18[D2,T2,K1]: 1e+06 x[D2,T2,K1] + r[T2] <= 1.0001077003225297e+06
- c18[D2,T2,K2]: 1e+06 x[D2,T2,K2] + r[T2] <= 1.0001077003225297e+06
- c18[D2,T3,K0]: 1e+06 x[D2,T3,K0] + r[T3] <= 1.0000488758402467e+06
- c18[D2,T3,K1]: 1e+06 x[D2,T3,K1] + r[T3] <= 1.0000488758402467e+06
- c18[D2,T3,K2]: 1e+06 x[D2,T3,K2] + r[T3] <= 1.0000488758402467e+06
- c18[D2,T4,K0]: 1e+06 x[D2,T4,K0] + r[T4] <= 1.000094517536274e+06
- c18[D2,T4,K1]: 1e+06 x[D2,T4,K1] + r[T4] <= 1.000094517536274e+06
- c18[D2,T4,K2]: 1e+06 x[D2,T4,K2] + r[T4] <= 1.000094517536274e+06
- c18[D2,T5,K0]: 1e+06 x[D2,T5,K0] + r[T5] <= 1.0000695688803624e+06
- c18[D2,T5,K1]: 1e+06 x[D2,T5,K1] + r[T5] <= 1.0000695688803624e+06
- c18[D2,T5,K2]: 1e+06 x[D2,T5,K2] + r[T5] <= 1.0000695688803624e+06
- c18[D2,T6,K0]: 1e+06 x[D2,T6,K0] + r[T6] <= 1.0000758158907337e+06
- c18[D2,T6,K1]: 1e+06 x[D2,T6,K1] + r[T6] <= 1.0000758158907337e+06
- c18[D2,T6,K2]: 1e+06 x[D2,T6,K2] + r[T6] <= 1.0000758158907337e+06
- c18[D2,T7,K0]: 1e+06 x[D2,T7,K0] + r[T7] <= 1.0001042090003376e+06
- c18[D2,T7,K1]: 1e+06 x[D2,T7,K1] + r[T7] <= 1.0001042090003376e+06
- c18[D2,T7,K2]: 1e+06 x[D2,T7,K2] + r[T7] <= 1.0001042090003376e+06
- c18[D2,T8,K0]: 1e+06 x[D2,T8,K0] + r[T8] <= 1.0000940743567238e+06
- c18[D2,T8,K1]: 1e+06 x[D2,T8,K1] + r[T8] <= 1.0000940743567238e+06
- c18[D2,T8,K2]: 1e+06 x[D2,T8,K2] + r[T8] <= 1.0000940743567238e+06
- c18[D2,T9,K0]: 1e+06 x[D2,T9,K0] + r[T9] <= 1.000081143535129e+06
- c18[D2,T9,K1]: 1e+06 x[D2,T9,K1] + r[T9] <= 1.000081143535129e+06
- c18[D2,T9,K2]: 1e+06 x[D2,T9,K2] + r[T9] <= 1.000081143535129e+06
- c18[D2,T10,K0]: 1e+06 x[D2,T10,K0] + r[T10] <= 1.0000829204353073e+06
- c18[D2,T10,K1]: 1e+06 x[D2,T10,K1] + r[T10] <= 1.0000829204353073e+06
- c18[D2,T10,K2]: 1e+06 x[D2,T10,K2] + r[T10] <= 1.0000829204353073e+06
- c18[D2,T11,K0]: 1e+06 x[D2,T11,K0] + r[T11] <= 1.0001030049337065e+06
- c18[D2,T11,K1]: 1e+06 x[D2,T11,K1] + r[T11] <= 1.0001030049337065e+06
- c18[D2,T11,K2]: 1e+06 x[D2,T11,K2] + r[T11] <= 1.0001030049337065e+06
- c18[S0,T0,K0]: 1e+06 x[S0,T0,K0] + r[T0] <= 1.0000826917476519e+06
- c18[S0,T0,K1]: 1e+06 x[S0,T0,K1] + r[T0] <= 1.0000826917476519e+06
- c18[S0,T0,K2]: 1e+06 x[S0,T0,K2] + r[T0] <= 1.0000826917476519e+06
- c18[S0,T1,K0]: 1e+06 x[S0,T1,K0] + r[T1] <= 1.0000574359439602e+06
- c18[S0,T1,K1]: 1e+06 x[S0,T1,K1] + r[T1] <= 1.0000574359439602e+06
- c18[S0,T1,K2]: 1e+06 x[S0,T1,K2] + r[T1] <= 1.0000574359439602e+06
- c18[S0,T2,K0]: 1e+06 x[S0,T2,K0] + r[T2] <= 1.0001051089962954e+06
- c18[S0,T2,K1]: 1e+06 x[S0,T2,K1] + r[T2] <= 1.0001051089962954e+06
- c18[S0,T2,K2]: 1e+06 x[S0,T2,K2] + r[T2] <= 1.0001051089962954e+06
- c18[S0,T3,K0]: 1e+06 x[S0,T3,K0] + r[T3] <= 1.0000322295678237e+06
- c18[S0,T3,K1]: 1e+06 x[S0,T3,K1] + r[T3] <= 1.0000322295678237e+06
- c18[S0,T3,K2]: 1e+06 x[S0,T3,K2] + r[T3] <= 1.0000322295678237e+06
- c18[S0,T4,K0]: 1e+06 x[S0,T4,K0] + r[T4] <= 1.000084340864426e+06
- c18[S0,T4,K1]: 1e+06 x[S0,T4,K1] + r[T4] <= 1.000084340864426e+06
- c18[S0,T4,K2]: 1e+06 x[S0,T4,K2] + r[T4] <= 1.000084340864426e+06
- c18[S0,T5,K0]: 1e+06 x[S0,T5,K0] + r[T5] <= 1.0000527272831148e+06
- c18[S0,T5,K1]: 1e+06 x[S0,T5,K1] + r[T5] <= 1.0000527272831148e+06
- c18[S0,T5,K2]: 1e+06 x[S0,T5,K2] + r[T5] <= 1.0000527272831148e+06
- c18[S0,T6,K0]: 1e+06 x[S0,T6,K0] + r[T6] <= 1.0001052836601483e+06
- c18[S0,T6,K1]: 1e+06 x[S0,T6,K1] + r[T6] <= 1.0001052836601483e+06
- c18[S0,T6,K2]: 1e+06 x[S0,T6,K2] + r[T6] <= 1.0001052836601483e+06
- c18[S0,T7,K0]: 1e+06 x[S0,T7,K0] + r[T7] <= 1.0001022562251091e+06
- c18[S0,T7,K1]: 1e+06 x[S0,T7,K1] + r[T7] <= 1.0001022562251091e+06
- c18[S0,T7,K2]: 1e+06 x[S0,T7,K2] + r[T7] <= 1.0001022562251091e+06
- c18[S0,T8,K0]: 1e+06 x[S0,T8,K0] + r[T8] <= 1.0000660334846717e+06
- c18[S0,T8,K1]: 1e+06 x[S0,T8,K1] + r[T8] <= 1.0000660334846717e+06
- c18[S0,T8,K2]: 1e+06 x[S0,T8,K2] + r[T8] <= 1.0000660334846717e+06
- c18[S0,T9,K0]: 1e+06 x[S0,T9,K0] + r[T9] <= 1.0000632296271358e+06
- c18[S0,T9,K1]: 1e+06 x[S0,T9,K1] + r[T9] <= 1.0000632296271358e+06
- c18[S0,T9,K2]: 1e+06 x[S0,T9,K2] + r[T9] <= 1.0000632296271358e+06
- c18[S0,T10,K0]: 1e+06 x[S0,T10,K0] + r[T10] <= 1.0001101702945922e+06
- c18[S0,T10,K1]: 1e+06 x[S0,T10,K1] + r[T10] <= 1.0001101702945922e+06
- c18[S0,T10,K2]: 1e+06 x[S0,T10,K2] + r[T10] <= 1.0001101702945922e+06
- c18[S0,T11,K0]: 1e+06 x[S0,T11,K0] + r[T11] <= 1.0001021153798907e+06
- c18[S0,T11,K1]: 1e+06 x[S0,T11,K1] + r[T11] <= 1.0001021153798907e+06
- c18[S0,T11,K2]: 1e+06 x[S0,T11,K2] + r[T11] <= 1.0001021153798907e+06
- c17[D0,T0,K0]: - 1e+06 x[D0,T0,K0] + r[T0] >= -999917.3082523481
- c17[D0,T0,K1]: - 1e+06 x[D0,T0,K1] + r[T0] >= -999917.3082523481
- c17[D0,T0,K2]: - 1e+06 x[D0,T0,K2] + r[T0] >= -999917.3082523481
- c17[D0,T1,K0]: - 1e+06 x[D0,T1,K0] + r[T1] >= -999942.5640560398
- c17[D0,T1,K1]: - 1e+06 x[D0,T1,K1] + r[T1] >= -999942.5640560398
- c17[D0,T1,K2]: - 1e+06 x[D0,T1,K2] + r[T1] >= -999942.5640560398
- c17[D0,T2,K0]: - 1e+06 x[D0,T2,K0] + r[T2] >= -999894.8910037046
- c17[D0,T2,K1]: - 1e+06 x[D0,T2,K1] + r[T2] >= -999894.8910037046
- c17[D0,T2,K2]: - 1e+06 x[D0,T2,K2] + r[T2] >= -999894.8910037046
- c17[D0,T3,K0]: - 1e+06 x[D0,T3,K0] + r[T3] >= -999967.7704321763
- c17[D0,T3,K1]: - 1e+06 x[D0,T3,K1] + r[T3] >= -999967.7704321763
- c17[D0,T3,K2]: - 1e+06 x[D0,T3,K2] + r[T3] >= -999967.7704321763
- c17[D0,T4,K0]: - 1e+06 x[D0,T4,K0] + r[T4] >= -999915.659135574
- c17[D0,T4,K1]: - 1e+06 x[D0,T4,K1] + r[T4] >= -999915.659135574
- c17[D0,T4,K2]: - 1e+06 x[D0,T4,K2] + r[T4] >= -999915.659135574
- c17[D0,T5,K0]: - 1e+06 x[D0,T5,K0] + r[T5] >= -999947.2727168852
- c17[D0,T5,K1]: - 1e+06 x[D0,T5,K1] + r[T5] >= -999947.2727168852
- c17[D0,T5,K2]: - 1e+06 x[D0,T5,K2] + r[T5] >= -999947.2727168852
- c17[D0,T6,K0]: - 1e+06 x[D0,T6,K0] + r[T6] >= -999894.7163398517
- c17[D0,T6,K1]: - 1e+06 x[D0,T6,K1] + r[T6] >= -999894.7163398517
- c17[D0,T6,K2]: - 1e+06 x[D0,T6,K2] + r[T6] >= -999894.7163398517
- c17[D0,T7,K0]: - 1e+06 x[D0,T7,K0] + r[T7] >= -999897.7437748909
- c17[D0,T7,K1]: - 1e+06 x[D0,T7,K1] + r[T7] >= -999897.7437748909
- c17[D0,T7,K2]: - 1e+06 x[D0,T7,K2] + r[T7] >= -999897.7437748909
- c17[D0,T8,K0]: - 1e+06 x[D0,T8,K0] + r[T8] >= -999933.9665153283
- c17[D0,T8,K1]: - 1e+06 x[D0,T8,K1] + r[T8] >= -999933.9665153283
- c17[D0,T8,K2]: - 1e+06 x[D0,T8,K2] + r[T8] >= -999933.9665153283
- c17[D0,T9,K0]: - 1e+06 x[D0,T9,K0] + r[T9] >= -999936.7703728642
- c17[D0,T9,K1]: - 1e+06 x[D0,T9,K1] + r[T9] >= -999936.7703728642
- c17[D0,T9,K2]: - 1e+06 x[D0,T9,K2] + r[T9] >= -999936.7703728642
- c17[D0,T10,K0]: - 1e+06 x[D0,T10,K0] + r[T10] >= -999889.8297054078
- c17[D0,T10,K1]: - 1e+06 x[D0,T10,K1] + r[T10] >= -999889.8297054078
- c17[D0,T10,K2]: - 1e+06 x[D0,T10,K2] + r[T10] >= -999889.8297054078
- c17[D0,T11,K0]: - 1e+06 x[D0,T11,K0] + r[T11] >= -999897.8846201093
- c17[D0,T11,K1]: - 1e+06 x[D0,T11,K1] + r[T11] >= -999897.8846201093
- c17[D0,T11,K2]: - 1e+06 x[D0,T11,K2] + r[T11] >= -999897.8846201093
- c17[D1,T0,K0]: - 1e+06 x[D1,T0,K0] + r[T0] >= -999905.8293273458
- c17[D1,T0,K1]: - 1e+06 x[D1,T0,K1] + r[T0] >= -999905.8293273458
- c17[D1,T0,K2]: - 1e+06 x[D1,T0,K2] + r[T0] >= -999905.8293273458
- c17[D1,T1,K0]: - 1e+06 x[D1,T1,K0] + r[T1] >= -999963.9161990212
- c17[D1,T1,K1]: - 1e+06 x[D1,T1,K1] + r[T1] >= -999963.9161990212
- c17[D1,T1,K2]: - 1e+06 x[D1,T1,K2] + r[T1] >= -999963.9161990212
- c17[D1,T2,K0]: - 1e+06 x[D1,T2,K0] + r[T2] >= -999945.5711836497
- c17[D1,T2,K1]: - 1e+06 x[D1,T2,K1] + r[T2] >= -999945.5711836497
- c17[D1,T2,K2]: - 1e+06 x[D1,T2,K2] + r[T2] >= -999945.5711836497
- c17[D1,T3,K0]: - 1e+06 x[D1,T3,K0] + r[T3] >= -999920.335102238
- c17[D1,T3,K1]: - 1e+06 x[D1,T3,K1] + r[T3] >= -999920.335102238
- c17[D1,T3,K2]: - 1e+06 x[D1,T3,K2] + r[T3] >= -999920.335102238
- c17[D1,T4,K0]: - 1e+06 x[D1,T4,K0] + r[T4] >= -999977.6630638175
- c17[D1,T4,K1]: - 1e+06 x[D1,T4,K1] + r[T4] >= -999977.6630638175
- c17[D1,T4,K2]: - 1e+06 x[D1,T4,K2] + r[T4] >= -999977.6630638175
- c17[D1,T5,K0]: - 1e+06 x[D1,T5,K0] + r[T5] >= -999915.4119938759
- c17[D1,T5,K1]: - 1e+06 x[D1,T5,K1] + r[T5] >= -999915.4119938759
- c17[D1,T5,K2]: - 1e+06 x[D1,T5,K2] + r[T5] >= -999915.4119938759
- c17[D1,T6,K0]: - 1e+06 x[D1,T6,K0] + r[T6] >= -999933.0665494755
- c17[D1,T6,K1]: - 1e+06 x[D1,T6,K1] + r[T6] >= -999933.0665494755
- c17[D1,T6,K2]: - 1e+06 x[D1,T6,K2] + r[T6] >= -999933.0665494755
- c17[D1,T7,K0]: - 1e+06 x[D1,T7,K0] + r[T7] >= -999936.1329457985
- c17[D1,T7,K1]: - 1e+06 x[D1,T7,K1] + r[T7] >= -999936.1329457985
- c17[D1,T7,K2]: - 1e+06 x[D1,T7,K2] + r[T7] >= -999936.1329457985
- c17[D1,T8,K0]: - 1e+06 x[D1,T8,K0] + r[T8] >= -999936.3592723432
- c17[D1,T8,K1]: - 1e+06 x[D1,T8,K1] + r[T8] >= -999936.3592723432
- c17[D1,T8,K2]: - 1e+06 x[D1,T8,K2] + r[T8] >= -999936.3592723432
- c17[D1,T9,K0]: - 1e+06 x[D1,T9,K0] + r[T9] >= -999918.6683059707
- c17[D1,T9,K1]: - 1e+06 x[D1,T9,K1] + r[T9] >= -999918.6683059707
- c17[D1,T9,K2]: - 1e+06 x[D1,T9,K2] + r[T9] >= -999918.6683059707
- c17[D1,T10,K0]: - 1e+06 x[D1,T10,K0] + r[T10] >= -999934.0022802926
- c17[D1,T10,K1]: - 1e+06 x[D1,T10,K1] + r[T10] >= -999934.0022802926
- c17[D1,T10,K2]: - 1e+06 x[D1,T10,K2] + r[T10] >= -999934.0022802926
- c17[D1,T11,K0]: - 1e+06 x[D1,T11,K0] + r[T11] >= -999934.8215065675
- c17[D1,T11,K1]: - 1e+06 x[D1,T11,K1] + r[T11] >= -999934.8215065675
- c17[D1,T11,K2]: - 1e+06 x[D1,T11,K2] + r[T11] >= -999934.8215065675
- c17[D2,T0,K0]: - 1e+06 x[D2,T0,K0] + r[T0] >= -999928.8363852061
- c17[D2,T0,K1]: - 1e+06 x[D2,T0,K1] + r[T0] >= -999928.8363852061
- c17[D2,T0,K2]: - 1e+06 x[D2,T0,K2] + r[T0] >= -999928.8363852061
- c17[D2,T1,K0]: - 1e+06 x[D2,T1,K0] + r[T1] >= -999905.6751292992
- c17[D2,T1,K1]: - 1e+06 x[D2,T1,K1] + r[T1] >= -999905.6751292992
- c17[D2,T1,K2]: - 1e+06 x[D2,T1,K2] + r[T1] >= -999905.6751292992
- c17[D2,T2,K0]: - 1e+06 x[D2,T2,K0] + r[T2] >= -999892.2996774704
- c17[D2,T2,K1]: - 1e+06 x[D2,T2,K1] + r[T2] >= -999892.2996774704
- c17[D2,T2,K2]: - 1e+06 x[D2,T2,K2] + r[T2] >= -999892.2996774704
- c17[D2,T3,K0]: - 1e+06 x[D2,T3,K0] + r[T3] >= -999951.1241597533
- c17[D2,T3,K1]: - 1e+06 x[D2,T3,K1] + r[T3] >= -999951.1241597533
- c17[D2,T3,K2]: - 1e+06 x[D2,T3,K2] + r[T3] >= -999951.1241597533
- c17[D2,T4,K0]: - 1e+06 x[D2,T4,K0] + r[T4] >= -999905.482463726
- c17[D2,T4,K1]: - 1e+06 x[D2,T4,K1] + r[T4] >= -999905.482463726
- c17[D2,T4,K2]: - 1e+06 x[D2,T4,K2] + r[T4] >= -999905.482463726
- c17[D2,T5,K0]: - 1e+06 x[D2,T5,K0] + r[T5] >= -999930.4311196376
- c17[D2,T5,K1]: - 1e+06 x[D2,T5,K1] + r[T5] >= -999930.4311196376
- c17[D2,T5,K2]: - 1e+06 x[D2,T5,K2] + r[T5] >= -999930.4311196376
- c17[D2,T6,K0]: - 1e+06 x[D2,T6,K0] + r[T6] >= -999924.1841092663
- c17[D2,T6,K1]: - 1e+06 x[D2,T6,K1] + r[T6] >= -999924.1841092663
- c17[D2,T6,K2]: - 1e+06 x[D2,T6,K2] + r[T6] >= -999924.1841092663
- c17[D2,T7,K0]: - 1e+06 x[D2,T7,K0] + r[T7] >= -999895.7909996624
- c17[D2,T7,K1]: - 1e+06 x[D2,T7,K1] + r[T7] >= -999895.7909996624
- c17[D2,T7,K2]: - 1e+06 x[D2,T7,K2] + r[T7] >= -999895.7909996624
- c17[D2,T8,K0]: - 1e+06 x[D2,T8,K0] + r[T8] >= -999905.9256432762
- c17[D2,T8,K1]: - 1e+06 x[D2,T8,K1] + r[T8] >= -999905.9256432762
- c17[D2,T8,K2]: - 1e+06 x[D2,T8,K2] + r[T8] >= -999905.9256432762
- c17[D2,T9,K0]: - 1e+06 x[D2,T9,K0] + r[T9] >= -999918.856464871
- c17[D2,T9,K1]: - 1e+06 x[D2,T9,K1] + r[T9] >= -999918.856464871
- c17[D2,T9,K2]: - 1e+06 x[D2,T9,K2] + r[T9] >= -999918.856464871
- c17[D2,T10,K0]: - 1e+06 x[D2,T10,K0] + r[T10] >= -999917.0795646927
- c17[D2,T10,K1]: - 1e+06 x[D2,T10,K1] + r[T10] >= -999917.0795646927
- c17[D2,T10,K2]: - 1e+06 x[D2,T10,K2] + r[T10] >= -999917.0795646927
- c17[D2,T11,K0]: - 1e+06 x[D2,T11,K0] + r[T11] >= -999896.9950662935
- c17[D2,T11,K1]: - 1e+06 x[D2,T11,K1] + r[T11] >= -999896.9950662935
- c17[D2,T11,K2]: - 1e+06 x[D2,T11,K2] + r[T11] >= -999896.9950662935
- c17[S0,T0,K0]: - 1e+06 x[S0,T0,K0] + r[T0] >= -999917.3082523481
- c17[S0,T0,K1]: - 1e+06 x[S0,T0,K1] + r[T0] >= -999917.3082523481
- c17[S0,T0,K2]: - 1e+06 x[S0,T0,K2] + r[T0] >= -999917.3082523481
- c17[S0,T1,K0]: - 1e+06 x[S0,T1,K0] + r[T1] >= -999942.5640560398
- c17[S0,T1,K1]: - 1e+06 x[S0,T1,K1] + r[T1] >= -999942.5640560398
- c17[S0,T1,K2]: - 1e+06 x[S0,T1,K2] + r[T1] >= -999942.5640560398
- c17[S0,T2,K0]: - 1e+06 x[S0,T2,K0] + r[T2] >= -999894.8910037046
- c17[S0,T2,K1]: - 1e+06 x[S0,T2,K1] + r[T2] >= -999894.8910037046
- c17[S0,T2,K2]: - 1e+06 x[S0,T2,K2] + r[T2] >= -999894.8910037046
- c17[S0,T3,K0]: - 1e+06 x[S0,T3,K0] + r[T3] >= -999967.7704321763
- c17[S0,T3,K1]: - 1e+06 x[S0,T3,K1] + r[T3] >= -999967.7704321763
- c17[S0,T3,K2]: - 1e+06 x[S0,T3,K2] + r[T3] >= -999967.7704321763
- c17[S0,T4,K0]: - 1e+06 x[S0,T4,K0] + r[T4] >= -999915.659135574
- c17[S0,T4,K1]: - 1e+06 x[S0,T4,K1] + r[T4] >= -999915.659135574
- c17[S0,T4,K2]: - 1e+06 x[S0,T4,K2] + r[T4] >= -999915.659135574
- c17[S0,T5,K0]: - 1e+06 x[S0,T5,K0] + r[T5] >= -999947.2727168852
- c17[S0,T5,K1]: - 1e+06 x[S0,T5,K1] + r[T5] >= -999947.2727168852
- c17[S0,T5,K2]: - 1e+06 x[S0,T5,K2] + r[T5] >= -999947.2727168852
- c17[S0,T6,K0]: - 1e+06 x[S0,T6,K0] + r[T6] >= -999894.7163398517
- c17[S0,T6,K1]: - 1e+06 x[S0,T6,K1] + r[T6] >= -999894.7163398517
- c17[S0,T6,K2]: - 1e+06 x[S0,T6,K2] + r[T6] >= -999894.7163398517
- c17[S0,T7,K0]: - 1e+06 x[S0,T7,K0] + r[T7] >= -999897.7437748909
- c17[S0,T7,K1]: - 1e+06 x[S0,T7,K1] + r[T7] >= -999897.7437748909
- c17[S0,T7,K2]: - 1e+06 x[S0,T7,K2] + r[T7] >= -999897.7437748909
- c17[S0,T8,K0]: - 1e+06 x[S0,T8,K0] + r[T8] >= -999933.9665153283
- c17[S0,T8,K1]: - 1e+06 x[S0,T8,K1] + r[T8] >= -999933.9665153283
- c17[S0,T8,K2]: - 1e+06 x[S0,T8,K2] + r[T8] >= -999933.9665153283
- c17[S0,T9,K0]: - 1e+06 x[S0,T9,K0] + r[T9] >= -999936.7703728642
- c17[S0,T9,K1]: - 1e+06 x[S0,T9,K1] + r[T9] >= -999936.7703728642
- c17[S0,T9,K2]: - 1e+06 x[S0,T9,K2] + r[T9] >= -999936.7703728642
- c17[S0,T10,K0]: - 1e+06 x[S0,T10,K0] + r[T10] >= -999889.8297054078
- c17[S0,T10,K1]: - 1e+06 x[S0,T10,K1] + r[T10] >= -999889.8297054078
- c17[S0,T10,K2]: - 1e+06 x[S0,T10,K2] + r[T10] >= -999889.8297054078
- c17[S0,T11,K0]: - 1e+06 x[S0,T11,K0] + r[T11] >= -999897.8846201093
- c17[S0,T11,K1]: - 1e+06 x[S0,T11,K1] + r[T11] >= -999897.8846201093
- c17[S0,T11,K2]: - 1e+06 x[S0,T11,K2] + r[T11] >= -999897.8846201093
- c19[T0,D0,K0]: - 1e+06 x[T0,D0,K0] + r[T0] >= -999957.6917476519
- c19[T0,D0,K1]: - 1e+06 x[T0,D0,K1] + r[T0] >= -999957.6917476519
- c19[T0,D0,K2]: - 1e+06 x[T0,D0,K2] + r[T0] >= -999957.6917476519
- c19[T0,D1,K0]: - 1e+06 x[T0,D1,K0] + r[T0] >= -999969.1706726542
- c19[T0,D1,K1]: - 1e+06 x[T0,D1,K1] + r[T0] >= -999969.1706726542
- c19[T0,D1,K2]: - 1e+06 x[T0,D1,K2] + r[T0] >= -999969.1706726542
- c19[T0,D2,K0]: - 1e+06 x[T0,D2,K0] + r[T0] >= -999946.1636147939
- c19[T0,D2,K1]: - 1e+06 x[T0,D2,K1] + r[T0] >= -999946.1636147939
- c19[T0,D2,K2]: - 1e+06 x[T0,D2,K2] + r[T0] >= -999946.1636147939
- c19[T0,E0,K0]: - 1e+06 x[T0,E0,K0] + r[T0] >= -999957.6917476519
- c19[T0,E0,K1]: - 1e+06 x[T0,E0,K1] + r[T0] >= -999957.6917476519
- c19[T0,E0,K2]: - 1e+06 x[T0,E0,K2] + r[T0] >= -999957.6917476519
- c19[T1,D0,K0]: - 1e+06 x[T1,D0,K0] + r[T1] >= -999932.4359439602
- c19[T1,D0,K1]: - 1e+06 x[T1,D0,K1] + r[T1] >= -999932.4359439602
- c19[T1,D0,K2]: - 1e+06 x[T1,D0,K2] + r[T1] >= -999932.4359439602
- c19[T1,D1,K0]: - 1e+06 x[T1,D1,K0] + r[T1] >= -999911.0838009788
- c19[T1,D1,K1]: - 1e+06 x[T1,D1,K1] + r[T1] >= -999911.0838009788
- c19[T1,D1,K2]: - 1e+06 x[T1,D1,K2] + r[T1] >= -999911.0838009788
- c19[T1,D2,K0]: - 1e+06 x[T1,D2,K0] + r[T1] >= -999969.3248707008
- c19[T1,D2,K1]: - 1e+06 x[T1,D2,K1] + r[T1] >= -999969.3248707008
- c19[T1,D2,K2]: - 1e+06 x[T1,D2,K2] + r[T1] >= -999969.3248707008
- c19[T1,E0,K0]: - 1e+06 x[T1,E0,K0] + r[T1] >= -999932.4359439602
- c19[T1,E0,K1]: - 1e+06 x[T1,E0,K1] + r[T1] >= -999932.4359439602
- c19[T1,E0,K2]: - 1e+06 x[T1,E0,K2] + r[T1] >= -999932.4359439602
- c19[T2,D0,K0]: - 1e+06 x[T2,D0,K0] + r[T2] >= -999980.1089962954
- c19[T2,D0,K1]: - 1e+06 x[T2,D0,K1] + r[T2] >= -999980.1089962954
- c19[T2,D0,K2]: - 1e+06 x[T2,D0,K2] + r[T2] >= -999980.1089962954
- c19[T2,D1,K0]: - 1e+06 x[T2,D1,K0] + r[T2] >= -999929.4288163503
- c19[T2,D1,K1]: - 1e+06 x[T2,D1,K1] + r[T2] >= -999929.4288163503
- c19[T2,D1,K2]: - 1e+06 x[T2,D1,K2] + r[T2] >= -999929.4288163503
- c19[T2,D2,K0]: - 1e+06 x[T2,D2,K0] + r[T2] >= -999982.7003225297
- c19[T2,D2,K1]: - 1e+06 x[T2,D2,K1] + r[T2] >= -999982.7003225297
- c19[T2,D2,K2]: - 1e+06 x[T2,D2,K2] + r[T2] >= -999982.7003225297
- c19[T2,E0,K0]: - 1e+06 x[T2,E0,K0] + r[T2] >= -999980.1089962954
- c19[T2,E0,K1]: - 1e+06 x[T2,E0,K1] + r[T2] >= -999980.1089962954
- c19[T2,E0,K2]: - 1e+06 x[T2,E0,K2] + r[T2] >= -999980.1089962954
- c19[T3,D0,K0]: - 1e+06 x[T3,D0,K0] + r[T3] >= -999907.2295678237
- c19[T3,D0,K1]: - 1e+06 x[T3,D0,K1] + r[T3] >= -999907.2295678237
- c19[T3,D0,K2]: - 1e+06 x[T3,D0,K2] + r[T3] >= -999907.2295678237
- c19[T3,D1,K0]: - 1e+06 x[T3,D1,K0] + r[T3] >= -999954.664897762
- c19[T3,D1,K1]: - 1e+06 x[T3,D1,K1] + r[T3] >= -999954.664897762
- c19[T3,D1,K2]: - 1e+06 x[T3,D1,K2] + r[T3] >= -999954.664897762
- c19[T3,D2,K0]: - 1e+06 x[T3,D2,K0] + r[T3] >= -999923.8758402467
- c19[T3,D2,K1]: - 1e+06 x[T3,D2,K1] + r[T3] >= -999923.8758402467
- c19[T3,D2,K2]: - 1e+06 x[T3,D2,K2] + r[T3] >= -999923.8758402467
- c19[T3,E0,K0]: - 1e+06 x[T3,E0,K0] + r[T3] >= -999907.2295678237
- c19[T3,E0,K1]: - 1e+06 x[T3,E0,K1] + r[T3] >= -999907.2295678237
- c19[T3,E0,K2]: - 1e+06 x[T3,E0,K2] + r[T3] >= -999907.2295678237
- c19[T4,D0,K0]: - 1e+06 x[T4,D0,K0] + r[T4] >= -999959.340864426
- c19[T4,D0,K1]: - 1e+06 x[T4,D0,K1] + r[T4] >= -999959.340864426
- c19[T4,D0,K2]: - 1e+06 x[T4,D0,K2] + r[T4] >= -999959.340864426
- c19[T4,D1,K0]: - 1e+06 x[T4,D1,K0] + r[T4] >= -999897.3369361825
- c19[T4,D1,K1]: - 1e+06 x[T4,D1,K1] + r[T4] >= -999897.3369361825
- c19[T4,D1,K2]: - 1e+06 x[T4,D1,K2] + r[T4] >= -999897.3369361825
- c19[T4,D2,K0]: - 1e+06 x[T4,D2,K0] + r[T4] >= -999969.517536274
- c19[T4,D2,K1]: - 1e+06 x[T4,D2,K1] + r[T4] >= -999969.517536274
- c19[T4,D2,K2]: - 1e+06 x[T4,D2,K2] + r[T4] >= -999969.517536274
- c19[T4,E0,K0]: - 1e+06 x[T4,E0,K0] + r[T4] >= -999959.340864426
- c19[T4,E0,K1]: - 1e+06 x[T4,E0,K1] + r[T4] >= -999959.340864426
- c19[T4,E0,K2]: - 1e+06 x[T4,E0,K2] + r[T4] >= -999959.340864426
- c19[T5,D0,K0]: - 1e+06 x[T5,D0,K0] + r[T5] >= -999927.7272831148
- c19[T5,D0,K1]: - 1e+06 x[T5,D0,K1] + r[T5] >= -999927.7272831148
- c19[T5,D0,K2]: - 1e+06 x[T5,D0,K2] + r[T5] >= -999927.7272831148
- c19[T5,D1,K0]: - 1e+06 x[T5,D1,K0] + r[T5] >= -999959.5880061241
- c19[T5,D1,K1]: - 1e+06 x[T5,D1,K1] + r[T5] >= -999959.5880061241
- c19[T5,D1,K2]: - 1e+06 x[T5,D1,K2] + r[T5] >= -999959.5880061241
- c19[T5,D2,K0]: - 1e+06 x[T5,D2,K0] + r[T5] >= -999944.5688803624
- c19[T5,D2,K1]: - 1e+06 x[T5,D2,K1] + r[T5] >= -999944.5688803624
- c19[T5,D2,K2]: - 1e+06 x[T5,D2,K2] + r[T5] >= -999944.5688803624
- c19[T5,E0,K0]: - 1e+06 x[T5,E0,K0] + r[T5] >= -999927.7272831148
- c19[T5,E0,K1]: - 1e+06 x[T5,E0,K1] + r[T5] >= -999927.7272831148
- c19[T5,E0,K2]: - 1e+06 x[T5,E0,K2] + r[T5] >= -999927.7272831148
- c19[T6,D0,K0]: - 1e+06 x[T6,D0,K0] + r[T6] >= -999980.2836601483
- c19[T6,D0,K1]: - 1e+06 x[T6,D0,K1] + r[T6] >= -999980.2836601483
- c19[T6,D0,K2]: - 1e+06 x[T6,D0,K2] + r[T6] >= -999980.2836601483
- c19[T6,D1,K0]: - 1e+06 x[T6,D1,K0] + r[T6] >= -999941.9334505245
- c19[T6,D1,K1]: - 1e+06 x[T6,D1,K1] + r[T6] >= -999941.9334505245
- c19[T6,D1,K2]: - 1e+06 x[T6,D1,K2] + r[T6] >= -999941.9334505245
- c19[T6,D2,K0]: - 1e+06 x[T6,D2,K0] + r[T6] >= -999950.8158907337
- c19[T6,D2,K1]: - 1e+06 x[T6,D2,K1] + r[T6] >= -999950.8158907337
- c19[T6,D2,K2]: - 1e+06 x[T6,D2,K2] + r[T6] >= -999950.8158907337
- c19[T6,E0,K0]: - 1e+06 x[T6,E0,K0] + r[T6] >= -999980.2836601483
- c19[T6,E0,K1]: - 1e+06 x[T6,E0,K1] + r[T6] >= -999980.2836601483
- c19[T6,E0,K2]: - 1e+06 x[T6,E0,K2] + r[T6] >= -999980.2836601483
- c19[T7,D0,K0]: - 1e+06 x[T7,D0,K0] + r[T7] >= -999977.2562251091
- c19[T7,D0,K1]: - 1e+06 x[T7,D0,K1] + r[T7] >= -999977.2562251091
- c19[T7,D0,K2]: - 1e+06 x[T7,D0,K2] + r[T7] >= -999977.2562251091
- c19[T7,D1,K0]: - 1e+06 x[T7,D1,K0] + r[T7] >= -999938.8670542016
- c19[T7,D1,K1]: - 1e+06 x[T7,D1,K1] + r[T7] >= -999938.8670542016
- c19[T7,D1,K2]: - 1e+06 x[T7,D1,K2] + r[T7] >= -999938.8670542016
- c19[T7,D2,K0]: - 1e+06 x[T7,D2,K0] + r[T7] >= -999979.2090003376
- c19[T7,D2,K1]: - 1e+06 x[T7,D2,K1] + r[T7] >= -999979.2090003376
- c19[T7,D2,K2]: - 1e+06 x[T7,D2,K2] + r[T7] >= -999979.2090003376
- c19[T7,E0,K0]: - 1e+06 x[T7,E0,K0] + r[T7] >= -999977.2562251091
- c19[T7,E0,K1]: - 1e+06 x[T7,E0,K1] + r[T7] >= -999977.2562251091
- c19[T7,E0,K2]: - 1e+06 x[T7,E0,K2] + r[T7] >= -999977.2562251091
- c19[T8,D0,K0]: - 1e+06 x[T8,D0,K0] + r[T8] >= -999941.0334846717
- c19[T8,D0,K1]: - 1e+06 x[T8,D0,K1] + r[T8] >= -999941.0334846717
- c19[T8,D0,K2]: - 1e+06 x[T8,D0,K2] + r[T8] >= -999941.0334846717
- c19[T8,D1,K0]: - 1e+06 x[T8,D1,K0] + r[T8] >= -999938.6407276568
- c19[T8,D1,K1]: - 1e+06 x[T8,D1,K1] + r[T8] >= -999938.6407276568
- c19[T8,D1,K2]: - 1e+06 x[T8,D1,K2] + r[T8] >= -999938.6407276568
- c19[T8,D2,K0]: - 1e+06 x[T8,D2,K0] + r[T8] >= -999969.0743567238
- c19[T8,D2,K1]: - 1e+06 x[T8,D2,K1] + r[T8] >= -999969.0743567238
- c19[T8,D2,K2]: - 1e+06 x[T8,D2,K2] + r[T8] >= -999969.0743567238
- c19[T8,E0,K0]: - 1e+06 x[T8,E0,K0] + r[T8] >= -999941.0334846717
- c19[T8,E0,K1]: - 1e+06 x[T8,E0,K1] + r[T8] >= -999941.0334846717
- c19[T8,E0,K2]: - 1e+06 x[T8,E0,K2] + r[T8] >= -999941.0334846717
- c19[T9,D0,K0]: - 1e+06 x[T9,D0,K0] + r[T9] >= -999938.2296271358
- c19[T9,D0,K1]: - 1e+06 x[T9,D0,K1] + r[T9] >= -999938.2296271358
- c19[T9,D0,K2]: - 1e+06 x[T9,D0,K2] + r[T9] >= -999938.2296271358
- c19[T9,D1,K0]: - 1e+06 x[T9,D1,K0] + r[T9] >= -999956.3316940293
- c19[T9,D1,K1]: - 1e+06 x[T9,D1,K1] + r[T9] >= -999956.3316940293
- c19[T9,D1,K2]: - 1e+06 x[T9,D1,K2] + r[T9] >= -999956.3316940293
- c19[T9,D2,K0]: - 1e+06 x[T9,D2,K0] + r[T9] >= -999956.143535129
- c19[T9,D2,K1]: - 1e+06 x[T9,D2,K1] + r[T9] >= -999956.143535129
- c19[T9,D2,K2]: - 1e+06 x[T9,D2,K2] + r[T9] >= -999956.143535129
- c19[T9,E0,K0]: - 1e+06 x[T9,E0,K0] + r[T9] >= -999938.2296271358
- c19[T9,E0,K1]: - 1e+06 x[T9,E0,K1] + r[T9] >= -999938.2296271358
- c19[T9,E0,K2]: - 1e+06 x[T9,E0,K2] + r[T9] >= -999938.2296271358
- c19[T10,D0,K0]: - 1e+06 x[T10,D0,K0] + r[T10] >= -999985.1702945922
- c19[T10,D0,K1]: - 1e+06 x[T10,D0,K1] + r[T10] >= -999985.1702945922
- c19[T10,D0,K2]: - 1e+06 x[T10,D0,K2] + r[T10] >= -999985.1702945922
- c19[T10,D1,K0]: - 1e+06 x[T10,D1,K0] + r[T10] >= -999940.9977197074
- c19[T10,D1,K1]: - 1e+06 x[T10,D1,K1] + r[T10] >= -999940.9977197074
- c19[T10,D1,K2]: - 1e+06 x[T10,D1,K2] + r[T10] >= -999940.9977197074
- c19[T10,D2,K0]: - 1e+06 x[T10,D2,K0] + r[T10] >= -999957.9204353073
- c19[T10,D2,K1]: - 1e+06 x[T10,D2,K1] + r[T10] >= -999957.9204353073
- c19[T10,D2,K2]: - 1e+06 x[T10,D2,K2] + r[T10] >= -999957.9204353073
- c19[T10,E0,K0]: - 1e+06 x[T10,E0,K0] + r[T10] >= -999985.1702945922
- c19[T10,E0,K1]: - 1e+06 x[T10,E0,K1] + r[T10] >= -999985.1702945922
- c19[T10,E0,K2]: - 1e+06 x[T10,E0,K2] + r[T10] >= -999985.1702945922
- c19[T11,D0,K0]: - 1e+06 x[T11,D0,K0] + r[T11] >= -999977.1153798907
- c19[T11,D0,K1]: - 1e+06 x[T11,D0,K1] + r[T11] >= -999977.1153798907
- c19[T11,D0,K2]: - 1e+06 x[T11,D0,K2] + r[T11] >= -999977.1153798907
- c19[T11,D1,K0]: - 1e+06 x[T11,D1,K0] + r[T11] >= -999940.1784934325
- c19[T11,D1,K1]: - 1e+06 x[T11,D1,K1] + r[T11] >= -999940.1784934325
- c19[T11,D1,K2]: - 1e+06 x[T11,D1,K2] + r[T11] >= -999940.1784934325
- c19[T11,D2,K0]: - 1e+06 x[T11,D2,K0] + r[T11] >= -999978.0049337065
- c19[T11,D2,K1]: - 1e+06 x[T11,D2,K1] + r[T11] >= -999978.0049337065
- c19[T11,D2,K2]: - 1e+06 x[T11,D2,K2] + r[T11] >= -999978.0049337065
- c19[T11,E0,K0]: - 1e+06 x[T11,E0,K0] + r[T11] >= -999977.1153798907
- c19[T11,E0,K1]: - 1e+06 x[T11,E0,K1] + r[T11] >= -999977.1153798907
- c19[T11,E0,K2]: - 1e+06 x[T11,E0,K2] + r[T11] >= -999977.1153798907
- c20[T0]: r[T0] <= 125
- c20[T1]: r[T1] <= 125
- c20[T2]: r[T2] <= 125
- c20[T3]: r[T3] <= 125
- c20[T4]: r[T4] <= 125
- c20[T5]: r[T5] <= 125
- c20[T6]: r[T6] <= 125
- c20[T7]: r[T7] <= 125
- c20[T8]: r[T8] <= 125
- c20[T9]: r[T9] <= 125
- c20[T10]: r[T10] <= 125
- c20[T11]: r[T11] <= 125
- c22[D0,D1,K0]: 72.88237796071653 x[D0,D1,K0] <= 125
- c22[D0,D1,K1]: 72.88237796071653 x[D0,D1,K1] <= 125
- c22[D0,D1,K2]: 72.88237796071653 x[D0,D1,K2] <= 125
- c22[D0,D2,K0]: 36.97993440770559 x[D0,D2,K0] <= 125
- c22[D0,D2,K1]: 36.97993440770559 x[D0,D2,K1] <= 125
- c22[D0,D2,K2]: 36.97993440770559 x[D0,D2,K2] <= 125
- c22[D0,S0,K0]: <= 125
- c22[D0,S0,K1]: <= 125
- c22[D0,S0,K2]: <= 125
- c22[D0,E0,K0]: <= 125
- c22[D0,E0,K1]: <= 125
- c22[D0,E0,K2]: <= 125
- c22[D1,D0,K0]: 72.88237796071653 x[D1,D0,K0] <= 125
- c22[D1,D0,K1]: 72.88237796071653 x[D1,D0,K1] <= 125
- c22[D1,D0,K2]: 72.88237796071653 x[D1,D0,K2] <= 125
- c22[D1,D2,K0]: 76.49422647750454 x[D1,D2,K0] <= 125
- c22[D1,D2,K1]: 76.49422647750454 x[D1,D2,K1] <= 125
- c22[D1,D2,K2]: 76.49422647750454 x[D1,D2,K2] <= 125
- c22[D1,S0,K0]: 72.88237796071653 x[D1,S0,K0] <= 125
- c22[D1,S0,K1]: 72.88237796071653 x[D1,S0,K1] <= 125
- c22[D1,S0,K2]: 72.88237796071653 x[D1,S0,K2] <= 125
- c22[D1,E0,K0]: 72.88237796071653 x[D1,E0,K0] <= 125
- c22[D1,E0,K1]: 72.88237796071653 x[D1,E0,K1] <= 125
- c22[D1,E0,K2]: 72.88237796071653 x[D1,E0,K2] <= 125
- c22[D2,D0,K0]: 36.97993440770559 x[D2,D0,K0] <= 125
- c22[D2,D0,K1]: 36.97993440770559 x[D2,D0,K1] <= 125
- c22[D2,D0,K2]: 36.97993440770559 x[D2,D0,K2] <= 125
- c22[D2,D1,K0]: 76.49422647750454 x[D2,D1,K0] <= 125
- c22[D2,D1,K1]: 76.49422647750454 x[D2,D1,K1] <= 125
- c22[D2,D1,K2]: 76.49422647750454 x[D2,D1,K2] <= 125
- c22[D2,S0,K0]: 36.97993440770559 x[D2,S0,K0] <= 125
- c22[D2,S0,K1]: 36.97993440770559 x[D2,S0,K1] <= 125
- c22[D2,S0,K2]: 36.97993440770559 x[D2,S0,K2] <= 125
- c22[D2,E0,K0]: 36.97993440770559 x[D2,E0,K0] <= 125
- c22[D2,E0,K1]: 36.97993440770559 x[D2,E0,K1] <= 125
- c22[D2,E0,K2]: 36.97993440770559 x[D2,E0,K2] <= 125
+ c29[T0]: - 74.91922371664332 x[T0,T1,K0] - 74.91922371664332 x[T0,T1,K1]
+   - 74.91922371664332 x[T0,T1,K2] - 43.36644046491703 x[T0,T2,K0]
+   - 43.36644046491703 x[T0,T2,K1] - 43.36644046491703 x[T0,T2,K2]
+   - 61.61048564086163 x[T0,T3,K0] - 61.61048564086163 x[T0,T3,K1]
+   - 61.61048564086163 x[T0,T3,K2] - 75.55459017662241 x[T0,T4,K0]
+   - 75.55459017662241 x[T0,T4,K1] - 75.55459017662241 x[T0,T4,K2]
+   - 45.73613936210122 x[T0,T5,K0] - 45.73613936210122 x[T0,T5,K1]
+   - 45.73613936210122 x[T0,T5,K2] - 27.5792030702074 x[T0,T6,K0]
+   - 27.5792030702074 x[T0,T6,K1] - 27.5792030702074 x[T0,T6,K2]
+   - 34.67534363929753 x[T0,T7,K0] - 34.67534363929753 x[T0,T7,K1]
+   - 34.67534363929753 x[T0,T7,K2] - 51.44392766110658 x[T0,T8,K0]
+   - 51.44392766110658 x[T0,T8,K1] - 51.44392766110658 x[T0,T8,K2]
+   - 40.58542406376269 x[T0,T9,K0] - 40.58542406376269 x[T0,T9,K1]
+   - 40.58542406376269 x[T0,T9,K2] - 28.18373863118922 x[T0,T10,K0]
+   - 28.18373863118922 x[T0,T10,K1] - 28.18373863118922 x[T0,T10,K2]
+   - 33.29349553913811 x[T0,T11,K0] - 33.29349553913811 x[T0,T11,K1]
+   - 33.29349553913811 x[T0,T11,K2] - 42.30825234805249 x[T0,D0,K0]
+   - 42.30825234805249 x[T0,D0,K1] - 42.30825234805249 x[T0,D0,K2]
+   - 30.82932734588058 x[T0,D1,K0] - 30.82932734588058 x[T0,D1,K1]
+   - 30.82932734588058 x[T0,D1,K2] - 53.8363852061228 x[T0,D2,K0]
+   - 53.8363852061228 x[T0,D2,K1] - 53.8363852061228 x[T0,D2,K2]
+   - 42.30825234805249 x[T0,S0,K0] - 42.30825234805249 x[T0,S0,K1]
+   - 42.30825234805249 x[T0,S0,K2] - 42.30825234805249 x[T0,E0,K0]
+   - 42.30825234805249 x[T0,E0,K1] - 42.30825234805249 x[T0,E0,K2]
+   + p[T0,T1,K0] + p[T0,T1,K1] + p[T0,T1,K2] + p[T0,T2,K0] + p[T0,T2,K1]
+   + p[T0,T2,K2] + p[T0,T3,K0] + p[T0,T3,K1] + p[T0,T3,K2] + p[T0,T4,K0]
+   + p[T0,T4,K1] + p[T0,T4,K2] + p[T0,T5,K0] + p[T0,T5,K1] + p[T0,T5,K2]
+   + p[T0,T6,K0] + p[T0,T6,K1] + p[T0,T6,K2] + p[T0,T7,K0] + p[T0,T7,K1]
+   + p[T0,T7,K2] + p[T0,T8,K0] + p[T0,T8,K1] + p[T0,T8,K2] + p[T0,T9,K0]
+   + p[T0,T9,K1] + p[T0,T9,K2] + p[T0,T10,K0] + p[T0,T10,K1] + p[T0,T10,K2]
+   + p[T0,T11,K0] + p[T0,T11,K1] + p[T0,T11,K2] + p[T0,D0,K0] + p[T0,D0,K1]
+   + p[T0,D0,K2] + p[T0,D1,K0] + p[T0,D1,K1] + p[T0,D1,K2] + p[T0,D2,K0]
+   + p[T0,D2,K1] + p[T0,D2,K2] + p[T0,S0,K0] + p[T0,S0,K1] + p[T0,S0,K2]
+   + p[T0,E0,K0] + p[T0,E0,K1] + p[T0,E0,K2] - p[T1,T0,K0] - p[T1,T0,K1]
+   - p[T1,T0,K2] - p[T2,T0,K0] - p[T2,T0,K1] - p[T2,T0,K2] - p[T3,T0,K0]
+   - p[T3,T0,K1] - p[T3,T0,K2] - p[T4,T0,K0] - p[T4,T0,K1] - p[T4,T0,K2]
+   - p[T5,T0,K0] - p[T5,T0,K1] - p[T5,T0,K2] - p[T6,T0,K0] - p[T6,T0,K1]
+   - p[T6,T0,K2] - p[T7,T0,K0] - p[T7,T0,K1] - p[T7,T0,K2] - p[T8,T0,K0]
+   - p[T8,T0,K1] - p[T8,T0,K2] - p[T9,T0,K0] - p[T9,T0,K1] - p[T9,T0,K2]
+   - p[T10,T0,K0] - p[T10,T0,K1] - p[T10,T0,K2] - p[T11,T0,K0]
+   - p[T11,T0,K1] - p[T11,T0,K2] - p[D0,T0,K0] - p[D0,T0,K1] - p[D0,T0,K2]
+   - p[D1,T0,K0] - p[D1,T0,K1] - p[D1,T0,K2] - p[D2,T0,K0] - p[D2,T0,K1]
+   - p[D2,T0,K2] - p[S0,T0,K0] - p[S0,T0,K1] - p[S0,T0,K2] - p[E0,T0,K0]
+   - p[E0,T0,K1] - p[E0,T0,K2] = 0
+ c29[T1]: - 74.91922371664332 x[T1,T0,K0] - 74.91922371664332 x[T1,T0,K1]
+   - 74.91922371664332 x[T1,T0,K2] - 47.7112292518421 x[T1,T2,K0]
+   - 47.7112292518421 x[T1,T2,K1] - 47.7112292518421 x[T1,T2,K2]
+   - 71.23944472656065 x[T1,T3,K0] - 71.23944472656065 x[T1,T3,K1]
+   - 71.23944472656065 x[T1,T3,K2] - 50.86734480267259 x[T1,T4,K0]
+   - 50.86734480267259 x[T1,T4,K1] - 50.86734480267259 x[T1,T4,K2]
+   - 54.95636456842178 x[T1,T5,K0] - 54.95636456842178 x[T1,T5,K1]
+   - 54.95636456842178 x[T1,T5,K2] - 77.78967382989708 x[T1,T6,K0]
+   - 77.78967382989708 x[T1,T6,K1] - 77.78967382989708 x[T1,T6,K2]
+   - 48.56034396539207 x[T1,T7,K0] - 48.56034396539207 x[T1,T7,K1]
+   - 48.56034396539207 x[T1,T7,K2] - 27.8492420458409 x[T1,T8,K0]
+   - 27.8492420458409 x[T1,T8,K1] - 27.8492420458409 x[T1,T8,K2]
+   - 46.42539855435253 x[T1,T9,K0] - 46.42539855435253 x[T1,T9,K1]
+   - 46.42539855435253 x[T1,T9,K2] - 70.89400203260394 x[T1,T10,K0]
+   - 70.89400203260394 x[T1,T10,K1] - 70.89400203260394 x[T1,T10,K2]
+   - 49.3852948077522 x[T1,T11,K0] - 49.3852948077522 x[T1,T11,K1]
+   - 49.3852948077522 x[T1,T11,K2] - 67.5640560397419 x[T1,D0,K0]
+   - 67.5640560397419 x[T1,D0,K1] - 67.5640560397419 x[T1,D0,K2]
+   - 88.91619902116914 x[T1,D1,K0] - 88.91619902116914 x[T1,D1,K1]
+   - 88.91619902116914 x[T1,D1,K2] - 30.67512929913077 x[T1,D2,K0]
+   - 30.67512929913077 x[T1,D2,K1] - 30.67512929913077 x[T1,D2,K2]
+   - 67.5640560397419 x[T1,S0,K0] - 67.5640560397419 x[T1,S0,K1]
+   - 67.5640560397419 x[T1,S0,K2] - 67.5640560397419 x[T1,E0,K0]
+   - 67.5640560397419 x[T1,E0,K1] - 67.5640560397419 x[T1,E0,K2]
+   - p[T0,T1,K0] - p[T0,T1,K1] - p[T0,T1,K2] + p[T1,T0,K0] + p[T1,T0,K1]
+   + p[T1,T0,K2] + p[T1,T2,K0] + p[T1,T2,K1] + p[T1,T2,K2] + p[T1,T3,K0]
+   + p[T1,T3,K1] + p[T1,T3,K2] + p[T1,T4,K0] + p[T1,T4,K1] + p[T1,T4,K2]
+   + p[T1,T5,K0] + p[T1,T5,K1] + p[T1,T5,K2] + p[T1,T6,K0] + p[T1,T6,K1]
+   + p[T1,T6,K2] + p[T1,T7,K0] + p[T1,T7,K1] + p[T1,T7,K2] + p[T1,T8,K0]
+   + p[T1,T8,K1] + p[T1,T8,K2] + p[T1,T9,K0] + p[T1,T9,K1] + p[T1,T9,K2]
+   + p[T1,T10,K0] + p[T1,T10,K1] + p[T1,T10,K2] + p[T1,T11,K0]
+   + p[T1,T11,K1] + p[T1,T11,K2] + p[T1,D0,K0] + p[T1,D0,K1] + p[T1,D0,K2]
+   + p[T1,D1,K0] + p[T1,D1,K1] + p[T1,D1,K2] + p[T1,D2,K0] + p[T1,D2,K1]
+   + p[T1,D2,K2] + p[T1,S0,K0] + p[T1,S0,K1] + p[T1,S0,K2] + p[T1,E0,K0]
+   + p[T1,E0,K1] + p[T1,E0,K2] - p[T2,T1,K0] - p[T2,T1,K1] - p[T2,T1,K2]
+   - p[T3,T1,K0] - p[T3,T1,K1] - p[T3,T1,K2] - p[T4,T1,K0] - p[T4,T1,K1]
+   - p[T4,T1,K2] - p[T5,T1,K0] - p[T5,T1,K1] - p[T5,T1,K2] - p[T6,T1,K0]
+   - p[T6,T1,K1] - p[T6,T1,K2] - p[T7,T1,K0] - p[T7,T1,K1] - p[T7,T1,K2]
+   - p[T8,T1,K0] - p[T8,T1,K1] - p[T8,T1,K2] - p[T9,T1,K0] - p[T9,T1,K1]
+   - p[T9,T1,K2] - p[T10,T1,K0] - p[T10,T1,K1] - p[T10,T1,K2]
+   - p[T11,T1,K0] - p[T11,T1,K1] - p[T11,T1,K2] - p[D0,T1,K0] - p[D0,T1,K1]
+   - p[D0,T1,K2] - p[D1,T1,K0] - p[D1,T1,K1] - p[D1,T1,K2] - p[D2,T1,K0]
+   - p[D2,T1,K1] - p[D2,T1,K2] - p[S0,T1,K0] - p[S0,T1,K1] - p[S0,T1,K2]
+   - p[E0,T1,K0] - p[E0,T1,K1] - p[E0,T1,K2] = 0
+ c29[T2]: - 43.36644046491703 x[T2,T0,K0] - 43.36644046491703 x[T2,T0,K1]
+   - 43.36644046491703 x[T2,T0,K2] - 47.7112292518421 x[T2,T1,K0]
+   - 47.7112292518421 x[T2,T1,K1] - 47.7112292518421 x[T2,T1,K2]
+   - 80.46785809368822 x[T2,T3,K0] - 80.46785809368822 x[T2,T3,K1]
+   - 80.46785809368822 x[T2,T3,K2] - 32.32009157591524 x[T2,T4,K0]
+   - 32.32009157591524 x[T2,T4,K1] - 32.32009157591524 x[T2,T4,K2]
+   - 59.34063811094783 x[T2,T5,K0] - 59.34063811094783 x[T2,T5,K1]
+   - 59.34063811094783 x[T2,T5,K2] - 32.70922038933296 x[T2,T6,K0]
+   - 32.70922038933296 x[T2,T6,K1] - 32.70922038933296 x[T2,T6,K2]
+   - 9.499783263110361 x[T2,T7,K0] - 9.499783263110361 x[T2,T7,K1]
+   - 9.499783263110361 x[T2,T7,K2] - 41.06431552674883 x[T2,T8,K0]
+   - 41.06431552674883 x[T2,T8,K1] - 41.06431552674883 x[T2,T8,K2]
+   - 47.91481240343744 x[T2,T9,K0] - 47.91481240343744 x[T2,T9,K1]
+   - 47.91481240343744 x[T2,T9,K2] - 25.61233119258715 x[T2,T10,K0]
+   - 25.61233119258715 x[T2,T10,K1] - 25.61233119258715 x[T2,T10,K2]
+   - 10.76631267760203 x[T2,T11,K0] - 10.76631267760203 x[T2,T11,K1]
+   - 10.76631267760203 x[T2,T11,K2] - 19.8910037045967 x[T2,D0,K0]
+   - 19.8910037045967 x[T2,D0,K1] - 19.8910037045967 x[T2,D0,K2]
+   - 70.57118364971254 x[T2,D1,K0] - 70.57118364971254 x[T2,D1,K1]
+   - 70.57118364971254 x[T2,D1,K2] - 17.29967747031127 x[T2,D2,K0]
+   - 17.29967747031127 x[T2,D2,K1] - 17.29967747031127 x[T2,D2,K2]
+   - 19.8910037045967 x[T2,S0,K0] - 19.8910037045967 x[T2,S0,K1]
+   - 19.8910037045967 x[T2,S0,K2] - 19.8910037045967 x[T2,E0,K0]
+   - 19.8910037045967 x[T2,E0,K1] - 19.8910037045967 x[T2,E0,K2]
+   - p[T0,T2,K0] - p[T0,T2,K1] - p[T0,T2,K2] - p[T1,T2,K0] - p[T1,T2,K1]
+   - p[T1,T2,K2] + p[T2,T0,K0] + p[T2,T0,K1] + p[T2,T0,K2] + p[T2,T1,K0]
+   + p[T2,T1,K1] + p[T2,T1,K2] + p[T2,T3,K0] + p[T2,T3,K1] + p[T2,T3,K2]
+   + p[T2,T4,K0] + p[T2,T4,K1] + p[T2,T4,K2] + p[T2,T5,K0] + p[T2,T5,K1]
+   + p[T2,T5,K2] + p[T2,T6,K0] + p[T2,T6,K1] + p[T2,T6,K2] + p[T2,T7,K0]
+   + p[T2,T7,K1] + p[T2,T7,K2] + p[T2,T8,K0] + p[T2,T8,K1] + p[T2,T8,K2]
+   + p[T2,T9,K0] + p[T2,T9,K1] + p[T2,T9,K2] + p[T2,T10,K0] + p[T2,T10,K1]
+   + p[T2,T10,K2] + p[T2,T11,K0] + p[T2,T11,K1] + p[T2,T11,K2]
+   + p[T2,D0,K0] + p[T2,D0,K1] + p[T2,D0,K2] + p[T2,D1,K0] + p[T2,D1,K1]
+   + p[T2,D1,K2] + p[T2,D2,K0] + p[T2,D2,K1] + p[T2,D2,K2] + p[T2,S0,K0]
+   + p[T2,S0,K1] + p[T2,S0,K2] + p[T2,E0,K0] + p[T2,E0,K1] + p[T2,E0,K2]
+   - p[T3,T2,K0] - p[T3,T2,K1] - p[T3,T2,K2] - p[T4,T2,K0] - p[T4,T2,K1]
+   - p[T4,T2,K2] - p[T5,T2,K0] - p[T5,T2,K1] - p[T5,T2,K2] - p[T6,T2,K0]
+   - p[T6,T2,K1] - p[T6,T2,K2] - p[T7,T2,K0] - p[T7,T2,K1] - p[T7,T2,K2]
+   - p[T8,T2,K0] - p[T8,T2,K1] - p[T8,T2,K2] - p[T9,T2,K0] - p[T9,T2,K1]
+   - p[T9,T2,K2] - p[T10,T2,K0] - p[T10,T2,K1] - p[T10,T2,K2]
+   - p[T11,T2,K0] - p[T11,T2,K1] - p[T11,T2,K2] - p[D0,T2,K0] - p[D0,T2,K1]
+   - p[D0,T2,K2] - p[D1,T2,K0] - p[D1,T2,K1] - p[D1,T2,K2] - p[D2,T2,K0]
+   - p[D2,T2,K1] - p[D2,T2,K2] - p[S0,T2,K0] - p[S0,T2,K1] - p[S0,T2,K2]
+   - p[E0,T2,K0] - p[E0,T2,K1] - p[E0,T2,K2] = 0
+ c29[T3]: - 61.61048564086163 x[T3,T0,K0] - 61.61048564086163 x[T3,T0,K1]
+   - 61.61048564086163 x[T3,T0,K2] - 71.23944472656065 x[T3,T1,K0]
+   - 71.23944472656065 x[T3,T1,K1] - 71.23944472656065 x[T3,T1,K2]
+   - 80.46785809368822 x[T3,T2,K0] - 80.46785809368822 x[T3,T2,K1]
+   - 80.46785809368822 x[T3,T2,K2] - 106.5967602653575 x[T3,T4,K0]
+   - 106.5967602653575 x[T3,T4,K1] - 106.5967602653575 x[T3,T4,K2]
+   - 21.14748523027404 x[T3,T5,K0] - 21.14748523027404 x[T3,T5,K1]
+   - 21.14748523027404 x[T3,T5,K2] - 86.1598871844067 x[T3,T6,K0]
+   - 86.1598871844067 x[T3,T6,K1] - 86.1598871844067 x[T3,T6,K2]
+   - 72.22390648346291 x[T3,T7,K0] - 72.22390648346291 x[T3,T7,K1]
+   - 72.22390648346291 x[T3,T7,K2] - 47.03491523747142 x[T3,T8,K0]
+   - 47.03491523747142 x[T3,T8,K1] - 47.03491523747142 x[T3,T8,K2]
+   - 32.74942900910317 x[T3,T9,K0] - 32.74942900910317 x[T3,T9,K1]
+   - 32.74942900910317 x[T3,T9,K2] - 83.3946689903439 x[T3,T10,K0]
+   - 83.3946689903439 x[T3,T10,K1] - 83.3946689903439 x[T3,T10,K2]
+   - 71.4775598411982 x[T3,T11,K0] - 71.4775598411982 x[T3,T11,K1]
+   - 71.4775598411982 x[T3,T11,K2] - 92.77043217631032 x[T3,D0,K0]
+   - 92.77043217631032 x[T3,D0,K1] - 92.77043217631032 x[T3,D0,K2]
+   - 45.33510223797149 x[T3,D1,K0] - 45.33510223797149 x[T3,D1,K1]
+   - 45.33510223797149 x[T3,D1,K2] - 76.12415975328686 x[T3,D2,K0]
+   - 76.12415975328686 x[T3,D2,K1] - 76.12415975328686 x[T3,D2,K2]
+   - 92.77043217631032 x[T3,S0,K0] - 92.77043217631032 x[T3,S0,K1]
+   - 92.77043217631032 x[T3,S0,K2] - 92.77043217631032 x[T3,E0,K0]
+   - 92.77043217631032 x[T3,E0,K1] - 92.77043217631032 x[T3,E0,K2]
+   - p[T0,T3,K0] - p[T0,T3,K1] - p[T0,T3,K2] - p[T1,T3,K0] - p[T1,T3,K1]
+   - p[T1,T3,K2] - p[T2,T3,K0] - p[T2,T3,K1] - p[T2,T3,K2] + p[T3,T0,K0]
+   + p[T3,T0,K1] + p[T3,T0,K2] + p[T3,T1,K0] + p[T3,T1,K1] + p[T3,T1,K2]
+   + p[T3,T2,K0] + p[T3,T2,K1] + p[T3,T2,K2] + p[T3,T4,K0] + p[T3,T4,K1]
+   + p[T3,T4,K2] + p[T3,T5,K0] + p[T3,T5,K1] + p[T3,T5,K2] + p[T3,T6,K0]
+   + p[T3,T6,K1] + p[T3,T6,K2] + p[T3,T7,K0] + p[T3,T7,K1] + p[T3,T7,K2]
+   + p[T3,T8,K0] + p[T3,T8,K1] + p[T3,T8,K2] + p[T3,T9,K0] + p[T3,T9,K1]
+   + p[T3,T9,K2] + p[T3,T10,K0] + p[T3,T10,K1] + p[T3,T10,K2]
+   + p[T3,T11,K0] + p[T3,T11,K1] + p[T3,T11,K2] + p[T3,D0,K0] + p[T3,D0,K1]
+   + p[T3,D0,K2] + p[T3,D1,K0] + p[T3,D1,K1] + p[T3,D1,K2] + p[T3,D2,K0]
+   + p[T3,D2,K1] + p[T3,D2,K2] + p[T3,S0,K0] + p[T3,S0,K1] + p[T3,S0,K2]
+   + p[T3,E0,K0] + p[T3,E0,K1] + p[T3,E0,K2] - p[T4,T3,K0] - p[T4,T3,K1]
+   - p[T4,T3,K2] - p[T5,T3,K0] - p[T5,T3,K1] - p[T5,T3,K2] - p[T6,T3,K0]
+   - p[T6,T3,K1] - p[T6,T3,K2] - p[T7,T3,K0] - p[T7,T3,K1] - p[T7,T3,K2]
+   - p[T8,T3,K0] - p[T8,T3,K1] - p[T8,T3,K2] - p[T9,T3,K0] - p[T9,T3,K1]
+   - p[T9,T3,K2] - p[T10,T3,K0] - p[T10,T3,K1] - p[T10,T3,K2]
+   - p[T11,T3,K0] - p[T11,T3,K1] - p[T11,T3,K2] - p[D0,T3,K0] - p[D0,T3,K1]
+   - p[D0,T3,K2] - p[D1,T3,K0] - p[D1,T3,K1] - p[D1,T3,K2] - p[D2,T3,K0]
+   - p[D2,T3,K1] - p[D2,T3,K2] - p[S0,T3,K0] - p[S0,T3,K1] - p[S0,T3,K2]
+   - p[E0,T3,K0] - p[E0,T3,K1] - p[E0,T3,K2] = 0
+ c29[T4]: - 75.55459017662241 x[T4,T0,K0] - 75.55459017662241 x[T4,T0,K1]
+   - 75.55459017662241 x[T4,T0,K2] - 50.86734480267259 x[T4,T1,K0]
+   - 50.86734480267259 x[T4,T1,K1] - 50.86734480267259 x[T4,T1,K2]
+   - 32.32009157591524 x[T4,T2,K0] - 32.32009157591524 x[T4,T2,K1]
+   - 32.32009157591524 x[T4,T2,K2] - 106.5967602653575 x[T4,T3,K0]
+   - 106.5967602653575 x[T4,T3,K1] - 106.5967602653575 x[T4,T3,K2]
+   - 85.82061400866829 x[T4,T5,K0] - 85.82061400866829 x[T4,T5,K1]
+   - 85.82061400866829 x[T4,T5,K2] - 59.79028307396049 x[T4,T6,K0]
+   - 59.79028307396049 x[T4,T6,K1] - 59.79028307396049 x[T4,T6,K2]
+   - 41.59191827254115 x[T4,T7,K0] - 41.59191827254115 x[T4,T7,K1]
+   - 41.59191827254115 x[T4,T7,K2] - 60.97042536420053 x[T4,T8,K0]
+   - 60.97042536420053 x[T4,T8,K1] - 60.97042536420053 x[T4,T8,K2]
+   - 74.19395265496384 x[T4,T9,K0] - 74.19395265496384 x[T4,T9,K1]
+   - 74.19395265496384 x[T4,T9,K2] - 53.54921699994317 x[T4,T10,K0]
+   - 53.54921699994317 x[T4,T10,K1] - 53.54921699994317 x[T4,T10,K2]
+   - 42.93351409270838 x[T4,T11,K0] - 42.93351409270838 x[T4,T11,K1]
+   - 42.93351409270838 x[T4,T11,K2] - 40.65913557397837 x[T4,D0,K0]
+   - 40.65913557397837 x[T4,D0,K1] - 40.65913557397837 x[T4,D0,K2]
+   - 102.6630638175773 x[T4,D1,K0] - 102.6630638175773 x[T4,D1,K1]
+   - 102.6630638175773 x[T4,D1,K2] - 30.48246372598624 x[T4,D2,K0]
+   - 30.48246372598624 x[T4,D2,K1] - 30.48246372598624 x[T4,D2,K2]
+   - 40.65913557397837 x[T4,S0,K0] - 40.65913557397837 x[T4,S0,K1]
+   - 40.65913557397837 x[T4,S0,K2] - 40.65913557397837 x[T4,E0,K0]
+   - 40.65913557397837 x[T4,E0,K1] - 40.65913557397837 x[T4,E0,K2]
+   - p[T0,T4,K0] - p[T0,T4,K1] - p[T0,T4,K2] - p[T1,T4,K0] - p[T1,T4,K1]
+   - p[T1,T4,K2] - p[T2,T4,K0] - p[T2,T4,K1] - p[T2,T4,K2] - p[T3,T4,K0]
+   - p[T3,T4,K1] - p[T3,T4,K2] + p[T4,T0,K0] + p[T4,T0,K1] + p[T4,T0,K2]
+   + p[T4,T1,K0] + p[T4,T1,K1] + p[T4,T1,K2] + p[T4,T2,K0] + p[T4,T2,K1]
+   + p[T4,T2,K2] + p[T4,T3,K0] + p[T4,T3,K1] + p[T4,T3,K2] + p[T4,T5,K0]
+   + p[T4,T5,K1] + p[T4,T5,K2] + p[T4,T6,K0] + p[T4,T6,K1] + p[T4,T6,K2]
+   + p[T4,T7,K0] + p[T4,T7,K1] + p[T4,T7,K2] + p[T4,T8,K0] + p[T4,T8,K1]
+   + p[T4,T8,K2] + p[T4,T9,K0] + p[T4,T9,K1] + p[T4,T9,K2] + p[T4,T10,K0]
+   + p[T4,T10,K1] + p[T4,T10,K2] + p[T4,T11,K0] + p[T4,T11,K1]
+   + p[T4,T11,K2] + p[T4,D0,K0] + p[T4,D0,K1] + p[T4,D0,K2] + p[T4,D1,K0]
+   + p[T4,D1,K1] + p[T4,D1,K2] + p[T4,D2,K0] + p[T4,D2,K1] + p[T4,D2,K2]
+   + p[T4,S0,K0] + p[T4,S0,K1] + p[T4,S0,K2] + p[T4,E0,K0] + p[T4,E0,K1]
+   + p[T4,E0,K2] - p[T5,T4,K0] - p[T5,T4,K1] - p[T5,T4,K2] - p[T6,T4,K0]
+   - p[T6,T4,K1] - p[T6,T4,K2] - p[T7,T4,K0] - p[T7,T4,K1] - p[T7,T4,K2]
+   - p[T8,T4,K0] - p[T8,T4,K1] - p[T8,T4,K2] - p[T9,T4,K0] - p[T9,T4,K1]
+   - p[T9,T4,K2] - p[T10,T4,K0] - p[T10,T4,K1] - p[T10,T4,K2]
+   - p[T11,T4,K0] - p[T11,T4,K1] - p[T11,T4,K2] - p[D0,T4,K0] - p[D0,T4,K1]
+   - p[D0,T4,K2] - p[D1,T4,K0] - p[D1,T4,K1] - p[D1,T4,K2] - p[D2,T4,K0]
+   - p[D2,T4,K1] - p[D2,T4,K2] - p[S0,T4,K0] - p[S0,T4,K1] - p[S0,T4,K2]
+   - p[E0,T4,K0] - p[E0,T4,K1] - p[E0,T4,K2] = 0
+ c29[T5]: - 45.73613936210122 x[T5,T0,K0] - 45.73613936210122 x[T5,T0,K1]
+   - 45.73613936210122 x[T5,T0,K2] - 54.95636456842178 x[T5,T1,K0]
+   - 54.95636456842178 x[T5,T1,K1] - 54.95636456842178 x[T5,T1,K2]
+   - 59.34063811094783 x[T5,T2,K0] - 59.34063811094783 x[T5,T2,K1]
+   - 59.34063811094783 x[T5,T2,K2] - 21.14748523027404 x[T5,T3,K0]
+   - 21.14748523027404 x[T5,T3,K1] - 21.14748523027404 x[T5,T3,K2]
+   - 85.82061400866829 x[T5,T4,K0] - 85.82061400866829 x[T5,T4,K1]
+   - 85.82061400866829 x[T5,T4,K2] - 67.48064292241894 x[T5,T6,K0]
+   - 67.48064292241894 x[T5,T6,K1] - 67.48064292241894 x[T5,T6,K2]
+   - 51.2241829889005 x[T5,T7,K0] - 51.2241829889005 x[T5,T7,K1]
+   - 51.2241829889005 x[T5,T7,K2] - 28.15031064005634 x[T5,T8,K0]
+   - 28.15031064005634 x[T5,T8,K1] - 28.15031064005634 x[T5,T8,K2]
+   - 11.66726291218676 x[T5,T9,K0] - 11.66726291218676 x[T5,T9,K1]
+   - 11.66726291218676 x[T5,T9,K2] - 63.93675628611825 x[T5,T10,K0]
+   - 63.93675628611825 x[T5,T10,K1] - 63.93675628611825 x[T5,T10,K2]
+   - 50.53053765948994 x[T5,T11,K0] - 50.53053765948994 x[T5,T11,K1]
+   - 50.53053765948994 x[T5,T11,K2] - 72.27271688520476 x[T5,D0,K0]
+   - 72.27271688520476 x[T5,D0,K1] - 72.27271688520476 x[T5,D0,K2]
+   - 40.41199387589227 x[T5,D1,K0] - 40.41199387589227 x[T5,D1,K1]
+   - 40.41199387589227 x[T5,D1,K2] - 55.43111963757291 x[T5,D2,K0]
+   - 55.43111963757291 x[T5,D2,K1] - 55.43111963757291 x[T5,D2,K2]
+   - 72.27271688520476 x[T5,S0,K0] - 72.27271688520476 x[T5,S0,K1]
+   - 72.27271688520476 x[T5,S0,K2] - 72.27271688520476 x[T5,E0,K0]
+   - 72.27271688520476 x[T5,E0,K1] - 72.27271688520476 x[T5,E0,K2]
+   - p[T0,T5,K0] - p[T0,T5,K1] - p[T0,T5,K2] - p[T1,T5,K0] - p[T1,T5,K1]
+   - p[T1,T5,K2] - p[T2,T5,K0] - p[T2,T5,K1] - p[T2,T5,K2] - p[T3,T5,K0]
+   - p[T3,T5,K1] - p[T3,T5,K2] - p[T4,T5,K0] - p[T4,T5,K1] - p[T4,T5,K2]
+   + p[T5,T0,K0] + p[T5,T0,K1] + p[T5,T0,K2] + p[T5,T1,K0] + p[T5,T1,K1]
+   + p[T5,T1,K2] + p[T5,T2,K0] + p[T5,T2,K1] + p[T5,T2,K2] + p[T5,T3,K0]
+   + p[T5,T3,K1] + p[T5,T3,K2] + p[T5,T4,K0] + p[T5,T4,K1] + p[T5,T4,K2]
+   + p[T5,T6,K0] + p[T5,T6,K1] + p[T5,T6,K2] + p[T5,T7,K0] + p[T5,T7,K1]
+   + p[T5,T7,K2] + p[T5,T8,K0] + p[T5,T8,K1] + p[T5,T8,K2] + p[T5,T9,K0]
+   + p[T5,T9,K1] + p[T5,T9,K2] + p[T5,T10,K0] + p[T5,T10,K1] + p[T5,T10,K2]
+   + p[T5,T11,K0] + p[T5,T11,K1] + p[T5,T11,K2] + p[T5,D0,K0] + p[T5,D0,K1]
+   + p[T5,D0,K2] + p[T5,D1,K0] + p[T5,D1,K1] + p[T5,D1,K2] + p[T5,D2,K0]
+   + p[T5,D2,K1] + p[T5,D2,K2] + p[T5,S0,K0] + p[T5,S0,K1] + p[T5,S0,K2]
+   + p[T5,E0,K0] + p[T5,E0,K1] + p[T5,E0,K2] - p[T6,T5,K0] - p[T6,T5,K1]
+   - p[T6,T5,K2] - p[T7,T5,K0] - p[T7,T5,K1] - p[T7,T5,K2] - p[T8,T5,K0]
+   - p[T8,T5,K1] - p[T8,T5,K2] - p[T9,T5,K0] - p[T9,T5,K1] - p[T9,T5,K2]
+   - p[T10,T5,K0] - p[T10,T5,K1] - p[T10,T5,K2] - p[T11,T5,K0]
+   - p[T11,T5,K1] - p[T11,T5,K2] - p[D0,T5,K0] - p[D0,T5,K1] - p[D0,T5,K2]
+   - p[D1,T5,K0] - p[D1,T5,K1] - p[D1,T5,K2] - p[D2,T5,K0] - p[D2,T5,K1]
+   - p[D2,T5,K2] - p[S0,T5,K0] - p[S0,T5,K1] - p[S0,T5,K2] - p[E0,T5,K0]
+   - p[E0,T5,K1] - p[E0,T5,K2] = 0
+ c29[T6]: - 27.5792030702074 x[T6,T0,K0] - 27.5792030702074 x[T6,T0,K1]
+   - 27.5792030702074 x[T6,T0,K2] - 77.78967382989708 x[T6,T1,K0]
+   - 77.78967382989708 x[T6,T1,K1] - 77.78967382989708 x[T6,T1,K2]
+   - 32.70922038933296 x[T6,T2,K0] - 32.70922038933296 x[T6,T2,K1]
+   - 32.70922038933296 x[T6,T2,K2] - 86.1598871844067 x[T6,T3,K0]
+   - 86.1598871844067 x[T6,T3,K1] - 86.1598871844067 x[T6,T3,K2]
+   - 59.79028307396049 x[T6,T4,K0] - 59.79028307396049 x[T6,T4,K1]
+   - 59.79028307396049 x[T6,T4,K2] - 67.48064292241894 x[T6,T5,K0]
+   - 67.48064292241894 x[T6,T5,K1] - 67.48064292241894 x[T6,T5,K2]
+   - 29.24285160864826 x[T6,T7,K0] - 29.24285160864826 x[T6,T7,K1]
+   - 29.24285160864826 x[T6,T7,K2] - 62.20931508171559 x[T6,T8,K0]
+   - 62.20931508171559 x[T6,T8,K1] - 62.20931508171559 x[T6,T8,K2]
+   - 58.94219011328802 x[T6,T9,K0] - 58.94219011328802 x[T6,T9,K1]
+   - 58.94219011328802 x[T6,T9,K2] - 7.119840250832602 x[T6,T10,K0]
+   - 7.119840250832602 x[T6,T10,K1] - 7.119840250832602 x[T6,T10,K2]
+   - 28.40890816566668 x[T6,T11,K0] - 28.40890816566668 x[T6,T11,K1]
+   - 28.40890816566668 x[T6,T11,K2] - 19.71633985167589 x[T6,D0,K0]
+   - 19.71633985167589 x[T6,D0,K1] - 19.71633985167589 x[T6,D0,K2]
+   - 58.06654947553397 x[T6,D1,K0] - 58.06654947553397 x[T6,D1,K1]
+   - 58.06654947553397 x[T6,D1,K2] - 49.18410926622656 x[T6,D2,K0]
+   - 49.18410926622656 x[T6,D2,K1] - 49.18410926622656 x[T6,D2,K2]
+   - 19.71633985167589 x[T6,S0,K0] - 19.71633985167589 x[T6,S0,K1]
+   - 19.71633985167589 x[T6,S0,K2] - 19.71633985167589 x[T6,E0,K0]
+   - 19.71633985167589 x[T6,E0,K1] - 19.71633985167589 x[T6,E0,K2]
+   - p[T0,T6,K0] - p[T0,T6,K1] - p[T0,T6,K2] - p[T1,T6,K0] - p[T1,T6,K1]
+   - p[T1,T6,K2] - p[T2,T6,K0] - p[T2,T6,K1] - p[T2,T6,K2] - p[T3,T6,K0]
+   - p[T3,T6,K1] - p[T3,T6,K2] - p[T4,T6,K0] - p[T4,T6,K1] - p[T4,T6,K2]
+   - p[T5,T6,K0] - p[T5,T6,K1] - p[T5,T6,K2] + p[T6,T0,K0] + p[T6,T0,K1]
+   + p[T6,T0,K2] + p[T6,T1,K0] + p[T6,T1,K1] + p[T6,T1,K2] + p[T6,T2,K0]
+   + p[T6,T2,K1] + p[T6,T2,K2] + p[T6,T3,K0] + p[T6,T3,K1] + p[T6,T3,K2]
+   + p[T6,T4,K0] + p[T6,T4,K1] + p[T6,T4,K2] + p[T6,T5,K0] + p[T6,T5,K1]
+   + p[T6,T5,K2] + p[T6,T7,K0] + p[T6,T7,K1] + p[T6,T7,K2] + p[T6,T8,K0]
+   + p[T6,T8,K1] + p[T6,T8,K2] + p[T6,T9,K0] + p[T6,T9,K1] + p[T6,T9,K2]
+   + p[T6,T10,K0] + p[T6,T10,K1] + p[T6,T10,K2] + p[T6,T11,K0]
+   + p[T6,T11,K1] + p[T6,T11,K2] + p[T6,D0,K0] + p[T6,D0,K1] + p[T6,D0,K2]
+   + p[T6,D1,K0] + p[T6,D1,K1] + p[T6,D1,K2] + p[T6,D2,K0] + p[T6,D2,K1]
+   + p[T6,D2,K2] + p[T6,S0,K0] + p[T6,S0,K1] + p[T6,S0,K2] + p[T6,E0,K0]
+   + p[T6,E0,K1] + p[T6,E0,K2] - p[T7,T6,K0] - p[T7,T6,K1] - p[T7,T6,K2]
+   - p[T8,T6,K0] - p[T8,T6,K1] - p[T8,T6,K2] - p[T9,T6,K0] - p[T9,T6,K1]
+   - p[T9,T6,K2] - p[T10,T6,K0] - p[T10,T6,K1] - p[T10,T6,K2]
+   - p[T11,T6,K0] - p[T11,T6,K1] - p[T11,T6,K2] - p[D0,T6,K0] - p[D0,T6,K1]
+   - p[D0,T6,K2] - p[D1,T6,K0] - p[D1,T6,K1] - p[D1,T6,K2] - p[D2,T6,K0]
+   - p[D2,T6,K1] - p[D2,T6,K2] - p[S0,T6,K0] - p[S0,T6,K1] - p[S0,T6,K2]
+   - p[E0,T6,K0] - p[E0,T6,K1] - p[E0,T6,K2] = 0
+ c29[T7]: - 34.67534363929753 x[T7,T0,K0] - 34.67534363929753 x[T7,T0,K1]
+   - 34.67534363929753 x[T7,T0,K2] - 48.56034396539207 x[T7,T1,K0]
+   - 48.56034396539207 x[T7,T1,K1] - 48.56034396539207 x[T7,T1,K2]
+   - 9.499783263110361 x[T7,T2,K0] - 9.499783263110361 x[T7,T2,K1]
+   - 9.499783263110361 x[T7,T2,K2] - 72.22390648346291 x[T7,T3,K0]
+   - 72.22390648346291 x[T7,T3,K1] - 72.22390648346291 x[T7,T3,K2]
+   - 41.59191827254115 x[T7,T4,K0] - 41.59191827254115 x[T7,T4,K1]
+   - 41.59191827254115 x[T7,T4,K2] - 51.2241829889005 x[T7,T5,K0]
+   - 51.2241829889005 x[T7,T5,K1] - 51.2241829889005 x[T7,T5,K2]
+   - 29.24285160864826 x[T7,T6,K0] - 29.24285160864826 x[T7,T6,K1]
+   - 29.24285160864826 x[T7,T6,K2] - 36.28615625895873 x[T7,T8,K0]
+   - 36.28615625895873 x[T7,T8,K1] - 36.28615625895873 x[T7,T8,K2]
+   - 40.11012531394893 x[T7,T9,K0] - 40.11012531394893 x[T7,T9,K1]
+   - 40.11012531394893 x[T7,T9,K2] - 22.34046950203399 x[T7,T10,K0]
+   - 22.34046950203399 x[T7,T10,K1] - 22.34046950203399 x[T7,T10,K2]
+   - 1.382383386389211 x[T7,T11,K0] - 1.382383386389211 x[T7,T11,K1]
+   - 1.382383386389211 x[T7,T11,K2] - 22.74377489092869 x[T7,D0,K0]
+   - 22.74377489092869 x[T7,D0,K1] - 22.74377489092869 x[T7,D0,K2]
+   - 61.13294579841121 x[T7,D1,K0] - 61.13294579841121 x[T7,D1,K1]
+   - 61.13294579841121 x[T7,D1,K2] - 20.79099966233581 x[T7,D2,K0]
+   - 20.79099966233581 x[T7,D2,K1] - 20.79099966233581 x[T7,D2,K2]
+   - 22.74377489092869 x[T7,S0,K0] - 22.74377489092869 x[T7,S0,K1]
+   - 22.74377489092869 x[T7,S0,K2] - 22.74377489092869 x[T7,E0,K0]
+   - 22.74377489092869 x[T7,E0,K1] - 22.74377489092869 x[T7,E0,K2]
+   - p[T0,T7,K0] - p[T0,T7,K1] - p[T0,T7,K2] - p[T1,T7,K0] - p[T1,T7,K1]
+   - p[T1,T7,K2] - p[T2,T7,K0] - p[T2,T7,K1] - p[T2,T7,K2] - p[T3,T7,K0]
+   - p[T3,T7,K1] - p[T3,T7,K2] - p[T4,T7,K0] - p[T4,T7,K1] - p[T4,T7,K2]
+   - p[T5,T7,K0] - p[T5,T7,K1] - p[T5,T7,K2] - p[T6,T7,K0] - p[T6,T7,K1]
+   - p[T6,T7,K2] + p[T7,T0,K0] + p[T7,T0,K1] + p[T7,T0,K2] + p[T7,T1,K0]
+   + p[T7,T1,K1] + p[T7,T1,K2] + p[T7,T2,K0] + p[T7,T2,K1] + p[T7,T2,K2]
+   + p[T7,T3,K0] + p[T7,T3,K1] + p[T7,T3,K2] + p[T7,T4,K0] + p[T7,T4,K1]
+   + p[T7,T4,K2] + p[T7,T5,K0] + p[T7,T5,K1] + p[T7,T5,K2] + p[T7,T6,K0]
+   + p[T7,T6,K1] + p[T7,T6,K2] + p[T7,T8,K0] + p[T7,T8,K1] + p[T7,T8,K2]
+   + p[T7,T9,K0] + p[T7,T9,K1] + p[T7,T9,K2] + p[T7,T10,K0] + p[T7,T10,K1]
+   + p[T7,T10,K2] + p[T7,T11,K0] + p[T7,T11,K1] + p[T7,T11,K2]
+   + p[T7,D0,K0] + p[T7,D0,K1] + p[T7,D0,K2] + p[T7,D1,K0] + p[T7,D1,K1]
+   + p[T7,D1,K2] + p[T7,D2,K0] + p[T7,D2,K1] + p[T7,D2,K2] + p[T7,S0,K0]
+   + p[T7,S0,K1] + p[T7,S0,K2] + p[T7,E0,K0] + p[T7,E0,K1] + p[T7,E0,K2]
+   - p[T8,T7,K0] - p[T8,T7,K1] - p[T8,T7,K2] - p[T9,T7,K0] - p[T9,T7,K1]
+   - p[T9,T7,K2] - p[T10,T7,K0] - p[T10,T7,K1] - p[T10,T7,K2]
+   - p[T11,T7,K0] - p[T11,T7,K1] - p[T11,T7,K2] - p[D0,T7,K0] - p[D0,T7,K1]
+   - p[D0,T7,K2] - p[D1,T7,K0] - p[D1,T7,K1] - p[D1,T7,K2] - p[D2,T7,K0]
+   - p[D2,T7,K1] - p[D2,T7,K2] - p[S0,T7,K0] - p[S0,T7,K1] - p[S0,T7,K2]
+   - p[E0,T7,K0] - p[E0,T7,K1] - p[E0,T7,K2] = 0
+ c29[T8]: - 51.44392766110658 x[T8,T0,K0] - 51.44392766110658 x[T8,T0,K1]
+   - 51.44392766110658 x[T8,T0,K2] - 27.8492420458409 x[T8,T1,K0]
+   - 27.8492420458409 x[T8,T1,K1] - 27.8492420458409 x[T8,T1,K2]
+   - 41.06431552674883 x[T8,T2,K0] - 41.06431552674883 x[T8,T2,K1]
+   - 41.06431552674883 x[T8,T2,K2] - 47.03491523747142 x[T8,T3,K0]
+   - 47.03491523747142 x[T8,T3,K1] - 47.03491523747142 x[T8,T3,K2]
+   - 60.97042536420053 x[T8,T4,K0] - 60.97042536420053 x[T8,T4,K1]
+   - 60.97042536420053 x[T8,T4,K2] - 28.15031064005634 x[T8,T5,K0]
+   - 28.15031064005634 x[T8,T5,K1] - 28.15031064005634 x[T8,T5,K2]
+   - 62.20931508171559 x[T8,T6,K0] - 62.20931508171559 x[T8,T6,K1]
+   - 62.20931508171559 x[T8,T6,K2] - 36.28615625895873 x[T8,T7,K0]
+   - 36.28615625895873 x[T8,T7,K1] - 36.28615625895873 x[T8,T7,K2]
+   - 18.62281624964714 x[T8,T9,K0] - 18.62281624964714 x[T8,T9,K1]
+   - 18.62281624964714 x[T8,T9,K2] - 56.36032702227536 x[T8,T10,K0]
+   - 56.36032702227536 x[T8,T10,K1] - 56.36032702227536 x[T8,T10,K2]
+   - 36.34476375357031 x[T8,T11,K0] - 36.34476375357031 x[T8,T11,K1]
+   - 36.34476375357031 x[T8,T11,K2] - 58.9665153282691 x[T8,D0,K0]
+   - 58.9665153282691 x[T8,D0,K1] - 58.9665153282691 x[T8,D0,K2]
+   - 61.35927234325877 x[T8,D1,K0] - 61.35927234325877 x[T8,D1,K1]
+   - 61.35927234325877 x[T8,D1,K2] - 30.92564327622608 x[T8,D2,K0]
+   - 30.92564327622608 x[T8,D2,K1] - 30.92564327622608 x[T8,D2,K2]
+   - 58.9665153282691 x[T8,S0,K0] - 58.9665153282691 x[T8,S0,K1]
+   - 58.9665153282691 x[T8,S0,K2] - 58.9665153282691 x[T8,E0,K0]
+   - 58.9665153282691 x[T8,E0,K1] - 58.9665153282691 x[T8,E0,K2]
+   - p[T0,T8,K0] - p[T0,T8,K1] - p[T0,T8,K2] - p[T1,T8,K0] - p[T1,T8,K1]
+   - p[T1,T8,K2] - p[T2,T8,K0] - p[T2,T8,K1] - p[T2,T8,K2] - p[T3,T8,K0]
+   - p[T3,T8,K1] - p[T3,T8,K2] - p[T4,T8,K0] - p[T4,T8,K1] - p[T4,T8,K2]
+   - p[T5,T8,K0] - p[T5,T8,K1] - p[T5,T8,K2] - p[T6,T8,K0] - p[T6,T8,K1]
+   - p[T6,T8,K2] - p[T7,T8,K0] - p[T7,T8,K1] - p[T7,T8,K2] + p[T8,T0,K0]
+   + p[T8,T0,K1] + p[T8,T0,K2] + p[T8,T1,K0] + p[T8,T1,K1] + p[T8,T1,K2]
+   + p[T8,T2,K0] + p[T8,T2,K1] + p[T8,T2,K2] + p[T8,T3,K0] + p[T8,T3,K1]
+   + p[T8,T3,K2] + p[T8,T4,K0] + p[T8,T4,K1] + p[T8,T4,K2] + p[T8,T5,K0]
+   + p[T8,T5,K1] + p[T8,T5,K2] + p[T8,T6,K0] + p[T8,T6,K1] + p[T8,T6,K2]
+   + p[T8,T7,K0] + p[T8,T7,K1] + p[T8,T7,K2] + p[T8,T9,K0] + p[T8,T9,K1]
+   + p[T8,T9,K2] + p[T8,T10,K0] + p[T8,T10,K1] + p[T8,T10,K2]
+   + p[T8,T11,K0] + p[T8,T11,K1] + p[T8,T11,K2] + p[T8,D0,K0] + p[T8,D0,K1]
+   + p[T8,D0,K2] + p[T8,D1,K0] + p[T8,D1,K1] + p[T8,D1,K2] + p[T8,D2,K0]
+   + p[T8,D2,K1] + p[T8,D2,K2] + p[T8,S0,K0] + p[T8,S0,K1] + p[T8,S0,K2]
+   + p[T8,E0,K0] + p[T8,E0,K1] + p[T8,E0,K2] - p[T9,T8,K0] - p[T9,T8,K1]
+   - p[T9,T8,K2] - p[T10,T8,K0] - p[T10,T8,K1] - p[T10,T8,K2]
+   - p[T11,T8,K0] - p[T11,T8,K1] - p[T11,T8,K2] - p[D0,T8,K0] - p[D0,T8,K1]
+   - p[D0,T8,K2] - p[D1,T8,K0] - p[D1,T8,K1] - p[D1,T8,K2] - p[D2,T8,K0]
+   - p[D2,T8,K1] - p[D2,T8,K2] - p[S0,T8,K0] - p[S0,T8,K1] - p[S0,T8,K2]
+   - p[E0,T8,K0] - p[E0,T8,K1] - p[E0,T8,K2] = 0
+ c29[T9]: - 40.58542406376269 x[T9,T0,K0] - 40.58542406376269 x[T9,T0,K1]
+   - 40.58542406376269 x[T9,T0,K2] - 46.42539855435253 x[T9,T1,K0]
+   - 46.42539855435253 x[T9,T1,K1] - 46.42539855435253 x[T9,T1,K2]
+   - 47.91481240343744 x[T9,T2,K0] - 47.91481240343744 x[T9,T2,K1]
+   - 47.91481240343744 x[T9,T2,K2] - 32.74942900910317 x[T9,T3,K0]
+   - 32.74942900910317 x[T9,T3,K1] - 32.74942900910317 x[T9,T3,K2]
+   - 74.19395265496384 x[T9,T4,K0] - 74.19395265496384 x[T9,T4,K1]
+   - 74.19395265496384 x[T9,T4,K2] - 11.66726291218676 x[T9,T5,K0]
+   - 11.66726291218676 x[T9,T5,K1] - 11.66726291218676 x[T9,T5,K2]
+   - 58.94219011328802 x[T9,T6,K0] - 58.94219011328802 x[T9,T6,K1]
+   - 58.94219011328802 x[T9,T6,K2] - 40.11012531394893 x[T9,T7,K0]
+   - 40.11012531394893 x[T9,T7,K1] - 40.11012531394893 x[T9,T7,K2]
+   - 18.62281624964714 x[T9,T8,K0] - 18.62281624964714 x[T9,T8,K1]
+   - 18.62281624964714 x[T9,T8,K2] - 54.66556684721757 x[T9,T10,K0]
+   - 54.66556684721757 x[T9,T10,K1] - 54.66556684721757 x[T9,T10,K2]
+   - 39.51706764684998 x[T9,T11,K0] - 39.51706764684998 x[T9,T11,K1]
+   - 39.51706764684998 x[T9,T11,K2] - 61.77037286423689 x[T9,D0,K0]
+   - 61.77037286423689 x[T9,D0,K1] - 61.77037286423689 x[T9,D0,K2]
+   - 43.66830597070244 x[T9,D1,K0] - 43.66830597070244 x[T9,D1,K1]
+   - 43.66830597070244 x[T9,D1,K2] - 43.85646487101411 x[T9,D2,K0]
+   - 43.85646487101411 x[T9,D2,K1] - 43.85646487101411 x[T9,D2,K2]
+   - 61.77037286423689 x[T9,S0,K0] - 61.77037286423689 x[T9,S0,K1]
+   - 61.77037286423689 x[T9,S0,K2] - 61.77037286423689 x[T9,E0,K0]
+   - 61.77037286423689 x[T9,E0,K1] - 61.77037286423689 x[T9,E0,K2]
+   - p[T0,T9,K0] - p[T0,T9,K1] - p[T0,T9,K2] - p[T1,T9,K0] - p[T1,T9,K1]
+   - p[T1,T9,K2] - p[T2,T9,K0] - p[T2,T9,K1] - p[T2,T9,K2] - p[T3,T9,K0]
+   - p[T3,T9,K1] - p[T3,T9,K2] - p[T4,T9,K0] - p[T4,T9,K1] - p[T4,T9,K2]
+   - p[T5,T9,K0] - p[T5,T9,K1] - p[T5,T9,K2] - p[T6,T9,K0] - p[T6,T9,K1]
+   - p[T6,T9,K2] - p[T7,T9,K0] - p[T7,T9,K1] - p[T7,T9,K2] - p[T8,T9,K0]
+   - p[T8,T9,K1] - p[T8,T9,K2] + p[T9,T0,K0] + p[T9,T0,K1] + p[T9,T0,K2]
+   + p[T9,T1,K0] + p[T9,T1,K1] + p[T9,T1,K2] + p[T9,T2,K0] + p[T9,T2,K1]
+   + p[T9,T2,K2] + p[T9,T3,K0] + p[T9,T3,K1] + p[T9,T3,K2] + p[T9,T4,K0]
+   + p[T9,T4,K1] + p[T9,T4,K2] + p[T9,T5,K0] + p[T9,T5,K1] + p[T9,T5,K2]
+   + p[T9,T6,K0] + p[T9,T6,K1] + p[T9,T6,K2] + p[T9,T7,K0] + p[T9,T7,K1]
+   + p[T9,T7,K2] + p[T9,T8,K0] + p[T9,T8,K1] + p[T9,T8,K2] + p[T9,T10,K0]
+   + p[T9,T10,K1] + p[T9,T10,K2] + p[T9,T11,K0] + p[T9,T11,K1]
+   + p[T9,T11,K2] + p[T9,D0,K0] + p[T9,D0,K1] + p[T9,D0,K2] + p[T9,D1,K0]
+   + p[T9,D1,K1] + p[T9,D1,K2] + p[T9,D2,K0] + p[T9,D2,K1] + p[T9,D2,K2]
+   + p[T9,S0,K0] + p[T9,S0,K1] + p[T9,S0,K2] + p[T9,E0,K0] + p[T9,E0,K1]
+   + p[T9,E0,K2] - p[T10,T9,K0] - p[T10,T9,K1] - p[T10,T9,K2]
+   - p[T11,T9,K0] - p[T11,T9,K1] - p[T11,T9,K2] - p[D0,T9,K0] - p[D0,T9,K1]
+   - p[D0,T9,K2] - p[D1,T9,K0] - p[D1,T9,K1] - p[D1,T9,K2] - p[D2,T9,K0]
+   - p[D2,T9,K1] - p[D2,T9,K2] - p[S0,T9,K0] - p[S0,T9,K1] - p[S0,T9,K2]
+   - p[E0,T9,K0] - p[E0,T9,K1] - p[E0,T9,K2] = 0
+ c29[T10]: - 28.18373863118922 x[T10,T0,K0]
+   - 28.18373863118922 x[T10,T0,K1] - 28.18373863118922 x[T10,T0,K2]
+   - 70.89400203260394 x[T10,T1,K0] - 70.89400203260394 x[T10,T1,K1]
+   - 70.89400203260394 x[T10,T1,K2] - 25.61233119258715 x[T10,T2,K0]
+   - 25.61233119258715 x[T10,T2,K1] - 25.61233119258715 x[T10,T2,K2]
+   - 83.3946689903439 x[T10,T3,K0] - 83.3946689903439 x[T10,T3,K1]
+   - 83.3946689903439 x[T10,T3,K2] - 53.54921699994317 x[T10,T4,K0]
+   - 53.54921699994317 x[T10,T4,K1] - 53.54921699994317 x[T10,T4,K2]
+   - 63.93675628611825 x[T10,T5,K0] - 63.93675628611825 x[T10,T5,K1]
+   - 63.93675628611825 x[T10,T5,K2] - 7.119840250832602 x[T10,T6,K0]
+   - 7.119840250832602 x[T10,T6,K1] - 7.119840250832602 x[T10,T6,K2]
+   - 22.34046950203399 x[T10,T7,K0] - 22.34046950203399 x[T10,T7,K1]
+   - 22.34046950203399 x[T10,T7,K2] - 56.36032702227536 x[T10,T8,K0]
+   - 56.36032702227536 x[T10,T8,K1] - 56.36032702227536 x[T10,T8,K2]
+   - 54.66556684721757 x[T10,T9,K0] - 54.66556684721757 x[T10,T9,K1]
+   - 54.66556684721757 x[T10,T9,K2] - 21.59215772663817 x[T10,T11,K0]
+   - 21.59215772663817 x[T10,T11,K1] - 21.59215772663817 x[T10,T11,K2]
+   - 14.82970540788011 x[T10,D0,K0] - 14.82970540788011 x[T10,D0,K1]
+   - 14.82970540788011 x[T10,D0,K2] - 59.00228029255307 x[T10,D1,K0]
+   - 59.00228029255307 x[T10,D1,K1] - 59.00228029255307 x[T10,D1,K2]
+   - 42.07956469267911 x[T10,D2,K0] - 42.07956469267911 x[T10,D2,K1]
+   - 42.07956469267911 x[T10,D2,K2] - 14.82970540788011 x[T10,S0,K0]
+   - 14.82970540788011 x[T10,S0,K1] - 14.82970540788011 x[T10,S0,K2]
+   - 14.82970540788011 x[T10,E0,K0] - 14.82970540788011 x[T10,E0,K1]
+   - 14.82970540788011 x[T10,E0,K2] - p[T0,T10,K0] - p[T0,T10,K1]
+   - p[T0,T10,K2] - p[T1,T10,K0] - p[T1,T10,K1] - p[T1,T10,K2]
+   - p[T2,T10,K0] - p[T2,T10,K1] - p[T2,T10,K2] - p[T3,T10,K0]
+   - p[T3,T10,K1] - p[T3,T10,K2] - p[T4,T10,K0] - p[T4,T10,K1]
+   - p[T4,T10,K2] - p[T5,T10,K0] - p[T5,T10,K1] - p[T5,T10,K2]
+   - p[T6,T10,K0] - p[T6,T10,K1] - p[T6,T10,K2] - p[T7,T10,K0]
+   - p[T7,T10,K1] - p[T7,T10,K2] - p[T8,T10,K0] - p[T8,T10,K1]
+   - p[T8,T10,K2] - p[T9,T10,K0] - p[T9,T10,K1] - p[T9,T10,K2]
+   + p[T10,T0,K0] + p[T10,T0,K1] + p[T10,T0,K2] + p[T10,T1,K0]
+   + p[T10,T1,K1] + p[T10,T1,K2] + p[T10,T2,K0] + p[T10,T2,K1]
+   + p[T10,T2,K2] + p[T10,T3,K0] + p[T10,T3,K1] + p[T10,T3,K2]
+   + p[T10,T4,K0] + p[T10,T4,K1] + p[T10,T4,K2] + p[T10,T5,K0]
+   + p[T10,T5,K1] + p[T10,T5,K2] + p[T10,T6,K0] + p[T10,T6,K1]
+   + p[T10,T6,K2] + p[T10,T7,K0] + p[T10,T7,K1] + p[T10,T7,K2]
+   + p[T10,T8,K0] + p[T10,T8,K1] + p[T10,T8,K2] + p[T10,T9,K0]
+   + p[T10,T9,K1] + p[T10,T9,K2] + p[T10,T11,K0] + p[T10,T11,K1]
+   + p[T10,T11,K2] + p[T10,D0,K0] + p[T10,D0,K1] + p[T10,D0,K2]
+   + p[T10,D1,K0] + p[T10,D1,K1] + p[T10,D1,K2] + p[T10,D2,K0]
+   + p[T10,D2,K1] + p[T10,D2,K2] + p[T10,S0,K0] + p[T10,S0,K1]
+   + p[T10,S0,K2] + p[T10,E0,K0] + p[T10,E0,K1] + p[T10,E0,K2]
+   - p[T11,T10,K0] - p[T11,T10,K1] - p[T11,T10,K2] - p[D0,T10,K0]
+   - p[D0,T10,K1] - p[D0,T10,K2] - p[D1,T10,K0] - p[D1,T10,K1]
+   - p[D1,T10,K2] - p[D2,T10,K0] - p[D2,T10,K1] - p[D2,T10,K2]
+   - p[S0,T10,K0] - p[S0,T10,K1] - p[S0,T10,K2] - p[E0,T10,K0]
+   - p[E0,T10,K1] - p[E0,T10,K2] = 0
+ c29[T11]: - 33.29349553913811 x[T11,T0,K0]
+   - 33.29349553913811 x[T11,T0,K1] - 33.29349553913811 x[T11,T0,K2]
+   - 49.3852948077522 x[T11,T1,K0] - 49.3852948077522 x[T11,T1,K1]
+   - 49.3852948077522 x[T11,T1,K2] - 10.76631267760203 x[T11,T2,K0]
+   - 10.76631267760203 x[T11,T2,K1] - 10.76631267760203 x[T11,T2,K2]
+   - 71.4775598411982 x[T11,T3,K0] - 71.4775598411982 x[T11,T3,K1]
+   - 71.4775598411982 x[T11,T3,K2] - 42.93351409270838 x[T11,T4,K0]
+   - 42.93351409270838 x[T11,T4,K1] - 42.93351409270838 x[T11,T4,K2]
+   - 50.53053765948994 x[T11,T5,K0] - 50.53053765948994 x[T11,T5,K1]
+   - 50.53053765948994 x[T11,T5,K2] - 28.40890816566668 x[T11,T6,K0]
+   - 28.40890816566668 x[T11,T6,K1] - 28.40890816566668 x[T11,T6,K2]
+   - 1.382383386389211 x[T11,T7,K0] - 1.382383386389211 x[T11,T7,K1]
+   - 1.382383386389211 x[T11,T7,K2] - 36.34476375357031 x[T11,T8,K0]
+   - 36.34476375357031 x[T11,T8,K1] - 36.34476375357031 x[T11,T8,K2]
+   - 39.51706764684998 x[T11,T9,K0] - 39.51706764684998 x[T11,T9,K1]
+   - 39.51706764684998 x[T11,T9,K2] - 21.59215772663817 x[T11,T10,K0]
+   - 21.59215772663817 x[T11,T10,K1] - 21.59215772663817 x[T11,T10,K2]
+   - 22.88462010939719 x[T11,D0,K0] - 22.88462010939719 x[T11,D0,K1]
+   - 22.88462010939719 x[T11,D0,K2] - 59.82150656750032 x[T11,D1,K0]
+   - 59.82150656750032 x[T11,D1,K1] - 59.82150656750032 x[T11,D1,K2]
+   - 21.99506629356657 x[T11,D2,K0] - 21.99506629356657 x[T11,D2,K1]
+   - 21.99506629356657 x[T11,D2,K2] - 22.88462010939719 x[T11,S0,K0]
+   - 22.88462010939719 x[T11,S0,K1] - 22.88462010939719 x[T11,S0,K2]
+   - 22.88462010939719 x[T11,E0,K0] - 22.88462010939719 x[T11,E0,K1]
+   - 22.88462010939719 x[T11,E0,K2] - p[T0,T11,K0] - p[T0,T11,K1]
+   - p[T0,T11,K2] - p[T1,T11,K0] - p[T1,T11,K1] - p[T1,T11,K2]
+   - p[T2,T11,K0] - p[T2,T11,K1] - p[T2,T11,K2] - p[T3,T11,K0]
+   - p[T3,T11,K1] - p[T3,T11,K2] - p[T4,T11,K0] - p[T4,T11,K1]
+   - p[T4,T11,K2] - p[T5,T11,K0] - p[T5,T11,K1] - p[T5,T11,K2]
+   - p[T6,T11,K0] - p[T6,T11,K1] - p[T6,T11,K2] - p[T7,T11,K0]
+   - p[T7,T11,K1] - p[T7,T11,K2] - p[T8,T11,K0] - p[T8,T11,K1]
+   - p[T8,T11,K2] - p[T9,T11,K0] - p[T9,T11,K1] - p[T9,T11,K2]
+   - p[T10,T11,K0] - p[T10,T11,K1] - p[T10,T11,K2] + p[T11,T0,K0]
+   + p[T11,T0,K1] + p[T11,T0,K2] + p[T11,T1,K0] + p[T11,T1,K1]
+   + p[T11,T1,K2] + p[T11,T2,K0] + p[T11,T2,K1] + p[T11,T2,K2]
+   + p[T11,T3,K0] + p[T11,T3,K1] + p[T11,T3,K2] + p[T11,T4,K0]
+   + p[T11,T4,K1] + p[T11,T4,K2] + p[T11,T5,K0] + p[T11,T5,K1]
+   + p[T11,T5,K2] + p[T11,T6,K0] + p[T11,T6,K1] + p[T11,T6,K2]
+   + p[T11,T7,K0] + p[T11,T7,K1] + p[T11,T7,K2] + p[T11,T8,K0]
+   + p[T11,T8,K1] + p[T11,T8,K2] + p[T11,T9,K0] + p[T11,T9,K1]
+   + p[T11,T9,K2] + p[T11,T10,K0] + p[T11,T10,K1] + p[T11,T10,K2]
+   + p[T11,D0,K0] + p[T11,D0,K1] + p[T11,D0,K2] + p[T11,D1,K0]
+   + p[T11,D1,K1] + p[T11,D1,K2] + p[T11,D2,K0] + p[T11,D2,K1]
+   + p[T11,D2,K2] + p[T11,S0,K0] + p[T11,S0,K1] + p[T11,S0,K2]
+   + p[T11,E0,K0] + p[T11,E0,K1] + p[T11,E0,K2] - p[D0,T11,K0]
+   - p[D0,T11,K1] - p[D0,T11,K2] - p[D1,T11,K0] - p[D1,T11,K1]
+   - p[D1,T11,K2] - p[D2,T11,K0] - p[D2,T11,K1] - p[D2,T11,K2]
+   - p[S0,T11,K0] - p[S0,T11,K1] - p[S0,T11,K2] - p[E0,T11,K0]
+   - p[E0,T11,K1] - p[E0,T11,K2] = 0
+ c30[S0,T0,K0]: - 42.30825234805249 x[S0,T0,K0] + p[S0,T0,K0] = 0
+ c30[S0,T0,K1]: - 42.30825234805249 x[S0,T0,K1] + p[S0,T0,K1] = 0
+ c30[S0,T0,K2]: - 42.30825234805249 x[S0,T0,K2] + p[S0,T0,K2] = 0
+ c30[S0,T1,K0]: - 67.5640560397419 x[S0,T1,K0] + p[S0,T1,K0] = 0
+ c30[S0,T1,K1]: - 67.5640560397419 x[S0,T1,K1] + p[S0,T1,K1] = 0
+ c30[S0,T1,K2]: - 67.5640560397419 x[S0,T1,K2] + p[S0,T1,K2] = 0
+ c30[S0,T2,K0]: - 19.8910037045967 x[S0,T2,K0] + p[S0,T2,K0] = 0
+ c30[S0,T2,K1]: - 19.8910037045967 x[S0,T2,K1] + p[S0,T2,K1] = 0
+ c30[S0,T2,K2]: - 19.8910037045967 x[S0,T2,K2] + p[S0,T2,K2] = 0
+ c30[S0,T3,K0]: - 92.77043217631032 x[S0,T3,K0] + p[S0,T3,K0] = 0
+ c30[S0,T3,K1]: - 92.77043217631032 x[S0,T3,K1] + p[S0,T3,K1] = 0
+ c30[S0,T3,K2]: - 92.77043217631032 x[S0,T3,K2] + p[S0,T3,K2] = 0
+ c30[S0,T4,K0]: - 40.65913557397837 x[S0,T4,K0] + p[S0,T4,K0] = 0
+ c30[S0,T4,K1]: - 40.65913557397837 x[S0,T4,K1] + p[S0,T4,K1] = 0
+ c30[S0,T4,K2]: - 40.65913557397837 x[S0,T4,K2] + p[S0,T4,K2] = 0
+ c30[S0,T5,K0]: - 72.27271688520476 x[S0,T5,K0] + p[S0,T5,K0] = 0
+ c30[S0,T5,K1]: - 72.27271688520476 x[S0,T5,K1] + p[S0,T5,K1] = 0
+ c30[S0,T5,K2]: - 72.27271688520476 x[S0,T5,K2] + p[S0,T5,K2] = 0
+ c30[S0,T6,K0]: - 19.71633985167589 x[S0,T6,K0] + p[S0,T6,K0] = 0
+ c30[S0,T6,K1]: - 19.71633985167589 x[S0,T6,K1] + p[S0,T6,K1] = 0
+ c30[S0,T6,K2]: - 19.71633985167589 x[S0,T6,K2] + p[S0,T6,K2] = 0
+ c30[S0,T7,K0]: - 22.74377489092869 x[S0,T7,K0] + p[S0,T7,K0] = 0
+ c30[S0,T7,K1]: - 22.74377489092869 x[S0,T7,K1] + p[S0,T7,K1] = 0
+ c30[S0,T7,K2]: - 22.74377489092869 x[S0,T7,K2] + p[S0,T7,K2] = 0
+ c30[S0,T8,K0]: - 58.9665153282691 x[S0,T8,K0] + p[S0,T8,K0] = 0
+ c30[S0,T8,K1]: - 58.9665153282691 x[S0,T8,K1] + p[S0,T8,K1] = 0
+ c30[S0,T8,K2]: - 58.9665153282691 x[S0,T8,K2] + p[S0,T8,K2] = 0
+ c30[S0,T9,K0]: - 61.77037286423689 x[S0,T9,K0] + p[S0,T9,K0] = 0
+ c30[S0,T9,K1]: - 61.77037286423689 x[S0,T9,K1] + p[S0,T9,K1] = 0
+ c30[S0,T9,K2]: - 61.77037286423689 x[S0,T9,K2] + p[S0,T9,K2] = 0
+ c30[S0,T10,K0]: - 14.82970540788011 x[S0,T10,K0] + p[S0,T10,K0] = 0
+ c30[S0,T10,K1]: - 14.82970540788011 x[S0,T10,K1] + p[S0,T10,K1] = 0
+ c30[S0,T10,K2]: - 14.82970540788011 x[S0,T10,K2] + p[S0,T10,K2] = 0
+ c30[S0,T11,K0]: - 22.88462010939719 x[S0,T11,K0] + p[S0,T11,K0] = 0
+ c30[S0,T11,K1]: - 22.88462010939719 x[S0,T11,K1] + p[S0,T11,K1] = 0
+ c30[S0,T11,K2]: - 22.88462010939719 x[S0,T11,K2] + p[S0,T11,K2] = 0
+ c30[S0,D0,K0]: p[S0,D0,K0] = 0
+ c30[S0,D0,K1]: p[S0,D0,K1] = 0
+ c30[S0,D0,K2]: p[S0,D0,K2] = 0
+ c30[S0,D1,K0]: - 72.88237796071653 x[S0,D1,K0] + p[S0,D1,K0] = 0
+ c30[S0,D1,K1]: - 72.88237796071653 x[S0,D1,K1] + p[S0,D1,K1] = 0
+ c30[S0,D1,K2]: - 72.88237796071653 x[S0,D1,K2] + p[S0,D1,K2] = 0
+ c30[S0,D2,K0]: - 36.97993440770559 x[S0,D2,K0] + p[S0,D2,K0] = 0
+ c30[S0,D2,K1]: - 36.97993440770559 x[S0,D2,K1] + p[S0,D2,K1] = 0
+ c30[S0,D2,K2]: - 36.97993440770559 x[S0,D2,K2] + p[S0,D2,K2] = 0
+ c30[S0,E0,K0]: p[S0,E0,K0] = 0
+ c30[S0,E0,K1]: p[S0,E0,K1] = 0
+ c30[S0,E0,K2]: p[S0,E0,K2] = 0
+ c30[D0,T0,K0]: - 42.30825234805249 x[D0,T0,K0] + p[D0,T0,K0] = 0
+ c30[D0,T0,K1]: - 42.30825234805249 x[D0,T0,K1] + p[D0,T0,K1] = 0
+ c30[D0,T0,K2]: - 42.30825234805249 x[D0,T0,K2] + p[D0,T0,K2] = 0
+ c30[D0,T1,K0]: - 67.5640560397419 x[D0,T1,K0] + p[D0,T1,K0] = 0
+ c30[D0,T1,K1]: - 67.5640560397419 x[D0,T1,K1] + p[D0,T1,K1] = 0
+ c30[D0,T1,K2]: - 67.5640560397419 x[D0,T1,K2] + p[D0,T1,K2] = 0
+ c30[D0,T2,K0]: - 19.8910037045967 x[D0,T2,K0] + p[D0,T2,K0] = 0
+ c30[D0,T2,K1]: - 19.8910037045967 x[D0,T2,K1] + p[D0,T2,K1] = 0
+ c30[D0,T2,K2]: - 19.8910037045967 x[D0,T2,K2] + p[D0,T2,K2] = 0
+ c30[D0,T3,K0]: - 92.77043217631032 x[D0,T3,K0] + p[D0,T3,K0] = 0
+ c30[D0,T3,K1]: - 92.77043217631032 x[D0,T3,K1] + p[D0,T3,K1] = 0
+ c30[D0,T3,K2]: - 92.77043217631032 x[D0,T3,K2] + p[D0,T3,K2] = 0
+ c30[D0,T4,K0]: - 40.65913557397837 x[D0,T4,K0] + p[D0,T4,K0] = 0
+ c30[D0,T4,K1]: - 40.65913557397837 x[D0,T4,K1] + p[D0,T4,K1] = 0
+ c30[D0,T4,K2]: - 40.65913557397837 x[D0,T4,K2] + p[D0,T4,K2] = 0
+ c30[D0,T5,K0]: - 72.27271688520476 x[D0,T5,K0] + p[D0,T5,K0] = 0
+ c30[D0,T5,K1]: - 72.27271688520476 x[D0,T5,K1] + p[D0,T5,K1] = 0
+ c30[D0,T5,K2]: - 72.27271688520476 x[D0,T5,K2] + p[D0,T5,K2] = 0
+ c30[D0,T6,K0]: - 19.71633985167589 x[D0,T6,K0] + p[D0,T6,K0] = 0
+ c30[D0,T6,K1]: - 19.71633985167589 x[D0,T6,K1] + p[D0,T6,K1] = 0
+ c30[D0,T6,K2]: - 19.71633985167589 x[D0,T6,K2] + p[D0,T6,K2] = 0
+ c30[D0,T7,K0]: - 22.74377489092869 x[D0,T7,K0] + p[D0,T7,K0] = 0
+ c30[D0,T7,K1]: - 22.74377489092869 x[D0,T7,K1] + p[D0,T7,K1] = 0
+ c30[D0,T7,K2]: - 22.74377489092869 x[D0,T7,K2] + p[D0,T7,K2] = 0
+ c30[D0,T8,K0]: - 58.9665153282691 x[D0,T8,K0] + p[D0,T8,K0] = 0
+ c30[D0,T8,K1]: - 58.9665153282691 x[D0,T8,K1] + p[D0,T8,K1] = 0
+ c30[D0,T8,K2]: - 58.9665153282691 x[D0,T8,K2] + p[D0,T8,K2] = 0
+ c30[D0,T9,K0]: - 61.77037286423689 x[D0,T9,K0] + p[D0,T9,K0] = 0
+ c30[D0,T9,K1]: - 61.77037286423689 x[D0,T9,K1] + p[D0,T9,K1] = 0
+ c30[D0,T9,K2]: - 61.77037286423689 x[D0,T9,K2] + p[D0,T9,K2] = 0
+ c30[D0,T10,K0]: - 14.82970540788011 x[D0,T10,K0] + p[D0,T10,K0] = 0
+ c30[D0,T10,K1]: - 14.82970540788011 x[D0,T10,K1] + p[D0,T10,K1] = 0
+ c30[D0,T10,K2]: - 14.82970540788011 x[D0,T10,K2] + p[D0,T10,K2] = 0
+ c30[D0,T11,K0]: - 22.88462010939719 x[D0,T11,K0] + p[D0,T11,K0] = 0
+ c30[D0,T11,K1]: - 22.88462010939719 x[D0,T11,K1] + p[D0,T11,K1] = 0
+ c30[D0,T11,K2]: - 22.88462010939719 x[D0,T11,K2] + p[D0,T11,K2] = 0
+ c30[D0,D1,K0]: - 72.88237796071653 x[D0,D1,K0] + p[D0,D1,K0] = 0
+ c30[D0,D1,K1]: - 72.88237796071653 x[D0,D1,K1] + p[D0,D1,K1] = 0
+ c30[D0,D1,K2]: - 72.88237796071653 x[D0,D1,K2] + p[D0,D1,K2] = 0
+ c30[D0,D2,K0]: - 36.97993440770559 x[D0,D2,K0] + p[D0,D2,K0] = 0
+ c30[D0,D2,K1]: - 36.97993440770559 x[D0,D2,K1] + p[D0,D2,K1] = 0
+ c30[D0,D2,K2]: - 36.97993440770559 x[D0,D2,K2] + p[D0,D2,K2] = 0
+ c30[D0,S0,K0]: p[D0,S0,K0] = 0
+ c30[D0,S0,K1]: p[D0,S0,K1] = 0
+ c30[D0,S0,K2]: p[D0,S0,K2] = 0
+ c30[D0,E0,K0]: p[D0,E0,K0] = 0
+ c30[D0,E0,K1]: p[D0,E0,K1] = 0
+ c30[D0,E0,K2]: p[D0,E0,K2] = 0
+ c30[D1,T0,K0]: - 30.82932734588058 x[D1,T0,K0] + p[D1,T0,K0] = 0
+ c30[D1,T0,K1]: - 30.82932734588058 x[D1,T0,K1] + p[D1,T0,K1] = 0
+ c30[D1,T0,K2]: - 30.82932734588058 x[D1,T0,K2] + p[D1,T0,K2] = 0
+ c30[D1,T1,K0]: - 88.91619902116914 x[D1,T1,K0] + p[D1,T1,K0] = 0
+ c30[D1,T1,K1]: - 88.91619902116914 x[D1,T1,K1] + p[D1,T1,K1] = 0
+ c30[D1,T1,K2]: - 88.91619902116914 x[D1,T1,K2] + p[D1,T1,K2] = 0
+ c30[D1,T2,K0]: - 70.57118364971254 x[D1,T2,K0] + p[D1,T2,K0] = 0
+ c30[D1,T2,K1]: - 70.57118364971254 x[D1,T2,K1] + p[D1,T2,K1] = 0
+ c30[D1,T2,K2]: - 70.57118364971254 x[D1,T2,K2] + p[D1,T2,K2] = 0
+ c30[D1,T3,K0]: - 45.33510223797149 x[D1,T3,K0] + p[D1,T3,K0] = 0
+ c30[D1,T3,K1]: - 45.33510223797149 x[D1,T3,K1] + p[D1,T3,K1] = 0
+ c30[D1,T3,K2]: - 45.33510223797149 x[D1,T3,K2] + p[D1,T3,K2] = 0
+ c30[D1,T4,K0]: - 102.6630638175773 x[D1,T4,K0] + p[D1,T4,K0] = 0
+ c30[D1,T4,K1]: - 102.6630638175773 x[D1,T4,K1] + p[D1,T4,K1] = 0
+ c30[D1,T4,K2]: - 102.6630638175773 x[D1,T4,K2] + p[D1,T4,K2] = 0
+ c30[D1,T5,K0]: - 40.41199387589227 x[D1,T5,K0] + p[D1,T5,K0] = 0
+ c30[D1,T5,K1]: - 40.41199387589227 x[D1,T5,K1] + p[D1,T5,K1] = 0
+ c30[D1,T5,K2]: - 40.41199387589227 x[D1,T5,K2] + p[D1,T5,K2] = 0
+ c30[D1,T6,K0]: - 58.06654947553397 x[D1,T6,K0] + p[D1,T6,K0] = 0
+ c30[D1,T6,K1]: - 58.06654947553397 x[D1,T6,K1] + p[D1,T6,K1] = 0
+ c30[D1,T6,K2]: - 58.06654947553397 x[D1,T6,K2] + p[D1,T6,K2] = 0
+ c30[D1,T7,K0]: - 61.13294579841121 x[D1,T7,K0] + p[D1,T7,K0] = 0
+ c30[D1,T7,K1]: - 61.13294579841121 x[D1,T7,K1] + p[D1,T7,K1] = 0
+ c30[D1,T7,K2]: - 61.13294579841121 x[D1,T7,K2] + p[D1,T7,K2] = 0
+ c30[D1,T8,K0]: - 61.35927234325877 x[D1,T8,K0] + p[D1,T8,K0] = 0
+ c30[D1,T8,K1]: - 61.35927234325877 x[D1,T8,K1] + p[D1,T8,K1] = 0
+ c30[D1,T8,K2]: - 61.35927234325877 x[D1,T8,K2] + p[D1,T8,K2] = 0
+ c30[D1,T9,K0]: - 43.66830597070244 x[D1,T9,K0] + p[D1,T9,K0] = 0
+ c30[D1,T9,K1]: - 43.66830597070244 x[D1,T9,K1] + p[D1,T9,K1] = 0
+ c30[D1,T9,K2]: - 43.66830597070244 x[D1,T9,K2] + p[D1,T9,K2] = 0
+ c30[D1,T10,K0]: - 59.00228029255307 x[D1,T10,K0] + p[D1,T10,K0] = 0
+ c30[D1,T10,K1]: - 59.00228029255307 x[D1,T10,K1] + p[D1,T10,K1] = 0
+ c30[D1,T10,K2]: - 59.00228029255307 x[D1,T10,K2] + p[D1,T10,K2] = 0
+ c30[D1,T11,K0]: - 59.82150656750032 x[D1,T11,K0] + p[D1,T11,K0] = 0
+ c30[D1,T11,K1]: - 59.82150656750032 x[D1,T11,K1] + p[D1,T11,K1] = 0
+ c30[D1,T11,K2]: - 59.82150656750032 x[D1,T11,K2] + p[D1,T11,K2] = 0
+ c30[D1,D0,K0]: - 72.88237796071653 x[D1,D0,K0] + p[D1,D0,K0] = 0
+ c30[D1,D0,K1]: - 72.88237796071653 x[D1,D0,K1] + p[D1,D0,K1] = 0
+ c30[D1,D0,K2]: - 72.88237796071653 x[D1,D0,K2] + p[D1,D0,K2] = 0
+ c30[D1,D2,K0]: - 76.49422647750454 x[D1,D2,K0] + p[D1,D2,K0] = 0
+ c30[D1,D2,K1]: - 76.49422647750454 x[D1,D2,K1] + p[D1,D2,K1] = 0
+ c30[D1,D2,K2]: - 76.49422647750454 x[D1,D2,K2] + p[D1,D2,K2] = 0
+ c30[D1,S0,K0]: - 72.88237796071653 x[D1,S0,K0] + p[D1,S0,K0] = 0
+ c30[D1,S0,K1]: - 72.88237796071653 x[D1,S0,K1] + p[D1,S0,K1] = 0
+ c30[D1,S0,K2]: - 72.88237796071653 x[D1,S0,K2] + p[D1,S0,K2] = 0
+ c30[D1,E0,K0]: - 72.88237796071653 x[D1,E0,K0] + p[D1,E0,K0] = 0
+ c30[D1,E0,K1]: - 72.88237796071653 x[D1,E0,K1] + p[D1,E0,K1] = 0
+ c30[D1,E0,K2]: - 72.88237796071653 x[D1,E0,K2] + p[D1,E0,K2] = 0
+ c30[D2,T0,K0]: - 53.8363852061228 x[D2,T0,K0] + p[D2,T0,K0] = 0
+ c30[D2,T0,K1]: - 53.8363852061228 x[D2,T0,K1] + p[D2,T0,K1] = 0
+ c30[D2,T0,K2]: - 53.8363852061228 x[D2,T0,K2] + p[D2,T0,K2] = 0
+ c30[D2,T1,K0]: - 30.67512929913077 x[D2,T1,K0] + p[D2,T1,K0] = 0
+ c30[D2,T1,K1]: - 30.67512929913077 x[D2,T1,K1] + p[D2,T1,K1] = 0
+ c30[D2,T1,K2]: - 30.67512929913077 x[D2,T1,K2] + p[D2,T1,K2] = 0
+ c30[D2,T2,K0]: - 17.29967747031127 x[D2,T2,K0] + p[D2,T2,K0] = 0
+ c30[D2,T2,K1]: - 17.29967747031127 x[D2,T2,K1] + p[D2,T2,K1] = 0
+ c30[D2,T2,K2]: - 17.29967747031127 x[D2,T2,K2] + p[D2,T2,K2] = 0
+ c30[D2,T3,K0]: - 76.12415975328686 x[D2,T3,K0] + p[D2,T3,K0] = 0
+ c30[D2,T3,K1]: - 76.12415975328686 x[D2,T3,K1] + p[D2,T3,K1] = 0
+ c30[D2,T3,K2]: - 76.12415975328686 x[D2,T3,K2] + p[D2,T3,K2] = 0
+ c30[D2,T4,K0]: - 30.48246372598624 x[D2,T4,K0] + p[D2,T4,K0] = 0
+ c30[D2,T4,K1]: - 30.48246372598624 x[D2,T4,K1] + p[D2,T4,K1] = 0
+ c30[D2,T4,K2]: - 30.48246372598624 x[D2,T4,K2] + p[D2,T4,K2] = 0
+ c30[D2,T5,K0]: - 55.43111963757291 x[D2,T5,K0] + p[D2,T5,K0] = 0
+ c30[D2,T5,K1]: - 55.43111963757291 x[D2,T5,K1] + p[D2,T5,K1] = 0
+ c30[D2,T5,K2]: - 55.43111963757291 x[D2,T5,K2] + p[D2,T5,K2] = 0
+ c30[D2,T6,K0]: - 49.18410926622656 x[D2,T6,K0] + p[D2,T6,K0] = 0
+ c30[D2,T6,K1]: - 49.18410926622656 x[D2,T6,K1] + p[D2,T6,K1] = 0
+ c30[D2,T6,K2]: - 49.18410926622656 x[D2,T6,K2] + p[D2,T6,K2] = 0
+ c30[D2,T7,K0]: - 20.79099966233581 x[D2,T7,K0] + p[D2,T7,K0] = 0
+ c30[D2,T7,K1]: - 20.79099966233581 x[D2,T7,K1] + p[D2,T7,K1] = 0
+ c30[D2,T7,K2]: - 20.79099966233581 x[D2,T7,K2] + p[D2,T7,K2] = 0
+ c30[D2,T8,K0]: - 30.92564327622608 x[D2,T8,K0] + p[D2,T8,K0] = 0
+ c30[D2,T8,K1]: - 30.92564327622608 x[D2,T8,K1] + p[D2,T8,K1] = 0
+ c30[D2,T8,K2]: - 30.92564327622608 x[D2,T8,K2] + p[D2,T8,K2] = 0
+ c30[D2,T9,K0]: - 43.85646487101411 x[D2,T9,K0] + p[D2,T9,K0] = 0
+ c30[D2,T9,K1]: - 43.85646487101411 x[D2,T9,K1] + p[D2,T9,K1] = 0
+ c30[D2,T9,K2]: - 43.85646487101411 x[D2,T9,K2] + p[D2,T9,K2] = 0
+ c30[D2,T10,K0]: - 42.07956469267911 x[D2,T10,K0] + p[D2,T10,K0] = 0
+ c30[D2,T10,K1]: - 42.07956469267911 x[D2,T10,K1] + p[D2,T10,K1] = 0
+ c30[D2,T10,K2]: - 42.07956469267911 x[D2,T10,K2] + p[D2,T10,K2] = 0
+ c30[D2,T11,K0]: - 21.99506629356657 x[D2,T11,K0] + p[D2,T11,K0] = 0
+ c30[D2,T11,K1]: - 21.99506629356657 x[D2,T11,K1] + p[D2,T11,K1] = 0
+ c30[D2,T11,K2]: - 21.99506629356657 x[D2,T11,K2] + p[D2,T11,K2] = 0
+ c30[D2,D0,K0]: - 36.97993440770559 x[D2,D0,K0] + p[D2,D0,K0] = 0
+ c30[D2,D0,K1]: - 36.97993440770559 x[D2,D0,K1] + p[D2,D0,K1] = 0
+ c30[D2,D0,K2]: - 36.97993440770559 x[D2,D0,K2] + p[D2,D0,K2] = 0
+ c30[D2,D1,K0]: - 76.49422647750454 x[D2,D1,K0] + p[D2,D1,K0] = 0
+ c30[D2,D1,K1]: - 76.49422647750454 x[D2,D1,K1] + p[D2,D1,K1] = 0
+ c30[D2,D1,K2]: - 76.49422647750454 x[D2,D1,K2] + p[D2,D1,K2] = 0
+ c30[D2,S0,K0]: - 36.97993440770559 x[D2,S0,K0] + p[D2,S0,K0] = 0
+ c30[D2,S0,K1]: - 36.97993440770559 x[D2,S0,K1] + p[D2,S0,K1] = 0
+ c30[D2,S0,K2]: - 36.97993440770559 x[D2,S0,K2] + p[D2,S0,K2] = 0
+ c30[D2,E0,K0]: - 36.97993440770559 x[D2,E0,K0] + p[D2,E0,K0] = 0
+ c30[D2,E0,K1]: - 36.97993440770559 x[D2,E0,K1] + p[D2,E0,K1] = 0
+ c30[D2,E0,K2]: - 36.97993440770559 x[D2,E0,K2] + p[D2,E0,K2] = 0
+ c31[T0,T1,K0]: - 125 x[T0,T1,K0] + p[T0,T1,K0] <= 0
+ c31[T0,T1,K1]: - 125 x[T0,T1,K1] + p[T0,T1,K1] <= 0
+ c31[T0,T1,K2]: - 125 x[T0,T1,K2] + p[T0,T1,K2] <= 0
+ c31[T0,T2,K0]: - 125 x[T0,T2,K0] + p[T0,T2,K0] <= 0
+ c31[T0,T2,K1]: - 125 x[T0,T2,K1] + p[T0,T2,K1] <= 0
+ c31[T0,T2,K2]: - 125 x[T0,T2,K2] + p[T0,T2,K2] <= 0
+ c31[T0,T3,K0]: - 125 x[T0,T3,K0] + p[T0,T3,K0] <= 0
+ c31[T0,T3,K1]: - 125 x[T0,T3,K1] + p[T0,T3,K1] <= 0
+ c31[T0,T3,K2]: - 125 x[T0,T3,K2] + p[T0,T3,K2] <= 0
+ c31[T0,T4,K0]: - 125 x[T0,T4,K0] + p[T0,T4,K0] <= 0
+ c31[T0,T4,K1]: - 125 x[T0,T4,K1] + p[T0,T4,K1] <= 0
+ c31[T0,T4,K2]: - 125 x[T0,T4,K2] + p[T0,T4,K2] <= 0
+ c31[T0,T5,K0]: - 125 x[T0,T5,K0] + p[T0,T5,K0] <= 0
+ c31[T0,T5,K1]: - 125 x[T0,T5,K1] + p[T0,T5,K1] <= 0
+ c31[T0,T5,K2]: - 125 x[T0,T5,K2] + p[T0,T5,K2] <= 0
+ c31[T0,T6,K0]: - 125 x[T0,T6,K0] + p[T0,T6,K0] <= 0
+ c31[T0,T6,K1]: - 125 x[T0,T6,K1] + p[T0,T6,K1] <= 0
+ c31[T0,T6,K2]: - 125 x[T0,T6,K2] + p[T0,T6,K2] <= 0
+ c31[T0,T7,K0]: - 125 x[T0,T7,K0] + p[T0,T7,K0] <= 0
+ c31[T0,T7,K1]: - 125 x[T0,T7,K1] + p[T0,T7,K1] <= 0
+ c31[T0,T7,K2]: - 125 x[T0,T7,K2] + p[T0,T7,K2] <= 0
+ c31[T0,T8,K0]: - 125 x[T0,T8,K0] + p[T0,T8,K0] <= 0
+ c31[T0,T8,K1]: - 125 x[T0,T8,K1] + p[T0,T8,K1] <= 0
+ c31[T0,T8,K2]: - 125 x[T0,T8,K2] + p[T0,T8,K2] <= 0
+ c31[T0,T9,K0]: - 125 x[T0,T9,K0] + p[T0,T9,K0] <= 0
+ c31[T0,T9,K1]: - 125 x[T0,T9,K1] + p[T0,T9,K1] <= 0
+ c31[T0,T9,K2]: - 125 x[T0,T9,K2] + p[T0,T9,K2] <= 0
+ c31[T0,T10,K0]: - 125 x[T0,T10,K0] + p[T0,T10,K0] <= 0
+ c31[T0,T10,K1]: - 125 x[T0,T10,K1] + p[T0,T10,K1] <= 0
+ c31[T0,T10,K2]: - 125 x[T0,T10,K2] + p[T0,T10,K2] <= 0
+ c31[T0,T11,K0]: - 125 x[T0,T11,K0] + p[T0,T11,K0] <= 0
+ c31[T0,T11,K1]: - 125 x[T0,T11,K1] + p[T0,T11,K1] <= 0
+ c31[T0,T11,K2]: - 125 x[T0,T11,K2] + p[T0,T11,K2] <= 0
+ c31[T0,D0,K0]: - 125 x[T0,D0,K0] + p[T0,D0,K0] <= 0
+ c31[T0,D0,K1]: - 125 x[T0,D0,K1] + p[T0,D0,K1] <= 0
+ c31[T0,D0,K2]: - 125 x[T0,D0,K2] + p[T0,D0,K2] <= 0
+ c31[T0,D1,K0]: - 125 x[T0,D1,K0] + p[T0,D1,K0] <= 0
+ c31[T0,D1,K1]: - 125 x[T0,D1,K1] + p[T0,D1,K1] <= 0
+ c31[T0,D1,K2]: - 125 x[T0,D1,K2] + p[T0,D1,K2] <= 0
+ c31[T0,D2,K0]: - 125 x[T0,D2,K0] + p[T0,D2,K0] <= 0
+ c31[T0,D2,K1]: - 125 x[T0,D2,K1] + p[T0,D2,K1] <= 0
+ c31[T0,D2,K2]: - 125 x[T0,D2,K2] + p[T0,D2,K2] <= 0
+ c31[T0,S0,K0]: - 125 x[T0,S0,K0] + p[T0,S0,K0] <= 0
+ c31[T0,S0,K1]: - 125 x[T0,S0,K1] + p[T0,S0,K1] <= 0
+ c31[T0,S0,K2]: - 125 x[T0,S0,K2] + p[T0,S0,K2] <= 0
+ c31[T0,E0,K0]: - 125 x[T0,E0,K0] + p[T0,E0,K0] <= 0
+ c31[T0,E0,K1]: - 125 x[T0,E0,K1] + p[T0,E0,K1] <= 0
+ c31[T0,E0,K2]: - 125 x[T0,E0,K2] + p[T0,E0,K2] <= 0
+ c31[T1,T0,K0]: - 125 x[T1,T0,K0] + p[T1,T0,K0] <= 0
+ c31[T1,T0,K1]: - 125 x[T1,T0,K1] + p[T1,T0,K1] <= 0
+ c31[T1,T0,K2]: - 125 x[T1,T0,K2] + p[T1,T0,K2] <= 0
+ c31[T1,T2,K0]: - 125 x[T1,T2,K0] + p[T1,T2,K0] <= 0
+ c31[T1,T2,K1]: - 125 x[T1,T2,K1] + p[T1,T2,K1] <= 0
+ c31[T1,T2,K2]: - 125 x[T1,T2,K2] + p[T1,T2,K2] <= 0
+ c31[T1,T3,K0]: - 125 x[T1,T3,K0] + p[T1,T3,K0] <= 0
+ c31[T1,T3,K1]: - 125 x[T1,T3,K1] + p[T1,T3,K1] <= 0
+ c31[T1,T3,K2]: - 125 x[T1,T3,K2] + p[T1,T3,K2] <= 0
+ c31[T1,T4,K0]: - 125 x[T1,T4,K0] + p[T1,T4,K0] <= 0
+ c31[T1,T4,K1]: - 125 x[T1,T4,K1] + p[T1,T4,K1] <= 0
+ c31[T1,T4,K2]: - 125 x[T1,T4,K2] + p[T1,T4,K2] <= 0
+ c31[T1,T5,K0]: - 125 x[T1,T5,K0] + p[T1,T5,K0] <= 0
+ c31[T1,T5,K1]: - 125 x[T1,T5,K1] + p[T1,T5,K1] <= 0
+ c31[T1,T5,K2]: - 125 x[T1,T5,K2] + p[T1,T5,K2] <= 0
+ c31[T1,T6,K0]: - 125 x[T1,T6,K0] + p[T1,T6,K0] <= 0
+ c31[T1,T6,K1]: - 125 x[T1,T6,K1] + p[T1,T6,K1] <= 0
+ c31[T1,T6,K2]: - 125 x[T1,T6,K2] + p[T1,T6,K2] <= 0
+ c31[T1,T7,K0]: - 125 x[T1,T7,K0] + p[T1,T7,K0] <= 0
+ c31[T1,T7,K1]: - 125 x[T1,T7,K1] + p[T1,T7,K1] <= 0
+ c31[T1,T7,K2]: - 125 x[T1,T7,K2] + p[T1,T7,K2] <= 0
+ c31[T1,T8,K0]: - 125 x[T1,T8,K0] + p[T1,T8,K0] <= 0
+ c31[T1,T8,K1]: - 125 x[T1,T8,K1] + p[T1,T8,K1] <= 0
+ c31[T1,T8,K2]: - 125 x[T1,T8,K2] + p[T1,T8,K2] <= 0
+ c31[T1,T9,K0]: - 125 x[T1,T9,K0] + p[T1,T9,K0] <= 0
+ c31[T1,T9,K1]: - 125 x[T1,T9,K1] + p[T1,T9,K1] <= 0
+ c31[T1,T9,K2]: - 125 x[T1,T9,K2] + p[T1,T9,K2] <= 0
+ c31[T1,T10,K0]: - 125 x[T1,T10,K0] + p[T1,T10,K0] <= 0
+ c31[T1,T10,K1]: - 125 x[T1,T10,K1] + p[T1,T10,K1] <= 0
+ c31[T1,T10,K2]: - 125 x[T1,T10,K2] + p[T1,T10,K2] <= 0
+ c31[T1,T11,K0]: - 125 x[T1,T11,K0] + p[T1,T11,K0] <= 0
+ c31[T1,T11,K1]: - 125 x[T1,T11,K1] + p[T1,T11,K1] <= 0
+ c31[T1,T11,K2]: - 125 x[T1,T11,K2] + p[T1,T11,K2] <= 0
+ c31[T1,D0,K0]: - 125 x[T1,D0,K0] + p[T1,D0,K0] <= 0
+ c31[T1,D0,K1]: - 125 x[T1,D0,K1] + p[T1,D0,K1] <= 0
+ c31[T1,D0,K2]: - 125 x[T1,D0,K2] + p[T1,D0,K2] <= 0
+ c31[T1,D1,K0]: - 125 x[T1,D1,K0] + p[T1,D1,K0] <= 0
+ c31[T1,D1,K1]: - 125 x[T1,D1,K1] + p[T1,D1,K1] <= 0
+ c31[T1,D1,K2]: - 125 x[T1,D1,K2] + p[T1,D1,K2] <= 0
+ c31[T1,D2,K0]: - 125 x[T1,D2,K0] + p[T1,D2,K0] <= 0
+ c31[T1,D2,K1]: - 125 x[T1,D2,K1] + p[T1,D2,K1] <= 0
+ c31[T1,D2,K2]: - 125 x[T1,D2,K2] + p[T1,D2,K2] <= 0
+ c31[T1,S0,K0]: - 125 x[T1,S0,K0] + p[T1,S0,K0] <= 0
+ c31[T1,S0,K1]: - 125 x[T1,S0,K1] + p[T1,S0,K1] <= 0
+ c31[T1,S0,K2]: - 125 x[T1,S0,K2] + p[T1,S0,K2] <= 0
+ c31[T1,E0,K0]: - 125 x[T1,E0,K0] + p[T1,E0,K0] <= 0
+ c31[T1,E0,K1]: - 125 x[T1,E0,K1] + p[T1,E0,K1] <= 0
+ c31[T1,E0,K2]: - 125 x[T1,E0,K2] + p[T1,E0,K2] <= 0
+ c31[T2,T0,K0]: - 125 x[T2,T0,K0] + p[T2,T0,K0] <= 0
+ c31[T2,T0,K1]: - 125 x[T2,T0,K1] + p[T2,T0,K1] <= 0
+ c31[T2,T0,K2]: - 125 x[T2,T0,K2] + p[T2,T0,K2] <= 0
+ c31[T2,T1,K0]: - 125 x[T2,T1,K0] + p[T2,T1,K0] <= 0
+ c31[T2,T1,K1]: - 125 x[T2,T1,K1] + p[T2,T1,K1] <= 0
+ c31[T2,T1,K2]: - 125 x[T2,T1,K2] + p[T2,T1,K2] <= 0
+ c31[T2,T3,K0]: - 125 x[T2,T3,K0] + p[T2,T3,K0] <= 0
+ c31[T2,T3,K1]: - 125 x[T2,T3,K1] + p[T2,T3,K1] <= 0
+ c31[T2,T3,K2]: - 125 x[T2,T3,K2] + p[T2,T3,K2] <= 0
+ c31[T2,T4,K0]: - 125 x[T2,T4,K0] + p[T2,T4,K0] <= 0
+ c31[T2,T4,K1]: - 125 x[T2,T4,K1] + p[T2,T4,K1] <= 0
+ c31[T2,T4,K2]: - 125 x[T2,T4,K2] + p[T2,T4,K2] <= 0
+ c31[T2,T5,K0]: - 125 x[T2,T5,K0] + p[T2,T5,K0] <= 0
+ c31[T2,T5,K1]: - 125 x[T2,T5,K1] + p[T2,T5,K1] <= 0
+ c31[T2,T5,K2]: - 125 x[T2,T5,K2] + p[T2,T5,K2] <= 0
+ c31[T2,T6,K0]: - 125 x[T2,T6,K0] + p[T2,T6,K0] <= 0
+ c31[T2,T6,K1]: - 125 x[T2,T6,K1] + p[T2,T6,K1] <= 0
+ c31[T2,T6,K2]: - 125 x[T2,T6,K2] + p[T2,T6,K2] <= 0
+ c31[T2,T7,K0]: - 125 x[T2,T7,K0] + p[T2,T7,K0] <= 0
+ c31[T2,T7,K1]: - 125 x[T2,T7,K1] + p[T2,T7,K1] <= 0
+ c31[T2,T7,K2]: - 125 x[T2,T7,K2] + p[T2,T7,K2] <= 0
+ c31[T2,T8,K0]: - 125 x[T2,T8,K0] + p[T2,T8,K0] <= 0
+ c31[T2,T8,K1]: - 125 x[T2,T8,K1] + p[T2,T8,K1] <= 0
+ c31[T2,T8,K2]: - 125 x[T2,T8,K2] + p[T2,T8,K2] <= 0
+ c31[T2,T9,K0]: - 125 x[T2,T9,K0] + p[T2,T9,K0] <= 0
+ c31[T2,T9,K1]: - 125 x[T2,T9,K1] + p[T2,T9,K1] <= 0
+ c31[T2,T9,K2]: - 125 x[T2,T9,K2] + p[T2,T9,K2] <= 0
+ c31[T2,T10,K0]: - 125 x[T2,T10,K0] + p[T2,T10,K0] <= 0
+ c31[T2,T10,K1]: - 125 x[T2,T10,K1] + p[T2,T10,K1] <= 0
+ c31[T2,T10,K2]: - 125 x[T2,T10,K2] + p[T2,T10,K2] <= 0
+ c31[T2,T11,K0]: - 125 x[T2,T11,K0] + p[T2,T11,K0] <= 0
+ c31[T2,T11,K1]: - 125 x[T2,T11,K1] + p[T2,T11,K1] <= 0
+ c31[T2,T11,K2]: - 125 x[T2,T11,K2] + p[T2,T11,K2] <= 0
+ c31[T2,D0,K0]: - 125 x[T2,D0,K0] + p[T2,D0,K0] <= 0
+ c31[T2,D0,K1]: - 125 x[T2,D0,K1] + p[T2,D0,K1] <= 0
+ c31[T2,D0,K2]: - 125 x[T2,D0,K2] + p[T2,D0,K2] <= 0
+ c31[T2,D1,K0]: - 125 x[T2,D1,K0] + p[T2,D1,K0] <= 0
+ c31[T2,D1,K1]: - 125 x[T2,D1,K1] + p[T2,D1,K1] <= 0
+ c31[T2,D1,K2]: - 125 x[T2,D1,K2] + p[T2,D1,K2] <= 0
+ c31[T2,D2,K0]: - 125 x[T2,D2,K0] + p[T2,D2,K0] <= 0
+ c31[T2,D2,K1]: - 125 x[T2,D2,K1] + p[T2,D2,K1] <= 0
+ c31[T2,D2,K2]: - 125 x[T2,D2,K2] + p[T2,D2,K2] <= 0
+ c31[T2,S0,K0]: - 125 x[T2,S0,K0] + p[T2,S0,K0] <= 0
+ c31[T2,S0,K1]: - 125 x[T2,S0,K1] + p[T2,S0,K1] <= 0
+ c31[T2,S0,K2]: - 125 x[T2,S0,K2] + p[T2,S0,K2] <= 0
+ c31[T2,E0,K0]: - 125 x[T2,E0,K0] + p[T2,E0,K0] <= 0
+ c31[T2,E0,K1]: - 125 x[T2,E0,K1] + p[T2,E0,K1] <= 0
+ c31[T2,E0,K2]: - 125 x[T2,E0,K2] + p[T2,E0,K2] <= 0
+ c31[T3,T0,K0]: - 125 x[T3,T0,K0] + p[T3,T0,K0] <= 0
+ c31[T3,T0,K1]: - 125 x[T3,T0,K1] + p[T3,T0,K1] <= 0
+ c31[T3,T0,K2]: - 125 x[T3,T0,K2] + p[T3,T0,K2] <= 0
+ c31[T3,T1,K0]: - 125 x[T3,T1,K0] + p[T3,T1,K0] <= 0
+ c31[T3,T1,K1]: - 125 x[T3,T1,K1] + p[T3,T1,K1] <= 0
+ c31[T3,T1,K2]: - 125 x[T3,T1,K2] + p[T3,T1,K2] <= 0
+ c31[T3,T2,K0]: - 125 x[T3,T2,K0] + p[T3,T2,K0] <= 0
+ c31[T3,T2,K1]: - 125 x[T3,T2,K1] + p[T3,T2,K1] <= 0
+ c31[T3,T2,K2]: - 125 x[T3,T2,K2] + p[T3,T2,K2] <= 0
+ c31[T3,T4,K0]: - 125 x[T3,T4,K0] + p[T3,T4,K0] <= 0
+ c31[T3,T4,K1]: - 125 x[T3,T4,K1] + p[T3,T4,K1] <= 0
+ c31[T3,T4,K2]: - 125 x[T3,T4,K2] + p[T3,T4,K2] <= 0
+ c31[T3,T5,K0]: - 125 x[T3,T5,K0] + p[T3,T5,K0] <= 0
+ c31[T3,T5,K1]: - 125 x[T3,T5,K1] + p[T3,T5,K1] <= 0
+ c31[T3,T5,K2]: - 125 x[T3,T5,K2] + p[T3,T5,K2] <= 0
+ c31[T3,T6,K0]: - 125 x[T3,T6,K0] + p[T3,T6,K0] <= 0
+ c31[T3,T6,K1]: - 125 x[T3,T6,K1] + p[T3,T6,K1] <= 0
+ c31[T3,T6,K2]: - 125 x[T3,T6,K2] + p[T3,T6,K2] <= 0
+ c31[T3,T7,K0]: - 125 x[T3,T7,K0] + p[T3,T7,K0] <= 0
+ c31[T3,T7,K1]: - 125 x[T3,T7,K1] + p[T3,T7,K1] <= 0
+ c31[T3,T7,K2]: - 125 x[T3,T7,K2] + p[T3,T7,K2] <= 0
+ c31[T3,T8,K0]: - 125 x[T3,T8,K0] + p[T3,T8,K0] <= 0
+ c31[T3,T8,K1]: - 125 x[T3,T8,K1] + p[T3,T8,K1] <= 0
+ c31[T3,T8,K2]: - 125 x[T3,T8,K2] + p[T3,T8,K2] <= 0
+ c31[T3,T9,K0]: - 125 x[T3,T9,K0] + p[T3,T9,K0] <= 0
+ c31[T3,T9,K1]: - 125 x[T3,T9,K1] + p[T3,T9,K1] <= 0
+ c31[T3,T9,K2]: - 125 x[T3,T9,K2] + p[T3,T9,K2] <= 0
+ c31[T3,T10,K0]: - 125 x[T3,T10,K0] + p[T3,T10,K0] <= 0
+ c31[T3,T10,K1]: - 125 x[T3,T10,K1] + p[T3,T10,K1] <= 0
+ c31[T3,T10,K2]: - 125 x[T3,T10,K2] + p[T3,T10,K2] <= 0
+ c31[T3,T11,K0]: - 125 x[T3,T11,K0] + p[T3,T11,K0] <= 0
+ c31[T3,T11,K1]: - 125 x[T3,T11,K1] + p[T3,T11,K1] <= 0
+ c31[T3,T11,K2]: - 125 x[T3,T11,K2] + p[T3,T11,K2] <= 0
+ c31[T3,D0,K0]: - 125 x[T3,D0,K0] + p[T3,D0,K0] <= 0
+ c31[T3,D0,K1]: - 125 x[T3,D0,K1] + p[T3,D0,K1] <= 0
+ c31[T3,D0,K2]: - 125 x[T3,D0,K2] + p[T3,D0,K2] <= 0
+ c31[T3,D1,K0]: - 125 x[T3,D1,K0] + p[T3,D1,K0] <= 0
+ c31[T3,D1,K1]: - 125 x[T3,D1,K1] + p[T3,D1,K1] <= 0
+ c31[T3,D1,K2]: - 125 x[T3,D1,K2] + p[T3,D1,K2] <= 0
+ c31[T3,D2,K0]: - 125 x[T3,D2,K0] + p[T3,D2,K0] <= 0
+ c31[T3,D2,K1]: - 125 x[T3,D2,K1] + p[T3,D2,K1] <= 0
+ c31[T3,D2,K2]: - 125 x[T3,D2,K2] + p[T3,D2,K2] <= 0
+ c31[T3,S0,K0]: - 125 x[T3,S0,K0] + p[T3,S0,K0] <= 0
+ c31[T3,S0,K1]: - 125 x[T3,S0,K1] + p[T3,S0,K1] <= 0
+ c31[T3,S0,K2]: - 125 x[T3,S0,K2] + p[T3,S0,K2] <= 0
+ c31[T3,E0,K0]: - 125 x[T3,E0,K0] + p[T3,E0,K0] <= 0
+ c31[T3,E0,K1]: - 125 x[T3,E0,K1] + p[T3,E0,K1] <= 0
+ c31[T3,E0,K2]: - 125 x[T3,E0,K2] + p[T3,E0,K2] <= 0
+ c31[T4,T0,K0]: - 125 x[T4,T0,K0] + p[T4,T0,K0] <= 0
+ c31[T4,T0,K1]: - 125 x[T4,T0,K1] + p[T4,T0,K1] <= 0
+ c31[T4,T0,K2]: - 125 x[T4,T0,K2] + p[T4,T0,K2] <= 0
+ c31[T4,T1,K0]: - 125 x[T4,T1,K0] + p[T4,T1,K0] <= 0
+ c31[T4,T1,K1]: - 125 x[T4,T1,K1] + p[T4,T1,K1] <= 0
+ c31[T4,T1,K2]: - 125 x[T4,T1,K2] + p[T4,T1,K2] <= 0
+ c31[T4,T2,K0]: - 125 x[T4,T2,K0] + p[T4,T2,K0] <= 0
+ c31[T4,T2,K1]: - 125 x[T4,T2,K1] + p[T4,T2,K1] <= 0
+ c31[T4,T2,K2]: - 125 x[T4,T2,K2] + p[T4,T2,K2] <= 0
+ c31[T4,T3,K0]: - 125 x[T4,T3,K0] + p[T4,T3,K0] <= 0
+ c31[T4,T3,K1]: - 125 x[T4,T3,K1] + p[T4,T3,K1] <= 0
+ c31[T4,T3,K2]: - 125 x[T4,T3,K2] + p[T4,T3,K2] <= 0
+ c31[T4,T5,K0]: - 125 x[T4,T5,K0] + p[T4,T5,K0] <= 0
+ c31[T4,T5,K1]: - 125 x[T4,T5,K1] + p[T4,T5,K1] <= 0
+ c31[T4,T5,K2]: - 125 x[T4,T5,K2] + p[T4,T5,K2] <= 0
+ c31[T4,T6,K0]: - 125 x[T4,T6,K0] + p[T4,T6,K0] <= 0
+ c31[T4,T6,K1]: - 125 x[T4,T6,K1] + p[T4,T6,K1] <= 0
+ c31[T4,T6,K2]: - 125 x[T4,T6,K2] + p[T4,T6,K2] <= 0
+ c31[T4,T7,K0]: - 125 x[T4,T7,K0] + p[T4,T7,K0] <= 0
+ c31[T4,T7,K1]: - 125 x[T4,T7,K1] + p[T4,T7,K1] <= 0
+ c31[T4,T7,K2]: - 125 x[T4,T7,K2] + p[T4,T7,K2] <= 0
+ c31[T4,T8,K0]: - 125 x[T4,T8,K0] + p[T4,T8,K0] <= 0
+ c31[T4,T8,K1]: - 125 x[T4,T8,K1] + p[T4,T8,K1] <= 0
+ c31[T4,T8,K2]: - 125 x[T4,T8,K2] + p[T4,T8,K2] <= 0
+ c31[T4,T9,K0]: - 125 x[T4,T9,K0] + p[T4,T9,K0] <= 0
+ c31[T4,T9,K1]: - 125 x[T4,T9,K1] + p[T4,T9,K1] <= 0
+ c31[T4,T9,K2]: - 125 x[T4,T9,K2] + p[T4,T9,K2] <= 0
+ c31[T4,T10,K0]: - 125 x[T4,T10,K0] + p[T4,T10,K0] <= 0
+ c31[T4,T10,K1]: - 125 x[T4,T10,K1] + p[T4,T10,K1] <= 0
+ c31[T4,T10,K2]: - 125 x[T4,T10,K2] + p[T4,T10,K2] <= 0
+ c31[T4,T11,K0]: - 125 x[T4,T11,K0] + p[T4,T11,K0] <= 0
+ c31[T4,T11,K1]: - 125 x[T4,T11,K1] + p[T4,T11,K1] <= 0
+ c31[T4,T11,K2]: - 125 x[T4,T11,K2] + p[T4,T11,K2] <= 0
+ c31[T4,D0,K0]: - 125 x[T4,D0,K0] + p[T4,D0,K0] <= 0
+ c31[T4,D0,K1]: - 125 x[T4,D0,K1] + p[T4,D0,K1] <= 0
+ c31[T4,D0,K2]: - 125 x[T4,D0,K2] + p[T4,D0,K2] <= 0
+ c31[T4,D1,K0]: - 125 x[T4,D1,K0] + p[T4,D1,K0] <= 0
+ c31[T4,D1,K1]: - 125 x[T4,D1,K1] + p[T4,D1,K1] <= 0
+ c31[T4,D1,K2]: - 125 x[T4,D1,K2] + p[T4,D1,K2] <= 0
+ c31[T4,D2,K0]: - 125 x[T4,D2,K0] + p[T4,D2,K0] <= 0
+ c31[T4,D2,K1]: - 125 x[T4,D2,K1] + p[T4,D2,K1] <= 0
+ c31[T4,D2,K2]: - 125 x[T4,D2,K2] + p[T4,D2,K2] <= 0
+ c31[T4,S0,K0]: - 125 x[T4,S0,K0] + p[T4,S0,K0] <= 0
+ c31[T4,S0,K1]: - 125 x[T4,S0,K1] + p[T4,S0,K1] <= 0
+ c31[T4,S0,K2]: - 125 x[T4,S0,K2] + p[T4,S0,K2] <= 0
+ c31[T4,E0,K0]: - 125 x[T4,E0,K0] + p[T4,E0,K0] <= 0
+ c31[T4,E0,K1]: - 125 x[T4,E0,K1] + p[T4,E0,K1] <= 0
+ c31[T4,E0,K2]: - 125 x[T4,E0,K2] + p[T4,E0,K2] <= 0
+ c31[T5,T0,K0]: - 125 x[T5,T0,K0] + p[T5,T0,K0] <= 0
+ c31[T5,T0,K1]: - 125 x[T5,T0,K1] + p[T5,T0,K1] <= 0
+ c31[T5,T0,K2]: - 125 x[T5,T0,K2] + p[T5,T0,K2] <= 0
+ c31[T5,T1,K0]: - 125 x[T5,T1,K0] + p[T5,T1,K0] <= 0
+ c31[T5,T1,K1]: - 125 x[T5,T1,K1] + p[T5,T1,K1] <= 0
+ c31[T5,T1,K2]: - 125 x[T5,T1,K2] + p[T5,T1,K2] <= 0
+ c31[T5,T2,K0]: - 125 x[T5,T2,K0] + p[T5,T2,K0] <= 0
+ c31[T5,T2,K1]: - 125 x[T5,T2,K1] + p[T5,T2,K1] <= 0
+ c31[T5,T2,K2]: - 125 x[T5,T2,K2] + p[T5,T2,K2] <= 0
+ c31[T5,T3,K0]: - 125 x[T5,T3,K0] + p[T5,T3,K0] <= 0
+ c31[T5,T3,K1]: - 125 x[T5,T3,K1] + p[T5,T3,K1] <= 0
+ c31[T5,T3,K2]: - 125 x[T5,T3,K2] + p[T5,T3,K2] <= 0
+ c31[T5,T4,K0]: - 125 x[T5,T4,K0] + p[T5,T4,K0] <= 0
+ c31[T5,T4,K1]: - 125 x[T5,T4,K1] + p[T5,T4,K1] <= 0
+ c31[T5,T4,K2]: - 125 x[T5,T4,K2] + p[T5,T4,K2] <= 0
+ c31[T5,T6,K0]: - 125 x[T5,T6,K0] + p[T5,T6,K0] <= 0
+ c31[T5,T6,K1]: - 125 x[T5,T6,K1] + p[T5,T6,K1] <= 0
+ c31[T5,T6,K2]: - 125 x[T5,T6,K2] + p[T5,T6,K2] <= 0
+ c31[T5,T7,K0]: - 125 x[T5,T7,K0] + p[T5,T7,K0] <= 0
+ c31[T5,T7,K1]: - 125 x[T5,T7,K1] + p[T5,T7,K1] <= 0
+ c31[T5,T7,K2]: - 125 x[T5,T7,K2] + p[T5,T7,K2] <= 0
+ c31[T5,T8,K0]: - 125 x[T5,T8,K0] + p[T5,T8,K0] <= 0
+ c31[T5,T8,K1]: - 125 x[T5,T8,K1] + p[T5,T8,K1] <= 0
+ c31[T5,T8,K2]: - 125 x[T5,T8,K2] + p[T5,T8,K2] <= 0
+ c31[T5,T9,K0]: - 125 x[T5,T9,K0] + p[T5,T9,K0] <= 0
+ c31[T5,T9,K1]: - 125 x[T5,T9,K1] + p[T5,T9,K1] <= 0
+ c31[T5,T9,K2]: - 125 x[T5,T9,K2] + p[T5,T9,K2] <= 0
+ c31[T5,T10,K0]: - 125 x[T5,T10,K0] + p[T5,T10,K0] <= 0
+ c31[T5,T10,K1]: - 125 x[T5,T10,K1] + p[T5,T10,K1] <= 0
+ c31[T5,T10,K2]: - 125 x[T5,T10,K2] + p[T5,T10,K2] <= 0
+ c31[T5,T11,K0]: - 125 x[T5,T11,K0] + p[T5,T11,K0] <= 0
+ c31[T5,T11,K1]: - 125 x[T5,T11,K1] + p[T5,T11,K1] <= 0
+ c31[T5,T11,K2]: - 125 x[T5,T11,K2] + p[T5,T11,K2] <= 0
+ c31[T5,D0,K0]: - 125 x[T5,D0,K0] + p[T5,D0,K0] <= 0
+ c31[T5,D0,K1]: - 125 x[T5,D0,K1] + p[T5,D0,K1] <= 0
+ c31[T5,D0,K2]: - 125 x[T5,D0,K2] + p[T5,D0,K2] <= 0
+ c31[T5,D1,K0]: - 125 x[T5,D1,K0] + p[T5,D1,K0] <= 0
+ c31[T5,D1,K1]: - 125 x[T5,D1,K1] + p[T5,D1,K1] <= 0
+ c31[T5,D1,K2]: - 125 x[T5,D1,K2] + p[T5,D1,K2] <= 0
+ c31[T5,D2,K0]: - 125 x[T5,D2,K0] + p[T5,D2,K0] <= 0
+ c31[T5,D2,K1]: - 125 x[T5,D2,K1] + p[T5,D2,K1] <= 0
+ c31[T5,D2,K2]: - 125 x[T5,D2,K2] + p[T5,D2,K2] <= 0
+ c31[T5,S0,K0]: - 125 x[T5,S0,K0] + p[T5,S0,K0] <= 0
+ c31[T5,S0,K1]: - 125 x[T5,S0,K1] + p[T5,S0,K1] <= 0
+ c31[T5,S0,K2]: - 125 x[T5,S0,K2] + p[T5,S0,K2] <= 0
+ c31[T5,E0,K0]: - 125 x[T5,E0,K0] + p[T5,E0,K0] <= 0
+ c31[T5,E0,K1]: - 125 x[T5,E0,K1] + p[T5,E0,K1] <= 0
+ c31[T5,E0,K2]: - 125 x[T5,E0,K2] + p[T5,E0,K2] <= 0
+ c31[T6,T0,K0]: - 125 x[T6,T0,K0] + p[T6,T0,K0] <= 0
+ c31[T6,T0,K1]: - 125 x[T6,T0,K1] + p[T6,T0,K1] <= 0
+ c31[T6,T0,K2]: - 125 x[T6,T0,K2] + p[T6,T0,K2] <= 0
+ c31[T6,T1,K0]: - 125 x[T6,T1,K0] + p[T6,T1,K0] <= 0
+ c31[T6,T1,K1]: - 125 x[T6,T1,K1] + p[T6,T1,K1] <= 0
+ c31[T6,T1,K2]: - 125 x[T6,T1,K2] + p[T6,T1,K2] <= 0
+ c31[T6,T2,K0]: - 125 x[T6,T2,K0] + p[T6,T2,K0] <= 0
+ c31[T6,T2,K1]: - 125 x[T6,T2,K1] + p[T6,T2,K1] <= 0
+ c31[T6,T2,K2]: - 125 x[T6,T2,K2] + p[T6,T2,K2] <= 0
+ c31[T6,T3,K0]: - 125 x[T6,T3,K0] + p[T6,T3,K0] <= 0
+ c31[T6,T3,K1]: - 125 x[T6,T3,K1] + p[T6,T3,K1] <= 0
+ c31[T6,T3,K2]: - 125 x[T6,T3,K2] + p[T6,T3,K2] <= 0
+ c31[T6,T4,K0]: - 125 x[T6,T4,K0] + p[T6,T4,K0] <= 0
+ c31[T6,T4,K1]: - 125 x[T6,T4,K1] + p[T6,T4,K1] <= 0
+ c31[T6,T4,K2]: - 125 x[T6,T4,K2] + p[T6,T4,K2] <= 0
+ c31[T6,T5,K0]: - 125 x[T6,T5,K0] + p[T6,T5,K0] <= 0
+ c31[T6,T5,K1]: - 125 x[T6,T5,K1] + p[T6,T5,K1] <= 0
+ c31[T6,T5,K2]: - 125 x[T6,T5,K2] + p[T6,T5,K2] <= 0
+ c31[T6,T7,K0]: - 125 x[T6,T7,K0] + p[T6,T7,K0] <= 0
+ c31[T6,T7,K1]: - 125 x[T6,T7,K1] + p[T6,T7,K1] <= 0
+ c31[T6,T7,K2]: - 125 x[T6,T7,K2] + p[T6,T7,K2] <= 0
+ c31[T6,T8,K0]: - 125 x[T6,T8,K0] + p[T6,T8,K0] <= 0
+ c31[T6,T8,K1]: - 125 x[T6,T8,K1] + p[T6,T8,K1] <= 0
+ c31[T6,T8,K2]: - 125 x[T6,T8,K2] + p[T6,T8,K2] <= 0
+ c31[T6,T9,K0]: - 125 x[T6,T9,K0] + p[T6,T9,K0] <= 0
+ c31[T6,T9,K1]: - 125 x[T6,T9,K1] + p[T6,T9,K1] <= 0
+ c31[T6,T9,K2]: - 125 x[T6,T9,K2] + p[T6,T9,K2] <= 0
+ c31[T6,T10,K0]: - 125 x[T6,T10,K0] + p[T6,T10,K0] <= 0
+ c31[T6,T10,K1]: - 125 x[T6,T10,K1] + p[T6,T10,K1] <= 0
+ c31[T6,T10,K2]: - 125 x[T6,T10,K2] + p[T6,T10,K2] <= 0
+ c31[T6,T11,K0]: - 125 x[T6,T11,K0] + p[T6,T11,K0] <= 0
+ c31[T6,T11,K1]: - 125 x[T6,T11,K1] + p[T6,T11,K1] <= 0
+ c31[T6,T11,K2]: - 125 x[T6,T11,K2] + p[T6,T11,K2] <= 0
+ c31[T6,D0,K0]: - 125 x[T6,D0,K0] + p[T6,D0,K0] <= 0
+ c31[T6,D0,K1]: - 125 x[T6,D0,K1] + p[T6,D0,K1] <= 0
+ c31[T6,D0,K2]: - 125 x[T6,D0,K2] + p[T6,D0,K2] <= 0
+ c31[T6,D1,K0]: - 125 x[T6,D1,K0] + p[T6,D1,K0] <= 0
+ c31[T6,D1,K1]: - 125 x[T6,D1,K1] + p[T6,D1,K1] <= 0
+ c31[T6,D1,K2]: - 125 x[T6,D1,K2] + p[T6,D1,K2] <= 0
+ c31[T6,D2,K0]: - 125 x[T6,D2,K0] + p[T6,D2,K0] <= 0
+ c31[T6,D2,K1]: - 125 x[T6,D2,K1] + p[T6,D2,K1] <= 0
+ c31[T6,D2,K2]: - 125 x[T6,D2,K2] + p[T6,D2,K2] <= 0
+ c31[T6,S0,K0]: - 125 x[T6,S0,K0] + p[T6,S0,K0] <= 0
+ c31[T6,S0,K1]: - 125 x[T6,S0,K1] + p[T6,S0,K1] <= 0
+ c31[T6,S0,K2]: - 125 x[T6,S0,K2] + p[T6,S0,K2] <= 0
+ c31[T6,E0,K0]: - 125 x[T6,E0,K0] + p[T6,E0,K0] <= 0
+ c31[T6,E0,K1]: - 125 x[T6,E0,K1] + p[T6,E0,K1] <= 0
+ c31[T6,E0,K2]: - 125 x[T6,E0,K2] + p[T6,E0,K2] <= 0
+ c31[T7,T0,K0]: - 125 x[T7,T0,K0] + p[T7,T0,K0] <= 0
+ c31[T7,T0,K1]: - 125 x[T7,T0,K1] + p[T7,T0,K1] <= 0
+ c31[T7,T0,K2]: - 125 x[T7,T0,K2] + p[T7,T0,K2] <= 0
+ c31[T7,T1,K0]: - 125 x[T7,T1,K0] + p[T7,T1,K0] <= 0
+ c31[T7,T1,K1]: - 125 x[T7,T1,K1] + p[T7,T1,K1] <= 0
+ c31[T7,T1,K2]: - 125 x[T7,T1,K2] + p[T7,T1,K2] <= 0
+ c31[T7,T2,K0]: - 125 x[T7,T2,K0] + p[T7,T2,K0] <= 0
+ c31[T7,T2,K1]: - 125 x[T7,T2,K1] + p[T7,T2,K1] <= 0
+ c31[T7,T2,K2]: - 125 x[T7,T2,K2] + p[T7,T2,K2] <= 0
+ c31[T7,T3,K0]: - 125 x[T7,T3,K0] + p[T7,T3,K0] <= 0
+ c31[T7,T3,K1]: - 125 x[T7,T3,K1] + p[T7,T3,K1] <= 0
+ c31[T7,T3,K2]: - 125 x[T7,T3,K2] + p[T7,T3,K2] <= 0
+ c31[T7,T4,K0]: - 125 x[T7,T4,K0] + p[T7,T4,K0] <= 0
+ c31[T7,T4,K1]: - 125 x[T7,T4,K1] + p[T7,T4,K1] <= 0
+ c31[T7,T4,K2]: - 125 x[T7,T4,K2] + p[T7,T4,K2] <= 0
+ c31[T7,T5,K0]: - 125 x[T7,T5,K0] + p[T7,T5,K0] <= 0
+ c31[T7,T5,K1]: - 125 x[T7,T5,K1] + p[T7,T5,K1] <= 0
+ c31[T7,T5,K2]: - 125 x[T7,T5,K2] + p[T7,T5,K2] <= 0
+ c31[T7,T6,K0]: - 125 x[T7,T6,K0] + p[T7,T6,K0] <= 0
+ c31[T7,T6,K1]: - 125 x[T7,T6,K1] + p[T7,T6,K1] <= 0
+ c31[T7,T6,K2]: - 125 x[T7,T6,K2] + p[T7,T6,K2] <= 0
+ c31[T7,T8,K0]: - 125 x[T7,T8,K0] + p[T7,T8,K0] <= 0
+ c31[T7,T8,K1]: - 125 x[T7,T8,K1] + p[T7,T8,K1] <= 0
+ c31[T7,T8,K2]: - 125 x[T7,T8,K2] + p[T7,T8,K2] <= 0
+ c31[T7,T9,K0]: - 125 x[T7,T9,K0] + p[T7,T9,K0] <= 0
+ c31[T7,T9,K1]: - 125 x[T7,T9,K1] + p[T7,T9,K1] <= 0
+ c31[T7,T9,K2]: - 125 x[T7,T9,K2] + p[T7,T9,K2] <= 0
+ c31[T7,T10,K0]: - 125 x[T7,T10,K0] + p[T7,T10,K0] <= 0
+ c31[T7,T10,K1]: - 125 x[T7,T10,K1] + p[T7,T10,K1] <= 0
+ c31[T7,T10,K2]: - 125 x[T7,T10,K2] + p[T7,T10,K2] <= 0
+ c31[T7,T11,K0]: - 125 x[T7,T11,K0] + p[T7,T11,K0] <= 0
+ c31[T7,T11,K1]: - 125 x[T7,T11,K1] + p[T7,T11,K1] <= 0
+ c31[T7,T11,K2]: - 125 x[T7,T11,K2] + p[T7,T11,K2] <= 0
+ c31[T7,D0,K0]: - 125 x[T7,D0,K0] + p[T7,D0,K0] <= 0
+ c31[T7,D0,K1]: - 125 x[T7,D0,K1] + p[T7,D0,K1] <= 0
+ c31[T7,D0,K2]: - 125 x[T7,D0,K2] + p[T7,D0,K2] <= 0
+ c31[T7,D1,K0]: - 125 x[T7,D1,K0] + p[T7,D1,K0] <= 0
+ c31[T7,D1,K1]: - 125 x[T7,D1,K1] + p[T7,D1,K1] <= 0
+ c31[T7,D1,K2]: - 125 x[T7,D1,K2] + p[T7,D1,K2] <= 0
+ c31[T7,D2,K0]: - 125 x[T7,D2,K0] + p[T7,D2,K0] <= 0
+ c31[T7,D2,K1]: - 125 x[T7,D2,K1] + p[T7,D2,K1] <= 0
+ c31[T7,D2,K2]: - 125 x[T7,D2,K2] + p[T7,D2,K2] <= 0
+ c31[T7,S0,K0]: - 125 x[T7,S0,K0] + p[T7,S0,K0] <= 0
+ c31[T7,S0,K1]: - 125 x[T7,S0,K1] + p[T7,S0,K1] <= 0
+ c31[T7,S0,K2]: - 125 x[T7,S0,K2] + p[T7,S0,K2] <= 0
+ c31[T7,E0,K0]: - 125 x[T7,E0,K0] + p[T7,E0,K0] <= 0
+ c31[T7,E0,K1]: - 125 x[T7,E0,K1] + p[T7,E0,K1] <= 0
+ c31[T7,E0,K2]: - 125 x[T7,E0,K2] + p[T7,E0,K2] <= 0
+ c31[T8,T0,K0]: - 125 x[T8,T0,K0] + p[T8,T0,K0] <= 0
+ c31[T8,T0,K1]: - 125 x[T8,T0,K1] + p[T8,T0,K1] <= 0
+ c31[T8,T0,K2]: - 125 x[T8,T0,K2] + p[T8,T0,K2] <= 0
+ c31[T8,T1,K0]: - 125 x[T8,T1,K0] + p[T8,T1,K0] <= 0
+ c31[T8,T1,K1]: - 125 x[T8,T1,K1] + p[T8,T1,K1] <= 0
+ c31[T8,T1,K2]: - 125 x[T8,T1,K2] + p[T8,T1,K2] <= 0
+ c31[T8,T2,K0]: - 125 x[T8,T2,K0] + p[T8,T2,K0] <= 0
+ c31[T8,T2,K1]: - 125 x[T8,T2,K1] + p[T8,T2,K1] <= 0
+ c31[T8,T2,K2]: - 125 x[T8,T2,K2] + p[T8,T2,K2] <= 0
+ c31[T8,T3,K0]: - 125 x[T8,T3,K0] + p[T8,T3,K0] <= 0
+ c31[T8,T3,K1]: - 125 x[T8,T3,K1] + p[T8,T3,K1] <= 0
+ c31[T8,T3,K2]: - 125 x[T8,T3,K2] + p[T8,T3,K2] <= 0
+ c31[T8,T4,K0]: - 125 x[T8,T4,K0] + p[T8,T4,K0] <= 0
+ c31[T8,T4,K1]: - 125 x[T8,T4,K1] + p[T8,T4,K1] <= 0
+ c31[T8,T4,K2]: - 125 x[T8,T4,K2] + p[T8,T4,K2] <= 0
+ c31[T8,T5,K0]: - 125 x[T8,T5,K0] + p[T8,T5,K0] <= 0
+ c31[T8,T5,K1]: - 125 x[T8,T5,K1] + p[T8,T5,K1] <= 0
+ c31[T8,T5,K2]: - 125 x[T8,T5,K2] + p[T8,T5,K2] <= 0
+ c31[T8,T6,K0]: - 125 x[T8,T6,K0] + p[T8,T6,K0] <= 0
+ c31[T8,T6,K1]: - 125 x[T8,T6,K1] + p[T8,T6,K1] <= 0
+ c31[T8,T6,K2]: - 125 x[T8,T6,K2] + p[T8,T6,K2] <= 0
+ c31[T8,T7,K0]: - 125 x[T8,T7,K0] + p[T8,T7,K0] <= 0
+ c31[T8,T7,K1]: - 125 x[T8,T7,K1] + p[T8,T7,K1] <= 0
+ c31[T8,T7,K2]: - 125 x[T8,T7,K2] + p[T8,T7,K2] <= 0
+ c31[T8,T9,K0]: - 125 x[T8,T9,K0] + p[T8,T9,K0] <= 0
+ c31[T8,T9,K1]: - 125 x[T8,T9,K1] + p[T8,T9,K1] <= 0
+ c31[T8,T9,K2]: - 125 x[T8,T9,K2] + p[T8,T9,K2] <= 0
+ c31[T8,T10,K0]: - 125 x[T8,T10,K0] + p[T8,T10,K0] <= 0
+ c31[T8,T10,K1]: - 125 x[T8,T10,K1] + p[T8,T10,K1] <= 0
+ c31[T8,T10,K2]: - 125 x[T8,T10,K2] + p[T8,T10,K2] <= 0
+ c31[T8,T11,K0]: - 125 x[T8,T11,K0] + p[T8,T11,K0] <= 0
+ c31[T8,T11,K1]: - 125 x[T8,T11,K1] + p[T8,T11,K1] <= 0
+ c31[T8,T11,K2]: - 125 x[T8,T11,K2] + p[T8,T11,K2] <= 0
+ c31[T8,D0,K0]: - 125 x[T8,D0,K0] + p[T8,D0,K0] <= 0
+ c31[T8,D0,K1]: - 125 x[T8,D0,K1] + p[T8,D0,K1] <= 0
+ c31[T8,D0,K2]: - 125 x[T8,D0,K2] + p[T8,D0,K2] <= 0
+ c31[T8,D1,K0]: - 125 x[T8,D1,K0] + p[T8,D1,K0] <= 0
+ c31[T8,D1,K1]: - 125 x[T8,D1,K1] + p[T8,D1,K1] <= 0
+ c31[T8,D1,K2]: - 125 x[T8,D1,K2] + p[T8,D1,K2] <= 0
+ c31[T8,D2,K0]: - 125 x[T8,D2,K0] + p[T8,D2,K0] <= 0
+ c31[T8,D2,K1]: - 125 x[T8,D2,K1] + p[T8,D2,K1] <= 0
+ c31[T8,D2,K2]: - 125 x[T8,D2,K2] + p[T8,D2,K2] <= 0
+ c31[T8,S0,K0]: - 125 x[T8,S0,K0] + p[T8,S0,K0] <= 0
+ c31[T8,S0,K1]: - 125 x[T8,S0,K1] + p[T8,S0,K1] <= 0
+ c31[T8,S0,K2]: - 125 x[T8,S0,K2] + p[T8,S0,K2] <= 0
+ c31[T8,E0,K0]: - 125 x[T8,E0,K0] + p[T8,E0,K0] <= 0
+ c31[T8,E0,K1]: - 125 x[T8,E0,K1] + p[T8,E0,K1] <= 0
+ c31[T8,E0,K2]: - 125 x[T8,E0,K2] + p[T8,E0,K2] <= 0
+ c31[T9,T0,K0]: - 125 x[T9,T0,K0] + p[T9,T0,K0] <= 0
+ c31[T9,T0,K1]: - 125 x[T9,T0,K1] + p[T9,T0,K1] <= 0
+ c31[T9,T0,K2]: - 125 x[T9,T0,K2] + p[T9,T0,K2] <= 0
+ c31[T9,T1,K0]: - 125 x[T9,T1,K0] + p[T9,T1,K0] <= 0
+ c31[T9,T1,K1]: - 125 x[T9,T1,K1] + p[T9,T1,K1] <= 0
+ c31[T9,T1,K2]: - 125 x[T9,T1,K2] + p[T9,T1,K2] <= 0
+ c31[T9,T2,K0]: - 125 x[T9,T2,K0] + p[T9,T2,K0] <= 0
+ c31[T9,T2,K1]: - 125 x[T9,T2,K1] + p[T9,T2,K1] <= 0
+ c31[T9,T2,K2]: - 125 x[T9,T2,K2] + p[T9,T2,K2] <= 0
+ c31[T9,T3,K0]: - 125 x[T9,T3,K0] + p[T9,T3,K0] <= 0
+ c31[T9,T3,K1]: - 125 x[T9,T3,K1] + p[T9,T3,K1] <= 0
+ c31[T9,T3,K2]: - 125 x[T9,T3,K2] + p[T9,T3,K2] <= 0
+ c31[T9,T4,K0]: - 125 x[T9,T4,K0] + p[T9,T4,K0] <= 0
+ c31[T9,T4,K1]: - 125 x[T9,T4,K1] + p[T9,T4,K1] <= 0
+ c31[T9,T4,K2]: - 125 x[T9,T4,K2] + p[T9,T4,K2] <= 0
+ c31[T9,T5,K0]: - 125 x[T9,T5,K0] + p[T9,T5,K0] <= 0
+ c31[T9,T5,K1]: - 125 x[T9,T5,K1] + p[T9,T5,K1] <= 0
+ c31[T9,T5,K2]: - 125 x[T9,T5,K2] + p[T9,T5,K2] <= 0
+ c31[T9,T6,K0]: - 125 x[T9,T6,K0] + p[T9,T6,K0] <= 0
+ c31[T9,T6,K1]: - 125 x[T9,T6,K1] + p[T9,T6,K1] <= 0
+ c31[T9,T6,K2]: - 125 x[T9,T6,K2] + p[T9,T6,K2] <= 0
+ c31[T9,T7,K0]: - 125 x[T9,T7,K0] + p[T9,T7,K0] <= 0
+ c31[T9,T7,K1]: - 125 x[T9,T7,K1] + p[T9,T7,K1] <= 0
+ c31[T9,T7,K2]: - 125 x[T9,T7,K2] + p[T9,T7,K2] <= 0
+ c31[T9,T8,K0]: - 125 x[T9,T8,K0] + p[T9,T8,K0] <= 0
+ c31[T9,T8,K1]: - 125 x[T9,T8,K1] + p[T9,T8,K1] <= 0
+ c31[T9,T8,K2]: - 125 x[T9,T8,K2] + p[T9,T8,K2] <= 0
+ c31[T9,T10,K0]: - 125 x[T9,T10,K0] + p[T9,T10,K0] <= 0
+ c31[T9,T10,K1]: - 125 x[T9,T10,K1] + p[T9,T10,K1] <= 0
+ c31[T9,T10,K2]: - 125 x[T9,T10,K2] + p[T9,T10,K2] <= 0
+ c31[T9,T11,K0]: - 125 x[T9,T11,K0] + p[T9,T11,K0] <= 0
+ c31[T9,T11,K1]: - 125 x[T9,T11,K1] + p[T9,T11,K1] <= 0
+ c31[T9,T11,K2]: - 125 x[T9,T11,K2] + p[T9,T11,K2] <= 0
+ c31[T9,D0,K0]: - 125 x[T9,D0,K0] + p[T9,D0,K0] <= 0
+ c31[T9,D0,K1]: - 125 x[T9,D0,K1] + p[T9,D0,K1] <= 0
+ c31[T9,D0,K2]: - 125 x[T9,D0,K2] + p[T9,D0,K2] <= 0
+ c31[T9,D1,K0]: - 125 x[T9,D1,K0] + p[T9,D1,K0] <= 0
+ c31[T9,D1,K1]: - 125 x[T9,D1,K1] + p[T9,D1,K1] <= 0
+ c31[T9,D1,K2]: - 125 x[T9,D1,K2] + p[T9,D1,K2] <= 0
+ c31[T9,D2,K0]: - 125 x[T9,D2,K0] + p[T9,D2,K0] <= 0
+ c31[T9,D2,K1]: - 125 x[T9,D2,K1] + p[T9,D2,K1] <= 0
+ c31[T9,D2,K2]: - 125 x[T9,D2,K2] + p[T9,D2,K2] <= 0
+ c31[T9,S0,K0]: - 125 x[T9,S0,K0] + p[T9,S0,K0] <= 0
+ c31[T9,S0,K1]: - 125 x[T9,S0,K1] + p[T9,S0,K1] <= 0
+ c31[T9,S0,K2]: - 125 x[T9,S0,K2] + p[T9,S0,K2] <= 0
+ c31[T9,E0,K0]: - 125 x[T9,E0,K0] + p[T9,E0,K0] <= 0
+ c31[T9,E0,K1]: - 125 x[T9,E0,K1] + p[T9,E0,K1] <= 0
+ c31[T9,E0,K2]: - 125 x[T9,E0,K2] + p[T9,E0,K2] <= 0
+ c31[T10,T0,K0]: - 125 x[T10,T0,K0] + p[T10,T0,K0] <= 0
+ c31[T10,T0,K1]: - 125 x[T10,T0,K1] + p[T10,T0,K1] <= 0
+ c31[T10,T0,K2]: - 125 x[T10,T0,K2] + p[T10,T0,K2] <= 0
+ c31[T10,T1,K0]: - 125 x[T10,T1,K0] + p[T10,T1,K0] <= 0
+ c31[T10,T1,K1]: - 125 x[T10,T1,K1] + p[T10,T1,K1] <= 0
+ c31[T10,T1,K2]: - 125 x[T10,T1,K2] + p[T10,T1,K2] <= 0
+ c31[T10,T2,K0]: - 125 x[T10,T2,K0] + p[T10,T2,K0] <= 0
+ c31[T10,T2,K1]: - 125 x[T10,T2,K1] + p[T10,T2,K1] <= 0
+ c31[T10,T2,K2]: - 125 x[T10,T2,K2] + p[T10,T2,K2] <= 0
+ c31[T10,T3,K0]: - 125 x[T10,T3,K0] + p[T10,T3,K0] <= 0
+ c31[T10,T3,K1]: - 125 x[T10,T3,K1] + p[T10,T3,K1] <= 0
+ c31[T10,T3,K2]: - 125 x[T10,T3,K2] + p[T10,T3,K2] <= 0
+ c31[T10,T4,K0]: - 125 x[T10,T4,K0] + p[T10,T4,K0] <= 0
+ c31[T10,T4,K1]: - 125 x[T10,T4,K1] + p[T10,T4,K1] <= 0
+ c31[T10,T4,K2]: - 125 x[T10,T4,K2] + p[T10,T4,K2] <= 0
+ c31[T10,T5,K0]: - 125 x[T10,T5,K0] + p[T10,T5,K0] <= 0
+ c31[T10,T5,K1]: - 125 x[T10,T5,K1] + p[T10,T5,K1] <= 0
+ c31[T10,T5,K2]: - 125 x[T10,T5,K2] + p[T10,T5,K2] <= 0
+ c31[T10,T6,K0]: - 125 x[T10,T6,K0] + p[T10,T6,K0] <= 0
+ c31[T10,T6,K1]: - 125 x[T10,T6,K1] + p[T10,T6,K1] <= 0
+ c31[T10,T6,K2]: - 125 x[T10,T6,K2] + p[T10,T6,K2] <= 0
+ c31[T10,T7,K0]: - 125 x[T10,T7,K0] + p[T10,T7,K0] <= 0
+ c31[T10,T7,K1]: - 125 x[T10,T7,K1] + p[T10,T7,K1] <= 0
+ c31[T10,T7,K2]: - 125 x[T10,T7,K2] + p[T10,T7,K2] <= 0
+ c31[T10,T8,K0]: - 125 x[T10,T8,K0] + p[T10,T8,K0] <= 0
+ c31[T10,T8,K1]: - 125 x[T10,T8,K1] + p[T10,T8,K1] <= 0
+ c31[T10,T8,K2]: - 125 x[T10,T8,K2] + p[T10,T8,K2] <= 0
+ c31[T10,T9,K0]: - 125 x[T10,T9,K0] + p[T10,T9,K0] <= 0
+ c31[T10,T9,K1]: - 125 x[T10,T9,K1] + p[T10,T9,K1] <= 0
+ c31[T10,T9,K2]: - 125 x[T10,T9,K2] + p[T10,T9,K2] <= 0
+ c31[T10,T11,K0]: - 125 x[T10,T11,K0] + p[T10,T11,K0] <= 0
+ c31[T10,T11,K1]: - 125 x[T10,T11,K1] + p[T10,T11,K1] <= 0
+ c31[T10,T11,K2]: - 125 x[T10,T11,K2] + p[T10,T11,K2] <= 0
+ c31[T10,D0,K0]: - 125 x[T10,D0,K0] + p[T10,D0,K0] <= 0
+ c31[T10,D0,K1]: - 125 x[T10,D0,K1] + p[T10,D0,K1] <= 0
+ c31[T10,D0,K2]: - 125 x[T10,D0,K2] + p[T10,D0,K2] <= 0
+ c31[T10,D1,K0]: - 125 x[T10,D1,K0] + p[T10,D1,K0] <= 0
+ c31[T10,D1,K1]: - 125 x[T10,D1,K1] + p[T10,D1,K1] <= 0
+ c31[T10,D1,K2]: - 125 x[T10,D1,K2] + p[T10,D1,K2] <= 0
+ c31[T10,D2,K0]: - 125 x[T10,D2,K0] + p[T10,D2,K0] <= 0
+ c31[T10,D2,K1]: - 125 x[T10,D2,K1] + p[T10,D2,K1] <= 0
+ c31[T10,D2,K2]: - 125 x[T10,D2,K2] + p[T10,D2,K2] <= 0
+ c31[T10,S0,K0]: - 125 x[T10,S0,K0] + p[T10,S0,K0] <= 0
+ c31[T10,S0,K1]: - 125 x[T10,S0,K1] + p[T10,S0,K1] <= 0
+ c31[T10,S0,K2]: - 125 x[T10,S0,K2] + p[T10,S0,K2] <= 0
+ c31[T10,E0,K0]: - 125 x[T10,E0,K0] + p[T10,E0,K0] <= 0
+ c31[T10,E0,K1]: - 125 x[T10,E0,K1] + p[T10,E0,K1] <= 0
+ c31[T10,E0,K2]: - 125 x[T10,E0,K2] + p[T10,E0,K2] <= 0
+ c31[T11,T0,K0]: - 125 x[T11,T0,K0] + p[T11,T0,K0] <= 0
+ c31[T11,T0,K1]: - 125 x[T11,T0,K1] + p[T11,T0,K1] <= 0
+ c31[T11,T0,K2]: - 125 x[T11,T0,K2] + p[T11,T0,K2] <= 0
+ c31[T11,T1,K0]: - 125 x[T11,T1,K0] + p[T11,T1,K0] <= 0
+ c31[T11,T1,K1]: - 125 x[T11,T1,K1] + p[T11,T1,K1] <= 0
+ c31[T11,T1,K2]: - 125 x[T11,T1,K2] + p[T11,T1,K2] <= 0
+ c31[T11,T2,K0]: - 125 x[T11,T2,K0] + p[T11,T2,K0] <= 0
+ c31[T11,T2,K1]: - 125 x[T11,T2,K1] + p[T11,T2,K1] <= 0
+ c31[T11,T2,K2]: - 125 x[T11,T2,K2] + p[T11,T2,K2] <= 0
+ c31[T11,T3,K0]: - 125 x[T11,T3,K0] + p[T11,T3,K0] <= 0
+ c31[T11,T3,K1]: - 125 x[T11,T3,K1] + p[T11,T3,K1] <= 0
+ c31[T11,T3,K2]: - 125 x[T11,T3,K2] + p[T11,T3,K2] <= 0
+ c31[T11,T4,K0]: - 125 x[T11,T4,K0] + p[T11,T4,K0] <= 0
+ c31[T11,T4,K1]: - 125 x[T11,T4,K1] + p[T11,T4,K1] <= 0
+ c31[T11,T4,K2]: - 125 x[T11,T4,K2] + p[T11,T4,K2] <= 0
+ c31[T11,T5,K0]: - 125 x[T11,T5,K0] + p[T11,T5,K0] <= 0
+ c31[T11,T5,K1]: - 125 x[T11,T5,K1] + p[T11,T5,K1] <= 0
+ c31[T11,T5,K2]: - 125 x[T11,T5,K2] + p[T11,T5,K2] <= 0
+ c31[T11,T6,K0]: - 125 x[T11,T6,K0] + p[T11,T6,K0] <= 0
+ c31[T11,T6,K1]: - 125 x[T11,T6,K1] + p[T11,T6,K1] <= 0
+ c31[T11,T6,K2]: - 125 x[T11,T6,K2] + p[T11,T6,K2] <= 0
+ c31[T11,T7,K0]: - 125 x[T11,T7,K0] + p[T11,T7,K0] <= 0
+ c31[T11,T7,K1]: - 125 x[T11,T7,K1] + p[T11,T7,K1] <= 0
+ c31[T11,T7,K2]: - 125 x[T11,T7,K2] + p[T11,T7,K2] <= 0
+ c31[T11,T8,K0]: - 125 x[T11,T8,K0] + p[T11,T8,K0] <= 0
+ c31[T11,T8,K1]: - 125 x[T11,T8,K1] + p[T11,T8,K1] <= 0
+ c31[T11,T8,K2]: - 125 x[T11,T8,K2] + p[T11,T8,K2] <= 0
+ c31[T11,T9,K0]: - 125 x[T11,T9,K0] + p[T11,T9,K0] <= 0
+ c31[T11,T9,K1]: - 125 x[T11,T9,K1] + p[T11,T9,K1] <= 0
+ c31[T11,T9,K2]: - 125 x[T11,T9,K2] + p[T11,T9,K2] <= 0
+ c31[T11,T10,K0]: - 125 x[T11,T10,K0] + p[T11,T10,K0] <= 0
+ c31[T11,T10,K1]: - 125 x[T11,T10,K1] + p[T11,T10,K1] <= 0
+ c31[T11,T10,K2]: - 125 x[T11,T10,K2] + p[T11,T10,K2] <= 0
+ c31[T11,D0,K0]: - 125 x[T11,D0,K0] + p[T11,D0,K0] <= 0
+ c31[T11,D0,K1]: - 125 x[T11,D0,K1] + p[T11,D0,K1] <= 0
+ c31[T11,D0,K2]: - 125 x[T11,D0,K2] + p[T11,D0,K2] <= 0
+ c31[T11,D1,K0]: - 125 x[T11,D1,K0] + p[T11,D1,K0] <= 0
+ c31[T11,D1,K1]: - 125 x[T11,D1,K1] + p[T11,D1,K1] <= 0
+ c31[T11,D1,K2]: - 125 x[T11,D1,K2] + p[T11,D1,K2] <= 0
+ c31[T11,D2,K0]: - 125 x[T11,D2,K0] + p[T11,D2,K0] <= 0
+ c31[T11,D2,K1]: - 125 x[T11,D2,K1] + p[T11,D2,K1] <= 0
+ c31[T11,D2,K2]: - 125 x[T11,D2,K2] + p[T11,D2,K2] <= 0
+ c31[T11,S0,K0]: - 125 x[T11,S0,K0] + p[T11,S0,K0] <= 0
+ c31[T11,S0,K1]: - 125 x[T11,S0,K1] + p[T11,S0,K1] <= 0
+ c31[T11,S0,K2]: - 125 x[T11,S0,K2] + p[T11,S0,K2] <= 0
+ c31[T11,E0,K0]: - 125 x[T11,E0,K0] + p[T11,E0,K0] <= 0
+ c31[T11,E0,K1]: - 125 x[T11,E0,K1] + p[T11,E0,K1] <= 0
+ c31[T11,E0,K2]: - 125 x[T11,E0,K2] + p[T11,E0,K2] <= 0
+ c31[D0,T0,K0]: - 125 x[D0,T0,K0] + p[D0,T0,K0] <= 0
+ c31[D0,T0,K1]: - 125 x[D0,T0,K1] + p[D0,T0,K1] <= 0
+ c31[D0,T0,K2]: - 125 x[D0,T0,K2] + p[D0,T0,K2] <= 0
+ c31[D0,T1,K0]: - 125 x[D0,T1,K0] + p[D0,T1,K0] <= 0
+ c31[D0,T1,K1]: - 125 x[D0,T1,K1] + p[D0,T1,K1] <= 0
+ c31[D0,T1,K2]: - 125 x[D0,T1,K2] + p[D0,T1,K2] <= 0
+ c31[D0,T2,K0]: - 125 x[D0,T2,K0] + p[D0,T2,K0] <= 0
+ c31[D0,T2,K1]: - 125 x[D0,T2,K1] + p[D0,T2,K1] <= 0
+ c31[D0,T2,K2]: - 125 x[D0,T2,K2] + p[D0,T2,K2] <= 0
+ c31[D0,T3,K0]: - 125 x[D0,T3,K0] + p[D0,T3,K0] <= 0
+ c31[D0,T3,K1]: - 125 x[D0,T3,K1] + p[D0,T3,K1] <= 0
+ c31[D0,T3,K2]: - 125 x[D0,T3,K2] + p[D0,T3,K2] <= 0
+ c31[D0,T4,K0]: - 125 x[D0,T4,K0] + p[D0,T4,K0] <= 0
+ c31[D0,T4,K1]: - 125 x[D0,T4,K1] + p[D0,T4,K1] <= 0
+ c31[D0,T4,K2]: - 125 x[D0,T4,K2] + p[D0,T4,K2] <= 0
+ c31[D0,T5,K0]: - 125 x[D0,T5,K0] + p[D0,T5,K0] <= 0
+ c31[D0,T5,K1]: - 125 x[D0,T5,K1] + p[D0,T5,K1] <= 0
+ c31[D0,T5,K2]: - 125 x[D0,T5,K2] + p[D0,T5,K2] <= 0
+ c31[D0,T6,K0]: - 125 x[D0,T6,K0] + p[D0,T6,K0] <= 0
+ c31[D0,T6,K1]: - 125 x[D0,T6,K1] + p[D0,T6,K1] <= 0
+ c31[D0,T6,K2]: - 125 x[D0,T6,K2] + p[D0,T6,K2] <= 0
+ c31[D0,T7,K0]: - 125 x[D0,T7,K0] + p[D0,T7,K0] <= 0
+ c31[D0,T7,K1]: - 125 x[D0,T7,K1] + p[D0,T7,K1] <= 0
+ c31[D0,T7,K2]: - 125 x[D0,T7,K2] + p[D0,T7,K2] <= 0
+ c31[D0,T8,K0]: - 125 x[D0,T8,K0] + p[D0,T8,K0] <= 0
+ c31[D0,T8,K1]: - 125 x[D0,T8,K1] + p[D0,T8,K1] <= 0
+ c31[D0,T8,K2]: - 125 x[D0,T8,K2] + p[D0,T8,K2] <= 0
+ c31[D0,T9,K0]: - 125 x[D0,T9,K0] + p[D0,T9,K0] <= 0
+ c31[D0,T9,K1]: - 125 x[D0,T9,K1] + p[D0,T9,K1] <= 0
+ c31[D0,T9,K2]: - 125 x[D0,T9,K2] + p[D0,T9,K2] <= 0
+ c31[D0,T10,K0]: - 125 x[D0,T10,K0] + p[D0,T10,K0] <= 0
+ c31[D0,T10,K1]: - 125 x[D0,T10,K1] + p[D0,T10,K1] <= 0
+ c31[D0,T10,K2]: - 125 x[D0,T10,K2] + p[D0,T10,K2] <= 0
+ c31[D0,T11,K0]: - 125 x[D0,T11,K0] + p[D0,T11,K0] <= 0
+ c31[D0,T11,K1]: - 125 x[D0,T11,K1] + p[D0,T11,K1] <= 0
+ c31[D0,T11,K2]: - 125 x[D0,T11,K2] + p[D0,T11,K2] <= 0
+ c31[D0,D1,K0]: - 125 x[D0,D1,K0] + p[D0,D1,K0] <= 0
+ c31[D0,D1,K1]: - 125 x[D0,D1,K1] + p[D0,D1,K1] <= 0
+ c31[D0,D1,K2]: - 125 x[D0,D1,K2] + p[D0,D1,K2] <= 0
+ c31[D0,D2,K0]: - 125 x[D0,D2,K0] + p[D0,D2,K0] <= 0
+ c31[D0,D2,K1]: - 125 x[D0,D2,K1] + p[D0,D2,K1] <= 0
+ c31[D0,D2,K2]: - 125 x[D0,D2,K2] + p[D0,D2,K2] <= 0
+ c31[D0,S0,K0]: - 125 x[D0,S0,K0] + p[D0,S0,K0] <= 0
+ c31[D0,S0,K1]: - 125 x[D0,S0,K1] + p[D0,S0,K1] <= 0
+ c31[D0,S0,K2]: - 125 x[D0,S0,K2] + p[D0,S0,K2] <= 0
+ c31[D0,E0,K0]: - 125 x[D0,E0,K0] + p[D0,E0,K0] <= 0
+ c31[D0,E0,K1]: - 125 x[D0,E0,K1] + p[D0,E0,K1] <= 0
+ c31[D0,E0,K2]: - 125 x[D0,E0,K2] + p[D0,E0,K2] <= 0
+ c31[D1,T0,K0]: - 125 x[D1,T0,K0] + p[D1,T0,K0] <= 0
+ c31[D1,T0,K1]: - 125 x[D1,T0,K1] + p[D1,T0,K1] <= 0
+ c31[D1,T0,K2]: - 125 x[D1,T0,K2] + p[D1,T0,K2] <= 0
+ c31[D1,T1,K0]: - 125 x[D1,T1,K0] + p[D1,T1,K0] <= 0
+ c31[D1,T1,K1]: - 125 x[D1,T1,K1] + p[D1,T1,K1] <= 0
+ c31[D1,T1,K2]: - 125 x[D1,T1,K2] + p[D1,T1,K2] <= 0
+ c31[D1,T2,K0]: - 125 x[D1,T2,K0] + p[D1,T2,K0] <= 0
+ c31[D1,T2,K1]: - 125 x[D1,T2,K1] + p[D1,T2,K1] <= 0
+ c31[D1,T2,K2]: - 125 x[D1,T2,K2] + p[D1,T2,K2] <= 0
+ c31[D1,T3,K0]: - 125 x[D1,T3,K0] + p[D1,T3,K0] <= 0
+ c31[D1,T3,K1]: - 125 x[D1,T3,K1] + p[D1,T3,K1] <= 0
+ c31[D1,T3,K2]: - 125 x[D1,T3,K2] + p[D1,T3,K2] <= 0
+ c31[D1,T4,K0]: - 125 x[D1,T4,K0] + p[D1,T4,K0] <= 0
+ c31[D1,T4,K1]: - 125 x[D1,T4,K1] + p[D1,T4,K1] <= 0
+ c31[D1,T4,K2]: - 125 x[D1,T4,K2] + p[D1,T4,K2] <= 0
+ c31[D1,T5,K0]: - 125 x[D1,T5,K0] + p[D1,T5,K0] <= 0
+ c31[D1,T5,K1]: - 125 x[D1,T5,K1] + p[D1,T5,K1] <= 0
+ c31[D1,T5,K2]: - 125 x[D1,T5,K2] + p[D1,T5,K2] <= 0
+ c31[D1,T6,K0]: - 125 x[D1,T6,K0] + p[D1,T6,K0] <= 0
+ c31[D1,T6,K1]: - 125 x[D1,T6,K1] + p[D1,T6,K1] <= 0
+ c31[D1,T6,K2]: - 125 x[D1,T6,K2] + p[D1,T6,K2] <= 0
+ c31[D1,T7,K0]: - 125 x[D1,T7,K0] + p[D1,T7,K0] <= 0
+ c31[D1,T7,K1]: - 125 x[D1,T7,K1] + p[D1,T7,K1] <= 0
+ c31[D1,T7,K2]: - 125 x[D1,T7,K2] + p[D1,T7,K2] <= 0
+ c31[D1,T8,K0]: - 125 x[D1,T8,K0] + p[D1,T8,K0] <= 0
+ c31[D1,T8,K1]: - 125 x[D1,T8,K1] + p[D1,T8,K1] <= 0
+ c31[D1,T8,K2]: - 125 x[D1,T8,K2] + p[D1,T8,K2] <= 0
+ c31[D1,T9,K0]: - 125 x[D1,T9,K0] + p[D1,T9,K0] <= 0
+ c31[D1,T9,K1]: - 125 x[D1,T9,K1] + p[D1,T9,K1] <= 0
+ c31[D1,T9,K2]: - 125 x[D1,T9,K2] + p[D1,T9,K2] <= 0
+ c31[D1,T10,K0]: - 125 x[D1,T10,K0] + p[D1,T10,K0] <= 0
+ c31[D1,T10,K1]: - 125 x[D1,T10,K1] + p[D1,T10,K1] <= 0
+ c31[D1,T10,K2]: - 125 x[D1,T10,K2] + p[D1,T10,K2] <= 0
+ c31[D1,T11,K0]: - 125 x[D1,T11,K0] + p[D1,T11,K0] <= 0
+ c31[D1,T11,K1]: - 125 x[D1,T11,K1] + p[D1,T11,K1] <= 0
+ c31[D1,T11,K2]: - 125 x[D1,T11,K2] + p[D1,T11,K2] <= 0
+ c31[D1,D0,K0]: - 125 x[D1,D0,K0] + p[D1,D0,K0] <= 0
+ c31[D1,D0,K1]: - 125 x[D1,D0,K1] + p[D1,D0,K1] <= 0
+ c31[D1,D0,K2]: - 125 x[D1,D0,K2] + p[D1,D0,K2] <= 0
+ c31[D1,D2,K0]: - 125 x[D1,D2,K0] + p[D1,D2,K0] <= 0
+ c31[D1,D2,K1]: - 125 x[D1,D2,K1] + p[D1,D2,K1] <= 0
+ c31[D1,D2,K2]: - 125 x[D1,D2,K2] + p[D1,D2,K2] <= 0
+ c31[D1,S0,K0]: - 125 x[D1,S0,K0] + p[D1,S0,K0] <= 0
+ c31[D1,S0,K1]: - 125 x[D1,S0,K1] + p[D1,S0,K1] <= 0
+ c31[D1,S0,K2]: - 125 x[D1,S0,K2] + p[D1,S0,K2] <= 0
+ c31[D1,E0,K0]: - 125 x[D1,E0,K0] + p[D1,E0,K0] <= 0
+ c31[D1,E0,K1]: - 125 x[D1,E0,K1] + p[D1,E0,K1] <= 0
+ c31[D1,E0,K2]: - 125 x[D1,E0,K2] + p[D1,E0,K2] <= 0
+ c31[D2,T0,K0]: - 125 x[D2,T0,K0] + p[D2,T0,K0] <= 0
+ c31[D2,T0,K1]: - 125 x[D2,T0,K1] + p[D2,T0,K1] <= 0
+ c31[D2,T0,K2]: - 125 x[D2,T0,K2] + p[D2,T0,K2] <= 0
+ c31[D2,T1,K0]: - 125 x[D2,T1,K0] + p[D2,T1,K0] <= 0
+ c31[D2,T1,K1]: - 125 x[D2,T1,K1] + p[D2,T1,K1] <= 0
+ c31[D2,T1,K2]: - 125 x[D2,T1,K2] + p[D2,T1,K2] <= 0
+ c31[D2,T2,K0]: - 125 x[D2,T2,K0] + p[D2,T2,K0] <= 0
+ c31[D2,T2,K1]: - 125 x[D2,T2,K1] + p[D2,T2,K1] <= 0
+ c31[D2,T2,K2]: - 125 x[D2,T2,K2] + p[D2,T2,K2] <= 0
+ c31[D2,T3,K0]: - 125 x[D2,T3,K0] + p[D2,T3,K0] <= 0
+ c31[D2,T3,K1]: - 125 x[D2,T3,K1] + p[D2,T3,K1] <= 0
+ c31[D2,T3,K2]: - 125 x[D2,T3,K2] + p[D2,T3,K2] <= 0
+ c31[D2,T4,K0]: - 125 x[D2,T4,K0] + p[D2,T4,K0] <= 0
+ c31[D2,T4,K1]: - 125 x[D2,T4,K1] + p[D2,T4,K1] <= 0
+ c31[D2,T4,K2]: - 125 x[D2,T4,K2] + p[D2,T4,K2] <= 0
+ c31[D2,T5,K0]: - 125 x[D2,T5,K0] + p[D2,T5,K0] <= 0
+ c31[D2,T5,K1]: - 125 x[D2,T5,K1] + p[D2,T5,K1] <= 0
+ c31[D2,T5,K2]: - 125 x[D2,T5,K2] + p[D2,T5,K2] <= 0
+ c31[D2,T6,K0]: - 125 x[D2,T6,K0] + p[D2,T6,K0] <= 0
+ c31[D2,T6,K1]: - 125 x[D2,T6,K1] + p[D2,T6,K1] <= 0
+ c31[D2,T6,K2]: - 125 x[D2,T6,K2] + p[D2,T6,K2] <= 0
+ c31[D2,T7,K0]: - 125 x[D2,T7,K0] + p[D2,T7,K0] <= 0
+ c31[D2,T7,K1]: - 125 x[D2,T7,K1] + p[D2,T7,K1] <= 0
+ c31[D2,T7,K2]: - 125 x[D2,T7,K2] + p[D2,T7,K2] <= 0
+ c31[D2,T8,K0]: - 125 x[D2,T8,K0] + p[D2,T8,K0] <= 0
+ c31[D2,T8,K1]: - 125 x[D2,T8,K1] + p[D2,T8,K1] <= 0
+ c31[D2,T8,K2]: - 125 x[D2,T8,K2] + p[D2,T8,K2] <= 0
+ c31[D2,T9,K0]: - 125 x[D2,T9,K0] + p[D2,T9,K0] <= 0
+ c31[D2,T9,K1]: - 125 x[D2,T9,K1] + p[D2,T9,K1] <= 0
+ c31[D2,T9,K2]: - 125 x[D2,T9,K2] + p[D2,T9,K2] <= 0
+ c31[D2,T10,K0]: - 125 x[D2,T10,K0] + p[D2,T10,K0] <= 0
+ c31[D2,T10,K1]: - 125 x[D2,T10,K1] + p[D2,T10,K1] <= 0
+ c31[D2,T10,K2]: - 125 x[D2,T10,K2] + p[D2,T10,K2] <= 0
+ c31[D2,T11,K0]: - 125 x[D2,T11,K0] + p[D2,T11,K0] <= 0
+ c31[D2,T11,K1]: - 125 x[D2,T11,K1] + p[D2,T11,K1] <= 0
+ c31[D2,T11,K2]: - 125 x[D2,T11,K2] + p[D2,T11,K2] <= 0
+ c31[D2,D0,K0]: - 125 x[D2,D0,K0] + p[D2,D0,K0] <= 0
+ c31[D2,D0,K1]: - 125 x[D2,D0,K1] + p[D2,D0,K1] <= 0
+ c31[D2,D0,K2]: - 125 x[D2,D0,K2] + p[D2,D0,K2] <= 0
+ c31[D2,D1,K0]: - 125 x[D2,D1,K0] + p[D2,D1,K0] <= 0
+ c31[D2,D1,K1]: - 125 x[D2,D1,K1] + p[D2,D1,K1] <= 0
+ c31[D2,D1,K2]: - 125 x[D2,D1,K2] + p[D2,D1,K2] <= 0
+ c31[D2,S0,K0]: - 125 x[D2,S0,K0] + p[D2,S0,K0] <= 0
+ c31[D2,S0,K1]: - 125 x[D2,S0,K1] + p[D2,S0,K1] <= 0
+ c31[D2,S0,K2]: - 125 x[D2,S0,K2] + p[D2,S0,K2] <= 0
+ c31[D2,E0,K0]: - 125 x[D2,E0,K0] + p[D2,E0,K0] <= 0
+ c31[D2,E0,K1]: - 125 x[D2,E0,K1] + p[D2,E0,K1] <= 0
+ c31[D2,E0,K2]: - 125 x[D2,E0,K2] + p[D2,E0,K2] <= 0
+ c31[S0,T0,K0]: - 125 x[S0,T0,K0] + p[S0,T0,K0] <= 0
+ c31[S0,T0,K1]: - 125 x[S0,T0,K1] + p[S0,T0,K1] <= 0
+ c31[S0,T0,K2]: - 125 x[S0,T0,K2] + p[S0,T0,K2] <= 0
+ c31[S0,T1,K0]: - 125 x[S0,T1,K0] + p[S0,T1,K0] <= 0
+ c31[S0,T1,K1]: - 125 x[S0,T1,K1] + p[S0,T1,K1] <= 0
+ c31[S0,T1,K2]: - 125 x[S0,T1,K2] + p[S0,T1,K2] <= 0
+ c31[S0,T2,K0]: - 125 x[S0,T2,K0] + p[S0,T2,K0] <= 0
+ c31[S0,T2,K1]: - 125 x[S0,T2,K1] + p[S0,T2,K1] <= 0
+ c31[S0,T2,K2]: - 125 x[S0,T2,K2] + p[S0,T2,K2] <= 0
+ c31[S0,T3,K0]: - 125 x[S0,T3,K0] + p[S0,T3,K0] <= 0
+ c31[S0,T3,K1]: - 125 x[S0,T3,K1] + p[S0,T3,K1] <= 0
+ c31[S0,T3,K2]: - 125 x[S0,T3,K2] + p[S0,T3,K2] <= 0
+ c31[S0,T4,K0]: - 125 x[S0,T4,K0] + p[S0,T4,K0] <= 0
+ c31[S0,T4,K1]: - 125 x[S0,T4,K1] + p[S0,T4,K1] <= 0
+ c31[S0,T4,K2]: - 125 x[S0,T4,K2] + p[S0,T4,K2] <= 0
+ c31[S0,T5,K0]: - 125 x[S0,T5,K0] + p[S0,T5,K0] <= 0
+ c31[S0,T5,K1]: - 125 x[S0,T5,K1] + p[S0,T5,K1] <= 0
+ c31[S0,T5,K2]: - 125 x[S0,T5,K2] + p[S0,T5,K2] <= 0
+ c31[S0,T6,K0]: - 125 x[S0,T6,K0] + p[S0,T6,K0] <= 0
+ c31[S0,T6,K1]: - 125 x[S0,T6,K1] + p[S0,T6,K1] <= 0
+ c31[S0,T6,K2]: - 125 x[S0,T6,K2] + p[S0,T6,K2] <= 0
+ c31[S0,T7,K0]: - 125 x[S0,T7,K0] + p[S0,T7,K0] <= 0
+ c31[S0,T7,K1]: - 125 x[S0,T7,K1] + p[S0,T7,K1] <= 0
+ c31[S0,T7,K2]: - 125 x[S0,T7,K2] + p[S0,T7,K2] <= 0
+ c31[S0,T8,K0]: - 125 x[S0,T8,K0] + p[S0,T8,K0] <= 0
+ c31[S0,T8,K1]: - 125 x[S0,T8,K1] + p[S0,T8,K1] <= 0
+ c31[S0,T8,K2]: - 125 x[S0,T8,K2] + p[S0,T8,K2] <= 0
+ c31[S0,T9,K0]: - 125 x[S0,T9,K0] + p[S0,T9,K0] <= 0
+ c31[S0,T9,K1]: - 125 x[S0,T9,K1] + p[S0,T9,K1] <= 0
+ c31[S0,T9,K2]: - 125 x[S0,T9,K2] + p[S0,T9,K2] <= 0
+ c31[S0,T10,K0]: - 125 x[S0,T10,K0] + p[S0,T10,K0] <= 0
+ c31[S0,T10,K1]: - 125 x[S0,T10,K1] + p[S0,T10,K1] <= 0
+ c31[S0,T10,K2]: - 125 x[S0,T10,K2] + p[S0,T10,K2] <= 0
+ c31[S0,T11,K0]: - 125 x[S0,T11,K0] + p[S0,T11,K0] <= 0
+ c31[S0,T11,K1]: - 125 x[S0,T11,K1] + p[S0,T11,K1] <= 0
+ c31[S0,T11,K2]: - 125 x[S0,T11,K2] + p[S0,T11,K2] <= 0
+ c31[S0,D0,K0]: - 125 x[S0,D0,K0] + p[S0,D0,K0] <= 0
+ c31[S0,D0,K1]: - 125 x[S0,D0,K1] + p[S0,D0,K1] <= 0
+ c31[S0,D0,K2]: - 125 x[S0,D0,K2] + p[S0,D0,K2] <= 0
+ c31[S0,D1,K0]: - 125 x[S0,D1,K0] + p[S0,D1,K0] <= 0
+ c31[S0,D1,K1]: - 125 x[S0,D1,K1] + p[S0,D1,K1] <= 0
+ c31[S0,D1,K2]: - 125 x[S0,D1,K2] + p[S0,D1,K2] <= 0
+ c31[S0,D2,K0]: - 125 x[S0,D2,K0] + p[S0,D2,K0] <= 0
+ c31[S0,D2,K1]: - 125 x[S0,D2,K1] + p[S0,D2,K1] <= 0
+ c31[S0,D2,K2]: - 125 x[S0,D2,K2] + p[S0,D2,K2] <= 0
+ c31[S0,E0,K0]: - 125 x[S0,E0,K0] + p[S0,E0,K0] <= 0
+ c31[S0,E0,K1]: - 125 x[S0,E0,K1] + p[S0,E0,K1] <= 0
+ c31[S0,E0,K2]: - 125 x[S0,E0,K2] + p[S0,E0,K2] <= 0
+ c31[E0,T0,K0]: - 125 x[E0,T0,K0] + p[E0,T0,K0] <= 0
+ c31[E0,T0,K1]: - 125 x[E0,T0,K1] + p[E0,T0,K1] <= 0
+ c31[E0,T0,K2]: - 125 x[E0,T0,K2] + p[E0,T0,K2] <= 0
+ c31[E0,T1,K0]: - 125 x[E0,T1,K0] + p[E0,T1,K0] <= 0
+ c31[E0,T1,K1]: - 125 x[E0,T1,K1] + p[E0,T1,K1] <= 0
+ c31[E0,T1,K2]: - 125 x[E0,T1,K2] + p[E0,T1,K2] <= 0
+ c31[E0,T2,K0]: - 125 x[E0,T2,K0] + p[E0,T2,K0] <= 0
+ c31[E0,T2,K1]: - 125 x[E0,T2,K1] + p[E0,T2,K1] <= 0
+ c31[E0,T2,K2]: - 125 x[E0,T2,K2] + p[E0,T2,K2] <= 0
+ c31[E0,T3,K0]: - 125 x[E0,T3,K0] + p[E0,T3,K0] <= 0
+ c31[E0,T3,K1]: - 125 x[E0,T3,K1] + p[E0,T3,K1] <= 0
+ c31[E0,T3,K2]: - 125 x[E0,T3,K2] + p[E0,T3,K2] <= 0
+ c31[E0,T4,K0]: - 125 x[E0,T4,K0] + p[E0,T4,K0] <= 0
+ c31[E0,T4,K1]: - 125 x[E0,T4,K1] + p[E0,T4,K1] <= 0
+ c31[E0,T4,K2]: - 125 x[E0,T4,K2] + p[E0,T4,K2] <= 0
+ c31[E0,T5,K0]: - 125 x[E0,T5,K0] + p[E0,T5,K0] <= 0
+ c31[E0,T5,K1]: - 125 x[E0,T5,K1] + p[E0,T5,K1] <= 0
+ c31[E0,T5,K2]: - 125 x[E0,T5,K2] + p[E0,T5,K2] <= 0
+ c31[E0,T6,K0]: - 125 x[E0,T6,K0] + p[E0,T6,K0] <= 0
+ c31[E0,T6,K1]: - 125 x[E0,T6,K1] + p[E0,T6,K1] <= 0
+ c31[E0,T6,K2]: - 125 x[E0,T6,K2] + p[E0,T6,K2] <= 0
+ c31[E0,T7,K0]: - 125 x[E0,T7,K0] + p[E0,T7,K0] <= 0
+ c31[E0,T7,K1]: - 125 x[E0,T7,K1] + p[E0,T7,K1] <= 0
+ c31[E0,T7,K2]: - 125 x[E0,T7,K2] + p[E0,T7,K2] <= 0
+ c31[E0,T8,K0]: - 125 x[E0,T8,K0] + p[E0,T8,K0] <= 0
+ c31[E0,T8,K1]: - 125 x[E0,T8,K1] + p[E0,T8,K1] <= 0
+ c31[E0,T8,K2]: - 125 x[E0,T8,K2] + p[E0,T8,K2] <= 0
+ c31[E0,T9,K0]: - 125 x[E0,T9,K0] + p[E0,T9,K0] <= 0
+ c31[E0,T9,K1]: - 125 x[E0,T9,K1] + p[E0,T9,K1] <= 0
+ c31[E0,T9,K2]: - 125 x[E0,T9,K2] + p[E0,T9,K2] <= 0
+ c31[E0,T10,K0]: - 125 x[E0,T10,K0] + p[E0,T10,K0] <= 0
+ c31[E0,T10,K1]: - 125 x[E0,T10,K1] + p[E0,T10,K1] <= 0
+ c31[E0,T10,K2]: - 125 x[E0,T10,K2] + p[E0,T10,K2] <= 0
+ c31[E0,T11,K0]: - 125 x[E0,T11,K0] + p[E0,T11,K0] <= 0
+ c31[E0,T11,K1]: - 125 x[E0,T11,K1] + p[E0,T11,K1] <= 0
+ c31[E0,T11,K2]: - 125 x[E0,T11,K2] + p[E0,T11,K2] <= 0
+ c31[E0,D0,K0]: - 125 x[E0,D0,K0] + p[E0,D0,K0] <= 0
+ c31[E0,D0,K1]: - 125 x[E0,D0,K1] + p[E0,D0,K1] <= 0
+ c31[E0,D0,K2]: - 125 x[E0,D0,K2] + p[E0,D0,K2] <= 0
+ c31[E0,D1,K0]: - 125 x[E0,D1,K0] + p[E0,D1,K0] <= 0
+ c31[E0,D1,K1]: - 125 x[E0,D1,K1] + p[E0,D1,K1] <= 0
+ c31[E0,D1,K2]: - 125 x[E0,D1,K2] + p[E0,D1,K2] <= 0
+ c31[E0,D2,K0]: - 125 x[E0,D2,K0] + p[E0,D2,K0] <= 0
+ c31[E0,D2,K1]: - 125 x[E0,D2,K1] + p[E0,D2,K1] <= 0
+ c31[E0,D2,K2]: - 125 x[E0,D2,K2] + p[E0,D2,K2] <= 0
+ c31[E0,S0,K0]: - 125 x[E0,S0,K0] + p[E0,S0,K0] <= 0
+ c31[E0,S0,K1]: - 125 x[E0,S0,K1] + p[E0,S0,K1] <= 0
+ c31[E0,S0,K2]: - 125 x[E0,S0,K2] + p[E0,S0,K2] <= 0
  c23[K0]: 74.91922371664332 x[T0,T1,K0] + 43.36644046491703 x[T0,T2,K0]
    + 61.61048564086163 x[T0,T3,K0] + 75.55459017662241 x[T0,T4,K0]
    + 45.73613936210122 x[T0,T5,K0] + 27.5792030702074 x[T0,T6,K0]
@@ -5565,18 +3841,6 @@ Bounds
  x[E0,S0,K0] <= 1
  x[E0,S0,K1] <= 1
  x[E0,S0,K2] <= 1
- r[T0] <= 125
- r[T1] <= 125
- r[T2] <= 125
- r[T3] <= 125
- r[T4] <= 125
- r[T5] <= 125
- r[T6] <= 125
- r[T7] <= 125
- r[T8] <= 125
- r[T9] <= 125
- r[T10] <= 125
- r[T11] <= 125
 Binaries
  y[T0] y[T1] y[T2] y[T3] y[T4] y[T5] y[T6] y[T7] y[T8] y[T9] y[T10] y[T11]
 Generals
