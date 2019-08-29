@@ -1,4 +1,4 @@
-\ Model TOBasicTaskFlowBasedSubtourArcBasedFuel
+\ Model TOBasicNodeBasedSubtourNodeBasedFuel
 \ LP format - for model browsing. Use MPS format to capture full model detail.
 Maximize
   - 0.00749192237166433 x[T0,T1,K0] - 0.00749192237166433 x[T0,T1,K1]
@@ -269,142 +269,7 @@ Maximize
    - 0.00728823779607165 x[E0,D1,K1] - 0.00369799344077056 x[E0,D2,K0]
    - 0.00369799344077056 x[E0,D2,K1] + y[T0] + y[T1] + y[T2] + y[T3]
    + y[T4] + y[T5] + y[T6] + y[T7] + y[T8] + y[T9] + y[T10] + y[T11]
-   + 0 q[T0,T1,K0] + 0 q[T0,T1,K1] + 0 q[T0,T2,K0] + 0 q[T0,T2,K1]
-   + 0 q[T0,T3,K0] + 0 q[T0,T3,K1] + 0 q[T0,T4,K0] + 0 q[T0,T4,K1]
-   + 0 q[T0,T5,K0] + 0 q[T0,T5,K1] + 0 q[T0,T6,K0] + 0 q[T0,T6,K1]
-   + 0 q[T0,T7,K0] + 0 q[T0,T7,K1] + 0 q[T0,T8,K0] + 0 q[T0,T8,K1]
-   + 0 q[T0,T9,K0] + 0 q[T0,T9,K1] + 0 q[T0,T10,K0] + 0 q[T0,T10,K1]
-   + 0 q[T0,T11,K0] + 0 q[T0,T11,K1] + 0 q[T0,D0,K0] + 0 q[T0,D0,K1]
-   + 0 q[T0,D1,K0] + 0 q[T0,D1,K1] + 0 q[T0,D2,K0] + 0 q[T0,D2,K1]
-   + 0 q[T0,S0,K0] + 0 q[T0,S0,K1] + 0 q[T0,E0,K0] + 0 q[T0,E0,K1]
-   + 0 q[T1,T0,K0] + 0 q[T1,T0,K1] + 0 q[T1,T2,K0] + 0 q[T1,T2,K1]
-   + 0 q[T1,T3,K0] + 0 q[T1,T3,K1] + 0 q[T1,T4,K0] + 0 q[T1,T4,K1]
-   + 0 q[T1,T5,K0] + 0 q[T1,T5,K1] + 0 q[T1,T6,K0] + 0 q[T1,T6,K1]
-   + 0 q[T1,T7,K0] + 0 q[T1,T7,K1] + 0 q[T1,T8,K0] + 0 q[T1,T8,K1]
-   + 0 q[T1,T9,K0] + 0 q[T1,T9,K1] + 0 q[T1,T10,K0] + 0 q[T1,T10,K1]
-   + 0 q[T1,T11,K0] + 0 q[T1,T11,K1] + 0 q[T1,D0,K0] + 0 q[T1,D0,K1]
-   + 0 q[T1,D1,K0] + 0 q[T1,D1,K1] + 0 q[T1,D2,K0] + 0 q[T1,D2,K1]
-   + 0 q[T1,S0,K0] + 0 q[T1,S0,K1] + 0 q[T1,E0,K0] + 0 q[T1,E0,K1]
-   + 0 q[T2,T0,K0] + 0 q[T2,T0,K1] + 0 q[T2,T1,K0] + 0 q[T2,T1,K1]
-   + 0 q[T2,T3,K0] + 0 q[T2,T3,K1] + 0 q[T2,T4,K0] + 0 q[T2,T4,K1]
-   + 0 q[T2,T5,K0] + 0 q[T2,T5,K1] + 0 q[T2,T6,K0] + 0 q[T2,T6,K1]
-   + 0 q[T2,T7,K0] + 0 q[T2,T7,K1] + 0 q[T2,T8,K0] + 0 q[T2,T8,K1]
-   + 0 q[T2,T9,K0] + 0 q[T2,T9,K1] + 0 q[T2,T10,K0] + 0 q[T2,T10,K1]
-   + 0 q[T2,T11,K0] + 0 q[T2,T11,K1] + 0 q[T2,D0,K0] + 0 q[T2,D0,K1]
-   + 0 q[T2,D1,K0] + 0 q[T2,D1,K1] + 0 q[T2,D2,K0] + 0 q[T2,D2,K1]
-   + 0 q[T2,S0,K0] + 0 q[T2,S0,K1] + 0 q[T2,E0,K0] + 0 q[T2,E0,K1]
-   + 0 q[T3,T0,K0] + 0 q[T3,T0,K1] + 0 q[T3,T1,K0] + 0 q[T3,T1,K1]
-   + 0 q[T3,T2,K0] + 0 q[T3,T2,K1] + 0 q[T3,T4,K0] + 0 q[T3,T4,K1]
-   + 0 q[T3,T5,K0] + 0 q[T3,T5,K1] + 0 q[T3,T6,K0] + 0 q[T3,T6,K1]
-   + 0 q[T3,T7,K0] + 0 q[T3,T7,K1] + 0 q[T3,T8,K0] + 0 q[T3,T8,K1]
-   + 0 q[T3,T9,K0] + 0 q[T3,T9,K1] + 0 q[T3,T10,K0] + 0 q[T3,T10,K1]
-   + 0 q[T3,T11,K0] + 0 q[T3,T11,K1] + 0 q[T3,D0,K0] + 0 q[T3,D0,K1]
-   + 0 q[T3,D1,K0] + 0 q[T3,D1,K1] + 0 q[T3,D2,K0] + 0 q[T3,D2,K1]
-   + 0 q[T3,S0,K0] + 0 q[T3,S0,K1] + 0 q[T3,E0,K0] + 0 q[T3,E0,K1]
-   + 0 q[T4,T0,K0] + 0 q[T4,T0,K1] + 0 q[T4,T1,K0] + 0 q[T4,T1,K1]
-   + 0 q[T4,T2,K0] + 0 q[T4,T2,K1] + 0 q[T4,T3,K0] + 0 q[T4,T3,K1]
-   + 0 q[T4,T5,K0] + 0 q[T4,T5,K1] + 0 q[T4,T6,K0] + 0 q[T4,T6,K1]
-   + 0 q[T4,T7,K0] + 0 q[T4,T7,K1] + 0 q[T4,T8,K0] + 0 q[T4,T8,K1]
-   + 0 q[T4,T9,K0] + 0 q[T4,T9,K1] + 0 q[T4,T10,K0] + 0 q[T4,T10,K1]
-   + 0 q[T4,T11,K0] + 0 q[T4,T11,K1] + 0 q[T4,D0,K0] + 0 q[T4,D0,K1]
-   + 0 q[T4,D1,K0] + 0 q[T4,D1,K1] + 0 q[T4,D2,K0] + 0 q[T4,D2,K1]
-   + 0 q[T4,S0,K0] + 0 q[T4,S0,K1] + 0 q[T4,E0,K0] + 0 q[T4,E0,K1]
-   + 0 q[T5,T0,K0] + 0 q[T5,T0,K1] + 0 q[T5,T1,K0] + 0 q[T5,T1,K1]
-   + 0 q[T5,T2,K0] + 0 q[T5,T2,K1] + 0 q[T5,T3,K0] + 0 q[T5,T3,K1]
-   + 0 q[T5,T4,K0] + 0 q[T5,T4,K1] + 0 q[T5,T6,K0] + 0 q[T5,T6,K1]
-   + 0 q[T5,T7,K0] + 0 q[T5,T7,K1] + 0 q[T5,T8,K0] + 0 q[T5,T8,K1]
-   + 0 q[T5,T9,K0] + 0 q[T5,T9,K1] + 0 q[T5,T10,K0] + 0 q[T5,T10,K1]
-   + 0 q[T5,T11,K0] + 0 q[T5,T11,K1] + 0 q[T5,D0,K0] + 0 q[T5,D0,K1]
-   + 0 q[T5,D1,K0] + 0 q[T5,D1,K1] + 0 q[T5,D2,K0] + 0 q[T5,D2,K1]
-   + 0 q[T5,S0,K0] + 0 q[T5,S0,K1] + 0 q[T5,E0,K0] + 0 q[T5,E0,K1]
-   + 0 q[T6,T0,K0] + 0 q[T6,T0,K1] + 0 q[T6,T1,K0] + 0 q[T6,T1,K1]
-   + 0 q[T6,T2,K0] + 0 q[T6,T2,K1] + 0 q[T6,T3,K0] + 0 q[T6,T3,K1]
-   + 0 q[T6,T4,K0] + 0 q[T6,T4,K1] + 0 q[T6,T5,K0] + 0 q[T6,T5,K1]
-   + 0 q[T6,T7,K0] + 0 q[T6,T7,K1] + 0 q[T6,T8,K0] + 0 q[T6,T8,K1]
-   + 0 q[T6,T9,K0] + 0 q[T6,T9,K1] + 0 q[T6,T10,K0] + 0 q[T6,T10,K1]
-   + 0 q[T6,T11,K0] + 0 q[T6,T11,K1] + 0 q[T6,D0,K0] + 0 q[T6,D0,K1]
-   + 0 q[T6,D1,K0] + 0 q[T6,D1,K1] + 0 q[T6,D2,K0] + 0 q[T6,D2,K1]
-   + 0 q[T6,S0,K0] + 0 q[T6,S0,K1] + 0 q[T6,E0,K0] + 0 q[T6,E0,K1]
-   + 0 q[T7,T0,K0] + 0 q[T7,T0,K1] + 0 q[T7,T1,K0] + 0 q[T7,T1,K1]
-   + 0 q[T7,T2,K0] + 0 q[T7,T2,K1] + 0 q[T7,T3,K0] + 0 q[T7,T3,K1]
-   + 0 q[T7,T4,K0] + 0 q[T7,T4,K1] + 0 q[T7,T5,K0] + 0 q[T7,T5,K1]
-   + 0 q[T7,T6,K0] + 0 q[T7,T6,K1] + 0 q[T7,T8,K0] + 0 q[T7,T8,K1]
-   + 0 q[T7,T9,K0] + 0 q[T7,T9,K1] + 0 q[T7,T10,K0] + 0 q[T7,T10,K1]
-   + 0 q[T7,T11,K0] + 0 q[T7,T11,K1] + 0 q[T7,D0,K0] + 0 q[T7,D0,K1]
-   + 0 q[T7,D1,K0] + 0 q[T7,D1,K1] + 0 q[T7,D2,K0] + 0 q[T7,D2,K1]
-   + 0 q[T7,S0,K0] + 0 q[T7,S0,K1] + 0 q[T7,E0,K0] + 0 q[T7,E0,K1]
-   + 0 q[T8,T0,K0] + 0 q[T8,T0,K1] + 0 q[T8,T1,K0] + 0 q[T8,T1,K1]
-   + 0 q[T8,T2,K0] + 0 q[T8,T2,K1] + 0 q[T8,T3,K0] + 0 q[T8,T3,K1]
-   + 0 q[T8,T4,K0] + 0 q[T8,T4,K1] + 0 q[T8,T5,K0] + 0 q[T8,T5,K1]
-   + 0 q[T8,T6,K0] + 0 q[T8,T6,K1] + 0 q[T8,T7,K0] + 0 q[T8,T7,K1]
-   + 0 q[T8,T9,K0] + 0 q[T8,T9,K1] + 0 q[T8,T10,K0] + 0 q[T8,T10,K1]
-   + 0 q[T8,T11,K0] + 0 q[T8,T11,K1] + 0 q[T8,D0,K0] + 0 q[T8,D0,K1]
-   + 0 q[T8,D1,K0] + 0 q[T8,D1,K1] + 0 q[T8,D2,K0] + 0 q[T8,D2,K1]
-   + 0 q[T8,S0,K0] + 0 q[T8,S0,K1] + 0 q[T8,E0,K0] + 0 q[T8,E0,K1]
-   + 0 q[T9,T0,K0] + 0 q[T9,T0,K1] + 0 q[T9,T1,K0] + 0 q[T9,T1,K1]
-   + 0 q[T9,T2,K0] + 0 q[T9,T2,K1] + 0 q[T9,T3,K0] + 0 q[T9,T3,K1]
-   + 0 q[T9,T4,K0] + 0 q[T9,T4,K1] + 0 q[T9,T5,K0] + 0 q[T9,T5,K1]
-   + 0 q[T9,T6,K0] + 0 q[T9,T6,K1] + 0 q[T9,T7,K0] + 0 q[T9,T7,K1]
-   + 0 q[T9,T8,K0] + 0 q[T9,T8,K1] + 0 q[T9,T10,K0] + 0 q[T9,T10,K1]
-   + 0 q[T9,T11,K0] + 0 q[T9,T11,K1] + 0 q[T9,D0,K0] + 0 q[T9,D0,K1]
-   + 0 q[T9,D1,K0] + 0 q[T9,D1,K1] + 0 q[T9,D2,K0] + 0 q[T9,D2,K1]
-   + 0 q[T9,S0,K0] + 0 q[T9,S0,K1] + 0 q[T9,E0,K0] + 0 q[T9,E0,K1]
-   + 0 q[T10,T0,K0] + 0 q[T10,T0,K1] + 0 q[T10,T1,K0] + 0 q[T10,T1,K1]
-   + 0 q[T10,T2,K0] + 0 q[T10,T2,K1] + 0 q[T10,T3,K0] + 0 q[T10,T3,K1]
-   + 0 q[T10,T4,K0] + 0 q[T10,T4,K1] + 0 q[T10,T5,K0] + 0 q[T10,T5,K1]
-   + 0 q[T10,T6,K0] + 0 q[T10,T6,K1] + 0 q[T10,T7,K0] + 0 q[T10,T7,K1]
-   + 0 q[T10,T8,K0] + 0 q[T10,T8,K1] + 0 q[T10,T9,K0] + 0 q[T10,T9,K1]
-   + 0 q[T10,T11,K0] + 0 q[T10,T11,K1] + 0 q[T10,D0,K0] + 0 q[T10,D0,K1]
-   + 0 q[T10,D1,K0] + 0 q[T10,D1,K1] + 0 q[T10,D2,K0] + 0 q[T10,D2,K1]
-   + 0 q[T10,S0,K0] + 0 q[T10,S0,K1] + 0 q[T10,E0,K0] + 0 q[T10,E0,K1]
-   + 0 q[T11,T0,K0] + 0 q[T11,T0,K1] + 0 q[T11,T1,K0] + 0 q[T11,T1,K1]
-   + 0 q[T11,T2,K0] + 0 q[T11,T2,K1] + 0 q[T11,T3,K0] + 0 q[T11,T3,K1]
-   + 0 q[T11,T4,K0] + 0 q[T11,T4,K1] + 0 q[T11,T5,K0] + 0 q[T11,T5,K1]
-   + 0 q[T11,T6,K0] + 0 q[T11,T6,K1] + 0 q[T11,T7,K0] + 0 q[T11,T7,K1]
-   + 0 q[T11,T8,K0] + 0 q[T11,T8,K1] + 0 q[T11,T9,K0] + 0 q[T11,T9,K1]
-   + 0 q[T11,T10,K0] + 0 q[T11,T10,K1] + 0 q[T11,D0,K0] + 0 q[T11,D0,K1]
-   + 0 q[T11,D1,K0] + 0 q[T11,D1,K1] + 0 q[T11,D2,K0] + 0 q[T11,D2,K1]
-   + 0 q[T11,S0,K0] + 0 q[T11,S0,K1] + 0 q[T11,E0,K0] + 0 q[T11,E0,K1]
-   + 0 q[D0,T0,K0] + 0 q[D0,T0,K1] + 0 q[D0,T1,K0] + 0 q[D0,T1,K1]
-   + 0 q[D0,T2,K0] + 0 q[D0,T2,K1] + 0 q[D0,T3,K0] + 0 q[D0,T3,K1]
-   + 0 q[D0,T4,K0] + 0 q[D0,T4,K1] + 0 q[D0,T5,K0] + 0 q[D0,T5,K1]
-   + 0 q[D0,T6,K0] + 0 q[D0,T6,K1] + 0 q[D0,T7,K0] + 0 q[D0,T7,K1]
-   + 0 q[D0,T8,K0] + 0 q[D0,T8,K1] + 0 q[D0,T9,K0] + 0 q[D0,T9,K1]
-   + 0 q[D0,T10,K0] + 0 q[D0,T10,K1] + 0 q[D0,T11,K0] + 0 q[D0,T11,K1]
-   + 0 q[D0,D1,K0] + 0 q[D0,D1,K1] + 0 q[D0,D2,K0] + 0 q[D0,D2,K1]
-   + 0 q[D0,S0,K0] + 0 q[D0,S0,K1] + 0 q[D0,E0,K0] + 0 q[D0,E0,K1]
-   + 0 q[D1,T0,K0] + 0 q[D1,T0,K1] + 0 q[D1,T1,K0] + 0 q[D1,T1,K1]
-   + 0 q[D1,T2,K0] + 0 q[D1,T2,K1] + 0 q[D1,T3,K0] + 0 q[D1,T3,K1]
-   + 0 q[D1,T4,K0] + 0 q[D1,T4,K1] + 0 q[D1,T5,K0] + 0 q[D1,T5,K1]
-   + 0 q[D1,T6,K0] + 0 q[D1,T6,K1] + 0 q[D1,T7,K0] + 0 q[D1,T7,K1]
-   + 0 q[D1,T8,K0] + 0 q[D1,T8,K1] + 0 q[D1,T9,K0] + 0 q[D1,T9,K1]
-   + 0 q[D1,T10,K0] + 0 q[D1,T10,K1] + 0 q[D1,T11,K0] + 0 q[D1,T11,K1]
-   + 0 q[D1,D0,K0] + 0 q[D1,D0,K1] + 0 q[D1,D2,K0] + 0 q[D1,D2,K1]
-   + 0 q[D1,S0,K0] + 0 q[D1,S0,K1] + 0 q[D1,E0,K0] + 0 q[D1,E0,K1]
-   + 0 q[D2,T0,K0] + 0 q[D2,T0,K1] + 0 q[D2,T1,K0] + 0 q[D2,T1,K1]
-   + 0 q[D2,T2,K0] + 0 q[D2,T2,K1] + 0 q[D2,T3,K0] + 0 q[D2,T3,K1]
-   + 0 q[D2,T4,K0] + 0 q[D2,T4,K1] + 0 q[D2,T5,K0] + 0 q[D2,T5,K1]
-   + 0 q[D2,T6,K0] + 0 q[D2,T6,K1] + 0 q[D2,T7,K0] + 0 q[D2,T7,K1]
-   + 0 q[D2,T8,K0] + 0 q[D2,T8,K1] + 0 q[D2,T9,K0] + 0 q[D2,T9,K1]
-   + 0 q[D2,T10,K0] + 0 q[D2,T10,K1] + 0 q[D2,T11,K0] + 0 q[D2,T11,K1]
-   + 0 q[D2,D0,K0] + 0 q[D2,D0,K1] + 0 q[D2,D1,K0] + 0 q[D2,D1,K1]
-   + 0 q[D2,S0,K0] + 0 q[D2,S0,K1] + 0 q[D2,E0,K0] + 0 q[D2,E0,K1]
-   + 0 q[S0,T0,K0] + 0 q[S0,T0,K1] + 0 q[S0,T1,K0] + 0 q[S0,T1,K1]
-   + 0 q[S0,T2,K0] + 0 q[S0,T2,K1] + 0 q[S0,T3,K0] + 0 q[S0,T3,K1]
-   + 0 q[S0,T4,K0] + 0 q[S0,T4,K1] + 0 q[S0,T5,K0] + 0 q[S0,T5,K1]
-   + 0 q[S0,T6,K0] + 0 q[S0,T6,K1] + 0 q[S0,T7,K0] + 0 q[S0,T7,K1]
-   + 0 q[S0,T8,K0] + 0 q[S0,T8,K1] + 0 q[S0,T9,K0] + 0 q[S0,T9,K1]
-   + 0 q[S0,T10,K0] + 0 q[S0,T10,K1] + 0 q[S0,T11,K0] + 0 q[S0,T11,K1]
-   + 0 q[S0,D0,K0] + 0 q[S0,D0,K1] + 0 q[S0,D1,K0] + 0 q[S0,D1,K1]
-   + 0 q[S0,D2,K0] + 0 q[S0,D2,K1] + 0 q[S0,E0,K0] + 0 q[S0,E0,K1]
-   + 0 q[E0,T0,K0] + 0 q[E0,T0,K1] + 0 q[E0,T1,K0] + 0 q[E0,T1,K1]
-   + 0 q[E0,T2,K0] + 0 q[E0,T2,K1] + 0 q[E0,T3,K0] + 0 q[E0,T3,K1]
-   + 0 q[E0,T4,K0] + 0 q[E0,T4,K1] + 0 q[E0,T5,K0] + 0 q[E0,T5,K1]
-   + 0 q[E0,T6,K0] + 0 q[E0,T6,K1] + 0 q[E0,T7,K0] + 0 q[E0,T7,K1]
-   + 0 q[E0,T8,K0] + 0 q[E0,T8,K1] + 0 q[E0,T9,K0] + 0 q[E0,T9,K1]
-   + 0 q[E0,T10,K0] + 0 q[E0,T10,K1] + 0 q[E0,T11,K0] + 0 q[E0,T11,K1]
-   + 0 q[E0,D0,K0] + 0 q[E0,D0,K1] + 0 q[E0,D1,K0] + 0 q[E0,D1,K1]
-   + 0 q[E0,D2,K0] + 0 q[E0,D2,K1] + 0 q[E0,S0,K0] + 0 q[E0,S0,K1]
+   + 0 u[S0,K0] + 0 u[S0,K1]
 Subject To
  c2: x[S0,T0,K0] + x[S0,T0,K1] + x[S0,T1,K0] + x[S0,T1,K1] + x[S0,T2,K0]
    + x[S0,T2,K1] + x[S0,T3,K0] + x[S0,T3,K1] + x[S0,T4,K0] + x[S0,T4,K1]
@@ -854,934 +719,518 @@ Subject To
    + x[T11,D1,K0] + x[T11,D1,K1] + x[T11,D2,K0] + x[T11,D2,K1]
    + x[T11,S0,K0] + x[T11,S0,K1] + x[T11,E0,K0] + x[T11,E0,K1] - y[T11]
    = 0
- c11[K0]: - x[T0,T1,K0] - x[T0,T2,K0] - x[T0,T3,K0] - x[T0,T4,K0]
-   - x[T0,T5,K0] - x[T0,T6,K0] - x[T0,T7,K0] - x[T0,T8,K0] - x[T0,T9,K0]
-   - x[T0,T10,K0] - x[T0,T11,K0] - x[T0,D0,K0] - x[T0,D1,K0] - x[T0,D2,K0]
-   - x[T0,S0,K0] - x[T0,E0,K0] - x[T1,T0,K0] - x[T1,T2,K0] - x[T1,T3,K0]
-   - x[T1,T4,K0] - x[T1,T5,K0] - x[T1,T6,K0] - x[T1,T7,K0] - x[T1,T8,K0]
-   - x[T1,T9,K0] - x[T1,T10,K0] - x[T1,T11,K0] - x[T1,D0,K0] - x[T1,D1,K0]
-   - x[T1,D2,K0] - x[T1,S0,K0] - x[T1,E0,K0] - x[T2,T0,K0] - x[T2,T1,K0]
-   - x[T2,T3,K0] - x[T2,T4,K0] - x[T2,T5,K0] - x[T2,T6,K0] - x[T2,T7,K0]
-   - x[T2,T8,K0] - x[T2,T9,K0] - x[T2,T10,K0] - x[T2,T11,K0] - x[T2,D0,K0]
-   - x[T2,D1,K0] - x[T2,D2,K0] - x[T2,S0,K0] - x[T2,E0,K0] - x[T3,T0,K0]
-   - x[T3,T1,K0] - x[T3,T2,K0] - x[T3,T4,K0] - x[T3,T5,K0] - x[T3,T6,K0]
-   - x[T3,T7,K0] - x[T3,T8,K0] - x[T3,T9,K0] - x[T3,T10,K0] - x[T3,T11,K0]
-   - x[T3,D0,K0] - x[T3,D1,K0] - x[T3,D2,K0] - x[T3,S0,K0] - x[T3,E0,K0]
-   - x[T4,T0,K0] - x[T4,T1,K0] - x[T4,T2,K0] - x[T4,T3,K0] - x[T4,T5,K0]
-   - x[T4,T6,K0] - x[T4,T7,K0] - x[T4,T8,K0] - x[T4,T9,K0] - x[T4,T10,K0]
-   - x[T4,T11,K0] - x[T4,D0,K0] - x[T4,D1,K0] - x[T4,D2,K0] - x[T4,S0,K0]
-   - x[T4,E0,K0] - x[T5,T0,K0] - x[T5,T1,K0] - x[T5,T2,K0] - x[T5,T3,K0]
-   - x[T5,T4,K0] - x[T5,T6,K0] - x[T5,T7,K0] - x[T5,T8,K0] - x[T5,T9,K0]
-   - x[T5,T10,K0] - x[T5,T11,K0] - x[T5,D0,K0] - x[T5,D1,K0] - x[T5,D2,K0]
-   - x[T5,S0,K0] - x[T5,E0,K0] - x[T6,T0,K0] - x[T6,T1,K0] - x[T6,T2,K0]
-   - x[T6,T3,K0] - x[T6,T4,K0] - x[T6,T5,K0] - x[T6,T7,K0] - x[T6,T8,K0]
-   - x[T6,T9,K0] - x[T6,T10,K0] - x[T6,T11,K0] - x[T6,D0,K0] - x[T6,D1,K0]
-   - x[T6,D2,K0] - x[T6,S0,K0] - x[T6,E0,K0] - x[T7,T0,K0] - x[T7,T1,K0]
-   - x[T7,T2,K0] - x[T7,T3,K0] - x[T7,T4,K0] - x[T7,T5,K0] - x[T7,T6,K0]
-   - x[T7,T8,K0] - x[T7,T9,K0] - x[T7,T10,K0] - x[T7,T11,K0] - x[T7,D0,K0]
-   - x[T7,D1,K0] - x[T7,D2,K0] - x[T7,S0,K0] - x[T7,E0,K0] - x[T8,T0,K0]
-   - x[T8,T1,K0] - x[T8,T2,K0] - x[T8,T3,K0] - x[T8,T4,K0] - x[T8,T5,K0]
-   - x[T8,T6,K0] - x[T8,T7,K0] - x[T8,T9,K0] - x[T8,T10,K0] - x[T8,T11,K0]
-   - x[T8,D0,K0] - x[T8,D1,K0] - x[T8,D2,K0] - x[T8,S0,K0] - x[T8,E0,K0]
-   - x[T9,T0,K0] - x[T9,T1,K0] - x[T9,T2,K0] - x[T9,T3,K0] - x[T9,T4,K0]
-   - x[T9,T5,K0] - x[T9,T6,K0] - x[T9,T7,K0] - x[T9,T8,K0] - x[T9,T10,K0]
-   - x[T9,T11,K0] - x[T9,D0,K0] - x[T9,D1,K0] - x[T9,D2,K0] - x[T9,S0,K0]
-   - x[T9,E0,K0] - x[T10,T0,K0] - x[T10,T1,K0] - x[T10,T2,K0]
-   - x[T10,T3,K0] - x[T10,T4,K0] - x[T10,T5,K0] - x[T10,T6,K0]
-   - x[T10,T7,K0] - x[T10,T8,K0] - x[T10,T9,K0] - x[T10,T11,K0]
-   - x[T10,D0,K0] - x[T10,D1,K0] - x[T10,D2,K0] - x[T10,S0,K0]
-   - x[T10,E0,K0] - x[T11,T0,K0] - x[T11,T1,K0] - x[T11,T2,K0]
-   - x[T11,T3,K0] - x[T11,T4,K0] - x[T11,T5,K0] - x[T11,T6,K0]
-   - x[T11,T7,K0] - x[T11,T8,K0] - x[T11,T9,K0] - x[T11,T10,K0]
-   - x[T11,D0,K0] - x[T11,D1,K0] - x[T11,D2,K0] - x[T11,S0,K0]
-   - x[T11,E0,K0] - g[T0,S0,K0] - g[T1,S0,K0] - g[T2,S0,K0] - g[T3,S0,K0]
-   - g[T4,S0,K0] - g[T5,S0,K0] - g[T6,S0,K0] - g[T7,S0,K0] - g[T8,S0,K0]
-   - g[T9,S0,K0] - g[T10,S0,K0] - g[T11,S0,K0] - g[D0,S0,K0] - g[D1,S0,K0]
-   - g[D2,S0,K0] + g[S0,T0,K0] + g[S0,T1,K0] + g[S0,T2,K0] + g[S0,T3,K0]
-   + g[S0,T4,K0] + g[S0,T5,K0] + g[S0,T6,K0] + g[S0,T7,K0] + g[S0,T8,K0]
-   + g[S0,T9,K0] + g[S0,T10,K0] + g[S0,T11,K0] + g[S0,D0,K0] + g[S0,D1,K0]
-   + g[S0,D2,K0] + g[S0,E0,K0] - g[E0,S0,K0] = 0
- c11[K1]: - x[T0,T1,K1] - x[T0,T2,K1] - x[T0,T3,K1] - x[T0,T4,K1]
-   - x[T0,T5,K1] - x[T0,T6,K1] - x[T0,T7,K1] - x[T0,T8,K1] - x[T0,T9,K1]
-   - x[T0,T10,K1] - x[T0,T11,K1] - x[T0,D0,K1] - x[T0,D1,K1] - x[T0,D2,K1]
-   - x[T0,S0,K1] - x[T0,E0,K1] - x[T1,T0,K1] - x[T1,T2,K1] - x[T1,T3,K1]
-   - x[T1,T4,K1] - x[T1,T5,K1] - x[T1,T6,K1] - x[T1,T7,K1] - x[T1,T8,K1]
-   - x[T1,T9,K1] - x[T1,T10,K1] - x[T1,T11,K1] - x[T1,D0,K1] - x[T1,D1,K1]
-   - x[T1,D2,K1] - x[T1,S0,K1] - x[T1,E0,K1] - x[T2,T0,K1] - x[T2,T1,K1]
-   - x[T2,T3,K1] - x[T2,T4,K1] - x[T2,T5,K1] - x[T2,T6,K1] - x[T2,T7,K1]
-   - x[T2,T8,K1] - x[T2,T9,K1] - x[T2,T10,K1] - x[T2,T11,K1] - x[T2,D0,K1]
-   - x[T2,D1,K1] - x[T2,D2,K1] - x[T2,S0,K1] - x[T2,E0,K1] - x[T3,T0,K1]
-   - x[T3,T1,K1] - x[T3,T2,K1] - x[T3,T4,K1] - x[T3,T5,K1] - x[T3,T6,K1]
-   - x[T3,T7,K1] - x[T3,T8,K1] - x[T3,T9,K1] - x[T3,T10,K1] - x[T3,T11,K1]
-   - x[T3,D0,K1] - x[T3,D1,K1] - x[T3,D2,K1] - x[T3,S0,K1] - x[T3,E0,K1]
-   - x[T4,T0,K1] - x[T4,T1,K1] - x[T4,T2,K1] - x[T4,T3,K1] - x[T4,T5,K1]
-   - x[T4,T6,K1] - x[T4,T7,K1] - x[T4,T8,K1] - x[T4,T9,K1] - x[T4,T10,K1]
-   - x[T4,T11,K1] - x[T4,D0,K1] - x[T4,D1,K1] - x[T4,D2,K1] - x[T4,S0,K1]
-   - x[T4,E0,K1] - x[T5,T0,K1] - x[T5,T1,K1] - x[T5,T2,K1] - x[T5,T3,K1]
-   - x[T5,T4,K1] - x[T5,T6,K1] - x[T5,T7,K1] - x[T5,T8,K1] - x[T5,T9,K1]
-   - x[T5,T10,K1] - x[T5,T11,K1] - x[T5,D0,K1] - x[T5,D1,K1] - x[T5,D2,K1]
-   - x[T5,S0,K1] - x[T5,E0,K1] - x[T6,T0,K1] - x[T6,T1,K1] - x[T6,T2,K1]
-   - x[T6,T3,K1] - x[T6,T4,K1] - x[T6,T5,K1] - x[T6,T7,K1] - x[T6,T8,K1]
-   - x[T6,T9,K1] - x[T6,T10,K1] - x[T6,T11,K1] - x[T6,D0,K1] - x[T6,D1,K1]
-   - x[T6,D2,K1] - x[T6,S0,K1] - x[T6,E0,K1] - x[T7,T0,K1] - x[T7,T1,K1]
-   - x[T7,T2,K1] - x[T7,T3,K1] - x[T7,T4,K1] - x[T7,T5,K1] - x[T7,T6,K1]
-   - x[T7,T8,K1] - x[T7,T9,K1] - x[T7,T10,K1] - x[T7,T11,K1] - x[T7,D0,K1]
-   - x[T7,D1,K1] - x[T7,D2,K1] - x[T7,S0,K1] - x[T7,E0,K1] - x[T8,T0,K1]
-   - x[T8,T1,K1] - x[T8,T2,K1] - x[T8,T3,K1] - x[T8,T4,K1] - x[T8,T5,K1]
-   - x[T8,T6,K1] - x[T8,T7,K1] - x[T8,T9,K1] - x[T8,T10,K1] - x[T8,T11,K1]
-   - x[T8,D0,K1] - x[T8,D1,K1] - x[T8,D2,K1] - x[T8,S0,K1] - x[T8,E0,K1]
-   - x[T9,T0,K1] - x[T9,T1,K1] - x[T9,T2,K1] - x[T9,T3,K1] - x[T9,T4,K1]
-   - x[T9,T5,K1] - x[T9,T6,K1] - x[T9,T7,K1] - x[T9,T8,K1] - x[T9,T10,K1]
-   - x[T9,T11,K1] - x[T9,D0,K1] - x[T9,D1,K1] - x[T9,D2,K1] - x[T9,S0,K1]
-   - x[T9,E0,K1] - x[T10,T0,K1] - x[T10,T1,K1] - x[T10,T2,K1]
-   - x[T10,T3,K1] - x[T10,T4,K1] - x[T10,T5,K1] - x[T10,T6,K1]
-   - x[T10,T7,K1] - x[T10,T8,K1] - x[T10,T9,K1] - x[T10,T11,K1]
-   - x[T10,D0,K1] - x[T10,D1,K1] - x[T10,D2,K1] - x[T10,S0,K1]
-   - x[T10,E0,K1] - x[T11,T0,K1] - x[T11,T1,K1] - x[T11,T2,K1]
-   - x[T11,T3,K1] - x[T11,T4,K1] - x[T11,T5,K1] - x[T11,T6,K1]
-   - x[T11,T7,K1] - x[T11,T8,K1] - x[T11,T9,K1] - x[T11,T10,K1]
-   - x[T11,D0,K1] - x[T11,D1,K1] - x[T11,D2,K1] - x[T11,S0,K1]
-   - x[T11,E0,K1] - g[T0,S0,K1] - g[T1,S0,K1] - g[T2,S0,K1] - g[T3,S0,K1]
-   - g[T4,S0,K1] - g[T5,S0,K1] - g[T6,S0,K1] - g[T7,S0,K1] - g[T8,S0,K1]
-   - g[T9,S0,K1] - g[T10,S0,K1] - g[T11,S0,K1] - g[D0,S0,K1] - g[D1,S0,K1]
-   - g[D2,S0,K1] + g[S0,T0,K1] + g[S0,T1,K1] + g[S0,T2,K1] + g[S0,T3,K1]
-   + g[S0,T4,K1] + g[S0,T5,K1] + g[S0,T6,K1] + g[S0,T7,K1] + g[S0,T8,K1]
-   + g[S0,T9,K1] + g[S0,T10,K1] + g[S0,T11,K1] + g[S0,D0,K1] + g[S0,D1,K1]
-   + g[S0,D2,K1] + g[S0,E0,K1] - g[E0,S0,K1] = 0
- c12[T0,K0]: - x[T0,T1,K0] - x[T0,T2,K0] - x[T0,T3,K0] - x[T0,T4,K0]
-   - x[T0,T5,K0] - x[T0,T6,K0] - x[T0,T7,K0] - x[T0,T8,K0] - x[T0,T9,K0]
-   - x[T0,T10,K0] - x[T0,T11,K0] - x[T0,D0,K0] - x[T0,D1,K0] - x[T0,D2,K0]
-   - x[T0,S0,K0] - x[T0,E0,K0] - g[T0,T1,K0] - g[T0,T2,K0] - g[T0,T3,K0]
-   - g[T0,T4,K0] - g[T0,T5,K0] - g[T0,T6,K0] - g[T0,T7,K0] - g[T0,T8,K0]
-   - g[T0,T9,K0] - g[T0,T10,K0] - g[T0,T11,K0] - g[T0,D0,K0] - g[T0,D1,K0]
-   - g[T0,D2,K0] - g[T0,S0,K0] - g[T0,E0,K0] + g[T1,T0,K0] + g[T2,T0,K0]
-   + g[T3,T0,K0] + g[T4,T0,K0] + g[T5,T0,K0] + g[T6,T0,K0] + g[T7,T0,K0]
-   + g[T8,T0,K0] + g[T9,T0,K0] + g[T10,T0,K0] + g[T11,T0,K0] + g[D0,T0,K0]
-   + g[D1,T0,K0] + g[D2,T0,K0] + g[S0,T0,K0] + g[E0,T0,K0] = 0
- c12[T0,K1]: - x[T0,T1,K1] - x[T0,T2,K1] - x[T0,T3,K1] - x[T0,T4,K1]
-   - x[T0,T5,K1] - x[T0,T6,K1] - x[T0,T7,K1] - x[T0,T8,K1] - x[T0,T9,K1]
-   - x[T0,T10,K1] - x[T0,T11,K1] - x[T0,D0,K1] - x[T0,D1,K1] - x[T0,D2,K1]
-   - x[T0,S0,K1] - x[T0,E0,K1] - g[T0,T1,K1] - g[T0,T2,K1] - g[T0,T3,K1]
-   - g[T0,T4,K1] - g[T0,T5,K1] - g[T0,T6,K1] - g[T0,T7,K1] - g[T0,T8,K1]
-   - g[T0,T9,K1] - g[T0,T10,K1] - g[T0,T11,K1] - g[T0,D0,K1] - g[T0,D1,K1]
-   - g[T0,D2,K1] - g[T0,S0,K1] - g[T0,E0,K1] + g[T1,T0,K1] + g[T2,T0,K1]
-   + g[T3,T0,K1] + g[T4,T0,K1] + g[T5,T0,K1] + g[T6,T0,K1] + g[T7,T0,K1]
-   + g[T8,T0,K1] + g[T9,T0,K1] + g[T10,T0,K1] + g[T11,T0,K1] + g[D0,T0,K1]
-   + g[D1,T0,K1] + g[D2,T0,K1] + g[S0,T0,K1] + g[E0,T0,K1] = 0
- c12[T1,K0]: - x[T1,T0,K0] - x[T1,T2,K0] - x[T1,T3,K0] - x[T1,T4,K0]
-   - x[T1,T5,K0] - x[T1,T6,K0] - x[T1,T7,K0] - x[T1,T8,K0] - x[T1,T9,K0]
-   - x[T1,T10,K0] - x[T1,T11,K0] - x[T1,D0,K0] - x[T1,D1,K0] - x[T1,D2,K0]
-   - x[T1,S0,K0] - x[T1,E0,K0] + g[T0,T1,K0] - g[T1,T0,K0] - g[T1,T2,K0]
-   - g[T1,T3,K0] - g[T1,T4,K0] - g[T1,T5,K0] - g[T1,T6,K0] - g[T1,T7,K0]
-   - g[T1,T8,K0] - g[T1,T9,K0] - g[T1,T10,K0] - g[T1,T11,K0] - g[T1,D0,K0]
-   - g[T1,D1,K0] - g[T1,D2,K0] - g[T1,S0,K0] - g[T1,E0,K0] + g[T2,T1,K0]
-   + g[T3,T1,K0] + g[T4,T1,K0] + g[T5,T1,K0] + g[T6,T1,K0] + g[T7,T1,K0]
-   + g[T8,T1,K0] + g[T9,T1,K0] + g[T10,T1,K0] + g[T11,T1,K0] + g[D0,T1,K0]
-   + g[D1,T1,K0] + g[D2,T1,K0] + g[S0,T1,K0] + g[E0,T1,K0] = 0
- c12[T1,K1]: - x[T1,T0,K1] - x[T1,T2,K1] - x[T1,T3,K1] - x[T1,T4,K1]
-   - x[T1,T5,K1] - x[T1,T6,K1] - x[T1,T7,K1] - x[T1,T8,K1] - x[T1,T9,K1]
-   - x[T1,T10,K1] - x[T1,T11,K1] - x[T1,D0,K1] - x[T1,D1,K1] - x[T1,D2,K1]
-   - x[T1,S0,K1] - x[T1,E0,K1] + g[T0,T1,K1] - g[T1,T0,K1] - g[T1,T2,K1]
-   - g[T1,T3,K1] - g[T1,T4,K1] - g[T1,T5,K1] - g[T1,T6,K1] - g[T1,T7,K1]
-   - g[T1,T8,K1] - g[T1,T9,K1] - g[T1,T10,K1] - g[T1,T11,K1] - g[T1,D0,K1]
-   - g[T1,D1,K1] - g[T1,D2,K1] - g[T1,S0,K1] - g[T1,E0,K1] + g[T2,T1,K1]
-   + g[T3,T1,K1] + g[T4,T1,K1] + g[T5,T1,K1] + g[T6,T1,K1] + g[T7,T1,K1]
-   + g[T8,T1,K1] + g[T9,T1,K1] + g[T10,T1,K1] + g[T11,T1,K1] + g[D0,T1,K1]
-   + g[D1,T1,K1] + g[D2,T1,K1] + g[S0,T1,K1] + g[E0,T1,K1] = 0
- c12[T2,K0]: - x[T2,T0,K0] - x[T2,T1,K0] - x[T2,T3,K0] - x[T2,T4,K0]
-   - x[T2,T5,K0] - x[T2,T6,K0] - x[T2,T7,K0] - x[T2,T8,K0] - x[T2,T9,K0]
-   - x[T2,T10,K0] - x[T2,T11,K0] - x[T2,D0,K0] - x[T2,D1,K0] - x[T2,D2,K0]
-   - x[T2,S0,K0] - x[T2,E0,K0] + g[T0,T2,K0] + g[T1,T2,K0] - g[T2,T0,K0]
-   - g[T2,T1,K0] - g[T2,T3,K0] - g[T2,T4,K0] - g[T2,T5,K0] - g[T2,T6,K0]
-   - g[T2,T7,K0] - g[T2,T8,K0] - g[T2,T9,K0] - g[T2,T10,K0] - g[T2,T11,K0]
-   - g[T2,D0,K0] - g[T2,D1,K0] - g[T2,D2,K0] - g[T2,S0,K0] - g[T2,E0,K0]
-   + g[T3,T2,K0] + g[T4,T2,K0] + g[T5,T2,K0] + g[T6,T2,K0] + g[T7,T2,K0]
-   + g[T8,T2,K0] + g[T9,T2,K0] + g[T10,T2,K0] + g[T11,T2,K0] + g[D0,T2,K0]
-   + g[D1,T2,K0] + g[D2,T2,K0] + g[S0,T2,K0] + g[E0,T2,K0] = 0
- c12[T2,K1]: - x[T2,T0,K1] - x[T2,T1,K1] - x[T2,T3,K1] - x[T2,T4,K1]
-   - x[T2,T5,K1] - x[T2,T6,K1] - x[T2,T7,K1] - x[T2,T8,K1] - x[T2,T9,K1]
-   - x[T2,T10,K1] - x[T2,T11,K1] - x[T2,D0,K1] - x[T2,D1,K1] - x[T2,D2,K1]
-   - x[T2,S0,K1] - x[T2,E0,K1] + g[T0,T2,K1] + g[T1,T2,K1] - g[T2,T0,K1]
-   - g[T2,T1,K1] - g[T2,T3,K1] - g[T2,T4,K1] - g[T2,T5,K1] - g[T2,T6,K1]
-   - g[T2,T7,K1] - g[T2,T8,K1] - g[T2,T9,K1] - g[T2,T10,K1] - g[T2,T11,K1]
-   - g[T2,D0,K1] - g[T2,D1,K1] - g[T2,D2,K1] - g[T2,S0,K1] - g[T2,E0,K1]
-   + g[T3,T2,K1] + g[T4,T2,K1] + g[T5,T2,K1] + g[T6,T2,K1] + g[T7,T2,K1]
-   + g[T8,T2,K1] + g[T9,T2,K1] + g[T10,T2,K1] + g[T11,T2,K1] + g[D0,T2,K1]
-   + g[D1,T2,K1] + g[D2,T2,K1] + g[S0,T2,K1] + g[E0,T2,K1] = 0
- c12[T3,K0]: - x[T3,T0,K0] - x[T3,T1,K0] - x[T3,T2,K0] - x[T3,T4,K0]
-   - x[T3,T5,K0] - x[T3,T6,K0] - x[T3,T7,K0] - x[T3,T8,K0] - x[T3,T9,K0]
-   - x[T3,T10,K0] - x[T3,T11,K0] - x[T3,D0,K0] - x[T3,D1,K0] - x[T3,D2,K0]
-   - x[T3,S0,K0] - x[T3,E0,K0] + g[T0,T3,K0] + g[T1,T3,K0] + g[T2,T3,K0]
-   - g[T3,T0,K0] - g[T3,T1,K0] - g[T3,T2,K0] - g[T3,T4,K0] - g[T3,T5,K0]
-   - g[T3,T6,K0] - g[T3,T7,K0] - g[T3,T8,K0] - g[T3,T9,K0] - g[T3,T10,K0]
-   - g[T3,T11,K0] - g[T3,D0,K0] - g[T3,D1,K0] - g[T3,D2,K0] - g[T3,S0,K0]
-   - g[T3,E0,K0] + g[T4,T3,K0] + g[T5,T3,K0] + g[T6,T3,K0] + g[T7,T3,K0]
-   + g[T8,T3,K0] + g[T9,T3,K0] + g[T10,T3,K0] + g[T11,T3,K0] + g[D0,T3,K0]
-   + g[D1,T3,K0] + g[D2,T3,K0] + g[S0,T3,K0] + g[E0,T3,K0] = 0
- c12[T3,K1]: - x[T3,T0,K1] - x[T3,T1,K1] - x[T3,T2,K1] - x[T3,T4,K1]
-   - x[T3,T5,K1] - x[T3,T6,K1] - x[T3,T7,K1] - x[T3,T8,K1] - x[T3,T9,K1]
-   - x[T3,T10,K1] - x[T3,T11,K1] - x[T3,D0,K1] - x[T3,D1,K1] - x[T3,D2,K1]
-   - x[T3,S0,K1] - x[T3,E0,K1] + g[T0,T3,K1] + g[T1,T3,K1] + g[T2,T3,K1]
-   - g[T3,T0,K1] - g[T3,T1,K1] - g[T3,T2,K1] - g[T3,T4,K1] - g[T3,T5,K1]
-   - g[T3,T6,K1] - g[T3,T7,K1] - g[T3,T8,K1] - g[T3,T9,K1] - g[T3,T10,K1]
-   - g[T3,T11,K1] - g[T3,D0,K1] - g[T3,D1,K1] - g[T3,D2,K1] - g[T3,S0,K1]
-   - g[T3,E0,K1] + g[T4,T3,K1] + g[T5,T3,K1] + g[T6,T3,K1] + g[T7,T3,K1]
-   + g[T8,T3,K1] + g[T9,T3,K1] + g[T10,T3,K1] + g[T11,T3,K1] + g[D0,T3,K1]
-   + g[D1,T3,K1] + g[D2,T3,K1] + g[S0,T3,K1] + g[E0,T3,K1] = 0
- c12[T4,K0]: - x[T4,T0,K0] - x[T4,T1,K0] - x[T4,T2,K0] - x[T4,T3,K0]
-   - x[T4,T5,K0] - x[T4,T6,K0] - x[T4,T7,K0] - x[T4,T8,K0] - x[T4,T9,K0]
-   - x[T4,T10,K0] - x[T4,T11,K0] - x[T4,D0,K0] - x[T4,D1,K0] - x[T4,D2,K0]
-   - x[T4,S0,K0] - x[T4,E0,K0] + g[T0,T4,K0] + g[T1,T4,K0] + g[T2,T4,K0]
-   + g[T3,T4,K0] - g[T4,T0,K0] - g[T4,T1,K0] - g[T4,T2,K0] - g[T4,T3,K0]
-   - g[T4,T5,K0] - g[T4,T6,K0] - g[T4,T7,K0] - g[T4,T8,K0] - g[T4,T9,K0]
-   - g[T4,T10,K0] - g[T4,T11,K0] - g[T4,D0,K0] - g[T4,D1,K0] - g[T4,D2,K0]
-   - g[T4,S0,K0] - g[T4,E0,K0] + g[T5,T4,K0] + g[T6,T4,K0] + g[T7,T4,K0]
-   + g[T8,T4,K0] + g[T9,T4,K0] + g[T10,T4,K0] + g[T11,T4,K0] + g[D0,T4,K0]
-   + g[D1,T4,K0] + g[D2,T4,K0] + g[S0,T4,K0] + g[E0,T4,K0] = 0
- c12[T4,K1]: - x[T4,T0,K1] - x[T4,T1,K1] - x[T4,T2,K1] - x[T4,T3,K1]
-   - x[T4,T5,K1] - x[T4,T6,K1] - x[T4,T7,K1] - x[T4,T8,K1] - x[T4,T9,K1]
-   - x[T4,T10,K1] - x[T4,T11,K1] - x[T4,D0,K1] - x[T4,D1,K1] - x[T4,D2,K1]
-   - x[T4,S0,K1] - x[T4,E0,K1] + g[T0,T4,K1] + g[T1,T4,K1] + g[T2,T4,K1]
-   + g[T3,T4,K1] - g[T4,T0,K1] - g[T4,T1,K1] - g[T4,T2,K1] - g[T4,T3,K1]
-   - g[T4,T5,K1] - g[T4,T6,K1] - g[T4,T7,K1] - g[T4,T8,K1] - g[T4,T9,K1]
-   - g[T4,T10,K1] - g[T4,T11,K1] - g[T4,D0,K1] - g[T4,D1,K1] - g[T4,D2,K1]
-   - g[T4,S0,K1] - g[T4,E0,K1] + g[T5,T4,K1] + g[T6,T4,K1] + g[T7,T4,K1]
-   + g[T8,T4,K1] + g[T9,T4,K1] + g[T10,T4,K1] + g[T11,T4,K1] + g[D0,T4,K1]
-   + g[D1,T4,K1] + g[D2,T4,K1] + g[S0,T4,K1] + g[E0,T4,K1] = 0
- c12[T5,K0]: - x[T5,T0,K0] - x[T5,T1,K0] - x[T5,T2,K0] - x[T5,T3,K0]
-   - x[T5,T4,K0] - x[T5,T6,K0] - x[T5,T7,K0] - x[T5,T8,K0] - x[T5,T9,K0]
-   - x[T5,T10,K0] - x[T5,T11,K0] - x[T5,D0,K0] - x[T5,D1,K0] - x[T5,D2,K0]
-   - x[T5,S0,K0] - x[T5,E0,K0] + g[T0,T5,K0] + g[T1,T5,K0] + g[T2,T5,K0]
-   + g[T3,T5,K0] + g[T4,T5,K0] - g[T5,T0,K0] - g[T5,T1,K0] - g[T5,T2,K0]
-   - g[T5,T3,K0] - g[T5,T4,K0] - g[T5,T6,K0] - g[T5,T7,K0] - g[T5,T8,K0]
-   - g[T5,T9,K0] - g[T5,T10,K0] - g[T5,T11,K0] - g[T5,D0,K0] - g[T5,D1,K0]
-   - g[T5,D2,K0] - g[T5,S0,K0] - g[T5,E0,K0] + g[T6,T5,K0] + g[T7,T5,K0]
-   + g[T8,T5,K0] + g[T9,T5,K0] + g[T10,T5,K0] + g[T11,T5,K0] + g[D0,T5,K0]
-   + g[D1,T5,K0] + g[D2,T5,K0] + g[S0,T5,K0] + g[E0,T5,K0] = 0
- c12[T5,K1]: - x[T5,T0,K1] - x[T5,T1,K1] - x[T5,T2,K1] - x[T5,T3,K1]
-   - x[T5,T4,K1] - x[T5,T6,K1] - x[T5,T7,K1] - x[T5,T8,K1] - x[T5,T9,K1]
-   - x[T5,T10,K1] - x[T5,T11,K1] - x[T5,D0,K1] - x[T5,D1,K1] - x[T5,D2,K1]
-   - x[T5,S0,K1] - x[T5,E0,K1] + g[T0,T5,K1] + g[T1,T5,K1] + g[T2,T5,K1]
-   + g[T3,T5,K1] + g[T4,T5,K1] - g[T5,T0,K1] - g[T5,T1,K1] - g[T5,T2,K1]
-   - g[T5,T3,K1] - g[T5,T4,K1] - g[T5,T6,K1] - g[T5,T7,K1] - g[T5,T8,K1]
-   - g[T5,T9,K1] - g[T5,T10,K1] - g[T5,T11,K1] - g[T5,D0,K1] - g[T5,D1,K1]
-   - g[T5,D2,K1] - g[T5,S0,K1] - g[T5,E0,K1] + g[T6,T5,K1] + g[T7,T5,K1]
-   + g[T8,T5,K1] + g[T9,T5,K1] + g[T10,T5,K1] + g[T11,T5,K1] + g[D0,T5,K1]
-   + g[D1,T5,K1] + g[D2,T5,K1] + g[S0,T5,K1] + g[E0,T5,K1] = 0
- c12[T6,K0]: - x[T6,T0,K0] - x[T6,T1,K0] - x[T6,T2,K0] - x[T6,T3,K0]
-   - x[T6,T4,K0] - x[T6,T5,K0] - x[T6,T7,K0] - x[T6,T8,K0] - x[T6,T9,K0]
-   - x[T6,T10,K0] - x[T6,T11,K0] - x[T6,D0,K0] - x[T6,D1,K0] - x[T6,D2,K0]
-   - x[T6,S0,K0] - x[T6,E0,K0] + g[T0,T6,K0] + g[T1,T6,K0] + g[T2,T6,K0]
-   + g[T3,T6,K0] + g[T4,T6,K0] + g[T5,T6,K0] - g[T6,T0,K0] - g[T6,T1,K0]
-   - g[T6,T2,K0] - g[T6,T3,K0] - g[T6,T4,K0] - g[T6,T5,K0] - g[T6,T7,K0]
-   - g[T6,T8,K0] - g[T6,T9,K0] - g[T6,T10,K0] - g[T6,T11,K0] - g[T6,D0,K0]
-   - g[T6,D1,K0] - g[T6,D2,K0] - g[T6,S0,K0] - g[T6,E0,K0] + g[T7,T6,K0]
-   + g[T8,T6,K0] + g[T9,T6,K0] + g[T10,T6,K0] + g[T11,T6,K0] + g[D0,T6,K0]
-   + g[D1,T6,K0] + g[D2,T6,K0] + g[S0,T6,K0] + g[E0,T6,K0] = 0
- c12[T6,K1]: - x[T6,T0,K1] - x[T6,T1,K1] - x[T6,T2,K1] - x[T6,T3,K1]
-   - x[T6,T4,K1] - x[T6,T5,K1] - x[T6,T7,K1] - x[T6,T8,K1] - x[T6,T9,K1]
-   - x[T6,T10,K1] - x[T6,T11,K1] - x[T6,D0,K1] - x[T6,D1,K1] - x[T6,D2,K1]
-   - x[T6,S0,K1] - x[T6,E0,K1] + g[T0,T6,K1] + g[T1,T6,K1] + g[T2,T6,K1]
-   + g[T3,T6,K1] + g[T4,T6,K1] + g[T5,T6,K1] - g[T6,T0,K1] - g[T6,T1,K1]
-   - g[T6,T2,K1] - g[T6,T3,K1] - g[T6,T4,K1] - g[T6,T5,K1] - g[T6,T7,K1]
-   - g[T6,T8,K1] - g[T6,T9,K1] - g[T6,T10,K1] - g[T6,T11,K1] - g[T6,D0,K1]
-   - g[T6,D1,K1] - g[T6,D2,K1] - g[T6,S0,K1] - g[T6,E0,K1] + g[T7,T6,K1]
-   + g[T8,T6,K1] + g[T9,T6,K1] + g[T10,T6,K1] + g[T11,T6,K1] + g[D0,T6,K1]
-   + g[D1,T6,K1] + g[D2,T6,K1] + g[S0,T6,K1] + g[E0,T6,K1] = 0
- c12[T7,K0]: - x[T7,T0,K0] - x[T7,T1,K0] - x[T7,T2,K0] - x[T7,T3,K0]
-   - x[T7,T4,K0] - x[T7,T5,K0] - x[T7,T6,K0] - x[T7,T8,K0] - x[T7,T9,K0]
-   - x[T7,T10,K0] - x[T7,T11,K0] - x[T7,D0,K0] - x[T7,D1,K0] - x[T7,D2,K0]
-   - x[T7,S0,K0] - x[T7,E0,K0] + g[T0,T7,K0] + g[T1,T7,K0] + g[T2,T7,K0]
-   + g[T3,T7,K0] + g[T4,T7,K0] + g[T5,T7,K0] + g[T6,T7,K0] - g[T7,T0,K0]
-   - g[T7,T1,K0] - g[T7,T2,K0] - g[T7,T3,K0] - g[T7,T4,K0] - g[T7,T5,K0]
-   - g[T7,T6,K0] - g[T7,T8,K0] - g[T7,T9,K0] - g[T7,T10,K0] - g[T7,T11,K0]
-   - g[T7,D0,K0] - g[T7,D1,K0] - g[T7,D2,K0] - g[T7,S0,K0] - g[T7,E0,K0]
-   + g[T8,T7,K0] + g[T9,T7,K0] + g[T10,T7,K0] + g[T11,T7,K0] + g[D0,T7,K0]
-   + g[D1,T7,K0] + g[D2,T7,K0] + g[S0,T7,K0] + g[E0,T7,K0] = 0
- c12[T7,K1]: - x[T7,T0,K1] - x[T7,T1,K1] - x[T7,T2,K1] - x[T7,T3,K1]
-   - x[T7,T4,K1] - x[T7,T5,K1] - x[T7,T6,K1] - x[T7,T8,K1] - x[T7,T9,K1]
-   - x[T7,T10,K1] - x[T7,T11,K1] - x[T7,D0,K1] - x[T7,D1,K1] - x[T7,D2,K1]
-   - x[T7,S0,K1] - x[T7,E0,K1] + g[T0,T7,K1] + g[T1,T7,K1] + g[T2,T7,K1]
-   + g[T3,T7,K1] + g[T4,T7,K1] + g[T5,T7,K1] + g[T6,T7,K1] - g[T7,T0,K1]
-   - g[T7,T1,K1] - g[T7,T2,K1] - g[T7,T3,K1] - g[T7,T4,K1] - g[T7,T5,K1]
-   - g[T7,T6,K1] - g[T7,T8,K1] - g[T7,T9,K1] - g[T7,T10,K1] - g[T7,T11,K1]
-   - g[T7,D0,K1] - g[T7,D1,K1] - g[T7,D2,K1] - g[T7,S0,K1] - g[T7,E0,K1]
-   + g[T8,T7,K1] + g[T9,T7,K1] + g[T10,T7,K1] + g[T11,T7,K1] + g[D0,T7,K1]
-   + g[D1,T7,K1] + g[D2,T7,K1] + g[S0,T7,K1] + g[E0,T7,K1] = 0
- c12[T8,K0]: - x[T8,T0,K0] - x[T8,T1,K0] - x[T8,T2,K0] - x[T8,T3,K0]
-   - x[T8,T4,K0] - x[T8,T5,K0] - x[T8,T6,K0] - x[T8,T7,K0] - x[T8,T9,K0]
-   - x[T8,T10,K0] - x[T8,T11,K0] - x[T8,D0,K0] - x[T8,D1,K0] - x[T8,D2,K0]
-   - x[T8,S0,K0] - x[T8,E0,K0] + g[T0,T8,K0] + g[T1,T8,K0] + g[T2,T8,K0]
-   + g[T3,T8,K0] + g[T4,T8,K0] + g[T5,T8,K0] + g[T6,T8,K0] + g[T7,T8,K0]
-   - g[T8,T0,K0] - g[T8,T1,K0] - g[T8,T2,K0] - g[T8,T3,K0] - g[T8,T4,K0]
-   - g[T8,T5,K0] - g[T8,T6,K0] - g[T8,T7,K0] - g[T8,T9,K0] - g[T8,T10,K0]
-   - g[T8,T11,K0] - g[T8,D0,K0] - g[T8,D1,K0] - g[T8,D2,K0] - g[T8,S0,K0]
-   - g[T8,E0,K0] + g[T9,T8,K0] + g[T10,T8,K0] + g[T11,T8,K0] + g[D0,T8,K0]
-   + g[D1,T8,K0] + g[D2,T8,K0] + g[S0,T8,K0] + g[E0,T8,K0] = 0
- c12[T8,K1]: - x[T8,T0,K1] - x[T8,T1,K1] - x[T8,T2,K1] - x[T8,T3,K1]
-   - x[T8,T4,K1] - x[T8,T5,K1] - x[T8,T6,K1] - x[T8,T7,K1] - x[T8,T9,K1]
-   - x[T8,T10,K1] - x[T8,T11,K1] - x[T8,D0,K1] - x[T8,D1,K1] - x[T8,D2,K1]
-   - x[T8,S0,K1] - x[T8,E0,K1] + g[T0,T8,K1] + g[T1,T8,K1] + g[T2,T8,K1]
-   + g[T3,T8,K1] + g[T4,T8,K1] + g[T5,T8,K1] + g[T6,T8,K1] + g[T7,T8,K1]
-   - g[T8,T0,K1] - g[T8,T1,K1] - g[T8,T2,K1] - g[T8,T3,K1] - g[T8,T4,K1]
-   - g[T8,T5,K1] - g[T8,T6,K1] - g[T8,T7,K1] - g[T8,T9,K1] - g[T8,T10,K1]
-   - g[T8,T11,K1] - g[T8,D0,K1] - g[T8,D1,K1] - g[T8,D2,K1] - g[T8,S0,K1]
-   - g[T8,E0,K1] + g[T9,T8,K1] + g[T10,T8,K1] + g[T11,T8,K1] + g[D0,T8,K1]
-   + g[D1,T8,K1] + g[D2,T8,K1] + g[S0,T8,K1] + g[E0,T8,K1] = 0
- c12[T9,K0]: - x[T9,T0,K0] - x[T9,T1,K0] - x[T9,T2,K0] - x[T9,T3,K0]
-   - x[T9,T4,K0] - x[T9,T5,K0] - x[T9,T6,K0] - x[T9,T7,K0] - x[T9,T8,K0]
-   - x[T9,T10,K0] - x[T9,T11,K0] - x[T9,D0,K0] - x[T9,D1,K0] - x[T9,D2,K0]
-   - x[T9,S0,K0] - x[T9,E0,K0] + g[T0,T9,K0] + g[T1,T9,K0] + g[T2,T9,K0]
-   + g[T3,T9,K0] + g[T4,T9,K0] + g[T5,T9,K0] + g[T6,T9,K0] + g[T7,T9,K0]
-   + g[T8,T9,K0] - g[T9,T0,K0] - g[T9,T1,K0] - g[T9,T2,K0] - g[T9,T3,K0]
-   - g[T9,T4,K0] - g[T9,T5,K0] - g[T9,T6,K0] - g[T9,T7,K0] - g[T9,T8,K0]
-   - g[T9,T10,K0] - g[T9,T11,K0] - g[T9,D0,K0] - g[T9,D1,K0] - g[T9,D2,K0]
-   - g[T9,S0,K0] - g[T9,E0,K0] + g[T10,T9,K0] + g[T11,T9,K0] + g[D0,T9,K0]
-   + g[D1,T9,K0] + g[D2,T9,K0] + g[S0,T9,K0] + g[E0,T9,K0] = 0
- c12[T9,K1]: - x[T9,T0,K1] - x[T9,T1,K1] - x[T9,T2,K1] - x[T9,T3,K1]
-   - x[T9,T4,K1] - x[T9,T5,K1] - x[T9,T6,K1] - x[T9,T7,K1] - x[T9,T8,K1]
-   - x[T9,T10,K1] - x[T9,T11,K1] - x[T9,D0,K1] - x[T9,D1,K1] - x[T9,D2,K1]
-   - x[T9,S0,K1] - x[T9,E0,K1] + g[T0,T9,K1] + g[T1,T9,K1] + g[T2,T9,K1]
-   + g[T3,T9,K1] + g[T4,T9,K1] + g[T5,T9,K1] + g[T6,T9,K1] + g[T7,T9,K1]
-   + g[T8,T9,K1] - g[T9,T0,K1] - g[T9,T1,K1] - g[T9,T2,K1] - g[T9,T3,K1]
-   - g[T9,T4,K1] - g[T9,T5,K1] - g[T9,T6,K1] - g[T9,T7,K1] - g[T9,T8,K1]
-   - g[T9,T10,K1] - g[T9,T11,K1] - g[T9,D0,K1] - g[T9,D1,K1] - g[T9,D2,K1]
-   - g[T9,S0,K1] - g[T9,E0,K1] + g[T10,T9,K1] + g[T11,T9,K1] + g[D0,T9,K1]
-   + g[D1,T9,K1] + g[D2,T9,K1] + g[S0,T9,K1] + g[E0,T9,K1] = 0
- c12[T10,K0]: - x[T10,T0,K0] - x[T10,T1,K0] - x[T10,T2,K0] - x[T10,T3,K0]
-   - x[T10,T4,K0] - x[T10,T5,K0] - x[T10,T6,K0] - x[T10,T7,K0]
-   - x[T10,T8,K0] - x[T10,T9,K0] - x[T10,T11,K0] - x[T10,D0,K0]
-   - x[T10,D1,K0] - x[T10,D2,K0] - x[T10,S0,K0] - x[T10,E0,K0]
-   + g[T0,T10,K0] + g[T1,T10,K0] + g[T2,T10,K0] + g[T3,T10,K0]
-   + g[T4,T10,K0] + g[T5,T10,K0] + g[T6,T10,K0] + g[T7,T10,K0]
-   + g[T8,T10,K0] + g[T9,T10,K0] - g[T10,T0,K0] - g[T10,T1,K0]
-   - g[T10,T2,K0] - g[T10,T3,K0] - g[T10,T4,K0] - g[T10,T5,K0]
-   - g[T10,T6,K0] - g[T10,T7,K0] - g[T10,T8,K0] - g[T10,T9,K0]
-   - g[T10,T11,K0] - g[T10,D0,K0] - g[T10,D1,K0] - g[T10,D2,K0]
-   - g[T10,S0,K0] - g[T10,E0,K0] + g[T11,T10,K0] + g[D0,T10,K0]
-   + g[D1,T10,K0] + g[D2,T10,K0] + g[S0,T10,K0] + g[E0,T10,K0] = 0
- c12[T10,K1]: - x[T10,T0,K1] - x[T10,T1,K1] - x[T10,T2,K1] - x[T10,T3,K1]
-   - x[T10,T4,K1] - x[T10,T5,K1] - x[T10,T6,K1] - x[T10,T7,K1]
-   - x[T10,T8,K1] - x[T10,T9,K1] - x[T10,T11,K1] - x[T10,D0,K1]
-   - x[T10,D1,K1] - x[T10,D2,K1] - x[T10,S0,K1] - x[T10,E0,K1]
-   + g[T0,T10,K1] + g[T1,T10,K1] + g[T2,T10,K1] + g[T3,T10,K1]
-   + g[T4,T10,K1] + g[T5,T10,K1] + g[T6,T10,K1] + g[T7,T10,K1]
-   + g[T8,T10,K1] + g[T9,T10,K1] - g[T10,T0,K1] - g[T10,T1,K1]
-   - g[T10,T2,K1] - g[T10,T3,K1] - g[T10,T4,K1] - g[T10,T5,K1]
-   - g[T10,T6,K1] - g[T10,T7,K1] - g[T10,T8,K1] - g[T10,T9,K1]
-   - g[T10,T11,K1] - g[T10,D0,K1] - g[T10,D1,K1] - g[T10,D2,K1]
-   - g[T10,S0,K1] - g[T10,E0,K1] + g[T11,T10,K1] + g[D0,T10,K1]
-   + g[D1,T10,K1] + g[D2,T10,K1] + g[S0,T10,K1] + g[E0,T10,K1] = 0
- c12[T11,K0]: - x[T11,T0,K0] - x[T11,T1,K0] - x[T11,T2,K0] - x[T11,T3,K0]
-   - x[T11,T4,K0] - x[T11,T5,K0] - x[T11,T6,K0] - x[T11,T7,K0]
-   - x[T11,T8,K0] - x[T11,T9,K0] - x[T11,T10,K0] - x[T11,D0,K0]
-   - x[T11,D1,K0] - x[T11,D2,K0] - x[T11,S0,K0] - x[T11,E0,K0]
-   + g[T0,T11,K0] + g[T1,T11,K0] + g[T2,T11,K0] + g[T3,T11,K0]
-   + g[T4,T11,K0] + g[T5,T11,K0] + g[T6,T11,K0] + g[T7,T11,K0]
-   + g[T8,T11,K0] + g[T9,T11,K0] + g[T10,T11,K0] - g[T11,T0,K0]
-   - g[T11,T1,K0] - g[T11,T2,K0] - g[T11,T3,K0] - g[T11,T4,K0]
-   - g[T11,T5,K0] - g[T11,T6,K0] - g[T11,T7,K0] - g[T11,T8,K0]
-   - g[T11,T9,K0] - g[T11,T10,K0] - g[T11,D0,K0] - g[T11,D1,K0]
-   - g[T11,D2,K0] - g[T11,S0,K0] - g[T11,E0,K0] + g[D0,T11,K0]
-   + g[D1,T11,K0] + g[D2,T11,K0] + g[S0,T11,K0] + g[E0,T11,K0] = 0
- c12[T11,K1]: - x[T11,T0,K1] - x[T11,T1,K1] - x[T11,T2,K1] - x[T11,T3,K1]
-   - x[T11,T4,K1] - x[T11,T5,K1] - x[T11,T6,K1] - x[T11,T7,K1]
-   - x[T11,T8,K1] - x[T11,T9,K1] - x[T11,T10,K1] - x[T11,D0,K1]
-   - x[T11,D1,K1] - x[T11,D2,K1] - x[T11,S0,K1] - x[T11,E0,K1]
-   + g[T0,T11,K1] + g[T1,T11,K1] + g[T2,T11,K1] + g[T3,T11,K1]
-   + g[T4,T11,K1] + g[T5,T11,K1] + g[T6,T11,K1] + g[T7,T11,K1]
-   + g[T8,T11,K1] + g[T9,T11,K1] + g[T10,T11,K1] - g[T11,T0,K1]
-   - g[T11,T1,K1] - g[T11,T2,K1] - g[T11,T3,K1] - g[T11,T4,K1]
-   - g[T11,T5,K1] - g[T11,T6,K1] - g[T11,T7,K1] - g[T11,T8,K1]
-   - g[T11,T9,K1] - g[T11,T10,K1] - g[T11,D0,K1] - g[T11,D1,K1]
-   - g[T11,D2,K1] - g[T11,S0,K1] - g[T11,E0,K1] + g[D0,T11,K1]
-   + g[D1,T11,K1] + g[D2,T11,K1] + g[S0,T11,K1] + g[E0,T11,K1] = 0
- c13[D0,K0]: g[T0,D0,K0] + g[T1,D0,K0] + g[T2,D0,K0] + g[T3,D0,K0]
-   + g[T4,D0,K0] + g[T5,D0,K0] + g[T6,D0,K0] + g[T7,D0,K0] + g[T8,D0,K0]
-   + g[T9,D0,K0] + g[T10,D0,K0] + g[T11,D0,K0] - g[D0,T0,K0] - g[D0,T1,K0]
-   - g[D0,T2,K0] - g[D0,T3,K0] - g[D0,T4,K0] - g[D0,T5,K0] - g[D0,T6,K0]
-   - g[D0,T7,K0] - g[D0,T8,K0] - g[D0,T9,K0] - g[D0,T10,K0] - g[D0,T11,K0]
-   - g[D0,D1,K0] - g[D0,D2,K0] - g[D0,S0,K0] - g[D0,E0,K0] + g[D1,D0,K0]
-   + g[D2,D0,K0] + g[S0,D0,K0] + g[E0,D0,K0] = 0
- c13[D0,K1]: g[T0,D0,K1] + g[T1,D0,K1] + g[T2,D0,K1] + g[T3,D0,K1]
-   + g[T4,D0,K1] + g[T5,D0,K1] + g[T6,D0,K1] + g[T7,D0,K1] + g[T8,D0,K1]
-   + g[T9,D0,K1] + g[T10,D0,K1] + g[T11,D0,K1] - g[D0,T0,K1] - g[D0,T1,K1]
-   - g[D0,T2,K1] - g[D0,T3,K1] - g[D0,T4,K1] - g[D0,T5,K1] - g[D0,T6,K1]
-   - g[D0,T7,K1] - g[D0,T8,K1] - g[D0,T9,K1] - g[D0,T10,K1] - g[D0,T11,K1]
-   - g[D0,D1,K1] - g[D0,D2,K1] - g[D0,S0,K1] - g[D0,E0,K1] + g[D1,D0,K1]
-   + g[D2,D0,K1] + g[S0,D0,K1] + g[E0,D0,K1] = 0
- c13[D1,K0]: g[T0,D1,K0] + g[T1,D1,K0] + g[T2,D1,K0] + g[T3,D1,K0]
-   + g[T4,D1,K0] + g[T5,D1,K0] + g[T6,D1,K0] + g[T7,D1,K0] + g[T8,D1,K0]
-   + g[T9,D1,K0] + g[T10,D1,K0] + g[T11,D1,K0] + g[D0,D1,K0] - g[D1,T0,K0]
-   - g[D1,T1,K0] - g[D1,T2,K0] - g[D1,T3,K0] - g[D1,T4,K0] - g[D1,T5,K0]
-   - g[D1,T6,K0] - g[D1,T7,K0] - g[D1,T8,K0] - g[D1,T9,K0] - g[D1,T10,K0]
-   - g[D1,T11,K0] - g[D1,D0,K0] - g[D1,D2,K0] - g[D1,S0,K0] - g[D1,E0,K0]
-   + g[D2,D1,K0] + g[S0,D1,K0] + g[E0,D1,K0] = 0
- c13[D1,K1]: g[T0,D1,K1] + g[T1,D1,K1] + g[T2,D1,K1] + g[T3,D1,K1]
-   + g[T4,D1,K1] + g[T5,D1,K1] + g[T6,D1,K1] + g[T7,D1,K1] + g[T8,D1,K1]
-   + g[T9,D1,K1] + g[T10,D1,K1] + g[T11,D1,K1] + g[D0,D1,K1] - g[D1,T0,K1]
-   - g[D1,T1,K1] - g[D1,T2,K1] - g[D1,T3,K1] - g[D1,T4,K1] - g[D1,T5,K1]
-   - g[D1,T6,K1] - g[D1,T7,K1] - g[D1,T8,K1] - g[D1,T9,K1] - g[D1,T10,K1]
-   - g[D1,T11,K1] - g[D1,D0,K1] - g[D1,D2,K1] - g[D1,S0,K1] - g[D1,E0,K1]
-   + g[D2,D1,K1] + g[S0,D1,K1] + g[E0,D1,K1] = 0
- c13[D2,K0]: g[T0,D2,K0] + g[T1,D2,K0] + g[T2,D2,K0] + g[T3,D2,K0]
-   + g[T4,D2,K0] + g[T5,D2,K0] + g[T6,D2,K0] + g[T7,D2,K0] + g[T8,D2,K0]
-   + g[T9,D2,K0] + g[T10,D2,K0] + g[T11,D2,K0] + g[D0,D2,K0] + g[D1,D2,K0]
-   - g[D2,T0,K0] - g[D2,T1,K0] - g[D2,T2,K0] - g[D2,T3,K0] - g[D2,T4,K0]
-   - g[D2,T5,K0] - g[D2,T6,K0] - g[D2,T7,K0] - g[D2,T8,K0] - g[D2,T9,K0]
-   - g[D2,T10,K0] - g[D2,T11,K0] - g[D2,D0,K0] - g[D2,D1,K0] - g[D2,S0,K0]
-   - g[D2,E0,K0] + g[S0,D2,K0] + g[E0,D2,K0] = 0
- c13[D2,K1]: g[T0,D2,K1] + g[T1,D2,K1] + g[T2,D2,K1] + g[T3,D2,K1]
-   + g[T4,D2,K1] + g[T5,D2,K1] + g[T6,D2,K1] + g[T7,D2,K1] + g[T8,D2,K1]
-   + g[T9,D2,K1] + g[T10,D2,K1] + g[T11,D2,K1] + g[D0,D2,K1] + g[D1,D2,K1]
-   - g[D2,T0,K1] - g[D2,T1,K1] - g[D2,T2,K1] - g[D2,T3,K1] - g[D2,T4,K1]
-   - g[D2,T5,K1] - g[D2,T6,K1] - g[D2,T7,K1] - g[D2,T8,K1] - g[D2,T9,K1]
-   - g[D2,T10,K1] - g[D2,T11,K1] - g[D2,D0,K1] - g[D2,D1,K1] - g[D2,S0,K1]
-   - g[D2,E0,K1] + g[S0,D2,K1] + g[E0,D2,K1] = 0
- c14[T0,T1,K0]: - 12 x[T0,T1,K0] + g[T0,T1,K0] <= 0
- c14[T0,T1,K1]: - 12 x[T0,T1,K1] + g[T0,T1,K1] <= 0
- c14[T0,T2,K0]: - 12 x[T0,T2,K0] + g[T0,T2,K0] <= 0
- c14[T0,T2,K1]: - 12 x[T0,T2,K1] + g[T0,T2,K1] <= 0
- c14[T0,T3,K0]: - 12 x[T0,T3,K0] + g[T0,T3,K0] <= 0
- c14[T0,T3,K1]: - 12 x[T0,T3,K1] + g[T0,T3,K1] <= 0
- c14[T0,T4,K0]: - 12 x[T0,T4,K0] + g[T0,T4,K0] <= 0
- c14[T0,T4,K1]: - 12 x[T0,T4,K1] + g[T0,T4,K1] <= 0
- c14[T0,T5,K0]: - 12 x[T0,T5,K0] + g[T0,T5,K0] <= 0
- c14[T0,T5,K1]: - 12 x[T0,T5,K1] + g[T0,T5,K1] <= 0
- c14[T0,T6,K0]: - 12 x[T0,T6,K0] + g[T0,T6,K0] <= 0
- c14[T0,T6,K1]: - 12 x[T0,T6,K1] + g[T0,T6,K1] <= 0
- c14[T0,T7,K0]: - 12 x[T0,T7,K0] + g[T0,T7,K0] <= 0
- c14[T0,T7,K1]: - 12 x[T0,T7,K1] + g[T0,T7,K1] <= 0
- c14[T0,T8,K0]: - 12 x[T0,T8,K0] + g[T0,T8,K0] <= 0
- c14[T0,T8,K1]: - 12 x[T0,T8,K1] + g[T0,T8,K1] <= 0
- c14[T0,T9,K0]: - 12 x[T0,T9,K0] + g[T0,T9,K0] <= 0
- c14[T0,T9,K1]: - 12 x[T0,T9,K1] + g[T0,T9,K1] <= 0
- c14[T0,T10,K0]: - 12 x[T0,T10,K0] + g[T0,T10,K0] <= 0
- c14[T0,T10,K1]: - 12 x[T0,T10,K1] + g[T0,T10,K1] <= 0
- c14[T0,T11,K0]: - 12 x[T0,T11,K0] + g[T0,T11,K0] <= 0
- c14[T0,T11,K1]: - 12 x[T0,T11,K1] + g[T0,T11,K1] <= 0
- c14[T0,D0,K0]: - 12 x[T0,D0,K0] + g[T0,D0,K0] <= 0
- c14[T0,D0,K1]: - 12 x[T0,D0,K1] + g[T0,D0,K1] <= 0
- c14[T0,D1,K0]: - 12 x[T0,D1,K0] + g[T0,D1,K0] <= 0
- c14[T0,D1,K1]: - 12 x[T0,D1,K1] + g[T0,D1,K1] <= 0
- c14[T0,D2,K0]: - 12 x[T0,D2,K0] + g[T0,D2,K0] <= 0
- c14[T0,D2,K1]: - 12 x[T0,D2,K1] + g[T0,D2,K1] <= 0
- c14[T0,S0,K0]: - 12 x[T0,S0,K0] + g[T0,S0,K0] <= 0
- c14[T0,S0,K1]: - 12 x[T0,S0,K1] + g[T0,S0,K1] <= 0
- c14[T0,E0,K0]: - 12 x[T0,E0,K0] + g[T0,E0,K0] <= 0
- c14[T0,E0,K1]: - 12 x[T0,E0,K1] + g[T0,E0,K1] <= 0
- c14[T1,T0,K0]: - 12 x[T1,T0,K0] + g[T1,T0,K0] <= 0
- c14[T1,T0,K1]: - 12 x[T1,T0,K1] + g[T1,T0,K1] <= 0
- c14[T1,T2,K0]: - 12 x[T1,T2,K0] + g[T1,T2,K0] <= 0
- c14[T1,T2,K1]: - 12 x[T1,T2,K1] + g[T1,T2,K1] <= 0
- c14[T1,T3,K0]: - 12 x[T1,T3,K0] + g[T1,T3,K0] <= 0
- c14[T1,T3,K1]: - 12 x[T1,T3,K1] + g[T1,T3,K1] <= 0
- c14[T1,T4,K0]: - 12 x[T1,T4,K0] + g[T1,T4,K0] <= 0
- c14[T1,T4,K1]: - 12 x[T1,T4,K1] + g[T1,T4,K1] <= 0
- c14[T1,T5,K0]: - 12 x[T1,T5,K0] + g[T1,T5,K0] <= 0
- c14[T1,T5,K1]: - 12 x[T1,T5,K1] + g[T1,T5,K1] <= 0
- c14[T1,T6,K0]: - 12 x[T1,T6,K0] + g[T1,T6,K0] <= 0
- c14[T1,T6,K1]: - 12 x[T1,T6,K1] + g[T1,T6,K1] <= 0
- c14[T1,T7,K0]: - 12 x[T1,T7,K0] + g[T1,T7,K0] <= 0
- c14[T1,T7,K1]: - 12 x[T1,T7,K1] + g[T1,T7,K1] <= 0
- c14[T1,T8,K0]: - 12 x[T1,T8,K0] + g[T1,T8,K0] <= 0
- c14[T1,T8,K1]: - 12 x[T1,T8,K1] + g[T1,T8,K1] <= 0
- c14[T1,T9,K0]: - 12 x[T1,T9,K0] + g[T1,T9,K0] <= 0
- c14[T1,T9,K1]: - 12 x[T1,T9,K1] + g[T1,T9,K1] <= 0
- c14[T1,T10,K0]: - 12 x[T1,T10,K0] + g[T1,T10,K0] <= 0
- c14[T1,T10,K1]: - 12 x[T1,T10,K1] + g[T1,T10,K1] <= 0
- c14[T1,T11,K0]: - 12 x[T1,T11,K0] + g[T1,T11,K0] <= 0
- c14[T1,T11,K1]: - 12 x[T1,T11,K1] + g[T1,T11,K1] <= 0
- c14[T1,D0,K0]: - 12 x[T1,D0,K0] + g[T1,D0,K0] <= 0
- c14[T1,D0,K1]: - 12 x[T1,D0,K1] + g[T1,D0,K1] <= 0
- c14[T1,D1,K0]: - 12 x[T1,D1,K0] + g[T1,D1,K0] <= 0
- c14[T1,D1,K1]: - 12 x[T1,D1,K1] + g[T1,D1,K1] <= 0
- c14[T1,D2,K0]: - 12 x[T1,D2,K0] + g[T1,D2,K0] <= 0
- c14[T1,D2,K1]: - 12 x[T1,D2,K1] + g[T1,D2,K1] <= 0
- c14[T1,S0,K0]: - 12 x[T1,S0,K0] + g[T1,S0,K0] <= 0
- c14[T1,S0,K1]: - 12 x[T1,S0,K1] + g[T1,S0,K1] <= 0
- c14[T1,E0,K0]: - 12 x[T1,E0,K0] + g[T1,E0,K0] <= 0
- c14[T1,E0,K1]: - 12 x[T1,E0,K1] + g[T1,E0,K1] <= 0
- c14[T2,T0,K0]: - 12 x[T2,T0,K0] + g[T2,T0,K0] <= 0
- c14[T2,T0,K1]: - 12 x[T2,T0,K1] + g[T2,T0,K1] <= 0
- c14[T2,T1,K0]: - 12 x[T2,T1,K0] + g[T2,T1,K0] <= 0
- c14[T2,T1,K1]: - 12 x[T2,T1,K1] + g[T2,T1,K1] <= 0
- c14[T2,T3,K0]: - 12 x[T2,T3,K0] + g[T2,T3,K0] <= 0
- c14[T2,T3,K1]: - 12 x[T2,T3,K1] + g[T2,T3,K1] <= 0
- c14[T2,T4,K0]: - 12 x[T2,T4,K0] + g[T2,T4,K0] <= 0
- c14[T2,T4,K1]: - 12 x[T2,T4,K1] + g[T2,T4,K1] <= 0
- c14[T2,T5,K0]: - 12 x[T2,T5,K0] + g[T2,T5,K0] <= 0
- c14[T2,T5,K1]: - 12 x[T2,T5,K1] + g[T2,T5,K1] <= 0
- c14[T2,T6,K0]: - 12 x[T2,T6,K0] + g[T2,T6,K0] <= 0
- c14[T2,T6,K1]: - 12 x[T2,T6,K1] + g[T2,T6,K1] <= 0
- c14[T2,T7,K0]: - 12 x[T2,T7,K0] + g[T2,T7,K0] <= 0
- c14[T2,T7,K1]: - 12 x[T2,T7,K1] + g[T2,T7,K1] <= 0
- c14[T2,T8,K0]: - 12 x[T2,T8,K0] + g[T2,T8,K0] <= 0
- c14[T2,T8,K1]: - 12 x[T2,T8,K1] + g[T2,T8,K1] <= 0
- c14[T2,T9,K0]: - 12 x[T2,T9,K0] + g[T2,T9,K0] <= 0
- c14[T2,T9,K1]: - 12 x[T2,T9,K1] + g[T2,T9,K1] <= 0
- c14[T2,T10,K0]: - 12 x[T2,T10,K0] + g[T2,T10,K0] <= 0
- c14[T2,T10,K1]: - 12 x[T2,T10,K1] + g[T2,T10,K1] <= 0
- c14[T2,T11,K0]: - 12 x[T2,T11,K0] + g[T2,T11,K0] <= 0
- c14[T2,T11,K1]: - 12 x[T2,T11,K1] + g[T2,T11,K1] <= 0
- c14[T2,D0,K0]: - 12 x[T2,D0,K0] + g[T2,D0,K0] <= 0
- c14[T2,D0,K1]: - 12 x[T2,D0,K1] + g[T2,D0,K1] <= 0
- c14[T2,D1,K0]: - 12 x[T2,D1,K0] + g[T2,D1,K0] <= 0
- c14[T2,D1,K1]: - 12 x[T2,D1,K1] + g[T2,D1,K1] <= 0
- c14[T2,D2,K0]: - 12 x[T2,D2,K0] + g[T2,D2,K0] <= 0
- c14[T2,D2,K1]: - 12 x[T2,D2,K1] + g[T2,D2,K1] <= 0
- c14[T2,S0,K0]: - 12 x[T2,S0,K0] + g[T2,S0,K0] <= 0
- c14[T2,S0,K1]: - 12 x[T2,S0,K1] + g[T2,S0,K1] <= 0
- c14[T2,E0,K0]: - 12 x[T2,E0,K0] + g[T2,E0,K0] <= 0
- c14[T2,E0,K1]: - 12 x[T2,E0,K1] + g[T2,E0,K1] <= 0
- c14[T3,T0,K0]: - 12 x[T3,T0,K0] + g[T3,T0,K0] <= 0
- c14[T3,T0,K1]: - 12 x[T3,T0,K1] + g[T3,T0,K1] <= 0
- c14[T3,T1,K0]: - 12 x[T3,T1,K0] + g[T3,T1,K0] <= 0
- c14[T3,T1,K1]: - 12 x[T3,T1,K1] + g[T3,T1,K1] <= 0
- c14[T3,T2,K0]: - 12 x[T3,T2,K0] + g[T3,T2,K0] <= 0
- c14[T3,T2,K1]: - 12 x[T3,T2,K1] + g[T3,T2,K1] <= 0
- c14[T3,T4,K0]: - 12 x[T3,T4,K0] + g[T3,T4,K0] <= 0
- c14[T3,T4,K1]: - 12 x[T3,T4,K1] + g[T3,T4,K1] <= 0
- c14[T3,T5,K0]: - 12 x[T3,T5,K0] + g[T3,T5,K0] <= 0
- c14[T3,T5,K1]: - 12 x[T3,T5,K1] + g[T3,T5,K1] <= 0
- c14[T3,T6,K0]: - 12 x[T3,T6,K0] + g[T3,T6,K0] <= 0
- c14[T3,T6,K1]: - 12 x[T3,T6,K1] + g[T3,T6,K1] <= 0
- c14[T3,T7,K0]: - 12 x[T3,T7,K0] + g[T3,T7,K0] <= 0
- c14[T3,T7,K1]: - 12 x[T3,T7,K1] + g[T3,T7,K1] <= 0
- c14[T3,T8,K0]: - 12 x[T3,T8,K0] + g[T3,T8,K0] <= 0
- c14[T3,T8,K1]: - 12 x[T3,T8,K1] + g[T3,T8,K1] <= 0
- c14[T3,T9,K0]: - 12 x[T3,T9,K0] + g[T3,T9,K0] <= 0
- c14[T3,T9,K1]: - 12 x[T3,T9,K1] + g[T3,T9,K1] <= 0
- c14[T3,T10,K0]: - 12 x[T3,T10,K0] + g[T3,T10,K0] <= 0
- c14[T3,T10,K1]: - 12 x[T3,T10,K1] + g[T3,T10,K1] <= 0
- c14[T3,T11,K0]: - 12 x[T3,T11,K0] + g[T3,T11,K0] <= 0
- c14[T3,T11,K1]: - 12 x[T3,T11,K1] + g[T3,T11,K1] <= 0
- c14[T3,D0,K0]: - 12 x[T3,D0,K0] + g[T3,D0,K0] <= 0
- c14[T3,D0,K1]: - 12 x[T3,D0,K1] + g[T3,D0,K1] <= 0
- c14[T3,D1,K0]: - 12 x[T3,D1,K0] + g[T3,D1,K0] <= 0
- c14[T3,D1,K1]: - 12 x[T3,D1,K1] + g[T3,D1,K1] <= 0
- c14[T3,D2,K0]: - 12 x[T3,D2,K0] + g[T3,D2,K0] <= 0
- c14[T3,D2,K1]: - 12 x[T3,D2,K1] + g[T3,D2,K1] <= 0
- c14[T3,S0,K0]: - 12 x[T3,S0,K0] + g[T3,S0,K0] <= 0
- c14[T3,S0,K1]: - 12 x[T3,S0,K1] + g[T3,S0,K1] <= 0
- c14[T3,E0,K0]: - 12 x[T3,E0,K0] + g[T3,E0,K0] <= 0
- c14[T3,E0,K1]: - 12 x[T3,E0,K1] + g[T3,E0,K1] <= 0
- c14[T4,T0,K0]: - 12 x[T4,T0,K0] + g[T4,T0,K0] <= 0
- c14[T4,T0,K1]: - 12 x[T4,T0,K1] + g[T4,T0,K1] <= 0
- c14[T4,T1,K0]: - 12 x[T4,T1,K0] + g[T4,T1,K0] <= 0
- c14[T4,T1,K1]: - 12 x[T4,T1,K1] + g[T4,T1,K1] <= 0
- c14[T4,T2,K0]: - 12 x[T4,T2,K0] + g[T4,T2,K0] <= 0
- c14[T4,T2,K1]: - 12 x[T4,T2,K1] + g[T4,T2,K1] <= 0
- c14[T4,T3,K0]: - 12 x[T4,T3,K0] + g[T4,T3,K0] <= 0
- c14[T4,T3,K1]: - 12 x[T4,T3,K1] + g[T4,T3,K1] <= 0
- c14[T4,T5,K0]: - 12 x[T4,T5,K0] + g[T4,T5,K0] <= 0
- c14[T4,T5,K1]: - 12 x[T4,T5,K1] + g[T4,T5,K1] <= 0
- c14[T4,T6,K0]: - 12 x[T4,T6,K0] + g[T4,T6,K0] <= 0
- c14[T4,T6,K1]: - 12 x[T4,T6,K1] + g[T4,T6,K1] <= 0
- c14[T4,T7,K0]: - 12 x[T4,T7,K0] + g[T4,T7,K0] <= 0
- c14[T4,T7,K1]: - 12 x[T4,T7,K1] + g[T4,T7,K1] <= 0
- c14[T4,T8,K0]: - 12 x[T4,T8,K0] + g[T4,T8,K0] <= 0
- c14[T4,T8,K1]: - 12 x[T4,T8,K1] + g[T4,T8,K1] <= 0
- c14[T4,T9,K0]: - 12 x[T4,T9,K0] + g[T4,T9,K0] <= 0
- c14[T4,T9,K1]: - 12 x[T4,T9,K1] + g[T4,T9,K1] <= 0
- c14[T4,T10,K0]: - 12 x[T4,T10,K0] + g[T4,T10,K0] <= 0
- c14[T4,T10,K1]: - 12 x[T4,T10,K1] + g[T4,T10,K1] <= 0
- c14[T4,T11,K0]: - 12 x[T4,T11,K0] + g[T4,T11,K0] <= 0
- c14[T4,T11,K1]: - 12 x[T4,T11,K1] + g[T4,T11,K1] <= 0
- c14[T4,D0,K0]: - 12 x[T4,D0,K0] + g[T4,D0,K0] <= 0
- c14[T4,D0,K1]: - 12 x[T4,D0,K1] + g[T4,D0,K1] <= 0
- c14[T4,D1,K0]: - 12 x[T4,D1,K0] + g[T4,D1,K0] <= 0
- c14[T4,D1,K1]: - 12 x[T4,D1,K1] + g[T4,D1,K1] <= 0
- c14[T4,D2,K0]: - 12 x[T4,D2,K0] + g[T4,D2,K0] <= 0
- c14[T4,D2,K1]: - 12 x[T4,D2,K1] + g[T4,D2,K1] <= 0
- c14[T4,S0,K0]: - 12 x[T4,S0,K0] + g[T4,S0,K0] <= 0
- c14[T4,S0,K1]: - 12 x[T4,S0,K1] + g[T4,S0,K1] <= 0
- c14[T4,E0,K0]: - 12 x[T4,E0,K0] + g[T4,E0,K0] <= 0
- c14[T4,E0,K1]: - 12 x[T4,E0,K1] + g[T4,E0,K1] <= 0
- c14[T5,T0,K0]: - 12 x[T5,T0,K0] + g[T5,T0,K0] <= 0
- c14[T5,T0,K1]: - 12 x[T5,T0,K1] + g[T5,T0,K1] <= 0
- c14[T5,T1,K0]: - 12 x[T5,T1,K0] + g[T5,T1,K0] <= 0
- c14[T5,T1,K1]: - 12 x[T5,T1,K1] + g[T5,T1,K1] <= 0
- c14[T5,T2,K0]: - 12 x[T5,T2,K0] + g[T5,T2,K0] <= 0
- c14[T5,T2,K1]: - 12 x[T5,T2,K1] + g[T5,T2,K1] <= 0
- c14[T5,T3,K0]: - 12 x[T5,T3,K0] + g[T5,T3,K0] <= 0
- c14[T5,T3,K1]: - 12 x[T5,T3,K1] + g[T5,T3,K1] <= 0
- c14[T5,T4,K0]: - 12 x[T5,T4,K0] + g[T5,T4,K0] <= 0
- c14[T5,T4,K1]: - 12 x[T5,T4,K1] + g[T5,T4,K1] <= 0
- c14[T5,T6,K0]: - 12 x[T5,T6,K0] + g[T5,T6,K0] <= 0
- c14[T5,T6,K1]: - 12 x[T5,T6,K1] + g[T5,T6,K1] <= 0
- c14[T5,T7,K0]: - 12 x[T5,T7,K0] + g[T5,T7,K0] <= 0
- c14[T5,T7,K1]: - 12 x[T5,T7,K1] + g[T5,T7,K1] <= 0
- c14[T5,T8,K0]: - 12 x[T5,T8,K0] + g[T5,T8,K0] <= 0
- c14[T5,T8,K1]: - 12 x[T5,T8,K1] + g[T5,T8,K1] <= 0
- c14[T5,T9,K0]: - 12 x[T5,T9,K0] + g[T5,T9,K0] <= 0
- c14[T5,T9,K1]: - 12 x[T5,T9,K1] + g[T5,T9,K1] <= 0
- c14[T5,T10,K0]: - 12 x[T5,T10,K0] + g[T5,T10,K0] <= 0
- c14[T5,T10,K1]: - 12 x[T5,T10,K1] + g[T5,T10,K1] <= 0
- c14[T5,T11,K0]: - 12 x[T5,T11,K0] + g[T5,T11,K0] <= 0
- c14[T5,T11,K1]: - 12 x[T5,T11,K1] + g[T5,T11,K1] <= 0
- c14[T5,D0,K0]: - 12 x[T5,D0,K0] + g[T5,D0,K0] <= 0
- c14[T5,D0,K1]: - 12 x[T5,D0,K1] + g[T5,D0,K1] <= 0
- c14[T5,D1,K0]: - 12 x[T5,D1,K0] + g[T5,D1,K0] <= 0
- c14[T5,D1,K1]: - 12 x[T5,D1,K1] + g[T5,D1,K1] <= 0
- c14[T5,D2,K0]: - 12 x[T5,D2,K0] + g[T5,D2,K0] <= 0
- c14[T5,D2,K1]: - 12 x[T5,D2,K1] + g[T5,D2,K1] <= 0
- c14[T5,S0,K0]: - 12 x[T5,S0,K0] + g[T5,S0,K0] <= 0
- c14[T5,S0,K1]: - 12 x[T5,S0,K1] + g[T5,S0,K1] <= 0
- c14[T5,E0,K0]: - 12 x[T5,E0,K0] + g[T5,E0,K0] <= 0
- c14[T5,E0,K1]: - 12 x[T5,E0,K1] + g[T5,E0,K1] <= 0
- c14[T6,T0,K0]: - 12 x[T6,T0,K0] + g[T6,T0,K0] <= 0
- c14[T6,T0,K1]: - 12 x[T6,T0,K1] + g[T6,T0,K1] <= 0
- c14[T6,T1,K0]: - 12 x[T6,T1,K0] + g[T6,T1,K0] <= 0
- c14[T6,T1,K1]: - 12 x[T6,T1,K1] + g[T6,T1,K1] <= 0
- c14[T6,T2,K0]: - 12 x[T6,T2,K0] + g[T6,T2,K0] <= 0
- c14[T6,T2,K1]: - 12 x[T6,T2,K1] + g[T6,T2,K1] <= 0
- c14[T6,T3,K0]: - 12 x[T6,T3,K0] + g[T6,T3,K0] <= 0
- c14[T6,T3,K1]: - 12 x[T6,T3,K1] + g[T6,T3,K1] <= 0
- c14[T6,T4,K0]: - 12 x[T6,T4,K0] + g[T6,T4,K0] <= 0
- c14[T6,T4,K1]: - 12 x[T6,T4,K1] + g[T6,T4,K1] <= 0
- c14[T6,T5,K0]: - 12 x[T6,T5,K0] + g[T6,T5,K0] <= 0
- c14[T6,T5,K1]: - 12 x[T6,T5,K1] + g[T6,T5,K1] <= 0
- c14[T6,T7,K0]: - 12 x[T6,T7,K0] + g[T6,T7,K0] <= 0
- c14[T6,T7,K1]: - 12 x[T6,T7,K1] + g[T6,T7,K1] <= 0
- c14[T6,T8,K0]: - 12 x[T6,T8,K0] + g[T6,T8,K0] <= 0
- c14[T6,T8,K1]: - 12 x[T6,T8,K1] + g[T6,T8,K1] <= 0
- c14[T6,T9,K0]: - 12 x[T6,T9,K0] + g[T6,T9,K0] <= 0
- c14[T6,T9,K1]: - 12 x[T6,T9,K1] + g[T6,T9,K1] <= 0
- c14[T6,T10,K0]: - 12 x[T6,T10,K0] + g[T6,T10,K0] <= 0
- c14[T6,T10,K1]: - 12 x[T6,T10,K1] + g[T6,T10,K1] <= 0
- c14[T6,T11,K0]: - 12 x[T6,T11,K0] + g[T6,T11,K0] <= 0
- c14[T6,T11,K1]: - 12 x[T6,T11,K1] + g[T6,T11,K1] <= 0
- c14[T6,D0,K0]: - 12 x[T6,D0,K0] + g[T6,D0,K0] <= 0
- c14[T6,D0,K1]: - 12 x[T6,D0,K1] + g[T6,D0,K1] <= 0
- c14[T6,D1,K0]: - 12 x[T6,D1,K0] + g[T6,D1,K0] <= 0
- c14[T6,D1,K1]: - 12 x[T6,D1,K1] + g[T6,D1,K1] <= 0
- c14[T6,D2,K0]: - 12 x[T6,D2,K0] + g[T6,D2,K0] <= 0
- c14[T6,D2,K1]: - 12 x[T6,D2,K1] + g[T6,D2,K1] <= 0
- c14[T6,S0,K0]: - 12 x[T6,S0,K0] + g[T6,S0,K0] <= 0
- c14[T6,S0,K1]: - 12 x[T6,S0,K1] + g[T6,S0,K1] <= 0
- c14[T6,E0,K0]: - 12 x[T6,E0,K0] + g[T6,E0,K0] <= 0
- c14[T6,E0,K1]: - 12 x[T6,E0,K1] + g[T6,E0,K1] <= 0
- c14[T7,T0,K0]: - 12 x[T7,T0,K0] + g[T7,T0,K0] <= 0
- c14[T7,T0,K1]: - 12 x[T7,T0,K1] + g[T7,T0,K1] <= 0
- c14[T7,T1,K0]: - 12 x[T7,T1,K0] + g[T7,T1,K0] <= 0
- c14[T7,T1,K1]: - 12 x[T7,T1,K1] + g[T7,T1,K1] <= 0
- c14[T7,T2,K0]: - 12 x[T7,T2,K0] + g[T7,T2,K0] <= 0
- c14[T7,T2,K1]: - 12 x[T7,T2,K1] + g[T7,T2,K1] <= 0
- c14[T7,T3,K0]: - 12 x[T7,T3,K0] + g[T7,T3,K0] <= 0
- c14[T7,T3,K1]: - 12 x[T7,T3,K1] + g[T7,T3,K1] <= 0
- c14[T7,T4,K0]: - 12 x[T7,T4,K0] + g[T7,T4,K0] <= 0
- c14[T7,T4,K1]: - 12 x[T7,T4,K1] + g[T7,T4,K1] <= 0
- c14[T7,T5,K0]: - 12 x[T7,T5,K0] + g[T7,T5,K0] <= 0
- c14[T7,T5,K1]: - 12 x[T7,T5,K1] + g[T7,T5,K1] <= 0
- c14[T7,T6,K0]: - 12 x[T7,T6,K0] + g[T7,T6,K0] <= 0
- c14[T7,T6,K1]: - 12 x[T7,T6,K1] + g[T7,T6,K1] <= 0
- c14[T7,T8,K0]: - 12 x[T7,T8,K0] + g[T7,T8,K0] <= 0
- c14[T7,T8,K1]: - 12 x[T7,T8,K1] + g[T7,T8,K1] <= 0
- c14[T7,T9,K0]: - 12 x[T7,T9,K0] + g[T7,T9,K0] <= 0
- c14[T7,T9,K1]: - 12 x[T7,T9,K1] + g[T7,T9,K1] <= 0
- c14[T7,T10,K0]: - 12 x[T7,T10,K0] + g[T7,T10,K0] <= 0
- c14[T7,T10,K1]: - 12 x[T7,T10,K1] + g[T7,T10,K1] <= 0
- c14[T7,T11,K0]: - 12 x[T7,T11,K0] + g[T7,T11,K0] <= 0
- c14[T7,T11,K1]: - 12 x[T7,T11,K1] + g[T7,T11,K1] <= 0
- c14[T7,D0,K0]: - 12 x[T7,D0,K0] + g[T7,D0,K0] <= 0
- c14[T7,D0,K1]: - 12 x[T7,D0,K1] + g[T7,D0,K1] <= 0
- c14[T7,D1,K0]: - 12 x[T7,D1,K0] + g[T7,D1,K0] <= 0
- c14[T7,D1,K1]: - 12 x[T7,D1,K1] + g[T7,D1,K1] <= 0
- c14[T7,D2,K0]: - 12 x[T7,D2,K0] + g[T7,D2,K0] <= 0
- c14[T7,D2,K1]: - 12 x[T7,D2,K1] + g[T7,D2,K1] <= 0
- c14[T7,S0,K0]: - 12 x[T7,S0,K0] + g[T7,S0,K0] <= 0
- c14[T7,S0,K1]: - 12 x[T7,S0,K1] + g[T7,S0,K1] <= 0
- c14[T7,E0,K0]: - 12 x[T7,E0,K0] + g[T7,E0,K0] <= 0
- c14[T7,E0,K1]: - 12 x[T7,E0,K1] + g[T7,E0,K1] <= 0
- c14[T8,T0,K0]: - 12 x[T8,T0,K0] + g[T8,T0,K0] <= 0
- c14[T8,T0,K1]: - 12 x[T8,T0,K1] + g[T8,T0,K1] <= 0
- c14[T8,T1,K0]: - 12 x[T8,T1,K0] + g[T8,T1,K0] <= 0
- c14[T8,T1,K1]: - 12 x[T8,T1,K1] + g[T8,T1,K1] <= 0
- c14[T8,T2,K0]: - 12 x[T8,T2,K0] + g[T8,T2,K0] <= 0
- c14[T8,T2,K1]: - 12 x[T8,T2,K1] + g[T8,T2,K1] <= 0
- c14[T8,T3,K0]: - 12 x[T8,T3,K0] + g[T8,T3,K0] <= 0
- c14[T8,T3,K1]: - 12 x[T8,T3,K1] + g[T8,T3,K1] <= 0
- c14[T8,T4,K0]: - 12 x[T8,T4,K0] + g[T8,T4,K0] <= 0
- c14[T8,T4,K1]: - 12 x[T8,T4,K1] + g[T8,T4,K1] <= 0
- c14[T8,T5,K0]: - 12 x[T8,T5,K0] + g[T8,T5,K0] <= 0
- c14[T8,T5,K1]: - 12 x[T8,T5,K1] + g[T8,T5,K1] <= 0
- c14[T8,T6,K0]: - 12 x[T8,T6,K0] + g[T8,T6,K0] <= 0
- c14[T8,T6,K1]: - 12 x[T8,T6,K1] + g[T8,T6,K1] <= 0
- c14[T8,T7,K0]: - 12 x[T8,T7,K0] + g[T8,T7,K0] <= 0
- c14[T8,T7,K1]: - 12 x[T8,T7,K1] + g[T8,T7,K1] <= 0
- c14[T8,T9,K0]: - 12 x[T8,T9,K0] + g[T8,T9,K0] <= 0
- c14[T8,T9,K1]: - 12 x[T8,T9,K1] + g[T8,T9,K1] <= 0
- c14[T8,T10,K0]: - 12 x[T8,T10,K0] + g[T8,T10,K0] <= 0
- c14[T8,T10,K1]: - 12 x[T8,T10,K1] + g[T8,T10,K1] <= 0
- c14[T8,T11,K0]: - 12 x[T8,T11,K0] + g[T8,T11,K0] <= 0
- c14[T8,T11,K1]: - 12 x[T8,T11,K1] + g[T8,T11,K1] <= 0
- c14[T8,D0,K0]: - 12 x[T8,D0,K0] + g[T8,D0,K0] <= 0
- c14[T8,D0,K1]: - 12 x[T8,D0,K1] + g[T8,D0,K1] <= 0
- c14[T8,D1,K0]: - 12 x[T8,D1,K0] + g[T8,D1,K0] <= 0
- c14[T8,D1,K1]: - 12 x[T8,D1,K1] + g[T8,D1,K1] <= 0
- c14[T8,D2,K0]: - 12 x[T8,D2,K0] + g[T8,D2,K0] <= 0
- c14[T8,D2,K1]: - 12 x[T8,D2,K1] + g[T8,D2,K1] <= 0
- c14[T8,S0,K0]: - 12 x[T8,S0,K0] + g[T8,S0,K0] <= 0
- c14[T8,S0,K1]: - 12 x[T8,S0,K1] + g[T8,S0,K1] <= 0
- c14[T8,E0,K0]: - 12 x[T8,E0,K0] + g[T8,E0,K0] <= 0
- c14[T8,E0,K1]: - 12 x[T8,E0,K1] + g[T8,E0,K1] <= 0
- c14[T9,T0,K0]: - 12 x[T9,T0,K0] + g[T9,T0,K0] <= 0
- c14[T9,T0,K1]: - 12 x[T9,T0,K1] + g[T9,T0,K1] <= 0
- c14[T9,T1,K0]: - 12 x[T9,T1,K0] + g[T9,T1,K0] <= 0
- c14[T9,T1,K1]: - 12 x[T9,T1,K1] + g[T9,T1,K1] <= 0
- c14[T9,T2,K0]: - 12 x[T9,T2,K0] + g[T9,T2,K0] <= 0
- c14[T9,T2,K1]: - 12 x[T9,T2,K1] + g[T9,T2,K1] <= 0
- c14[T9,T3,K0]: - 12 x[T9,T3,K0] + g[T9,T3,K0] <= 0
- c14[T9,T3,K1]: - 12 x[T9,T3,K1] + g[T9,T3,K1] <= 0
- c14[T9,T4,K0]: - 12 x[T9,T4,K0] + g[T9,T4,K0] <= 0
- c14[T9,T4,K1]: - 12 x[T9,T4,K1] + g[T9,T4,K1] <= 0
- c14[T9,T5,K0]: - 12 x[T9,T5,K0] + g[T9,T5,K0] <= 0
- c14[T9,T5,K1]: - 12 x[T9,T5,K1] + g[T9,T5,K1] <= 0
- c14[T9,T6,K0]: - 12 x[T9,T6,K0] + g[T9,T6,K0] <= 0
- c14[T9,T6,K1]: - 12 x[T9,T6,K1] + g[T9,T6,K1] <= 0
- c14[T9,T7,K0]: - 12 x[T9,T7,K0] + g[T9,T7,K0] <= 0
- c14[T9,T7,K1]: - 12 x[T9,T7,K1] + g[T9,T7,K1] <= 0
- c14[T9,T8,K0]: - 12 x[T9,T8,K0] + g[T9,T8,K0] <= 0
- c14[T9,T8,K1]: - 12 x[T9,T8,K1] + g[T9,T8,K1] <= 0
- c14[T9,T10,K0]: - 12 x[T9,T10,K0] + g[T9,T10,K0] <= 0
- c14[T9,T10,K1]: - 12 x[T9,T10,K1] + g[T9,T10,K1] <= 0
- c14[T9,T11,K0]: - 12 x[T9,T11,K0] + g[T9,T11,K0] <= 0
- c14[T9,T11,K1]: - 12 x[T9,T11,K1] + g[T9,T11,K1] <= 0
- c14[T9,D0,K0]: - 12 x[T9,D0,K0] + g[T9,D0,K0] <= 0
- c14[T9,D0,K1]: - 12 x[T9,D0,K1] + g[T9,D0,K1] <= 0
- c14[T9,D1,K0]: - 12 x[T9,D1,K0] + g[T9,D1,K0] <= 0
- c14[T9,D1,K1]: - 12 x[T9,D1,K1] + g[T9,D1,K1] <= 0
- c14[T9,D2,K0]: - 12 x[T9,D2,K0] + g[T9,D2,K0] <= 0
- c14[T9,D2,K1]: - 12 x[T9,D2,K1] + g[T9,D2,K1] <= 0
- c14[T9,S0,K0]: - 12 x[T9,S0,K0] + g[T9,S0,K0] <= 0
- c14[T9,S0,K1]: - 12 x[T9,S0,K1] + g[T9,S0,K1] <= 0
- c14[T9,E0,K0]: - 12 x[T9,E0,K0] + g[T9,E0,K0] <= 0
- c14[T9,E0,K1]: - 12 x[T9,E0,K1] + g[T9,E0,K1] <= 0
- c14[T10,T0,K0]: - 12 x[T10,T0,K0] + g[T10,T0,K0] <= 0
- c14[T10,T0,K1]: - 12 x[T10,T0,K1] + g[T10,T0,K1] <= 0
- c14[T10,T1,K0]: - 12 x[T10,T1,K0] + g[T10,T1,K0] <= 0
- c14[T10,T1,K1]: - 12 x[T10,T1,K1] + g[T10,T1,K1] <= 0
- c14[T10,T2,K0]: - 12 x[T10,T2,K0] + g[T10,T2,K0] <= 0
- c14[T10,T2,K1]: - 12 x[T10,T2,K1] + g[T10,T2,K1] <= 0
- c14[T10,T3,K0]: - 12 x[T10,T3,K0] + g[T10,T3,K0] <= 0
- c14[T10,T3,K1]: - 12 x[T10,T3,K1] + g[T10,T3,K1] <= 0
- c14[T10,T4,K0]: - 12 x[T10,T4,K0] + g[T10,T4,K0] <= 0
- c14[T10,T4,K1]: - 12 x[T10,T4,K1] + g[T10,T4,K1] <= 0
- c14[T10,T5,K0]: - 12 x[T10,T5,K0] + g[T10,T5,K0] <= 0
- c14[T10,T5,K1]: - 12 x[T10,T5,K1] + g[T10,T5,K1] <= 0
- c14[T10,T6,K0]: - 12 x[T10,T6,K0] + g[T10,T6,K0] <= 0
- c14[T10,T6,K1]: - 12 x[T10,T6,K1] + g[T10,T6,K1] <= 0
- c14[T10,T7,K0]: - 12 x[T10,T7,K0] + g[T10,T7,K0] <= 0
- c14[T10,T7,K1]: - 12 x[T10,T7,K1] + g[T10,T7,K1] <= 0
- c14[T10,T8,K0]: - 12 x[T10,T8,K0] + g[T10,T8,K0] <= 0
- c14[T10,T8,K1]: - 12 x[T10,T8,K1] + g[T10,T8,K1] <= 0
- c14[T10,T9,K0]: - 12 x[T10,T9,K0] + g[T10,T9,K0] <= 0
- c14[T10,T9,K1]: - 12 x[T10,T9,K1] + g[T10,T9,K1] <= 0
- c14[T10,T11,K0]: - 12 x[T10,T11,K0] + g[T10,T11,K0] <= 0
- c14[T10,T11,K1]: - 12 x[T10,T11,K1] + g[T10,T11,K1] <= 0
- c14[T10,D0,K0]: - 12 x[T10,D0,K0] + g[T10,D0,K0] <= 0
- c14[T10,D0,K1]: - 12 x[T10,D0,K1] + g[T10,D0,K1] <= 0
- c14[T10,D1,K0]: - 12 x[T10,D1,K0] + g[T10,D1,K0] <= 0
- c14[T10,D1,K1]: - 12 x[T10,D1,K1] + g[T10,D1,K1] <= 0
- c14[T10,D2,K0]: - 12 x[T10,D2,K0] + g[T10,D2,K0] <= 0
- c14[T10,D2,K1]: - 12 x[T10,D2,K1] + g[T10,D2,K1] <= 0
- c14[T10,S0,K0]: - 12 x[T10,S0,K0] + g[T10,S0,K0] <= 0
- c14[T10,S0,K1]: - 12 x[T10,S0,K1] + g[T10,S0,K1] <= 0
- c14[T10,E0,K0]: - 12 x[T10,E0,K0] + g[T10,E0,K0] <= 0
- c14[T10,E0,K1]: - 12 x[T10,E0,K1] + g[T10,E0,K1] <= 0
- c14[T11,T0,K0]: - 12 x[T11,T0,K0] + g[T11,T0,K0] <= 0
- c14[T11,T0,K1]: - 12 x[T11,T0,K1] + g[T11,T0,K1] <= 0
- c14[T11,T1,K0]: - 12 x[T11,T1,K0] + g[T11,T1,K0] <= 0
- c14[T11,T1,K1]: - 12 x[T11,T1,K1] + g[T11,T1,K1] <= 0
- c14[T11,T2,K0]: - 12 x[T11,T2,K0] + g[T11,T2,K0] <= 0
- c14[T11,T2,K1]: - 12 x[T11,T2,K1] + g[T11,T2,K1] <= 0
- c14[T11,T3,K0]: - 12 x[T11,T3,K0] + g[T11,T3,K0] <= 0
- c14[T11,T3,K1]: - 12 x[T11,T3,K1] + g[T11,T3,K1] <= 0
- c14[T11,T4,K0]: - 12 x[T11,T4,K0] + g[T11,T4,K0] <= 0
- c14[T11,T4,K1]: - 12 x[T11,T4,K1] + g[T11,T4,K1] <= 0
- c14[T11,T5,K0]: - 12 x[T11,T5,K0] + g[T11,T5,K0] <= 0
- c14[T11,T5,K1]: - 12 x[T11,T5,K1] + g[T11,T5,K1] <= 0
- c14[T11,T6,K0]: - 12 x[T11,T6,K0] + g[T11,T6,K0] <= 0
- c14[T11,T6,K1]: - 12 x[T11,T6,K1] + g[T11,T6,K1] <= 0
- c14[T11,T7,K0]: - 12 x[T11,T7,K0] + g[T11,T7,K0] <= 0
- c14[T11,T7,K1]: - 12 x[T11,T7,K1] + g[T11,T7,K1] <= 0
- c14[T11,T8,K0]: - 12 x[T11,T8,K0] + g[T11,T8,K0] <= 0
- c14[T11,T8,K1]: - 12 x[T11,T8,K1] + g[T11,T8,K1] <= 0
- c14[T11,T9,K0]: - 12 x[T11,T9,K0] + g[T11,T9,K0] <= 0
- c14[T11,T9,K1]: - 12 x[T11,T9,K1] + g[T11,T9,K1] <= 0
- c14[T11,T10,K0]: - 12 x[T11,T10,K0] + g[T11,T10,K0] <= 0
- c14[T11,T10,K1]: - 12 x[T11,T10,K1] + g[T11,T10,K1] <= 0
- c14[T11,D0,K0]: - 12 x[T11,D0,K0] + g[T11,D0,K0] <= 0
- c14[T11,D0,K1]: - 12 x[T11,D0,K1] + g[T11,D0,K1] <= 0
- c14[T11,D1,K0]: - 12 x[T11,D1,K0] + g[T11,D1,K0] <= 0
- c14[T11,D1,K1]: - 12 x[T11,D1,K1] + g[T11,D1,K1] <= 0
- c14[T11,D2,K0]: - 12 x[T11,D2,K0] + g[T11,D2,K0] <= 0
- c14[T11,D2,K1]: - 12 x[T11,D2,K1] + g[T11,D2,K1] <= 0
- c14[T11,S0,K0]: - 12 x[T11,S0,K0] + g[T11,S0,K0] <= 0
- c14[T11,S0,K1]: - 12 x[T11,S0,K1] + g[T11,S0,K1] <= 0
- c14[T11,E0,K0]: - 12 x[T11,E0,K0] + g[T11,E0,K0] <= 0
- c14[T11,E0,K1]: - 12 x[T11,E0,K1] + g[T11,E0,K1] <= 0
- c14[D0,T0,K0]: - 12 x[D0,T0,K0] + g[D0,T0,K0] <= 0
- c14[D0,T0,K1]: - 12 x[D0,T0,K1] + g[D0,T0,K1] <= 0
- c14[D0,T1,K0]: - 12 x[D0,T1,K0] + g[D0,T1,K0] <= 0
- c14[D0,T1,K1]: - 12 x[D0,T1,K1] + g[D0,T1,K1] <= 0
- c14[D0,T2,K0]: - 12 x[D0,T2,K0] + g[D0,T2,K0] <= 0
- c14[D0,T2,K1]: - 12 x[D0,T2,K1] + g[D0,T2,K1] <= 0
- c14[D0,T3,K0]: - 12 x[D0,T3,K0] + g[D0,T3,K0] <= 0
- c14[D0,T3,K1]: - 12 x[D0,T3,K1] + g[D0,T3,K1] <= 0
- c14[D0,T4,K0]: - 12 x[D0,T4,K0] + g[D0,T4,K0] <= 0
- c14[D0,T4,K1]: - 12 x[D0,T4,K1] + g[D0,T4,K1] <= 0
- c14[D0,T5,K0]: - 12 x[D0,T5,K0] + g[D0,T5,K0] <= 0
- c14[D0,T5,K1]: - 12 x[D0,T5,K1] + g[D0,T5,K1] <= 0
- c14[D0,T6,K0]: - 12 x[D0,T6,K0] + g[D0,T6,K0] <= 0
- c14[D0,T6,K1]: - 12 x[D0,T6,K1] + g[D0,T6,K1] <= 0
- c14[D0,T7,K0]: - 12 x[D0,T7,K0] + g[D0,T7,K0] <= 0
- c14[D0,T7,K1]: - 12 x[D0,T7,K1] + g[D0,T7,K1] <= 0
- c14[D0,T8,K0]: - 12 x[D0,T8,K0] + g[D0,T8,K0] <= 0
- c14[D0,T8,K1]: - 12 x[D0,T8,K1] + g[D0,T8,K1] <= 0
- c14[D0,T9,K0]: - 12 x[D0,T9,K0] + g[D0,T9,K0] <= 0
- c14[D0,T9,K1]: - 12 x[D0,T9,K1] + g[D0,T9,K1] <= 0
- c14[D0,T10,K0]: - 12 x[D0,T10,K0] + g[D0,T10,K0] <= 0
- c14[D0,T10,K1]: - 12 x[D0,T10,K1] + g[D0,T10,K1] <= 0
- c14[D0,T11,K0]: - 12 x[D0,T11,K0] + g[D0,T11,K0] <= 0
- c14[D0,T11,K1]: - 12 x[D0,T11,K1] + g[D0,T11,K1] <= 0
- c14[D0,D1,K0]: - 12 x[D0,D1,K0] + g[D0,D1,K0] <= 0
- c14[D0,D1,K1]: - 12 x[D0,D1,K1] + g[D0,D1,K1] <= 0
- c14[D0,D2,K0]: - 12 x[D0,D2,K0] + g[D0,D2,K0] <= 0
- c14[D0,D2,K1]: - 12 x[D0,D2,K1] + g[D0,D2,K1] <= 0
- c14[D0,S0,K0]: - 12 x[D0,S0,K0] + g[D0,S0,K0] <= 0
- c14[D0,S0,K1]: - 12 x[D0,S0,K1] + g[D0,S0,K1] <= 0
- c14[D0,E0,K0]: - 12 x[D0,E0,K0] + g[D0,E0,K0] <= 0
- c14[D0,E0,K1]: - 12 x[D0,E0,K1] + g[D0,E0,K1] <= 0
- c14[D1,T0,K0]: - 12 x[D1,T0,K0] + g[D1,T0,K0] <= 0
- c14[D1,T0,K1]: - 12 x[D1,T0,K1] + g[D1,T0,K1] <= 0
- c14[D1,T1,K0]: - 12 x[D1,T1,K0] + g[D1,T1,K0] <= 0
- c14[D1,T1,K1]: - 12 x[D1,T1,K1] + g[D1,T1,K1] <= 0
- c14[D1,T2,K0]: - 12 x[D1,T2,K0] + g[D1,T2,K0] <= 0
- c14[D1,T2,K1]: - 12 x[D1,T2,K1] + g[D1,T2,K1] <= 0
- c14[D1,T3,K0]: - 12 x[D1,T3,K0] + g[D1,T3,K0] <= 0
- c14[D1,T3,K1]: - 12 x[D1,T3,K1] + g[D1,T3,K1] <= 0
- c14[D1,T4,K0]: - 12 x[D1,T4,K0] + g[D1,T4,K0] <= 0
- c14[D1,T4,K1]: - 12 x[D1,T4,K1] + g[D1,T4,K1] <= 0
- c14[D1,T5,K0]: - 12 x[D1,T5,K0] + g[D1,T5,K0] <= 0
- c14[D1,T5,K1]: - 12 x[D1,T5,K1] + g[D1,T5,K1] <= 0
- c14[D1,T6,K0]: - 12 x[D1,T6,K0] + g[D1,T6,K0] <= 0
- c14[D1,T6,K1]: - 12 x[D1,T6,K1] + g[D1,T6,K1] <= 0
- c14[D1,T7,K0]: - 12 x[D1,T7,K0] + g[D1,T7,K0] <= 0
- c14[D1,T7,K1]: - 12 x[D1,T7,K1] + g[D1,T7,K1] <= 0
- c14[D1,T8,K0]: - 12 x[D1,T8,K0] + g[D1,T8,K0] <= 0
- c14[D1,T8,K1]: - 12 x[D1,T8,K1] + g[D1,T8,K1] <= 0
- c14[D1,T9,K0]: - 12 x[D1,T9,K0] + g[D1,T9,K0] <= 0
- c14[D1,T9,K1]: - 12 x[D1,T9,K1] + g[D1,T9,K1] <= 0
- c14[D1,T10,K0]: - 12 x[D1,T10,K0] + g[D1,T10,K0] <= 0
- c14[D1,T10,K1]: - 12 x[D1,T10,K1] + g[D1,T10,K1] <= 0
- c14[D1,T11,K0]: - 12 x[D1,T11,K0] + g[D1,T11,K0] <= 0
- c14[D1,T11,K1]: - 12 x[D1,T11,K1] + g[D1,T11,K1] <= 0
- c14[D1,D0,K0]: - 12 x[D1,D0,K0] + g[D1,D0,K0] <= 0
- c14[D1,D0,K1]: - 12 x[D1,D0,K1] + g[D1,D0,K1] <= 0
- c14[D1,D2,K0]: - 12 x[D1,D2,K0] + g[D1,D2,K0] <= 0
- c14[D1,D2,K1]: - 12 x[D1,D2,K1] + g[D1,D2,K1] <= 0
- c14[D1,S0,K0]: - 12 x[D1,S0,K0] + g[D1,S0,K0] <= 0
- c14[D1,S0,K1]: - 12 x[D1,S0,K1] + g[D1,S0,K1] <= 0
- c14[D1,E0,K0]: - 12 x[D1,E0,K0] + g[D1,E0,K0] <= 0
- c14[D1,E0,K1]: - 12 x[D1,E0,K1] + g[D1,E0,K1] <= 0
- c14[D2,T0,K0]: - 12 x[D2,T0,K0] + g[D2,T0,K0] <= 0
- c14[D2,T0,K1]: - 12 x[D2,T0,K1] + g[D2,T0,K1] <= 0
- c14[D2,T1,K0]: - 12 x[D2,T1,K0] + g[D2,T1,K0] <= 0
- c14[D2,T1,K1]: - 12 x[D2,T1,K1] + g[D2,T1,K1] <= 0
- c14[D2,T2,K0]: - 12 x[D2,T2,K0] + g[D2,T2,K0] <= 0
- c14[D2,T2,K1]: - 12 x[D2,T2,K1] + g[D2,T2,K1] <= 0
- c14[D2,T3,K0]: - 12 x[D2,T3,K0] + g[D2,T3,K0] <= 0
- c14[D2,T3,K1]: - 12 x[D2,T3,K1] + g[D2,T3,K1] <= 0
- c14[D2,T4,K0]: - 12 x[D2,T4,K0] + g[D2,T4,K0] <= 0
- c14[D2,T4,K1]: - 12 x[D2,T4,K1] + g[D2,T4,K1] <= 0
- c14[D2,T5,K0]: - 12 x[D2,T5,K0] + g[D2,T5,K0] <= 0
- c14[D2,T5,K1]: - 12 x[D2,T5,K1] + g[D2,T5,K1] <= 0
- c14[D2,T6,K0]: - 12 x[D2,T6,K0] + g[D2,T6,K0] <= 0
- c14[D2,T6,K1]: - 12 x[D2,T6,K1] + g[D2,T6,K1] <= 0
- c14[D2,T7,K0]: - 12 x[D2,T7,K0] + g[D2,T7,K0] <= 0
- c14[D2,T7,K1]: - 12 x[D2,T7,K1] + g[D2,T7,K1] <= 0
- c14[D2,T8,K0]: - 12 x[D2,T8,K0] + g[D2,T8,K0] <= 0
- c14[D2,T8,K1]: - 12 x[D2,T8,K1] + g[D2,T8,K1] <= 0
- c14[D2,T9,K0]: - 12 x[D2,T9,K0] + g[D2,T9,K0] <= 0
- c14[D2,T9,K1]: - 12 x[D2,T9,K1] + g[D2,T9,K1] <= 0
- c14[D2,T10,K0]: - 12 x[D2,T10,K0] + g[D2,T10,K0] <= 0
- c14[D2,T10,K1]: - 12 x[D2,T10,K1] + g[D2,T10,K1] <= 0
- c14[D2,T11,K0]: - 12 x[D2,T11,K0] + g[D2,T11,K0] <= 0
- c14[D2,T11,K1]: - 12 x[D2,T11,K1] + g[D2,T11,K1] <= 0
- c14[D2,D0,K0]: - 12 x[D2,D0,K0] + g[D2,D0,K0] <= 0
- c14[D2,D0,K1]: - 12 x[D2,D0,K1] + g[D2,D0,K1] <= 0
- c14[D2,D1,K0]: - 12 x[D2,D1,K0] + g[D2,D1,K0] <= 0
- c14[D2,D1,K1]: - 12 x[D2,D1,K1] + g[D2,D1,K1] <= 0
- c14[D2,S0,K0]: - 12 x[D2,S0,K0] + g[D2,S0,K0] <= 0
- c14[D2,S0,K1]: - 12 x[D2,S0,K1] + g[D2,S0,K1] <= 0
- c14[D2,E0,K0]: - 12 x[D2,E0,K0] + g[D2,E0,K0] <= 0
- c14[D2,E0,K1]: - 12 x[D2,E0,K1] + g[D2,E0,K1] <= 0
- c14[S0,T0,K0]: - 12 x[S0,T0,K0] + g[S0,T0,K0] <= 0
- c14[S0,T0,K1]: - 12 x[S0,T0,K1] + g[S0,T0,K1] <= 0
- c14[S0,T1,K0]: - 12 x[S0,T1,K0] + g[S0,T1,K0] <= 0
- c14[S0,T1,K1]: - 12 x[S0,T1,K1] + g[S0,T1,K1] <= 0
- c14[S0,T2,K0]: - 12 x[S0,T2,K0] + g[S0,T2,K0] <= 0
- c14[S0,T2,K1]: - 12 x[S0,T2,K1] + g[S0,T2,K1] <= 0
- c14[S0,T3,K0]: - 12 x[S0,T3,K0] + g[S0,T3,K0] <= 0
- c14[S0,T3,K1]: - 12 x[S0,T3,K1] + g[S0,T3,K1] <= 0
- c14[S0,T4,K0]: - 12 x[S0,T4,K0] + g[S0,T4,K0] <= 0
- c14[S0,T4,K1]: - 12 x[S0,T4,K1] + g[S0,T4,K1] <= 0
- c14[S0,T5,K0]: - 12 x[S0,T5,K0] + g[S0,T5,K0] <= 0
- c14[S0,T5,K1]: - 12 x[S0,T5,K1] + g[S0,T5,K1] <= 0
- c14[S0,T6,K0]: - 12 x[S0,T6,K0] + g[S0,T6,K0] <= 0
- c14[S0,T6,K1]: - 12 x[S0,T6,K1] + g[S0,T6,K1] <= 0
- c14[S0,T7,K0]: - 12 x[S0,T7,K0] + g[S0,T7,K0] <= 0
- c14[S0,T7,K1]: - 12 x[S0,T7,K1] + g[S0,T7,K1] <= 0
- c14[S0,T8,K0]: - 12 x[S0,T8,K0] + g[S0,T8,K0] <= 0
- c14[S0,T8,K1]: - 12 x[S0,T8,K1] + g[S0,T8,K1] <= 0
- c14[S0,T9,K0]: - 12 x[S0,T9,K0] + g[S0,T9,K0] <= 0
- c14[S0,T9,K1]: - 12 x[S0,T9,K1] + g[S0,T9,K1] <= 0
- c14[S0,T10,K0]: - 12 x[S0,T10,K0] + g[S0,T10,K0] <= 0
- c14[S0,T10,K1]: - 12 x[S0,T10,K1] + g[S0,T10,K1] <= 0
- c14[S0,T11,K0]: - 12 x[S0,T11,K0] + g[S0,T11,K0] <= 0
- c14[S0,T11,K1]: - 12 x[S0,T11,K1] + g[S0,T11,K1] <= 0
- c14[S0,D0,K0]: - 12 x[S0,D0,K0] + g[S0,D0,K0] <= 0
- c14[S0,D0,K1]: - 12 x[S0,D0,K1] + g[S0,D0,K1] <= 0
- c14[S0,D1,K0]: - 12 x[S0,D1,K0] + g[S0,D1,K0] <= 0
- c14[S0,D1,K1]: - 12 x[S0,D1,K1] + g[S0,D1,K1] <= 0
- c14[S0,D2,K0]: - 12 x[S0,D2,K0] + g[S0,D2,K0] <= 0
- c14[S0,D2,K1]: - 12 x[S0,D2,K1] + g[S0,D2,K1] <= 0
- c14[S0,E0,K0]: - 12 x[S0,E0,K0] + g[S0,E0,K0] <= 0
- c14[S0,E0,K1]: - 12 x[S0,E0,K1] + g[S0,E0,K1] <= 0
- c14[E0,T0,K0]: - 12 x[E0,T0,K0] + g[E0,T0,K0] <= 0
- c14[E0,T0,K1]: - 12 x[E0,T0,K1] + g[E0,T0,K1] <= 0
- c14[E0,T1,K0]: - 12 x[E0,T1,K0] + g[E0,T1,K0] <= 0
- c14[E0,T1,K1]: - 12 x[E0,T1,K1] + g[E0,T1,K1] <= 0
- c14[E0,T2,K0]: - 12 x[E0,T2,K0] + g[E0,T2,K0] <= 0
- c14[E0,T2,K1]: - 12 x[E0,T2,K1] + g[E0,T2,K1] <= 0
- c14[E0,T3,K0]: - 12 x[E0,T3,K0] + g[E0,T3,K0] <= 0
- c14[E0,T3,K1]: - 12 x[E0,T3,K1] + g[E0,T3,K1] <= 0
- c14[E0,T4,K0]: - 12 x[E0,T4,K0] + g[E0,T4,K0] <= 0
- c14[E0,T4,K1]: - 12 x[E0,T4,K1] + g[E0,T4,K1] <= 0
- c14[E0,T5,K0]: - 12 x[E0,T5,K0] + g[E0,T5,K0] <= 0
- c14[E0,T5,K1]: - 12 x[E0,T5,K1] + g[E0,T5,K1] <= 0
- c14[E0,T6,K0]: - 12 x[E0,T6,K0] + g[E0,T6,K0] <= 0
- c14[E0,T6,K1]: - 12 x[E0,T6,K1] + g[E0,T6,K1] <= 0
- c14[E0,T7,K0]: - 12 x[E0,T7,K0] + g[E0,T7,K0] <= 0
- c14[E0,T7,K1]: - 12 x[E0,T7,K1] + g[E0,T7,K1] <= 0
- c14[E0,T8,K0]: - 12 x[E0,T8,K0] + g[E0,T8,K0] <= 0
- c14[E0,T8,K1]: - 12 x[E0,T8,K1] + g[E0,T8,K1] <= 0
- c14[E0,T9,K0]: - 12 x[E0,T9,K0] + g[E0,T9,K0] <= 0
- c14[E0,T9,K1]: - 12 x[E0,T9,K1] + g[E0,T9,K1] <= 0
- c14[E0,T10,K0]: - 12 x[E0,T10,K0] + g[E0,T10,K0] <= 0
- c14[E0,T10,K1]: - 12 x[E0,T10,K1] + g[E0,T10,K1] <= 0
- c14[E0,T11,K0]: - 12 x[E0,T11,K0] + g[E0,T11,K0] <= 0
- c14[E0,T11,K1]: - 12 x[E0,T11,K1] + g[E0,T11,K1] <= 0
- c14[E0,D0,K0]: - 12 x[E0,D0,K0] + g[E0,D0,K0] <= 0
- c14[E0,D0,K1]: - 12 x[E0,D0,K1] + g[E0,D0,K1] <= 0
- c14[E0,D1,K0]: - 12 x[E0,D1,K0] + g[E0,D1,K0] <= 0
- c14[E0,D1,K1]: - 12 x[E0,D1,K1] + g[E0,D1,K1] <= 0
- c14[E0,D2,K0]: - 12 x[E0,D2,K0] + g[E0,D2,K0] <= 0
- c14[E0,D2,K1]: - 12 x[E0,D2,K1] + g[E0,D2,K1] <= 0
- c14[E0,S0,K0]: - 12 x[E0,S0,K0] + g[E0,S0,K0] <= 0
- c14[E0,S0,K1]: - 12 x[E0,S0,K1] + g[E0,S0,K1] <= 0
+ c32[K0,T0,T1]: 16 x[T0,T1,K0] + u[T0,K0] - u[T1,K0] <= 15
+ c32[K0,T0,T2]: 16 x[T0,T2,K0] + u[T0,K0] - u[T2,K0] <= 15
+ c32[K0,T0,T3]: 16 x[T0,T3,K0] + u[T0,K0] - u[T3,K0] <= 15
+ c32[K0,T0,T4]: 16 x[T0,T4,K0] + u[T0,K0] - u[T4,K0] <= 15
+ c32[K0,T0,T5]: 16 x[T0,T5,K0] + u[T0,K0] - u[T5,K0] <= 15
+ c32[K0,T0,T6]: 16 x[T0,T6,K0] + u[T0,K0] - u[T6,K0] <= 15
+ c32[K0,T0,T7]: 16 x[T0,T7,K0] + u[T0,K0] - u[T7,K0] <= 15
+ c32[K0,T0,T8]: 16 x[T0,T8,K0] + u[T0,K0] - u[T8,K0] <= 15
+ c32[K0,T0,T9]: 16 x[T0,T9,K0] + u[T0,K0] - u[T9,K0] <= 15
+ c32[K0,T0,T10]: 16 x[T0,T10,K0] + u[T0,K0] - u[T10,K0] <= 15
+ c32[K0,T0,T11]: 16 x[T0,T11,K0] + u[T0,K0] - u[T11,K0] <= 15
+ c32[K0,T0,D0]: 16 x[T0,D0,K0] + u[T0,K0] - u[D0,K0] <= 15
+ c32[K0,T0,D1]: 16 x[T0,D1,K0] + u[T0,K0] - u[D1,K0] <= 15
+ c32[K0,T0,D2]: 16 x[T0,D2,K0] + u[T0,K0] - u[D2,K0] <= 15
+ c32[K0,T0,E0]: 16 x[T0,E0,K0] + u[T0,K0] - u[E0,K0] <= 15
+ c32[K0,T1,T0]: 16 x[T1,T0,K0] - u[T0,K0] + u[T1,K0] <= 15
+ c32[K0,T1,T2]: 16 x[T1,T2,K0] + u[T1,K0] - u[T2,K0] <= 15
+ c32[K0,T1,T3]: 16 x[T1,T3,K0] + u[T1,K0] - u[T3,K0] <= 15
+ c32[K0,T1,T4]: 16 x[T1,T4,K0] + u[T1,K0] - u[T4,K0] <= 15
+ c32[K0,T1,T5]: 16 x[T1,T5,K0] + u[T1,K0] - u[T5,K0] <= 15
+ c32[K0,T1,T6]: 16 x[T1,T6,K0] + u[T1,K0] - u[T6,K0] <= 15
+ c32[K0,T1,T7]: 16 x[T1,T7,K0] + u[T1,K0] - u[T7,K0] <= 15
+ c32[K0,T1,T8]: 16 x[T1,T8,K0] + u[T1,K0] - u[T8,K0] <= 15
+ c32[K0,T1,T9]: 16 x[T1,T9,K0] + u[T1,K0] - u[T9,K0] <= 15
+ c32[K0,T1,T10]: 16 x[T1,T10,K0] + u[T1,K0] - u[T10,K0] <= 15
+ c32[K0,T1,T11]: 16 x[T1,T11,K0] + u[T1,K0] - u[T11,K0] <= 15
+ c32[K0,T1,D0]: 16 x[T1,D0,K0] + u[T1,K0] - u[D0,K0] <= 15
+ c32[K0,T1,D1]: 16 x[T1,D1,K0] + u[T1,K0] - u[D1,K0] <= 15
+ c32[K0,T1,D2]: 16 x[T1,D2,K0] + u[T1,K0] - u[D2,K0] <= 15
+ c32[K0,T1,E0]: 16 x[T1,E0,K0] + u[T1,K0] - u[E0,K0] <= 15
+ c32[K0,T2,T0]: 16 x[T2,T0,K0] - u[T0,K0] + u[T2,K0] <= 15
+ c32[K0,T2,T1]: 16 x[T2,T1,K0] - u[T1,K0] + u[T2,K0] <= 15
+ c32[K0,T2,T3]: 16 x[T2,T3,K0] + u[T2,K0] - u[T3,K0] <= 15
+ c32[K0,T2,T4]: 16 x[T2,T4,K0] + u[T2,K0] - u[T4,K0] <= 15
+ c32[K0,T2,T5]: 16 x[T2,T5,K0] + u[T2,K0] - u[T5,K0] <= 15
+ c32[K0,T2,T6]: 16 x[T2,T6,K0] + u[T2,K0] - u[T6,K0] <= 15
+ c32[K0,T2,T7]: 16 x[T2,T7,K0] + u[T2,K0] - u[T7,K0] <= 15
+ c32[K0,T2,T8]: 16 x[T2,T8,K0] + u[T2,K0] - u[T8,K0] <= 15
+ c32[K0,T2,T9]: 16 x[T2,T9,K0] + u[T2,K0] - u[T9,K0] <= 15
+ c32[K0,T2,T10]: 16 x[T2,T10,K0] + u[T2,K0] - u[T10,K0] <= 15
+ c32[K0,T2,T11]: 16 x[T2,T11,K0] + u[T2,K0] - u[T11,K0] <= 15
+ c32[K0,T2,D0]: 16 x[T2,D0,K0] + u[T2,K0] - u[D0,K0] <= 15
+ c32[K0,T2,D1]: 16 x[T2,D1,K0] + u[T2,K0] - u[D1,K0] <= 15
+ c32[K0,T2,D2]: 16 x[T2,D2,K0] + u[T2,K0] - u[D2,K0] <= 15
+ c32[K0,T2,E0]: 16 x[T2,E0,K0] + u[T2,K0] - u[E0,K0] <= 15
+ c32[K0,T3,T0]: 16 x[T3,T0,K0] - u[T0,K0] + u[T3,K0] <= 15
+ c32[K0,T3,T1]: 16 x[T3,T1,K0] - u[T1,K0] + u[T3,K0] <= 15
+ c32[K0,T3,T2]: 16 x[T3,T2,K0] - u[T2,K0] + u[T3,K0] <= 15
+ c32[K0,T3,T4]: 16 x[T3,T4,K0] + u[T3,K0] - u[T4,K0] <= 15
+ c32[K0,T3,T5]: 16 x[T3,T5,K0] + u[T3,K0] - u[T5,K0] <= 15
+ c32[K0,T3,T6]: 16 x[T3,T6,K0] + u[T3,K0] - u[T6,K0] <= 15
+ c32[K0,T3,T7]: 16 x[T3,T7,K0] + u[T3,K0] - u[T7,K0] <= 15
+ c32[K0,T3,T8]: 16 x[T3,T8,K0] + u[T3,K0] - u[T8,K0] <= 15
+ c32[K0,T3,T9]: 16 x[T3,T9,K0] + u[T3,K0] - u[T9,K0] <= 15
+ c32[K0,T3,T10]: 16 x[T3,T10,K0] + u[T3,K0] - u[T10,K0] <= 15
+ c32[K0,T3,T11]: 16 x[T3,T11,K0] + u[T3,K0] - u[T11,K0] <= 15
+ c32[K0,T3,D0]: 16 x[T3,D0,K0] + u[T3,K0] - u[D0,K0] <= 15
+ c32[K0,T3,D1]: 16 x[T3,D1,K0] + u[T3,K0] - u[D1,K0] <= 15
+ c32[K0,T3,D2]: 16 x[T3,D2,K0] + u[T3,K0] - u[D2,K0] <= 15
+ c32[K0,T3,E0]: 16 x[T3,E0,K0] + u[T3,K0] - u[E0,K0] <= 15
+ c32[K0,T4,T0]: 16 x[T4,T0,K0] - u[T0,K0] + u[T4,K0] <= 15
+ c32[K0,T4,T1]: 16 x[T4,T1,K0] - u[T1,K0] + u[T4,K0] <= 15
+ c32[K0,T4,T2]: 16 x[T4,T2,K0] - u[T2,K0] + u[T4,K0] <= 15
+ c32[K0,T4,T3]: 16 x[T4,T3,K0] - u[T3,K0] + u[T4,K0] <= 15
+ c32[K0,T4,T5]: 16 x[T4,T5,K0] + u[T4,K0] - u[T5,K0] <= 15
+ c32[K0,T4,T6]: 16 x[T4,T6,K0] + u[T4,K0] - u[T6,K0] <= 15
+ c32[K0,T4,T7]: 16 x[T4,T7,K0] + u[T4,K0] - u[T7,K0] <= 15
+ c32[K0,T4,T8]: 16 x[T4,T8,K0] + u[T4,K0] - u[T8,K0] <= 15
+ c32[K0,T4,T9]: 16 x[T4,T9,K0] + u[T4,K0] - u[T9,K0] <= 15
+ c32[K0,T4,T10]: 16 x[T4,T10,K0] + u[T4,K0] - u[T10,K0] <= 15
+ c32[K0,T4,T11]: 16 x[T4,T11,K0] + u[T4,K0] - u[T11,K0] <= 15
+ c32[K0,T4,D0]: 16 x[T4,D0,K0] + u[T4,K0] - u[D0,K0] <= 15
+ c32[K0,T4,D1]: 16 x[T4,D1,K0] + u[T4,K0] - u[D1,K0] <= 15
+ c32[K0,T4,D2]: 16 x[T4,D2,K0] + u[T4,K0] - u[D2,K0] <= 15
+ c32[K0,T4,E0]: 16 x[T4,E0,K0] + u[T4,K0] - u[E0,K0] <= 15
+ c32[K0,T5,T0]: 16 x[T5,T0,K0] - u[T0,K0] + u[T5,K0] <= 15
+ c32[K0,T5,T1]: 16 x[T5,T1,K0] - u[T1,K0] + u[T5,K0] <= 15
+ c32[K0,T5,T2]: 16 x[T5,T2,K0] - u[T2,K0] + u[T5,K0] <= 15
+ c32[K0,T5,T3]: 16 x[T5,T3,K0] - u[T3,K0] + u[T5,K0] <= 15
+ c32[K0,T5,T4]: 16 x[T5,T4,K0] - u[T4,K0] + u[T5,K0] <= 15
+ c32[K0,T5,T6]: 16 x[T5,T6,K0] + u[T5,K0] - u[T6,K0] <= 15
+ c32[K0,T5,T7]: 16 x[T5,T7,K0] + u[T5,K0] - u[T7,K0] <= 15
+ c32[K0,T5,T8]: 16 x[T5,T8,K0] + u[T5,K0] - u[T8,K0] <= 15
+ c32[K0,T5,T9]: 16 x[T5,T9,K0] + u[T5,K0] - u[T9,K0] <= 15
+ c32[K0,T5,T10]: 16 x[T5,T10,K0] + u[T5,K0] - u[T10,K0] <= 15
+ c32[K0,T5,T11]: 16 x[T5,T11,K0] + u[T5,K0] - u[T11,K0] <= 15
+ c32[K0,T5,D0]: 16 x[T5,D0,K0] + u[T5,K0] - u[D0,K0] <= 15
+ c32[K0,T5,D1]: 16 x[T5,D1,K0] + u[T5,K0] - u[D1,K0] <= 15
+ c32[K0,T5,D2]: 16 x[T5,D2,K0] + u[T5,K0] - u[D2,K0] <= 15
+ c32[K0,T5,E0]: 16 x[T5,E0,K0] + u[T5,K0] - u[E0,K0] <= 15
+ c32[K0,T6,T0]: 16 x[T6,T0,K0] - u[T0,K0] + u[T6,K0] <= 15
+ c32[K0,T6,T1]: 16 x[T6,T1,K0] - u[T1,K0] + u[T6,K0] <= 15
+ c32[K0,T6,T2]: 16 x[T6,T2,K0] - u[T2,K0] + u[T6,K0] <= 15
+ c32[K0,T6,T3]: 16 x[T6,T3,K0] - u[T3,K0] + u[T6,K0] <= 15
+ c32[K0,T6,T4]: 16 x[T6,T4,K0] - u[T4,K0] + u[T6,K0] <= 15
+ c32[K0,T6,T5]: 16 x[T6,T5,K0] - u[T5,K0] + u[T6,K0] <= 15
+ c32[K0,T6,T7]: 16 x[T6,T7,K0] + u[T6,K0] - u[T7,K0] <= 15
+ c32[K0,T6,T8]: 16 x[T6,T8,K0] + u[T6,K0] - u[T8,K0] <= 15
+ c32[K0,T6,T9]: 16 x[T6,T9,K0] + u[T6,K0] - u[T9,K0] <= 15
+ c32[K0,T6,T10]: 16 x[T6,T10,K0] + u[T6,K0] - u[T10,K0] <= 15
+ c32[K0,T6,T11]: 16 x[T6,T11,K0] + u[T6,K0] - u[T11,K0] <= 15
+ c32[K0,T6,D0]: 16 x[T6,D0,K0] + u[T6,K0] - u[D0,K0] <= 15
+ c32[K0,T6,D1]: 16 x[T6,D1,K0] + u[T6,K0] - u[D1,K0] <= 15
+ c32[K0,T6,D2]: 16 x[T6,D2,K0] + u[T6,K0] - u[D2,K0] <= 15
+ c32[K0,T6,E0]: 16 x[T6,E0,K0] + u[T6,K0] - u[E0,K0] <= 15
+ c32[K0,T7,T0]: 16 x[T7,T0,K0] - u[T0,K0] + u[T7,K0] <= 15
+ c32[K0,T7,T1]: 16 x[T7,T1,K0] - u[T1,K0] + u[T7,K0] <= 15
+ c32[K0,T7,T2]: 16 x[T7,T2,K0] - u[T2,K0] + u[T7,K0] <= 15
+ c32[K0,T7,T3]: 16 x[T7,T3,K0] - u[T3,K0] + u[T7,K0] <= 15
+ c32[K0,T7,T4]: 16 x[T7,T4,K0] - u[T4,K0] + u[T7,K0] <= 15
+ c32[K0,T7,T5]: 16 x[T7,T5,K0] - u[T5,K0] + u[T7,K0] <= 15
+ c32[K0,T7,T6]: 16 x[T7,T6,K0] - u[T6,K0] + u[T7,K0] <= 15
+ c32[K0,T7,T8]: 16 x[T7,T8,K0] + u[T7,K0] - u[T8,K0] <= 15
+ c32[K0,T7,T9]: 16 x[T7,T9,K0] + u[T7,K0] - u[T9,K0] <= 15
+ c32[K0,T7,T10]: 16 x[T7,T10,K0] + u[T7,K0] - u[T10,K0] <= 15
+ c32[K0,T7,T11]: 16 x[T7,T11,K0] + u[T7,K0] - u[T11,K0] <= 15
+ c32[K0,T7,D0]: 16 x[T7,D0,K0] + u[T7,K0] - u[D0,K0] <= 15
+ c32[K0,T7,D1]: 16 x[T7,D1,K0] + u[T7,K0] - u[D1,K0] <= 15
+ c32[K0,T7,D2]: 16 x[T7,D2,K0] + u[T7,K0] - u[D2,K0] <= 15
+ c32[K0,T7,E0]: 16 x[T7,E0,K0] + u[T7,K0] - u[E0,K0] <= 15
+ c32[K0,T8,T0]: 16 x[T8,T0,K0] - u[T0,K0] + u[T8,K0] <= 15
+ c32[K0,T8,T1]: 16 x[T8,T1,K0] - u[T1,K0] + u[T8,K0] <= 15
+ c32[K0,T8,T2]: 16 x[T8,T2,K0] - u[T2,K0] + u[T8,K0] <= 15
+ c32[K0,T8,T3]: 16 x[T8,T3,K0] - u[T3,K0] + u[T8,K0] <= 15
+ c32[K0,T8,T4]: 16 x[T8,T4,K0] - u[T4,K0] + u[T8,K0] <= 15
+ c32[K0,T8,T5]: 16 x[T8,T5,K0] - u[T5,K0] + u[T8,K0] <= 15
+ c32[K0,T8,T6]: 16 x[T8,T6,K0] - u[T6,K0] + u[T8,K0] <= 15
+ c32[K0,T8,T7]: 16 x[T8,T7,K0] - u[T7,K0] + u[T8,K0] <= 15
+ c32[K0,T8,T9]: 16 x[T8,T9,K0] + u[T8,K0] - u[T9,K0] <= 15
+ c32[K0,T8,T10]: 16 x[T8,T10,K0] + u[T8,K0] - u[T10,K0] <= 15
+ c32[K0,T8,T11]: 16 x[T8,T11,K0] + u[T8,K0] - u[T11,K0] <= 15
+ c32[K0,T8,D0]: 16 x[T8,D0,K0] + u[T8,K0] - u[D0,K0] <= 15
+ c32[K0,T8,D1]: 16 x[T8,D1,K0] + u[T8,K0] - u[D1,K0] <= 15
+ c32[K0,T8,D2]: 16 x[T8,D2,K0] + u[T8,K0] - u[D2,K0] <= 15
+ c32[K0,T8,E0]: 16 x[T8,E0,K0] + u[T8,K0] - u[E0,K0] <= 15
+ c32[K0,T9,T0]: 16 x[T9,T0,K0] - u[T0,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T1]: 16 x[T9,T1,K0] - u[T1,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T2]: 16 x[T9,T2,K0] - u[T2,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T3]: 16 x[T9,T3,K0] - u[T3,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T4]: 16 x[T9,T4,K0] - u[T4,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T5]: 16 x[T9,T5,K0] - u[T5,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T6]: 16 x[T9,T6,K0] - u[T6,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T7]: 16 x[T9,T7,K0] - u[T7,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T8]: 16 x[T9,T8,K0] - u[T8,K0] + u[T9,K0] <= 15
+ c32[K0,T9,T10]: 16 x[T9,T10,K0] + u[T9,K0] - u[T10,K0] <= 15
+ c32[K0,T9,T11]: 16 x[T9,T11,K0] + u[T9,K0] - u[T11,K0] <= 15
+ c32[K0,T9,D0]: 16 x[T9,D0,K0] + u[T9,K0] - u[D0,K0] <= 15
+ c32[K0,T9,D1]: 16 x[T9,D1,K0] + u[T9,K0] - u[D1,K0] <= 15
+ c32[K0,T9,D2]: 16 x[T9,D2,K0] + u[T9,K0] - u[D2,K0] <= 15
+ c32[K0,T9,E0]: 16 x[T9,E0,K0] + u[T9,K0] - u[E0,K0] <= 15
+ c32[K0,T10,T0]: 16 x[T10,T0,K0] - u[T0,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T1]: 16 x[T10,T1,K0] - u[T1,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T2]: 16 x[T10,T2,K0] - u[T2,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T3]: 16 x[T10,T3,K0] - u[T3,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T4]: 16 x[T10,T4,K0] - u[T4,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T5]: 16 x[T10,T5,K0] - u[T5,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T6]: 16 x[T10,T6,K0] - u[T6,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T7]: 16 x[T10,T7,K0] - u[T7,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T8]: 16 x[T10,T8,K0] - u[T8,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T9]: 16 x[T10,T9,K0] - u[T9,K0] + u[T10,K0] <= 15
+ c32[K0,T10,T11]: 16 x[T10,T11,K0] + u[T10,K0] - u[T11,K0] <= 15
+ c32[K0,T10,D0]: 16 x[T10,D0,K0] + u[T10,K0] - u[D0,K0] <= 15
+ c32[K0,T10,D1]: 16 x[T10,D1,K0] + u[T10,K0] - u[D1,K0] <= 15
+ c32[K0,T10,D2]: 16 x[T10,D2,K0] + u[T10,K0] - u[D2,K0] <= 15
+ c32[K0,T10,E0]: 16 x[T10,E0,K0] + u[T10,K0] - u[E0,K0] <= 15
+ c32[K0,T11,T0]: 16 x[T11,T0,K0] - u[T0,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T1]: 16 x[T11,T1,K0] - u[T1,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T2]: 16 x[T11,T2,K0] - u[T2,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T3]: 16 x[T11,T3,K0] - u[T3,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T4]: 16 x[T11,T4,K0] - u[T4,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T5]: 16 x[T11,T5,K0] - u[T5,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T6]: 16 x[T11,T6,K0] - u[T6,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T7]: 16 x[T11,T7,K0] - u[T7,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T8]: 16 x[T11,T8,K0] - u[T8,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T9]: 16 x[T11,T9,K0] - u[T9,K0] + u[T11,K0] <= 15
+ c32[K0,T11,T10]: 16 x[T11,T10,K0] - u[T10,K0] + u[T11,K0] <= 15
+ c32[K0,T11,D0]: 16 x[T11,D0,K0] + u[T11,K0] - u[D0,K0] <= 15
+ c32[K0,T11,D1]: 16 x[T11,D1,K0] + u[T11,K0] - u[D1,K0] <= 15
+ c32[K0,T11,D2]: 16 x[T11,D2,K0] + u[T11,K0] - u[D2,K0] <= 15
+ c32[K0,T11,E0]: 16 x[T11,E0,K0] + u[T11,K0] - u[E0,K0] <= 15
+ c32[K0,D0,T0]: 16 x[D0,T0,K0] - u[T0,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T1]: 16 x[D0,T1,K0] - u[T1,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T2]: 16 x[D0,T2,K0] - u[T2,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T3]: 16 x[D0,T3,K0] - u[T3,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T4]: 16 x[D0,T4,K0] - u[T4,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T5]: 16 x[D0,T5,K0] - u[T5,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T6]: 16 x[D0,T6,K0] - u[T6,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T7]: 16 x[D0,T7,K0] - u[T7,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T8]: 16 x[D0,T8,K0] - u[T8,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T9]: 16 x[D0,T9,K0] - u[T9,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T10]: 16 x[D0,T10,K0] - u[T10,K0] + u[D0,K0] <= 15
+ c32[K0,D0,T11]: 16 x[D0,T11,K0] - u[T11,K0] + u[D0,K0] <= 15
+ c32[K0,D0,D1]: 16 x[D0,D1,K0] + u[D0,K0] - u[D1,K0] <= 15
+ c32[K0,D0,D2]: 16 x[D0,D2,K0] + u[D0,K0] - u[D2,K0] <= 15
+ c32[K0,D0,E0]: 16 x[D0,E0,K0] + u[D0,K0] - u[E0,K0] <= 15
+ c32[K0,D1,T0]: 16 x[D1,T0,K0] - u[T0,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T1]: 16 x[D1,T1,K0] - u[T1,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T2]: 16 x[D1,T2,K0] - u[T2,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T3]: 16 x[D1,T3,K0] - u[T3,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T4]: 16 x[D1,T4,K0] - u[T4,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T5]: 16 x[D1,T5,K0] - u[T5,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T6]: 16 x[D1,T6,K0] - u[T6,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T7]: 16 x[D1,T7,K0] - u[T7,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T8]: 16 x[D1,T8,K0] - u[T8,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T9]: 16 x[D1,T9,K0] - u[T9,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T10]: 16 x[D1,T10,K0] - u[T10,K0] + u[D1,K0] <= 15
+ c32[K0,D1,T11]: 16 x[D1,T11,K0] - u[T11,K0] + u[D1,K0] <= 15
+ c32[K0,D1,D0]: 16 x[D1,D0,K0] - u[D0,K0] + u[D1,K0] <= 15
+ c32[K0,D1,D2]: 16 x[D1,D2,K0] + u[D1,K0] - u[D2,K0] <= 15
+ c32[K0,D1,E0]: 16 x[D1,E0,K0] + u[D1,K0] - u[E0,K0] <= 15
+ c32[K0,D2,T0]: 16 x[D2,T0,K0] - u[T0,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T1]: 16 x[D2,T1,K0] - u[T1,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T2]: 16 x[D2,T2,K0] - u[T2,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T3]: 16 x[D2,T3,K0] - u[T3,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T4]: 16 x[D2,T4,K0] - u[T4,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T5]: 16 x[D2,T5,K0] - u[T5,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T6]: 16 x[D2,T6,K0] - u[T6,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T7]: 16 x[D2,T7,K0] - u[T7,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T8]: 16 x[D2,T8,K0] - u[T8,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T9]: 16 x[D2,T9,K0] - u[T9,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T10]: 16 x[D2,T10,K0] - u[T10,K0] + u[D2,K0] <= 15
+ c32[K0,D2,T11]: 16 x[D2,T11,K0] - u[T11,K0] + u[D2,K0] <= 15
+ c32[K0,D2,D0]: 16 x[D2,D0,K0] - u[D0,K0] + u[D2,K0] <= 15
+ c32[K0,D2,D1]: 16 x[D2,D1,K0] - u[D1,K0] + u[D2,K0] <= 15
+ c32[K0,D2,E0]: 16 x[D2,E0,K0] + u[D2,K0] - u[E0,K0] <= 15
+ c32[K0,E0,T0]: 16 x[E0,T0,K0] - u[T0,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T1]: 16 x[E0,T1,K0] - u[T1,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T2]: 16 x[E0,T2,K0] - u[T2,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T3]: 16 x[E0,T3,K0] - u[T3,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T4]: 16 x[E0,T4,K0] - u[T4,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T5]: 16 x[E0,T5,K0] - u[T5,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T6]: 16 x[E0,T6,K0] - u[T6,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T7]: 16 x[E0,T7,K0] - u[T7,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T8]: 16 x[E0,T8,K0] - u[T8,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T9]: 16 x[E0,T9,K0] - u[T9,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T10]: 16 x[E0,T10,K0] - u[T10,K0] + u[E0,K0] <= 15
+ c32[K0,E0,T11]: 16 x[E0,T11,K0] - u[T11,K0] + u[E0,K0] <= 15
+ c32[K0,E0,D0]: 16 x[E0,D0,K0] - u[D0,K0] + u[E0,K0] <= 15
+ c32[K0,E0,D1]: 16 x[E0,D1,K0] - u[D1,K0] + u[E0,K0] <= 15
+ c32[K0,E0,D2]: 16 x[E0,D2,K0] - u[D2,K0] + u[E0,K0] <= 15
+ c32[K1,T0,T1]: 16 x[T0,T1,K1] + u[T0,K1] - u[T1,K1] <= 15
+ c32[K1,T0,T2]: 16 x[T0,T2,K1] + u[T0,K1] - u[T2,K1] <= 15
+ c32[K1,T0,T3]: 16 x[T0,T3,K1] + u[T0,K1] - u[T3,K1] <= 15
+ c32[K1,T0,T4]: 16 x[T0,T4,K1] + u[T0,K1] - u[T4,K1] <= 15
+ c32[K1,T0,T5]: 16 x[T0,T5,K1] + u[T0,K1] - u[T5,K1] <= 15
+ c32[K1,T0,T6]: 16 x[T0,T6,K1] + u[T0,K1] - u[T6,K1] <= 15
+ c32[K1,T0,T7]: 16 x[T0,T7,K1] + u[T0,K1] - u[T7,K1] <= 15
+ c32[K1,T0,T8]: 16 x[T0,T8,K1] + u[T0,K1] - u[T8,K1] <= 15
+ c32[K1,T0,T9]: 16 x[T0,T9,K1] + u[T0,K1] - u[T9,K1] <= 15
+ c32[K1,T0,T10]: 16 x[T0,T10,K1] + u[T0,K1] - u[T10,K1] <= 15
+ c32[K1,T0,T11]: 16 x[T0,T11,K1] + u[T0,K1] - u[T11,K1] <= 15
+ c32[K1,T0,D0]: 16 x[T0,D0,K1] + u[T0,K1] - u[D0,K1] <= 15
+ c32[K1,T0,D1]: 16 x[T0,D1,K1] + u[T0,K1] - u[D1,K1] <= 15
+ c32[K1,T0,D2]: 16 x[T0,D2,K1] + u[T0,K1] - u[D2,K1] <= 15
+ c32[K1,T0,E0]: 16 x[T0,E0,K1] + u[T0,K1] - u[E0,K1] <= 15
+ c32[K1,T1,T0]: 16 x[T1,T0,K1] - u[T0,K1] + u[T1,K1] <= 15
+ c32[K1,T1,T2]: 16 x[T1,T2,K1] + u[T1,K1] - u[T2,K1] <= 15
+ c32[K1,T1,T3]: 16 x[T1,T3,K1] + u[T1,K1] - u[T3,K1] <= 15
+ c32[K1,T1,T4]: 16 x[T1,T4,K1] + u[T1,K1] - u[T4,K1] <= 15
+ c32[K1,T1,T5]: 16 x[T1,T5,K1] + u[T1,K1] - u[T5,K1] <= 15
+ c32[K1,T1,T6]: 16 x[T1,T6,K1] + u[T1,K1] - u[T6,K1] <= 15
+ c32[K1,T1,T7]: 16 x[T1,T7,K1] + u[T1,K1] - u[T7,K1] <= 15
+ c32[K1,T1,T8]: 16 x[T1,T8,K1] + u[T1,K1] - u[T8,K1] <= 15
+ c32[K1,T1,T9]: 16 x[T1,T9,K1] + u[T1,K1] - u[T9,K1] <= 15
+ c32[K1,T1,T10]: 16 x[T1,T10,K1] + u[T1,K1] - u[T10,K1] <= 15
+ c32[K1,T1,T11]: 16 x[T1,T11,K1] + u[T1,K1] - u[T11,K1] <= 15
+ c32[K1,T1,D0]: 16 x[T1,D0,K1] + u[T1,K1] - u[D0,K1] <= 15
+ c32[K1,T1,D1]: 16 x[T1,D1,K1] + u[T1,K1] - u[D1,K1] <= 15
+ c32[K1,T1,D2]: 16 x[T1,D2,K1] + u[T1,K1] - u[D2,K1] <= 15
+ c32[K1,T1,E0]: 16 x[T1,E0,K1] + u[T1,K1] - u[E0,K1] <= 15
+ c32[K1,T2,T0]: 16 x[T2,T0,K1] - u[T0,K1] + u[T2,K1] <= 15
+ c32[K1,T2,T1]: 16 x[T2,T1,K1] - u[T1,K1] + u[T2,K1] <= 15
+ c32[K1,T2,T3]: 16 x[T2,T3,K1] + u[T2,K1] - u[T3,K1] <= 15
+ c32[K1,T2,T4]: 16 x[T2,T4,K1] + u[T2,K1] - u[T4,K1] <= 15
+ c32[K1,T2,T5]: 16 x[T2,T5,K1] + u[T2,K1] - u[T5,K1] <= 15
+ c32[K1,T2,T6]: 16 x[T2,T6,K1] + u[T2,K1] - u[T6,K1] <= 15
+ c32[K1,T2,T7]: 16 x[T2,T7,K1] + u[T2,K1] - u[T7,K1] <= 15
+ c32[K1,T2,T8]: 16 x[T2,T8,K1] + u[T2,K1] - u[T8,K1] <= 15
+ c32[K1,T2,T9]: 16 x[T2,T9,K1] + u[T2,K1] - u[T9,K1] <= 15
+ c32[K1,T2,T10]: 16 x[T2,T10,K1] + u[T2,K1] - u[T10,K1] <= 15
+ c32[K1,T2,T11]: 16 x[T2,T11,K1] + u[T2,K1] - u[T11,K1] <= 15
+ c32[K1,T2,D0]: 16 x[T2,D0,K1] + u[T2,K1] - u[D0,K1] <= 15
+ c32[K1,T2,D1]: 16 x[T2,D1,K1] + u[T2,K1] - u[D1,K1] <= 15
+ c32[K1,T2,D2]: 16 x[T2,D2,K1] + u[T2,K1] - u[D2,K1] <= 15
+ c32[K1,T2,E0]: 16 x[T2,E0,K1] + u[T2,K1] - u[E0,K1] <= 15
+ c32[K1,T3,T0]: 16 x[T3,T0,K1] - u[T0,K1] + u[T3,K1] <= 15
+ c32[K1,T3,T1]: 16 x[T3,T1,K1] - u[T1,K1] + u[T3,K1] <= 15
+ c32[K1,T3,T2]: 16 x[T3,T2,K1] - u[T2,K1] + u[T3,K1] <= 15
+ c32[K1,T3,T4]: 16 x[T3,T4,K1] + u[T3,K1] - u[T4,K1] <= 15
+ c32[K1,T3,T5]: 16 x[T3,T5,K1] + u[T3,K1] - u[T5,K1] <= 15
+ c32[K1,T3,T6]: 16 x[T3,T6,K1] + u[T3,K1] - u[T6,K1] <= 15
+ c32[K1,T3,T7]: 16 x[T3,T7,K1] + u[T3,K1] - u[T7,K1] <= 15
+ c32[K1,T3,T8]: 16 x[T3,T8,K1] + u[T3,K1] - u[T8,K1] <= 15
+ c32[K1,T3,T9]: 16 x[T3,T9,K1] + u[T3,K1] - u[T9,K1] <= 15
+ c32[K1,T3,T10]: 16 x[T3,T10,K1] + u[T3,K1] - u[T10,K1] <= 15
+ c32[K1,T3,T11]: 16 x[T3,T11,K1] + u[T3,K1] - u[T11,K1] <= 15
+ c32[K1,T3,D0]: 16 x[T3,D0,K1] + u[T3,K1] - u[D0,K1] <= 15
+ c32[K1,T3,D1]: 16 x[T3,D1,K1] + u[T3,K1] - u[D1,K1] <= 15
+ c32[K1,T3,D2]: 16 x[T3,D2,K1] + u[T3,K1] - u[D2,K1] <= 15
+ c32[K1,T3,E0]: 16 x[T3,E0,K1] + u[T3,K1] - u[E0,K1] <= 15
+ c32[K1,T4,T0]: 16 x[T4,T0,K1] - u[T0,K1] + u[T4,K1] <= 15
+ c32[K1,T4,T1]: 16 x[T4,T1,K1] - u[T1,K1] + u[T4,K1] <= 15
+ c32[K1,T4,T2]: 16 x[T4,T2,K1] - u[T2,K1] + u[T4,K1] <= 15
+ c32[K1,T4,T3]: 16 x[T4,T3,K1] - u[T3,K1] + u[T4,K1] <= 15
+ c32[K1,T4,T5]: 16 x[T4,T5,K1] + u[T4,K1] - u[T5,K1] <= 15
+ c32[K1,T4,T6]: 16 x[T4,T6,K1] + u[T4,K1] - u[T6,K1] <= 15
+ c32[K1,T4,T7]: 16 x[T4,T7,K1] + u[T4,K1] - u[T7,K1] <= 15
+ c32[K1,T4,T8]: 16 x[T4,T8,K1] + u[T4,K1] - u[T8,K1] <= 15
+ c32[K1,T4,T9]: 16 x[T4,T9,K1] + u[T4,K1] - u[T9,K1] <= 15
+ c32[K1,T4,T10]: 16 x[T4,T10,K1] + u[T4,K1] - u[T10,K1] <= 15
+ c32[K1,T4,T11]: 16 x[T4,T11,K1] + u[T4,K1] - u[T11,K1] <= 15
+ c32[K1,T4,D0]: 16 x[T4,D0,K1] + u[T4,K1] - u[D0,K1] <= 15
+ c32[K1,T4,D1]: 16 x[T4,D1,K1] + u[T4,K1] - u[D1,K1] <= 15
+ c32[K1,T4,D2]: 16 x[T4,D2,K1] + u[T4,K1] - u[D2,K1] <= 15
+ c32[K1,T4,E0]: 16 x[T4,E0,K1] + u[T4,K1] - u[E0,K1] <= 15
+ c32[K1,T5,T0]: 16 x[T5,T0,K1] - u[T0,K1] + u[T5,K1] <= 15
+ c32[K1,T5,T1]: 16 x[T5,T1,K1] - u[T1,K1] + u[T5,K1] <= 15
+ c32[K1,T5,T2]: 16 x[T5,T2,K1] - u[T2,K1] + u[T5,K1] <= 15
+ c32[K1,T5,T3]: 16 x[T5,T3,K1] - u[T3,K1] + u[T5,K1] <= 15
+ c32[K1,T5,T4]: 16 x[T5,T4,K1] - u[T4,K1] + u[T5,K1] <= 15
+ c32[K1,T5,T6]: 16 x[T5,T6,K1] + u[T5,K1] - u[T6,K1] <= 15
+ c32[K1,T5,T7]: 16 x[T5,T7,K1] + u[T5,K1] - u[T7,K1] <= 15
+ c32[K1,T5,T8]: 16 x[T5,T8,K1] + u[T5,K1] - u[T8,K1] <= 15
+ c32[K1,T5,T9]: 16 x[T5,T9,K1] + u[T5,K1] - u[T9,K1] <= 15
+ c32[K1,T5,T10]: 16 x[T5,T10,K1] + u[T5,K1] - u[T10,K1] <= 15
+ c32[K1,T5,T11]: 16 x[T5,T11,K1] + u[T5,K1] - u[T11,K1] <= 15
+ c32[K1,T5,D0]: 16 x[T5,D0,K1] + u[T5,K1] - u[D0,K1] <= 15
+ c32[K1,T5,D1]: 16 x[T5,D1,K1] + u[T5,K1] - u[D1,K1] <= 15
+ c32[K1,T5,D2]: 16 x[T5,D2,K1] + u[T5,K1] - u[D2,K1] <= 15
+ c32[K1,T5,E0]: 16 x[T5,E0,K1] + u[T5,K1] - u[E0,K1] <= 15
+ c32[K1,T6,T0]: 16 x[T6,T0,K1] - u[T0,K1] + u[T6,K1] <= 15
+ c32[K1,T6,T1]: 16 x[T6,T1,K1] - u[T1,K1] + u[T6,K1] <= 15
+ c32[K1,T6,T2]: 16 x[T6,T2,K1] - u[T2,K1] + u[T6,K1] <= 15
+ c32[K1,T6,T3]: 16 x[T6,T3,K1] - u[T3,K1] + u[T6,K1] <= 15
+ c32[K1,T6,T4]: 16 x[T6,T4,K1] - u[T4,K1] + u[T6,K1] <= 15
+ c32[K1,T6,T5]: 16 x[T6,T5,K1] - u[T5,K1] + u[T6,K1] <= 15
+ c32[K1,T6,T7]: 16 x[T6,T7,K1] + u[T6,K1] - u[T7,K1] <= 15
+ c32[K1,T6,T8]: 16 x[T6,T8,K1] + u[T6,K1] - u[T8,K1] <= 15
+ c32[K1,T6,T9]: 16 x[T6,T9,K1] + u[T6,K1] - u[T9,K1] <= 15
+ c32[K1,T6,T10]: 16 x[T6,T10,K1] + u[T6,K1] - u[T10,K1] <= 15
+ c32[K1,T6,T11]: 16 x[T6,T11,K1] + u[T6,K1] - u[T11,K1] <= 15
+ c32[K1,T6,D0]: 16 x[T6,D0,K1] + u[T6,K1] - u[D0,K1] <= 15
+ c32[K1,T6,D1]: 16 x[T6,D1,K1] + u[T6,K1] - u[D1,K1] <= 15
+ c32[K1,T6,D2]: 16 x[T6,D2,K1] + u[T6,K1] - u[D2,K1] <= 15
+ c32[K1,T6,E0]: 16 x[T6,E0,K1] + u[T6,K1] - u[E0,K1] <= 15
+ c32[K1,T7,T0]: 16 x[T7,T0,K1] - u[T0,K1] + u[T7,K1] <= 15
+ c32[K1,T7,T1]: 16 x[T7,T1,K1] - u[T1,K1] + u[T7,K1] <= 15
+ c32[K1,T7,T2]: 16 x[T7,T2,K1] - u[T2,K1] + u[T7,K1] <= 15
+ c32[K1,T7,T3]: 16 x[T7,T3,K1] - u[T3,K1] + u[T7,K1] <= 15
+ c32[K1,T7,T4]: 16 x[T7,T4,K1] - u[T4,K1] + u[T7,K1] <= 15
+ c32[K1,T7,T5]: 16 x[T7,T5,K1] - u[T5,K1] + u[T7,K1] <= 15
+ c32[K1,T7,T6]: 16 x[T7,T6,K1] - u[T6,K1] + u[T7,K1] <= 15
+ c32[K1,T7,T8]: 16 x[T7,T8,K1] + u[T7,K1] - u[T8,K1] <= 15
+ c32[K1,T7,T9]: 16 x[T7,T9,K1] + u[T7,K1] - u[T9,K1] <= 15
+ c32[K1,T7,T10]: 16 x[T7,T10,K1] + u[T7,K1] - u[T10,K1] <= 15
+ c32[K1,T7,T11]: 16 x[T7,T11,K1] + u[T7,K1] - u[T11,K1] <= 15
+ c32[K1,T7,D0]: 16 x[T7,D0,K1] + u[T7,K1] - u[D0,K1] <= 15
+ c32[K1,T7,D1]: 16 x[T7,D1,K1] + u[T7,K1] - u[D1,K1] <= 15
+ c32[K1,T7,D2]: 16 x[T7,D2,K1] + u[T7,K1] - u[D2,K1] <= 15
+ c32[K1,T7,E0]: 16 x[T7,E0,K1] + u[T7,K1] - u[E0,K1] <= 15
+ c32[K1,T8,T0]: 16 x[T8,T0,K1] - u[T0,K1] + u[T8,K1] <= 15
+ c32[K1,T8,T1]: 16 x[T8,T1,K1] - u[T1,K1] + u[T8,K1] <= 15
+ c32[K1,T8,T2]: 16 x[T8,T2,K1] - u[T2,K1] + u[T8,K1] <= 15
+ c32[K1,T8,T3]: 16 x[T8,T3,K1] - u[T3,K1] + u[T8,K1] <= 15
+ c32[K1,T8,T4]: 16 x[T8,T4,K1] - u[T4,K1] + u[T8,K1] <= 15
+ c32[K1,T8,T5]: 16 x[T8,T5,K1] - u[T5,K1] + u[T8,K1] <= 15
+ c32[K1,T8,T6]: 16 x[T8,T6,K1] - u[T6,K1] + u[T8,K1] <= 15
+ c32[K1,T8,T7]: 16 x[T8,T7,K1] - u[T7,K1] + u[T8,K1] <= 15
+ c32[K1,T8,T9]: 16 x[T8,T9,K1] + u[T8,K1] - u[T9,K1] <= 15
+ c32[K1,T8,T10]: 16 x[T8,T10,K1] + u[T8,K1] - u[T10,K1] <= 15
+ c32[K1,T8,T11]: 16 x[T8,T11,K1] + u[T8,K1] - u[T11,K1] <= 15
+ c32[K1,T8,D0]: 16 x[T8,D0,K1] + u[T8,K1] - u[D0,K1] <= 15
+ c32[K1,T8,D1]: 16 x[T8,D1,K1] + u[T8,K1] - u[D1,K1] <= 15
+ c32[K1,T8,D2]: 16 x[T8,D2,K1] + u[T8,K1] - u[D2,K1] <= 15
+ c32[K1,T8,E0]: 16 x[T8,E0,K1] + u[T8,K1] - u[E0,K1] <= 15
+ c32[K1,T9,T0]: 16 x[T9,T0,K1] - u[T0,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T1]: 16 x[T9,T1,K1] - u[T1,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T2]: 16 x[T9,T2,K1] - u[T2,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T3]: 16 x[T9,T3,K1] - u[T3,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T4]: 16 x[T9,T4,K1] - u[T4,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T5]: 16 x[T9,T5,K1] - u[T5,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T6]: 16 x[T9,T6,K1] - u[T6,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T7]: 16 x[T9,T7,K1] - u[T7,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T8]: 16 x[T9,T8,K1] - u[T8,K1] + u[T9,K1] <= 15
+ c32[K1,T9,T10]: 16 x[T9,T10,K1] + u[T9,K1] - u[T10,K1] <= 15
+ c32[K1,T9,T11]: 16 x[T9,T11,K1] + u[T9,K1] - u[T11,K1] <= 15
+ c32[K1,T9,D0]: 16 x[T9,D0,K1] + u[T9,K1] - u[D0,K1] <= 15
+ c32[K1,T9,D1]: 16 x[T9,D1,K1] + u[T9,K1] - u[D1,K1] <= 15
+ c32[K1,T9,D2]: 16 x[T9,D2,K1] + u[T9,K1] - u[D2,K1] <= 15
+ c32[K1,T9,E0]: 16 x[T9,E0,K1] + u[T9,K1] - u[E0,K1] <= 15
+ c32[K1,T10,T0]: 16 x[T10,T0,K1] - u[T0,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T1]: 16 x[T10,T1,K1] - u[T1,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T2]: 16 x[T10,T2,K1] - u[T2,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T3]: 16 x[T10,T3,K1] - u[T3,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T4]: 16 x[T10,T4,K1] - u[T4,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T5]: 16 x[T10,T5,K1] - u[T5,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T6]: 16 x[T10,T6,K1] - u[T6,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T7]: 16 x[T10,T7,K1] - u[T7,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T8]: 16 x[T10,T8,K1] - u[T8,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T9]: 16 x[T10,T9,K1] - u[T9,K1] + u[T10,K1] <= 15
+ c32[K1,T10,T11]: 16 x[T10,T11,K1] + u[T10,K1] - u[T11,K1] <= 15
+ c32[K1,T10,D0]: 16 x[T10,D0,K1] + u[T10,K1] - u[D0,K1] <= 15
+ c32[K1,T10,D1]: 16 x[T10,D1,K1] + u[T10,K1] - u[D1,K1] <= 15
+ c32[K1,T10,D2]: 16 x[T10,D2,K1] + u[T10,K1] - u[D2,K1] <= 15
+ c32[K1,T10,E0]: 16 x[T10,E0,K1] + u[T10,K1] - u[E0,K1] <= 15
+ c32[K1,T11,T0]: 16 x[T11,T0,K1] - u[T0,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T1]: 16 x[T11,T1,K1] - u[T1,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T2]: 16 x[T11,T2,K1] - u[T2,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T3]: 16 x[T11,T3,K1] - u[T3,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T4]: 16 x[T11,T4,K1] - u[T4,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T5]: 16 x[T11,T5,K1] - u[T5,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T6]: 16 x[T11,T6,K1] - u[T6,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T7]: 16 x[T11,T7,K1] - u[T7,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T8]: 16 x[T11,T8,K1] - u[T8,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T9]: 16 x[T11,T9,K1] - u[T9,K1] + u[T11,K1] <= 15
+ c32[K1,T11,T10]: 16 x[T11,T10,K1] - u[T10,K1] + u[T11,K1] <= 15
+ c32[K1,T11,D0]: 16 x[T11,D0,K1] + u[T11,K1] - u[D0,K1] <= 15
+ c32[K1,T11,D1]: 16 x[T11,D1,K1] + u[T11,K1] - u[D1,K1] <= 15
+ c32[K1,T11,D2]: 16 x[T11,D2,K1] + u[T11,K1] - u[D2,K1] <= 15
+ c32[K1,T11,E0]: 16 x[T11,E0,K1] + u[T11,K1] - u[E0,K1] <= 15
+ c32[K1,D0,T0]: 16 x[D0,T0,K1] - u[T0,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T1]: 16 x[D0,T1,K1] - u[T1,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T2]: 16 x[D0,T2,K1] - u[T2,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T3]: 16 x[D0,T3,K1] - u[T3,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T4]: 16 x[D0,T4,K1] - u[T4,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T5]: 16 x[D0,T5,K1] - u[T5,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T6]: 16 x[D0,T6,K1] - u[T6,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T7]: 16 x[D0,T7,K1] - u[T7,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T8]: 16 x[D0,T8,K1] - u[T8,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T9]: 16 x[D0,T9,K1] - u[T9,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T10]: 16 x[D0,T10,K1] - u[T10,K1] + u[D0,K1] <= 15
+ c32[K1,D0,T11]: 16 x[D0,T11,K1] - u[T11,K1] + u[D0,K1] <= 15
+ c32[K1,D0,D1]: 16 x[D0,D1,K1] + u[D0,K1] - u[D1,K1] <= 15
+ c32[K1,D0,D2]: 16 x[D0,D2,K1] + u[D0,K1] - u[D2,K1] <= 15
+ c32[K1,D0,E0]: 16 x[D0,E0,K1] + u[D0,K1] - u[E0,K1] <= 15
+ c32[K1,D1,T0]: 16 x[D1,T0,K1] - u[T0,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T1]: 16 x[D1,T1,K1] - u[T1,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T2]: 16 x[D1,T2,K1] - u[T2,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T3]: 16 x[D1,T3,K1] - u[T3,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T4]: 16 x[D1,T4,K1] - u[T4,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T5]: 16 x[D1,T5,K1] - u[T5,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T6]: 16 x[D1,T6,K1] - u[T6,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T7]: 16 x[D1,T7,K1] - u[T7,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T8]: 16 x[D1,T8,K1] - u[T8,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T9]: 16 x[D1,T9,K1] - u[T9,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T10]: 16 x[D1,T10,K1] - u[T10,K1] + u[D1,K1] <= 15
+ c32[K1,D1,T11]: 16 x[D1,T11,K1] - u[T11,K1] + u[D1,K1] <= 15
+ c32[K1,D1,D0]: 16 x[D1,D0,K1] - u[D0,K1] + u[D1,K1] <= 15
+ c32[K1,D1,D2]: 16 x[D1,D2,K1] + u[D1,K1] - u[D2,K1] <= 15
+ c32[K1,D1,E0]: 16 x[D1,E0,K1] + u[D1,K1] - u[E0,K1] <= 15
+ c32[K1,D2,T0]: 16 x[D2,T0,K1] - u[T0,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T1]: 16 x[D2,T1,K1] - u[T1,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T2]: 16 x[D2,T2,K1] - u[T2,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T3]: 16 x[D2,T3,K1] - u[T3,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T4]: 16 x[D2,T4,K1] - u[T4,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T5]: 16 x[D2,T5,K1] - u[T5,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T6]: 16 x[D2,T6,K1] - u[T6,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T7]: 16 x[D2,T7,K1] - u[T7,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T8]: 16 x[D2,T8,K1] - u[T8,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T9]: 16 x[D2,T9,K1] - u[T9,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T10]: 16 x[D2,T10,K1] - u[T10,K1] + u[D2,K1] <= 15
+ c32[K1,D2,T11]: 16 x[D2,T11,K1] - u[T11,K1] + u[D2,K1] <= 15
+ c32[K1,D2,D0]: 16 x[D2,D0,K1] - u[D0,K1] + u[D2,K1] <= 15
+ c32[K1,D2,D1]: 16 x[D2,D1,K1] - u[D1,K1] + u[D2,K1] <= 15
+ c32[K1,D2,E0]: 16 x[D2,E0,K1] + u[D2,K1] - u[E0,K1] <= 15
+ c32[K1,E0,T0]: 16 x[E0,T0,K1] - u[T0,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T1]: 16 x[E0,T1,K1] - u[T1,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T2]: 16 x[E0,T2,K1] - u[T2,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T3]: 16 x[E0,T3,K1] - u[T3,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T4]: 16 x[E0,T4,K1] - u[T4,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T5]: 16 x[E0,T5,K1] - u[T5,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T6]: 16 x[E0,T6,K1] - u[T6,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T7]: 16 x[E0,T7,K1] - u[T7,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T8]: 16 x[E0,T8,K1] - u[T8,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T9]: 16 x[E0,T9,K1] - u[T9,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T10]: 16 x[E0,T10,K1] - u[T10,K1] + u[E0,K1] <= 15
+ c32[K1,E0,T11]: 16 x[E0,T11,K1] - u[T11,K1] + u[E0,K1] <= 15
+ c32[K1,E0,D0]: 16 x[E0,D0,K1] - u[D0,K1] + u[E0,K1] <= 15
+ c32[K1,E0,D1]: 16 x[E0,D1,K1] - u[D1,K1] + u[E0,K1] <= 15
+ c32[K1,E0,D2]: 16 x[E0,D2,K1] - u[D2,K1] + u[E0,K1] <= 15
+ c33[K0,T0]: u[T0,K0] <= 17
+ c33[K0,T1]: u[T1,K0] <= 17
+ c33[K0,T2]: u[T2,K0] <= 17
+ c33[K0,T3]: u[T3,K0] <= 17
+ c33[K0,T4]: u[T4,K0] <= 17
+ c33[K0,T5]: u[T5,K0] <= 17
+ c33[K0,T6]: u[T6,K0] <= 17
+ c33[K0,T7]: u[T7,K0] <= 17
+ c33[K0,T8]: u[T8,K0] <= 17
+ c33[K0,T9]: u[T9,K0] <= 17
+ c33[K0,T10]: u[T10,K0] <= 17
+ c33[K0,T11]: u[T11,K0] <= 17
+ c33[K0,D0]: u[D0,K0] <= 17
+ c33[K0,D1]: u[D1,K0] <= 17
+ c33[K0,D2]: u[D2,K0] <= 17
+ c33[K0,E0]: u[E0,K0] <= 17
+ c33[K1,T0]: u[T0,K1] <= 17
+ c33[K1,T1]: u[T1,K1] <= 17
+ c33[K1,T2]: u[T2,K1] <= 17
+ c33[K1,T3]: u[T3,K1] <= 17
+ c33[K1,T4]: u[T4,K1] <= 17
+ c33[K1,T5]: u[T5,K1] <= 17
+ c33[K1,T6]: u[T6,K1] <= 17
+ c33[K1,T7]: u[T7,K1] <= 17
+ c33[K1,T8]: u[T8,K1] <= 17
+ c33[K1,T9]: u[T9,K1] <= 17
+ c33[K1,T10]: u[T10,K1] <= 17
+ c33[K1,T11]: u[T11,K1] <= 17
+ c33[K1,D0]: u[D0,K1] <= 17
+ c33[K1,D1]: u[D1,K1] <= 17
+ c33[K1,D2]: u[D2,K1] <= 17
+ c33[K1,E0]: u[E0,K1] <= 17
  c15[T0,T1,K0]: 1e+06 x[T0,T1,K0] - r[T0] + r[T1] <= 999925.0807762834
  c15[T0,T1,K1]: 1e+06 x[T0,T1,K1] - r[T0] + r[T1] <= 999925.0807762834
  c15[T0,T2,K0]: 1e+06 x[T0,T2,K0] - r[T0] + r[T2] <= 999956.6335595351
@@ -2602,6 +2051,8 @@ Subject To
  c18[D0,T10,K1]: 1e+06 x[D0,T10,K1] + r[T10] <= 1.0001101702945922e+06
  c18[D0,T11,K0]: 1e+06 x[D0,T11,K0] + r[T11] <= 1.0001021153798907e+06
  c18[D0,T11,K1]: 1e+06 x[D0,T11,K1] + r[T11] <= 1.0001021153798907e+06
+ c18[D0,E0,K0]: 1e+06 x[D0,E0,K0] + r[E0] <= 1.000125e+06
+ c18[D0,E0,K1]: 1e+06 x[D0,E0,K1] + r[E0] <= 1.000125e+06
  c18[D1,T0,K0]: 1e+06 x[D1,T0,K0] + r[T0] <= 1.0000941706726542e+06
  c18[D1,T0,K1]: 1e+06 x[D1,T0,K1] + r[T0] <= 1.0000941706726542e+06
  c18[D1,T1,K0]: 1e+06 x[D1,T1,K0] + r[T1] <= 1.0000360838009788e+06
@@ -2626,6 +2077,8 @@ Subject To
  c18[D1,T10,K1]: 1e+06 x[D1,T10,K1] + r[T10] <= 1.0000659977197074e+06
  c18[D1,T11,K0]: 1e+06 x[D1,T11,K0] + r[T11] <= 1.0000651784934325e+06
  c18[D1,T11,K1]: 1e+06 x[D1,T11,K1] + r[T11] <= 1.0000651784934325e+06
+ c18[D1,E0,K0]: 1e+06 x[D1,E0,K0] + r[E0] <= 1.0000521176220393e+06
+ c18[D1,E0,K1]: 1e+06 x[D1,E0,K1] + r[E0] <= 1.0000521176220393e+06
  c18[D2,T0,K0]: 1e+06 x[D2,T0,K0] + r[T0] <= 1.0000711636147939e+06
  c18[D2,T0,K1]: 1e+06 x[D2,T0,K1] + r[T0] <= 1.0000711636147939e+06
  c18[D2,T1,K0]: 1e+06 x[D2,T1,K0] + r[T1] <= 1.0000943248707008e+06
@@ -2650,6 +2103,8 @@ Subject To
  c18[D2,T10,K1]: 1e+06 x[D2,T10,K1] + r[T10] <= 1.0000829204353073e+06
  c18[D2,T11,K0]: 1e+06 x[D2,T11,K0] + r[T11] <= 1.0001030049337065e+06
  c18[D2,T11,K1]: 1e+06 x[D2,T11,K1] + r[T11] <= 1.0001030049337065e+06
+ c18[D2,E0,K0]: 1e+06 x[D2,E0,K0] + r[E0] <= 1.0000880200655923e+06
+ c18[D2,E0,K1]: 1e+06 x[D2,E0,K1] + r[E0] <= 1.0000880200655923e+06
  c18[S0,T0,K0]: 1e+06 x[S0,T0,K0] + r[T0] <= 1.0000826917476519e+06
  c18[S0,T0,K1]: 1e+06 x[S0,T0,K1] + r[T0] <= 1.0000826917476519e+06
  c18[S0,T1,K0]: 1e+06 x[S0,T1,K0] + r[T1] <= 1.0000574359439602e+06
@@ -2674,6 +2129,8 @@ Subject To
  c18[S0,T10,K1]: 1e+06 x[S0,T10,K1] + r[T10] <= 1.0001101702945922e+06
  c18[S0,T11,K0]: 1e+06 x[S0,T11,K0] + r[T11] <= 1.0001021153798907e+06
  c18[S0,T11,K1]: 1e+06 x[S0,T11,K1] + r[T11] <= 1.0001021153798907e+06
+ c18[S0,E0,K0]: 1e+06 x[S0,E0,K0] + r[E0] <= 1.000125e+06
+ c18[S0,E0,K1]: 1e+06 x[S0,E0,K1] + r[E0] <= 1.000125e+06
  c17[D0,T0,K0]: - 1e+06 x[D0,T0,K0] + r[T0] >= -999917.3082523481
  c17[D0,T0,K1]: - 1e+06 x[D0,T0,K1] + r[T0] >= -999917.3082523481
  c17[D0,T1,K0]: - 1e+06 x[D0,T1,K0] + r[T1] >= -999942.5640560398
@@ -2698,6 +2155,8 @@ Subject To
  c17[D0,T10,K1]: - 1e+06 x[D0,T10,K1] + r[T10] >= -999889.8297054078
  c17[D0,T11,K0]: - 1e+06 x[D0,T11,K0] + r[T11] >= -999897.8846201093
  c17[D0,T11,K1]: - 1e+06 x[D0,T11,K1] + r[T11] >= -999897.8846201093
+ c17[D0,E0,K0]: - 1e+06 x[D0,E0,K0] + r[E0] >= -999875
+ c17[D0,E0,K1]: - 1e+06 x[D0,E0,K1] + r[E0] >= -999875
  c17[D1,T0,K0]: - 1e+06 x[D1,T0,K0] + r[T0] >= -999905.8293273458
  c17[D1,T0,K1]: - 1e+06 x[D1,T0,K1] + r[T0] >= -999905.8293273458
  c17[D1,T1,K0]: - 1e+06 x[D1,T1,K0] + r[T1] >= -999963.9161990212
@@ -2722,6 +2181,8 @@ Subject To
  c17[D1,T10,K1]: - 1e+06 x[D1,T10,K1] + r[T10] >= -999934.0022802926
  c17[D1,T11,K0]: - 1e+06 x[D1,T11,K0] + r[T11] >= -999934.8215065675
  c17[D1,T11,K1]: - 1e+06 x[D1,T11,K1] + r[T11] >= -999934.8215065675
+ c17[D1,E0,K0]: - 1e+06 x[D1,E0,K0] + r[E0] >= -999947.8823779607
+ c17[D1,E0,K1]: - 1e+06 x[D1,E0,K1] + r[E0] >= -999947.8823779607
  c17[D2,T0,K0]: - 1e+06 x[D2,T0,K0] + r[T0] >= -999928.8363852061
  c17[D2,T0,K1]: - 1e+06 x[D2,T0,K1] + r[T0] >= -999928.8363852061
  c17[D2,T1,K0]: - 1e+06 x[D2,T1,K0] + r[T1] >= -999905.6751292992
@@ -2746,6 +2207,8 @@ Subject To
  c17[D2,T10,K1]: - 1e+06 x[D2,T10,K1] + r[T10] >= -999917.0795646927
  c17[D2,T11,K0]: - 1e+06 x[D2,T11,K0] + r[T11] >= -999896.9950662935
  c17[D2,T11,K1]: - 1e+06 x[D2,T11,K1] + r[T11] >= -999896.9950662935
+ c17[D2,E0,K0]: - 1e+06 x[D2,E0,K0] + r[E0] >= -999911.9799344078
+ c17[D2,E0,K1]: - 1e+06 x[D2,E0,K1] + r[E0] >= -999911.9799344078
  c17[S0,T0,K0]: - 1e+06 x[S0,T0,K0] + r[T0] >= -999917.3082523481
  c17[S0,T0,K1]: - 1e+06 x[S0,T0,K1] + r[T0] >= -999917.3082523481
  c17[S0,T1,K0]: - 1e+06 x[S0,T1,K0] + r[T1] >= -999942.5640560398
@@ -2770,6 +2233,8 @@ Subject To
  c17[S0,T10,K1]: - 1e+06 x[S0,T10,K1] + r[T10] >= -999889.8297054078
  c17[S0,T11,K0]: - 1e+06 x[S0,T11,K0] + r[T11] >= -999897.8846201093
  c17[S0,T11,K1]: - 1e+06 x[S0,T11,K1] + r[T11] >= -999897.8846201093
+ c17[S0,E0,K0]: - 1e+06 x[S0,E0,K0] + r[E0] >= -999875
+ c17[S0,E0,K1]: - 1e+06 x[S0,E0,K1] + r[E0] >= -999875
  c19[T0,D0,K0]: - 1e+06 x[T0,D0,K0] + r[T0] >= -999957.6917476519
  c19[T0,D0,K1]: - 1e+06 x[T0,D0,K1] + r[T0] >= -999957.6917476519
  c19[T0,D1,K0]: - 1e+06 x[T0,D1,K0] + r[T0] >= -999969.1706726542
@@ -3741,6 +3206,7 @@ Bounds
  r[T9] <= 125
  r[T10] <= 125
  r[T11] <= 125
+ r[E0] <= 125
 Binaries
  y[T0] y[T1] y[T2] y[T3] y[T4] y[T5] y[T6] y[T7] y[T8] y[T9] y[T10] y[T11]
 Generals
@@ -3837,5 +3303,10 @@ Generals
  x[E0,T4,K1] x[E0,T5,K0] x[E0,T5,K1] x[E0,T6,K0] x[E0,T6,K1] x[E0,T7,K0]
  x[E0,T7,K1] x[E0,T8,K0] x[E0,T8,K1] x[E0,T9,K0] x[E0,T9,K1] x[E0,T10,K0]
  x[E0,T10,K1] x[E0,T11,K0] x[E0,T11,K1] x[E0,D0,K0] x[E0,D0,K1] x[E0,D1,K0]
- x[E0,D1,K1] x[E0,D2,K0] x[E0,D2,K1] x[E0,S0,K0] x[E0,S0,K1]
+ x[E0,D1,K1] x[E0,D2,K0] x[E0,D2,K1] x[E0,S0,K0] x[E0,S0,K1] u[T0,K0]
+ u[T0,K1] u[T1,K0] u[T1,K1] u[T2,K0] u[T2,K1] u[T3,K0] u[T3,K1] u[T4,K0]
+ u[T4,K1] u[T5,K0] u[T5,K1] u[T6,K0] u[T6,K1] u[T7,K0] u[T7,K1] u[T8,K0]
+ u[T8,K1] u[T9,K0] u[T9,K1] u[T10,K0] u[T10,K1] u[T11,K0] u[T11,K1]
+ u[D0,K0] u[D0,K1] u[D1,K0] u[D1,K1] u[D2,K0] u[D2,K1] u[S0,K0] u[S0,K1]
+ u[E0,K0] u[E0,K1]
 End
