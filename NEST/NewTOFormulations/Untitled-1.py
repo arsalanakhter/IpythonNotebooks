@@ -1,13 +1,7 @@
-#%% Change working directory from the workspace root to the ipynb file location. Turn this addition off with the DataScience.changeDirOnImportExport setting
-# ms-python.python added
-#import os
-#try:
-#	os.chdir(os.path.join(os.getcwd(),"..\\IpythonNotebooks\NEST\NewTOFormulations"))#
-#	print(os.getcwd())
-#except:
-#	pass
+# To add a new cell, type '#%%'
+# To add a new markdown cell, type '#%% [markdown]'
 #%% [markdown]
-# # TOBasicLazySubtourArcBasedFuel
+# # TOBasicNodeBasedSubtourNodeBasedFuel (Test Passed)
 
 #%%
 from gurobipy import *
@@ -19,14 +13,14 @@ import numpy as np
 #import plotly.plotly as py
 import plotly.offline as py
 import plotly.graph_objs as go
-#py.init_notebook_mode()
+py.init_notebook_mode()
 import networkx as nx
 import tarjan
-import maxflow
+
 
 #%%
-#thisSeed = 9129090036194241967
-thisSeed = 2031936499387895067
+thisSeed = 9129090036194241967
+#thisSeed = 2031936499387895067
 #thisSeed = rnd.randrange(sys.maxsize)
 rnd.seed(thisSeed)
 
@@ -45,7 +39,7 @@ rnd.seed(thisSeed)
 
 #%%
 noOfTasks = 12
-noOfDepots = 3
+noOfDepots = 2
 noOfRobots = 3
 K = [ "K"+str(i) for i in range(noOfRobots)]
 T = [ "T"+str(i) for i in range(noOfTasks)]
@@ -161,16 +155,16 @@ k_u = [(u,k) for u in N for k in K]
 # Lets add these arcs to the  Gurobi model
 
 #%%
-model = Model('TOBasicLazySubtourArcBasedFuel')
+model = Model('TOBasicNodeBasedSubtourNodeBasedFuel')
 x = model.addVars(arcs, lb = 0, ub = arc_ub, name="x", vtype=GRB.INTEGER)
 y = model.addVars(T, name="y", vtype=GRB.BINARY)
-#r = model.addVars(T, lb=0, ub=L, vtype=GRB.CONTINUOUS, name="r")
+r = model.addVars(N, lb=0, ub=L, vtype=GRB.CONTINUOUS, name="r")
 
 # Temporary, just to check if the original formulation is working
 u = model.addVars(k_u, name="u", vtype=GRB.INTEGER)
 #g = model.addVars(arcs, name="g", vtype=GRB.CONTINUOUS)
-q = model.addVars(arcs, vtype=GRB.CONTINUOUS, name="q")
-p = model.addVars(arcs, name="p", vtype=GRB.CONTINUOUS)
+#q = model.addVars(arcs, vtype=GRB.CONTINUOUS, name="q")
+#p = model.addVars(arcs, name="p", vtype=GRB.CONTINUOUS)
 
 #P_max = model.addVar(name = "P_max")
 
@@ -310,19 +304,33 @@ c53 = model.addConstrs(((quicksum(x[h,j,k] for k in K for j in N if j!=h)) ==
 # Verified by inspection
 
 #%% [markdown]
-# ##### Node Based Subtour Elimination  (not implemented)
+# ##### Node Based Subtour Elimination Constraints
 #%% [markdown]
-# $$u_{ik}-u_{jk}+1 \leq (N-1)(1-x_{ijk}) \quad \forall i,j \in N \setminus \{s\}, \forall k \in K, i\neq j \tag{31}$$
+# $$u_{ik}-u_{jk}+1 \leq (N-1)(1-x_{ijk}) \quad \forall i,j \in N , \forall k \in K, i\neq j \tag{32}$$
 
 #%%
-#c31 = model.addConstrs((u[i,k] -u[j,k] + 1 <= (len(N)-1)*(1-x[i,j,k]) 
-#                        for k in K for i in N for j in N if i not in S and j not in S and i!=j), name='c31')
+c32 = model.addConstrs((u[i,k] -u[j,k] + 1 <= (len(N)-1)*(1-x[i,j,k]) 
+                        for k in K for i in N for j in N if i!=j and i not in D+E and j not in S+D), name='c32')
 
 #%% [markdown]
-# $$2 \leq u_{ik} \leq N \quad \forall i \in N \setminus \{s\}, \forall k \in K \tag{32}$$
+# $$0 \leq u_{ik} \leq N \quad \forall i \in N, \forall k \in K \tag{33}$$
 
 #%%
-#c32 = model.addConstrs((2 <= u[i,k] <= len(N) for k in K for i in N if i not in S), name='c32')
+c33 = model.addConstrs((0<= u[i,k] <= len(N) for k in K for i in N if i not in S+E), name='c33')
+
+#%% [markdown]
+# Lets try another set of constraints, from A note on the Miller-Tucker-Zemlin model for the asymmetric traveling salesman problem by T. Sawik
+# 
+# $$u_{ik} - u_{jk} + Nx_{ijk} + (N-2)x_{jik} \leq N - 1 \tag{34}$$
+# 
+# 
+# 
+
+#%%
+#c34 = model.addConstrs((u[i,k]-u[j,k] + len(N)*x[i,j,k] + (len(N)-2)*x[j,i,k] <= len(N)-1 
+#                                                    for i in N for j in N for k in K if i!=j and i not in S), name='c34')
+#c34 = model.addConstrs((u[i]-u[j] + len(N)*x[i,j,k] + (len(N)-2)*x[j,i,k] <= len(N)-1 
+#                                                    for i in N for j in N for k in K if i!=j and i not in S), name='c34')
 
 #%% [markdown]
 # ##### Task Flow Based Subtour Elimination Constraints (not implemented)
@@ -394,30 +402,30 @@ c53 = model.addConstrs(((quicksum(x[h,j,k] for k in K for j in N if j!=h)) ==
 #c281 = model.addConstrs((q[s,i,k] == f[s,i]*x[s,i,k] for i in T+D+E for s in S for k in K), name='c28_1')
 
 #%% [markdown]
-# ##### Fuel Constraints (Arc Based)
+# ##### Fuel Constraints (Arc Based) (not implemented)
 #%% [markdown]
 # $$\sum_{k\in K}\sum_{i \in N} p_{tik} - \sum_{k\in K}\sum_{i\in N}p_{itk} = \sum_{i \in N}\sum_{k\in K} f_{ti}x_{tik} \quad \forall t \in T, t\neq i\tag{29}$$
 
 #%%
-c29 = model.addConstrs((quicksum(p[t,i,k] for k in K for i in N if t!=i) - 
-                        quicksum(p[i,t,k] for k in K for i in N if t!=i) == 
-                               quicksum(f[t,i]*x[t,i,k] for k in K for i in N if t!=i)
-                                                               for t in T), name='c29')
+#c29 = model.addConstrs((quicksum(p[t,i,k] for k in K for i in N if t!=i) - 
+#                        quicksum(p[i,t,k] for k in K for i in N if t!=i) == 
+#                               quicksum(f[t,i]*x[t,i,k] for k in K for i in N if t!=i)
+#                                                               for t in T), name='c29')
 
 #%% [markdown]
 # $$p_{bik} = f_{bi}x_{bik} \quad  \forall b \in \{s\} \cup D, \forall i \in N \setminus \{s\}, \forall k \in K, i\neq b \tag{30}$$
 
 #%%
-c30 = model.addConstrs((p[b,i,k] == f[b,i]*x[b,i,k] for b in S+D for i in N for k in K if i!=b), name='c30')
+#c30 = model.addConstrs((p[b,i,k] == f[b,i]*x[b,i,k] for b in S+D for i in N for k in K if i!=b), name='c30')
 
 #%% [markdown]
 # $$ 0\leq p_{ijk} \leq L x_{ijk} \quad \forall i,j \in N, \forall k \in K, i \neq j \tag{31}$$
 
 #%%
-c35 = model.addConstrs((0 <= p[i,j,k] <= L*x[i,j,k] for i in N for j in N for k in K if i != j), name='c35')
+#c31 = model.addConstrs((0 <= p[i,j,k] <= L*x[i,j,k] for i in N for j in N for k in K if i != j), name='c31')
 
 #%% [markdown]
-# ##### Fuel Constraints (not implemented):
+# ##### Fuel Constraints (Node Based):
 # Ensure that the UAV does not run out of fuel as it traverses its route. 
 # 
 # (Recall that $r_i \in [0,L]$ is the amount of fuel left in the UAV when it visits target $t_i$.)
@@ -432,34 +440,34 @@ c35 = model.addConstrs((0 <= p[i,j,k] <= L*x[i,j,k] for i in N for j in N for k 
 # $r_i − r_j = f_{ij}$ if $x_{ij} = 1$. This pair of constraints ensures that the fuel lost between two nodes is equal to the fuel cost of travelling between them.
 
 #%%
-#M=1e6
-#c15 = model.addConstrs((r[j] - r[i] + f[i,j] <= M*(1-x[i,j,k]) for i in T for j in T for k in K if i!=j), name="c15")
-#c16 = model.addConstrs((r[j] - r[i] + f[i,j] >= -M*(1-x[i,j,k]) for i in T for j in T for k in K if i!=j), name="c16")
+M=1e6
+c15 = model.addConstrs((r[j] - r[i] + f[i,j] <= M*(1-x[i,j,k]) for i in T for j in T for k in K if i!=j), name="c15")
+c16 = model.addConstrs((r[j] - r[i] + f[i,j] >= -M*(1-x[i,j,k]) for i in T for j in T for k in K if i!=j), name="c16")
 #model.write("x.lp")
 
 #%% [markdown]
 # Establish the condition that the fuel level at a target visited after leaving a depot (or the start node) is equal to the fuel capacity minus the fuel cost of traversal.
 # 
-# $$r_j-L+f_{ij} \leq M(1-x_{ijk}) \quad \forall i\in D \cup S, \forall j \in T, \forall k \in K\tag{18}$$
+# $$r_j-L+f_{ij} \leq M(1-x_{ijk}) \quad \forall i\in D \cup S, \forall j \in T\cup E, \forall k \in K\tag{18}$$
 # 
-# $$r_j-L+f_{ij} \geq -M(1-x_{ijk}) \quad \forall i\in D \cup S, \forall j \in T, \forall k \in K\tag{17}$$
+# $$r_j-L+f_{ij} \geq -M(1-x_{ijk}) \quad \forall i\in D \cup S, \forall j \in T\cup E, \forall k \in K\tag{17}$$
 # 
 # Constraints $(17)$ and $(18)$ can be depicted as $L − r_j = f_{ij}$
 
 #%%
-#c18 = model.addConstrs((r[j] - L + f[i,j] <= M*(1-x[i,j,k]) for i in D+S for j in T for k in K), name="c18")
-#c17 = model.addConstrs((r[j] - L + f[i,j] >= -M*(1-x[i,j,k]) for i in D+S for j in T for k in K), name="c17")
+c18 = model.addConstrs((r[j] - L + f[i,j] <= M*(1-x[i,j,k]) for i in D+S for j in T+D+E for k in K if i!=j), name="c18")
+c17 = model.addConstrs((r[j] - L + f[i,j] >= -M*(1-x[i,j,k]) for i in D+S for j in T+D+E for k in K if i!=j), name="c17")
 #model.write("x.lp")
 
 #%% [markdown]
 # Restrict the fuel lost in approaching a depot (or the end node) to being at most equal to the cost of travel from the preceding target.
 # 
-# $$r_i -f_{ij} \geq -M(1-x_{ijk}) \quad \forall i \in T, \forall j \in D\cup E, \forall k\in K, \tag{19}$$
+# $$r_i -f_{ij} \geq -M(1-x_{ijk}) \quad \forall i \in S\cup T, \forall j \in D\cup E, \forall k\in K, \tag{19}$$
 # 
 # Constraint (19) similarly can be represented as $r_i \geq f_{ij}$
 
 #%%
-#c19 = model.addConstrs((r[i] - f[i,j] >= -M*(1-x[i,j,k]) for i in T for j in D+E for k in K ), name="c19")
+c19 = model.addConstrs((r[i] - f[i,j] >= -M*(1-x[i,j,k]) for i in S+T for j in D+E for k in K ), name="c19")
 #model.write("x.lp")
 
 #%% [markdown]
@@ -468,7 +476,7 @@ c35 = model.addConstrs((0 <= p[i,j,k] <= L*x[i,j,k] for i in N for j in N for k 
 # $$0 \leq r_i\leq L \quad \forall i\in T \tag{20}$$
 
 #%%
-#c20 = model.addConstrs((0 <= r[i] <= L for i in T), name="c20")
+c20 = model.addConstrs((0 <= r[i] <= L for i in T+E), name="c20")
 #model.write("x.lp")
 
 #%% [markdown]
@@ -477,7 +485,7 @@ c35 = model.addConstrs((0 <= p[i,j,k] <= L*x[i,j,k] for i in N for j in N for k 
 # $$f_{ij}x_{ijk} \leq L \quad \forall i,j \in D\cup S \cup E, \forall k \in K, i\neq j \tag{22}$$
 
 #%%
-#c22 = model.addConstrs((f[i,j]*x[i,j,k] <= L for i in D for j in D+S+E for k in K if i!=j), name="c22")
+c22 = model.addConstrs((f[i,j]*x[i,j,k] <= L for i in D+S for j in D for k in K if i!=j), name="c22")
 #model.write("x.lp")
 # Verified by inspection
 
@@ -505,173 +513,95 @@ c23 = model.addConstrs((quicksum(c[i,j]*x[i,j,k]*1/vel for i in N for j in N if 
 #             for k in K), name="c23")
 
 #%% [markdown]
-# ##### Sub-tour elimination constraints - Lazy
-# Eliminate sub-tours in the $k^{th}$ robot's route by enforcing a path to exist from the initial refueling site to every target in the set $T$. 
+# #### Subtour elimination (Lazy constraints)
 # 
-# For any subset of vertices $P_k\subseteq N$, define $\delta^+(P_k) := \{(i,j) : (i,j) \in E_k, i \in P, j\notin P\}$ 
+# Eliminate sub-tours in the UAV route by enforcing a path to exist from the initial refueling site to every target in the set $T$. 
 # 
-# $$\sum_{(i,j)\in\delta^+(P_k)} x_{ijk} \geq 1, \quad \forall P_k \subseteq N \setminus \{s\}, P_k \cap T \neq \phi \tag{5} $$
+# For any subset of vertices $P\subseteq V$, define $\delta^+(P) := \{(i,j) : (i,j) \in E, i \in P, j\notin P\}$ 
+# 
+# $$\sum_{(i,j)\in\delta^+(P)} x_{ij} \geq 1, \quad \forall P \subseteq V \setminus \{s_0\}, P \cap T \neq \phi \tag{5} $$
 # 
 # In practice, these are implemented as lazy constraints in Gurobi, in which we add them only when a relaxed constraint is violated. In the paper, this is done using a seperation algorithm as below:
 # 
 # $\textbf{Seperation Algorithm:}$
-# 1. $\textbf{foreach} \enspace k \in K$
-# 2. $\quad$ Build graph $G_k$(directed) ≡ $(N_k, E_k)$
-# 2. $\quad$ Add edge $(i, j)$ to $E_k$, for each $x_{ijk} = 1$
-# 3. $\quad$ $\mathcal{P}_k$ = strongly connected components in $G_k$
-# 4. $\quad$ $\textbf{for all}$ $P_k \in \mathcal{P}_k$ $\textbf{do}$
-# 5. $\quad$ $\quad$ $\textbf{if}$ $(|P_k| > 1 )$ && $(P_k \subseteq N_k \setminus \{s\}$ && $P_k \cap T \neq \phi)$ $\textbf{then}$
-# 6. $\quad$ $\quad \quad$ Add violated constraint $\sum_{(i,j) \in \delta^+ (P_k)} x_{ijk}\geq 1$
+# 1. Build graph $G$(directed) ≡ $(V, E)$
+# 2. Add edge $(i, j)$ to E, for each $x_{ij} = 1$
+# 3. $\mathcal{P}$ = strongly connected components in $G$
+# 4. $\textbf{for all}$ $P \in \mathcal{P}$ $\textbf{do}$
+# 5. $\quad$ $\textbf{if}$ $(|P| > 1 )$ && $(P \subseteq V \setminus \{s_0\}$ && $P \cap T \neq \phi)$ $\textbf{then}$
+# 6. $\quad \quad$ Add violated constraint $\sum_{(i,j) \in \delta^+ (P)} x_{ij}\geq 1$
 
 #%%
 # Callback - use lazy constraints to eliminate sub-tours
-
-
 def subtourelim(model, where):
     if where == GRB.callback.MIPSOL:
+        selected = []
+        G = dict()
         for k in K:
-            selected = []
-            # Check for depots that are in the solution. Only add those depots to the graph
-            activeDepots = []
-            activeTasks = []
-            for i in model._vars:
-                sol = model.cbGetSolution(i)
-                if sol > 0.0 and i.VarName[0] == 'x' and i.VarName[i.VarName.index('K'):-1] == k:
-                    x, y, k = i.VarName.split(',')
-                    x = x.replace("x[", "")
-                    k = k.replace("]", "")
-                    if x in D and x not in activeDepots:
-                        activeDepots.append(x)
-                    if y in D and y not in activeDepots:
-                        activeDepots.append(y)
-
-            # Line 1. Graph iniitalized with nodes
-            G = {i: [] for i in S+T+E+activeDepots}
-            NminusS0 = [n for n in N if n not in S]
-            print('------{}-------'.format(k))
-            # make a list of edges selected in the solution
-            for i in model._vars:
-                sol = model.cbGetSolution(i)
-                if sol > 0.0 and i.VarName[0] == 'x' and i.VarName[i.VarName.index('K'):-1] == k:
-                    selected += [i]
-            print("Selected:")
-            print(selected)
-            for edge in selected:
-                # Extract the nodes in this edge
-                x, y, k = edge.VarName.split(',')
-                x = x.replace("x[", "")
-                k = k.replace("]", "")
-                #print(x)
-                #print(y)
-                # Also add this edge to the graph G
-                G[x].append(y)
-            print('G: ' + str(G))
-            # Find strongly connected components in G
-            strongly_connected = tarjan.tarjan(G)
+            G[k] = {i:[] for i in N} # Line 1. Graph iniitalized with nodes 
+        NminusS0 = [n for n in N if n not in S+E]
+        for i in model._vars:
+            sol = model.cbGetSolution(i)
+            if sol > 0.5 and i.VarName[0]=='x':
+                selected += [i]
+        print("Selected:")
+        print(selected)
+        for edge in selected:
+            # Extract the nodes in this edge
+            x,y,k = edge.VarName.split(',')
+            x = x.replace("x[", "")
+            k = k.replace("]", "")            
+            print(x)
+            print(y)
+            print(k)
+        # Also add this edge to the graph G
+            G[k][x].append(y)
+            print('G for '+k+': '+ str(G[k]))
+        for k in K:
+            # Find strongly connected components in G[k]
+            strongly_connected = tarjan.tarjan(G[k])
             print("strongly_connected: " + str(strongly_connected))
             for P in strongly_connected:
-                print('P: ' + str(P))
+                print('P: '+ str(P))
                 if len(P) > 1:                                    # if (|P| > 1)
                     expr = 0
                     e = [z for z in P if z in T]                  # P ∩ T
-                    print('e: ' + str(e))
-                    # if (P ∩ T != φ)
-                    if e:
+                    print('e: '+ str(e))
+                    if e:                                         # if (P ∩ T != φ) 
                         S0InP = 0
-                        depotPresentInStronglyConnected = 0
                         for p in P:
-                            if p == 'S0':
+                            if p in S+E:
                                 S0InP = 1
-                            if p in D:
-                                depotPresentInStronglyConnected = 1
-                        # if P ⊆ (V \ {S0})
-                        if not S0InP and not depotPresentInStronglyConnected:
+                        if not S0InP:                             # if P ⊆ (N \ {S0})
                             print("P in NminusS0: " + str(P))
-                            deltaPlusP = [(arc[0], arc[1], k)
-                                          for arc in f if arc[0] in P and arc[1] not in P]
+                            deltaPlusP = [arc for arc in f if arc[0] in P and arc[1] not in P]
                             print("deltaPlusP: " + str(deltaPlusP))
 
                             for var in model._vars:
-                                if var.VarName[0] == 'x' and var.VarName[var.VarName.index('K'):-1] == k:
-                                    x, y, k = var.VarName.split(',')
+                                if var.VarName[0]=='x':
+                                    x,y,k = var.VarName.split(',')
                                     x = x.replace("x[", "")
-                                    k = k.replace("]", "")
-                                    if tuple((x, y, k)) in deltaPlusP:
-                                        print("(x,y,k): " + str((x, y, k)))
+                                    k = k.replace("]", "")            
+                                    if tuple((x,y)) in deltaPlusP:
+                                        print("(x,y): " + str((x,y)))
                                         print(var)
                                         # Compute Delta+ of P
-                                        expr += var
+                                        expr+=var
                             print("Constraint Added >= 1 : " + str(expr))
                             model.cbLazy(expr >= 1)
-
-#%% [markdown]
-
-# Callback - use lazy constraints to eliminate sub-tours
-def subtourelim2(model, where):
-    if where == GRB.callback.MIPSOL:
-        for k in K:
-            
-            # Initialize the maxflow graph
-            G = maxflow.Graph[float](len(N), len(N))
-            # Add task nodes
-            task_nodes = G.add_nodes(len(T))
-            task_nodes_dict = {key:val for key,val in zip(T,task_nodes)}
-            pprint.pprint(task_nodes_dict)
-            # Add depot nodes
-            depot_nodes = G.add_nodes(len(D))
-            depot_nodes_dict = {key: val for key, val in zip(D,depot_nodes)}
-            pprint.pprint(depot_nodes_dict)
-            start_node = G.add_nodes(len(S))
-            start_node_dict = {key: val for key, val in zip(S, start_node)}
-            end_node = G.add_nodes(len(E))
-            end_node_dict = {key: val for key, val in zip(E, end_node)} 
-            ref_dict = {**task_nodes_dict, **depot_nodes_dict, 
-                                    **start_node_dict, **end_node_dict}
-            nodes = list(range(G.get_node_count()))
-
-            # Create active edges
-
-            
-            selected = []
-            # Check for depots that are in the solution. Only add those depots to the graph
-            activeDepots = []
-            activeTasks = []
-            for i in model._vars:
-                sol = model.cbGetSolution(i)
-                if sol > 0.0 and i.VarName[0] == 'x' and i.VarName[i.VarName.index('K'):-1] == k:
-                    x, y, k = i.VarName.split(',')
-                    x = x.replace("x[", "")
-                    k = k.replace("]", "")
-                    G.add_edge(nodes[ref_dict[x]], nodes[ref_dict[y]], sol, sol)
-#                    if x in D and x not in activeDepots:
-#                        activeDepots.append(x)
-#                    if y in D and y not in activeDepots:
-#                        activeDepots.append(y)
-#                    if x in T and x not in activeTasks:
-#                        activeTasks.append(x)
-#                    if y in T and y not in activeTasks:
-#                        activeTasks.append(y)
-            G_debug = G.get_nx_graph()
-            print("Edges in G: ", G_debug.edges(data=True))
-            G
-
-
-            
-
-
 
 #%% [markdown]
 # ### Solving the Model
 
 #%%
-model._vars = model.getVars()
-model.params.LazyConstraints = 1
-model.params.Heuristics = 0 # Do not use a heuristic solution
-model.params.Cuts = 0 # Do not use cuts, except lazy constraints
+#model.params.Heuristics = 0 # Do not use a heuristic solution
+#model.params.Cuts = 0 # Do not use cuts, except lazy constraints
 #model.params.MIPGapAbs = 0.0005
 #model.params.TimeLimit = 30
+model._vars = model.getVars()
+model.params.LazyConstraints = 1
+model.optimize(subtourelim)
 #model.optimize()
-model.optimize(subtourelim2)
 print("MIP Gap: " + str(model.getAttr(GRB.Attr.MIPGap)))
 model.write("x2.lp")
 
@@ -898,10 +828,13 @@ def drawArena(T_loc, D_loc, S_loc, E_loc, arcsInOrder, R, remainingFuel, isEdge=
 pprint.pprint(arcsInOrder)
 #model.printAttr('x')
 print('This Seed: %d'% thisSeed)
+total_length = 0
 for k in K:
     print("Length [%s] = %.2f" % (k, l[k]))
+    total_length += l[k] 
+print('Total Length: %d'% total_length)
 fig= drawArena(T_loc, D_loc, S_loc, E_loc, arcsInOrder, R, remainingFuel, 1)
-py.plot(fig)
+py.iplot(fig)
 #print(fig)
 
 
@@ -918,6 +851,10 @@ c['D2','T1']+c['T1','T8']+c['T8','T9']+c['T9','T5']+c['T5','T3']+c['T3','D1']
 
 
 #%%
-L
+
+
+
+#%%
+
 
 
