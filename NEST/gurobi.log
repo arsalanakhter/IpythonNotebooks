@@ -32949,3 +32949,91 @@ p[T11,T8,K1]      60.4709
  p[D2,T4,K1]      30.4825 
  p[S0,T7,K1]      22.7438 
 p[S0,T10,K2]      14.8297 
+
+Gurobi 8.1.1 (win64, Python) logging started 09/13/19 19:18:32
+
+Academic license - for non-commercial use only
+Changed value of parameter Heuristics to 0.0
+   Prev: 0.05  Min: 0.0  Max: 1.0  Default: 0.05
+Changed value of parameter Cuts to 0
+   Prev: -1  Min: -1  Max: 3  Default: -1
+Optimize a model with 1113 rows, 825 columns and 5663 nonzeros
+Variable types: 9 continuous, 816 integer (24 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [1e-04, 1e+00]
+  Bounds range     [1e+00, 3e+02]
+  RHS range        [1e+00, 1e+06]
+Presolve removed 97 rows and 126 columns
+Presolve time: 0.02s
+Presolved: 1016 rows, 699 columns, 5046 nonzeros
+Variable types: 9 continuous, 690 integer (351 binary)
+
+Root relaxation: objective 7.991569e+00, 681 iterations, 0.03 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    7.99157    0   97          -    7.99157      -     -    0s
+     0     0    7.99157    0   97          -    7.99157      -     -    0s
+     0     2    7.99157    0   97          -    7.99157      -     -    0s
+*   81    35              28       7.9805417    7.99122  0.13%  48.3    0s
+*  277   129              21       7.9810092    7.98926  0.10%  33.2    0s
+*  722   293              29       7.9810720    7.98825  0.09%  25.0    1s
+*  997   340              18       7.9817021    7.98798  0.08%  23.0    1s
+  5223   407    7.98387   19    6    7.98170    7.98387  0.03%  18.3    5s
+
+Explored 7118 nodes (125248 simplex iterations) in 6.14 seconds
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 7.9817 7.98107 7.98101 7.98054 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.981702115788e+00, best bound 7.982053816004e+00, gap 0.0044%
+
+    Variable            x 
+-------------------------
+ x[T0,T3,K1]            1 
+ x[T1,D0,K0]            1 
+ x[T2,T7,K0]            1 
+ x[T3,D0,K1]            1 
+ x[T4,T6,K2]            1 
+ x[T5,E0,K2]            1 
+ x[T6,T5,K2]            1 
+ x[T7,T1,K0]            1 
+ x[D0,T0,K1]            1 
+ x[D0,T2,K0]            1 
+ x[D0,T4,K2]            1 
+ x[D0,E0,K0]            1 
+ x[D0,E0,K1]            1 
+ x[S0,D0,K0]            1 
+ x[S0,D0,K1]            1 
+ x[S0,D0,K2]            1 
+    y[T0,K1]            1 
+    y[T1,K0]            1 
+    y[T2,K0]            1 
+    y[T3,K1]            1 
+    y[T4,K2]            1 
+    y[T5,K2]            1 
+    y[T6,K2]            1 
+    y[T7,K0]            1 
+       r[T0]      164.273 
+       r[T1]      139.551 
+       r[T2]      209.231 
+       r[T3]       149.94 
+       r[T4]        227.5 
+       r[T5]      144.981 
+       r[T6]      175.848 
+       r[T7]      158.062 
+ p[T0,T3,K1]            1 
+ p[T2,T7,K0]            2 
+ p[T4,T6,K2]            2 
+ p[T6,T5,K2]            1 
+ p[T7,T1,K0]            1 
+ p[D0,T0,K1]            2 
+ p[D0,T2,K0]            3 
+ p[D0,T4,K2]            3 
+ p[S0,D0,K0]            3 
+ p[S0,D0,K1]            2 
+ p[S0,D0,K2]            3 
+           z      182.979 
